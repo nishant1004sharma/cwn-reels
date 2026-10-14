@@ -28,3 +28,15 @@ EXIT: 1
  000ls: cannot access '/tmp/t.mp3': No such file or directory
 head: cannot open '/tmp/t.mp3' for reading: No such file or directory
 
+=== [2026-10-14T14:59:43Z] STEP: 2d. extra diag: proxy reply for elevenlabs
+CMD: curl -sS -o /dev/null -w "%{http_code}" https://api.elevenlabs.io/v1/models; echo; curl -sv https://api.elevenlabs.io/v1/models 2>&1 | grep -E "^< HTTP|CONNECT|error|Proxy|x-" | head -10
+EXIT: 0
+--- last 15 lines:
+curl: (56) CONNECT tunnel failed, response 403
+000
+* CONNECT tunnel: HTTP/1.1 negotiated
+> CONNECT api.elevenlabs.io:443 HTTP/1.1
+> Proxy-Connection: Keep-Alive
+< HTTP/1.1 403 Forbidden
+* CONNECT tunnel failed, response 403
+
