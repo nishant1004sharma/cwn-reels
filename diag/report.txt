@@ -60,3 +60,12 @@ EXIT: 0
       "host": "api.elevenlabs.io:443"
     },
 
+=== [2026-10-14T14:59:47Z] STEP: 2f. extra diag: ELEVEN* env var names (values hidden)
+CMD: env | grep -i eleven | cut -d= -f1; grep -n "environ" render/tts.py
+EXIT: 0
+--- last 15 lines:
+8:  ELEVENLABS_API_KEY    env var, OR an environment network secret for api.elevenlabs.io
+22:    key = os.environ.get("ELEVENLABS_API_KEY")
+35:    voice = os.environ.get("ELEVENLABS_VOICE_ID")
+41:    body = {"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_v3")}
+
