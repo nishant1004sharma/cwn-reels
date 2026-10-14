@@ -40,3 +40,23 @@ curl: (56) CONNECT tunnel failed, response 403
 < HTTP/1.1 403 Forbidden
 * CONNECT tunnel failed, response 403
 
+=== [2026-10-14T14:59:45Z] STEP: 2e. extra diag: agent proxy status
+CMD: curl -sS "$HTTPS_PROXY/__agentproxy/status" | head -40
+EXIT: 0
+--- last 15 lines:
+      "detail": "gateway answered 403 to CONNECT (policy denial or upstream failure)",
+      "host": "api.elevenlabs.io:443"
+    },
+    {
+      "ts": "2026-10-14T14:59:32.118Z",
+      "kind": "connect_rejected",
+      "detail": "gateway answered 403 to CONNECT (policy denial or upstream failure)",
+      "host": "api.elevenlabs.io:443"
+    },
+    {
+      "ts": "2026-10-14T14:59:43.110Z",
+      "kind": "connect_rejected",
+      "detail": "gateway answered 403 to CONNECT (policy denial or upstream failure)",
+      "host": "api.elevenlabs.io:443"
+    },
+
