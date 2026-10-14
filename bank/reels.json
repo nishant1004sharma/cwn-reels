@@ -1,5 +1,5 @@
 {
-  "schema": "Each reel: say = spoken text for ElevenLabs (acronyms spelled as spaced letters, '...' for pauses, never say 'ISC2'); show = on-screen caption; card = big centre text; card_style = default|myth|fact|answer|formula; quiz = optional multiple choice, revealed at quiz.reveal (segment index, 0-based). Post copy never uses the word 'lecture'.",
+  "schema": "Each reel: say = spoken text for ElevenLabs (acronyms spelled as spaced letters, '...' for pauses, never say 'ISC2'); show = on-screen caption; card = big centre text; card_style = default|myth|fact|answer|formula; quiz = optional multiple choice, revealed at quiz.reveal (segment index, 0-based). Post copy never uses the word 'lecture'. card_style also: alert (red, MISTAKE tag) and stat ('BIG|label' big amber figure). Creator-style series names (Real Breach, Breach Data, AI Security, Myth vs Fact, Spot the Phish) get a coloured chip.",
   "reels": [
     {
       "id": "D1-R01",
@@ -10,19 +10,120 @@
       "source": "D1_L02_Professional_Ethics_script.md",
       "hook": "Your boss says: hide the flaw.",
       "segments": [
-        {"say": "Your boss asks you to hide a known safety flaw from customers. What does a C I S S P do?", "show": "Your boss asks you to hide a known safety flaw from customers. What does a CISSP do?", "card": "Hide the flaw?"},
-        {"say": "The code of ethics has four canons... in priority order.", "show": "The code of ethics has four canons, in priority order.", "card": "4 canons, in order"},
-        {"say": "One. Protect society, the common good, public trust, and the infrastructure.", "show": "1. Protect society, the common good, public trust and the infrastructure.", "card": "1 · Protect society"},
-        {"say": "Two. Act honorably, honestly, justly, responsibly, and legally.", "show": "2. Act honorably, honestly, justly, responsibly and legally.", "card": "2 · Act honorably"},
-        {"say": "Three. Provide diligent and competent service to principals... that's your employer.", "show": "3. Provide diligent and competent service to principals (your employer).", "card": "3 · Serve your employer"},
-        {"say": "Four. Advance and protect the profession.", "show": "4. Advance and protect the profession.", "card": "4 · Protect the profession"},
-        {"say": "Serving your employer is canon three. Protecting society is canon one... and the higher canon always wins. So you don't hide it.", "show": "Serving your employer is canon 3. Protecting society is canon 1. The higher canon wins, so you don't hide it.", "card": "Canon 1 wins", "card_style": "answer"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Your boss asks you to hide a known safety flaw from customers. What does a C I S S P do?",
+          "show": "Your boss asks you to hide a known safety flaw from customers. What does a CISSP do?",
+          "card": "Hide the flaw?"
+        },
+        {
+          "say": "The code of ethics has four canons... in priority order.",
+          "show": "The code of ethics has four canons, in priority order.",
+          "card": "4 canons, in order"
+        },
+        {
+          "say": "One. Protect society, the common good, public trust, and the infrastructure.",
+          "show": "1. Protect society, the common good, public trust and the infrastructure.",
+          "card": "1 · Protect society"
+        },
+        {
+          "say": "Two. Act honorably, honestly, justly, responsibly, and legally.",
+          "show": "2. Act honorably, honestly, justly, responsibly and legally.",
+          "card": "2 · Act honorably"
+        },
+        {
+          "say": "Three. Provide diligent and competent service to principals... that's your employer.",
+          "show": "3. Provide diligent and competent service to principals (your employer).",
+          "card": "3 · Serve your employer"
+        },
+        {
+          "say": "Four. Advance and protect the profession.",
+          "show": "4. Advance and protect the profession.",
+          "card": "4 · Protect the profession"
+        },
+        {
+          "say": "Serving your employer is canon three. Protecting society is canon one... and the higher canon always wins. So you don't hide it.",
+          "show": "Serving your employer is canon 3. Protecting society is canon 1. The higher canon wins, so you don't hide it.",
+          "card": "Canon 1 wins",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "Your boss says hide the flaw. What does a CISSP do? #Shorts",
         "caption": "The CISSP code of ethics has four canons, applied in priority order. Protecting society (canon 1) beats serving your employer (canon 3). Learn the order for exam day.",
-        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#InfoSec", "#SecurityEthics", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#SecurityEthics",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R01",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "MGM Resorts 2023: help desk vishing",
+      "format": "breach-story",
+      "source": "Insurance Journal, 31 Jan 2024 (MGM SEC filing figures; vx-underground on LinkedIn)",
+      "hook": "One phone call. $100 million.",
+      "segments": [
+        {
+          "say": "One phone call... cost a casino giant over a hundred million dollars.",
+          "show": "One phone call cost a casino giant over $100 million.",
+          "card": "$100M+|one phone call",
+          "card_style": "stat"
+        },
+        {
+          "say": "September twenty twenty-three. Attackers called M G M's I T help desk... pretending to be an employee.",
+          "show": "September 2023. Attackers called MGM's IT help desk, pretending to be an employee.",
+          "card": "Vishing the help desk"
+        },
+        {
+          "say": "They reportedly picked who to impersonate from LinkedIn.",
+          "show": "They reportedly picked who to impersonate from LinkedIn.",
+          "card": "Picked on LinkedIn"
+        },
+        {
+          "say": "The help desk reset the password... and the M F A. No exploit needed.",
+          "show": "The help desk reset the password and the MFA. No exploit needed.",
+          "card": "Password + MFA reset",
+          "card_style": "alert"
+        },
+        {
+          "say": "M G M put the hit at about a hundred million dollars... and it didn't pay the ransom.",
+          "show": "MGM put the hit at about $100 million, and it didn't pay the ransom.",
+          "card": "No ransom paid"
+        },
+        {
+          "say": "The lesson? Your help desk is part of your attack surface. Verify identity with a call back on a known number... before any reset.",
+          "show": "The lesson: your help desk is attack surface. Verify identity with a callback on a known number before any reset.",
+          "card": "Verify before you reset",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "One phone call cost MGM $100 million #Shorts",
+        "caption": "In September 2023, attackers called MGM's IT help desk posing as an employee and got the password and MFA reset. MGM estimated the impact at about $100 million. Lesson: verify identity before any reset.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#SocialEngineering",
+          "#DataBreach",
+          "#InfoSec",
+          "#Vishing",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -34,18 +135,113 @@
       "source": "D1_L04_Roles_Responsibilities_Due_Care_Due_Diligence_script.md",
       "hook": "Due care vs due diligence",
       "segments": [
-        {"say": "Due care, or due diligence? Most C I S S P candidates mix these up.", "show": "Due care or due diligence? Most CISSP candidates mix these up.", "card": "Care or diligence?"},
-        {"say": "Here's the trick.", "show": "Here's the trick.", "card": "The trick"},
-        {"say": "Due diligence is doing your homework... researching risks, assessing vendors, writing policies, and checking that controls work.", "show": "Due diligence is doing your homework: researching risks, assessing vendors, writing policies, checking controls work.", "card": "Diligence = homework", "card_style": "formula"},
-        {"say": "Due care is acting on it... putting controls in place, and acting like a reasonable person would. That's the prudent person rule.", "show": "Due care is acting on it: putting controls in place and acting like a reasonable person would (the prudent person rule).", "card": "Care = action", "card_style": "formula"},
-        {"say": "On the exam... investigate, assess, research? Due diligence.", "show": "On the exam: investigate, assess, research? Due diligence.", "card": "Assess → diligence"},
-        {"say": "Implement, maintain, enforce? Due care.", "show": "Implement, maintain, enforce? Due care.", "card": "Implement → care"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Due care, or due diligence? Most C I S S P candidates mix these up.",
+          "show": "Due care or due diligence? Most CISSP candidates mix these up.",
+          "card": "Care or diligence?"
+        },
+        {
+          "say": "Here's the trick.",
+          "show": "Here's the trick.",
+          "card": "The trick"
+        },
+        {
+          "say": "Due diligence is doing your homework... researching risks, assessing vendors, writing policies, and checking that controls work.",
+          "show": "Due diligence is doing your homework: researching risks, assessing vendors, writing policies, checking controls work.",
+          "card": "Diligence = homework",
+          "card_style": "formula"
+        },
+        {
+          "say": "Due care is acting on it... putting controls in place, and acting like a reasonable person would. That's the prudent person rule.",
+          "show": "Due care is acting on it: putting controls in place and acting like a reasonable person would (the prudent person rule).",
+          "card": "Care = action",
+          "card_style": "formula"
+        },
+        {
+          "say": "On the exam... investigate, assess, research? Due diligence.",
+          "show": "On the exam: investigate, assess, research? Due diligence.",
+          "card": "Assess → diligence"
+        },
+        {
+          "say": "Implement, maintain, enforce? Due care.",
+          "show": "Implement, maintain, enforce? Due care.",
+          "card": "Implement → care"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "Due care vs due diligence: the 5-second trick #Shorts",
         "caption": "Due diligence = doing your homework (research, assess, plan). Due care = acting on it (implement, maintain, enforce). A favourite CISSP exam trap.",
-        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#GRC", "#RiskManagement", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#CyberSecurity",
+          "#GRC",
+          "#RiskManagement",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R02",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Colonial Pipeline 2021: one password, no MFA",
+      "format": "breach-story",
+      "source": "Newshub (CEO Joseph Blount's Senate testimony, June 2021); BankInfoSecurity",
+      "hook": "One old password shut down a pipeline",
+      "segments": [
+        {
+          "say": "One password. That's all it took to shut down a major U S fuel pipeline.",
+          "show": "One password shut down a major US fuel pipeline.",
+          "card": "1|password",
+          "card_style": "stat"
+        },
+        {
+          "say": "May twenty twenty-one. Attackers got into Colonial Pipeline through an old V P N account... one nobody was using anymore.",
+          "show": "May 2021. Attackers got into Colonial Pipeline through an old VPN account nobody was using anymore.",
+          "card": "Unused VPN account",
+          "card_style": "alert"
+        },
+        {
+          "say": "The password was complex. But there was no multi-factor authentication.",
+          "show": "The password was complex. But there was no multi-factor authentication.",
+          "card": "No MFA",
+          "card_style": "alert"
+        },
+        {
+          "say": "Colonial paid seventy-five bitcoin... nearly five million dollars at the time.",
+          "show": "Colonial paid 75 bitcoin, nearly $5 million at the time.",
+          "card": "75 BTC|ransom paid",
+          "card_style": "stat"
+        },
+        {
+          "say": "The lesson? Kill dormant accounts... and put M F A on every remote access door.",
+          "show": "The lesson: kill dormant accounts, and put MFA on every remote access door.",
+          "card": "MFA on every door",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "How one old password shut down a US pipeline #Shorts",
+        "caption": "Colonial Pipeline, 2021: attackers used one stolen password on a legacy VPN account with no MFA. Colonial paid 75 bitcoin. Lesson: remove dormant accounts and put MFA on all remote access.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#Ransomware",
+          "#MFA",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -57,19 +253,123 @@
       "source": "D1_L10_Risk_Management_I_Terms_Analysis_script.md",
       "hook": "The one risk formula you must know",
       "segments": [
-        {"say": "One formula every C I S S P must know. Let's do it in thirty seconds.", "show": "One formula every CISSP must know. Let's do it in 30 seconds.", "card": "SLE × ARO = ALE", "card_style": "formula"},
-        {"say": "A server is worth one hundred thousand dollars.", "show": "A server is worth $100,000.", "card": "Asset value: $100,000"},
-        {"say": "A flood would destroy forty percent of it. That's the exposure factor.", "show": "A flood would destroy 40% of it. That's the exposure factor.", "card": "Exposure factor: 40%"},
-        {"say": "So the single loss expectancy, S L E, is forty thousand dollars.", "show": "So the single loss expectancy (SLE) is $40,000.", "card": "SLE = $40,000", "card_style": "formula"},
-        {"say": "A flood is expected once every ten years. So the annualized rate of occurrence, A R O, is zero point one.", "show": "A flood is expected once every 10 years, so the annualized rate of occurrence (ARO) is 0.1.", "card": "ARO = 0.1", "card_style": "formula"},
-        {"say": "Annualized loss expectancy, A L E, equals S L E times A R O... four thousand dollars a year.", "show": "Annualized loss expectancy (ALE) = SLE × ARO = $4,000 a year.", "card": "ALE = $4,000 / year", "card_style": "answer"},
-        {"say": "So a safeguard against this flood should never cost more than four thousand dollars a year. Save this one.", "show": "A safeguard against this flood should never cost more than $4,000 a year. Save this one.", "card": "Safeguard ≤ $4,000 / yr"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "One formula every C I S S P must know. Let's do it in thirty seconds.",
+          "show": "One formula every CISSP must know. Let's do it in 30 seconds.",
+          "card": "SLE × ARO = ALE",
+          "card_style": "formula"
+        },
+        {
+          "say": "A server is worth one hundred thousand dollars.",
+          "show": "A server is worth $100,000.",
+          "card": "Asset value: $100,000"
+        },
+        {
+          "say": "A flood would destroy forty percent of it. That's the exposure factor.",
+          "show": "A flood would destroy 40% of it. That's the exposure factor.",
+          "card": "Exposure factor: 40%"
+        },
+        {
+          "say": "So the single loss expectancy, S L E, is forty thousand dollars.",
+          "show": "So the single loss expectancy (SLE) is $40,000.",
+          "card": "SLE = $40,000",
+          "card_style": "formula"
+        },
+        {
+          "say": "A flood is expected once every ten years. So the annualized rate of occurrence, A R O, is zero point one.",
+          "show": "A flood is expected once every 10 years, so the annualized rate of occurrence (ARO) is 0.1.",
+          "card": "ARO = 0.1",
+          "card_style": "formula"
+        },
+        {
+          "say": "Annualized loss expectancy, A L E, equals S L E times A R O... four thousand dollars a year.",
+          "show": "Annualized loss expectancy (ALE) = SLE × ARO = $4,000 a year.",
+          "card": "ALE = $4,000 / year",
+          "card_style": "answer"
+        },
+        {
+          "say": "So a safeguard against this flood should never cost more than four thousand dollars a year. Save this one.",
+          "show": "A safeguard against this flood should never cost more than $4,000 a year. Save this one.",
+          "card": "Safeguard ≤ $4,000 / yr"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "SLE × ARO = ALE in 30 seconds (CISSP risk math) #Shorts",
         "caption": "$100,000 asset × 40% exposure factor = $40,000 SLE. × 0.1 ARO = $4,000 ALE. Never spend more per year on a safeguard than the annual loss it prevents.",
-        "hashtags": ["#CISSP", "#CISSPExam", "#RiskManagement", "#CyberSecurity", "#InfoSec", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#RiskManagement",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R03",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Uber 2022: MFA fatigue",
+      "format": "breach-story",
+      "source": "TechEarl write-up of the 2022 Uber breach (Uber attributed it to Lapsus$)",
+      "hook": "They spammed his phone until he said yes",
+      "segments": [
+        {
+          "say": "How do you beat multi-factor authentication? Sometimes... you just annoy the user.",
+          "show": "How do you beat multi-factor authentication? Sometimes you just annoy the user.",
+          "card": "MFA fatigue"
+        },
+        {
+          "say": "Twenty twenty-two. An attacker had a stolen password for an Uber contractor's account.",
+          "show": "2022. An attacker had a stolen password for an Uber contractor's account.",
+          "card": "Stolen password"
+        },
+        {
+          "say": "Then came the login approval requests... again, and again, and again.",
+          "show": "Then came the login approval requests, again and again.",
+          "card": "Approve? Approve? Approve?"
+        },
+        {
+          "say": "Then a WhatsApp message, pretending to be Uber I T. Approve one, and they'll stop.",
+          "show": "Then a WhatsApp message, pretending to be Uber IT: approve one and they'll stop.",
+          "card": "Fake IT on WhatsApp",
+          "card_style": "alert"
+        },
+        {
+          "say": "The contractor approved. The attacker was in.",
+          "show": "The contractor approved. The attacker was in.",
+          "card": "One tap = breach",
+          "card_style": "alert"
+        },
+        {
+          "say": "The fix? Use number matching for push M F A... and remember, real I T will never ask you to approve a prompt you didn't start.",
+          "show": "The fix: number matching for push MFA. And real IT will never ask you to approve a prompt you didn't start.",
+          "card": "Number matching",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "They spammed his phone until he tapped Approve #Shorts",
+        "caption": "Uber, 2022: a stolen contractor password, a flood of MFA push prompts, then a fake 'IT' WhatsApp message. One tap let the attacker in. Use number matching and never approve a prompt you didn't start.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#MFA",
+          "#SocialEngineering",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -80,20 +380,124 @@
       "format": "quiz",
       "source": "D1_L06_Policies_Standards_Procedures_Guidelines_script.md",
       "hook": "Which document is optional?",
-      "quiz": {"question": "Which security document is optional?", "options": ["Policy", "Standard", "Procedure", "Guideline"], "answer": 3, "reveal": 2},
+      "quiz": {
+        "question": "Which security document is optional?",
+        "options": [
+          "Policy",
+          "Standard",
+          "Procedure",
+          "Guideline"
+        ],
+        "answer": 3,
+        "reveal": 2
+      },
       "segments": [
-        {"say": "Quick C I S S P question. Which security document is optional?", "show": "Quick CISSP question. Which security document is optional?"},
-        {"say": "A, policy. B, standard. C, procedure. Or D, guideline. Lock in your answer.", "show": "A) Policy  B) Standard  C) Procedure  D) Guideline. Lock in your answer."},
-        {"say": "It's D... guideline. Guidelines are recommendations. Everything else is mandatory.", "show": "It's D, guideline. Guidelines are recommendations. Everything else is mandatory."},
-        {"say": "Policies set direction, and senior management approves them.", "show": "Policies set direction, and senior management approves them.", "card": "Policy = direction"},
-        {"say": "Standards name exact technologies, like T L S one point two or higher.", "show": "Standards name exact technologies, like TLS 1.2 or higher.", "card": "Standard = specific"},
-        {"say": "Procedures are step-by-step instructions.", "show": "Procedures are step-by-step instructions.", "card": "Procedure = steps"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Quick C I S S P question. Which security document is optional?",
+          "show": "Quick CISSP question. Which security document is optional?"
+        },
+        {
+          "say": "A, policy. B, standard. C, procedure. Or D, guideline. Lock in your answer.",
+          "show": "A) Policy  B) Standard  C) Procedure  D) Guideline. Lock in your answer."
+        },
+        {
+          "say": "It's D... guideline. Guidelines are recommendations. Everything else is mandatory.",
+          "show": "It's D, guideline. Guidelines are recommendations. Everything else is mandatory."
+        },
+        {
+          "say": "Policies set direction, and senior management approves them.",
+          "show": "Policies set direction, and senior management approves them.",
+          "card": "Policy = direction"
+        },
+        {
+          "say": "Standards name exact technologies, like T L S one point two or higher.",
+          "show": "Standards name exact technologies, like TLS 1.2 or higher.",
+          "card": "Standard = specific"
+        },
+        {
+          "say": "Procedures are step-by-step instructions.",
+          "show": "Procedures are step-by-step instructions.",
+          "card": "Procedure = steps"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "Which security document is optional? CISSP quiz #Shorts",
         "caption": "Policy, standard, procedure or guideline? Only guidelines are optional. Policies set direction, standards are specific, procedures are step by step.",
-        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#GRC", "#SecurityPolicy", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#CyberSecurity",
+          "#GRC",
+          "#SecurityPolicy",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R04",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Equifax 2017: the missed Struts patch",
+      "format": "breach-story",
+      "source": "Wikipedia, 2017 Equifax data breach (patch 7 Mar 2017, intrusion from 12 May, detected 29 Jul, ~147.9M people, $575M settlement)",
+      "hook": "The patch existed. Nobody applied it.",
+      "segments": [
+        {
+          "say": "About a hundred and forty-seven million people exposed... by a hole that already had a fix.",
+          "show": "About 147 million people exposed by a hole that already had a fix.",
+          "card": "147M|people exposed",
+          "card_style": "stat"
+        },
+        {
+          "say": "March seventh, twenty seventeen. A patch for a critical Apache Struts flaw is released.",
+          "show": "March 7, 2017. A patch for a critical Apache Struts flaw is released.",
+          "card": "Mar 7 · patch released"
+        },
+        {
+          "say": "May twelfth. Attackers get in through Equifax's dispute website... still unpatched.",
+          "show": "May 12. Attackers get in through Equifax's dispute website, still unpatched.",
+          "card": "May 12 · attackers in",
+          "card_style": "alert"
+        },
+        {
+          "say": "Nobody noticed them until the end of July.",
+          "show": "Nobody noticed them until the end of July.",
+          "card": "Found on Jul 29"
+        },
+        {
+          "say": "The settlement? Five hundred and seventy-five million dollars.",
+          "show": "The settlement: $575 million.",
+          "card": "$575M|settlement",
+          "card_style": "stat"
+        },
+        {
+          "say": "The lesson? Know every internet-facing app you own... and patch critical flaws in days, not months.",
+          "show": "The lesson: know every internet-facing app you own, and patch critical flaws in days, not months.",
+          "card": "Patch in days",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "The Equifax hack: the patch existed for 2 months #Shorts",
+        "caption": "Apache Struts was patched on March 7, 2017. Attackers got into Equifax's unpatched dispute site on May 12 and stayed hidden until July 29. About 147 million people were affected. Patch internet-facing systems fast.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#VulnerabilityManagement",
+          "#PatchManagement",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -105,20 +509,121 @@
       "source": "D1_L07_Threat_Modeling_script.md",
       "hook": "Think like an attacker: STRIDE",
       "segments": [
-        {"say": "Six letters that make you think like an attacker. Stride... a threat model from Microsoft.", "show": "Six letters that make you think like an attacker: STRIDE, a threat model from Microsoft.", "card": "STRIDE", "card_style": "formula"},
-        {"say": "S, spoofing... pretending to be someone else.", "show": "S: Spoofing, pretending to be someone else.", "card": "S · Spoofing"},
-        {"say": "T, tampering... changing data without permission.", "show": "T: Tampering, changing data without permission.", "card": "T · Tampering"},
-        {"say": "R, repudiation... denying you did something.", "show": "R: Repudiation, denying you did something.", "card": "R · Repudiation"},
-        {"say": "I, information disclosure... exposing data.", "show": "I: Information disclosure, exposing data.", "card": "I · Info disclosure"},
-        {"say": "D, denial of service... blocking access.", "show": "D: Denial of service, blocking access.", "card": "D · Denial of service"},
-        {"say": "E, elevation of privilege... getting more rights than you should.", "show": "E: Elevation of privilege, getting more rights than you should.", "card": "E · Elevation of privilege"},
-        {"say": "Exam tip... threat model early, during design. That's when fixes are cheapest.", "show": "Exam tip: threat model early, during design. That's when fixes are cheapest.", "card": "Model early", "card_style": "answer"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Six letters that make you think like an attacker. Stride... a threat model from Microsoft.",
+          "show": "Six letters that make you think like an attacker: STRIDE, a threat model from Microsoft.",
+          "card": "STRIDE",
+          "card_style": "formula"
+        },
+        {
+          "say": "S, spoofing... pretending to be someone else.",
+          "show": "S: Spoofing, pretending to be someone else.",
+          "card": "S · Spoofing"
+        },
+        {
+          "say": "T, tampering... changing data without permission.",
+          "show": "T: Tampering, changing data without permission.",
+          "card": "T · Tampering"
+        },
+        {
+          "say": "R, repudiation... denying you did something.",
+          "show": "R: Repudiation, denying you did something.",
+          "card": "R · Repudiation"
+        },
+        {
+          "say": "I, information disclosure... exposing data.",
+          "show": "I: Information disclosure, exposing data.",
+          "card": "I · Info disclosure"
+        },
+        {
+          "say": "D, denial of service... blocking access.",
+          "show": "D: Denial of service, blocking access.",
+          "card": "D · Denial of service"
+        },
+        {
+          "say": "E, elevation of privilege... getting more rights than you should.",
+          "show": "E: Elevation of privilege, getting more rights than you should.",
+          "card": "E · Elevation of privilege"
+        },
+        {
+          "say": "Exam tip... threat model early, during design. That's when fixes are cheapest.",
+          "show": "Exam tip: threat model early, during design. That's when fixes are cheapest.",
+          "card": "Model early",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "STRIDE threat modeling in 40 seconds #Shorts",
         "caption": "Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Each one breaks a security goal. Threat model early, during design.",
-        "hashtags": ["#CISSP", "#ThreatModeling", "#STRIDE", "#AppSec", "#CyberSecurity", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#ThreatModeling",
+          "#STRIDE",
+          "#AppSec",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R05",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Target 2013: in through the HVAC vendor",
+      "format": "breach-story",
+      "source": "KrebsOnSecurity, 5 Feb 2014 (Fazio Mechanical credentials; ~40M card accounts per Target)",
+      "hook": "Hacked through the air-con vendor",
+      "segments": [
+        {
+          "say": "Forty million payment cards stolen... and it started with the air-conditioning contractor.",
+          "show": "40 million payment cards stolen, and it started with the air-conditioning contractor.",
+          "card": "40M|cards stolen",
+          "card_style": "stat"
+        },
+        {
+          "say": "Twenty thirteen. Attackers used network credentials stolen from Target's heating and refrigeration vendor.",
+          "show": "2013. Attackers used network credentials stolen from Target's heating and refrigeration vendor.",
+          "card": "Vendor credentials",
+          "card_style": "alert"
+        },
+        {
+          "say": "That vendor's access was meant for billing and projects. For the attackers... it was a way in.",
+          "show": "That vendor's access was meant for billing and projects. For the attackers, it was a way in.",
+          "card": "A way in"
+        },
+        {
+          "say": "From there, they reached the checkout systems in Target's stores.",
+          "show": "From there, they reached the checkout systems in Target's stores.",
+          "card": "Into the checkouts"
+        },
+        {
+          "say": "The lesson? Give vendors only the access they need... and keep them segmented away from anything that matters.",
+          "show": "The lesson: give vendors only the access they need, and segment them away from anything that matters.",
+          "card": "Segment your vendors",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Target got hacked through its air-con vendor #Shorts",
+        "caption": "Target, 2013: attackers used credentials stolen from an HVAC contractor, then reached the store checkout systems. About 40 million card accounts were exposed. Limit and segment vendor access.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#ThirdPartyRisk",
+          "#SupplyChain",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -130,18 +635,112 @@
       "source": "D1_L09_Personnel_Security_script.md",
       "hook": "Can a firewall stop insider fraud?",
       "segments": [
-        {"say": "Myth... a firewall stops insider fraud.", "show": "Myth: a firewall stops insider fraud.", "card": "Firewalls stop insider fraud", "card_style": "myth"},
-        {"say": "Fact... people controls do. Here are three the C I S S P exam loves.", "show": "Fact: people controls do. Here are three the CISSP exam loves.", "card": "People controls do", "card_style": "fact"},
-        {"say": "Separation of duties splits a critical task across two or more people... so fraud needs collusion.", "show": "Separation of duties splits a critical task across two or more people, so fraud needs collusion.", "card": "Separation of duties"},
-        {"say": "Job rotation moves people between roles... which exposes hidden fraud.", "show": "Job rotation moves people between roles, which exposes hidden fraud.", "card": "Job rotation"},
-        {"say": "Mandatory vacations make someone step away... while another person does their job.", "show": "Mandatory vacations make someone step away while another person does their job.", "card": "Mandatory vacations"},
-        {"say": "Exam tip... when someone is terminated, disable their access at the same time they're told.", "show": "Exam tip: when someone is terminated, disable their access at the same time they're told.", "card": "Disable access at notice", "card_style": "answer"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Myth... a firewall stops insider fraud.",
+          "show": "Myth: a firewall stops insider fraud.",
+          "card": "Firewalls stop insider fraud",
+          "card_style": "myth"
+        },
+        {
+          "say": "Fact... people controls do. Here are three the C I S S P exam loves.",
+          "show": "Fact: people controls do. Here are three the CISSP exam loves.",
+          "card": "People controls do",
+          "card_style": "fact"
+        },
+        {
+          "say": "Separation of duties splits a critical task across two or more people... so fraud needs collusion.",
+          "show": "Separation of duties splits a critical task across two or more people, so fraud needs collusion.",
+          "card": "Separation of duties"
+        },
+        {
+          "say": "Job rotation moves people between roles... which exposes hidden fraud.",
+          "show": "Job rotation moves people between roles, which exposes hidden fraud.",
+          "card": "Job rotation"
+        },
+        {
+          "say": "Mandatory vacations make someone step away... while another person does their job.",
+          "show": "Mandatory vacations make someone step away while another person does their job.",
+          "card": "Mandatory vacations"
+        },
+        {
+          "say": "Exam tip... when someone is terminated, disable their access at the same time they're told.",
+          "show": "Exam tip: when someone is terminated, disable their access at the same time they're told.",
+          "card": "Disable access at notice",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "3 controls that stop insider fraud (CISSP) #Shorts",
         "caption": "Separation of duties, job rotation and mandatory vacations. People controls catch what firewalls can't. Bonus: disable access at the moment of termination.",
-        "hashtags": ["#CISSP", "#InsiderThreat", "#CyberSecurity", "#InfoSec", "#CISSPExam", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#InsiderThreat",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#CISSPExam",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R06",
+      "status": "ready",
+      "series": "Breach Data",
+      "topic": "Verizon DBIR 2026: exploitation is now the #1 way in",
+      "format": "data-drop",
+      "source": "SecurityInfoWatch, 19 May 2026, on the Verizon 2026 DBIR (exploitation 31% of breaches, top vector for the first time; third party 48%)",
+      "hook": "Hackers changed how they get in",
+      "segments": [
+        {
+          "say": "For the first time... unpatched vulnerabilities are the number one way attackers get in.",
+          "show": "For the first time, unpatched vulnerabilities are the number one way attackers get in.",
+          "card": "#1 way in"
+        },
+        {
+          "say": "Verizon's twenty twenty-six breach report found exploitation started thirty-one percent of breaches.",
+          "show": "Verizon's 2026 breach report: exploitation started 31% of breaches.",
+          "card": "31%|of breaches began with an exploit",
+          "card_style": "stat"
+        },
+        {
+          "say": "And forty-eight percent involved a third party.",
+          "show": "And 48% involved a third party.",
+          "card": "48%|involved a third party",
+          "card_style": "stat"
+        },
+        {
+          "say": "So patching isn't an I T chore anymore. It's your front door.",
+          "show": "Patching isn't an IT chore anymore. It's your front door.",
+          "card": "Patching = front door",
+          "card_style": "answer"
+        },
+        {
+          "say": "Fix what's exposed to the internet first... and anything attackers are already exploiting.",
+          "show": "Fix what's exposed to the internet first, and anything attackers are already exploiting.",
+          "card": "Internet-facing first"
+        },
+        {
+          "say": "Follow for more real security data.",
+          "show": "Follow for more real security data.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Hackers' #1 way in just changed (Verizon DBIR 2026) #Shorts",
+        "caption": "Verizon's 2026 DBIR: vulnerability exploitation started 31% of breaches, the top entry point for the first time, and 48% of breaches involved a third party. Patch internet-facing systems first.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#VulnerabilityManagement",
+          "#DBIR",
+          "#InfoSec",
+          "#ThirdPartyRisk",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -153,18 +752,117 @@
       "source": "D1_L12_Business_Continuity_Requirements_script.md",
       "hook": "MTD vs RTO vs RPO",
       "segments": [
-        {"say": "M T D, R T O, R P O... three acronyms, one simple rule.", "show": "MTD, RTO, RPO. Three acronyms, one simple rule.", "card": "MTD · RTO · RPO", "card_style": "formula"},
-        {"say": "Maximum tolerable downtime, M T D, is the longest the business can survive without a process.", "show": "Maximum tolerable downtime (MTD): the longest the business can survive without a process.", "card": "MTD = longest survivable outage"},
-        {"say": "Recovery time objective, R T O, is how fast you plan to bring it back.", "show": "Recovery time objective (RTO): how fast you plan to bring it back.", "card": "RTO = planned restore time"},
-        {"say": "Recovery point objective, R P O, is how much data you can afford to lose... measured in time since the last good backup.", "show": "Recovery point objective (RPO): how much data you can afford to lose, measured in time since the last good backup.", "card": "RPO = acceptable data loss"},
-        {"say": "The rule? R T O must always be shorter than M T D.", "show": "The rule: RTO must always be shorter than MTD.", "card": "RTO < MTD", "card_style": "answer"},
-        {"say": "And in every continuity plan... human safety comes first.", "show": "And in every continuity plan, human safety comes first.", "card": "People first"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "M T D, R T O, R P O... three acronyms, one simple rule.",
+          "show": "MTD, RTO, RPO. Three acronyms, one simple rule.",
+          "card": "MTD · RTO · RPO",
+          "card_style": "formula"
+        },
+        {
+          "say": "Maximum tolerable downtime, M T D, is the longest the business can survive without a process.",
+          "show": "Maximum tolerable downtime (MTD): the longest the business can survive without a process.",
+          "card": "MTD = longest survivable outage"
+        },
+        {
+          "say": "Recovery time objective, R T O, is how fast you plan to bring it back.",
+          "show": "Recovery time objective (RTO): how fast you plan to bring it back.",
+          "card": "RTO = planned restore time"
+        },
+        {
+          "say": "Recovery point objective, R P O, is how much data you can afford to lose... measured in time since the last good backup.",
+          "show": "Recovery point objective (RPO): how much data you can afford to lose, measured in time since the last good backup.",
+          "card": "RPO = acceptable data loss"
+        },
+        {
+          "say": "The rule? R T O must always be shorter than M T D.",
+          "show": "The rule: RTO must always be shorter than MTD.",
+          "card": "RTO < MTD",
+          "card_style": "answer"
+        },
+        {
+          "say": "And in every continuity plan... human safety comes first.",
+          "show": "And in every continuity plan, human safety comes first.",
+          "card": "People first"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "MTD vs RTO vs RPO, explained in 30 seconds #Shorts",
         "caption": "MTD = longest the business survives without a process. RTO = how fast you restore it. RPO = how much data you can lose. Rule: RTO must be shorter than MTD.",
-        "hashtags": ["#CISSP", "#BusinessContinuity", "#DisasterRecovery", "#CyberSecurity", "#CISSPExam", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#BusinessContinuity",
+          "#DisasterRecovery",
+          "#CyberSecurity",
+          "#CISSPExam",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R07",
+      "status": "ready",
+      "series": "Spot the Phish",
+      "topic": "CEO gift-card scam red flags",
+      "format": "quiz",
+      "source": "General awareness guidance (urgency, secrecy, unusual payment; verify out of band)",
+      "hook": "Would you fall for this email?",
+      "quiz": {
+        "question": "Biggest red flag?",
+        "options": [
+          "The urgency",
+          "The secrecy",
+          "The gift cards",
+          "All of them"
+        ],
+        "answer": 3,
+        "reveal": 2
+      },
+      "segments": [
+        {
+          "say": "Your C E O emails you. It's urgent. Buy gift cards for a client... and keep it quiet.",
+          "show": "Your CEO emails you: urgent, buy gift cards for a client, and keep it quiet."
+        },
+        {
+          "say": "What's the red flag? A, the urgency. B, the secrecy. C, the gift cards. Or D, all of them. Lock in your answer.",
+          "show": "A) The urgency  B) The secrecy  C) The gift cards  D) All of them. Lock in your answer."
+        },
+        {
+          "say": "It's D... all of them. Urgency, secrecy, and an odd way to pay are the classic signs of a scam.",
+          "show": "It's D, all of them. Urgency, secrecy and an odd way to pay are classic scam signs."
+        },
+        {
+          "say": "Check the sender's real address... not just the display name.",
+          "show": "Check the sender's real address, not just the display name.",
+          "card": "Check the real address"
+        },
+        {
+          "say": "And verify on a different channel. Call them on a number you already have.",
+          "show": "And verify on a different channel: call them on a number you already have.",
+          "card": "Verify out of band",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more security tips.",
+          "show": "Follow for more security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Would you fall for this CEO email? #Shorts",
+        "caption": "Urgent request, keep it quiet, pay with gift cards: all three are red flags. Check the real sender address and verify on a channel you already trust.",
+        "hashtags": [
+          "#Phishing",
+          "#CyberSecurity",
+          "#SecurityAwareness",
+          "#BEC",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -175,19 +873,120 @@
       "format": "quiz",
       "source": "D1_L11_Risk_Management_II_Response_Controls_Monitoring_script.md",
       "hook": "Never an acceptable risk response?",
-      "quiz": {"question": "Which risk response is never acceptable?", "options": ["Mitigate", "Transfer", "Accept", "Ignore"], "answer": 3, "reveal": 2},
+      "quiz": {
+        "question": "Which risk response is never acceptable?",
+        "options": [
+          "Mitigate",
+          "Transfer",
+          "Accept",
+          "Ignore"
+        ],
+        "answer": 3,
+        "reveal": 2
+      },
       "segments": [
-        {"say": "Which of these is never an acceptable risk response?", "show": "Which of these is never an acceptable risk response?"},
-        {"say": "A, mitigate. B, transfer. C, accept. Or D, ignore. Lock in your answer.", "show": "A) Mitigate  B) Transfer  C) Accept  D) Ignore. Lock in your answer."},
-        {"say": "It's D... ignore. Ignoring a risk is called rejection... and it's never acceptable.", "show": "It's D, ignore. Ignoring a risk is called rejection, and it's never acceptable."},
-        {"say": "Acceptance is fine... but management must formally agree to it.", "show": "Acceptance is fine, but management must formally agree to it.", "card": "Accept = formal sign-off"},
-        {"say": "And watch this trap. Cyber insurance transfers the cost... not the accountability.", "show": "Watch this trap: cyber insurance transfers the cost, not the accountability.", "card": "Transfer cost, not accountability", "card_style": "answer"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Which of these is never an acceptable risk response?",
+          "show": "Which of these is never an acceptable risk response?"
+        },
+        {
+          "say": "A, mitigate. B, transfer. C, accept. Or D, ignore. Lock in your answer.",
+          "show": "A) Mitigate  B) Transfer  C) Accept  D) Ignore. Lock in your answer."
+        },
+        {
+          "say": "It's D... ignore. Ignoring a risk is called rejection... and it's never acceptable.",
+          "show": "It's D, ignore. Ignoring a risk is called rejection, and it's never acceptable."
+        },
+        {
+          "say": "Acceptance is fine... but management must formally agree to it.",
+          "show": "Acceptance is fine, but management must formally agree to it.",
+          "card": "Accept = formal sign-off"
+        },
+        {
+          "say": "And watch this trap. Cyber insurance transfers the cost... not the accountability.",
+          "show": "Watch this trap: cyber insurance transfers the cost, not the accountability.",
+          "card": "Transfer cost, not accountability",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "The one risk response that's never acceptable #Shorts",
         "caption": "Mitigate, transfer, deter, avoid or accept, but never ignore (rejection). And remember: insurance transfers the cost, not the accountability.",
-        "hashtags": ["#CISSP", "#RiskManagement", "#CyberSecurity", "#GRC", "#CISSPExam", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#RiskManagement",
+          "#CyberSecurity",
+          "#GRC",
+          "#CISSPExam",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R08",
+      "status": "ready",
+      "series": "AI Security",
+      "topic": "Prompt injection explained",
+      "format": "explainer",
+      "source": "OWASP Top 10 for LLM Applications 2026 (LLM01 Prompt injection), via Cycode and Cyber Security News coverage",
+      "hook": "Hidden text can hijack your AI",
+      "segments": [
+        {
+          "say": "What if a web page could give orders... to your A I assistant?",
+          "show": "What if a web page could give orders to your AI assistant?",
+          "card": "Prompt injection"
+        },
+        {
+          "say": "That's prompt injection. Number one on the twenty twenty-six Oh-wasp top ten for A I apps.",
+          "show": "That's prompt injection: #1 on the 2026 OWASP Top 10 for LLM apps.",
+          "card": "LLM01|prompt injection",
+          "card_style": "stat"
+        },
+        {
+          "say": "An attacker hides instructions in an email, a document, or a web page.",
+          "show": "An attacker hides instructions in an email, a document or a web page.",
+          "card": "Hidden instructions"
+        },
+        {
+          "say": "Your A I reads it... and treats those words as commands.",
+          "show": "Your AI reads it and treats those words as commands.",
+          "card": "Data becomes commands",
+          "card_style": "alert"
+        },
+        {
+          "say": "If that A I can send email or move files... so can the attacker.",
+          "show": "If that AI can send email or move files, so can the attacker.",
+          "card": "Its access = their access",
+          "card_style": "alert"
+        },
+        {
+          "say": "The fix? Treat everything the model reads as untrusted... and give A I agents only the access they need.",
+          "show": "The fix: treat everything the model reads as untrusted, and give AI agents only the access they need.",
+          "card": "Least privilege for AI",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more A I security.",
+          "show": "Follow for more AI security.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "How hidden text can hijack your AI #Shorts",
+        "caption": "Prompt injection is LLM01 on the 2026 OWASP Top 10 for LLM Applications. Hidden instructions in a page or document become commands. Treat model input as untrusted and limit what AI agents can do.",
+        "hashtags": [
+          "#AISecurity",
+          "#PromptInjection",
+          "#OWASP",
+          "#LLM",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -199,18 +998,111 @@
       "source": "D1_L13_Laws_Intellectual_Property_Export_Controls_script.md",
       "hook": "Why not patent the secret recipe?",
       "segments": [
-        {"say": "Why would a company never patent its most valuable recipe?", "show": "Why would a company never patent its most valuable recipe?", "card": "Patent it?"},
-        {"say": "Because patents expire. A patent protects an invention for twenty years from filing... then anyone can use it.", "show": "Because patents expire. A patent protects an invention for 20 years from filing. Then anyone can use it.", "card": "Patent = 20 years"},
-        {"say": "A trade secret needs no registration... and lasts as long as the secret is kept.", "show": "A trade secret needs no registration, and lasts as long as the secret is kept.", "card": "Trade secret = while it's secret", "card_style": "answer"},
-        {"say": "Copyright protects original works, like software code... and it's automatic.", "show": "Copyright protects original works, like software code, and it's automatic.", "card": "Copyright = automatic"},
-        {"say": "Trademarks protect names and logos. A U S registration lasts ten years... and can be renewed again and again.", "show": "Trademarks protect names and logos. A US registration lasts 10 years and can be renewed again and again.", "card": "Trademark = 10 yrs, renewable"},
-        {"say": "Exam tip... once a trade secret is disclosed, the protection is gone.", "show": "Exam tip: once a trade secret is disclosed, the protection is gone.", "card": "Disclosed = gone"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Why would a company never patent its most valuable recipe?",
+          "show": "Why would a company never patent its most valuable recipe?",
+          "card": "Patent it?"
+        },
+        {
+          "say": "Because patents expire. A patent protects an invention for twenty years from filing... then anyone can use it.",
+          "show": "Because patents expire. A patent protects an invention for 20 years from filing. Then anyone can use it.",
+          "card": "Patent = 20 years"
+        },
+        {
+          "say": "A trade secret needs no registration... and lasts as long as the secret is kept.",
+          "show": "A trade secret needs no registration, and lasts as long as the secret is kept.",
+          "card": "Trade secret = while it's secret",
+          "card_style": "answer"
+        },
+        {
+          "say": "Copyright protects original works, like software code... and it's automatic.",
+          "show": "Copyright protects original works, like software code, and it's automatic.",
+          "card": "Copyright = automatic"
+        },
+        {
+          "say": "Trademarks protect names and logos. A U S registration lasts ten years... and can be renewed again and again.",
+          "show": "Trademarks protect names and logos. A US registration lasts 10 years and can be renewed again and again.",
+          "card": "Trademark = 10 yrs, renewable"
+        },
+        {
+          "say": "Exam tip... once a trade secret is disclosed, the protection is gone.",
+          "show": "Exam tip: once a trade secret is disclosed, the protection is gone.",
+          "card": "Disclosed = gone"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "Why companies keep recipes secret instead of patenting #Shorts",
         "caption": "Patent: 20 years, then public. Trade secret: no registration, lasts while it stays secret. Copyright: automatic. Trademark: 10-year US registration, renewable.",
-        "hashtags": ["#CISSP", "#IntellectualProperty", "#CyberLaw", "#CyberSecurity", "#CISSPExam", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#IntellectualProperty",
+          "#CyberLaw",
+          "#CyberSecurity",
+          "#CISSPExam",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R09",
+      "status": "ready",
+      "series": "Myth vs Fact",
+      "topic": "Password rules in NIST SP 800-63B-4",
+      "format": "myth-fact",
+      "source": "NIST SP 800-63B-4 (pages.nist.gov): no periodic changes, no composition rules, 15-char minimum for single-factor, blocklist check",
+      "hook": "Still changing passwords every 90 days?",
+      "segments": [
+        {
+          "say": "Myth... you should change your password every ninety days.",
+          "show": "Myth: you should change your password every 90 days.",
+          "card": "Change it every 90 days",
+          "card_style": "myth"
+        },
+        {
+          "say": "Fact... NIST's latest guidance says organizations shall not force periodic password changes.",
+          "show": "Fact: NIST's latest guidance says organizations shall not force periodic password changes.",
+          "card": "No forced resets",
+          "card_style": "fact"
+        },
+        {
+          "say": "Change it when there's evidence it's been compromised.",
+          "show": "Change it when there's evidence it's been compromised.",
+          "card": "Change on compromise"
+        },
+        {
+          "say": "And forget the one capital, one symbol rules. Length wins. Fifteen characters minimum, when the password is the only factor.",
+          "show": "Forget 'one capital, one symbol' rules. Length wins: 15 characters minimum when the password is the only factor.",
+          "card": "15+|characters, password-only login",
+          "card_style": "stat"
+        },
+        {
+          "say": "Plus, every new password should be checked against lists of breached passwords.",
+          "show": "Plus, every new password should be checked against breached-password lists.",
+          "card": "Block breached passwords",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more security tips.",
+          "show": "Follow for more security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Stop changing passwords every 90 days (NIST says so) #Shorts",
+        "caption": "NIST SP 800-63B-4: don't force periodic password changes, don't impose composition rules, require 15+ characters for password-only logins, and block breached passwords.",
+        "hashtags": [
+          "#Passwords",
+          "#NIST",
+          "#CyberSecurity",
+          "#IAM",
+          "#InfoSec",
+          "#Shorts"
+        ]
       }
     },
     {
@@ -221,19 +1113,112 @@
       "format": "quiz",
       "source": "D1_L01_Welcome_to_Domain_1_Core_Security_Concepts_script.md",
       "hook": "Prove they can't deny sending it",
-      "quiz": {"question": "How do you prove a sender can't deny sending a message?", "options": ["Encryption", "Hashing", "Access control", "Digital signature"], "answer": 3, "reveal": 2},
+      "quiz": {
+        "question": "How do you prove a sender can't deny sending a message?",
+        "options": [
+          "Encryption",
+          "Hashing",
+          "Access control",
+          "Digital signature"
+        ],
+        "answer": 3,
+        "reveal": 2
+      },
       "segments": [
-        {"say": "Exam question. How do you prove a sender can't deny sending a message?", "show": "Exam question: how do you prove a sender can't deny sending a message?"},
-        {"say": "A, encryption. B, hashing. C, access control. Or D, a digital signature. Lock in your answer.", "show": "A) Encryption  B) Hashing  C) Access control  D) Digital signature. Lock in your answer."},
-        {"say": "It's D... a digital signature, combined with strong authentication. That's nonrepudiation.", "show": "It's D: a digital signature, combined with strong authentication. That's nonrepudiation."},
-        {"say": "The C I A triad is confidentiality, integrity, and availability.", "show": "The CIA triad: confidentiality, integrity and availability.", "card": "C · I · A"},
-        {"say": "The current exam outline adds authenticity and nonrepudiation... five pillars in total.", "show": "The current exam outline adds authenticity and nonrepudiation: five pillars in total.", "card": "+ Authenticity + Nonrepudiation", "card_style": "answer"},
-        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+        {
+          "say": "Exam question. How do you prove a sender can't deny sending a message?",
+          "show": "Exam question: how do you prove a sender can't deny sending a message?"
+        },
+        {
+          "say": "A, encryption. B, hashing. C, access control. Or D, a digital signature. Lock in your answer.",
+          "show": "A) Encryption  B) Hashing  C) Access control  D) Digital signature. Lock in your answer."
+        },
+        {
+          "say": "It's D... a digital signature, combined with strong authentication. That's nonrepudiation.",
+          "show": "It's D: a digital signature, combined with strong authentication. That's nonrepudiation."
+        },
+        {
+          "say": "The C I A triad is confidentiality, integrity, and availability.",
+          "show": "The CIA triad: confidentiality, integrity and availability.",
+          "card": "C · I · A"
+        },
+        {
+          "say": "The current exam outline adds authenticity and nonrepudiation... five pillars in total.",
+          "show": "The current exam outline adds authenticity and nonrepudiation: five pillars in total.",
+          "card": "+ Authenticity + Nonrepudiation",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
       ],
       "post": {
         "title": "Can they deny sending it? CISSP quiz #Shorts",
         "caption": "Nonrepudiation = proof someone can't deny an action, usually a digital signature with strong authentication. The current exam outline lists five pillars: CIA + authenticity + nonrepudiation.",
-        "hashtags": ["#CISSP", "#CISSPExam", "#Cryptography", "#CyberSecurity", "#InfoSec", "#Shorts"]
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#Cryptography",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R10",
+      "status": "ready",
+      "series": "CISSP Mindset",
+      "topic": "Think like a manager on the CISSP exam",
+      "format": "tips",
+      "source": "Nishant's Domain 1 lessons (D1_L04 accountability, D1_L10 risk decisions, D1_L12 people first)",
+      "hook": "Stop answering CISSP like an engineer",
+      "segments": [
+        {
+          "say": "The C I S S P isn't testing whether you can fix the server. It's testing how you think.",
+          "show": "The CISSP isn't testing whether you can fix the server. It's testing how you think.",
+          "card": "Think like a manager"
+        },
+        {
+          "say": "Rule one. Human safety comes first. Before data, before systems.",
+          "show": "Rule 1: human safety comes first. Before data, before systems.",
+          "card": "1 · People first"
+        },
+        {
+          "say": "Rule two. Senior management owns the risk. Security advises... management decides.",
+          "show": "Rule 2: senior management owns the risk. Security advises, management decides.",
+          "card": "2 · Management owns risk"
+        },
+        {
+          "say": "Rule three. Pick the answer that fixes the root cause... not just the symptom.",
+          "show": "Rule 3: pick the answer that fixes the root cause, not just the symptom.",
+          "card": "3 · Fix the root cause"
+        },
+        {
+          "say": "Read every question as a security manager... and the right answer gets much easier to spot.",
+          "show": "Read every question as a security manager, and the right answer gets much easier to spot.",
+          "card": "Manager mindset",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Stop answering CISSP questions like an engineer #Shorts",
+        "caption": "Three CISSP mindset rules: people's safety first, senior management owns the risk, and fix the root cause rather than the symptom.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#SecurityLeadership",
+          "#Shorts"
+        ]
       }
     }
   ]

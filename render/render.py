@@ -43,13 +43,26 @@ F_CHIP = font("Inter-Medium.otf", 30)
 def heavy(size): return font("InterDisplay-Bold.otf", size)
 def semi(size): return font("Inter-SemiBold.otf", size)
 
+VIOLET = (167, 139, 250)
+
 STYLE = {
     "default": (ACCENT, TEXT),
     "formula": (ACCENT, ACCENT),
     "answer": (GREEN, TEXT),
     "fact": (GREEN, TEXT),
     "myth": (RED, TEXT),
+    "alert": (RED, TEXT),
+    "stat": (AMBER, AMBER),
 }
+TAGS = {"myth": "MYTH", "fact": "FACT", "answer": "KEY POINT", "alert": "MISTAKE"}
+
+# series chip colours (creator-style series stand out from exam prep)
+def chip_colour(series):
+    s = series.upper()
+    if "BREACH" in s: return RED
+    if "AI" in s.split() or "AI SECURITY" in s: return VIOLET
+    if "MYTH" in s or "PHISH" in s or "TIP" in s: return AMBER
+    return (70, 96, 140)
 
 # ---------- text helpers ----------
 def wrap(text, fnt, max_w):
@@ -140,11 +153,31 @@ def rounded_panel(w, h, border, fill=PANEL, r=36, bw=4):
     d.rounded_rectangle([0, 0, w - 1, h - 1], radius=r, fill=fill + (235,), outline=border + (255,), width=bw)
     return im
 
+def stat_card(text):
+    """'BIG|label' -> huge amber figure with a smaller label underneath."""
+    big, _, label = text.partition("|")
+    bf, bl = fit(big.strip(), heavy, 860, 1, 210, 90)
+    lf, ll = fit(label.strip(), semi, 820, 2, 50, 36) if label.strip() else (semi(50), [])
+    bh = int(bf.size * 1.05)
+    lh = int(lf.size * 1.25)
+    h = 120 + bh + (24 + lh * len(ll) if ll else 0)
+    im = rounded_panel(940, max(320, h), AMBER)
+    d = ImageDraw.Draw(im)
+    y = (im.height - (bh + (24 + lh * len(ll) if ll else 0))) // 2 - 10
+    d.text(((940 - bf.getlength(bl[0])) / 2, y), bl[0], font=bf, fill=AMBER)
+    y += bh + 24
+    for ln in ll:
+        d.text(((940 - lf.getlength(ln)) / 2, y), ln, font=lf, fill=TEXT)
+        y += lh
+    return im
+
 def card_image(text, style):
+    if style == "stat":
+        return stat_card(text)
     border, colour = STYLE.get(style or "default", STYLE["default"])
     f, lines = fit(text, heavy, 820, 3, 104, 56)
     lh = int(f.size * 1.18)
-    tagged = style in ("myth", "fact", "answer")
+    tagged = style in TAGS
     pad = 56 if tagged else 0
     h = max(300, lh * len(lines) + 140 + pad)
     im = rounded_panel(940, h, border)
@@ -153,8 +186,8 @@ def card_image(text, style):
     for ln in lines:
         d.text(((940 - f.getlength(ln)) / 2, y), ln, font=f, fill=colour)
         y += lh
-    if style in ("myth", "fact", "answer"):
-        tag = {"myth": "MYTH", "fact": "FACT", "answer": "KEY POINT"}[style]
+    if tagged:
+        tag = TAGS[style]
         tf = semi(30)
         tw = tf.getlength(tag) + 36
         d.rounded_rectangle([28, 24, 28 + tw, 72], radius=24, fill=border)
@@ -203,15 +236,23 @@ def render(reel, out, audio=None, align=None):
         d0.text((x, 112), ch, font=F_BRAND, fill=ACCENT); x += F_BRAND.getlength(ch) + 3
     chip = reel.get("series", "CISSP").upper()
     cw = F_CHIP.getlength(chip) + 48
-    d0.rounded_rectangle([70, 168, 70 + cw, 222], radius=27, outline=(70, 96, 140), width=2)
-    d0.text((94, 177), chip, font=F_CHIP, fill=(190, 205, 228))
-    # hook (static headline)
+    cc = chip_colour(chip)
+    if cc == (70, 96, 140):
+        d0.rounded_rectangle([70, 168, 70 + cw, 222], radius=27, outline=cc, width=2)
+        d0.text((94, 177), chip, font=F_CHIP, fill=(190, 205, 228))
+    else:   # creator-style series: filled, coloured chip
+        d0.rounded_rectangle([70, 168, 70 + cw, 222], radius=27, fill=cc)
+        d0.text((94, 177), chip, font=F_CHIP, fill=(6, 11, 24))
+    # hook headline: its own layer so it can pop in during the first half-second
     hf, hl = fit(reel["hook"], heavy, 940, 3, 84, 56)
-    y = 268
+    hook_h = int(hf.size * 1.14) * len(hl) + 40
+    hook_layer = Image.new("RGBA", (W, hook_h), (0, 0, 0, 0))
+    hd = ImageDraw.Draw(hook_layer)
+    y = 0
     for ln in hl:
-        d0.text((70, y), ln, font=hf, fill=TEXT); y += int(hf.size * 1.14)
-    hook_bottom = y
-    d0.line([(70, hook_bottom + 22), (190, hook_bottom + 22)], fill=AMBER, width=8)
+        hd.text((70, y), ln, font=hf, fill=TEXT); y += int(hf.size * 1.14)
+    hd.line([(70, y + 22), (190, y + 22)], fill=AMBER, width=8)
+    hook_bottom = 268 + y
     band = scan_band()
 
     zone_top = max(620, hook_bottom + 70)
@@ -255,6 +296,14 @@ def render(reel, out, audio=None, align=None):
         frame = bg.copy()
         # moving scan band
         frame.alpha_composite(band, (0, int((t * 260) % (H + 160)) - 160))
+        # hook pops in (slide up + fade) over the first 0.45 s, then holds
+        hp = ease(t / 0.45)
+        if hp >= 1:
+            frame.alpha_composite(hook_layer, (0, 268))
+        elif hp > 0:
+            hl_img = hook_layer.copy()
+            hl_img.putalpha(hl_img.getchannel("A").point(lambda v, a_=hp: int(v * a_)))
+            frame.alpha_composite(hl_img, (0, int(268 + (1 - hp) * 50)))
         d = ImageDraw.Draw(frame)
         # progress bar
         d.rounded_rectangle([60, 52, 1020, 62], radius=5, fill=(30, 44, 72))
