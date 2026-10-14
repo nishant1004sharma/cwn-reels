@@ -39,10 +39,10 @@ You are running Nishant Sharma's automated reel pipeline for his YouTube channel
 - `MEDIA_URL=https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/main/media/$ID.mp4` (use the GitHub Pages URL instead if `PAGES_BASE` is noted below). Confirm it answers 200 with `curl -sIL`.
 
 ## 6. Post with Metricool
-- Use the Metricool connector: getBrandSettings for the brand's `blogId` and timezone, then ONE createScheduledPost for today at 22:30 Asia/Kuala_Lumpur (20:00 IST), `autoPublish: true`, `media: [MEDIA_URL]`, `text` = `post.caption` + blank line + hashtags, providers: youtube only (Instagram is on hold until Nishant connects it; add it only if getBrandSettings shows an Instagram network):
+- Use the Metricool connector: getBrandSettings for the brand's `blogId` and timezone, then ONE createScheduledPost for today at 11:00 Asia/Kuala_Lumpur (08:30 IST), `autoPublish: true`, `media: [MEDIA_URL]`, `text` = `post.caption` + blank line + hashtags, providers: youtube only (Instagram is on hold until Nishant connects it; add it only if getBrandSettings shows an Instagram network):
   - `youtubeData`: type "short", title = `post.title`, privacy "public", madeForKids false, category "EDUCATION", isAiGeneratedContent true (the narration is a synthetic clone of his voice), tags = hashtags without `#`.
   - If Instagram is connected: `instagramData`: type "REEL", showReelOnFeed true, isAiGenerated true.
-- If 22:30 has already passed, schedule 30 minutes from now.
+- If 11:00 has already passed, schedule 30 minutes from now.
 - If Metricool rejects the media, a network, or the plan's monthly post limit, report it and stop without recording the reel as posted.
 
 ## 7. Record and tidy
