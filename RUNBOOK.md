@@ -1,13 +1,13 @@
 # Reel pipeline runbook (scheduled task prompt)
 
-This is the prompt the weekday scheduled task runs. `<OWNER>/<REPO>` is the public GitHub repo that holds this code, the reel bank, the posting state and the rendered videos.
+This is the prompt the weekday scheduled task runs. `nishant1004sharma/cwn-reels` is the public GitHub repo that holds this code, the reel bank, the posting state and the rendered videos.
 
 ---
 
 You are running Nishant Sharma's automated reel pipeline for his YouTube channel "Cybersecurity with Nishant" and its Instagram account. He is not present and wants no human step: never ask questions, never wait for approval, make reasonable choices and say what you chose in the final message. Use today's date in Asia/Kuala_Lumpur (`TZ=Asia/Kuala_Lumpur date +%F`). Publish ONE reel per run.
 
 ## 1. Get the code
-- Attach the repo with push access (add_repo owner=`<OWNER>` repo=`<REPO>` access=push), clone it and work inside it.
+- Attach the repo with push access (add_repo owner=`nishant1004sharma` repo=`cwn-reels` access=push), clone it and work inside it.
 - `python3 -c "import PIL"` (install with `pip install --break-system-packages pillow` if missing); `ffmpeg -version` must work.
 
 ## 2. Pick the reel
@@ -36,7 +36,7 @@ You are running Nishant Sharma's automated reel pipeline for his YouTube channel
 
 ## 5. Host the video
 - `git add media/$ID.mp4 && git commit -m "Reel $ID" && git push`.
-- `MEDIA_URL=https://raw.githubusercontent.com/<OWNER>/<REPO>/main/media/$ID.mp4` (use the GitHub Pages URL instead if `PAGES_BASE` is noted below). Confirm it answers 200 with `curl -sIL`.
+- `MEDIA_URL=https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/main/media/$ID.mp4` (use the GitHub Pages URL instead if `PAGES_BASE` is noted below). Confirm it answers 200 with `curl -sIL`.
 
 ## 6. Post with Metricool
 - Use the Metricool connector: getBrandSettings for the brand's `blogId` and timezone, then ONE createScheduledPost for today at 22:30 Asia/Kuala_Lumpur (20:00 IST), `autoPublish: true`, `media: [MEDIA_URL]`, `text` = `post.caption` + blank line + hashtags, providers: youtube only (Instagram is on hold until Nishant connects it; add it only if getBrandSettings shows an Instagram network):
