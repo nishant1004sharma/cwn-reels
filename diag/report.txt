@@ -9,3 +9,9 @@ f06e8af Runbook: YouTube-only posting, Metricool field details
 f893462 Reel pipeline: bank of 10 Domain 1 reels, renderer, ElevenLabs narration, state tracking
 ## main...origin/main
 
+=== [2026-10-14T14:59:26Z] STEP: 2a. voice id env present
+CMD: env | grep -c ELEVENLABS_VOICE_ID
+EXIT: 1
+--- last 15 lines:
+0
+
