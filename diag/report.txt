@@ -21,3 +21,10 @@ EXIT: 56
 --- last 15 lines:
 000
 
+=== [2026-10-14T14:59:32Z] STEP: 2c. TTS test
+CMD: curl -s -w " %{http_code}" -X POST "https://api.elevenlabs.io/v1/text-to-speech/$ELEVENLABS_VOICE_ID?output_format=mp3_44100_128" -H "Content-Type: application/json" -d '{"text":"Testing one two three.","model_id":"eleven_v3"}' -o /tmp/t.mp3; ls -l /tmp/t.mp3; head -c 300 /tmp/t.mp3
+EXIT: 1
+--- last 15 lines:
+ 000ls: cannot access '/tmp/t.mp3': No such file or directory
+head: cannot open '/tmp/t.mp3' for reading: No such file or directory
+
