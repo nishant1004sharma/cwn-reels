@@ -54,7 +54,7 @@ STYLE = {
     "alert": (RED, TEXT),
     "stat": (AMBER, AMBER),
 }
-TAGS = {"myth": "MYTH", "fact": "FACT", "answer": "KEY POINT", "alert": "MISTAKE"}
+TAGS = {"myth": "MYTH", "fact": "FACT", "answer": "KEY POINT", "alert": "WARNING"}
 
 # series chip colours (creator-style series stand out from exam prep)
 def chip_colour(series):
