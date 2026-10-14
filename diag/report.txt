@@ -1,0 +1,11 @@
+=== [2026-10-14T14:59:17Z] STEP: 1. attach+clone (add_repo tool not exposed in this session; repo already in scope and pre-cloned at /home/claude/cwn-reels)
+CMD: git remote -v && git log --oneline -3 && git status -sb | head -1
+EXIT: 0
+--- last 15 lines:
+origin	https://github.com/nishant1004sharma/cwn-reels (fetch)
+origin	https://github.com/nishant1004sharma/cwn-reels (push)
+edb2cdf Runbook: point at nishant1004sharma/cwn-reels
+f06e8af Runbook: YouTube-only posting, Metricool field details
+f893462 Reel pipeline: bank of 10 Domain 1 reels, renderer, ElevenLabs narration, state tracking
+## main...origin/main
+
