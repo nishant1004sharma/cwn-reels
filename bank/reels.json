@@ -1,0 +1,240 @@
+{
+  "schema": "Each reel: say = spoken text for ElevenLabs (acronyms spelled as spaced letters, '...' for pauses, never say 'ISC2'); show = on-screen caption; card = big centre text; card_style = default|myth|fact|answer|formula; quiz = optional multiple choice, revealed at quiz.reveal (segment index, 0-based). Post copy never uses the word 'lecture'.",
+  "reels": [
+    {
+      "id": "D1-R01",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Code of ethics: the four canons",
+      "format": "scenario",
+      "source": "D1_L02_Professional_Ethics_script.md",
+      "hook": "Your boss says: hide the flaw.",
+      "segments": [
+        {"say": "Your boss asks you to hide a known safety flaw from customers. What does a C I S S P do?", "show": "Your boss asks you to hide a known safety flaw from customers. What does a CISSP do?", "card": "Hide the flaw?"},
+        {"say": "The code of ethics has four canons... in priority order.", "show": "The code of ethics has four canons, in priority order.", "card": "4 canons, in order"},
+        {"say": "One. Protect society, the common good, public trust, and the infrastructure.", "show": "1. Protect society, the common good, public trust and the infrastructure.", "card": "1 · Protect society"},
+        {"say": "Two. Act honorably, honestly, justly, responsibly, and legally.", "show": "2. Act honorably, honestly, justly, responsibly and legally.", "card": "2 · Act honorably"},
+        {"say": "Three. Provide diligent and competent service to principals... that's your employer.", "show": "3. Provide diligent and competent service to principals (your employer).", "card": "3 · Serve your employer"},
+        {"say": "Four. Advance and protect the profession.", "show": "4. Advance and protect the profession.", "card": "4 · Protect the profession"},
+        {"say": "Serving your employer is canon three. Protecting society is canon one... and the higher canon always wins. So you don't hide it.", "show": "Serving your employer is canon 3. Protecting society is canon 1. The higher canon wins, so you don't hide it.", "card": "Canon 1 wins", "card_style": "answer"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "Your boss says hide the flaw. What does a CISSP do? #Shorts",
+        "caption": "The CISSP code of ethics has four canons, applied in priority order. Protecting society (canon 1) beats serving your employer (canon 3). Learn the order for exam day.",
+        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#InfoSec", "#SecurityEthics", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R02",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Due care vs due diligence",
+      "format": "memory-trick",
+      "source": "D1_L04_Roles_Responsibilities_Due_Care_Due_Diligence_script.md",
+      "hook": "Due care vs due diligence",
+      "segments": [
+        {"say": "Due care, or due diligence? Most C I S S P candidates mix these up.", "show": "Due care or due diligence? Most CISSP candidates mix these up.", "card": "Care or diligence?"},
+        {"say": "Here's the trick.", "show": "Here's the trick.", "card": "The trick"},
+        {"say": "Due diligence is doing your homework... researching risks, assessing vendors, writing policies, and checking that controls work.", "show": "Due diligence is doing your homework: researching risks, assessing vendors, writing policies, checking controls work.", "card": "Diligence = homework", "card_style": "formula"},
+        {"say": "Due care is acting on it... putting controls in place, and acting like a reasonable person would. That's the prudent person rule.", "show": "Due care is acting on it: putting controls in place and acting like a reasonable person would (the prudent person rule).", "card": "Care = action", "card_style": "formula"},
+        {"say": "On the exam... investigate, assess, research? Due diligence.", "show": "On the exam: investigate, assess, research? Due diligence.", "card": "Assess → diligence"},
+        {"say": "Implement, maintain, enforce? Due care.", "show": "Implement, maintain, enforce? Due care.", "card": "Implement → care"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "Due care vs due diligence: the 5-second trick #Shorts",
+        "caption": "Due diligence = doing your homework (research, assess, plan). Due care = acting on it (implement, maintain, enforce). A favourite CISSP exam trap.",
+        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#GRC", "#RiskManagement", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R03",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "SLE, ARO and ALE worked example",
+      "format": "worked-example",
+      "source": "D1_L10_Risk_Management_I_Terms_Analysis_script.md",
+      "hook": "The one risk formula you must know",
+      "segments": [
+        {"say": "One formula every C I S S P must know. Let's do it in thirty seconds.", "show": "One formula every CISSP must know. Let's do it in 30 seconds.", "card": "SLE × ARO = ALE", "card_style": "formula"},
+        {"say": "A server is worth one hundred thousand dollars.", "show": "A server is worth $100,000.", "card": "Asset value: $100,000"},
+        {"say": "A flood would destroy forty percent of it. That's the exposure factor.", "show": "A flood would destroy 40% of it. That's the exposure factor.", "card": "Exposure factor: 40%"},
+        {"say": "So the single loss expectancy, S L E, is forty thousand dollars.", "show": "So the single loss expectancy (SLE) is $40,000.", "card": "SLE = $40,000", "card_style": "formula"},
+        {"say": "A flood is expected once every ten years. So the annualized rate of occurrence, A R O, is zero point one.", "show": "A flood is expected once every 10 years, so the annualized rate of occurrence (ARO) is 0.1.", "card": "ARO = 0.1", "card_style": "formula"},
+        {"say": "Annualized loss expectancy, A L E, equals S L E times A R O... four thousand dollars a year.", "show": "Annualized loss expectancy (ALE) = SLE × ARO = $4,000 a year.", "card": "ALE = $4,000 / year", "card_style": "answer"},
+        {"say": "So a safeguard against this flood should never cost more than four thousand dollars a year. Save this one.", "show": "A safeguard against this flood should never cost more than $4,000 a year. Save this one.", "card": "Safeguard ≤ $4,000 / yr"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "SLE × ARO = ALE in 30 seconds (CISSP risk math) #Shorts",
+        "caption": "$100,000 asset × 40% exposure factor = $40,000 SLE. × 0.1 ARO = $4,000 ALE. Never spend more per year on a safeguard than the annual loss it prevents.",
+        "hashtags": ["#CISSP", "#CISSPExam", "#RiskManagement", "#CyberSecurity", "#InfoSec", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R04",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Policy, standard, procedure, guideline",
+      "format": "quiz",
+      "source": "D1_L06_Policies_Standards_Procedures_Guidelines_script.md",
+      "hook": "Which document is optional?",
+      "quiz": {"question": "Which security document is optional?", "options": ["Policy", "Standard", "Procedure", "Guideline"], "answer": 3, "reveal": 2},
+      "segments": [
+        {"say": "Quick C I S S P question. Which security document is optional?", "show": "Quick CISSP question. Which security document is optional?"},
+        {"say": "A, policy. B, standard. C, procedure. Or D, guideline. Lock in your answer.", "show": "A) Policy  B) Standard  C) Procedure  D) Guideline. Lock in your answer."},
+        {"say": "It's D... guideline. Guidelines are recommendations. Everything else is mandatory.", "show": "It's D, guideline. Guidelines are recommendations. Everything else is mandatory."},
+        {"say": "Policies set direction, and senior management approves them.", "show": "Policies set direction, and senior management approves them.", "card": "Policy = direction"},
+        {"say": "Standards name exact technologies, like T L S one point two or higher.", "show": "Standards name exact technologies, like TLS 1.2 or higher.", "card": "Standard = specific"},
+        {"say": "Procedures are step-by-step instructions.", "show": "Procedures are step-by-step instructions.", "card": "Procedure = steps"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "Which security document is optional? CISSP quiz #Shorts",
+        "caption": "Policy, standard, procedure or guideline? Only guidelines are optional. Policies set direction, standards are specific, procedures are step by step.",
+        "hashtags": ["#CISSP", "#CISSPExam", "#CyberSecurity", "#GRC", "#SecurityPolicy", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R05",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "STRIDE threat model",
+      "format": "explainer",
+      "source": "D1_L07_Threat_Modeling_script.md",
+      "hook": "Think like an attacker: STRIDE",
+      "segments": [
+        {"say": "Six letters that make you think like an attacker. Stride... a threat model from Microsoft.", "show": "Six letters that make you think like an attacker: STRIDE, a threat model from Microsoft.", "card": "STRIDE", "card_style": "formula"},
+        {"say": "S, spoofing... pretending to be someone else.", "show": "S: Spoofing, pretending to be someone else.", "card": "S · Spoofing"},
+        {"say": "T, tampering... changing data without permission.", "show": "T: Tampering, changing data without permission.", "card": "T · Tampering"},
+        {"say": "R, repudiation... denying you did something.", "show": "R: Repudiation, denying you did something.", "card": "R · Repudiation"},
+        {"say": "I, information disclosure... exposing data.", "show": "I: Information disclosure, exposing data.", "card": "I · Info disclosure"},
+        {"say": "D, denial of service... blocking access.", "show": "D: Denial of service, blocking access.", "card": "D · Denial of service"},
+        {"say": "E, elevation of privilege... getting more rights than you should.", "show": "E: Elevation of privilege, getting more rights than you should.", "card": "E · Elevation of privilege"},
+        {"say": "Exam tip... threat model early, during design. That's when fixes are cheapest.", "show": "Exam tip: threat model early, during design. That's when fixes are cheapest.", "card": "Model early", "card_style": "answer"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "STRIDE threat modeling in 40 seconds #Shorts",
+        "caption": "Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege. Each one breaks a security goal. Threat model early, during design.",
+        "hashtags": ["#CISSP", "#ThreatModeling", "#STRIDE", "#AppSec", "#CyberSecurity", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R06",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "People controls against insider fraud",
+      "format": "myth-fact",
+      "source": "D1_L09_Personnel_Security_script.md",
+      "hook": "Can a firewall stop insider fraud?",
+      "segments": [
+        {"say": "Myth... a firewall stops insider fraud.", "show": "Myth: a firewall stops insider fraud.", "card": "Firewalls stop insider fraud", "card_style": "myth"},
+        {"say": "Fact... people controls do. Here are three the C I S S P exam loves.", "show": "Fact: people controls do. Here are three the CISSP exam loves.", "card": "People controls do", "card_style": "fact"},
+        {"say": "Separation of duties splits a critical task across two or more people... so fraud needs collusion.", "show": "Separation of duties splits a critical task across two or more people, so fraud needs collusion.", "card": "Separation of duties"},
+        {"say": "Job rotation moves people between roles... which exposes hidden fraud.", "show": "Job rotation moves people between roles, which exposes hidden fraud.", "card": "Job rotation"},
+        {"say": "Mandatory vacations make someone step away... while another person does their job.", "show": "Mandatory vacations make someone step away while another person does their job.", "card": "Mandatory vacations"},
+        {"say": "Exam tip... when someone is terminated, disable their access at the same time they're told.", "show": "Exam tip: when someone is terminated, disable their access at the same time they're told.", "card": "Disable access at notice", "card_style": "answer"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "3 controls that stop insider fraud (CISSP) #Shorts",
+        "caption": "Separation of duties, job rotation and mandatory vacations. People controls catch what firewalls can't. Bonus: disable access at the moment of termination.",
+        "hashtags": ["#CISSP", "#InsiderThreat", "#CyberSecurity", "#InfoSec", "#CISSPExam", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R07",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "MTD, RTO and RPO",
+      "format": "explainer",
+      "source": "D1_L12_Business_Continuity_Requirements_script.md",
+      "hook": "MTD vs RTO vs RPO",
+      "segments": [
+        {"say": "M T D, R T O, R P O... three acronyms, one simple rule.", "show": "MTD, RTO, RPO. Three acronyms, one simple rule.", "card": "MTD · RTO · RPO", "card_style": "formula"},
+        {"say": "Maximum tolerable downtime, M T D, is the longest the business can survive without a process.", "show": "Maximum tolerable downtime (MTD): the longest the business can survive without a process.", "card": "MTD = longest survivable outage"},
+        {"say": "Recovery time objective, R T O, is how fast you plan to bring it back.", "show": "Recovery time objective (RTO): how fast you plan to bring it back.", "card": "RTO = planned restore time"},
+        {"say": "Recovery point objective, R P O, is how much data you can afford to lose... measured in time since the last good backup.", "show": "Recovery point objective (RPO): how much data you can afford to lose, measured in time since the last good backup.", "card": "RPO = acceptable data loss"},
+        {"say": "The rule? R T O must always be shorter than M T D.", "show": "The rule: RTO must always be shorter than MTD.", "card": "RTO < MTD", "card_style": "answer"},
+        {"say": "And in every continuity plan... human safety comes first.", "show": "And in every continuity plan, human safety comes first.", "card": "People first"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "MTD vs RTO vs RPO, explained in 30 seconds #Shorts",
+        "caption": "MTD = longest the business survives without a process. RTO = how fast you restore it. RPO = how much data you can lose. Rule: RTO must be shorter than MTD.",
+        "hashtags": ["#CISSP", "#BusinessContinuity", "#DisasterRecovery", "#CyberSecurity", "#CISSPExam", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R08",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Risk responses",
+      "format": "quiz",
+      "source": "D1_L11_Risk_Management_II_Response_Controls_Monitoring_script.md",
+      "hook": "Never an acceptable risk response?",
+      "quiz": {"question": "Which risk response is never acceptable?", "options": ["Mitigate", "Transfer", "Accept", "Ignore"], "answer": 3, "reveal": 2},
+      "segments": [
+        {"say": "Which of these is never an acceptable risk response?", "show": "Which of these is never an acceptable risk response?"},
+        {"say": "A, mitigate. B, transfer. C, accept. Or D, ignore. Lock in your answer.", "show": "A) Mitigate  B) Transfer  C) Accept  D) Ignore. Lock in your answer."},
+        {"say": "It's D... ignore. Ignoring a risk is called rejection... and it's never acceptable.", "show": "It's D, ignore. Ignoring a risk is called rejection, and it's never acceptable."},
+        {"say": "Acceptance is fine... but management must formally agree to it.", "show": "Acceptance is fine, but management must formally agree to it.", "card": "Accept = formal sign-off"},
+        {"say": "And watch this trap. Cyber insurance transfers the cost... not the accountability.", "show": "Watch this trap: cyber insurance transfers the cost, not the accountability.", "card": "Transfer cost, not accountability", "card_style": "answer"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "The one risk response that's never acceptable #Shorts",
+        "caption": "Mitigate, transfer, deter, avoid or accept, but never ignore (rejection). And remember: insurance transfers the cost, not the accountability.",
+        "hashtags": ["#CISSP", "#RiskManagement", "#CyberSecurity", "#GRC", "#CISSPExam", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R09",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Patents, trade secrets, copyright, trademarks",
+      "format": "explainer",
+      "source": "D1_L13_Laws_Intellectual_Property_Export_Controls_script.md",
+      "hook": "Why not patent the secret recipe?",
+      "segments": [
+        {"say": "Why would a company never patent its most valuable recipe?", "show": "Why would a company never patent its most valuable recipe?", "card": "Patent it?"},
+        {"say": "Because patents expire. A patent protects an invention for twenty years from filing... then anyone can use it.", "show": "Because patents expire. A patent protects an invention for 20 years from filing. Then anyone can use it.", "card": "Patent = 20 years"},
+        {"say": "A trade secret needs no registration... and lasts as long as the secret is kept.", "show": "A trade secret needs no registration, and lasts as long as the secret is kept.", "card": "Trade secret = while it's secret", "card_style": "answer"},
+        {"say": "Copyright protects original works, like software code... and it's automatic.", "show": "Copyright protects original works, like software code, and it's automatic.", "card": "Copyright = automatic"},
+        {"say": "Trademarks protect names and logos. A U S registration lasts ten years... and can be renewed again and again.", "show": "Trademarks protect names and logos. A US registration lasts 10 years and can be renewed again and again.", "card": "Trademark = 10 yrs, renewable"},
+        {"say": "Exam tip... once a trade secret is disclosed, the protection is gone.", "show": "Exam tip: once a trade secret is disclosed, the protection is gone.", "card": "Disclosed = gone"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "Why companies keep recipes secret instead of patenting #Shorts",
+        "caption": "Patent: 20 years, then public. Trade secret: no registration, lasts while it stays secret. Copyright: automatic. Trademark: 10-year US registration, renewable.",
+        "hashtags": ["#CISSP", "#IntellectualProperty", "#CyberLaw", "#CyberSecurity", "#CISSPExam", "#Shorts"]
+      }
+    },
+    {
+      "id": "D1-R10",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Nonrepudiation and the five pillars",
+      "format": "quiz",
+      "source": "D1_L01_Welcome_to_Domain_1_Core_Security_Concepts_script.md",
+      "hook": "Prove they can't deny sending it",
+      "quiz": {"question": "How do you prove a sender can't deny sending a message?", "options": ["Encryption", "Hashing", "Access control", "Digital signature"], "answer": 3, "reveal": 2},
+      "segments": [
+        {"say": "Exam question. How do you prove a sender can't deny sending a message?", "show": "Exam question: how do you prove a sender can't deny sending a message?"},
+        {"say": "A, encryption. B, hashing. C, access control. Or D, a digital signature. Lock in your answer.", "show": "A) Encryption  B) Hashing  C) Access control  D) Digital signature. Lock in your answer."},
+        {"say": "It's D... a digital signature, combined with strong authentication. That's nonrepudiation.", "show": "It's D: a digital signature, combined with strong authentication. That's nonrepudiation."},
+        {"say": "The C I A triad is confidentiality, integrity, and availability.", "show": "The CIA triad: confidentiality, integrity and availability.", "card": "C · I · A"},
+        {"say": "The current exam outline adds authenticity and nonrepudiation... five pillars in total.", "show": "The current exam outline adds authenticity and nonrepudiation: five pillars in total.", "card": "+ Authenticity + Nonrepudiation", "card_style": "answer"},
+        {"say": "Follow for more C I S S P prep.", "show": "Follow for more CISSP prep.", "card": "Follow for more"}
+      ],
+      "post": {
+        "title": "Can they deny sending it? CISSP quiz #Shorts",
+        "caption": "Nonrepudiation = proof someone can't deny an action, usually a digital signature with strong authentication. The current exam outline lists five pillars: CIA + authenticity + nonrepudiation.",
+        "hashtags": ["#CISSP", "#CISSPExam", "#Cryptography", "#CyberSecurity", "#InfoSec", "#Shorts"]
+      }
+    }
+  ]
+}
