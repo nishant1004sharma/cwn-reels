@@ -69,3 +69,5 @@ EXIT: 0
 35:    voice = os.environ.get("ELEVENLABS_VOICE_ID")
 41:    body = {"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_v3")}
 
+=== [2026-10-14T14:59:55Z] RESULT: voice test produced no audio -> step 3 (tts/render/upload/Metricool) NOT run; nothing scheduled, state.py untouched.
+Causes: (1) ELEVENLABS_VOICE_ID and ELEVENLABS_API_KEY not set in this environment; (2) egress proxy answers 403 to CONNECT api.elevenlabs.io:443 (not on the environment's network allowlist).
