@@ -1,0 +1,11 @@
+{
+  "course_url": "https://www.udemy.com/course/cissp-exam-prep-domain-by-domain-2024-exam-outline/?couponCode=CISSPLAUNCH",
+  "description_line": "🎓 Full CISSP course on Udemy: {course_url}",
+  "cta": {
+    "say": "Want the full C I S S P course? It's on Udemy... link on my channel.",
+    "show": "Want the full CISSP course? It's on Udemy. Link on my channel.",
+    "card": "Full CISSP course|on Udemy · link on my channel",
+    "card_style": "stat"
+  },
+  "_note": "render/common.py swaps any closing 'Follow for more ...' segment for this CTA, and post_text.py adds description_line to every post. Don't promise a discount anywhere: the coupon can expire, and an expired coupon link still credits the sale but shows the normal price."
+}

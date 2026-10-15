@@ -10,6 +10,8 @@ with audio but no alignment, segments are spread across the audio by text length
 """
 import argparse, json, os, re, subprocess, sys
 from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageFilter
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common import load_reels
 
 W, H, FPS = 1080, 1920, 30
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -363,7 +365,7 @@ def main():
     ap.add_argument("--align")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
-    reels = {r["id"]: r for r in json.load(open(a.bank))["reels"]}
+    reels = load_reels(a.bank)
     if a.id not in reels: sys.exit(f"unknown reel id {a.id}")
     align = json.load(open(a.align)) if a.align and os.path.exists(a.align) else None
     total = render(reels[a.id], a.out, a.audio, align)

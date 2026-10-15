@@ -21,7 +21,7 @@ You are running Nishant Sharma's automated reel pipeline for his YouTube channel
   - 6 to 9 segments, 70 to 110 spoken words, 25 to 50 seconds.
   - `say` spells acronyms as spaced capitals (C I S S P, R T O), uses `...` for pauses, and never says "ISC2". `show` uses normal spelling.
   - Rotate formats (quiz, myth-fact, explainer, worked-example, memory-trick, scenario); never more than two of the same format in a row. Quiz reels: 4 options, `answer` index, `reveal` = 2, a "Lock in your answer" segment before the reveal.
-  - Last segment: "Follow for more C I S S P prep." (or the matching CEH / AI security line).
+  - Last segment: "Follow for more C I S S P prep." (or the matching CEH / AI security line). The scripts automatically swap it for the Udemy course call to action in `config.json`, so don't write a course plug yourself and never promise a discount or price.
   - Post copy: title ends with ` #Shorts`, no word "lecture", 5 to 6 hashtags.
   - Hacking / CEH content stays educational and defensive: what an attack is, how to detect or prevent it. No step-by-step exploitation, no payloads, no live targets.
   - Ids continue the pattern (D2-R01, D2-R02, ..., CEH-R01, AI-R01).
@@ -40,8 +40,9 @@ You are running Nishant Sharma's automated reel pipeline for his YouTube channel
 - `MEDIA_URL=https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/main/media/$ID.mp4` (use the GitHub Pages URL instead if `PAGES_BASE` is noted below). Confirm it answers 200 with `curl -sIL`.
 
 ## 6. Post with Metricool
-- Use the Metricool connector: getBrandSettings for the brand's `blogId` and timezone, then ONE createScheduledPost for today at 11:00 Asia/Kuala_Lumpur (08:30 IST), `autoPublish: true`, `media: [MEDIA_URL]`, `text` = `post.caption` + blank line + hashtags, providers: youtube only (Instagram is on hold until Nishant connects it; add it only if getBrandSettings shows an Instagram network):
-  - `youtubeData`: type "short", title = `post.title`, privacy "public", madeForKids false, category "EDUCATION", isAiGeneratedContent true (the narration is a synthetic clone of his voice), tags = hashtags without `#`.
+- Get the post fields: `python3 render/post_text.py --id $ID` prints JSON with `title`, `text` and `tags`. Use `text` exactly as given: it holds the caption, the Udemy course link line and the hashtags.
+- Use the Metricool connector: getBrandSettings for the brand's `blogId` and timezone, then ONE createScheduledPost for today at 11:00 Asia/Kuala_Lumpur (08:30 IST), `autoPublish: true`, `media: [MEDIA_URL]`, `text` = that `text`, providers: youtube only (Instagram is on hold until Nishant connects it; add it only if getBrandSettings shows an Instagram network):
+  - `youtubeData`: type "short", title = that `title`, privacy "public", madeForKids false, category "EDUCATION", isAiGeneratedContent true (the narration is a synthetic clone of his voice; keep this on), tags = that `tags`.
   - If Instagram is connected: `instagramData`: type "REEL", showReelOnFeed true, isAiGenerated true.
 - If 11:00 has already passed, schedule 30 minutes from now.
 - If Metricool rejects the media, a network, or the plan's monthly post limit, report it and stop without recording the reel as posted.

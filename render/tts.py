@@ -13,6 +13,8 @@ Writes <id>.mp3 and, when the API returns timestamps, <id>.align.json.
 Uses the voice's saved settings (no voice_settings override).
 """
 import argparse, base64, json, os, sys, urllib.error, urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common import load_reels
 
 API = "https://api.elevenlabs.io/v1/text-to-speech/{voice}{suffix}?output_format=mp3_44100_128"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,7 +37,7 @@ def main():
     voice = os.environ.get("ELEVENLABS_VOICE_ID")
     if not voice:
         sys.exit("ELEVENLABS_VOICE_ID is not set")
-    reels = {r["id"]: r for r in json.load(open(a.bank))["reels"]}
+    reels = load_reels(a.bank)
     reel = reels[a.id]
     text = " ".join(s["say"] for s in reel["segments"])
     body = {"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_v3")}
