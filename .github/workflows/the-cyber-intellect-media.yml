@@ -32,6 +32,9 @@ jobs:
       - name: Render portrait images and MP4 motion-graphic reels
         run: |
           LATEST=$(find the-cyber-intellect/content -maxdepth 1 -name '*.json' | sort | tail -n 1)
+          if [ -f the-cyber-intellect/content/2026-10-23-reels.json ] && [ ! -f the-cyber-intellect/media/2026-10-23-reels/02.mp4 ]; then
+            LATEST=the-cyber-intellect/content/2026-10-23-reels.json
+          fi
           echo "Rendering: $LATEST"
           python the-cyber-intellect/render.py "$LATEST"
           python the-cyber-intellect/render_reels.py "$LATEST"
