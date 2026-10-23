@@ -75,13 +75,13 @@ def scene(post, idx, total, date):
 def run(args):
     subprocess.run(args,check=True,stdout=subprocess.DEVNULL)
 
-def render_one(post, date, n):
+def render_one(post, date, n, prefix=''):
     bullets=post.get("bullets",[])[:3]
     post={**post,"bullets":bullets}
     scenes=len(bullets)+2
     folder=ROOT/"media"/date
     folder.mkdir(parents=True,exist_ok=True)
-    output=folder/f"{n:02d}.mp4"
+    output=folder/f"{prefix}{n:02d}.mp4"
     with tempfile.TemporaryDirectory() as tmp:
         temp=Path(tmp)
         clips=[]
@@ -104,10 +104,12 @@ def main():
     for name in sys.argv[1:]:
         path=Path(name)
         content=json.loads(path.read_text(encoding="utf-8"))
-        for i,post in enumerate(content["posts"][:3],1):
+        reels=content.get("reels",content.get("posts",[]))
+        prefix="reel-" if "reels" in content else ""
+        for i,post in enumerate(reels[:4],1):
             if not post.get("title") or not post.get("sources"):
                 raise ValueError("Every Reel needs title and source URLs")
-            render_one(post,path.stem,i)
+            render_one(post,path.stem,i,prefix)
 
 if __name__=="__main__":
     main()
