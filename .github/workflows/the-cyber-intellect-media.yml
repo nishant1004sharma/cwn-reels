@@ -41,8 +41,10 @@ jobs:
             LATEST=$(find the-cyber-intellect/content -maxdepth 1 -name '*.json' | sort | tail -n 1)
           fi
           echo "Rendering narrated motion-graphics reels from: $LATEST"
-          python the-cyber-intellect/render_live.py "$LATEST"
           if [ -f "$LATEST" ]; then python the-cyber-intellect/render.py "$LATEST"; fi
+          # Voice videos are editorial drafts pending creative quality approval.
+          # Do not let voice rendering failure suppress finished feed graphics.
+          python the-cyber-intellect/render_live.py "$LATEST" || echo "WARN: voiced Reel rendering failed; image posts remain available"
           if [ "$LATEST" = "$PRIORITY" ]; then
             test -s the-cyber-intellect/media/2026-10-23-reels/voice-01.mp4
             test -s the-cyber-intellect/media/2026-10-23-reels/voice-02.mp4
