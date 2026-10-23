@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "category": "BREAKING CYBER NEWS",
+      "title": "PHP2Shell: 2 critical flaws, 1 urgent patch",
+      "bullets": [
+        "CVE-2026-109618 and CVE-2026-109619 affect PHP request handling. Both score 9.2 under CVSS 4.0.",
+        "Unauthenticated attackers may achieve remote code execution on exposed vulnerable PHP systems.",
+        "Fixed PHP releases: 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Check vendor backports for packaged versions."
+      ],
+      "takeaway": "Find exposed PHP systems, apply vendor fixes, restart services and verify versions.",
+      "caption": "🚨 PHP2Shell: two critical PHP request-handling vulnerabilities, CVE-2026-109618 and CVE-2026-109619, were disclosed on 21 October 2026. They can enable unauthenticated remote code execution on vulnerable systems. Prioritize internet-facing PHP deployments and apply the relevant upstream or distribution security updates. Verify the running service after patching.\n\nSources: Ubuntu Security (21 Oct 2026), NHS England CSOC (21 Oct 2026).\n\n#PHP2Shell #PHP #CVE #CyberSecurity #AppSec #PatchManagement #TheCyberIntellect",
+      "sources": [
+        "https://ubuntu.com/blog/php2shell-vulnerability-fixes-available",
+        "https://digital.nhs.uk/cyber-alerts/2026/cc-4875"
+      ]
+    },
+    {
+      "category": "AI SECURITY EXPLAINED",
+      "title": "Can a web page hijack your AI agent?",
+      "bullets": [
+        "An agent reads a web page or support ticket. Hidden text tells it to ignore its original task.",
+        "If the agent trusts those instructions, it might misuse connected tools or expose sensitive data.",
+        "OWASP calls this prompt injection. The 2026 guidance also highlights excessive agency and tool misuse."
+      ],
+      "takeaway": "Treat retrieved text as data. Limit tool permissions and require approval for risky actions.",
+      "caption": "🤖 Your AI agent may be helpful. But can it tell trusted instructions from attacker-controlled web content?\n\nPrompt injection happens when malicious instructions arrive through untrusted input, such as a page, document, ticket or tool result. A connected agent with broad permissions can turn a bad instruction into a real-world action. Use least-privilege tools, approval gates and strong audit logs.\n\nSource: OWASP GenAI Security Project, 2026 Top 10 and Prompt Injection guidance.\n\n#AISecurity #PromptInjection #AgenticAI #OWASP #CyberSecurity #TheCyberIntellect",
+      "sources": [
+        "https://genai.owasp.org/glossaries/prompt-injection/",
+        "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/"
+      ]
+    }
+  ]
+}
