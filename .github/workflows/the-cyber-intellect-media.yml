@@ -5,12 +5,15 @@ on:
     paths:
       - 'the-cyber-intellect/content/*.json'
       - 'the-cyber-intellect/render.py'
+      - 'the-cyber-intellect/render_reels.py'
       - '.github/workflows/the-cyber-intellect-media.yml'
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -18,17 +21,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install Pillow
-        run: python -m pip install 'Pillow>=11,<13'
-      - name: Render all editorial JSON
+      - name: Install Pillow and FFmpeg
+        run: |
+          python -m pip install 'Pillow>=11,<13'
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Render portrait images and MP4 motion-graphic reels
         run: |
           python the-cyber-intellect/render.py the-cyber-intellect/content/*.json
-      - name: Commit generated images
+          python the-cyber-intellect/render_reels.py the-cyber-intellect/content/*.json
+      - name: Commit generated media
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add the-cyber-intellect/media/
           if ! git diff --cached --quiet; then
-            git commit -m "Render Cyber Intellect social media images"
+            git commit -m "Render Cyber Intellect Instagram Reels and images"
             git push
           fi
