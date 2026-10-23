@@ -18,7 +18,7 @@ CYAN = (52,225,214)
 WHITE = (242,249,255)
 MUTED = (164,191,205)
 FPS=24
-SECONDS=4
+SECONDS=6
 
 def font(n, bold=False):
     return ImageFont.truetype(BOLD if bold else FONT,n)
