@@ -32,13 +32,21 @@ jobs:
           sudo apt-get install -y ffmpeg espeak-ng
       - name: Render portrait images and MP4 motion-graphic reels
         run: |
-          LATEST=$(find the-cyber-intellect/content -maxdepth 1 -name '*.json' | sort | tail -n 1)
-          if [ -f the-cyber-intellect/content/2026-10-23-reels.json ] && [ ! -f the-cyber-intellect/media/2026-10-23-reels/02.mp4 ]; then
-            LATEST=the-cyber-intellect/content/2026-10-23-reels.json
+          set -euo pipefail
+          PRIORITY="the-cyber-intellect/content/2026-10-23-reels.json"
+          # The earlier silent 01.mp4/02.mp4 files do NOT satisfy the voiced deliverable.
+          if [ -f "$PRIORITY" ] && { [ ! -s the-cyber-intellect/media/2026-10-23-reels/voice-01.mp4 ] || [ ! -s the-cyber-intellect/media/2026-10-23-reels/voice-02.mp4 ]; }; then
+            LATEST="$PRIORITY"
+          else
+            LATEST=$(find the-cyber-intellect/content -maxdepth 1 -name '*.json' | sort | tail -n 1)
           fi
-          echo "Rendering: $LATEST"
-          python the-cyber-intellect/render.py "$LATEST"
+          echo "Rendering narrated motion-graphics reels from: $LATEST"
           python the-cyber-intellect/render_live.py "$LATEST"
+          if [ -f "$LATEST" ]; then python the-cyber-intellect/render.py "$LATEST"; fi
+          if [ "$LATEST" = "$PRIORITY" ]; then
+            test -s the-cyber-intellect/media/2026-10-23-reels/voice-01.mp4
+            test -s the-cyber-intellect/media/2026-10-23-reels/voice-02.mp4
+          fi
       - name: Commit generated media
         run: |
           git config user.name "github-actions[bot]"
