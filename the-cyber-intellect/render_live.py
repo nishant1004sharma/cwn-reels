@@ -95,7 +95,7 @@ def render(post,day,n,prefix):
     count=len(post["bullets"])+2
     duration=count*SCENE_SEC
     folder=ROOT/"media"/day;folder.mkdir(parents=True,exist_ok=True)
-    output=folder/f"{prefix}{n:02d}.mp4"
+    output=folder/f"voice-{prefix}{n:02d}.mp4"
     with tempfile.TemporaryDirectory() as tempdir:
         td=Path(tempdir);silent=td/"silent.mp4";speech=td/"speech.mp3";voice=speak(narration(post),speech)
         cmd=["ffmpeg","-hide_banner","-loglevel","error","-y","-f","rawvideo","-vcodec","rawvideo","-s",f"{W}x{H}","-pix_fmt","rgb24","-r",str(FPS),"-i","-","-c:v","libx264","-preset","ultrafast","-crf","27","-pix_fmt","yuv420p","-movflags","+faststart",str(silent)]
