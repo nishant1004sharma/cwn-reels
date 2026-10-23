@@ -13,10 +13,10 @@ ROOT = Path(__file__).resolve().parent
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 W,H = 720,1280
-BG = (7,19,33)
-CYAN = (52,225,214)
-WHITE = (242,249,255)
-MUTED = (164,191,205)
+BG = (249,252,255)
+CYAN = (0,143,164)
+WHITE = (23,47,71)
+MUTED = (82,112,136)
 FPS=24
 SECONDS=6
 
@@ -44,15 +44,15 @@ def scene(post, idx, total, date):
     image=Image.new("RGB",(W,H),BG)
     d=ImageDraw.Draw(image)
     for y in range(H):
-        d.line((0,y,W,y),fill=(7+y//180,19+y//110,33+y//85))
-    d.rounded_rectangle((34,40,686,1234),radius=30,outline=(33,82,103),width=3)
-    d.rounded_rectangle((58,65,436,121),radius=16,fill=(17,60,74))
+        d.line((0,y,W,y),fill=(min(255,247+y//260),min(255,251+y//350),255))
+    d.rounded_rectangle((34,40,686,1234),radius=30,outline=(197,224,234),width=3)
+    d.rounded_rectangle((58,65,436,121),radius=16,fill=(221,248,250))
     d.text((77,80),"THE CYBER INTELLECT",font=font(22,True),fill=CYAN)
     d.text((59,156),post.get("category","CYBER INTELLIGENCE").upper()[:34],font=font(21,True),fill=CYAN)
     if idx==0:
         d.text((58,256),"THE BIG STORY",font=font(28,True),fill=MUTED)
         put(d,post["title"],58,335,font(56,True),WHITE,600,5,1.22)
-        d.rounded_rectangle((58,905,661,1020),radius=22,fill=(19,65,81))
+        d.rounded_rectangle((58,905,661,1020),radius=22,fill=(226,245,252))
         put(d,"Here's what you need to know",83,934,font(26,True),WHITE,550,2)
     elif idx<=len(post.get("bullets",[])):
         bullet=post["bullets"][idx-1]
@@ -60,14 +60,14 @@ def scene(post, idx, total, date):
         d.ellipse((90,355,236,501),outline=CYAN,width=9)
         d.text((139,389),str(idx),font=font(59,True),fill=WHITE)
         d.line((164,505,164,622),fill=CYAN,width=7)
-        d.rounded_rectangle((58,624,661,978),radius=24,fill=(17,49,66),outline=(40,99,114),width=2)
+        d.rounded_rectangle((58,624,661,978),radius=24,fill=(237,247,251),outline=(191,223,233),width=2)
         put(d,bullet,82,688,font(38,True),WHITE,548,5,1.32)
     else:
         d.text((58,270),"WHAT TO DO NEXT",font=font(33,True),fill=CYAN)
-        d.rounded_rectangle((58,410,661,760),radius=25,fill=(18,66,79))
+        d.rounded_rectangle((58,410,661,760),radius=25,fill=(222,247,242))
         put(d,post.get("takeaway","Stay informed and verify sources."),82,482,font(41,True),WHITE,540,5,1.3)
         d.text((59,858),"FOLLOW FOR DAILY CYBER INTELLIGENCE",font=font(21,True),fill=CYAN)
-    d.line((58,1122,661,1122),fill=(40,110,125),width=3)
+    d.line((58,1122,661,1122),fill=(178,217,227),width=3)
     d.text((58,1150),"@thecyberintellect",font=font(24,True),fill=WHITE)
     d.text((58,1190),f"{date}   •   {idx+1}/{total}",font=font(19),fill=MUTED)
     return image
