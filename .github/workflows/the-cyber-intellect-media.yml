@@ -8,6 +8,9 @@ on:
       - 'the-cyber-intellect/render_reels.py'
       - '.github/workflows/the-cyber-intellect-media.yml'
   workflow_dispatch:
+concurrency:
+  group: cyber-intellect-media-main
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -39,5 +42,6 @@ jobs:
           git add the-cyber-intellect/media/
           if ! git diff --cached --quiet; then
             git commit -m "Render Cyber Intellect Instagram Reels and images"
+            git pull --rebase origin main
             git push
           fi
