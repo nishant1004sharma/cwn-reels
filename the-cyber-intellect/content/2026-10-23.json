@@ -9,8 +9,9 @@
         "Fixed upstream releases include PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35."
       ],
       "takeaway": "Inventory PHP hosts and containers, patch and redeploy.",
-      "caption": "Two critical PHP engine vulnerabilities require urgent attention. Check exposed PHP runtimes, update distribution packages or upstream PHP versions, rebuild container images, and verify services restarted. These are runtime flaws, not issues solved by a framework update. Source: GitLab Security Labs and PHP project. #CyberSecurity #PHP #VulnerabilityManagement #AppSec",
+      "caption": "🚨 PHP2Shell: the PHP project released fixes on 21 October for CVE-2026-109618 and CVE-2026-109619, two critical PHP-engine vulnerabilities that may enable unauthenticated remote code execution. Fixed upstream versions: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Audit internet-facing PHP runtimes, rebuild affected containers and deploy supported security updates. PHP2Shell is not a GitLab vulnerability. Sources: PHP project and GitLab Security Labs. #PHP #CyberSecurity #AppSec #VulnerabilityManagement",
       "sources": [
+        "https://www.php.net/archive/2026.php#2026-10-21-5",
         "https://about.gitlab.com/blog/gitlab-helps-remediate-critical-php-flaws/"
       ]
     },
@@ -18,28 +19,28 @@
       "category": "GITLAB SECURITY UPDATE",
       "title": "GitLab issued a critical patch release",
       "bullets": [
-        "GitLab announced a critical patch release on 21 October 2026.",
-        "Updated release lines include 19.5.1, 19.4.3 and 19.3.6.",
-        "Self-managed administrators should review the advisory for their affected version."
+        "On 21 October, GitLab announced a critical security patch release.",
+        "Patched versions include 19.5.1, 19.4.3 and 19.3.6, with additional supported lines.",
+        "Self-managed admins should check the release advisory for the correct upgrade path."
       ],
       "takeaway": "Check your GitLab deployment and plan a verified update.",
-      "caption": "GitLab's October 21 critical patch release deserves a place in your patch review. Identify your deployed version, read the official advisory and prioritize upgrades based on exposure and business impact. #GitLab #DevSecOps #CyberSecurity #PatchManagement",
+      "caption": "🔐 GitLab announced a critical patch release on 21 October 2026. Published versions include 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10 and 18.11.13. Check your deployed release against GitLab's official advisory and upgrade the appropriate supported line. Source: GitLab release archive. #GitLab #DevSecOps #PatchManagement #CyberSecurity",
       "sources": [
-        "https://about.gitlab.com/blog/"
+        "https://about.gitlab.com/blog/archive/"
       ]
     },
     {
       "category": "AI SECURITY GOVERNANCE",
-      "title": "AI agents need oversight, not blind trust",
+      "title": "GitLab beta tracks AI agent activity",
       "bullets": [
-        "Agentic workflows can act across developer tools and systems.",
-        "Permissions, secrets and actions need consistent governance.",
-        "Visibility into agent activity helps security teams investigate risky behavior."
+        "GitLab announced an AI Governance Dashboard beta on 20 October.",
+        "The dashboard links agent activity to users, sessions and projects.",
+        "Audit-event storage is off by default and requires activation."
       ],
-      "takeaway": "Limit agent privileges, log actions and review access.",
-      "caption": "AI agents can increase delivery speed, but permissions and auditability remain essential. Start with least privilege, approval gates for sensitive actions, secrets isolation and activity monitoring. #AISecurity #AgenticAI #CyberSecurity #Governance",
+      "takeaway": "Inventory agent tools and enable auditable oversight.",
+      "caption": "🤖 AI agent governance is becoming an operational requirement. On 20 October, GitLab described its beta AI Governance Dashboard for viewing agent activity across its platform and connected tools. The dashboard can associate agents with sessions, projects and users. Important: AI audit-event storage must be enabled to capture events. Takeaway: govern identities, tool access and logs before scaling agentic development. Source: GitLab. #AISecurity #AgenticAI #DevSecOps #Governance",
       "sources": [
-        "https://about.gitlab.com/blog/"
+        "https://about.gitlab.com/blog/ai-governance-dashboard/"
       ]
     }
   ]
