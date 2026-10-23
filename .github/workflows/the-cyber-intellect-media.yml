@@ -1,0 +1,34 @@
+name: The Cyber Intellect media renderer
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'the-cyber-intellect/content/*.json'
+      - 'the-cyber-intellect/render.py'
+      - '.github/workflows/the-cyber-intellect-media.yml'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Pillow
+        run: python -m pip install 'Pillow>=11,<13'
+      - name: Render all editorial JSON
+        run: |
+          python the-cyber-intellect/render.py the-cyber-intellect/content/*.json
+      - name: Commit generated images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add the-cyber-intellect/media/
+          if ! git diff --cached --quiet; then
+            git commit -m "Render Cyber Intellect social media images"
+            git push
+          fi
