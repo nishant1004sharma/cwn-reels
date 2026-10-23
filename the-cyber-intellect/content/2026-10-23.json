@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "category": "CRITICAL PHP VULNERABILITIES",
+      "title": "PHP2Shell: patch your runtime now",
+      "bullets": [
+        "CVE-2026-109618 and CVE-2026-109619 can enable unauthenticated remote code execution.",
+        "The PHP project issued fixes on 21 October 2026.",
+        "Fixed upstream releases include PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35."
+      ],
+      "takeaway": "Inventory PHP hosts and containers, patch and redeploy.",
+      "caption": "Two critical PHP engine vulnerabilities require urgent attention. Check exposed PHP runtimes, update distribution packages or upstream PHP versions, rebuild container images, and verify services restarted. These are runtime flaws, not issues solved by a framework update. Source: GitLab Security Labs and PHP project. #CyberSecurity #PHP #VulnerabilityManagement #AppSec",
+      "sources": [
+        "https://about.gitlab.com/blog/gitlab-helps-remediate-critical-php-flaws/"
+      ]
+    },
+    {
+      "category": "GITLAB SECURITY UPDATE",
+      "title": "GitLab issued a critical patch release",
+      "bullets": [
+        "GitLab announced a critical patch release on 21 October 2026.",
+        "Updated release lines include 19.5.1, 19.4.3 and 19.3.6.",
+        "Self-managed administrators should review the advisory for their affected version."
+      ],
+      "takeaway": "Check your GitLab deployment and plan a verified update.",
+      "caption": "GitLab's October 21 critical patch release deserves a place in your patch review. Identify your deployed version, read the official advisory and prioritize upgrades based on exposure and business impact. #GitLab #DevSecOps #CyberSecurity #PatchManagement",
+      "sources": [
+        "https://about.gitlab.com/blog/"
+      ]
+    },
+    {
+      "category": "AI SECURITY GOVERNANCE",
+      "title": "AI agents need oversight, not blind trust",
+      "bullets": [
+        "Agentic workflows can act across developer tools and systems.",
+        "Permissions, secrets and actions need consistent governance.",
+        "Visibility into agent activity helps security teams investigate risky behavior."
+      ],
+      "takeaway": "Limit agent privileges, log actions and review access.",
+      "caption": "AI agents can increase delivery speed, but permissions and auditability remain essential. Start with least privilege, approval gates for sensitive actions, secrets isolation and activity monitoring. #AISecurity #AgenticAI #CyberSecurity #Governance",
+      "sources": [
+        "https://about.gitlab.com/blog/"
+      ]
+    }
+  ]
+}
