@@ -13,7 +13,8 @@
       "sources": [
         "https://ubuntu.com/blog/php2shell-vulnerability-fixes-available",
         "https://digital.nhs.uk/cyber-alerts/2026/cc-4875"
-      ]
+      ],
+      "voiceover": "Two critical PHP vulnerabilities are raising urgent questions for security teams. Vulnerable, exposed services may allow attackers to run code remotely. First, identify where PHP is running, especially on internet-facing systems. Next, check the PHP and distribution security advisories and apply the appropriate fix. Restart affected services, verify the running version, and confirm the vulnerability is closed. Patching is only complete when you validate the result."
     },
     {
       "category": "AI SECURITY EXPLAINED",
@@ -28,7 +29,8 @@
       "sources": [
         "https://genai.owasp.org/glossaries/prompt-injection/",
         "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/"
-      ]
+      ],
+      "voiceover": "Imagine your AI assistant reading a web page to answer a question. Hidden in that page is an instruction telling the agent to ignore the user and misuse its tools. That's prompt injection: untrusted content pretending to be an instruction. The defense is to treat retrieved text as data, limit tool permissions, require approval for sensitive actions, and keep useful audit logs. Never let a web page become your agent's boss."
     }
   ]
 }
