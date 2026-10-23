@@ -28,8 +28,10 @@ jobs:
           sudo apt-get install -y ffmpeg
       - name: Render portrait images and MP4 motion-graphic reels
         run: |
-          python the-cyber-intellect/render.py the-cyber-intellect/content/*.json
-          python the-cyber-intellect/render_reels.py the-cyber-intellect/content/*.json
+          LATEST=$(find the-cyber-intellect/content -maxdepth 1 -name '*.json' | sort | tail -n 1)
+          echo "Rendering: $LATEST"
+          python the-cyber-intellect/render.py "$LATEST"
+          python the-cyber-intellect/render_reels.py "$LATEST"
       - name: Commit generated media
         run: |
           git config user.name "github-actions[bot]"
