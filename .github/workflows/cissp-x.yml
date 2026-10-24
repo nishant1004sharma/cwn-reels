@@ -1,10 +1,7 @@
 name: CISSP Short on X
 # After the weekday reel routine records a posted reel, schedule it on X via Typefully with the Udemy link in a reply.
+# Paused (manual only): the Typefully free plan's ~10 posts a month are kept for the news runs.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'state/published.json'
   workflow_dispatch:
 concurrency:
   group: cissp-x

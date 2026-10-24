@@ -49,7 +49,6 @@ You are running Nishant Sharma's automated reel pipeline for his YouTube channel
 
 ## 7. Record and tidy
 - `python3 render/state.py done $ID $MEDIA_URL "YouTube+Instagram scheduled <time>"`, commit and push.
-- Pushing `state/published.json` triggers the "CISSP Short on X" workflow (`render/x_post.py`), which schedules the same reel on X @CISMNishant via Typefully at 11:05 KL with the Udemy course link in a reply. Nothing to do for it here; don't delete today's mp4.
 - Remove `media/*.mp4` for reels posted more than 30 days ago (the platforms keep their own copies), commit and push.
 
 ## Final message

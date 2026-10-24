@@ -89,6 +89,9 @@ def main():
             if not m:
                 result["skipped"][iid] = "not rendered"
                 continue
+            if it.get("x") is not True:          # Typefully free plan: ~10 posts/month, so only items marked "x": true go to X
+                result["skipped"][iid] = "not marked for X"
+                continue
             if iid in existing:
                 result["skipped"][iid] = "already scheduled"
                 continue
