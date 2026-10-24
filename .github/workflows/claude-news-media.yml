@@ -1,0 +1,52 @@
+name: Claude news media
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'claude-news/content/*.json'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'content file, e.g. claude-news/content/2026-10-24-pm.json'
+        required: true
+concurrency:
+  group: claude-news-media
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          python -m pip install -q 'Pillow>=11,<13' edge-tts
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Pick content file
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.file }}" ]; then
+            F="${{ github.event.inputs.file }}"
+          else
+            F=$(git diff --name-only HEAD~1 HEAD -- 'claude-news/content/*.json' | sort | tail -n 1)
+          fi
+          test -n "$F" && test -f "$F"
+          echo "file=$F" >> "$GITHUB_OUTPUT"
+          echo "Rendering $F"
+      - name: Render images and voiced reels
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
+          EDGE_VOICE: ${{ vars.EDGE_VOICE }}
+        run: python claude-news/render_all.py "${{ steps.pick.outputs.file }}" --out out
+      - name: Publish to claude-news-media branch
+        run: |
+          bash claude-news/publish_media.sh out "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
