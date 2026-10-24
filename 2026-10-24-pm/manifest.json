@@ -1,0 +1,79 @@
+{
+  "run": "2026-10-24-pm",
+  "items": {
+    "2026-10-24-pm-01": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 46.1,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-01/reel.mp4"
+      ]
+    },
+    "2026-10-24-pm-02": {
+      "kind": "carousel",
+      "files": [
+        "slide-01.jpg",
+        "slide-02.jpg",
+        "slide-03.jpg",
+        "slide-04.jpg",
+        "slide-05.jpg",
+        "slide-06.jpg",
+        "slide-07.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-01.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-02.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-03.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-04.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-05.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-06.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-02/slide-07.jpg"
+      ]
+    },
+    "2026-10-24-pm-03": {
+      "kind": "card",
+      "files": [
+        "card.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-03/card.jpg"
+      ]
+    },
+    "2026-10-24-pm-04": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 38.6,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-04/reel.mp4"
+      ]
+    },
+    "2026-10-24-pm-05": {
+      "kind": "carousel",
+      "files": [
+        "slide-01.jpg",
+        "slide-02.jpg",
+        "slide-03.jpg",
+        "slide-04.jpg",
+        "slide-05.jpg",
+        "slide-06.jpg",
+        "slide-07.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-01.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-02.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-03.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-04.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-05.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-06.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-24-pm/2026-10-24-pm-05/slide-07.jpg"
+      ]
+    }
+  },
+  "errors": {}
+}
