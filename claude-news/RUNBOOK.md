@@ -40,7 +40,7 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 ## 4. Render (GitHub Actions)
 - Commit only the run file (`git add claude-news/content/$DATE-$RUN.json`), message "News run $DATE $RUN", `git pull --rebase origin main`, `git push`. The push triggers the workflow "Claude news media", which renders the cards and voiced reels (Nishant's ElevenLabs voice when the repo secrets exist, otherwise a neural voice) and publishes them to the `claude-news-media` branch.
 - Wait for it: `gh run list -R nishant1004sharma/cwn-reels --workflow claude-news-media.yml -L 3` until the run for your commit completes (check every 30 s, up to 20 minutes). If it fails, read `gh run view <id> --log-failed`, fix the content if that's the cause, push again once, and wait again.
-- Fetch the manifest: `curl -sSL https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/$DATE-$RUN/manifest.json -o /tmp/manifest.json`. Check every media URL answers 200 (`curl -sIL`).
+- Fetch the manifest through the API (the raw CDN can serve a stale copy after a re-render): `gh api "repos/nishant1004sharma/cwn-reels/contents/$DATE-$RUN/manifest.json?ref=claude-news-media" -H "Accept: application/vnd.github.raw" > /tmp/manifest.json`. Items listed under `errors` were not rendered: drop them. Check every media URL answers 200 (`curl -sIL`).
 - Look at the media: download each item's first image (or a frame at 3 s of each reel with ffmpeg) and view it. Text must not be clipped or overlapping. If one item is broken, drop just that item.
 
 ## 5. Schedule in Metricool
@@ -49,7 +49,7 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 - Confirm with `getScheduledPosts` for today: each of our posts is there, pending, at its slot.
 
 ## 6. Record
-- Append one entry per scheduled story to `claude-news/state/posted.json` `posted` list: `{"story_key", "id", "date", "slot", "kind", "networks": [...], "voice": manifest voice or null, "title": cover hook or reel hook}`. Keep only the last 30 days of entries. Commit "Record news run $DATE $RUN", pull --rebase, push.
+- Append one entry per scheduled story to `claude-news/state/posted.json` `posted` list: `{"story_key", "id", "date", "slot", "kind", "networks": [...], "voice": manifest voice or null, "title": cover hook or reel hook, "metricool_ids": {network: post id}}`. Keep only the last 30 days of entries. Commit "Record news run $DATE $RUN", pull --rebase, push.
 
 ## Final message
 Short bullets: the 5 stories (time, format, hook), networks posted, voice used for reels, anything skipped or failed in one line each.

@@ -34,7 +34,17 @@ CATEGORY_COLOUR = {
 
 
 def colour_for(category):
-    return CATEGORY_COLOUR.get((category or "").upper(), ACCENT)
+    c = (category or "").upper()
+    if c in CATEGORY_COLOUR:
+        return CATEGORY_COLOUR[c]
+    words = c.replace("-", " ").split()
+    if any(k in c for k in ("BREACH", "RANSOM", "ATTACK", "ZERO")):
+        return RED
+    if "AI" in words or "AGENTIC" in words or "LLM" in words:
+        return VIOLET
+    if any(k in c for k in ("PATCH", "VULN", "THREAT", "SUPPLY", "CVE")):
+        return AMBER
+    return ACCENT
 
 
 def font(name, size):
