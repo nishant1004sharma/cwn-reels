@@ -89,16 +89,30 @@ def main(path):
         if it.get("kind") == "reel":
             r = it.get("reel", {})
             segs = r.get("segments", [])
-            if not r.get("hook") or not 5 <= len(segs) <= 9:
-                probs.append(f"{i}: reel needs hook and 5-9 segments")
+            if not r.get("hook") or len(r["hook"]) > 45 or not 4 <= len(segs) <= 6:
+                probs.append(f"{i}: reel needs a hook of <= 45 chars and 4-6 segments")
             words = sum(len(s.get("say", "").replace("...", " ").split()) for s in segs)
-            if not 60 <= words <= 125:
-                probs.append(f"{i}: reel spoken words {words}, want 60-125")
+            if not 45 <= words <= 80:
+                probs.append(f"{i}: reel spoken words {words}, want 45-80 (20-30 s)")
+            if segs and not segs[0].get("card"):
+                probs.append(f"{i}: first reel segment needs a card (the shock number/fact on screen at 0 s)")
+            yt = it.get("yt_title", "")
+            if not yt or len(yt) > 95 or not yt.endswith("#Shorts"):
+                probs.append(f"{i}: reel needs yt_title <= 95 chars ending with #Shorts")
             for n, s in enumerate(segs):
                 if not s.get("say") or not s.get("show"):
                     probs.append(f"{i}: reel segment {n} needs say + show")
                 if re.search(r"CVE-\d", s.get("say", "")):
                     probs.append(f"{i}: segment {n} 'say' reads a CVE id aloud; keep CVE ids in 'show'/'card' only")
+    kinds = [it.get("kind") for it in items]
+    if len(items) == 5 and (kinds.count("reel") != 3 or kinds.count("carousel") != 2):
+        probs.append(f"a full run is 3 reels + 2 carousels, got {kinds}")
+    li = [it for it in items if it.get("linkedin")]
+    if len(li) > 1:
+        probs.append("at most 1 LinkedIn item per run")
+    for it in li:
+        if it.get("kind") != "carousel" or not it.get("li_text") or len(it["li_text"]) > 2800:
+            probs.append(f"{it.get('id')}: LinkedIn item must be a carousel with li_text <= 2800 chars")
     if probs:
         print("PROBLEMS:\n- " + "\n- ".join(probs))
         sys.exit(1)

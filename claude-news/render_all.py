@@ -19,6 +19,10 @@ import render as reelr       # noqa: E402  (render/render.py from the reels pipe
 RAW = "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media"
 
 reelr.BRAND = cards.BRAND
+# News reels: everything pops in 3x faster than the CISSP reels, so the hook and first
+# card are fully on screen within ~0.15 s (watch time on this account was ~2 s).
+_ease = reelr.ease
+reelr.ease = lambda x: _ease(x * 3)
 
 
 reelr.chip_colour = lambda series: cards.colour_for(series)

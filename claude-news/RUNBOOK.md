@@ -1,6 +1,6 @@
 # Claude news runbook (scheduled task prompt)
 
-Two scheduled runs a day post AI and cyber news to **@thecyberintellect** on Instagram and, once it is connected in Metricool, to **X**. Each run publishes **5 stories**: each story becomes one Instagram post (reel, carousel or card) and one X post at the same time slot. This is separate from the GPT pipeline in `the-cyber-intellect/` and from the CISSP reel pipeline in `render/`: never edit, move or delete their files.
+Two scheduled runs a day post AI and cyber news to **@thecyberintellect** on Instagram. Each run publishes **5 stories: 3 reels and 2 carousels**. At the same slot, each story also goes to **X** (once X is connected in Metricool), each reel also goes to **YouTube Shorts**, and once a day (am run only) one carousel goes to **LinkedIn** as a swipeable document (once LinkedIn is connected in Metricool). The account is new: reels are what reach non-followers, and the first second decides whether anyone watches. This is separate from the GPT pipeline in `the-cyber-intellect/` and from the CISSP reel pipeline in `render/`: never edit, move or delete their files.
 
 Nishant is not present and wants no human step: never ask questions or wait for approval. Make reasonable choices and say what you chose in the final message.
 
@@ -10,9 +10,9 @@ Nishant is not present and wants no human step: never ask questions or wait for 
 - Slots (Asia/Kuala_Lumpur): am = 07:30, 08:15, 10:00, 12:00, 14:30; pm = 16:00, 17:30, 20:00, 21:15, 22:30.
 
 ## 1. Look at Metricool first
-- `getBrandSettings`: blogId and connected networks. Instagram is `instagramData`; X is `twitterData`. Post to X only if it is connected.
+- `getBrandSettings`: blogId and connected networks in `networksData`: Instagram is `instagramData`, YouTube `youtubeData`, X `twitterData`, LinkedIn a `linkedin…Data` key. Post only to networks that are connected.
 - `getScheduledPosts` from 3 days ago to tomorrow (timezone Asia/Kuala_Lumpur). Use it to:
-  - avoid clashes: other posts (GPT's run at about 09:00, 13:00, 19:00; the CISSP reel at 11:00) must be at least 20 minutes from any of our slots. Move a clashing slot later in 15-minute steps.
+  - avoid clashes: other posts (GPT's run at about 09:00, 13:00, 19:00; the CISSP Short at 11:00 on YouTube and Instagram) must be at least 20 minutes from any of our slots. Move a clashing slot later in 15-minute steps.
   - avoid repeats: skip any story already covered by any post in that window, whoever made it.
 - Any slot less than 25 minutes from now moves to now + 30 minutes (rounded up to 5), keeping the 20-minute gaps.
 
@@ -24,7 +24,7 @@ Nishant is not present and wants no human step: never ask questions or wait for 
 - Never name a victim from a ransomware leak-site claim alone. Attribution is "X says / attributes to", never stated as fact. No exploit steps, payloads or live targets: what happened, why it matters, what to do.
 
 ## 3. Write the run file
-Follow the shape of an existing file in `claude-news/content/` exactly. Items in this order: 1 = reel, 2 = carousel, 3 = card, 4 = reel, 5 = carousel. Ids `$DATE-$RUN-01` to `-05`. `slot` = `YYYY-MM-DDTHH:MM:00` (KL time). `category` is one of: ZERO-DAY, PATCH NOW, VULNERABILITY, BREACH, RANSOMWARE, ATTACK, THREAT INTEL, SUPPLY CHAIN, AI SECURITY, AGENTIC AI, AI THREAT, AI NEWS, CLOUD, IDENTITY, POLICY, DEFENCE.
+Follow the shape of the newest file in `claude-news/content/` (fields listed below win over older files). Items in this order: 1 = reel, 2 = carousel, 3 = reel, 4 = carousel, 5 = reel. Put the strongest story first and the most visual / shocking stories in the reels. Ids `$DATE-$RUN-01` to `-05`. `slot` = `YYYY-MM-DDTHH:MM:00` (KL time). `category` is one of: ZERO-DAY, PATCH NOW, VULNERABILITY, BREACH, RANSOMWARE, ATTACK, THREAT INTEL, SUPPLY CHAIN, AI SECURITY, AGENTIC AI, AI THREAT, AI NEWS, CLOUD, IDENTITY, POLICY, DEFENCE.
 
 The voice that makes these engaging (this is the point of the whole pipeline):
 - **Hook first**: lead with the most surprising concrete fact (a number, a time, an absurd detail), not the headline. "The alerts fired. A tool closed them as false positives." beats "BeyondTrust patches zero-day".
@@ -34,7 +34,13 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 - `x_text`: 270 characters max, max 2 hashtags (0 is fine), no links, stands alone.
 - `ig_caption`: hook line, 3 to 5 "→" fact lines, the action(s), the question with 👇, a `Source:` line naming the outlet and date, then 4 to 7 hashtags.
 - Carousel: `cover.hook` (max 90 chars) + `cover.sub`, 4 or 5 body slides mixing `point` (title + body max 260 chars), one `stat` ("BIG" + label) and one `actions` slide (3 or 4 items), plus `question`. Card: hook, sub, 3 bullets (max 95 chars each).
-- Reel: same schema as `bank/reels.json` segments (`say`, `show`, `card`, `card_style` default|stat|alert|fact|answer), 6 or 7 segments, 70 to 115 spoken words, hook in `reel.hook`, `reel.series` like "AI Threat", "Breach Alert", "Zero-Day Alert", "Patch Now". `say` spells acronyms as spaced capitals (A I, M F A, I P) and never reads CVE ids or version numbers aloud (keep those in `show`/`card`). Last segment: "Follow The Cyber Intellect for daily <attacks|breaches|AI security>, explained."
+- Reel (20 to 30 seconds): same schema as `bank/reels.json` segments (`say`, `show`, `card`, `card_style` default|stat|alert|fact|answer), 4 to 6 segments, **45 to 80 spoken words**. `reel.hook` max 45 chars; `reel.series` like "AI Threat", "Breach Alert", "Zero-Day Alert", "Patch Now".
+  - **Segment 1 is the hook, on screen and spoken from 0.0 s**: the most surprising number or fact in the first 3 to 5 words, with a `stat` or `alert` card. No warm-up ("Hey", "Today", "Breaking news", "In this video"). E.g. "Twenty-two hundred tenants. One stolen app." not "Microsoft has published research about…". Punchy never means inflated: "targeted" stays "targeted", never "hacked"; "attempted" stays "attempted".
+  - Middle segments: one fact each, short sentences. Then one action line (`answer` card).
+  - Last segment: "Follow for daily <attacks|breaches|AI security>, explained." (short).
+  - `say` spells acronyms as spaced capitals (A I, M F A, I P) and never reads CVE ids or version numbers aloud (keep those in `show`/`card`).
+  - `yt_title` (YouTube Shorts title): max 95 chars, curiosity + keyword, ending with " #Shorts", e.g. "AI agents targeted 2,250+ Microsoft 365 tenants #Shorts". Same accuracy rule as the hook.
+- am run only: set `"linkedin": true` on item 2 (the carousel) and add `li_text` for LinkedIn: a professional, neutral analysis (no first-person claims, never mention any employer): a sharp first line, 2 short paragraphs on what happened and why it matters for security leaders, 3 "→" actions, the question, a `Source:` line, then 3 hashtags. Max 2,800 characters; no emoji other than →.
 - Run `python3 claude-news/validate.py <run file>` and fix until it prints ok.
 
 ## 4. Render (GitHub Actions)
@@ -44,12 +50,12 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 - Look at the media: download each item's first image (or a frame at 3 s of each reel with ffmpeg) and view it. Text must not be clipped or overlapping. If one item is broken, drop just that item.
 
 ## 5. Schedule in Metricool
-- `python3 claude-news/payloads.py claude-news/content/$DATE-$RUN.json /tmp/manifest.json --networks instagram[,twitter]` prints one entry per post. For each entry call `createScheduledPost` with `blogId`, `date` and `info` exactly as printed.
-- If X rejects a text as too long, shorten that one `x_text` and retry once. If Metricool rejects media, a network or the plan limit, report it and carry on with the rest.
+- `python3 claude-news/payloads.py claude-news/content/$DATE-$RUN.json /tmp/manifest.json --networks instagram,youtube[,twitter][,linkedin]` (only connected networks) prints one entry per post: Instagram and X for every story, YouTube Shorts for the reels, LinkedIn for the flagged carousel. For each entry call `createScheduledPost` with `blogId`, `date` and `info` exactly as printed.
+- If X rejects a text as too long, shorten that one `x_text` and retry once. If Metricool rejects media, a network, a YouTube upload limit or the plan limit, report it and carry on with the rest.
 - Confirm with `getScheduledPosts` for today: each of our posts is there, pending, at its slot.
 
 ## 6. Record
 - Append one entry per scheduled story to `claude-news/state/posted.json` `posted` list: `{"story_key", "id", "date", "slot", "kind", "networks": [...], "voice": manifest voice or null, "title": cover hook or reel hook, "metricool_ids": {network: post id}}`. Keep only the last 30 days of entries. Commit "Record news run $DATE $RUN", pull --rebase, push.
 
 ## Final message
-Short bullets: the 5 stories (time, format, hook), networks posted, voice used for reels, anything skipped or failed in one line each.
+Short bullets: the 5 stories (time, format, hook), networks posted per story, voice used for reels, anything skipped or failed in one line each.

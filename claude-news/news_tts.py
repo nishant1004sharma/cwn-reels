@@ -42,7 +42,7 @@ def elevenlabs(text, mp3, align_path):
 
 def edge(text, mp3):
     voice = os.environ.get("EDGE_VOICE") or "en-US-AndrewMultilingualNeural"
-    rate = os.environ.get("EDGE_RATE") or "+6%"
+    rate = os.environ.get("EDGE_RATE") or "+12%"
     subprocess.run(["edge-tts", "--voice", voice, f"--rate={rate}", "--text", text, "--write-media", mp3],
                    check=True, capture_output=True, timeout=180)
     return voice
