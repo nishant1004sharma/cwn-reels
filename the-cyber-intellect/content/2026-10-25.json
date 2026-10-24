@@ -1,0 +1,21 @@
+{
+  "editorialDate": "2026-10-25",
+  "notes": "ONE evergreen feed image for MANUAL Instagram posting only. Do not use Metricool or auto-publish. This is educational, not breaking news. Distinct from Claude-owned news. X queue starts 2026-10-26, so no X Queue append on Oct 25.",
+  "posts": [
+    {
+      "category": "SECURITY KNOWLEDGE • EVERGREEN",
+      "title": "An SBOM Is Not a Deployment Map",
+      "bullets": [
+        "Inventory components and versions for each release.",
+        "Link every release to deployed services and owners.",
+        "When a CVE appears, find exposed systems and verify the fix."
+      ],
+      "takeaway": "Connect dependency inventory to real deployments.",
+      "caption": "An SBOM tells you what's inside a release—not necessarily where that release is running. Link components to deployments and accountable owners. When a vulnerability appears, trace affected systems and verify remediation. #AppSec #SBOM #VulnerabilityManagement #DevSecOps Save this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Dependency_Graph_SBOM_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html"
+      ]
+    }
+  ]
+}
