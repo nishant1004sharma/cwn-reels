@@ -1,6 +1,6 @@
 # Claude news runbook (scheduled task prompt)
 
-Two scheduled runs a day post AI and cyber news to **@thecyberintellect** on Instagram. Each run publishes **5 stories: 3 reels and 2 carousels**. At the same slot, each story also goes to **X** (once X is connected in Metricool), each reel also goes to **YouTube Shorts**, and once a day (am run only) one carousel goes to **LinkedIn** as a swipeable document (once LinkedIn is connected in Metricool). The account is new: reels are what reach non-followers, and the first second decides whether anyone watches. This is separate from the GPT pipeline in `the-cyber-intellect/` and from the CISSP reel pipeline in `render/`: never edit, move or delete their files.
+Two scheduled runs a day post AI and cyber news to **@thecyberintellect** on Instagram. Each run publishes **5 stories: 3 reels and 2 carousels**. At the same slot, each story also goes to **X** (@CISMNishant, via Typefully, scheduled automatically by the GitHub Actions workflow; plus Threads and Bluesky if they get connected in Typefully), each reel also goes to **YouTube Shorts**, and once a day (am run only) one carousel goes to **LinkedIn** as a swipeable document (once LinkedIn is connected in Metricool). The account is new: reels are what reach non-followers, and the first second decides whether anyone watches. This is separate from the GPT pipeline in `the-cyber-intellect/` and from the CISSP reel pipeline in `render/`: never edit, move or delete their files.
 
 Nishant is not present and wants no human step: never ask questions or wait for approval. Make reasonable choices and say what you chose in the final message.
 
@@ -10,7 +10,7 @@ Nishant is not present and wants no human step: never ask questions or wait for 
 - Slots (Asia/Kuala_Lumpur): am = 07:30, 08:15, 10:00, 12:00, 14:30; pm = 16:00, 17:30, 20:00, 21:15, 22:30.
 
 ## 1. Look at Metricool first
-- `getBrandSettings`: blogId and connected networks in `networksData`: Instagram is `instagramData`, YouTube `youtubeData`, X `twitterData`, LinkedIn a `linkedin…Data` key. Post only to networks that are connected.
+- `getBrandSettings`: blogId and connected networks in `networksData`: Instagram is `instagramData`, YouTube `youtubeData`, LinkedIn a `linkedin…Data` key. Post only to networks that are connected. X does not go through Metricool any more (see step 4).
 - `getScheduledPosts` from 3 days ago to tomorrow (timezone Asia/Kuala_Lumpur). Use it to:
   - avoid clashes: other posts (GPT's run at about 09:00, 13:00, 19:00; the CISSP Short at 11:00 on YouTube and Instagram) must be at least 20 minutes from any of our slots. Move a clashing slot later in 15-minute steps.
   - avoid repeats: skip any story already covered by any post in that window, whoever made it.
@@ -47,11 +47,12 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 - Commit only the run file (`git add claude-news/content/$DATE-$RUN.json`), message "News run $DATE $RUN", `git pull --rebase origin main`, `git push`. The push triggers the workflow "Claude news media", which renders the cards and voiced reels (Nishant's ElevenLabs voice when the repo secrets exist, otherwise a neural voice) and publishes them to the `claude-news-media` branch.
 - Wait for it: `gh run list -R nishant1004sharma/cwn-reels --workflow claude-news-media.yml -L 3` until the run for your commit completes (check every 30 s, up to 20 minutes). If it fails, read `gh run view <id> --log-failed`, fix the content if that's the cause, push again once, and wait again.
 - Fetch the manifest through the API (the raw CDN can serve a stale copy after a re-render): `gh api "repos/nishant1004sharma/cwn-reels/contents/$DATE-$RUN/manifest.json?ref=claude-news-media" -H "Accept: application/vnd.github.raw" > /tmp/manifest.json`. Items listed under `errors` were not rendered: drop them. Check every media URL answers 200 (`curl -sIL`).
+- X: the same workflow schedules each story's `x_text` with its cover image or reel on X through Typefully (secret `TYPEFULLY_API_KEY`). Read the result: `gh api "repos/nishant1004sharma/cwn-reels/contents/$DATE-$RUN/typefully.json?ref=claude-news-media" -H "Accept: application/vnd.github.raw"`. Report what is under `scheduled`, `skipped` (e.g. quota used up) and `errors` in the final message; do not post to X any other way.
 - Look at the media: download each item's first image (or a frame at 3 s of each reel with ffmpeg) and view it. Text must not be clipped or overlapping. If one item is broken, drop just that item.
 
 ## 5. Schedule in Metricool
-- `python3 claude-news/payloads.py claude-news/content/$DATE-$RUN.json /tmp/manifest.json --networks instagram,youtube[,twitter][,linkedin]` (only connected networks) prints one entry per post: Instagram and X for every story, YouTube Shorts for the reels, LinkedIn for the flagged carousel. For each entry call `createScheduledPost` with `blogId`, `date` and `info` exactly as printed.
-- If X rejects a text as too long, shorten that one `x_text` and retry once. If Metricool rejects media, a network, a YouTube upload limit or the plan limit, report it and carry on with the rest.
+- `python3 claude-news/payloads.py claude-news/content/$DATE-$RUN.json /tmp/manifest.json --networks instagram,youtube[,linkedin]` (only connected networks; never `twitter`, X is handled in step 4) prints one entry per post: Instagram for every story, YouTube Shorts for the reels, LinkedIn for the flagged carousel. For each entry call `createScheduledPost` with `blogId`, `date` and `info` exactly as printed.
+- If Metricool rejects media, a network, a YouTube upload limit or the plan limit, report it and carry on with the rest.
 - Confirm with `getScheduledPosts` for today: each of our posts is there, pending, at its slot.
 
 ## 6. Record

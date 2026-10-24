@@ -47,6 +47,11 @@ jobs:
           ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
           EDGE_VOICE: ${{ vars.EDGE_VOICE }}
         run: python claude-news/render_all.py "${{ steps.pick.outputs.file }}" --out out
+      - name: Schedule X posts via Typefully
+        env:
+          TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
+          TYPEFULLY_SOCIAL_SET_ID: ${{ vars.TYPEFULLY_SOCIAL_SET_ID }}
+        run: python claude-news/typefully_post.py "${{ steps.pick.outputs.file }}" --out out
       - name: Publish to claude-news-media branch
         run: |
           bash claude-news/publish_media.sh out "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
