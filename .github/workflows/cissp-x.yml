@@ -1,0 +1,27 @@
+name: CISSP Short on X
+# After the weekday reel routine records a posted reel, schedule it on X via Typefully with the Udemy link in a reply.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'state/published.json'
+  workflow_dispatch:
+concurrency:
+  group: cissp-x
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Schedule today's CISSP Short on X
+        env:
+          TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
+          TYPEFULLY_SOCIAL_SET_ID: ${{ vars.TYPEFULLY_SOCIAL_SET_ID }}
+        run: python render/x_post.py
