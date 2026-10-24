@@ -13,7 +13,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "render"))
 
-import cards, tts            # noqa: E402
+import cards, news_tts as tts  # noqa: E402
 import render as reelr       # noqa: E402  (render/render.py from the reels pipeline)
 
 RAW = "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media"
