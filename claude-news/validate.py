@@ -55,8 +55,8 @@ def main(path):
         x = it.get("x_text", "")
         if not x or x_len(x) > 270:
             probs.append(f"{i}: x_text missing or too long ({x_len(x)} > 270)")
-        if x.count("#") > 2:
-            probs.append(f"{i}: x_text max 2 hashtags")
+        if not 1 <= len(re.findall(r"#\w+", x)) <= 2:
+            probs.append(f"{i}: x_text needs 1-2 specific hashtags at the end (e.g. #ZeroDay #CyberSecurity)")
         th = it.get("x_thread")
         if th is not None:
             if not 5 <= len(th) <= 8 or any(x_len(t) > 270 for t in th):

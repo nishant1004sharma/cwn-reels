@@ -103,7 +103,7 @@ def main():
                 texts = it.get("x_thread") or [it["x_text"]]
                 posts = [{"text": t} for t in texts]
                 posts[0]["media_ids"] = [media_id]
-                platforms = {"x": {"enabled": True, "posts": [dict(q, made_with_ai=it["kind"] == "reel") for q in posts]}}
+                platforms = {"x": {"enabled": True, "posts": [dict(q, made_with_ai=False) for q in posts]}}   # Nishant: no "Made with AI" label on X
                 for p in nets:
                     if p != "x":
                         platforms[p] = {"enabled": True, "posts": posts}
