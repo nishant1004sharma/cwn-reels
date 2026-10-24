@@ -10,7 +10,7 @@ they are connected to the same Typefully social set. Same text everywhere: the i
 Idempotent: a draft whose title is the item id is never created twice.
 Writes out/<run>/typefully.json with what was scheduled. Never fails the workflow.
 """
-import argparse, datetime, json, os, sys, time, urllib.error, urllib.request
+import argparse, datetime, http.client, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 
 API = "https://api.typefully.com/v2"
 KL = datetime.timezone(datetime.timedelta(hours=8))
@@ -30,9 +30,15 @@ def upload(ss, path, alt):
     up = call("POST", f"/social-sets/{ss}/media/upload",
               {"file_name": os.path.basename(path), "alt_text": alt[:1000] if alt else None})
     data = open(path, "rb").read()
-    put = urllib.request.Request(up["upload_url"], data=data, method="PUT")   # raw bytes, no extra headers
-    with urllib.request.urlopen(put, timeout=180):
-        pass
+    # Presigned S3 PUT: raw bytes and NO Content-Type (urllib would add one and break the signature).
+    u = urllib.parse.urlsplit(up["upload_url"])
+    conn = http.client.HTTPSConnection(u.netloc, timeout=300)
+    conn.request("PUT", u.path + ("?" + u.query if u.query else ""), body=data,
+                 headers={"Content-Length": str(len(data))})
+    r = conn.getresponse()
+    body = r.read()
+    if r.status not in (200, 204):
+        raise RuntimeError(f"upload failed {r.status}: {body[:200]!r}")
     for _ in range(60):                       # wait for processing (videos can take a while)
         st = call("GET", f"/social-sets/{ss}/media/{up['media_id']}").get("status")
         if st == "ready":
@@ -93,11 +99,14 @@ def main():
                 f = "reel.mp4" if it["kind"] == "reel" else m["files"][0]
                 alt = (it.get("cover") or {}).get("hook") or (it.get("reel") or {}).get("hook", "")
                 media_id = upload(ss, os.path.join(base, iid, f), alt)
-                post = {"text": it["x_text"], "media_ids": [media_id]}
-                platforms = {"x": {"enabled": True, "posts": [dict(post, made_with_ai=it["kind"] == "reel")]}}
+                # Weekly thread: x_thread holds 5-8 posts; the first carries the media. Otherwise a single post.
+                texts = it.get("x_thread") or [it["x_text"]]
+                posts = [{"text": t} for t in texts]
+                posts[0]["media_ids"] = [media_id]
+                platforms = {"x": {"enabled": True, "posts": [dict(q, made_with_ai=it["kind"] == "reel") for q in posts]}}
                 for p in nets:
                     if p != "x":
-                        platforms[p] = {"enabled": True, "posts": [post]}
+                        platforms[p] = {"enabled": True, "posts": posts}
                 d = call("POST", f"/social-sets/{ss}/drafts",
                          {"draft_title": iid, "platforms": platforms, "publish_at": when(it["slot"], n)})
                 result["scheduled"][iid] = {"draft_id": d.get("id"), "at": d.get("scheduled_date"), "networks": nets}

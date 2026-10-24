@@ -56,6 +56,12 @@ def main(path):
             probs.append(f"{i}: x_text missing or too long ({x_len(x)} > 270)")
         if x.count("#") > 2:
             probs.append(f"{i}: x_text max 2 hashtags")
+        th = it.get("x_thread")
+        if th is not None:
+            if not 5 <= len(th) <= 8 or any(x_len(t) > 270 for t in th):
+                probs.append(f"{i}: x_thread needs 5-8 posts of <= 270 characters each")
+            if th and th[0] != x:
+                probs.append(f"{i}: x_thread[0] must equal x_text (the hook post)")
         cap = it.get("ig_caption", "")
         if not cap or len(cap) > 2000:
             probs.append(f"{i}: ig_caption missing or > 2000 chars")

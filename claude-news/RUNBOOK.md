@@ -7,7 +7,7 @@ Nishant is not present and wants no human step: never ask questions or wait for 
 ## 0. Setup
 - Attach the repo with push access (add_repo owner=`nishant1004sharma` repo=`cwn-reels` access=push), clone it (`git clone --depth 1`) and work inside it.
 - `RUN` = `am` if Kuala Lumpur time (`TZ=Asia/Kuala_Lumpur date +%H`) is before 14:00, else `pm`. `DATE` = `TZ=Asia/Kuala_Lumpur date +%F`. Run file: `claude-news/content/$DATE-$RUN.json`. If it already exists and its items are recorded in `claude-news/state/posted.json`, stop and report "already done".
-- Slots (Asia/Kuala_Lumpur): am = 08:15, 10:00, 12:00, 13:30, 14:30; pm = 16:00, 17:30, 20:00, 21:15, 22:30. (The am run fires at about 07:22, after GPT's pipeline has scheduled its day at about 07:04, so its picks are visible.)
+- Slots (Asia/Kuala_Lumpur): am = 08:15, 10:00, 12:00, 13:30, 14:30; pm = 16:00, 17:00, 20:00, 21:00, 22:30. Keep 12:00, 17:00 and 21:00 exactly (move a clashing neighbour instead): Nishant gets an engagement reminder about 17 minutes after each of those three, so put the strongest story of the run in one of them. (The am run fires at about 07:22, after GPT's pipeline has scheduled its day at about 07:04, so its picks are visible.)
 
 ## 1. Look at Metricool first
 - `getBrandSettings`: blogId and connected networks in `networksData`: Instagram is `instagramData`, YouTube `youtubeData`, LinkedIn a `linkedin…Data` key. Post only to networks that are connected. X does not go through Metricool any more (see step 4).
@@ -42,6 +42,7 @@ The voice that makes these engaging (this is the point of the whole pipeline):
   - `say` spells acronyms as spaced capitals (A I, M F A, I P) and never reads CVE ids or version numbers aloud (keep those in `show`/`card`).
   - `yt_title` (YouTube Shorts title): max 95 chars, curiosity + keyword, ending with " #Shorts", e.g. "AI agents targeted 2,250+ Microsoft 365 tenants #Shorts". Same accuracy rule as the hook.
 - am run only: set `"linkedin": true` on item 2 (the carousel) and add `li_text` for LinkedIn: a professional, neutral analysis (no first-person claims, never mention any employer): a sharp first line, 2 short paragraphs on what happened and why it matters for security leaders, 3 "→" actions, the question, a `Source:` line, then 3 hashtags. Max 2,800 characters; no emoji other than →.
+- **Sunday pm run only: weekly X thread.** On item 4 (the carousel), add `x_thread`: 5 to 8 posts, each max 270 characters. Post 1 is exactly `x_text` (the hook); then one post per key fact or lesson from the week's biggest story (it can draw on the week's other verified stories in `claude-news/content/`); then the actions; the last post asks the question and names the sources. The workflow posts it as a thread on X with the cover image on post 1.
 - Run `python3 claude-news/validate.py <run file>` and fix until it prints ok.
 
 ## 4. Render (GitHub Actions)
