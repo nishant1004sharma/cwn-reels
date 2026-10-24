@@ -7,13 +7,14 @@ Nishant is not present and wants no human step: never ask questions or wait for 
 ## 0. Setup
 - Attach the repo with push access (add_repo owner=`nishant1004sharma` repo=`cwn-reels` access=push), clone it (`git clone --depth 1`) and work inside it.
 - `RUN` = `am` if Kuala Lumpur time (`TZ=Asia/Kuala_Lumpur date +%H`) is before 14:00, else `pm`. `DATE` = `TZ=Asia/Kuala_Lumpur date +%F`. Run file: `claude-news/content/$DATE-$RUN.json`. If it already exists and its items are recorded in `claude-news/state/posted.json`, stop and report "already done".
-- Slots (Asia/Kuala_Lumpur): am = 07:30, 08:15, 10:00, 12:00, 14:30; pm = 16:00, 17:30, 20:00, 21:15, 22:30.
+- Slots (Asia/Kuala_Lumpur): am = 08:15, 10:00, 12:00, 13:30, 14:30; pm = 16:00, 17:30, 20:00, 21:15, 22:30. (The am run fires at about 07:22, after GPT's pipeline has scheduled its day at about 07:04, so its picks are visible.)
 
 ## 1. Look at Metricool first
 - `getBrandSettings`: blogId and connected networks in `networksData`: Instagram is `instagramData`, YouTube `youtubeData`, LinkedIn a `linkedin…Data` key. Post only to networks that are connected. X does not go through Metricool any more (see step 4).
 - `getScheduledPosts` from 3 days ago to tomorrow (timezone Asia/Kuala_Lumpur). Use it to:
   - avoid clashes: other posts (GPT's run at about 09:00, 13:00, 19:00; the CISSP Short at 11:00 on YouTube and Instagram) must be at least 20 minutes from any of our slots. Move a clashing slot later in 15-minute steps.
   - avoid repeats: skip any story already covered by any post in that window, whoever made it.
+- **Duplicate check against GPT (Nishant's rule: if GPT already has the story, change ours).** Also read, without editing, GPT's planned content: the files in `the-cyber-intellect/content/` for yesterday, today and tomorrow (e.g. `ls the-cyber-intellect/content/`, then the titles, captions and sources inside). A story counts as a duplicate if it is the same incident, vulnerability (same CVE) or announcement, even with a different angle. Replace every duplicate with a different verified story before writing the run file, and say in the final message which stories you swapped and why. This applies to X as much as Instagram.
 - Any slot less than 25 minutes from now moves to now + 30 minutes (rounded up to 5), keeping the 20-minute gaps.
 
 ## 2. Pick 5 stories
