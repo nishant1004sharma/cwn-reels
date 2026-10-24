@@ -264,7 +264,14 @@ def closing(item, idx, total):
             y += int(qf.size * 1.14)
         y += 24
         d.text((70, y), "Tell us in the comments.", font=semi(40), fill=c)
-        y += 120
+        y += 90
+    st = item.get("send_to")
+    if st:
+        sf, sl = fit(f"↗ Send this to {st}", heavy, 940, 2, 56, 40)
+        for ln in sl:
+            d.text((70, y), ln, font=sf, fill=ACCENT)
+            y += int(sf.size * 1.18)
+        y += 40
     box_top = max(y, 760)
     d.rounded_rectangle([70, box_top, W - 70, box_top + 250], radius=36, fill=PANEL, outline=c, width=4)
     d.text((110, box_top + 40), f"Follow {HANDLE}", font=heavy(54), fill=TEXT)

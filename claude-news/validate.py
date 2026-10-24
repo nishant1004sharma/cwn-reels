@@ -7,6 +7,7 @@ import json, os, re, sys, unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "state", "posted.json")
+SERIES = {"Breach of the Day", "Patch Now in 15s", "AI Attack Explained", "Zero-Day Alert", "Myth vs Reality"}
 
 
 def x_len(text):
@@ -62,7 +63,11 @@ def main(path):
                 probs.append(f"{i}: x_thread needs 5-8 posts of <= 270 characters each")
             if th and th[0] != x:
                 probs.append(f"{i}: x_thread[0] must equal x_text (the hook post)")
+        if not it.get("send_to") or len(it["send_to"]) > 40:
+            probs.append(f"{i}: send_to (who to send it to, <= 40 chars) is required")
         cap = it.get("ig_caption", "")
+        if "send this to" not in cap.lower():
+            probs.append(f"{i}: ig_caption must include a 'Send this to ...' line")
         if not cap or len(cap) > 2000:
             probs.append(f"{i}: ig_caption missing or > 2000 chars")
         tags = re.findall(r"#\w+", cap)
@@ -95,16 +100,18 @@ def main(path):
         if it.get("kind") == "reel":
             r = it.get("reel", {})
             segs = r.get("segments", [])
-            if not r.get("hook") or len(r["hook"]) > 45 or not 4 <= len(segs) <= 6:
-                probs.append(f"{i}: reel needs a hook of <= 45 chars and 4-6 segments")
+            if not r.get("hook") or len(r["hook"]) > 45 or not 3 <= len(segs) <= 5:
+                probs.append(f"{i}: reel needs a hook of <= 45 chars and 3-5 segments")
             words = sum(len(s.get("say", "").replace("...", " ").split()) for s in segs)
-            if not 45 <= words <= 80:
-                probs.append(f"{i}: reel spoken words {words}, want 45-80 (20-30 s)")
+            if not 35 <= words <= 55:
+                probs.append(f"{i}: reel spoken words {words}, want 35-55 (about 13-20 s)")
+            if r.get("series") not in SERIES:
+                probs.append(f"{i}: reel.series must be one of {sorted(SERIES)}")
+            if segs and "send this" not in segs[-1].get("say", "").lower():
+                probs.append(f"{i}: last reel segment must be the sendable ending ('Send this to ...')")
             if segs and not segs[0].get("card"):
                 probs.append(f"{i}: first reel segment needs a card (the shock number/fact on screen at 0 s)")
-            yt = it.get("yt_title", "")
-            if not yt or len(yt) > 95 or not yt.endswith("#Shorts"):
-                probs.append(f"{i}: reel needs yt_title <= 95 chars ending with #Shorts")
+
             for n, s in enumerate(segs):
                 if not s.get("say") or not s.get("show"):
                     probs.append(f"{i}: reel segment {n} needs say + show")

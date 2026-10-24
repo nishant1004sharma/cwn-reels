@@ -1,0 +1,63 @@
+name: Claude news Instagram
+# Publishes due @thecyberintellect posts through Instagram's own API (see claude-news/ig_publish.py).
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+concurrency:
+  group: claude-news-ig
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: claude-news
+      - uses: actions/checkout@v4
+        with:
+          ref: claude-news-media
+          path: media
+      # The weekly-refreshed token is cached encrypted with a key derived from the IG_ACCESS_TOKEN secret,
+      # so it never appears in the public repo and fork workflows (no secrets) cannot read it.
+      - name: Restore refreshed token
+        if: env.IG_ACCESS_TOKEN != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: .igtoken-enc
+          key: igtoken-${{ github.run_id }}
+          restore-keys: igtoken-
+      - name: Decrypt refreshed token
+        if: env.IG_ACCESS_TOKEN != ''
+        run: |
+          mkdir -p .igtoken
+          if [ -f .igtoken-enc/bundle.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:IG_ACCESS_TOKEN \
+              -in .igtoken-enc/bundle.enc | tar -xz -C .igtoken || echo "cached token unreadable (secret changed?), using the secret"
+          fi
+      - name: Publish due posts
+        env:
+          TOKEN_DIR: .igtoken
+        run: python3 claude-news/ig_publish.py --media media --content claude-news/content
+      - name: Encrypt refreshed token
+        id: enc
+        if: env.IG_ACCESS_TOKEN != ''
+        run: |
+          if [ -f .igtoken/REFRESHED ]; then
+            rm -f .igtoken/REFRESHED; mkdir -p .igtoken-enc
+            tar -cz -C .igtoken token.txt refreshed_at.txt | openssl enc -aes-256-cbc -pbkdf2 -iter 200000 \
+              -pass env:IG_ACCESS_TOKEN -out .igtoken-enc/bundle.enc
+            echo "save=true" >> "$GITHUB_OUTPUT"
+          fi
+          rm -rf .igtoken
+      - name: Cache refreshed token
+        if: steps.enc.outputs.save == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .igtoken-enc
+          key: igtoken-${{ github.run_id }}
