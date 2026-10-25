@@ -235,7 +235,7 @@
           {
             "say": "Your Plex server could be mining crypto for someone else.",
             "show": "Plex servers are being hit to plant crypto miners.",
-            "card": "4 Plex flaws|chained in live attacks",
+            "card": "4 Plex flaws chained in live attacks",
             "card_style": "alert"
           },
           {
