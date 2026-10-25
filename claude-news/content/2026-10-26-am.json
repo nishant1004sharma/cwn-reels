@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-26",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-10-26-am-01",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-10-26T08:15:00",
+      "story_key": "symantec-skynet-agent-exposed-llm-endpoints",
+      "send_to": "whoever runs your AI servers",
+      "sources": [
+        {
+          "name": "The Register (Symantec Threat Hunter Team research)",
+          "url": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215",
+          "date": "2026-10-24"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "Built to run 100,000 steps alone.",
+        "segments": [
+          {
+            "say": "Up to one hundred thousand attack steps. Unattended.",
+            "show": "An attack agent built to run up to 100,000 steps without asking permission.",
+            "card": "100,000|attack steps, built to run unattended",
+            "card_style": "stat"
+          },
+          {
+            "say": "Symantec trapped an attack agent that borrows exposed A I models to plan its attacks.",
+            "show": "Symantec caught it in an AI honeypot. It hunts exposed OpenAI-style endpoints and uses them as its planning brain.",
+            "card": "Your model. Their attack plan.",
+            "card_style": "alert"
+          },
+          {
+            "say": "The endpoint's owner pays for the compute. Put authentication on every model endpoint.",
+            "show": "\"The owner of the exposed endpoint pays for the inference.\" Lock down every model API.",
+            "card": "No unauthenticated model APIs",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your A I servers.",
+            "show": "Send this to whoever runs your AI servers.",
+            "card": "↗ Send this to your AI platform team"
+          }
+        ]
+      },
+      "x_text": "Symantec trapped an AI attack agent that hijacks exposed OpenAI-style model endpoints as its planning brain. Built for up to 100,000 unattended steps, 74 offensive tools. The endpoint owner pays for the inference.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "Your exposed AI model could be planning someone else's attack. And you'd pay the bill. 🤖\n\nSymantec's Threat Hunter Team caught an attack agent in an AI honeypot:\n→ It scans for endpoints that accept OpenAI-style requests with no authentication, or with a stolen key\n→ The victim's model becomes the \"reasoning engine that plans and drives the attack\"\n→ Built to run up to 100,000 steps unattended, with 74 offensive tool definitions\n→ The operators called its scan-infect-mine loop \"Skynet mode\"\n→ Symantec has no evidence of real-world use yet, and hasn't attributed it\n\nWhat to do: put authentication on every model endpoint, rotate any API key that's ever been exposed, and alert on inference usage you can't explain.\n\nSend this to whoever runs your AI servers 👇\n\nWould you notice if someone else was using your model?\n\nSource: The Register, on Symantec research (24 Oct 2026)\n\n#AISecurity #AgenticAI #LLMSecurity #ThreatIntel #APISecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-am-02",
+      "kind": "carousel",
+      "category": "VULNERABILITY",
+      "slot": "2026-10-26T10:00:00",
+      "story_key": "tailscale-ssh-tailworm-2026-10",
+      "send_to": "whoever manages your Tailscale ACLs",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+          "date": "2026-10-25"
+        }
+      ],
+      "cover": {
+        "hook": "Researcher: one hacked device could reach root on other Tailscale servers.",
+        "sub": "Erica Windisch's \"Tailworm\" report, tested in a lab. No patch and no CVE yet. Tailscale says it is working on fixes."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What was reported",
+          "body": "Cyberdione Labs' Erica Windisch tested Tailscale 1.104.2 and headscale 0.29.5 in a lab. With Tailscale SSH port forwarding on, an allowed device could reach root-only sockets and run commands as root."
+        },
+        {
+          "type": "point",
+          "title": "The conditions",
+          "body": "It needs Tailscale SSH with port forwarding enabled, plus an attacker-controlled device that your ACLs let reach the target. Capturing an enrollment key fully worked only on networks without Tailnet Lock."
+        },
+        {
+          "type": "stat",
+          "big": "11",
+          "label": "findings in the Tailworm report",
+          "note": "Not independently reproduced; some researchers dispute the \"wormable\" claim"
+        },
+        {
+          "type": "point",
+          "title": "What Tailscale says",
+          "body": "VP of Engineering Mike Shaver said Tailscale has found issues it is working to fix, and is \"not recommending that everyone disable Tailscale SSH.\" No bulletin or fixed version yet."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Turn off SSH port forwarding where you can",
+            "Swap broad tag-based SSH grants for single source-to-destination rules",
+            "Enable Tailnet Lock and node-key expiry",
+            "On headscale 0.29.5, treat every SSH grant as root"
+          ]
+        }
+      ],
+      "question": "Do you know which of your devices can SSH into which servers?",
+      "x_text": "Tailscale SSH: a researcher's \"Tailworm\" report says one compromised device could reach root on other servers via port forwarding. Lab-tested, no patch or CVE yet; Tailscale says it's working on fixes.\n\n#VulnerabilityManagement #CyberSecurity",
+      "ig_caption": "One hacked device. Root on your other servers. That's the claim. 🔓\n\nA \"Tailworm\" report from Erica Windisch (Cyberdione Labs) targets Tailscale SSH:\n→ Lab tests on Tailscale 1.104.2 and headscale 0.29.5\n→ With SSH port forwarding on, an allowed device could reach root-only sockets and run root commands\n→ Grabbing an enrollment key fully worked only without Tailnet Lock\n→ No patch, no CVE, not independently reproduced yet\n→ Tailscale says it found issues it's fixing, but isn't telling everyone to disable Tailscale SSH\n\nSwipe for 4 things to do this week.\n\nSend this to whoever manages your Tailscale ACLs 👇\n\nDo you know which of your devices can SSH into which servers?\n\nSource: The Hacker News (25 Oct 2026)\n\n#Tailscale #SSH #ZeroTrust #VulnerabilityManagement #NetworkSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-am-03",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-10-26T12:00:00",
+      "story_key": "johns-hopkins-bayview-shadow-ai-upload",
+      "send_to": "whoever writes your AI use policy",
+      "sources": [
+        {
+          "name": "WMAR-2 News",
+          "url": "https://www.wmar2news.com/local/patients-data-sent-to-ai-tool-johns-hopkins-bayview-medical-center-oct-23-2026",
+          "date": "2026-10-23"
+        },
+        {
+          "name": "The Baltimore Banner",
+          "url": "https://www.thebanner.com/community/public-health/johns-hopkins-data-exposure-unauthorized-ai-tool-3SO2HGS7XVDP7GMKSK7TP527NE/",
+          "date": "2026-10-25"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "3,182 patients. One AI upload.",
+        "segments": [
+          {
+            "say": "Over three thousand patients. One spreadsheet. One unapproved A I tool.",
+            "show": "3,182 patients. One spreadsheet. One unapproved public AI tool.",
+            "card": "3,182|patients' records uploaded to a public AI tool",
+            "card_style": "stat"
+          },
+          {
+            "say": "A Johns Hopkins Bayview worker uploaded patient data, including medications and record numbers, to a public A I tool.",
+            "show": "Johns Hopkins Bayview: a worker uploaded a spreadsheet with medications, record numbers and providers to an unapproved AI platform.",
+            "card": "Uploaded 21 Sept. Letters mailed 22 Oct.",
+            "card_style": "alert"
+          },
+          {
+            "say": "Give staff an approved A I tool before they find their own.",
+            "show": "Give staff an approved AI tool, and block uploads to unapproved ones.",
+            "card": "Approved AI tools + upload controls",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever writes your A I policy.",
+            "show": "Send this to whoever writes your AI use policy.",
+            "card": "↗ Send this to your AI policy owner"
+          }
+        ]
+      },
+      "x_text": "Johns Hopkins Bayview: a worker uploaded a spreadsheet on 3,182 patients (medications, record numbers, providers) to an unapproved public AI tool. Shadow AI is a data breach waiting for a prompt.\n\n#AISecurity #DataBreach",
+      "ig_caption": "3,182 patients. One spreadsheet. One unapproved AI tool. 🏥\n\nJohns Hopkins Bayview Medical Center is notifying patients:\n→ A worker uploaded a spreadsheet of patient information to a public AI platform the hospital hadn't approved\n→ It covered patients treated May to September 2026: names, admission dates, medications, record and account numbers, providers\n→ No Social Security numbers or financial account details, the hospital says\n→ Found the same day (21 Sept); the data was deleted from the tool and the AI company asked to delete it\n→ Letters went out 22 Oct with 12 months of credit monitoring\n\nWhat to do: give staff an approved AI tool, block uploads to unapproved ones, and train people on what never goes in a prompt.\n\nSend this to whoever writes your AI use policy 👇\n\nDoes your team have an approved AI tool, or are they finding their own?\n\nSource: WMAR-2 News (23 Oct 2026) and The Baltimore Banner (25 Oct 2026)\n\n#ShadowAI #AISecurity #DataBreach #HealthcareSecurity #DataPrivacy #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-am-04",
+      "kind": "carousel",
+      "category": "CLOUD",
+      "slot": "2026-10-26T13:30:00",
+      "story_key": "dreamhost-password-resets-2026-10",
+      "send_to": "whoever looks after your website hosting",
+      "sources": [
+        {
+          "name": "DreamHost status page",
+          "url": "https://www.dreamhoststatus.com/",
+          "date": "2026-10-25"
+        }
+      ],
+      "cover": {
+        "hook": "DreamHost reset email and FTP passwords. File Manager is still offline.",
+        "sub": "An incident open since 23 Oct hit File Manager, webmail and FTP/SFTP. DreamHost hasn't said what caused it."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "On 23 Oct DreamHost began investigating connectivity issues in its File Manager. It widened to webmail sign-outs and FTP/SFTP access, and some email and FTP/SFTP passwords were reset as a precaution."
+        },
+        {
+          "type": "point",
+          "title": "Where it stands",
+          "body": "By 24 Oct resets for affected email and FTP/SFTP users were complete. On 25 Oct most instruction emails had gone out. The File Manager was still unavailable, with no restoration time given."
+        },
+        {
+          "type": "stat",
+          "big": "23 Oct",
+          "label": "incident opened. File Manager still down on 25 Oct",
+          "note": "Per DreamHost's status page"
+        },
+        {
+          "type": "point",
+          "title": "Watch for fake resets",
+          "body": "DreamHost says it will never email you asking for your password or ask you to log in through a link. Ignore reset emails you didn't request and set new passwords in the panel yourself."
+        },
+        {
+          "type": "actions",
+          "title": "Do this today",
+          "items": [
+            "Set new email and SFTP passwords at panel.dreamhost.com",
+            "Ignore password-reset emails you didn't ask for",
+            "Review recent FTP logins and file changes on your sites",
+            "Never reuse your hosting password anywhere else"
+          ]
+        }
+      ],
+      "question": "When did you last change your hosting FTP password?",
+      "x_text": "DreamHost reset some email and FTP/SFTP passwords as a precaution in an incident open since 23 Oct. File Manager still offline. DreamHost says it never emails asking for your password: ignore reset links.\n\n#InfoSec #CyberSecurity",
+      "ig_caption": "DreamHost reset passwords. The File Manager is still down. 🔑\n\nFrom DreamHost's status page:\n→ 23 Oct: investigating connectivity issues in the File Manager, then webmail sign-outs and FTP/SFTP access\n→ Some email and FTP/SFTP passwords were reset as a precaution\n→ 24 Oct: resets for affected users complete; owners set new passwords in the panel\n→ 25 Oct: File Manager still unavailable, no restoration time; no cause given yet\n\nWhat to do: set new passwords at panel.dreamhost.com yourself, ignore reset emails you didn't request (DreamHost says it never asks for your password by email), and check recent FTP logins.\n\nSend this to whoever looks after your website hosting 👇\n\nWhen did you last change your hosting FTP password?\n\nSource: DreamHost status page (updated 25 Oct 2026)\n\n#DreamHost #WebHosting #PasswordSecurity #Phishing #InfoSec #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-am-05",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-10-26T14:30:00",
+      "story_key": "cve-2026-96654",
+      "send_to": "the friend who runs a Plex server",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers",
+          "date": "2026-10-21"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+          "date": "2026-10-19"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "Plex servers hijacked to mine crypto.",
+        "segments": [
+          {
+            "say": "Your Plex server could be mining crypto for someone else.",
+            "show": "Plex servers are being hit to plant crypto miners.",
+            "card": "4 Plex flaws|chained in live attacks",
+            "card_style": "alert"
+          },
+          {
+            "say": "C I S A says attackers are chaining four Plex Media Server flaws, called Plex2Shell, to run code and drop miners.",
+            "show": "CISA: four Plex Media Server flaws (\"Plex2Shell\") actively exploited. Seen: XMRig miner + a Linux proxy backdoor.",
+            "card": "CVE-2026-96652 · 96654 · 96655 · 96656",
+            "card_style": "fact"
+          },
+          {
+            "say": "The fix shipped in August. Update to the latest version today.",
+            "show": "Fixed in Plex Media Server 1.43.3.10861 (August 2026). Update now.",
+            "card": "Update to 1.43.3.10861 or later",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to the friend who runs a Plex server.",
+            "show": "Send this to the friend who runs a Plex server.",
+            "card": "↗ Send this to your Plex friend"
+          }
+        ]
+      },
+      "x_text": "Plex2Shell: CISA says attackers are chaining four Plex Media Server flaws (CVE-2026-96652, -96654, -96655, -96656) to run code; miners and a proxy backdoor seen. Fixed in 1.43.3.10861. Update now.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "Your Plex server could be mining crypto for someone else. ⛏️\n\nCISA warns attackers are actively exploiting Plex2Shell:\n→ Four Plex Media Server flaws: CVE-2026-96652, CVE-2026-96654, CVE-2026-96655 and CVE-2026-96656\n→ Chained, they hand over the owner's admin token and code execution\n→ Attacks seen installing an XMRig cryptominer and a Linux proxy backdoor\n→ Details went public 16 Oct; exploitation reported from 17 Oct\n→ The fix has existed since August: version 1.43.3.10861\n\nWhat to do: update Plex Media Server to 1.43.3.10861 or later, don't expose it to the internet unless you need to, and check for processes you don't recognise.\n\nSend this to the friend who runs a Plex server 👇\n\nIs there a home server on your network nobody has updated in months?\n\nSource: BleepingComputer (21 Oct 2026) and The Hacker News (19 Oct 2026)\n\n#Plex #Plex2Shell #PatchNow #Cryptojacking #HomeLab #CyberSecurity"
+    }
+  ]
+}
