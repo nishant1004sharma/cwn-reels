@@ -149,6 +149,72 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "2 million updates. Not their computers.",
       "typefully_draft_id": 11453305
+    },
+    {
+      "story_key": "socradar-phantom-ransomware-ai-agents",
+      "id": "2026-10-25-pm-01",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T22:45:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "AI executed. A human clicked approve.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "k0t-edge-devices-70k-credentials",
+      "id": "2026-10-25-pm-02",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:05:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "70,000+ credentials exposed. The way in: firewalls and VPNs.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-111497",
+      "id": "2026-10-25-pm-03",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:25:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One compression bug. Node, Bun and Python.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "emudhra-weak-intermediate-ca-keys",
+      "id": "2026-10-25-pm-04",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:45:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "One CA private key was the number 4.",
+      "typefully_draft_id": null,
+      "note": "X thread skipped: Typefully quota used up (resets 1 Nov)"
+    },
+    {
+      "story_key": "opencode-console-provider-keys-2026-10",
+      "id": "2026-10-25-pm-05",
+      "date": "2026-10-25",
+      "slot": "2026-10-26T00:05:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A breach. Then surprise AI bills.",
+      "typefully_draft_id": null
     }
   ]
 }
