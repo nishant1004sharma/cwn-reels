@@ -124,7 +124,7 @@
           {
             "say": "One compression bug. Node, Bun, Python, Envoy.",
             "show": "One Brotli decoder bug. Node.js, Bun, Python, Envoy, Istio.",
-            "card": "Node2Shell|one bug, many runtimes",
+            "card": "Node2Shell: one bug, many runtimes",
             "card_style": "alert"
           },
           {
