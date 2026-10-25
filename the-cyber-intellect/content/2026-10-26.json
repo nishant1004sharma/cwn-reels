@@ -1,0 +1,20 @@
+{
+  "editorialDate": "2026-10-26",
+  "notes": "ONE original bright evergreen security image for MANUAL Instagram posting only. No Metricool. Not breaking news. Distinct from Claude-owned Oct 25 news. Editorial reviewed against OWASP API1:2023 BOLA guidance.",
+  "posts": [
+    {
+      "category": "API SECURITY • EVERGREEN",
+      "title": "Authenticated Doesn't Mean Authorized",
+      "bullets": [
+        "A valid token identifies the caller, not which records they may access.",
+        "Test with two accounts: change a resource ID to one owned by another user.",
+        "Verify that unauthorized reads, updates, and deletes are denied."
+      ],
+      "takeaway": "Enforce object-level access on every request.",
+      "caption": "A valid token proves who called the API—not whether they may access that record. Test object-level authorization with two accounts, swap resource IDs, and verify that unauthorized reads and writes are denied. #APISecurity #AppSec #OWASP #DevSecOps Save this for later.",
+      "sources": [
+        "https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization/"
+      ]
+    }
+  ]
+}
