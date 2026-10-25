@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-25",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-10-25-pm-01",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-10-25T22:45:00",
+      "story_key": "socradar-phantom-ransomware-ai-agents",
+      "send_to": "whoever owns your VPN and RMM logins",
+      "sources": [
+        {
+          "name": "The Hacker News (SOCRadar research)",
+          "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+          "date": "2026-10-23"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "AI executed. A human clicked approve.",
+        "segments": [
+          {
+            "say": "Sixty-two companies targeted. The A I ran the intrusions.",
+            "show": "About 62 organizations targeted. AI agents executed the intrusions.",
+            "card": "~62|organizations targeted by AI-run intrusions",
+            "card_style": "stat"
+          },
+          {
+            "say": "SOCRadar says ransomware affiliates used an A I framework called Phantom. A human approved every step.",
+            "show": "SOCRadar: INC and The Gentlemen affiliates used an AI framework called Phantom. \"AI-executed, human-approved.\"",
+            "card": "AI-executed, human-approved",
+            "card_style": "alert"
+          },
+          {
+            "say": "One reused password opened the V P N, servers and backups. Kill password reuse.",
+            "show": "One reused password unlocked the VPN, servers, RMM, backup and security tools. Kill password reuse.",
+            "card": "Unique passwords + MFA on every admin tool",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns your V P N and R M M logins.",
+            "show": "Send this to whoever owns your VPN and RMM logins.",
+            "card": "↗ Send this to your VPN admin"
+          }
+        ]
+      },
+      "x_text": "SOCRadar: INC and The Gentlemen ransomware affiliates ran intrusions with Phantom, an AI agent framework. \"AI-executed, human-approved.\" About 62 orgs targeted. One reused password opened VPN, servers, RMM and backups.\n\n#AISecurity #Ransomware",
+      "ig_caption": "The AI ran the intrusion. A human just approved each step. 🤖\n\nSOCRadar found exposed infrastructure from affiliates of the INC and The Gentlemen ransomware groups:\n→ An AI framework called Phantom executed the intrusions; the operator reviewed every step (\"AI-executed, human-approved\")\n→ About 62 organizations targeted, over half in the US\n→ Way in: exploited edge and remote-access systems such as FortiClient EMS, SimpleHelp, cPanel and VPN gateways\n→ When a model refused, the operator reframed the request as an \"authorized red team assessment\"\n→ In one case, one reused password unlocked the VPN, servers, RMM, backup and security tools\n\nWhat to do: patch internet-facing remote-access tools first, give every admin tool its own password plus MFA, and alert on new drivers and reverse-SOCKS tunnels.\n\nSend this to whoever owns your VPN and RMM logins 👇\n\nHow many of your admin tools share a password with something else?\n\nSource: The Hacker News, on SOCRadar research (23 Oct 2026)\n\n#AISecurity #Ransomware #AgenticAI #ThreatIntel #PasswordReuse #CyberSecurity"
+    },
+    {
+      "id": "2026-10-25-pm-02",
+      "kind": "carousel",
+      "category": "ATTACK",
+      "slot": "2026-10-25T23:05:00",
+      "story_key": "k0t-edge-devices-70k-credentials",
+      "send_to": "the person who patches your firewalls",
+      "sources": [
+        {
+          "name": "The Hacker News (Group-IB and NyxLab research)",
+          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+          "date": "2026-10-23"
+        }
+      ],
+      "cover": {
+        "hook": "70,000+ credentials exposed. The way in: firewalls and VPNs.",
+        "sub": "Group-IB and NyxLab tracked \"k0t\" breaking into FortiGate and GlobalProtect edge devices around the world."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "Who is k0t?",
+          "body": "An actor also known as CryptoFeel, Member19 and QazWsxShop, first seen in October 2025. Researchers assess links to the Qilin and The Gentlemen ransomware groups, possibly as an access broker or affiliate."
+        },
+        {
+          "type": "point",
+          "title": "How they got in",
+          "body": "Scanning for exposed VPN and firewall appliances, then exploiting CVE-2025-64446 (FortiWeb path traversal) and CVE-2026-0257 (PAN-OS and Prisma Access auth bypass), plus brute-forcing common passwords."
+        },
+        {
+          "type": "stat",
+          "big": "70,000+",
+          "label": "credentials exposed from network devices and LDAP dumps",
+          "note": "Nearly 38% of victims in Asia Pacific, 31.9% in Latin America"
+        },
+        {
+          "type": "point",
+          "title": "Then they stayed",
+          "body": "Remote access tools such as MeshCentral, Atera and AnyDesk for persistence, Mimikatz and Impacket to move and steal credentials, and Rclone to copy data out to Wasabi and MEGA."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Patch the FortiWeb and PAN-OS flaws named in the report",
+            "Reset credentials stored on or synced to edge devices",
+            "Alert on new RMM tools you didn't install",
+            "Watch for Rclone traffic to cloud storage"
+          ]
+        }
+      ],
+      "question": "Could you list every edge device you expose to the internet right now?",
+      "x_text": "\"k0t\" broke into FortiGate and GlobalProtect edge devices via CVE-2025-64446 and CVE-2026-0257, exposing 70,000+ credentials, per Group-IB and NyxLab. Possible links to Qilin and The Gentlemen.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "70,000+ credentials exposed. The way in was the firewall. 🔓\n\nGroup-IB and NyxLab tracked an actor called \"k0t\":\n→ Targeted exposed Fortinet FortiGate and Palo Alto GlobalProtect devices\n→ Exploited CVE-2025-64446 (FortiWeb) and CVE-2026-0257 (PAN-OS / Prisma Access), and brute-forced weak passwords\n→ 70,000+ credentials exposed from network devices and LDAP dumps\n→ Researchers assess possible links to Qilin and The Gentlemen ransomware\n\nSwipe for 4 things to do this week.\n\nSend this to the person who patches your firewalls 👇\n\nCould you list every edge device you expose to the internet right now?\n\nSource: The Hacker News, on Group-IB and NyxLab research (23 Oct 2026)\n\n#Fortinet #PaloAlto #VPNSecurity #Ransomware #ThreatIntel #CyberSecurity"
+    },
+    {
+      "id": "2026-10-25-pm-03",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-10-25T23:25:00",
+      "story_key": "cve-2026-111497",
+      "send_to": "whoever maintains your Node.js services",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+          "date": "2026-10-24"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "One compression bug. Node, Bun and Python.",
+        "segments": [
+          {
+            "say": "One compression bug. Node, Bun, Python, Envoy.",
+            "show": "One Brotli decoder bug. Node.js, Bun, Python, Envoy, Istio.",
+            "card": "Node2Shell|one bug, many runtimes",
+            "card_style": "alert"
+          },
+          {
+            "say": "Crafted Brotli data can write past a buffer. Imperva showed code execution on one Node build. No attacks seen yet.",
+            "show": "CVE-2026-111497 (CVSS 4.0: 9.2): crafted Brotli data overwrites past a buffer. Imperva showed code execution on one Node.js build. CISA: no exploitation seen.",
+            "card": "CVE-2026-111497 · CVSS 9.2",
+            "card_style": "stat"
+          },
+          {
+            "say": "Update, then restart and rebuild your images. Running processes keep the old decoder.",
+            "show": "Node.js 22.23.4 / 24.22.1 / 26.12.1, Bun 1.4.4, Python Brotli 1.2.1. Then restart and rebuild images.",
+            "card": "Update, restart, rebuild",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever maintains your Node services.",
+            "show": "Send this to whoever maintains your Node.js services.",
+            "card": "↗ Send this to your Node.js team"
+          }
+        ]
+      },
+      "x_text": "Node2Shell, CVE-2026-111497 (CVSS 4.0: 9.2): a Brotli decoder bug hitting Node.js, Bun, Python Brotli, Envoy and Istio. No exploitation seen yet. Fix: Node 22.23.4 / 24.22.1 / 26.12.1, Bun 1.4.4, then restart and rebuild.\n\n#PatchNow #InfoSec",
+      "ig_caption": "One compression bug. Node.js, Bun, Python, Envoy and Istio. ⚙️\n\nCVE-2026-111497, nicknamed Node2Shell, sits in Google's Brotli decoder:\n→ Crafted compressed data can write past the end of a buffer: crash, memory leak or code execution\n→ Rated 9.2 by Google (CVSS 4.0), 8.1 by Red Hat\n→ Imperva showed code execution on one Node.js 24.22.0 build; CISA lists exploitation as \"none\" so far\n→ Found by OpenAI's Codex Security team\n\nDo this now: update to Node.js 22.23.4, 24.22.1 or 26.12.1, Bun 1.4.4, Python Brotli 1.2.1 or brotlicffi 1.2.1.0. Then restart services and rebuild container images: running processes keep the old decoder.\n\nSend this to whoever maintains your Node.js services 👇\n\nHow many copies of one library do you think you're running?\n\nSource: The Hacker News (24 Oct 2026)\n\n#NodeJS #Node2Shell #PatchNow #AppSec #DevSecOps #CyberSecurity"
+    },
+    {
+      "id": "2026-10-25-pm-04",
+      "kind": "carousel",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-10-25T23:45:00",
+      "story_key": "emudhra-weak-intermediate-ca-keys",
+      "x": true,
+      "send_to": "whoever manages your TLS certificates",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+          "date": "2026-10-22"
+        },
+        {
+          "name": "The Record",
+          "url": "https://therecord.media/indian-tech-company-announces-withdrawal-certificate-business-incident",
+          "date": "2026-10-22"
+        }
+      ],
+      "cover": {
+        "hook": "One CA private key was the number 4.",
+        "sub": "Eight eMudhra intermediate CA keys could be computed from public certificates. Browsers, Go and Node.js shipped emergency blocks."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What went wrong",
+          "body": "eMudhra says a step in an April 2025 key ceremony produced weak keys. Researcher Scott Helme reported one private key was the number 4 instead of a random 384-bit number. The flaw went unnoticed for 18 months and passed two audits."
+        },
+        {
+          "type": "stat",
+          "big": "< 1 sec",
+          "label": "for Scott Helme to recover all 8 private keys",
+          "note": "From the public certificates alone, per The Hacker News"
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "With those keys, anyone could issue HTTPS certificates for sites they don't own. Chrome found no TLS certificates from the six TLS intermediates in CT logs before its block. Whether anyone misused them is not known."
+        },
+        {
+          "type": "point",
+          "title": "The response",
+          "body": "Chrome, Mozilla, Apple, Microsoft and Android blocked the certificates. Go, Node.js, certifi, Ubuntu and Debian shipped fixes. eMudhra says it is leaving the global SSL/TLS business. Chrome drops its emSign ECC Root CA - G3 from 27 Oct."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Update Go to 1.27.3 or 1.26.10 and rebuild",
+            "Update ca-certificates and trust bundles everywhere",
+            "Find any certs chaining to emSign ECC Root CA - G3",
+            "Move them to another CA before 27 Oct"
+          ]
+        }
+      ],
+      "question": "Does your app trust its own copy of the root store, and who updates it?",
+      "x_text": "eMudhra: 8 intermediate CA private keys were weak enough to compute from the public certs. One key was the number 4. Browsers, Go, Node.js and Linux distros shipped emergency blocks.\n\nThe week's lessons 🧵 #PKI #CyberSecurity",
+      "x_thread": [
+        "eMudhra: 8 intermediate CA private keys were weak enough to compute from the public certs. One key was the number 4. Browsers, Go, Node.js and Linux distros shipped emergency blocks.\n\nThe week's lessons 🧵 #PKI #CyberSecurity",
+        "1/ eMudhra says one step in an April 2025 key ceremony produced weak keys. It went unnoticed for 18 months and passed two audits, until a researcher reverse engineered them. Scott Helme says he recovered all 8 keys in under a second.",
+        "2/ Why it matters: with a CA key, an attacker can issue HTTPS certs for sites they don't control. Chrome found no TLS certs from the six TLS intermediates in CT logs before its block. Whether anyone misused them is not known.",
+        "3/ Response was fast: Chrome and Mozilla blocked the TLS intermediates on 17 Oct; Apple, Android and Microsoft followed. Go 1.27.3 / 1.26.10 and Node.js 22.23.4 / 24.22.1 / 26.12.1 reject the keys. eMudhra is exiting the global SSL/TLS business.",
+        "4/ Same week, same lesson: one shared library, many copies. Node2Shell (CVE-2026-111497) in the Brotli decoder hits Node.js, Bun, Python, Envoy and Istio. Each must patch its own copy, and running processes keep the old code.",
+        "5/ Do this week: update Go and rebuild; update ca-certificates and trust bundles; find certs chaining to emSign ECC Root CA - G3 and move them before Chrome drops it on 27 Oct; update Node.js and restart.",
+        "6/ Question: does your app trust its own bundled root store, and who updates it?\n\nSources: The Hacker News (22 and 24 Oct), The Record (22 Oct)."
+      ],
+      "ig_caption": "One certificate authority's private key was the number 4. 🔑\n\nEight eMudhra intermediate CA keys could be computed from the public certificates:\n→ eMudhra says a step in an April 2025 key ceremony produced weak keys; it went unnoticed for 18 months and passed two audits\n→ Researcher Scott Helme says he recovered all eight keys in under a second\n→ Chrome, Mozilla, Apple, Microsoft, Android, Go, Node.js and Linux distros shipped blocks\n→ Chrome found no TLS certs from the TLS intermediates in CT logs before its block; any misuse is unknown\n→ eMudhra says it is leaving the global SSL/TLS certificate business\n\nSwipe for the 4 steps, including a 27 Oct deadline.\n\nSend this to whoever manages your TLS certificates 👇\n\nDoes your app trust its own copy of the root store, and who updates it?\n\nSource: The Hacker News and The Record (22 Oct 2026)\n\n#PKI #TLS #CertificateAuthority #eMudhra #SupplyChainSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-25-pm-05",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-10-26T00:05:00",
+      "story_key": "opencode-console-provider-keys-2026-10",
+      "send_to": "whoever holds your team's AI API keys",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+          "date": "2026-10-19"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "A breach. Then surprise AI bills.",
+        "segments": [
+          {
+            "say": "One user reports a seventeen hundred dollar A I bill they didn't run up.",
+            "show": "One user reports $1,700 of AI usage they didn't make.",
+            "card": "$1,700|unexpected AI bill, one user reports",
+            "card_style": "stat"
+          },
+          {
+            "say": "OpenCode says an intruder reached a legacy system. Saved OpenAI, Anthropic and Google keys may have been exposed.",
+            "show": "OpenCode: an intruder reached a legacy system on 16 Oct. Provider keys saved in Console may have been exposed. 1.4% of Console users affected.",
+            "card": "Saved provider keys may be exposed",
+            "card_style": "alert"
+          },
+          {
+            "say": "Deleting the key isn't enough. Revoke it at the provider, set spend limits.",
+            "show": "Deleting it from Console does not revoke it. Revoke at the provider, rotate, set spend limits.",
+            "card": "Revoke at the provider",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever holds your team's A I keys.",
+            "show": "Send this to whoever holds your team's AI API keys.",
+            "card": "↗ Send this to your key holder"
+          }
+        ]
+      },
+      "x_text": "OpenCode Console breach: an intruder reached a legacy system and OpenAI, Anthropic and Google API keys saved by 1.4% of Console users may be exposed. Users report surprise bills. Revoke at the provider; deleting isn't enough.\n\n#AISecurity #DataBreach",
+      "ig_caption": "A breach, then surprise AI bills. 💸\n\nOpenCode says an intruder reached a legacy system on the night of 16 Oct:\n→ OpenAI, Anthropic and Google API keys saved in its hosted Console may have been exposed\n→ 1.4% of Console users affected; keys kept in the CLI and desktop apps are not part of it\n→ Users report unexpected usage, one of them $1,700 (user claims, not confirmed by OpenCode)\n→ OpenCode says it is working with Anthropic, OpenAI and Google\n\nWhat to do: an API key is a bearer credential. Deleting it from a tool does not revoke it. Revoke it in the provider dashboard, issue a new one, check billing back to 16 Oct, and set spend limits with one key per tool.\n\nSend this to whoever holds your team's AI API keys 👇\n\nWould you notice tomorrow if one of your AI keys started spending?\n\nSource: The Hacker News (19 Oct 2026)\n\n#AISecurity #APIKeys #DataBreach #SecretsManagement #DevSecOps #CyberSecurity"
+    }
+  ]
+}
