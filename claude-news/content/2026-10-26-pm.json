@@ -27,7 +27,7 @@
             "card_style": "stat"
           },
           {
-            "say": "A malicious AGENTS file sat in a Downloads folder. The agent started there and obeyed it.",
+            "say": "A malicious agents file sat in a Downloads folder. The agent started there and obeyed it.",
             "show": "Forever Security found it on a customer's PC: the agent ran from ~/Downloads and tried to install a malicious npm package.",
             "card": "Agent started in Downloads. Read the file. Obeyed.",
             "card_style": "alert"
