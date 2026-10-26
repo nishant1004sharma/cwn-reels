@@ -1,0 +1,20 @@
+{
+  "editorialDate": "2026-10-27",
+  "notes": "ONE evergreen Instagram knowledge image for MANUAL posting only. No Metricool. OWASP Logging Cheat Sheet primary source. Hook five words. Caption 41 words and 4 hashtags. Distinct from Claude news and 26 Oct API BOLA evergreen.",
+  "posts": [
+    {
+      "category": "APPSEC • SECURITY LOGGING",
+      "title": "Your Logs Shouldn't Store Secrets",
+      "bullets": [
+        "Mask or remove access tokens, session identifiers and passwords before writing logs.",
+        "Review database connection strings, encryption keys and sensitive personal data.",
+        "Test logging paths in CI and production; restrict who can read the logs."
+      ],
+      "takeaway": "Keep useful audit trails without exposing credentials.",
+      "caption": "Logs should help investigate incidents—not expose credentials. Remove or mask access tokens, session IDs, passwords and connection strings before logging. Restrict access to logs and test for accidental leakage in CI and production. #AppSec #SecurityLogging #DevSecOps #CyberSecurity Save this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+      ]
+    }
+  ]
+}
