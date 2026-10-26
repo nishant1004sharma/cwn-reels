@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-26",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-10-26-pm-01",
+      "kind": "reel",
+      "category": "AGENTIC AI",
+      "slot": "2026-10-26T16:00:00",
+      "story_key": "agents-md-downloads-coding-agent-hijack",
+      "send_to": "whoever runs AI agents on your team",
+      "sources": [
+        {
+          "name": "BleepingComputer (Forever Security research)",
+          "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+          "date": "2026-10-25"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "One text file hijacked an AI coding agent.",
+        "segments": [
+          {
+            "say": "Ninety percent. One text file hijacked an A I coding agent.",
+            "show": "90% success hijacking OpenAI Codex in tests, with one AGENTS.md file.",
+            "card": "90%|success hijacking Codex with one AGENTS.md file",
+            "card_style": "stat"
+          },
+          {
+            "say": "A malicious AGENTS file sat in a Downloads folder. The agent started there and obeyed it.",
+            "show": "Forever Security found it on a customer's PC: the agent ran from ~/Downloads and tried to install a malicious npm package.",
+            "card": "Agent started in Downloads. Read the file. Obeyed.",
+            "card_style": "alert"
+          },
+          {
+            "say": "Never launch coding agents from Downloads. Start them in the project folder.",
+            "show": "Start agents in the project root. Review unfamiliar AGENTS.md / CLAUDE.md files. Keep approvals on.",
+            "card": "Project folder only. Approvals on.",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs A I agents on your team.",
+            "show": "Send this to whoever runs AI agents on your team.",
+            "card": "↗ Send this to your AI agent owner"
+          }
+        ]
+      },
+      "x_text": "AGENTS.md hijack: Forever Security found agents run from ~/Downloads obeying a malicious instruction file: 90% success against OpenAI Codex in tests. A CLAUDE.md variant exposed Claude Code's OAuth token. Start agents in the project folder.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "One text file in your Downloads folder. Your AI coding agent does what it says. 🤖\n\nForever Security traced a hijack on a customer's computer:\n→ A coding agent tried to install a malicious npm package, function-color\n→ The cause: an AGENTS.md file in ~/Downloads, which was also the agent's working directory\n→ Against OpenAI Codex, a harmless test payload worked 90% of the time\n→ A CLAUDE.md variant redirected Claude Code's API traffic and exposed its OAuth token\n→ Claude Code alone launched 1,300+ sessions from Downloads across their customers\n→ The researchers: \"There is nothing here for OpenAI or Anthropic to patch.\"\n\nWhat to do: never use Downloads as an agent's working directory, start agents in the project root, review unfamiliar AGENTS.md and CLAUDE.md files, and keep approval prompts and sandboxing on.\n\nSend this to whoever runs AI agents on your team 👇\n\nWhere do your developers usually start their coding agents?\n\nSource: BleepingComputer, on Forever Security research (25 Oct 2026)\n\n#AgenticAI #AISecurity #PromptInjection #AICodingAgents #DevSecOps #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-pm-02",
+      "kind": "carousel",
+      "category": "POLICY",
+      "slot": "2026-10-26T17:00:00",
+      "story_key": "sweden-government-blocks-chatgpt-claude",
+      "send_to": "whoever owns your AI use policy",
+      "sources": [
+        {
+          "name": "Decrypt (citing Sveriges Radio)",
+          "url": "https://decrypt.co/381763/sweden-government-offices-block-chatgpt-claude",
+          "date": "2026-10-24"
+        },
+        {
+          "name": "Notebookcheck (citing Sveriges Radio and SVT)",
+          "url": "https://www.notebookcheck.com/ChatGPT-und-Claude-Schwedens-Regierung-sperrt-KI-Chatbots-ab-Montag.1433510.0.html",
+          "date": "2026-10-25"
+        }
+      ],
+      "cover": {
+        "hook": "From today, Sweden's government offices block ChatGPT and Claude.",
+        "sub": "Staff get Microsoft Copilot instead. The reason given: information security."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What changed",
+          "body": "From Monday 26 Oct, the browser versions of ChatGPT and Claude are blocked on work computers at Regeringskansliet, Sweden's Government Offices: the Prime Minister's office and the ministries."
+        },
+        {
+          "type": "point",
+          "title": "The reason",
+          "body": "Digitalisation director Mikael Wettercrantz wrote that using AI services without a formal contract can affect information security, and that there had been several examples of problematic use of open AI services."
+        },
+        {
+          "type": "stat",
+          "big": "~10",
+          "label": "AI services in \"widespread and risky\" use at one agency",
+          "note": "Internal audit at Sweden's Transport Administration, per Decrypt"
+        },
+        {
+          "type": "point",
+          "title": "Not just one office",
+          "body": "Sweden's Tax Agency and the National Board of Institutional Care already block consumer AI tools, and the Enforcement Authority is preparing a decision. Copilot stays because it was reviewed and its security settings raised."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "List the AI tools your staff actually use",
+            "Approve one tool under a proper contract",
+            "Block or monitor consumer AI sites on work devices",
+            "Tell staff what never goes into a prompt"
+          ]
+        }
+      ],
+      "question": "Does your organisation have a contract for the AI tool your staff use most?",
+      "x_text": "Sweden's Government Offices block ChatGPT and Claude on staff computers from today, 26 Oct, citing information security. Microsoft Copilot stays as the approved tool. Approved tools only.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "From today: no ChatGPT, no Claude on Sweden's government computers. 🇸🇪\n\nSweden's Government Offices (Regeringskansliet) made the call:\n→ The browser versions of ChatGPT and Claude are blocked on work computers from Monday 26 Oct\n→ Microsoft Copilot stays: it was reviewed and its security settings raised\n→ The stated reason: AI services without a formal contract can affect information security, and there were \"several examples\" of problematic use\n→ The Tax Agency and the National Board of Institutional Care already block consumer AI tools\n\nSwipe for 4 things to do this week.\n\nSend this to whoever owns your AI use policy 👇\n\nDoes your organisation have a contract for the AI tool your staff use most?\n\nSource: Decrypt (24 Oct 2026) and Notebookcheck (25 Oct 2026), citing Sveriges Radio\n\n#ShadowAI #AIGovernance #AISecurity #ChatGPT #DataProtection #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-pm-03",
+      "kind": "reel",
+      "category": "RANSOMWARE",
+      "slot": "2026-10-26T20:00:00",
+      "story_key": "city-of-columbia-sc-ransomware-2026-10",
+      "send_to": "whoever owns your incident response plan",
+      "sources": [
+        {
+          "name": "South Carolina Public Radio",
+          "url": "https://www.southcarolinapublicradio.org/sc-news/2026-10-25/city-of-columbia-says-it-was-victim-of-ransomware-attack-asks-sled-to-investigate",
+          "date": "2026-10-25"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "911 still works. Online services don't.",
+        "segments": [
+          {
+            "say": "Nine one one still works. The city's online services don't.",
+            "show": "City of Columbia, South Carolina: ransomware. Online services offline.",
+            "card": "Ransomware hit the City of Columbia",
+            "card_style": "alert"
+          },
+          {
+            "say": "The City of Columbia, South Carolina, confirmed a ransomware attack found on October twentieth. Services were taken offline as a precaution.",
+            "show": "Found 20 Oct. MyColaSC, Animal Services, park reservations and GIS are down. State police (SLED) investigating.",
+            "card": "Found 20 Oct · SLED investigating",
+            "card_style": "fact"
+          },
+          {
+            "say": "Police, fire and water kept running. Know which systems you can safely switch off.",
+            "show": "Police, fire, 911, Columbia Water and online payments kept working.",
+            "card": "Know what you can switch off safely",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns your incident plan.",
+            "show": "Send this to whoever owns your incident response plan.",
+            "card": "↗ Send this to your incident lead"
+          }
+        ]
+      },
+      "x_text": "City of Columbia, South Carolina confirms a ransomware attack found 20 Oct. MyColaSC, Animal Services, park reservations and GIS offline; police, fire, 911 and water still running. SLED investigating; data impact still being assessed.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "911 still works. The city's online services don't. 🏛️\n\nThe City of Columbia, South Carolina, confirmed a ransomware attack:\n→ Discovered 20 Oct; IT took affected services offline as a precaution\n→ Down: MyColaSC, Animal Services, Parks and Recreation reservations, and GIS\n→ Still running: police, fire, 911, Columbia Water and online payments\n→ The State Law Enforcement Division (SLED) is investigating, with outside specialists\n→ The city is still assessing whether any information was accessed; no restoration date yet\n\nWhat to do: map which services must never go down, separate them from the rest, and rehearse taking systems offline on purpose.\n\nSend this to whoever owns your incident response plan 👇\n\nIf you had to pull the plug tonight, do you know what keeps running?\n\nSource: South Carolina Public Radio (25 Oct 2026)\n\n#Ransomware #IncidentResponse #LocalGovernment #CyberResilience #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-pm-04",
+      "kind": "carousel",
+      "category": "RANSOMWARE",
+      "slot": "2026-10-26T21:00:00",
+      "story_key": "cve-2026-0257",
+      "send_to": "the person who patches your firewalls",
+      "sources": [
+        {
+          "name": "The Hacker News (Unit 42 research)",
+          "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+          "date": "2026-10-20"
+        },
+        {
+          "name": "Cyware Daily Threat Intelligence",
+          "url": "https://www.cyware.com/resources/threat-briefings/daily-threat-briefing/cyware-daily-threat-intelligence-october-24-2026",
+          "date": "2026-10-24"
+        }
+      ],
+      "cover": {
+        "hook": "Two ransomware gangs, one VPN flaw, no MFA in the way.",
+        "sub": "Unit 42 links Qilin and INC to CVE-2026-0257 in PAN-OS and Prisma Access. A patch has existed since May."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "The flaw",
+          "body": "CVE-2026-0257 (CVSS 7.8) is an authentication bypass in Palo Alto Networks PAN-OS and Prisma Access that can let attackers set up unauthorized VPN connections. Patched in May 2026; in CISA's KEV catalog since 13 May."
+        },
+        {
+          "type": "point",
+          "title": "Who is using it",
+          "body": "Unit 42: \"Ransomware operators exploiting CVE-2026-0257 include Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka INC).\" ReliaQuest has also reported Qilin and Settra exploiting it."
+        },
+        {
+          "type": "point",
+          "title": "After the VPN",
+          "body": "Unit 42 describes remote-management tools for recon and RDP/SMB to move around. In one case attackers went from the VPN gateway to vCenter, disabled ESXi controls and dumped a domain controller's disk offline."
+        },
+        {
+          "type": "stat",
+          "big": "May",
+          "label": "patch available. Unit 42 updated its warning in October",
+          "note": "Sectors hit include education, healthcare, government and energy"
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Confirm every PAN-OS gateway runs a fixed release",
+            "Hunt for VPN sessions you can't tie to a real user",
+            "Alert on new logins to vCenter and ESXi",
+            "Found one? Start incident response"
+          ]
+        }
+      ],
+      "question": "Would you notice a VPN session that never passed MFA?",
+      "x_text": "CVE-2026-0257: Unit 42 says Qilin and INC ransomware operators exploit this PAN-OS / Prisma Access auth bypass to set up VPN sessions and get past MFA, then pivot to vCenter. Patched since May. Check your gateways.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "Two ransomware gangs. One VPN flaw. MFA didn't stop them. 🔓\n\nPalo Alto Networks' Unit 42 on CVE-2026-0257:\n→ An authentication bypass in PAN-OS and Prisma Access (CVSS 7.8) that can open unauthorized VPN connections\n→ Exploited by Spikey Scorpius (aka Qilin) and Tarnished Scorpius (aka INC), Unit 42 says\n→ After getting in: recon with remote-management tools, RDP and SMB to move around\n→ One case went from the VPN gateway to vCenter, then dumped a domain controller's disk offline\n→ Patched in May 2026 and in CISA's KEV catalog since 13 May\n\nSwipe for 4 things to do this week.\n\nSend this to the person who patches your firewalls 👇\n\nWould you notice a VPN session that never passed MFA?\n\nSource: The Hacker News, on Unit 42 research (20 Oct 2026)\n\n#Ransomware #PaloAlto #VPN #MFA #Qilin #CyberSecurity"
+    },
+    {
+      "id": "2026-10-26-pm-05",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-10-26T22:30:00",
+      "story_key": "cve-2026-110936",
+      "send_to": "whoever installs Siemens software",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "date": "2026-10-20"
+        },
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
+          "date": "2026-10-20"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "A real, signed Siemens app. Loading malware.",
+        "segments": [
+          {
+            "say": "A real, signed Siemens app. Loading malware.",
+            "show": "A genuine, validly signed Siemens Software Center, abused to load malware.",
+            "card": "Signed app. Malicious file beside it.",
+            "card_style": "alert"
+          },
+          {
+            "say": "Siemens warns attackers are abusing Software Center in ClickFix attacks. A fake installer drops a bad file next to the genuine app.",
+            "show": "Siemens: a fake AllMyBasic.msi installer puts a malicious DLL next to Software Center 3.5.8.7. Linked to the Romulus ClickFix campaign.",
+            "card": "CVE-2026-110936 · CVSS 8.4",
+            "card_style": "fact"
+          },
+          {
+            "say": "Update Software Center, and never paste commands a web page asks you to run.",
+            "show": "Update to 4.0.9.8 or later, then launch it. Never paste commands from a web page into Run or PowerShell.",
+            "card": "Update to 4.0.9.8 or later",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever installs Siemens software.",
+            "show": "Send this to whoever installs Siemens software.",
+            "card": "↗ Send this to your Siemens admin"
+          }
+        ]
+      },
+      "x_text": "Siemens Software Center CVE-2026-110936 (CVSS 8.4) exploited: ClickFix attackers drop a malicious DLL beside a genuine signed copy (3.5.8.7) via a fake MSI. Siemens links it to the Romulus campaign. Update to 4.0.9.8.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "A genuine, signed Siemens app. Loading someone else's malware. ⚠️\n\nSiemens warns Software Center is being abused in ClickFix attacks:\n→ CVE-2026-110936 (CVSS 8.4): version 3.5.8.7 loaded helper files from its own folder without checking them\n→ A fake installer, AllMyBasic.msi, puts a malicious DLL next to the signed app\n→ Siemens links the activity to the Romulus ClickFix campaign; Forescout tied that platform to LegionLoader, which can steal Chrome data\n→ Siemens says none of its systems or update channels were breached, to its knowledge\n→ Reported by Huntress Labs; fixed in 4.0.9.8\n\nWhat to do: update to 4.0.9.8 or later and launch it, download only from Siemens, hunt for SiemensSoftwareCenter.exe started by msiexec from AppData, and never paste commands a web page asks you to run.\n\nSend this to whoever installs Siemens software 👇\n\nWould your users spot a fake \"I am not a robot\" check?\n\nSource: The Hacker News and Help Net Security (20 Oct 2026)\n\n#ClickFix #Siemens #PatchNow #Malware #DLLSideloading #CyberSecurity"
+    }
+  ]
+}
