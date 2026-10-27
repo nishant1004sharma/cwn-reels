@@ -21,19 +21,19 @@
         "hook": "Ambulances diverted. Surgeries paused.",
         "segments": [
           {
-            "say": "Ambulances diverted. Surgeries paused. A cyberattack hit New Mexico's academic health system.",
+            "say": "Ambulances diverted. Surgeries paused. A cyberattack hit New Mexico's U N M Health.",
             "show": "UNM Health limited new admissions, diverted ambulances and suspended outpatient surgeries and appointments after a cyberattack.",
-            "card": "Ambulances diverted|UNM Health, after a cyberattack",
+            "card": "Ambulances diverted · UNM Health cyberattack",
             "card_style": "alert"
           },
           {
-            "say": "A new ransomware group, Byod, claims thirty-six thousand systems. U N M says core systems and servers weren't penetrated.",
+            "say": "A new group, Byod, claims thirty-six thousand systems. U N M says core systems weren't penetrated.",
             "show": "Byod's claims are unverified. UNM: some end-user devices affected, core systems not penetrated. Hospitals fully open again.",
             "card": "Claimed: 36,000 systems · unverified",
             "card_style": "fact"
           },
           {
-            "say": "Practise downtime. Paper workflows and ambulance diversion need a drill, not a first try.",
+            "say": "Drill your downtime plan before you need it.",
             "show": "Rehearse paper workflows, diversion and restore order before you need them.",
             "card": "Drill your downtime plan",
             "card_style": "answer"
@@ -239,7 +239,7 @@
             "card_style": "alert"
           },
           {
-            "say": "J Frog found forty-two real GitHub repos from eleven owners already armed. Its payloads are big enough to slip past GitHub search.",
+            "say": "J Frog found forty-two real GitHub repos already armed, hidden from GitHub search.",
             "show": "18 npm packages, 42 repos from 11 owners, 12.9–13.7 MB payload blobs. Hooks target Claude, Gemini, Cursor and VS Code. Found by SafeDep and JFrog.",
             "card": "42 repos · 11 owners",
             "card_style": "stat"
