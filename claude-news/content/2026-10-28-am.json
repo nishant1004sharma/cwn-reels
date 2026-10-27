@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-28",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-10-28-am-01",
+      "kind": "reel",
+      "category": "RANSOMWARE",
+      "slot": "2026-10-28T12:00:00",
+      "story_key": "unm-health-cyberattack-byod-2026-10",
+      "send_to": "whoever runs your downtime drills",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+          "date": "2026-10-27"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Ambulances diverted. Surgeries paused.",
+        "segments": [
+          {
+            "say": "Ambulances diverted. Surgeries paused. A cyberattack hit New Mexico's academic health system.",
+            "show": "UNM Health limited new admissions, diverted ambulances and suspended outpatient surgeries and appointments after a cyberattack.",
+            "card": "Ambulances diverted|UNM Health, after a cyberattack",
+            "card_style": "alert"
+          },
+          {
+            "say": "A new ransomware group, Byod, claims thirty-six thousand systems. U N M says core systems and servers weren't penetrated.",
+            "show": "Byod's claims are unverified. UNM: some end-user devices affected, core systems not penetrated. Hospitals fully open again.",
+            "card": "Claimed: 36,000 systems · unverified",
+            "card_style": "fact"
+          },
+          {
+            "say": "Practise downtime. Paper workflows and ambulance diversion need a drill, not a first try.",
+            "show": "Rehearse paper workflows, diversion and restore order before you need them.",
+            "card": "Drill your downtime plan",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your downtime drills.",
+            "show": "Send this to whoever runs your downtime drills.",
+            "card": "↗ Send this to your downtime lead"
+          }
+        ]
+      },
+      "x_text": "UNM Health / Byod ransomware claim: after a cyberattack, New Mexico's academic health system diverted ambulances and paused outpatient surgeries. Byod claims 36,000 systems; UNM says core systems weren't penetrated. Hospitals are open.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "Ambulances diverted. Outpatient surgeries paused. 🏥\n\nWhat UNM Health disclosed (via BleepingComputer, 27 Oct):\n→ A cyberattack caused outages at the University of New Mexico Health Sciences Center\n→ UNM Health limited new admissions, diverted ambulances and suspended outpatient surgeries and appointments\n→ UNM Hospital houses New Mexico's only Level I trauma center\n→ A new ransomware group, Byod, claims it reached 36,000 systems; BleepingComputer could not verify that\n→ UNM's assessment: some end-user devices were affected, but core systems and servers were not penetrated. Critical systems are back and all hospitals are fully open\n\nWhat to do: drill your downtime procedures (paper orders, diversion, restore order) and warn staff and patients about phishing that piggybacks on the news.\n\nSend this to whoever runs your downtime drills 👇\n\nWhen did your team last run a full downtime drill?\n\nSource: BleepingComputer (27 Oct 2026)\n\n#Ransomware #HealthcareSecurity #IncidentResponse #BusinessContinuity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-am-02",
+      "kind": "carousel",
+      "category": "AI SECURITY",
+      "slot": "2026-10-28T10:00:00",
+      "story_key": "anthropic-s1-cyber-risk-factors-2026-10",
+      "send_to": "whoever signs off on your AI vendors",
+      "sources": [
+        {
+          "name": "CyberScoop",
+          "url": "https://cyberscoop.com/anthropic-ipo-filing-cybersecurity-risks/",
+          "date": "2026-10-27"
+        }
+      ],
+      "cover": {
+        "hook": "Anthropic's IPO filing: its own models could be used in cyberattacks.",
+        "sub": "Its S-1 names foreign governments and criminal groups, and says its safeguards may not prove adequate."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "Who it's worried about",
+          "body": "Anthropic expects bad actors, including foreign governments, to step up efforts to access its newest frontier models as their cyber capabilities improve, per CyberScoop's reading of the S-1."
+        },
+        {
+          "type": "point",
+          "title": "Agents widen the attack surface",
+          "body": "The filing says AI agents create 'distinct' attack surfaces: their links to tools, databases, APIs and third-party systems can be compromised or manipulated to feed the agent malicious instructions."
+        },
+        {
+          "type": "stat",
+          "big": "2",
+          "label": "models under US export controls",
+          "note": "The filing cites Commerce Department controls on Mythos 5 and Fable 5"
+        },
+        {
+          "type": "point",
+          "title": "Hard to insure, hard to report",
+          "body": "Anthropic says it may struggle to insure some incidents tied to its models, and EU breach-reporting deadlines could be hard to meet. It also cites an FTC civil investigative demand from October."
+        },
+        {
+          "type": "actions",
+          "title": "If you run AI agents",
+          "items": [
+            "List every tool and API each agent can call",
+            "Treat tool output as untrusted input",
+            "Ask AI vendors how they report incidents",
+            "Log agent actions for investigations"
+          ]
+        }
+      ],
+      "question": "Does your vendor risk review cover what your AI agents can reach?",
+      "x_text": "Anthropic S-1: the IPO filing warns its models could be used in cyberattacks by foreign governments and criminal groups, that AI agents create 'distinct' attack surfaces, and that its safeguards may not prove adequate.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "Anthropic's own IPO filing says its models could be used in cyberattacks. 📄\n\nWhat the S-1 says (via CyberScoop, 27 Oct):\n→ It expects bad actors, including foreign governments, to push harder to access its newest models\n→ Its models could be used in attacks by foreign governments and cybercriminal groups\n→ AI agents create 'distinct' attack surfaces: their tools, APIs and data sources can be manipulated to feed them malicious instructions\n→ 'There can be no assurance' its safeguards 'will prove adequate'\n→ It may struggle to insure some incidents tied to its models\n\nWhy it matters: this is a vendor telling investors, in writing, where AI risk sits. Map what your agents can reach, treat tool output as untrusted, and ask your AI vendors how they report incidents.\n\nSend this to whoever signs off on your AI vendors 👇\n\nDoes your vendor risk review cover what your AI agents can reach?\n\nSource: CyberScoop (27 Oct 2026)\n\n#AISecurity #Anthropic #AgenticAI #ThirdPartyRisk #AIGovernance #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-am-03",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-10-28T08:15:00",
+      "story_key": "cve-2026-109618",
+      "send_to": "the person who patches your web servers",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+          "date": "2026-10-27"
+        },
+        {
+          "name": "Qualys Threat Research",
+          "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/10/20/php-announces-critical-security-release-for-two-vulnerabilities",
+          "date": "2026-10-20"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "5 million+ PHP hosts. Two flaws exploited.",
+        "segments": [
+          {
+            "say": "Over five million PHP hosts are exposed. Two PHP flaws are now exploited.",
+            "show": "PHP2Shell: CVE-2026-109618 and CVE-2026-109619. CISA added both to its exploited list on 26 Oct.",
+            "card": "5.1M+|PHP hosts exposed online (VirusTotal estimate)",
+            "card_style": "stat"
+          },
+          {
+            "say": "Remote code execution, no login needed. U S federal agencies must fix it by Thursday.",
+            "show": "Unauthenticated RCE in the PHP runtime, CVSS 4.0 score 9.2. Exploitation seen on Apache mod_php running 8.4.26.",
+            "card": "CISA deadline: 29 Oct",
+            "card_style": "alert"
+          },
+          {
+            "say": "Update P H P now, and check your distro's backported packages too.",
+            "show": "Fixed: 8.5.12, 8.4.27, 8.3.36, 8.2.35. Distro packages may carry the fix under older version numbers.",
+            "card": "8.5.12 · 8.4.27 · 8.3.36 · 8.2.35",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to the person who patches your web servers.",
+            "show": "Send this to the person who patches your web servers.",
+            "card": "↗ Send this to your web server patcher"
+          }
+        ]
+      },
+      "x_text": "PHP2Shell, CVE-2026-109618 / CVE-2026-109619: CISA confirms in-the-wild exploitation of the unauthenticated PHP RCE flaws; US agencies must fix by 29 Oct. Fixed in PHP 8.5.12, 8.4.27, 8.3.36, 8.2.35.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "Over 5 million PHP hosts are exposed, and two PHP flaws are now exploited. ⚠️\n\nWhat's confirmed:\n→ PHP2Shell: CVE-2026-109618 and CVE-2026-109619, unauthenticated remote code execution in the PHP runtime (CVSS 4.0: 9.2)\n→ CISA added both to its Known Exploited Vulnerabilities catalog on 26 Oct; US federal agencies must fix by 29 Oct\n→ Amazon says attackers began targeting the flaws four days before the patches shipped\n→ VirusTotal estimates 5.1 million+ PHP hosts exposed online\n\nWhat to do: update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35 (or your distro's backported package) and restart every worker. Can't patch today? Apply PHP's published mitigations or restrict access.\n\nSend this to the person who patches your web servers 👇\n\nHow many PHP versions are running in your estate right now?\n\nSource: BleepingComputer (27 Oct 2026), Qualys (20 Oct 2026)\n\n#PHP #PHP2Shell #PatchNow #CISAKEV #WebSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-am-04",
+      "kind": "carousel",
+      "category": "AGENTIC AI",
+      "slot": "2026-10-28T13:30:00",
+      "story_key": "warp-vendor-breach-agent-logs-2026-10",
+      "send_to": "whoever approves your AI dev tools",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+          "date": "2026-10-27"
+        }
+      ],
+      "cover": {
+        "hook": "Warp: about 1% of users may have had AI agent logs exposed.",
+        "sub": "The agentic dev environment says a vendor in its infrastructure was exploited. It caught it within hours."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "Warp says agent decision logs and telemetry were exposed in an attack on a third-party vendor in its infrastructure. CEO Zach Lloyd calls it 'active and narrow-banded'. Warp learned of it on a Friday."
+        },
+        {
+          "type": "stat",
+          "big": "~1%",
+          "label": "of Warp users may be affected",
+          "note": "Warp's website says it has at least 800,000 users"
+        },
+        {
+          "type": "point",
+          "title": "Still unknown",
+          "body": "Warp hasn't named the vendor or the flaw, or said whether source code, prompts or credentials were in the data. An analysis cited by BleepingComputer suggests an 'agent swarm' ran the attack."
+        },
+        {
+          "type": "point",
+          "title": "The response",
+          "body": "Warp notified affected users, brought in CrowdStrike and told law enforcement. It follows a separate OpenCode incident where stored API keys of about 1.4% of users were exposed."
+        },
+        {
+          "type": "actions",
+          "title": "For teams using AI dev tools",
+          "items": [
+            "Assume agent traces can hold secrets",
+            "Set short retention for agent logs",
+            "Rotate keys pasted into agent sessions",
+            "Expect phishing that cites the breach"
+          ]
+        }
+      ],
+      "question": "Do you know how long your AI dev tools keep your agent logs?",
+      "x_text": "Warp breach: the agentic dev environment says AI agent decision logs and telemetry were exposed via an exploited third-party vendor. CEO Zach Lloyd estimates about 1% of users may be affected. CrowdStrike is investigating.\n\n#AgenticAI #DataBreach",
+      "ig_caption": "Your AI agent's logs are data too. Warp just found that out. 🤖\n\nWhat Warp disclosed (via BleepingComputer, 27 Oct):\n→ Agent decision logs and user telemetry were exposed in an attack on a third-party vendor in Warp's infrastructure\n→ CEO Zach Lloyd estimates roughly 1% of users may be affected; Warp says it has at least 800,000 users\n→ Warp says it detected it within hours; CrowdStrike is investigating and law enforcement was told\n→ Not yet known: the vendor, the flaw, or whether code, prompts or credentials were included\n\nWhy it matters: agent traces record what your tools saw and did, which can include secrets. Set short retention, rotate any keys you've pasted into agent sessions, and watch for phishing that mentions the breach.\n\nSend this to whoever approves your AI dev tools 👇\n\nDo you know how long your AI dev tools keep your agent logs?\n\nSource: BleepingComputer (27 Oct 2026)\n\n#AgenticAI #DataBreach #DevSecOps #AISecurity #ThirdPartyRisk #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-am-05",
+      "kind": "reel",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-10-28T14:30:00",
+      "story_key": "testmetest-npm-worm-42-github-repos",
+      "send_to": "whoever handles your leaked-token alerts",
+      "sources": [
+        {
+          "name": "The Register",
+          "url": "https://www.theregister.com/security/2026/10/26/worm-armed-42-github-repos-by-hiding-a-payload-too-big-to-fail/5305570",
+          "date": "2026-10-26"
+        },
+        {
+          "name": "StepSecurity",
+          "url": "https://www.stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm",
+          "date": "2026-10-08"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "Revoke the token. Lose your home folder.",
+        "segments": [
+          {
+            "say": "Revoke the stolen token, lose your home folder. That's this worm's trap.",
+            "show": "The testmetest npm worm installs a wiper that deletes the victim's home directory when the stolen GitHub token is revoked.",
+            "card": "Revoke the token → home folder wiped",
+            "card_style": "alert"
+          },
+          {
+            "say": "J Frog found forty-two real GitHub repos from eleven owners already armed. Its payloads are big enough to slip past GitHub search.",
+            "show": "18 npm packages, 42 repos from 11 owners, 12.9–13.7 MB payload blobs. Hooks target Claude, Gemini, Cursor and VS Code. Found by SafeDep and JFrog.",
+            "card": "42 repos · 11 owners",
+            "card_style": "stat"
+          },
+          {
+            "say": "Myth: revoke first. Reality: isolate the machine, remove the wiper, then rotate.",
+            "show": "For this wiper family: isolate, remove the token monitor, then revoke and rotate every secret.",
+            "card": "Isolate → clean → then revoke",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever handles your leaked-token alerts.",
+            "show": "Send this to whoever handles your leaked-token alerts.",
+            "card": "↗ Send this to your token responder"
+          }
+        ]
+      },
+      "x_text": "testmetest npm worm (Miasma family): JFrog found 42 real GitHub repos from 11 owners armed. It hooks AI coding tools and plants a wiper that deletes your home folder if the stolen GitHub token is revoked. Isolate before you revoke.\n\n#SupplyChain #InfoSec",
+      "ig_caption": "Revoke the stolen token, and it wipes your home folder. 🪱\n\nWhat researchers found (via The Register, 26 Oct):\n→ The 'testmetest' npm worm, part of the Miasma family, spread through 18 npm packages\n→ JFrog found 42 real GitHub repositories from 11 owners already armed, with account hijacks going back to July\n→ 12.9–13.7 MB payload blobs are big enough to evade the GitHub search and API paths used to find this kind of compromise\n→ Execution hooks target AI coding tools and dev tools, including Claude, Gemini, Cursor and VS Code\n→ It steals credentials and installs a wiper that deletes the home directory when the stolen GitHub token is revoked\n\nWhat to do: if a dev machine is hit, isolate it and remove the token monitor before revoking, then rotate every secret it could reach. Set ignore-scripts in npm and review unexpected .claude or .vscode files in repos.\n\nSend this to whoever handles your leaked-token alerts 👇\n\nDoes your incident playbook say what to do before revoking a stolen token?\n\nSource: The Register (26 Oct 2026), StepSecurity\n\n#SupplyChainSecurity #npm #GitHub #DevSecOps #Malware #CyberSecurity"
+    }
+  ]
+}
