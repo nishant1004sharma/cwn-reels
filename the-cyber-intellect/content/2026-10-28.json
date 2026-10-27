@@ -1,0 +1,20 @@
+{
+  "editorialDate": "2026-10-28",
+  "notes": "ONE evergreen bright Instagram security knowledge image for MANUAL posting ONLY. No Metricool, no Instagram API, no automatic publication. Distinct from Claude-owned news and Oct 26 API BOLA / Oct 27 logging evergreen. 6-word hook, 48-word caption, 4 hashtags. Primary source OWASP SSRF Prevention Cheat Sheet.",
+  "posts": [
+    {
+      "category": "APPSEC • CLOUD SECURITY",
+      "title": "One URL Can Expose Cloud Credentials",
+      "bullets": [
+        "Inventory URL fetchers: webhooks, link previews, image imports and document converters.",
+        "Allowlist outbound destinations, validate resolved IP addresses at connection time and disable unsafe redirects.",
+        "Block access to internal networks and cloud metadata; on AWS, require IMDSv2 as defense in depth."
+      ],
+      "takeaway": "Test DNS rebinding, redirects and metadata access.",
+      "caption": "SSRF turns a URL-fetching feature into a path toward internal services or cloud metadata. Inventory webhooks and URL previews, restrict outbound destinations, validate resolved IPs at connection time, and disable unsafe redirects. On AWS, enforce IMDSv2 as defense in depth.\n\n#AppSec #SSRF #CloudSecurity #SecureCoding\n\nSave this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ]
+    }
+  ]
+}
