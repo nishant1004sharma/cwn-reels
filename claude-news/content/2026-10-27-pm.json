@@ -248,7 +248,7 @@
         "hook": "$50 million demand. GMO said no.",
         "segments": [
           {
-            "say": "Fifty million dollars in crypto. That's what attackers demanded. G M O says it won't pay.",
+            "say": "Fifty million dollars in crypto. Attackers demanded it. G M O says it won't pay.",
             "show": "GMO Internet: attackers demanded $50M in crypto, threatening to leak company and customer data.",
             "card": "$50M|ransom demand, GMO refuses",
             "card_style": "stat"
