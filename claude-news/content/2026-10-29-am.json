@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-29",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-10-29-am-01",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-10-29T12:00:00",
+      "story_key": "fec-efiling-breach-attempt-2026-10",
+      "send_to": "whoever handles your campaign filings",
+      "sources": [
+        {
+          "name": "Reuters (via Yahoo News)",
+          "url": "https://ca.news.yahoo.com/hacker-trying-breach-us-federal-184450728.html",
+          "date": "2026-10-27"
+        },
+        {
+          "name": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/hackers-target-u-s-election-commission-forcing-online-system-shutdown/",
+          "date": "2026-10-28"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "A week before the midterms. Filings offline.",
+        "segments": [
+          {
+            "say": "A week before the midterms, the U S election finance regulator went offline.",
+            "show": "The FEC took its web-facing services offline. E-filing has been down since about 10 p.m. ET on 26 Oct.",
+            "card": "FEC e-filing offline · midterms 3 Nov",
+            "card_style": "alert"
+          },
+          {
+            "say": "An F E C email said: we have a bad actor attempting to breach our systems. No breach is confirmed.",
+            "show": "Email seen by Reuters: \"We have a bad actor attempting to breach FEC systems.\" No confirmed data loss.",
+            "card": "Attempted breach · not confirmed",
+            "card_style": "fact"
+          },
+          {
+            "say": "Twenty-four and forty-eight hour spending reports can't be filed. Voting shouldn't be affected.",
+            "show": "24h/48h spending reports blocked. Past reports still searchable. The FEC doesn't run elections.",
+            "card": "Have a manual filing fallback",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever handles your campaign filings.",
+            "show": "Send this to whoever handles your campaign filings.",
+            "card": "↗ Send this to your filings lead"
+          }
+        ]
+      },
+      "x_text": "FEC hacking attempt: the US election finance regulator took web services offline over 'a bad actor attempting to breach FEC systems', per an email seen by Reuters. E-filing is down a week before the midterms. No breach confirmed.\n\n#ElectionSecurity #CyberSecurity",
+      "ig_caption": "A week before the midterms, the FEC's filing system went dark. 🗳️\n\nWhat Reuters reported (27 Oct):\n→ An FEC e-filings officer emailed compliance firms: \"We have a bad actor attempting to breach FEC systems\"\n→ The FEC took its web-facing services offline; e-filing has been down since about 10 p.m. ET on Monday 26 Oct\n→ 24-hour and 48-hour spending reports can't be filed; past reports are still searchable\n→ No breach or data loss has been confirmed, and attackers haven't been named\n→ The FEC doesn't run elections, so it says voting shouldn't be affected. The midterms are on 3 Nov\n\nWhy it matters: a defensive shutdown can stop an intrusion and still stop the business. Know your manual fallback for deadline-bound filings before you need it.\n\nSend this to whoever handles your campaign filings 👇\n\nWould you take your public-facing systems offline mid-deadline to stop an attack?\n\nSource: Reuters (27 Oct 2026), Cyber Security News (28 Oct 2026)\n\n#ElectionSecurity #FEC #Midterms2026 #IncidentResponse #CyberAttack #CyberSecurity"
+    },
+    {
+      "id": "2026-10-29-am-02",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-10-29T10:00:00",
+      "story_key": "sony-network-communications-so-net-breach-2026-10",
+      "send_to": "anyone you know on So-net or Docomo",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+          "date": "2026-10-28"
+        }
+      ],
+      "cover": {
+        "hook": "2,585,481 customer records. One ISP member database.",
+        "sub": "Sony Network Communications says an unauthorized party got into its So-net member database. Docomo Hikari users are hit too."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "Four days to notice",
+          "body": "The breach happened on 19 October and was detected on 23 October. Sony announced it on 27 October, shut down the compromised servers and blocked external communication."
+        },
+        {
+          "type": "stat",
+          "big": "2.58M",
+          "label": "records exposed",
+          "note": "2,141,986 So-net + 443,495 plala (S Course) records used for Docomo Hikari"
+        },
+        {
+          "type": "point",
+          "title": "What was taken",
+          "body": "Names, phone numbers, email addresses, user IDs, dates of birth, gender and internet connection IDs. For 54,401 email accounts, passwords were exposed too. Sony says no banking or card details were exposed."
+        },
+        {
+          "type": "point",
+          "title": "Phishing comes next",
+          "body": "NTT Docomo is warning of phishing emails and fake sites impersonating its d POINT Club and a Universal Studios Japan campaign. Neither company had confirmed misuse of the data as of 27 October."
+        },
+        {
+          "type": "actions",
+          "title": "What to do",
+          "items": [
+            "Change your So-net / plala email password",
+            "Change it anywhere you reused it",
+            "Distrust 'reward' emails about d POINT",
+            "Watch for SMS and calls using your details"
+          ]
+        }
+      ],
+      "question": "How fast would you spot an intruder in your customer database?",
+      "x_text": "Sony Network Communications / So-net breach: 2,585,481 customer records exposed, including 443,495 used for NTT Docomo Hikari. Names, phone numbers, birth dates and, for 54,401 email accounts, passwords. Detected 4 days after the break-in.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "2.58 million ISP customer records. Found 4 days after the break-in. 🔓\n\nWhat Sony Network Communications disclosed (via BleepingComputer, 28 Oct):\n→ An unauthorized party accessed the So-net member database on 19 Oct; it was detected on 23 Oct\n→ 2,585,481 records: 2,141,986 So-net and 443,495 plala (S Course), which serves NTT Docomo's Docomo Hikari\n→ Exposed: names, phone numbers, email addresses, user IDs, dates of birth, gender, internet connection IDs\n→ 54,401 email accounts had their passwords exposed; Sony says no banking or card details were\n→ Docomo warns of phishing posing as d POINT Club and a Universal Studios Japan campaign\n\nWhat to do: change the password, and anywhere it was reused. Treat 'reward' emails and texts with suspicion.\n\nSend this to anyone you know on So-net or Docomo 👇\n\nHow fast would your team spot an intruder in a customer database?\n\nSource: BleepingComputer (28 Oct 2026)\n\n#DataBreach #Sony #Japan #Phishing #PasswordSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-29-am-03",
+      "kind": "reel",
+      "category": "ZERO-DAY",
+      "slot": "2026-10-29T08:15:00",
+      "story_key": "volt-typhoon-silent-train-2026-10",
+      "send_to": "whoever patches your SD-WAN and RMM",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework",
+          "date": "2026-10-28"
+        }
+      ],
+      "reel": {
+        "series": "Zero-Day Alert",
+        "hook": "4 zero-days. Gone within 8 hours.",
+        "segments": [
+          {
+            "say": "Four zero-days. Sessions usually over within eight hours.",
+            "show": "Black Lotus Labs: Silent Train sessions typically end within 8 hours, then tooling, keys and configs are removed.",
+            "card": "4+|zero-days exploited via Silent Train",
+            "card_style": "stat"
+          },
+          {
+            "say": "Lumen says China's Volt Typhoon hides attacks behind hacked routers, a framework it calls Silent Train.",
+            "show": "Relay chains of compromised routers and VPS. Targets: telecoms, government, defence, utilities, MSPs.",
+            "card": "Volt Typhoon · per Lumen Black Lotus Labs",
+            "card_style": "fact"
+          },
+          {
+            "say": "Patch your management systems and keep admin panels off the internet.",
+            "show": "Zero-days named: VeloCloud Orchestrator CVE-2026-16812, Cisco Catalyst SD-WAN CVE-2026-20127, N-able N-central CVE-2025-8875/8876, Versa Director CVE-2024-39717.",
+            "card": "Admin interfaces off the internet",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever patches your S D WAN.",
+            "show": "Send this to whoever patches your SD-WAN and RMM.",
+            "card": "↗ Send this to your network admin"
+          }
+        ]
+      },
+      "x_text": "Volt Typhoon 'Silent Train': Lumen's Black Lotus Labs says the China-linked group used at least 4 zero-days, incl. VeloCloud Orchestrator, Cisco Catalyst SD-WAN and N-able N-central, relaying through hacked routers in sessions under 8 hours.\n\n#ZeroDay #CyberSecurity",
+      "ig_caption": "Four zero-days. In and out in under 8 hours. 🚆\n\nWhat Lumen's Black Lotus Labs reported (via BleepingComputer, 28 Oct):\n→ It attributes 'Silent Train', a relay framework of rotating hacked routers and VPS, to China's Volt Typhoon\n→ At least four zero-days exploited, incl. VeloCloud Orchestrator (CVE-2026-16812), Cisco Catalyst SD-WAN (CVE-2026-20127) and N-able N-central (CVE-2025-8875, CVE-2025-8876)\n→ Sessions typically end within 8 hours, then tooling, keys and configs are wiped\n→ Some hacked enterprise systems were kept for 1 to 3 months\n→ Targets include telecoms, government, defence, utilities, MSPs and emergency services\n\nWhat to do this week: patch management platforms first, take admin interfaces off the internet, centralise logs with longer retention and watch for unusual admin activity.\n\nSend this to whoever patches your SD-WAN and RMM 👇\n\nWould your logs still show an intruder who left 8 hours ago?\n\nSource: BleepingComputer (28 Oct 2026)\n\n#ZeroDay #VoltTyphoon #ThreatIntel #SDWAN #NetworkSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-29-am-04",
+      "kind": "carousel",
+      "category": "AI THREAT",
+      "slot": "2026-10-29T13:30:00",
+      "story_key": "uk-vapes-consultation-bot-responses-2026-10",
+      "send_to": "whoever runs your public feedback forms",
+      "sources": [
+        {
+          "name": "BMJ Group (Tobacco Control)",
+          "url": "https://bmjgroup.com/3-out-of-4-responses-to-uk-smoke-free-generation-consultation-were-ai-bot-generated/",
+          "date": "2026-10-27"
+        }
+      ],
+      "cover": {
+        "hook": "3 in 4 responses to a UK government consultation came from bots.",
+        "sub": "90,835 of 118,756 responses on disposable vapes were flagged as fraudulent, per a new Tobacco Control study."
+      },
+      "slides": [
+        {
+          "type": "stat",
+          "big": "76%",
+          "label": "of responses were bot-generated",
+          "note": "90,835 of 118,756 responses to the 2023 UK consultation"
+        },
+        {
+          "type": "point",
+          "title": "All aimed at one question",
+          "body": "Every bot response targeted a single multiple-choice question, opposing restrictions on disposable vape sales. The researchers call it the first documented large-scale automated interference in a formal public health consultation."
+        },
+        {
+          "type": "point",
+          "title": "It flipped the result",
+          "body": "With the bots removed, 77% of valid respondents supported restrictions: the opposite of what the raw data showed. The Department of Health and Social Care flagged the responses with bot detection."
+        },
+        {
+          "type": "point",
+          "title": "Who did it? Unknown",
+          "body": "The researchers say the source and sponsor can't be determined. They note the scale and consistency suggest a coordinated campaign, but attribute it to no one."
+        },
+        {
+          "type": "actions",
+          "title": "If you run public input",
+          "items": [
+            "Add bot detection to every public form",
+            "Check for identical answers at scale",
+            "Publish how you filter responses",
+            "Report raw and filtered results"
+          ]
+        }
+      ],
+      "question": "Would your feedback forms notice 90,000 fake answers?",
+      "x_text": "UK vapes consultation: 90,835 of 118,756 responses (76%) were bot-generated, per a Tobacco Control study. All targeted one question. With bots removed, 77% backed restrictions: the opposite result. Source unknown.\n\n#AIThreats #CyberSecurity",
+      "ig_caption": "3 in 4 responses to a UK government consultation came from bots. 🤖\n\nWhat a new Tobacco Control study found (BMJ Group, 27 Oct):\n→ 90,835 of 118,756 responses (76%) to the 2023 UK consultation on disposable vapes were flagged as fraudulent by the health department's bot detection\n→ Every one targeted a single multiple-choice question opposing restrictions on disposable vape sales\n→ With the bots removed, 77% of valid respondents supported restrictions: the opposite of the raw result\n→ The researchers say the source and sponsor can't be determined\n→ They call it the first documented large-scale automated interference in a formal public health consultation\n\nWhy it matters: any public input channel, from consultations to reviews to surveys, can be flooded. Detect bots, look for identical answers at scale, and publish how you filter.\n\nSend this to whoever runs your public feedback forms 👇\n\nWould your feedback forms notice 90,000 fake answers?\n\nSource: BMJ Group / Tobacco Control (27 Oct 2026)\n\n#AIBots #Disinformation #BotDetection #AIThreats #TrustAndSafety #CyberSecurity"
+    },
+    {
+      "id": "2026-10-29-am-05",
+      "kind": "reel",
+      "category": "DEFENCE",
+      "slot": "2026-10-29T14:30:00",
+      "story_key": "virtualine-bulletproof-hosting-takedown-2026-10",
+      "send_to": "your threat intel lead",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+          "date": "2026-10-28"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Crime host seized. 3,000+ customers' data.",
+        "segments": [
+          {
+            "say": "Data on more than three thousand customers of a crime host is now with police.",
+            "show": "Dutch police recovered data on 3,000+ Virtualine customers. Follow-up action is underway.",
+            "card": "3,000+|Virtualine customers' data recovered",
+            "card_style": "stat"
+          },
+          {
+            "say": "The F B I seized Virtualine, a bulletproof host that promised to ignore abuse reports.",
+            "show": "FBI seized virtualine[.]net; Dutch police seized dozens of servers in Limburg. Germany and the UK's NCA also took part.",
+            "card": "Bulletproof host seized",
+            "card_style": "alert"
+          },
+          {
+            "say": "Chainalysis linked its payments to ransomware. Block its old I P ranges.",
+            "show": "Also sold as Secury, Massgod, Spamhouse, Lanedo, Omegatech. Partly online, with very low routing visibility.",
+            "card": "Block its IP ranges",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to your threat intel lead.",
+            "show": "Send this to your threat intel lead.",
+            "card": "↗ Send this to your threat intel lead"
+          }
+        ]
+      },
+      "x_text": "Virtualine bulletproof hosting seized: FBI took the domain, Dutch police seized dozens of servers and recovered data on 3,000+ customers. Chainalysis linked its payment addresses to ransomware operators. Also sold as Secury, Massgod, Lanedo.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "Police now hold data on 3,000+ customers of a crime host. 🚨\n\nWhat happened (via BleepingComputer, 28 Oct):\n→ The FBI seized the domain of Virtualine, a 'bulletproof' host sold on cybercrime forums that promised to shield customers from complaints and police\n→ Dutch police seized dozens of servers in Limburg, taking hundreds of virtual servers offline, and recovered data on 3,000+ customers\n→ Germany's Hessen police and the UK's NCA took part, with OverRIPE and Lumen\n→ Chainalysis linked its Bitcoin payment addresses to ransomware operators; TRM puts ransomware at about 5% of its flows\n→ It also traded as Secury, Massgod, Spamhouse, Lanedo and Omegatech, and is still partly online\n\nWhat to do: add Virtualine's network ranges to your blocklists and hunt for past connections to them.\n\nSend this to your threat intel lead 👇\n\nDo you block bulletproof hosting ranges by default?\n\nSource: BleepingComputer (28 Oct 2026)\n\n#Ransomware #ThreatIntel #BulletproofHosting #Cybercrime #LawEnforcement #CyberSecurity"
+    }
+  ]
+}
