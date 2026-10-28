@@ -32,13 +32,13 @@
             "card_style": "alert"
           },
           {
-            "say": "An F E C email said: we have a bad actor attempting to breach our systems. No breach is confirmed.",
+            "say": "An F E C email warned of a bad actor attempting to breach its systems. No breach is confirmed.",
             "show": "Email seen by Reuters: \"We have a bad actor attempting to breach FEC systems.\" No confirmed data loss.",
             "card": "Attempted breach · not confirmed",
             "card_style": "fact"
           },
           {
-            "say": "Twenty-four and forty-eight hour spending reports can't be filed. Voting shouldn't be affected.",
+            "say": "New spending reports can't be filed. Voting shouldn't be affected.",
             "show": "24h/48h spending reports blocked. Past reports still searchable. The FEC doesn't run elections.",
             "card": "Have a manual filing fallback",
             "card_style": "answer"
