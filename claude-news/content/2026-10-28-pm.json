@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-28",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-10-28-pm-01",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-10-28T17:00:00",
+      "x": true,
+      "story_key": "keystone-verification-key-18835-2026-10",
+      "send_to": "anyone who keeps crypto on a Keystone",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+          "date": "2026-10-27"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "18,835 wallets. Keystone is destroying them.",
+        "segments": [
+          {
+            "say": "Eighteen thousand eight hundred thirty-five unsold wallets. Keystone is destroying them.",
+            "show": "Keystone will destroy 18,835 unsold hardware wallets that carry its old device verification key.",
+            "card": "18,835 wallets to be destroyed",
+            "card_style": "stat"
+          },
+          {
+            "say": "An attacker stole Keystone's device verification key. With it, fakes could pass the online authenticity check.",
+            "show": "Keystone says an attacker abused a flaw in a third-party monitoring tool on its website and stole the key. 25,964 buyer records were also taken.",
+            "card": "Verification key stolen",
+            "card_style": "alert"
+          },
+          {
+            "say": "Got a Keystone after October twentieth? Don't use it until support confirms it's genuine.",
+            "show": "Delivered after Oct 20 with the old key: wait for Keystone support to confirm it. Keystone won't ask you to return a device.",
+            "card": "Arrived after Oct 20? Verify first",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to anyone who keeps crypto on a Keystone.",
+            "show": "Send this to anyone who keeps crypto on a Keystone.",
+            "card": "↗ Send this to a Keystone owner"
+          }
+        ]
+      },
+      "x_text": "Keystone hardware wallet breach: an attacker stole the device verification key, so fakes could pass its authenticity check. Keystone will destroy 18,835 unsold devices. Got one after Oct 20? Verify with support before use.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "18,835 unsold hardware wallets will be destroyed. 🔑\n\nWhat Keystone disclosed (via The Hacker News, 27 Oct):\n→ An attacker got into Keystone's website through a flaw in a third-party data monitoring tool\n→ They stole the device verification key: with it, counterfeit devices could pass Keystone's online authenticity check\n→ Keystone will destroy 18,835 unsold devices carrying the old key. Devices already sold can't be re-keyed\n→ 25,964 buyer records (names, contact details, shipping addresses, orders) were also taken. Recovery phrases, private keys and card details were not involved\n→ Keystone says it has seen no counterfeit devices or thefts\n\nWhat to do: if your Keystone arrived after 20 Oct, don't use it until Keystone support confirms it's genuine. Keystone won't ask you to return a device, so treat recall or refund messages as scams, and never type a recovery phrase into a device you didn't order.\n\nSend this to anyone who keeps crypto on a Keystone 👇\n\nWould you still trust a device that passes the check after this?\n\nSource: The Hacker News (27 Oct 2026)\n\n#DataBreach #HardwareWallet #CryptoSecurity #SupplyChainSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-pm-02",
+      "kind": "carousel",
+      "category": "AI SECURITY",
+      "slot": "2026-10-28T21:00:00",
+      "story_key": "openai-gpt61-terra-critical-cyber-2026-10",
+      "send_to": "whoever sets your AI usage policy",
+      "sources": [
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/10/27/gpt-6-1-terra-released/",
+          "date": "2026-10-27"
+        }
+      ],
+      "cover": {
+        "hook": "OpenAI's new budget model meets its 'Critical' cyber threshold.",
+        "sub": "GPT-6.1 Terra costs 50% less than GPT-5.6 Terra and keeps the safeguards built for GPT-6 Astra."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What 'Critical' means",
+          "body": "It's the higher of two cyber thresholds in OpenAI's Preparedness Framework: with tools, a model can find and build working zero-day exploits across many hardened systems with no human involvement, or run a new end-to-end attack from a high-level goal."
+        },
+        {
+          "type": "stat",
+          "big": "50%",
+          "label": "cheaper than GPT-5.6 Terra",
+          "note": "API: $1 per million input tokens, $5 per million output"
+        },
+        {
+          "type": "point",
+          "title": "The second at this level",
+          "body": "GPT-6 Astra became OpenAI's first Critical-level cyber model on September 1. Terra keeps Astra's protections, and OpenAI says it held up well in prompt injection tests."
+        },
+        {
+          "type": "point",
+          "title": "Where it runs",
+          "body": "ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users, plus the API as gpt-6.1-terra. OpenAI says it completes tasks more than 3x faster than GPT-6 Astra."
+        },
+        {
+          "type": "actions",
+          "title": "What to do this week",
+          "items": [
+            "Treat agent tool access as privileged access",
+            "Log what your AI agents run, and where",
+            "Review your AI policy for security testing",
+            "Shorten patch times for internet-facing systems"
+          ]
+        }
+      ],
+      "question": "Has cheaper frontier AI changed how fast you patch?",
+      "x_text": "OpenAI GPT-6.1 Terra: the new cheaper model meets OpenAI's 'Critical' cybersecurity threshold and keeps the safeguards built for GPT-6 Astra. Price is 50% below GPT-5.6 Terra.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "A budget AI model just hit OpenAI's top cyber-risk level. 🤖\n\nWhat OpenAI says about GPT-6.1 Terra (via Help Net Security, 27 Oct):\n→ It \"meets the Critical threshold in cybersecurity\" under OpenAI's Preparedness Framework\n→ Critical is the higher of two cyber thresholds: finding and building working zero-day exploits across hardened systems with no human involvement, or running a new end-to-end attack from a high-level goal\n→ It keeps the protections built for GPT-6 Astra, OpenAI's first Critical-level model (1 Sept)\n→ It costs 50% less than GPT-5.6 Terra and, per OpenAI, finishes tasks 3x+ faster than Astra\n→ OpenAI says it held up well in prompt injection tests\n\nWhy it matters: top-tier capability is getting cheaper and faster, for defenders and attackers. Treat agent tool access as privileged, log what agents run, and shorten patch times on internet-facing systems.\n\nSend this to whoever sets your AI usage policy 👇\n\nHas cheaper frontier AI changed how fast you patch?\n\nSource: Help Net Security (27 Oct 2026)\n\n#AISecurity #OpenAI #GPT61 #AgenticAI #AIGovernance #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-pm-03",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-10-28T16:00:00",
+      "story_key": "trendai-cyberstrikeai-44-agents-japan-2026-10",
+      "send_to": "whoever owns your internet-facing kit",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+          "date": "2026-10-27"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "44 AI agents. One hacking operation.",
+        "segments": [
+          {
+            "say": "Forty-four A I agents. One hacking operation.",
+            "show": "TrendAI: one operation split its work across 44 AI agents using CyberStrikeAI, an open-source pentest tool.",
+            "card": "44 AI agents · one operation",
+            "card_style": "stat"
+          },
+          {
+            "say": "TrendAI says an open-source pentest tool automated recon, exploitation and reporting.",
+            "show": "Recon, flaw discovery, exploitation, command-and-control, persistence, exfiltration and reports ran as one repeatable workflow.",
+            "card": "Recon → exploit → report, automated",
+            "card_style": "fact"
+          },
+          {
+            "say": "At least nineteen organisations were targeted, sixteen in Japan, with Japanese fake login pages.",
+            "show": "At least 19 identifiable organisations, at least 16 in Japan. The platform also generated Japanese-language forms and fake login pages.",
+            "card": "19+ orgs targeted · 16+ in Japan",
+            "card_style": "alert"
+          },
+          {
+            "say": "The doors are the same. Lock default logins and patch your edge.",
+            "show": "TrendAI: \"AI has increased the attackers' workforce, but the work still consists of looking for unlocked doors.\"",
+            "card": "Lock default logins. Patch the edge.",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns your internet-facing kit.",
+            "show": "Send this to whoever owns your internet-facing kit.",
+            "card": "↗ Send this to your edge owner"
+          }
+        ]
+      },
+      "x_text": "CyberStrikeAI: TrendAI says one operation split its hacking work across 44 AI agents, from recon to exploitation to reports, and targeted at least 19 organisations, at least 16 in Japan.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "44 AI agents. One hacking operation. 🤖\n\nWhat TrendAI found (via The Hacker News, 27 Oct):\n→ An operator used CyberStrikeAI, an open-source pentest tool, and split the work across 44 AI agents\n→ Recon, flaw discovery, exploitation, command-and-control, persistence, data theft and reporting ran as one repeatable workflow\n→ At least 19 identifiable organisations were targeted, at least 16 of them in Japan, plus targets in Taiwan and Hong Kong\n→ The platform generated Japanese-language forms and fake login pages\n→ TrendAI: \"AI has increased the attackers' workforce, but the work still consists of looking for unlocked doors\"\n\nWhat to do: the weaknesses haven't changed, only the speed. Remove default credentials, patch internet-facing devices first, and alert on fast, broad scanning against your perimeter.\n\nSend this to whoever owns your internet-facing kit 👇\n\nWould your team notice 44 agents probing at once?\n\nSource: The Hacker News (27 Oct 2026)\n\n#AISecurity #AgenticAI #AIThreats #ThreatIntel #Japan #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-pm-04",
+      "kind": "carousel",
+      "category": "ATTACK",
+      "slot": "2026-10-28T20:00:00",
+      "story_key": "cve-2021-33044",
+      "send_to": "whoever manages your CCTV",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+          "date": "2026-10-27"
+        }
+      ],
+      "cover": {
+        "hook": "Ukraine warns: Dahua cameras hijacked through their remote-viewing service.",
+        "sub": "CERT-UA says attackers watch video, change settings and add accounts, even on cameras not directly online."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "The way in",
+          "body": "Dahua's Easy4IP P2P serial numbers are predictable and could be brute-forced at scale without rate limits or lockouts. So cameras with P2P enabled are at risk even when they aren't exposed to the internet."
+        },
+        {
+          "type": "point",
+          "title": "Then the login",
+          "body": "Weak or known passwords, plus authentication-bypass flaws CVE-2021-33044 and CVE-2021-33045 in outdated firmware. Once in, attackers can view streams, change configuration and create accounts."
+        },
+        {
+          "type": "stat",
+          "big": "14,530",
+          "label": "Dahua cameras hit in an earlier campaign",
+          "note": "Hunt.io's Operation CameraSwarm, June 17 to July 22, 2026"
+        },
+        {
+          "type": "point",
+          "title": "Who's behind it",
+          "body": "CERT-UA didn't attribute it. Separately, Dutch intelligence (AIVD) warned in July that Russian state actors compromise IP cameras across the EU, NATO states and Ukraine for espionage."
+        },
+        {
+          "type": "actions",
+          "title": "Check your cameras",
+          "items": [
+            "Turn off P2P if you don't need it",
+            "Keep cameras off the open internet",
+            "Update the firmware",
+            "Hunt for unknown accounts and logins from 127.0.0.1"
+          ]
+        }
+      ],
+      "question": "Does anyone on your team actually own the cameras?",
+      "x_text": "Dahua IP cameras / CVE-2021-33044: CERT-UA warns attackers are hijacking cameras in Ukraine via the Easy4IP P2P service and old auth-bypass flaws, then viewing streams and adding accounts. Disable P2P, update firmware.\n\n#IoTSecurity #CyberSecurity",
+      "ig_caption": "Your camera doesn't need to be online to be hijacked. 📹\n\nWhat CERT-UA warned (via The Hacker News, 27 Oct):\n→ Attackers are taking over Dahua IP cameras and DVRs in Ukraine: viewing streams, changing settings, creating accounts\n→ The main entry point is Easy4IP, Dahua's P2P remote-viewing service, whose serial numbers are predictable\n→ Then weak passwords or the old auth-bypass flaws CVE-2021-33044 and CVE-2021-33045 in outdated firmware\n→ An earlier campaign tracked by Hunt.io hit 14,530+ Dahua cameras between June and July 2026\n→ CERT-UA didn't attribute it; Dutch intelligence warned in July that Russian state actors compromise IP cameras for espionage\n\nWhat to do: turn off P2P if you don't need it, keep cameras off the internet, update firmware, and look for unknown accounts and DVRIP logins from 127.0.0.1.\n\nSend this to whoever manages your CCTV 👇\n\nDoes anyone on your team actually own the cameras?\n\nSource: The Hacker News (27 Oct 2026), citing CERT-UA\n\n#IoTSecurity #CCTV #Dahua #CERTUA #ThreatIntel #CyberSecurity"
+    },
+    {
+      "id": "2026-10-28-pm-05",
+      "kind": "reel",
+      "category": "DEFENCE",
+      "slot": "2026-10-28T22:30:00",
+      "story_key": "asd-amadey-180k-disconnect-2026-10",
+      "send_to": "whoever cleans up infected laptops",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+          "date": "2026-10-27"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "180,000 infected computers. Cut off.",
+        "segments": [
+          {
+            "say": "One hundred eighty thousand infected computers. Cut off.",
+            "show": "Australia's Signals Directorate cut an Amadey malware operation off from about 180,000 infected computers worldwide.",
+            "card": "~180,000 PCs cut off",
+            "card_style": "stat"
+          },
+          {
+            "say": "Australia's Signals Directorate got into an Amadey malware backend and disconnected the controller from its victims.",
+            "show": "ASD: \"The next steps that we took were to disconnect that Amadey controller from all those victims.\"",
+            "card": "ASD disconnected the Amadey controller",
+            "card_style": "fact"
+          },
+          {
+            "say": "Myth: the threat is over. Reality: stolen credentials can sit unused for months.",
+            "show": "Disconnecting the controller doesn't undo earlier theft. Amadey often installs infostealers such as StealC.",
+            "card": "Myth: it's over · Reality: creds stay stolen",
+            "card_style": "alert"
+          },
+          {
+            "say": "Reset passwords and sessions from any machine that was infected.",
+            "show": "Treat saved passwords and active sessions on infected machines as compromised: reset them and revoke sessions.",
+            "card": "Reset passwords. Kill sessions.",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever cleans up infected laptops.",
+            "show": "Send this to whoever cleans up infected laptops.",
+            "card": "↗ Send this to your cleanup lead"
+          }
+        ]
+      },
+      "x_text": "Amadey malware: Australia's Signals Directorate got into an Amadey backend and cut it off from about 180,000 infected computers. Stolen credentials can still be used months later, so reset and revoke sessions.\n\n#Malware #CyberSecurity",
+      "ig_caption": "180,000 infected computers. Cut off in one move. 🇦🇺\n\nWhat happened (via The Hacker News, 27 Oct):\n→ Australia's Signals Directorate (ASD) got into the backend of an Amadey malware operation\n→ It disconnected the controller from about 180,000 infected computers worldwide, some in Australia\n→ Amadey has been sold to criminals since 2018; its main job is installing more malware, such as the StealC infostealer\n→ ESET has identified 53 separate Amadey botnets, so this is one of many\n→ The takedown doesn't undo earlier theft: stolen credentials can sit unused for months\n\nWhat to do: if a machine was infected, treat its saved passwords and live sessions as stolen. Reset them, revoke sessions and tokens, and watch for logins that skip MFA via stolen cookies.\n\nSend this to whoever cleans up infected laptops 👇\n\nAfter a malware cleanup, do you reset every password on that machine?\n\nSource: The Hacker News (27 Oct 2026)\n\n#Malware #Infostealer #Amadey #IncidentResponse #ThreatIntel #CyberSecurity"
+    }
+  ]
+}
