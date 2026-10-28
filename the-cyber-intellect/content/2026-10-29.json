@@ -1,0 +1,20 @@
+{
+  "editorialDate": "2026-10-29",
+  "notes": "One bright, evergreen Instagram security knowledge image for MANUAL posting only. Do not use Metricool or auto-publish. Separate from Claude-owned news and previous BOLA, logging, SSRF topics. Hook 7 words; caption 44 words and 4 hashtags. Source: Stripe webhook security guidance. This editorial triggers public GitHub Actions PNG rendering; local imagegen preview is not the committed PNG.",
+  "posts": [
+    {
+      "category": "APPSEC • WEBHOOK SECURITY",
+      "title": "Signed Webhooks Still Need Replay Defense",
+      "bullets": [
+        "Verify the raw payload signature using the endpoint signing secret.",
+        "Reject stale requests with timestamp tolerance; do not disable freshness checks.",
+        "Record processed event IDs and make handlers idempotent; deliveries may repeat or arrive out of order."
+      ],
+      "takeaway": "Authenticate, check freshness, process once.",
+      "caption": "A valid webhook signature doesn't mean an event is new. Verify the raw payload and signing secret, enforce timestamp tolerance, and track processed event IDs to prevent duplicate actions. Events can also arrive out of order.\n\n#AppSec #APISecurity #Webhooks #SecureCoding\n\nSave this for later.",
+      "sources": [
+        "https://docs.stripe.com/webhooks"
+      ]
+    }
+  ]
+}
