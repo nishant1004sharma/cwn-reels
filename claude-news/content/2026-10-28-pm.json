@@ -22,21 +22,21 @@
         "hook": "18,835 wallets. Keystone is destroying them.",
         "segments": [
           {
-            "say": "Eighteen thousand eight hundred thirty-five unsold wallets. Keystone is destroying them.",
+            "say": "Over eighteen thousand unsold wallets. Being destroyed.",
             "show": "Keystone will destroy 18,835 unsold hardware wallets that carry its old device verification key.",
-            "card": "18,835 wallets to be destroyed",
+            "card": "18,835 to be destroyed",
             "card_style": "stat"
           },
           {
-            "say": "An attacker stole Keystone's device verification key. With it, fakes could pass the online authenticity check.",
+            "say": "An attacker stole Keystone's verification key. Fakes could pass its check.",
             "show": "Keystone says an attacker abused a flaw in a third-party monitoring tool on its website and stole the key. 25,964 buyer records were also taken.",
             "card": "Verification key stolen",
             "card_style": "alert"
           },
           {
-            "say": "Got a Keystone after October twentieth? Don't use it until support confirms it's genuine.",
+            "say": "Got one after October twentieth? Verify with support first.",
             "show": "Delivered after Oct 20 with the old key: wait for Keystone support to confirm it. Keystone won't ask you to return a device.",
-            "card": "Arrived after Oct 20? Verify first",
+            "card": "After Oct 20? Verify first",
             "card_style": "answer"
           },
           {
@@ -125,25 +125,25 @@
           {
             "say": "Forty-four A I agents. One hacking operation.",
             "show": "TrendAI: one operation split its work across 44 AI agents using CyberStrikeAI, an open-source pentest tool.",
-            "card": "44 AI agents · one operation",
+            "card": "44 AI agents",
             "card_style": "stat"
           },
           {
-            "say": "TrendAI says an open-source pentest tool automated recon, exploitation and reporting.",
+            "say": "One tool automated recon, exploitation and reports, says TrendAI.",
             "show": "Recon, flaw discovery, exploitation, command-and-control, persistence, exfiltration and reports ran as one repeatable workflow.",
-            "card": "Recon → exploit → report, automated",
+            "card": "Recon → exploit → report",
             "card_style": "fact"
           },
           {
-            "say": "At least nineteen organisations were targeted, sixteen in Japan, with Japanese fake login pages.",
+            "say": "At least nineteen organisations targeted, sixteen in Japan.",
             "show": "At least 19 identifiable organisations, at least 16 in Japan. The platform also generated Japanese-language forms and fake login pages.",
-            "card": "19+ orgs targeted · 16+ in Japan",
+            "card": "19+ orgs · 16+ in Japan",
             "card_style": "alert"
           },
           {
-            "say": "The doors are the same. Lock default logins and patch your edge.",
+            "say": "Same old doors. Lock default logins, patch your edge.",
             "show": "TrendAI: \"AI has increased the attackers' workforce, but the work still consists of looking for unlocked doors.\"",
-            "card": "Lock default logins. Patch the edge.",
+            "card": "Lock logins. Patch the edge.",
             "card_style": "answer"
           },
           {
@@ -230,27 +230,27 @@
         "hook": "180,000 infected computers. Cut off.",
         "segments": [
           {
-            "say": "One hundred eighty thousand infected computers. Cut off.",
+            "say": "A hundred eighty thousand infected computers. Cut off.",
             "show": "Australia's Signals Directorate cut an Amadey malware operation off from about 180,000 infected computers worldwide.",
             "card": "~180,000 PCs cut off",
             "card_style": "stat"
           },
           {
-            "say": "Australia's Signals Directorate got into an Amadey malware backend and disconnected the controller from its victims.",
+            "say": "Australia's cyber agency disconnected an Amadey malware controller from its victims.",
             "show": "ASD: \"The next steps that we took were to disconnect that Amadey controller from all those victims.\"",
-            "card": "ASD disconnected the Amadey controller",
+            "card": "ASD cut the controller",
             "card_style": "fact"
           },
           {
-            "say": "Myth: the threat is over. Reality: stolen credentials can sit unused for months.",
+            "say": "Myth: it's over. Reality: stolen passwords stay stolen.",
             "show": "Disconnecting the controller doesn't undo earlier theft. Amadey often installs infostealers such as StealC.",
-            "card": "Myth: it's over · Reality: creds stay stolen",
+            "card": "Stolen creds stay stolen",
             "card_style": "alert"
           },
           {
-            "say": "Reset passwords and sessions from any machine that was infected.",
+            "say": "Reset passwords and sessions from infected machines.",
             "show": "Treat saved passwords and active sessions on infected machines as compromised: reset them and revoke sessions.",
-            "card": "Reset passwords. Kill sessions.",
+            "card": "Reset. Revoke sessions.",
             "card_style": "answer"
           },
           {
