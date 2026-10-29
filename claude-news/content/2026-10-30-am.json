@@ -1,0 +1,259 @@
+{
+ "date": "2026-10-30",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-10-30-am-01",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-10-30T12:00:00",
+   "story_key": "polymarket-debugbear-script-drain-2026-10",
+   "send_to": "whoever owns your website's scripts",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced",
+     "date": "2026-10-29"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "$2.5M traced. One hijacked website script.",
+    "segments": [
+     {
+      "say": "Two and a half million dollars traced. One hijacked script.",
+      "show": "Polymarket halted trading on 29 Oct after a third-party script on its site was hijacked.",
+      "card": "$2.5M|traced to a suspected attacker wallet",
+      "card_style": "stat"
+     },
+     {
+      "say": "Hackers hijacked DebugBear, a monitoring script on the site. It used logged-in sessions to sell positions or move tokens.",
+      "show": "The script came from DebugBear's real-user monitoring embed. DebugBear confirmed an ongoing security incident.",
+      "card": "Trusted vendor script → crypto drainer",
+      "card_style": "alert"
+     },
+     {
+      "say": "Polymarket says affected traders will be reimbursed. Audit every third-party script on your logged-in pages.",
+      "show": "Polymarket: 'One of our third party providers was compromised.' Trading resumed about an hour later.",
+      "card": "Inventory + restrict third-party JavaScript",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your website's scripts.",
+      "show": "Send this to whoever owns your website's scripts.",
+      "card": "↗ Send this to your web team"
+     }
+    ]
+   },
+   "x_text": "Polymarket / DebugBear: a hijacked third-party monitoring script drained logged-in users, and about $2.5M was traced to a suspected attacker wallet. Trading paused about an hour; Polymarket says affected traders will be reimbursed.\n\n#SupplyChainAttack #CyberSecurity",
+   "ig_caption": "One monitoring script. About $2.5 million traced to an attacker wallet. 💸\n\nWhat happened at Polymarket (via BleepingComputer, 29 Oct):\n→ Hackers compromised DebugBear, a website performance-monitoring service, and its embed served crypto-draining JavaScript\n→ The script checked if visitors were logged in, then tried to use their sessions to sell positions or send tokens to an attacker wallet\n→ Polymarket went cancel-only at 2:05 p.m. ET; trading resumed about an hour later\n→ About $2.5M was traced to a suspected attacker wallet (traced, not a confirmed stolen total)\n→ Polymarket says it is fully reimbursing affected traders; DebugBear told customers to remove its embed code\n\nWhy it matters: every third-party script on a logged-in page runs with your users' sessions. List them, remove the ones you don't need, and lock the rest down with a Content Security Policy.\n\nSend this to whoever owns your website's scripts 👇\n\nHow many third-party scripts load on your login or checkout page right now?\n\nSource: BleepingComputer (29 Oct 2026)\n\n#SupplyChainAttack #Polymarket #JavaScript #WebSecurity #CryptoSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-10-30-am-02",
+   "kind": "carousel",
+   "category": "ZERO-DAY",
+   "slot": "2026-10-30T10:00:00",
+   "story_key": "cve-2026-76418",
+   "send_to": "the person who patches your VPN",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+     "date": "2026-10-29"
+    },
+    {
+     "name": "Cybersecurity News",
+     "url": "https://cybersecuritynews.com/cisco-secure-firewall-0-day-vulnerability-exploited/",
+     "date": "2026-10-29"
+    }
+   ],
+   "cover": {
+    "hook": "No login needed. One request, and the Cisco firewall reboots.",
+    "sub": "Cisco says CVE-2026-76418 in ASA and FTD SSL VPN is being exploited. No workaround that keeps full VPN security."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What breaks",
+     "body": "An unauthenticated attacker sends a crafted request while connecting to the SSL remote access VPN. The firewall reloads: a denial of service. Cisco reports no data theft or code execution."
+    },
+    {
+     "type": "stat",
+     "big": "8.6",
+     "label": "CVSS · exploited in the wild",
+     "note": "Cisco PSIRT became aware of active exploitation in October 2026"
+    },
+    {
+     "type": "point",
+     "title": "Are you exposed?",
+     "body": "Three conditions: a vulnerable ASA or FTD release, the SSL VPN login reachable, and secondary authentication configured on a tunnel group. Check DefaultWEBVPNGroup too."
+    },
+    {
+     "type": "point",
+     "title": "Fixed releases",
+     "body": "ASA: 9.16.4.104, 9.18.4.96, 9.20.4.50, 9.22.3.200, 9.23.1.48, 9.24.1.27. FTD: 7.0.11, 7.2.13, 7.4.9, 7.6.7, 7.7.14, 10.0.3, 10.1.1."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Upgrade to the fixed release for your branch",
+      "Grep tunnel groups for secondary-authentication-server-group",
+      "Check DefaultWEBVPNGroup, not just custom groups",
+      "Watch for unexpected firewall reloads"
+     ]
+    }
+   ],
+   "question": "If your VPN firewall rebooted at 9 a.m., how long until someone noticed why?",
+   "x_text": "Cisco ASA / FTD zero-day CVE-2026-76418 (CVSS 8.6): a crafted SSL VPN request with no login makes the firewall reload. Exploited in the wild, per Cisco. Exposed only with secondary authentication on a tunnel group. Patch now.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "No login. One crafted request. The Cisco firewall reboots. 🔥\n\nWhat Cisco disclosed (via The Hacker News, 29 Oct):\n→ CVE-2026-76418, CVSS 8.6, in ASA and FTD Remote Access SSL VPN\n→ Cisco is aware of active exploitation (October 2026); attackers and scale not disclosed\n→ Impact is denial of service: the device reloads. No data theft or code execution reported\n→ Exposed only if the SSL VPN login is reachable AND secondary authentication is set on a tunnel group, including DefaultWEBVPNGroup\n→ No workaround that keeps full VPN security\n\nWhat to do this week: upgrade to the fixed ASA/FTD release for your branch, check every tunnel group for secondary authentication, and alert on unexpected reloads.\n\nSend this to the person who patches your VPN 👇\n\nIf your VPN firewall rebooted at 9 a.m., how long until someone noticed why?\n\nSource: The Hacker News (29 Oct 2026), Cisco advisory\n\n#ZeroDay #Cisco #CiscoASA #VPN #PatchManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-10-30-am-03",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-10-30T08:45:00",
+   "story_key": "yoba-fake-chatgpt-claude-apps-2026-10",
+   "send_to": "the friend who downloads every AI app",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+     "date": "2026-10-29"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Fake ChatGPT & Claude apps. Real installers.",
+    "segments": [
+     {
+      "say": "Fake ChatGPT and Claude apps. Real signed installers.",
+      "show": "Check Point's 'Yoba' campaign: fake GitHub projects for 'GPT-6 Astra', 'GPT-5.6 Sol' and 'Claude Opus' desktop apps.",
+      "card": "Fake AI desktop apps on GitHub",
+      "card_style": "alert"
+     },
+     {
+      "say": "Check Point says the zip holds a genuine signed Codex or Claude binary, plus a malicious D L L it loads.",
+      "show": "Setup.exe is legitimate and signed. winmm.dll next to it is the malware (DLL sideloading).",
+      "card": "Signed ≠ safe",
+      "card_style": "fact"
+     },
+     {
+      "say": "Then it quietly mines crypto. Install A I apps only from the vendor's own site.",
+      "show": "After a long delay it injects an XMRig crypto miner into svchost.exe and persists via a scheduled task.",
+      "card": "Download AI apps from the vendor only",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who downloads every A I app.",
+      "show": "Send this to the friend who downloads every AI app.",
+      "card": "↗ Send this to your AI early adopter"
+     }
+    ]
+   },
+   "x_text": "Yoba campaign: fake ChatGPT and Claude desktop apps on GitHub ('GPT-6 Astra', 'Claude Opus') ship a real signed Codex or Claude binary plus a malicious winmm.dll it sideloads, then an XMRig miner, per Check Point Research.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "The installer was real and signed. The file next to it wasn't. 🤖\n\nWhat Check Point Research found (via The Hacker News, 29 Oct):\n→ Fake GitHub projects pose as desktop apps for ChatGPT and Claude: 'GPT-5.6 Sol', 'GPT-6 Astra', 'Claude Opus'\n→ The ZIP holds a legitimate signed OpenAI Codex or Claude binary named Setup.exe, plus a malicious winmm.dll\n→ The signed program loads the DLL (DLL sideloading), which helps it slip past security checks\n→ After a long built-in delay it sets up a scheduled task and runs an XMRig crypto miner inside svchost.exe\n→ SEO poisoning appears to push the links up in Google results\n\nWhat to do: download AI apps only from the vendor's own site, block unapproved installers on work laptops, and alert on unknown DLLs next to signed executables.\n\nSend this to the friend who downloads every AI app 👇\n\nWhere does your team actually get its AI desktop apps from?\n\nSource: The Hacker News (29 Oct 2026), Check Point Research\n\n#AISecurity #ChatGPT #Claude #Malware #DLLSideloading #CyberSecurity"
+  },
+  {
+   "id": "2026-10-30-am-04",
+   "kind": "carousel",
+   "category": "ATTACK",
+   "slot": "2026-10-30T13:30:00",
+   "story_key": "chrome-extensions-search-hijack-13m-2026-10",
+   "send_to": "whoever manages your browsers",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/",
+     "date": "2026-10-29"
+    }
+   ],
+   "cover": {
+    "hook": "13.4 million installs. Every search went through someone else's server.",
+    "sub": "Socket found Chrome extensions posing as PDF converters, safe search and AI search tools that hijacked the default search engine."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "How it worked",
+     "body": "The extensions took over Chrome's default search setting and routed every search through a proxy before Bing or Yahoo, earning referral payments. Some had no scripts at all: just a manifest and icons."
+    },
+    {
+     "type": "stat",
+     "big": "13.4M",
+     "label": "combined installs",
+     "note": "8.7M from newly identified add-ons, per Socket's John Tuckner"
+    },
+    {
+     "type": "point",
+     "title": "Not just ad fraud",
+     "body": "The final destination can change at any time, so a search could land on phishing or malware. In one test, Predator Search sent six identical searches to four different destinations."
+    },
+    {
+     "type": "point",
+     "title": "Security-themed lures",
+     "body": "One cluster, 'SecuryBrowse', had 58 extensions and 4.9M users, pushing names like Fire Shield, Securify and WatchTower. 'Bing-Search' had 37 extensions and 2.2M users."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Allowlist extensions in Chrome policy at work",
+      "Check who controls your default search engine",
+      "Remove add-ons you don't recognise",
+      "Check Socket's full list against your fleet"
+     ]
+    }
+   ],
+   "question": "Do you know every extension installed across your company's browsers?",
+   "x_text": "Chrome extensions with 13.4M combined installs hijacked the default search engine, routing searches via a proxy for referral cash, per Socket. Posed as PDF, safe search and AI search tools. Most are removed; new ones keep appearing.\n\n#BrowserSecurity #CyberSecurity",
+   "ig_caption": "13.4 million installs. Every search took a detour. 🔍\n\nWhat Socket found (via BleepingComputer, 29 Oct):\n→ Chrome extensions posing as PDF converters, manual finders, safe search and AI search tools\n→ They took over the default search engine and routed searches through a proxy before Bing or Yahoo, earning referral payments\n→ Some had no code at all: just a manifest and icons, no permissions asked\n→ The destination can change any time, so searches could be sent to phishing or malware\n→ Most have been removed from the Chrome Web Store, but new ones keep appearing\n\nWhat to do: allowlist extensions through Chrome policy at work, check who controls your default search engine, and remove anything you don't recognise.\n\nSend this to whoever manages your browsers 👇\n\nDo you know every extension installed across your company's browsers?\n\nSource: BleepingComputer (29 Oct 2026)\n\n#BrowserSecurity #ChromeExtensions #Chrome #Malvertising #InfoSec #CyberSecurity"
+  },
+  {
+   "id": "2026-10-30-am-05",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-10-30T14:30:00",
+   "story_key": "telegram-android-voice-call-rce-2026-10",
+   "send_to": "the friend who never updates apps",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
+     "date": "2026-10-29"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "Answer one Telegram call. That's the trigger.",
+    "segments": [
+     {
+      "say": "Answer one Telegram call. That's the whole trigger.",
+      "show": "NebuSec: a flaw in Telegram for Android let a caller run code once the victim answered a voice call.",
+      "card": "1 call|answered = code runs, per NebuSec",
+      "card_style": "stat"
+     },
+     {
+      "say": "NebuSec says a flaw in Telegram for Android let a caller run code once the victim picked up.",
+      "show": "Telegram for Android 8.6.2 to 12.10.3. Attacker needs only a regular account. Confirmed on ARM64 phones.",
+      "card": "Android 8.6.2 → 12.10.3 affected",
+      "card_style": "alert"
+     },
+     {
+      "say": "No sign of real attacks, and a fix is out. Update Telegram on Android today.",
+      "show": "Fixed in 12.10.4 (late September). Check: Settings, version at the bottom.",
+      "card": "Update to 12.10.4 or later",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who never updates their apps.",
+      "show": "Send this to the friend who never updates their apps.",
+      "card": "↗ Send this to your Telegram group"
+     }
+    ]
+   },
+   "x_text": "Telegram for Android 8.6.2 to 12.10.3: answering a voice call could let the caller run code on the phone, per NebuSec. No CVE yet and no reported in-the-wild use. Fixed in 12.10.4; check Settings for your version.\n\n#MobileSecurity #CyberSecurity",
+   "ig_caption": "Answer a call. That was enough. 📞\n\nWhat NebuSec disclosed (via The Hacker News, 29 Oct):\n→ A flaw in Telegram for Android 8.6.2 through 12.10.3 let a caller run code once the victim answered a voice call\n→ The attacker needed only a regular Telegram account; confirmed on ARM64 phones\n→ No evidence of iOS, desktop or group-call impact so far, and no reported attacks in the wild\n→ No CVE assigned yet; NebuSec says its AI code-security product found it\n→ Fixed in Telegram for Android 12.10.4, released in late September\n\nWhat to do: open Telegram, Settings, and check the version at the bottom. Below 12.10.4? Update now. On work phones, enforce app updates through MDM.\n\nSend this to the friend who never updates apps 👇\n\nHow long do apps on your phone usually wait before you update them?\n\nSource: The Hacker News (29 Oct 2026)\n\n#Telegram #AndroidSecurity #MobileSecurity #PatchNow #InfoSec #CyberSecurity"
+  }
+ ]
+}
