@@ -1,0 +1,21 @@
+{
+  "editorialDate": "2026-10-30",
+  "notes": "One original bright Instagram evergreen image for manual posting only; no Metricool, no Instagram auto-publish. Hook 6 words; caption 39 words, 4 hashtags. OWASP Forgot Password Cheat Sheet. Separate from Claude-owned breaking news. reels empty to avoid unnecessary narrated rendering.",
+  "posts": [
+    {
+      "category": "APPSEC • ACCOUNT RECOVERY",
+      "title": "A Reset Link Is a Credential",
+      "bullets": [
+        "Use cryptographically random, single-use reset tokens with a short expiry.",
+        "Rate-limit reset requests and return the same response for existing and unknown accounts.",
+        "After suspected compromise, invalidate old sessions and outstanding recovery links."
+      ],
+      "takeaway": "Test token replay, expiry, and session invalidation.",
+      "caption": "A password reset link is a credential. Use unpredictable, single-use, short-lived tokens; rate-limit reset requests; and avoid revealing whether an account exists. After suspected compromise, invalidate old sessions and recovery links.\n\n#AppSec #IdentitySecurity #Authentication #SecureCoding\n\nSave this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+      ]
+    }
+  ],
+  "reels": []
+}
