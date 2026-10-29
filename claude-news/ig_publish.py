@@ -93,8 +93,11 @@ def wait_ready(cid, token, tries=20, pause=15):
 
 def publish(ig, token, item, urls):
     cap = item["ig_caption"]
-    if item["kind"] == "reel":
-        c = req("POST", f"{G}/{ig}/media", token, {"media_type": "REELS", "video_url": urls[0], "caption": cap, "share_to_feed": "true"})["id"]
+    if item["kind"] in ("reel", "diagram"):
+        params = {"media_type": "REELS", "video_url": urls[0], "caption": cap, "share_to_feed": "true"}
+        if item["kind"] == "diagram" and len(urls) > 1:
+            params["cover_url"] = urls[1]      # first frame as the grid cover
+        c = req("POST", f"{G}/{ig}/media", token, params)["id"]
         wait_ready(c, token)
     elif len(urls) > 1:
         kids = [req("POST", f"{G}/{ig}/media", token, {"image_url": u, "is_carousel_item": "true"})["id"] for u in urls[:20]]

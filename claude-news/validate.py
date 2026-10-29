@@ -45,8 +45,8 @@ def main(path):
         if k in seen_keys:
             probs.append(f"{i}: story_key {k} already posted on an earlier run")
         keys.add(k)
-        if it.get("kind") not in ("reel", "carousel", "card"):
-            probs.append(f"{i}: kind must be reel|carousel|card")
+        if it.get("kind") not in ("reel", "carousel", "card", "diagram"):
+            probs.append(f"{i}: kind must be reel|carousel|card|diagram")
         if not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00$", it.get("slot", "")):
             probs.append(f"{i}: slot must be YYYY-MM-DDTHH:MM:00 (Asia/Kuala_Lumpur)")
         srcs = it.get("sources") or []
@@ -97,6 +97,23 @@ def main(path):
             b = it.get("bullets", [])
             if not 2 <= len(b) <= 4 or any(len(x) > 95 for x in b):
                 probs.append(f"{i}: card needs 2-4 bullets of <= 95 chars")
+        if it.get("kind") == "diagram":
+            dg = it.get("diagram", {})
+            hp = os.path.join(os.path.dirname(HERE), dg.get("html", ""))
+            if not dg.get("title") or len(dg["title"]) > 60:
+                probs.append(f"{i}: diagram.title missing or > 60 chars")
+            if not dg.get("html", "").startswith("claude-news/diagrams/") or not os.path.isfile(hp):
+                probs.append(f"{i}: diagram.html must be an existing file under claude-news/diagrams/")
+            else:
+                h = open(hp).read()
+                if not re.search(r'class="flow[GR]?"', h):
+                    probs.append(f"{i}: diagram has no animated arrows (class flow / flowG / flowR)")
+                if 'width="1080" height="1350"' not in h:
+                    probs.append(f"{i}: diagram svg must be 1080x1350")
+                if "send this to" not in h.lower():
+                    probs.append(f"{i}: diagram needs a '↗ Send this to ...' line")
+            if not 6 <= int(dg.get("seconds", 8)) <= 12:
+                probs.append(f"{i}: diagram.seconds should be 6-12")
         if it.get("kind") == "reel":
             r = it.get("reel", {})
             segs = r.get("segments", [])
@@ -118,8 +135,9 @@ def main(path):
                 if re.search(r"CVE-\d", s.get("say", "")):
                     probs.append(f"{i}: segment {n} 'say' reads a CVE id aloud; keep CVE ids in 'show'/'card' only")
     kinds = [it.get("kind") for it in items]
-    if len(items) == 5 and (kinds.count("reel") != 3 or kinds.count("carousel") != 2):
-        probs.append(f"a full run is 3 reels + 2 carousels, got {kinds}")
+    if len(items) == 5 and (kinds.count("reel") != 3 or kinds.count("carousel") + kinds.count("diagram") != 2
+                            or kinds.count("diagram") > 1):
+        probs.append(f"a full run is 3 reels + 2 carousels (or 1 carousel + 1 diagram), got {kinds}")
     li = [it for it in items if it.get("linkedin")]
     if len(li) > 1:
         probs.append("at most 1 LinkedIn item per run")

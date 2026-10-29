@@ -99,8 +99,8 @@ def main():
                 result["skipped"][iid] = "Typefully publishing quota used up"
                 continue
             try:
-                f = "reel.mp4" if it["kind"] == "reel" else m["files"][0]
-                alt = (it.get("cover") or {}).get("hook") or (it.get("reel") or {}).get("hook", "")
+                f = {"reel": "reel.mp4", "diagram": "diagram.mp4"}.get(it["kind"], m["files"][0])
+                alt = (it.get("cover") or {}).get("hook") or (it.get("reel") or {}).get("hook", "") or (it.get("diagram") or {}).get("title", "")
                 media_id = upload(ss, os.path.join(base, iid, f), alt)
                 # Weekly thread: x_thread holds 5-8 posts; the first carries the media. Otherwise a single post.
                 texts = it.get("x_thread") or [it["x_text"]]

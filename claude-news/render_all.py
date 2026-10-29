@@ -55,6 +55,17 @@ def render_reel(item, outdir):
     return ["reel.mp4"], voice, round(dur, 1)
 
 
+def render_diagram(item, outdir):
+    import diagram_render
+    html = os.path.join(ROOT, item["diagram"]["html"])
+    out = os.path.join(outdir, "diagram.mp4")
+    diagram_render.render(html, out, int(item["diagram"].get("seconds", 8)))
+    dur, size, has_audio = probe(out)
+    if size != (1080, 1350) or not (5 <= dur <= 20):
+        raise RuntimeError(f"diagram check failed: {size}, {dur:.1f}s")
+    return ["diagram.mp4", "diagram-cover.jpg"], round(dur, 1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("content")
@@ -78,6 +89,9 @@ def main():
             if item["kind"] == "reel":
                 files, voice, dur = render_reel(item, d)
                 entry.update(voice=voice, seconds=dur)
+            elif item["kind"] == "diagram":
+                files, dur = render_diagram(item, d)
+                entry.update(seconds=dur)
             else:
                 files = cards.render_item(item, d)
             entry["files"] = files

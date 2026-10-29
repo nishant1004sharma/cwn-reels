@@ -40,6 +40,13 @@ jobs:
           test -n "$F" && test -f "$F"
           echo "file=$F" >> "$GITHUB_OUTPUT"
           echo "Rendering $F"
+      - name: Install browser for animated diagrams
+        if: hashFiles('claude-news/diagrams/*.html') != ''
+        run: |
+          if grep -q '"kind": *"diagram"' "${{ steps.pick.outputs.file }}"; then
+            python -m pip install -q playwright
+            python -m playwright install --with-deps chromium
+          fi
       - name: Render images and voiced reels
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
