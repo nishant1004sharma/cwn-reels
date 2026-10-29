@@ -27,7 +27,7 @@
       "card_style": "stat"
      },
      {
-      "say": "Anthropic says its internal model chained flaws into working exploits in lab tests. None were seen in real attacks.",
+      "say": "Anthropic says it built them in lab tests. None were seen in real attacks.",
       "show": "Every flaw was reported to vendors first. The model is unnamed and unreleased.",
       "card": "Lab tests · not seen in the wild",
       "card_style": "fact"
@@ -240,7 +240,7 @@
       "card_style": "fact"
      },
      {
-      "say": "No attacks seen yet, and most vendor fixes aren't out. If you don't need network boot, turn it off.",
+      "say": "No attacks seen yet, and most vendor fixes are not out. No need for network boot? Turn it off.",
       "show": "Fix merged in EDK II on 15 Oct; no stable release yet. Project Mu builds 26 Oct. Watch AMI, Insyde, Phoenix.",
       "card": "Disable PXE boot if unused",
       "card_style": "answer"
