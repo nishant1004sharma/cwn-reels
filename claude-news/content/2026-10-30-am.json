@@ -27,13 +27,13 @@
       "card_style": "stat"
      },
      {
-      "say": "Hackers hijacked DebugBear, a monitoring script on the site. It used logged-in sessions to sell positions or move tokens.",
+      "say": "Hackers hijacked a monitoring script on the site. It used logged-in sessions to sell positions or move tokens.",
       "show": "The script came from DebugBear's real-user monitoring embed. DebugBear confirmed an ongoing security incident.",
       "card": "Trusted vendor script → crypto drainer",
       "card_style": "alert"
      },
      {
-      "say": "Polymarket says affected traders will be reimbursed. Audit every third-party script on your logged-in pages.",
+      "say": "Polymarket says it will reimburse traders. Audit third-party scripts on logged-in pages.",
       "show": "Polymarket: 'One of our third party providers was compromised.' Trading resumed about an hour later.",
       "card": "Inventory + restrict third-party JavaScript",
       "card_style": "answer"
