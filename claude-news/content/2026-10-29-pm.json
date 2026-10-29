@@ -1,0 +1,259 @@
+{
+ "date": "2026-10-29",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-10-29-pm-01",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-10-29T21:00:00",
+   "story_key": "anthropic-unreleased-model-exploit-chains-2026-10",
+   "send_to": "whoever patches your browsers",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+     "date": "2026-10-28"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "5 exploit chains. Built by an unreleased AI.",
+    "segments": [
+     {
+      "say": "Five exploit chains. Built by an unreleased A I model.",
+      "show": "Anthropic's Frontier Red Team: working exploit chains for Chrome, Safari, Android, Windows and Linux, in lab tests.",
+      "card": "5|exploit chains · built by an unreleased AI",
+      "card_style": "stat"
+     },
+     {
+      "say": "Anthropic says its internal model chained flaws into working exploits in lab tests. None were seen in real attacks.",
+      "show": "Every flaw was reported to vendors first. The model is unnamed and unreleased.",
+      "card": "Lab tests · not seen in the wild",
+      "card_style": "fact"
+     },
+     {
+      "say": "For Chrome alone, it reported sixty-two flaws, thirteen of them sandbox escapes. Update Chrome.",
+      "show": "62 Chrome flaws, all rated critical or high, 13 sandbox escapes. Fixed in Chrome 156 (20 Oct).",
+      "card": "Update to Chrome 156 or later",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever patches your browsers.",
+      "show": "Send this to whoever patches your browsers.",
+      "card": "↗ Send this to your patching lead"
+     }
+    ]
+   },
+   "x_text": "Anthropic's unreleased AI model built 5 exploit chains in lab tests (Chrome, Safari, Android, Windows, Linux), per its Frontier Red Team. 62 Chrome flaws reported, 13 sandbox escapes, fixed in Chrome 156. None seen in real attacks.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "An unreleased AI model built five working exploit chains. 🤖\n\nWhat Anthropic's Frontier Red Team described (via The Hacker News, 28 Oct):\n→ An internal, unreleased model chained flaws into exploits for Chrome, Safari, Android, Windows and Linux, in lab tests\n→ For Chrome it reported 62 flaws, all rated critical or high, including 13 sandbox escapes. Fixed in Chrome 156 (20 Oct)\n→ The Linux proof of concept took 48 minutes to leak a kernel address and five more to reach a shell\n→ All flaws went to vendors first; none were seen in real attacks\n→ Anthropic doesn't say how much of each chain a human directed\n\nWhy it matters: the time from bug to working exploit is shrinking. Patch speed is now the control that matters most. Update browsers and kernels on a schedule you can measure.\n\nSend this to whoever patches your browsers 👇\n\nHow many days does a critical browser update take to reach every laptop in your org?\n\nSource: The Hacker News (28 Oct 2026)\n\n#AISecurity #Anthropic #ExploitDevelopment #Chrome #PatchManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-10-29-pm-02",
+   "kind": "carousel",
+   "category": "AI NEWS",
+   "slot": "2026-10-29T17:00:00",
+   "story_key": "google-gemini-4-carbon-cyber-defenders-2026-10",
+   "send_to": "your AppSec lead",
+   "sources": [
+    {
+     "name": "Google blog",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "date": "2026-10-28"
+    }
+   ],
+   "cover": {
+    "hook": "Google's newest AI model goes to cyber defenders first.",
+    "sub": "Gemini 4 Carbon, announced 28 Oct, posts state-of-the-art scores at finding and exploiting vulnerabilities."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Defenders first",
+     "body": "From this week, a subset of cyber defenders get access. Google will widen it to trusted partners through its Fairwind Program. There's no date yet for developers, businesses or consumers."
+    },
+    {
+     "type": "stat",
+     "big": "88.2%",
+     "label": "SEC-bench Pro (finding vulnerabilities)",
+     "note": "ExploitGym 54.8% · CWE-bench patching 71.0% · evaluated without guardrails"
+    },
+    {
+     "type": "point",
+     "title": "Fixing, not just finding",
+     "body": "Google says Carbon more than doubles Argon's success rate at generating secure code. Its Chrome team reported more than 10x better patch generation than another lab's large frontier model."
+    },
+    {
+     "type": "point",
+     "title": "Prompt injection: 0.0%",
+     "body": "Google reports 0.0% attack success on the Gray Swan indirect prompt injection benchmark, down from 0.7% for Argon. These are vendor numbers: test on your own workloads."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Pick who on your team evaluates AI for bug triage",
+      "Review AI-written patches like any other code",
+      "Assume attackers get similar tools soon",
+      "Watch Fairwind access if you defend at scale"
+     ]
+    }
+   ],
+   "question": "Would you let an AI model write the patch, or only find the bug?",
+   "x_text": "Google Gemini 4 Carbon goes to cyber defenders first: 88.2% on SEC-bench Pro (finding vulns), 54.8% on ExploitGym, 71.0% on CWE-bench patching, per Google. Wider access via its Fairwind Program; no date for developers or consumers.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "Google's newest AI model is going to cyber defenders before anyone else. 🛡️\n\nWhat Google announced (28 Oct):\n→ Gemini 4 Carbon is its strongest model, with \"state-of-the-art cybersecurity\" capabilities\n→ 88.2% on SEC-bench Pro (finding vulnerabilities), 54.8% on ExploitGym (exploitation), 71.0% on CWE-bench (patching), tested without guardrails\n→ A subset of cyber defenders get access this week; more trusted partners via the Fairwind Program\n→ 0.0% attack success on the Gray Swan prompt injection benchmark, per Google\n→ No date yet for developers, businesses or consumers\n\nWhy it matters: models that find and exploit bugs are arriving fast. Decide now how your team will use them, and review AI-written patches like any other code.\n\nSend this to your AppSec lead 👇\n\nWould you let an AI model write the patch, or only find the bug?\n\nSource: Google blog (28 Oct 2026)\n\n#AISecurity #Gemini #GoogleDeepMind #VulnerabilityManagement #AppSec #CyberSecurity"
+  },
+  {
+   "id": "2026-10-29-pm-03",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-10-29T20:00:00",
+   "story_key": "cve-2026-48356",
+   "send_to": "whoever runs your Magento store",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+     "date": "2026-10-28"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "953 stores. Hidden code. Scanners blind.",
+    "segments": [
+     {
+      "say": "Hidden code in nine hundred fifty-three online stores.",
+      "show": "Sansec: 953 online stores infected, most running Magento. Active since July 2025.",
+      "card": "953|online stores infected · per Sansec",
+      "card_style": "stat"
+     },
+     {
+      "say": "Sansec says attackers planted a loader in Magento content blocks. It hides from security scanners.",
+      "show": "About 471 stores via PolyShell (CVE-2026-48356, CVSS 9.3). Final payload still unknown.",
+      "card": "Shoppers load it · scanners don't",
+      "card_style": "alert"
+     },
+     {
+      "say": "C I S A now lists the flaw as exploited. Apply Adobe's fix and check your content blocks.",
+      "show": "Added to CISA KEV on 27 Oct. Adobe fix: APSB26-73. Audit cms_block, cms_page and admin accounts.",
+      "card": "Patch + audit cms_block",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your Magento store.",
+      "show": "Send this to whoever runs your Magento store.",
+      "card": "↗ Send this to your e-commerce team"
+     }
+    ]
+   },
+   "x_text": "Magento / Adobe Commerce PolyShell (CVE-2026-48356, CVSS 9.3) is now in CISA KEV. Sansec says 953 stores carry a hidden loader in CMS blocks, about 471 via PolyShell, and it hides from scanners. Apply APSB26-73, audit cms_block.\n\n#Magento #CyberSecurity",
+   "ig_caption": "953 online stores. Hidden code that hides from security scanners. 🛒\n\nWhat's been reported (The Hacker News, 26 and 28 Oct):\n→ Sansec found a JavaScript loader injected into Magento CMS blocks on 953 stores, active since July 2025\n→ About 471 were injected through PolyShell (CVE-2026-48356, CVSS 9.3), an unrestricted file upload flaw\n→ The server checks whether the visitor is a shopper or a scanner, so scanners get nothing\n→ The final payload is still unknown\n→ CISA added PolyShell to its exploited-vulnerabilities list on 27 Oct\n\nWhat to do: apply Adobe's APSB26-73 fix, check the cms_block and cms_page tables for blocks you didn't add, and audit admin accounts. One fully patched store was hit through a rogue admin.\n\nSend this to whoever runs your Magento store 👇\n\nWhen did your team last look inside your CMS content, not just your code?\n\nSource: The Hacker News (26 Oct, 28 Oct 2026)\n\n#Magento #AdobeCommerce #PolyShell #Ecommerce #WebSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-10-29-pm-04",
+   "kind": "carousel",
+   "category": "PATCH NOW",
+   "slot": "2026-10-29T16:00:00",
+   "story_key": "cve-2026-101767",
+   "send_to": "whoever patches your Oracle EBS",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+     "date": "2026-10-28"
+    }
+   ],
+   "cover": {
+    "hook": "Patched last week. Probed by attackers this week.",
+    "sub": "Oracle E-Business Suite CVE-2026-101767 (CVSS 9.8): unauthenticated SQL injection that can chain to code execution."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What the flaw does",
+     "body": "Horizon3.ai says an attacker who can reach the Thin Client Framework servlet can run SQL as the APPS database user, then OS commands as the EBS application account."
+    },
+    {
+     "type": "stat",
+     "big": "9.8",
+     "label": "CVSS · CVE-2026-101767",
+     "note": "Fixed in Oracle's October 2026 Critical Patch Update"
+    },
+    {
+     "type": "point",
+     "title": "Probing has started",
+     "body": "Defused Cyber says its EBS decoys recorded \"exploratory exploits\" on 27 Oct. No successful exploitation is confirmed. An earlier EBS flaw, CVE-2025-61882, was used by the Cl0p extortion group."
+    },
+    {
+     "type": "point",
+     "title": "What's at stake",
+     "body": "Financial, payroll, HR and procurement records, plus internal systems an attacker can reach through the servlet."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Apply Oracle's October 2026 CPU now",
+      "Can't yet? Drop /OA_HTML/AppsTCFServer from the URL allowlist",
+      "Keep the EBS web tier on trusted networks",
+      "Hunt unauthenticated POSTs to AppsTCFServer"
+     ]
+    }
+   ],
+   "question": "How many days does your ERP patch window really take?",
+   "x_text": "Oracle E-Business Suite CVE-2026-101767 (CVSS 9.8): Defused Cyber says its EBS decoys saw exploratory exploits on 27 Oct, days after the October CPU fix. Horizon3.ai: unauthenticated SQL injection chaining to RCE. Patch now.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "Patched last week. Probed by attackers this week. ⚠️\n\nWhat The Hacker News reported (28 Oct):\n→ Oracle E-Business Suite flaw CVE-2026-101767, CVSS 9.8, fixed in the October 2026 Critical Patch Update\n→ Horizon3.ai: an unauthenticated SQL injection that can chain to remote code execution\n→ Defused Cyber's EBS decoys recorded \"exploratory exploits\" on 27 Oct; no successful attack confirmed yet\n→ At stake: financial, payroll, HR and procurement data\n→ Earlier EBS flaw CVE-2025-61882 was used by the Cl0p extortion group\n\nWhat to do: apply the October CPU. If you can't yet, remove /OA_HTML/AppsTCFServer from the URL firewall allowlist and keep the EBS web tier on trusted networks.\n\nSend this to whoever patches your Oracle EBS 👇\n\nHow many days does your ERP patch window really take?\n\nSource: The Hacker News (28 Oct 2026)\n\n#Oracle #EBusinessSuite #PatchNow #ERP #VulnerabilityManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-10-29-pm-05",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-10-29T22:30:00",
+   "story_key": "cve-2026-97631",
+   "send_to": "whoever owns your server firmware",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+     "date": "2026-10-28"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "16 years old. Runs before Secure Boot.",
+    "segments": [
+     {
+      "say": "Sixteen years. One bug that runs before Secure Boot.",
+      "show": "A UEFI firmware flaw in EDK II, from code committed in November 2010.",
+      "card": "16 yrs|old flaw in EDK II firmware code",
+      "card_style": "stat"
+     },
+     {
+      "say": "Myth: Secure Boot protects every server. Reality: this flaw can run code before it, on network-booting servers.",
+      "show": "CVE-2026-97631, rated 9.5 by TianoCore. A 504-byte buffer overflow. Needs adjacent network access.",
+      "card": "Myth: Secure Boot covers it",
+      "card_style": "fact"
+     },
+     {
+      "say": "No attacks seen yet, and most vendor fixes aren't out. If you don't need network boot, turn it off.",
+      "show": "Fix merged in EDK II on 15 Oct; no stable release yet. Project Mu builds 26 Oct. Watch AMI, Insyde, Phoenix.",
+      "card": "Disable PXE boot if unused",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your server firmware.",
+      "show": "Send this to whoever owns your server firmware.",
+      "card": "↗ Send this to your infra lead"
+     }
+    ]
+   },
+   "x_text": "UEFI / EDK II CVE-2026-97631 (rated 9.5 by TianoCore): a 16-year-old buffer overflow can run code before Secure Boot on network-booting servers. Fix merged upstream, no stable release yet. No exploitation seen. Disable PXE if unused.\n\n#Firmware #CyberSecurity",
+   "ig_caption": "A 16-year-old firmware bug that can run before Secure Boot. 🧬\n\nWhat The Hacker News reported (28 Oct):\n→ CVE-2026-97631 in EDK II, the open-source UEFI code that AMI, Insyde, Phoenix and Microsoft's Project Mu build on\n→ TianoCore rates it 9.5; the flawed code dates to a November 2010 commit\n→ It's a 504-byte buffer overflow that hits network-booting servers; Red Hat and SUSE say it needs an adjacent network position\n→ Found by Alex Matrosov (Anthropic) and Dan Holmes-Mitra (Google)\n→ Fix merged upstream on 15 Oct, but no stable EDK II release yet. No exploitation seen\n\nWhat to do: if you don't need PXE network boot, disable it, and watch for firmware updates from your server vendor.\n\nSend this to whoever owns your server firmware 👇\n\nDoes anyone on your team actually track firmware versions?\n\nSource: The Hacker News (28 Oct 2026)\n\n#UEFI #Firmware #SecureBoot #ServerSecurity #VulnerabilityManagement #CyberSecurity"
+  }
+ ]
+}
