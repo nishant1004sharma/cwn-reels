@@ -32,7 +32,7 @@
       "card_style": "stat"
      },
      {
-      "say": "Binance says a DevOps engineer's laptop led to a service container. No private key leak, it says. Its own systems signed the withdrawals.",
+      "say": "A DevOps laptop led to a service container. Binance's own systems signed the withdrawals.",
       "show": "Initial findings: compromised engineer laptop → service container → unauthorized withdrawals. Binance later found more points of breach.",
       "card": "No keys stolen. The system signed it.",
       "card_style": "alert"
@@ -135,7 +135,7 @@
       "say": "The official Claude Code extension. Backdoored for eleven hours.",
       "show": "Version 2.1.313 of anthropic.claude-code on the Cursor Marketplace, 29 Oct, about 2:27 a.m. to 1:35 p.m. PT.",
       "card": "~11 hours|a backdoored update was live on Cursor",
-      "card_style": "alert"
+      "card_style": "stat"
      },
      {
       "say": "It added an attacker's S S H key, tried to open a reverse tunnel, and sent host details out.",
