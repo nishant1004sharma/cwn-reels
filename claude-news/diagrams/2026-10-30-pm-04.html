@@ -1,0 +1,116 @@
+<!doctype html>
+<!--
+  Animated explainer template (kind "diagram"). Copy to claude-news/diagrams/<item id>.html and edit.
+  Canvas 1080x1350 (4:5). Clean white background, dark text, coloured outlines only.
+  Animated pieces (all loop every 2 s so the video loops seamlessly):
+    path.flow   blue dashed arrow      path.flowG  green dashed arrow
+    path.flowR  red dashed arrow, faster (the attack / bad path)
+    .pulse      gentle scale pulse     .blink      fading text
+  Keep text >= 20px, max ~12 boxes, one idea per panel.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:Inter;font-weight:400 500;src:url('../../render/fonts/Inter-Medium.otf')}
+  @font-face{font-family:Inter;font-weight:600 900;src:url('../../render/fonts/Inter-SemiBold.otf')}
+  @font-face{font-family:'Inter Display';font-weight:700 900;src:url('../../render/fonts/InterDisplay-Bold.otf')}
+  :root{--ink:#111827;--muted:#4b5563;--blue:#2563eb;--green:#059669;--red:#dc2626;--line:#d1d5db}
+  html,body{margin:0;padding:0;background:#fff}
+  body{width:1080px;height:1350px;overflow:hidden}
+  svg{position:absolute;inset:0}
+  text{font-family:Inter,sans-serif;fill:var(--ink)}
+  .brand{font-size:22px;font-weight:800;letter-spacing:3px;fill:var(--blue)}
+  .title{font-family:'Inter Display',Inter,sans-serif;font-size:64px;font-weight:800}
+  .sub{font-size:28px;fill:var(--muted)}
+  .panelT{font-size:32px;font-weight:800}
+  .lbl{font-size:26px;font-weight:700;text-anchor:middle}
+  .small{font-size:21px;fill:var(--muted);text-anchor:middle}
+  .box{fill:#fff;stroke:#9ca3af;stroke-width:2.5}
+  .boxB{fill:#eff6ff;stroke:var(--blue);stroke-width:3}
+  .boxG{fill:#ecfdf5;stroke:var(--green);stroke-width:3}
+  .boxR{fill:#fef2f2;stroke:var(--red);stroke-width:3}
+  .flow,.flowG,.flowR{fill:none;stroke-width:4;stroke-dasharray:14 12;animation:dash 1s linear infinite}
+  .flow{stroke:var(--blue)} .flowG{stroke:var(--green)}
+  .flowR{stroke:var(--red);stroke-width:5;animation-duration:.5s}
+  @keyframes dash{from{stroke-dashoffset:26}to{stroke-dashoffset:0}}
+  .blink{animation:blink 1s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+  .pulse{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+</style></head>
+<body>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <marker id="aB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2563eb"/></marker>
+    <marker id="aG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#059669"/></marker>
+    <marker id="aR" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#dc2626"/></marker>
+  </defs>
+
+  <text class="brand" x="60" y="70">THE CYBER INTELLECT</text>
+  <text class="title" x="60" y="148">New Password. Same Attacker.</text>
+  <text class="sub" x="60" y="194">How a rogue MFA device keeps a cloud intruder in</text>
+
+  <!-- Panel 1: reset only -->
+  <rect x="40" y="225" width="1000" height="470" rx="26" fill="#f9fafb" stroke="#dc2626" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="277" style="fill:#dc2626">✗ Only change the password</text>
+
+  <rect class="boxR" x="70" y="370" width="200" height="120" rx="18"/>
+  <text class="lbl" x="170" y="422" style="fill:#dc2626">Attacker</text>
+  <text class="small" x="170" y="455">has a foothold</text>
+
+  <rect class="box" x="360" y="305" width="320" height="100" rx="18"/>
+  <text class="lbl" x="520" y="348">Stolen session token</text>
+  <text class="small" x="520" y="380">no password prompt</text>
+
+  <rect class="boxR" x="360" y="455" width="320" height="100" rx="18"/>
+  <text class="lbl" x="520" y="498">Own MFA device</text>
+  <text class="small" x="520" y="530">registered on the account</text>
+
+  <g class="pulse">
+    <rect class="boxB" x="770" y="360" width="240" height="140" rx="20"/>
+    <text class="lbl" x="890" y="415">Microsoft 365</text>
+    <text class="small" x="890" y="447">mail + files</text>
+  </g>
+
+  <rect class="box" x="360" y="600" width="320" height="76" rx="18"/>
+  <text class="lbl" x="520" y="647">Password changed ✓</text>
+
+  <path class="flowR" d="M270,410 L350,360" marker-end="url(#aR)"/>
+  <path class="flowR" d="M270,450 L350,500" marker-end="url(#aR)"/>
+  <path class="flowR" d="M680,355 L760,400" marker-end="url(#aR)"/>
+  <path class="flowR" d="M680,505 L760,460" marker-end="url(#aR)"/>
+  <path class="flow" d="M680,638 L820,638 L820,512" marker-end="url(#aB)"/>
+  <text class="blink" x="935" y="570" style="font-size:28px;font-weight:800;text-anchor:middle;fill:#dc2626">STILL IN</text>
+
+  <!-- Panel 2: full eviction -->
+  <rect x="40" y="720" width="1000" height="380" rx="26" fill="#f9fafb" stroke="#059669" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="772" style="fill:#059669">✓ Evict the attacker</text>
+
+  <rect class="boxG" x="70" y="815" width="290" height="110" rx="18"/>
+  <text class="lbl" x="215" y="862">① Revoke sessions</text>
+  <text class="small" x="215" y="896">no new tokens issued</text>
+
+  <rect class="boxG" x="395" y="815" width="290" height="110" rx="18"/>
+  <text class="lbl" x="540" y="862">② Remove unknown</text>
+  <text class="lbl" x="540" y="896">MFA devices</text>
+
+  <rect class="boxG" x="720" y="815" width="290" height="110" rx="18"/>
+  <text class="lbl" x="865" y="862">③ Disable rogue</text>
+  <text class="lbl" x="865" y="896">registered devices</text>
+
+  <rect class="box" x="300" y="985" width="480" height="90" rx="18"/>
+  <text class="lbl" x="540" y="1027" style="fill:#059669">Attacker locked out</text>
+  <text class="small" x="540" y="1058">old access token: up to 1 hour by default</text>
+
+  <path class="flowG" d="M360,870 L385,870" marker-end="url(#aG)"/>
+  <path class="flowG" d="M685,870 L710,870" marker-end="url(#aG)"/>
+  <path class="flowG" d="M865,925 L865,1030 L790,1030" marker-end="url(#aG)"/>
+
+  <!-- Takeaway -->
+  <rect x="40" y="1125" width="1000" height="160" rx="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="1175" style="fill:#2563eb;font-size:30px">Stop it next time (MITRE ATT&amp;CK T1098.005)</text>
+  <text x="70" y="1220" style="font-size:24px">① Require MFA to register a new device</text>
+  <text x="70" y="1258" style="font-size:24px">② Block enrolment on inactive accounts  ③ Alert on new devices</text>
+
+  <text x="540" y="1325" style="font-size:24px;font-weight:800;text-anchor:middle">↗ Send this to whoever runs your incident response</text>
+</svg>
+</body></html>
