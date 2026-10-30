@@ -1,0 +1,22 @@
+{
+  "editorialDate": "2026-10-31",
+  "notes": "One original light/bright Instagram evergreen security image for manual posting only. No Metricool, no Instagram auto-publish. Distinct from Claude-owned daily news. Official OWASP JWT Cheat Sheet and IETF RFC 8725. reels empty to avoid automatic video publishing.",
+  "posts": [
+    {
+      "category": "APPSEC • TOKEN VALIDATION",
+      "title": "A Signed JWT Isn't Enough",
+      "bullets": [
+        "Verify the signature with trusted issuer keys and an explicitly allowed algorithm.",
+        "Check issuer, audience and expiry against your API's expected values.",
+        "Enforce authorization separately: a valid token is not permission for every resource."
+      ],
+      "takeaway": "Trust the issuer. Validate the recipient. Check permissions.",
+      "caption": "A valid JWT signature doesn't automatically authorize an API request. Verify trusted keys and algorithms, validate issuer, audience and expiry, then enforce resource-level authorization separately. Test with tokens issued for a different service.\n\n#AppSec #APISecurity #JWT #IdentitySecurity\n\nSave this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet",
+        "https://www.rfc-editor.org/rfc/rfc8725"
+      ]
+    }
+  ],
+  "reels": []
+}
