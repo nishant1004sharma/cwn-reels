@@ -800,6 +800,71 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Answer one Telegram call. That's the trigger.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "openai-misalignment-monitors-hf-replay-2026-10",
+   "id": "2026-10-30-pm-01",
+   "date": "2026-10-30",
+   "slot": "2026-10-30T21:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "30 minutes. Not 30 hours.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "belgium-myminfin-cyberattack-2026-10",
+   "id": "2026-10-30-pm-02",
+   "date": "2026-10-30",
+   "slot": "2026-10-30T16:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "Days before a tax deadline, Belgium pulled its tax portal offline.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-41709",
+   "id": "2026-10-30-pm-03",
+   "date": "2026-10-30",
+   "slot": "2026-10-30T17:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Rated 2.7. Used as a zero-day.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "explainer-rogue-mfa-device-persistence",
+   "id": "2026-10-30-pm-04",
+   "date": "2026-10-30",
+   "slot": "2026-10-30T20:00:00",
+   "kind": "diagram",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "New Password. Same Attacker.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "gitee-26400-valid-credentials-2026-10",
+   "id": "2026-10-30-pm-05",
+   "date": "2026-10-30",
+   "slot": "2026-10-30T22:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "26,400 working keys. In public code.",
+   "typefully_draft_id": null
   }
  ]
 }
