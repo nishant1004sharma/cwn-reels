@@ -1,0 +1,264 @@
+{
+ "date": "2026-10-31",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-10-31-am-01",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-10-31T12:00:00",
+   "story_key": "binance-hot-wallet-6-3b-breach-2026-10",
+   "send_to": "whoever signs off on your withdrawals",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+     "date": "2026-10-30"
+    },
+    {
+     "name": "S-RM Cyber Intelligence Briefing",
+     "url": "https://www.s-rminform.com/cyber-intelligence-briefing/binance-breach-cyber-intelligence-briefing-30-october-2026",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "$6.3 billion. It started with one laptop.",
+    "segments": [
+     {
+      "say": "Six point three billion dollars. It started with one laptop.",
+      "show": "Binance says a 29 Oct security incident affected about $6.3B in assets. Possibly the largest crypto theft on record.",
+      "card": "$6.3B|in assets affected at Binance",
+      "card_style": "stat"
+     },
+     {
+      "say": "Binance says a DevOps engineer's laptop led to a service container. No private key leak, it says. Its own systems signed the withdrawals.",
+      "show": "Initial findings: compromised engineer laptop → service container → unauthorized withdrawals. Binance later found more points of breach.",
+      "card": "No keys stolen. The system signed it.",
+      "card_style": "alert"
+     },
+     {
+      "say": "Nearly three billion is frozen. Require multi-party approval on high-value transfers.",
+      "show": "~$3B frozen on-chain. TRM Labs and Chainalysis attribute it to North Korea with high confidence. Binance says it will cover losses.",
+      "card": "Multi-party approval on big transfers",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever signs off on your withdrawals.",
+      "show": "Send this to whoever signs off on your withdrawals.",
+      "card": "↗ Send this to your finance approver"
+     }
+    ]
+   },
+   "x_text": "Binance breach: about $6.3B in assets hit after a DevOps engineer's laptop led attackers to a service container that submitted unauthorized withdrawals. Binance: no private key leak. ~$3B frozen. TRM Labs and Chainalysis point to North Korea.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "$6.3 billion. It started with one engineer's laptop. 💸\n\nWhat Binance disclosed (via The Hacker News, 30 Oct):\n→ A 29 Oct \"security incident\" affected about $6.3B in assets; if confirmed, the largest crypto heist on record\n→ Initial findings: a compromised DevOps engineer's laptop gave access to a service container that submitted unauthorized withdrawals\n→ No evidence of a private key leak: Elliptic says the attacker got Binance's own systems to sign transactions\n→ Nearly $3B has been frozen on-chain; Binance says it will cover all losses from SAFU and its own funds\n→ TRM Labs and Chainalysis attribute it to North Korea with high confidence; Elliptic also links it to DPRK-linked actors but urges caution\n\nWhy it matters: you don't need to steal keys if you can reach the system that uses them. Lock down privileged engineer endpoints and require more than one approver for high-value transactions.\n\nSend this to whoever signs off on your withdrawals 👇\n\nHow many people does it take to approve your biggest payment?\n\nSource: The Hacker News (30 Oct 2026), S-RM briefing (30 Oct 2026)\n\n#Binance #CryptoHack #DataBreach #NorthKorea #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-am-02",
+   "kind": "carousel",
+   "category": "PATCH NOW",
+   "slot": "2026-10-31T10:00:00",
+   "story_key": "cve-2026-97229",
+   "send_to": "whoever runs your GitLab server",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+     "date": "2026-10-30"
+    },
+    {
+     "name": "Cyber Daily",
+     "url": "https://www.cyberdaily.au/security/14302-patch-now-gitlab-publishes-fixes-for-perfect-10-vulnerability-cve-2026-97229",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "CVSS 10. No login. Now on CISA's exploited list.",
+    "sub": "GitLab CVE-2026-97229: a crafted regex in CI/CD config can run code on the server. Federal deadline: 1 Nov."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What it is",
+     "body": "An integer overflow from weak regular expression validation in GitLab CE and EE. An unauthenticated user can send a crafted regex in a CI/CD configuration and execute code on the GitLab server."
+    },
+    {
+     "type": "stat",
+     "big": "10.0",
+     "label": "CVSS · added to CISA KEV on 29 Oct",
+     "note": "Federal agencies told to patch by 1 November 2026"
+    },
+    {
+     "type": "point",
+     "title": "Who got hit",
+     "body": "Alpine Linux says an attacker sent crafted CI configs on 20-21 Oct, crashing GitLab workers 8 times. Alpine found no evidence it succeeded but couldn't rule it out, and rebuilt the instance from scratch."
+    },
+    {
+     "type": "point",
+     "title": "Fixed releases",
+     "body": "GitLab 19.2.8, 19.3.5 and 19.4.2 (critical patch release, 13 Oct). GitLab.com is already patched. Can't patch yet? Rapid7 suggests limiting anonymous access to public projects."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Upgrade self-managed GitLab to a fixed release",
+      "Restrict anonymous access to public projects",
+      "Block untrusted users from writing to public projects",
+      "Check for repeated worker crashes since 20 Oct"
+     ]
+    }
+   ],
+   "question": "How long does a critical GitLab patch sit before your team deploys it?",
+   "x_text": "GitLab CVE-2026-97229 (CVSS 10.0) is now in CISA KEV: a crafted regex in a CI/CD config lets an unauthenticated user run code on the server. Alpine Linux saw attempts on its instance. Fixed in 19.2.8, 19.3.5, 19.4.2.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "CVSS 10. No login needed. Now on CISA's exploited list. 🚨\n\nWhat's new (via The Hacker News, 30 Oct):\n→ CVE-2026-97229 in GitLab CE/EE: a crafted regular expression in a CI/CD configuration can run code on the GitLab server, no authentication needed\n→ CISA added it to its Known Exploited Vulnerabilities catalog on 29 Oct; federal agencies must patch by 1 Nov\n→ Alpine Linux reported attempts on its GitLab on 20-21 Oct that crashed workers 8 times; it found no evidence of success but rebuilt the server anyway\n→ Fixed in 19.2.8, 19.3.5 and 19.4.2 (per Cyber Daily); GitLab.com is already patched\n\nWhat to do this week: upgrade self-managed GitLab now. If you can't, restrict anonymous access to public projects and stop untrusted users writing to them (Rapid7's interim advice: reduces risk, doesn't remove it).\n\nSend this to whoever runs your GitLab server 👇\n\nHow long does a critical GitLab patch sit before your team deploys it?\n\nSource: The Hacker News (30 Oct 2026), Cyber Daily\n\n#GitLab #PatchNow #CISA #DevSecOps #Vulnerability #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-am-03",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-10-31T08:15:00",
+   "story_key": "claude-code-cursor-extension-trojanized-2026-10",
+   "send_to": "every dev on your team using Cursor",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Official Claude Code extension. Backdoored.",
+    "segments": [
+     {
+      "say": "The official Claude Code extension. Backdoored for eleven hours.",
+      "show": "Version 2.1.313 of anthropic.claude-code on the Cursor Marketplace, 29 Oct, about 2:27 a.m. to 1:35 p.m. PT.",
+      "card": "~11 hours|a backdoored update was live on Cursor",
+      "card_style": "alert"
+     },
+     {
+      "say": "It added an attacker's S S H key, tried to open a reverse tunnel, and sent host details out.",
+      "show": "Adds an 'svc-telemetry' key to authorized_keys, installs persistence, sends hostname, user, Git email and secret variable names.",
+      "card": "SSH key + persistence + recon",
+      "card_style": "fact"
+     },
+     {
+      "say": "Cursor says up to five thousand users. Update, remove the key, rotate credentials.",
+      "show": "Fixed: 2.1.314. Cursor: 'not developed by Anthropic', at most 5,000 users affected. No sign on Open VSX or VS Code Marketplace.",
+      "card": "Update · remove key · rotate secrets",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to every dev on your team using Cursor.",
+      "show": "Send this to every dev on your team using Cursor.",
+      "card": "↗ Send this to your Cursor users"
+     }
+    ]
+   },
+   "x_text": "Claude Code extension 2.1.313 on the Cursor Marketplace was trojanized for about 11 hours on 29 Oct: it added an attacker SSH key, set persistence and sent host data out. Cursor says at most 5,000 users. Fixed in 2.1.314.\n\n#SupplyChainAttack #CyberSecurity",
+   "ig_caption": "The official Claude Code extension. Backdoored for about 11 hours. 🧩\n\nWhat happened (via The Hacker News, 30 Oct):\n→ Version 2.1.313 of anthropic.claude-code was pushed to the Cursor Marketplace under the legitimate publisher identity, live from about 2:27 a.m. to 1:35 p.m. PT on 29 Oct\n→ A 66-line loader added an attacker SSH key ('svc-telemetry') to authorized_keys, tried to enable SSH and open a reverse tunnel, and set up persistence\n→ It sent host details out: IP, hostname, username, Git email, and the names of secret-looking environment variables\n→ Cursor says the version \"was not developed by Anthropic\" and at most 5,000 users were affected; no sign of it on Open VSX or Microsoft's marketplace\n→ Found by OpenSourceMalware researchers; fixed version is 2.1.314\n\nIf you auto-updated that day: isolate the machine, remove the unknown SSH key and the scheduled task / crontab / LaunchAgent, and rotate credentials and sessions.\n\nSend this to every dev on your team using Cursor 👇\n\nDoes your team auto-update IDE extensions, or pin versions?\n\nSource: The Hacker News (30 Oct 2026)\n\n#ClaudeCode #Cursor #SupplyChainAttack #DevSecOps #AISecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-am-04",
+   "kind": "carousel",
+   "category": "AI THREAT",
+   "slot": "2026-10-31T13:30:00",
+   "story_key": "vapor-panda-artex-200-orgs-2026-10",
+   "send_to": "your threat intel lead",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "200+ organisations. AI agents doing the hacking. A human steering.",
+    "sub": "CrowdStrike says China-linked Vapor Panda ran ARTEX, an AI pentest framework, against ministries, telcos and defense firms."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Who and when",
+     "body": "CrowdStrike attributes the activity to Vapor Panda, a China-based state-linked adversary. From 17 Oct it hit 200+ organisations: foreign ministries, telcos, and U.S. semiconductor, defense and think-tank targets."
+    },
+    {
+     "type": "point",
+     "title": "How the AI works",
+     "body": "ARTEX orchestrates several LLMs, here DeepSeek plus a commercial model. A planner agent directs worker agents through recon and lateral movement, trying paths in parallel and switching when one fails."
+    },
+    {
+     "type": "stat",
+     "big": "1.4B",
+     "label": "input tokens used by planning agents in one intrusion",
+     "note": "Per CrowdStrike, via The Hacker News"
+    },
+    {
+     "type": "point",
+     "title": "What they used",
+     "body": "Old weaknesses, fast: auth keys unrotated since 2022 used to forge an admin token, cloud metadata reached via an XXE flaw, web shells, LAPS passwords read. Post-exploitation confirmed at 9 organisations."
+    },
+    {
+     "type": "actions",
+     "title": "What to review",
+     "items": [
+      "Rotate long-lived signing and auth keys",
+      "Lock down cloud instance metadata access",
+      "Hunt for unexpected web shells",
+      "Alert on password spraying across many accounts"
+     ]
+    }
+   ],
+   "question": "What's the oldest authentication key still valid in your environment?",
+   "x_text": "Vapor Panda / ARTEX: CrowdStrike says the China-linked group used ARTEX, an AI pentest framework running DeepSeek and a commercial LLM, against 200+ organisations from 17 Oct. Planner and worker agents, a human steering.\n\n#AISecurity #ThreatIntel",
+   "ig_caption": "200+ organisations. AI agents doing the legwork. A human steering. 🤖\n\nWhat CrowdStrike found (via The Hacker News, 30 Oct):\n→ China-based, state-linked Vapor Panda hit more than 200 organisations from 17 Oct: foreign ministries, telcos, U.S. semiconductor, defense and think-tank targets\n→ It used ARTEX, a Go-based AI pentest framework that runs several LLMs; here DeepSeek and an unnamed commercial model\n→ A planner agent directed worker agents from access to recon and lateral movement, trying paths in parallel; one intrusion used about 1.4 billion input tokens\n→ The weaknesses were old: auth keys unrotated since 2022, cloud metadata reachable, web shells. Post-exploitation confirmed at 9 organisations\n\nWhy it matters: AI agents make a small team run many intrusions at once, and they're fast at finding the forgotten key. Rotate long-lived keys, lock down instance metadata access and hunt for web shells.\n\nSend this to your threat intel lead 👇\n\nWhat's the oldest authentication key still valid in your environment?\n\nSource: The Hacker News (30 Oct 2026), citing CrowdStrike\n\n#AIThreat #AgenticAI #ThreatIntel #CrowdStrike #APT #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-am-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-10-31T14:30:00",
+   "story_key": "wordpress-714-core-rce-upgrade-race-2026-10",
+   "send_to": "whoever runs your WordPress site",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "62,969 attacks in 24 hours. WordPress core.",
+    "segments": [
+     {
+      "say": "Nearly sixty-three thousand attacks in one day. On WordPress core.",
+      "show": "Wordfence blocked 62,969 attacks on a WordPress core RCE flaw in 24 hours.",
+      "card": "62,969|attacks blocked in 24 hours",
+      "card_style": "stat"
+     },
+     {
+      "say": "During a core upgrade, the installer sits briefly in a predictable folder. Attackers race to hit it.",
+      "show": "Affects WordPress 4.7 to 7.1.3. CVSS 8.1. Files staged in wp-content/upgrade can be web-reachable for seconds.",
+      "card": "A race against the upgrade",
+      "card_style": "fact"
+     },
+     {
+      "say": "Update to seven point one point four. Then check for new admin accounts.",
+      "show": "Fixed in WordPress 7.1.4 (28 Oct). Look for odd requests to PHP files under wp-content/upgrade.",
+      "card": "Update to 7.1.4 now",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your WordPress site.",
+      "show": "Send this to whoever runs your WordPress site.",
+      "card": "↗ Send this to your web admin"
+     }
+    ]
+   },
+   "x_text": "WordPress core RCE (CVSS 8.1, versions 4.7 to 7.1.3): Wordfence blocked 62,969 attacks in 24 hours, racing to hit installer files staged during upgrades. Fixed in WordPress 7.1.4. Update, then check for new admin accounts.\n\n#WordPress #CyberSecurity",
+   "ig_caption": "62,969 attacks in 24 hours. On WordPress core itself. ⚠️\n\nWhat Wordfence saw (via The Hacker News, 30 Oct):\n→ A WordPress core remote code execution flaw, CVSS 8.1, affects versions 4.7 through 7.1.3 (no CVE yet)\n→ During a full core upgrade, new files, including the installer, are unpacked into a predictable folder under wp-content/upgrade that's often web-reachable\n→ An unauthenticated attacker has to hit that installer in a window of seconds, so attackers keep polling sites\n→ Wordfence blocked 62,969 attacks in 24 hours; some sources polled the same sites for about 14.5 hours\n→ Fixed in WordPress 7.1.4, released 28 Oct\n\nWhat to do now: update to 7.1.4, look for requests to PHP files under wp-content/upgrade, and check for unfamiliar admin accounts, plugins or PHP files.\n\nSend this to whoever runs your WordPress site 👇\n\nDo your WordPress sites auto-update core, or does someone click the button?\n\nSource: The Hacker News (30 Oct 2026), citing Wordfence\n\n#WordPress #PatchNow #WebSecurity #Wordfence #CyberSecurity"
+  }
+ ]
+}
