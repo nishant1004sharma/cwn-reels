@@ -1,0 +1,28 @@
+{
+ "date": "2026-10-30",
+ "run": "promo",
+ "items": [
+  {
+   "id": "2026-10-30-promo-01",
+   "kind": "card",
+   "category": "CISSP",
+   "slot": "2026-10-30T23:00:00",
+   "story_key": "promo-passed-cissp-courses-2026-10",
+   "send_to": "a friend studying for the CISSP",
+   "sources": [
+    {"name": "Udemy", "url": "https://www.udemy.com/course/cissp-exam-prep-domain-by-domain-2024-exam-outline"},
+    {"name": "Udemy", "url": "https://www.udemy.com/course/agentic-ai-security"}
+   ],
+   "cover": {
+    "hook": "I passed my CISSP yesterday.",
+    "sub": "If you're on the same path, or securing AI at work, my two courses are on Udemy:"
+   },
+   "bullets": [
+    "CISSP Exam Prep: Domain by Domain (2024 outline)",
+    "Agentic AI Security"
+   ],
+   "x_text": "I passed my CISSP yesterday. My courses: CISSP Exam Prep, domain by domain, and Agentic AI Security, both on Udemy.\n\n#CISSP #AISecurity",
+   "ig_caption": "I passed my CISSP yesterday. ✅\n\nIf you're on the same path, or securing AI at work, my courses are on Udemy:\n\n🎓 CISSP Exam Prep: Domain by Domain (2024 exam outline)\nudemy.com/course/cissp-exam-prep-domain-by-domain-2024-exam-outline\n\n🤖 Agentic AI Security\nudemy.com/course/agentic-ai-security\n\nSend this to a friend studying for the CISSP 👇\n\nWhat's your next cert?\n\nSource: my Udemy courses\n\n#CISSP #CISSPExam #AISecurity #AgenticAI #CyberSecurity #InfoSec"
+  }
+ ]
+}
