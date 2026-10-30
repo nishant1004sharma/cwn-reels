@@ -865,6 +865,71 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "26,400 working keys. In public code.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "binance-hot-wallet-6-3b-breach-2026-10",
+   "id": "2026-10-31-am-01",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T12:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "$6.3 billion. It started with one laptop.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-97229",
+   "id": "2026-10-31-am-02",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T10:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "CVSS 10. No login. Now on CISA's exploited list.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "claude-code-cursor-extension-trojanized-2026-10",
+   "id": "2026-10-31-am-03",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T08:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Official Claude Code extension. Backdoored.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "vapor-panda-artex-200-orgs-2026-10",
+   "id": "2026-10-31-am-04",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T13:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "200+ organisations. AI agents doing the hacking. A human steering.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "wordpress-714-core-rce-upgrade-race-2026-10",
+   "id": "2026-10-31-am-05",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T14:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "62,969 attacks in 24 hours. WordPress core.",
+   "typefully_draft_id": null
   }
  ]
 }
