@@ -1,0 +1,17 @@
+{
+  "run": "2026-10-30-promo",
+  "scheduled": {},
+  "skipped": {
+    "2026-10-30-promo-01": "not marked for X"
+  },
+  "errors": {},
+  "social_set": 351179,
+  "networks": [
+    "x"
+  ],
+  "quota_before": {
+    "used": 10,
+    "remaining": 0,
+    "resets_at": "2026-11-01T00:00:00+08:00"
+  }
+}

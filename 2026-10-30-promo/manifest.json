@@ -1,0 +1,15 @@
+{
+  "run": "2026-10-30-promo",
+  "items": {
+    "2026-10-30-promo-01": {
+      "kind": "card",
+      "files": [
+        "card.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-10-30-promo/2026-10-30-promo-01/card.jpg"
+      ]
+    }
+  },
+  "errors": {}
+}
