@@ -28,7 +28,7 @@
      {
       "say": "The firm that tracks crypto hackers just got breached.",
       "show": "Chainalysis, the blockchain analytics firm, confirmed on 30 Oct that an external attacker got into its systems.",
-      "card": "BREACHED|Chainalysis confirms an intrusion",
+      "card": "Chainalysis confirms a breach",
       "card_style": "alert"
      },
      {
