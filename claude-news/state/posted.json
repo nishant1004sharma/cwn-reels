@@ -1051,6 +1051,71 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "99 countries. One Apple spyware warning.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "northflank-ai-api-keys-breach-2026-10",
+   "id": "2026-11-01-am-01",
+   "date": "2026-11-01",
+   "slot": "2026-11-01T12:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Assume every secret is stolen.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "accenture-claude-code-niprnet-allegation-2026-10",
+   "id": "2026-11-01-am-02",
+   "date": "2026-11-01",
+   "slot": "2026-11-01T13:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "A personal AI agent. Admin rights. A Pentagon network. Allegedly.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-118539",
+   "id": "2026-11-01-am-03",
+   "date": "2026-11-01",
+   "slot": "2026-11-01T08:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "30,000 web shops. Bug already exploited.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "microsoft-north-korea-ai-adoption-8-actors-2026-10",
+   "id": "2026-11-01-am-04",
+   "date": "2026-11-01",
+   "slot": "2026-11-01T14:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "100+ phishing lures. Dozens made within minutes. Microsoft says AI built them.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "claude-code-iphone-face-photos-claim-2026-10",
+   "id": "2026-11-01-am-05",
+   "date": "2026-11-01",
+   "slot": "2026-11-01T10:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "12,847 face photos? Still unverified.",
+   "typefully_draft_id": null
   }
  ]
 }
