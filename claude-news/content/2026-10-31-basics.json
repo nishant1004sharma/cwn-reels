@@ -1,0 +1,218 @@
+{
+ "date": "2026-10-31",
+ "run": "basics",
+ "items": [
+  {
+   "id": "2026-10-31-basics-01",
+   "kind": "carousel",
+   "category": "DEFENCE",
+   "slot": "2026-10-31T18:15:00",
+   "story_key": "basics-launch-cybersecurity-from-zero",
+   "send_to": "a friend who wants to get into cyber",
+   "sources": [
+    {
+     "name": "NIST CSRC Glossary",
+     "url": "https://csrc.nist.gov/glossary/term/information_security",
+     "date": "2026-10-31"
+    },
+    {
+     "name": "CISA",
+     "url": "https://cisa.gov/topics/cybersecurity-best-practices/multifactor-authentication",
+     "date": "2026-10-31"
+    },
+    {
+     "name": "CISA Secure Our World",
+     "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+     "date": "2026-10-31"
+    }
+   ],
+   "cover": {
+    "hook": "Want to get into cybersecurity? Start here.",
+    "sub": "Cybersecurity from Zero: a free series. One basic at a time, three times a week. No jargon."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What it actually is",
+     "body": "NIST defines information security as protecting information and systems from unauthorized access, use, disclosure, disruption, modification or destruction. Everything else builds on that."
+    },
+    {
+     "type": "point",
+     "title": "The 3 goals",
+     "body": "Confidentiality: only the right people see it. Integrity: nobody changes it without permission. Availability: it works when you need it. Every attack breaks at least one."
+    },
+    {
+     "type": "stat",
+     "big": "99%",
+     "label": "less likely to be hacked with MFA on your accounts",
+     "note": "CISA"
+    },
+    {
+     "type": "point",
+     "title": "Old advice is out",
+     "body": "Bad spelling used to give phishing away. CISA now says poor grammar is no longer a reliable sign, because AI writes polished messages. The basics change. We'll keep up."
+    },
+    {
+     "type": "actions",
+     "title": "Coming up",
+     "items": [
+      "Mon: the CIA triad, explained simply",
+      "Wed: why your password isn't enough",
+      "Fri: spot a phishing message in 10 seconds",
+      "Follow so you don't miss part 1"
+     ]
+    }
+   ],
+   "question": "What's your background: student, IT, or switching careers?",
+   "x_text": "Starting a free series: Cybersecurity from Zero. One basic at a time, three times a week: the CIA triad, why MFA matters (CISA: 99% less likely to be hacked), how to spot phishing. Follow along.\n\n#CyberSecurity #InfoSec",
+   "ig_caption": "Want to get into cybersecurity but don't know where to start? Start here. 👇\n\nCybersecurity from Zero is a free series: one basic at a time, three times a week, no jargon.\n\n→ What it is: NIST calls it protecting information and systems from unauthorized access, use, disclosure, disruption, modification or destruction\n→ The 3 goals: confidentiality, integrity, availability\n→ The habit that matters most: CISA says MFA makes you 99% less likely to be hacked\n→ Old advice is out: CISA says bad grammar is no longer a reliable phishing sign, because AI writes clean messages\n\nComing up: Mon, the CIA triad. Wed, why your password isn't enough. Fri, spotting phishing in 10 seconds. Follow so you don't miss part 1.\n\nSend this to a friend who wants to get into cyber 👇\n\nComment BASICS and tell me your background: student, IT, or switching careers? I'll shape the series around your answers.\n\nSource: NIST glossary, CISA (Oct 2026)\n\n#CyberSecurityForBeginners #LearnCyberSecurity #CyberSecurity #InfoSec #CyberSecurityCareer #ITCareer"
+  },
+  {
+   "id": "2026-10-31-basics-02",
+   "kind": "carousel",
+   "category": "DEFENCE",
+   "slot": "2026-11-02T18:15:00",
+   "story_key": "basics-01-cia-triad",
+   "send_to": "someone starting out in cyber",
+   "sources": [
+    {
+     "name": "NIST CSRC Glossary",
+     "url": "https://csrc.nist.gov/glossary/term/information_security",
+     "date": "2026-10-31"
+    }
+   ],
+   "cover": {
+    "hook": "Every cyberattack breaks one of these 3 things.",
+    "sub": "Cybersecurity from Zero · Part 1: the CIA triad. Not the agency."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "C: Confidentiality",
+     "body": "NIST: preserving authorized restrictions on access and disclosure. In plain words: only the right people can see it. Broken by: a leaked database, a stolen password, a misaddressed email."
+    },
+    {
+     "type": "point",
+     "title": "I: Integrity",
+     "body": "NIST: guarding against improper information modification or destruction. In plain words: nobody changes it without permission. Broken by: an altered bank account number on an invoice."
+    },
+    {
+     "type": "point",
+     "title": "A: Availability",
+     "body": "NIST: ensuring timely and reliable access to and use of information. In plain words: it works when you need it. Broken by: ransomware locking files, a site flooded offline."
+    },
+    {
+     "type": "stat",
+     "big": "C · I · A",
+     "label": "the three goals of information security",
+     "note": "How security people describe what an attack damaged"
+    },
+    {
+     "type": "actions",
+     "title": "Try it yourself",
+     "items": [
+      "Pick any breach headline this week",
+      "Ask: which of C, I or A did it break?",
+      "Ransomware with data theft? Often C and A",
+      "Post your answer in the comments"
+     ]
+    }
+   ],
+   "question": "Ransomware that encrypts files AND leaks them: which letters does it break?",
+   "x_text": "Cybersecurity from Zero, part 1: the CIA triad. Confidentiality (only the right people see it), integrity (nobody changes it without permission), availability (it works when you need it). Every attack breaks at least one.\n\n#CyberSecurity #InfoSec",
+   "ig_caption": "Every cyberattack breaks at least one of these 3 things. 🔐\n\nCybersecurity from Zero · Part 1: the CIA triad (not the agency).\n\n→ Confidentiality: NIST says preserving authorized restrictions on access and disclosure. Only the right people see it\n→ Integrity: guarding against improper modification or destruction. Nobody changes it without permission\n→ Availability: timely and reliable access to and use of information. It works when you need it\n→ Read any breach headline and ask which letter broke. That's how security teams describe impact\n\nTry it: pick one cyber news story this week and name the letter(s) it broke.\n\nSend this to someone starting out in cyber 👇\n\nRansomware that encrypts files AND leaks them: which letters does it break? Answer below.\n\nSource: NIST CSRC glossary (definitions from NIST SP 800-66r2)\n\n#CIATriad #CyberSecurityForBeginners #LearnCyberSecurity #CyberSecurity #InfoSec #CISSP"
+  },
+  {
+   "id": "2026-10-31-basics-03",
+   "kind": "reel",
+   "category": "IDENTITY",
+   "slot": "2026-11-04T18:15:00",
+   "story_key": "basics-02-mfa-password-not-enough",
+   "send_to": "the friend who reuses one password",
+   "sources": [
+    {
+     "name": "CISA",
+     "url": "https://cisa.gov/topics/cybersecurity-best-practices/multifactor-authentication",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "99% less likely to be hacked. One setting.",
+    "segments": [
+     {
+      "say": "Ninety-nine percent less likely to be hacked. One setting.",
+      "show": "Cybersecurity from Zero · Part 2: why your password isn't enough.",
+      "card": "99%|less likely to be hacked with MFA (CISA)",
+      "card_style": "stat"
+     },
+     {
+      "say": "Myth: a strong password is enough. Reality: passwords leak, get guessed, or get phished.",
+      "show": "A password is one credential. If someone else has it, they are you.",
+      "card": "Myth: a strong password is enough",
+      "card_style": "alert"
+     },
+     {
+      "say": "M F A asks for two or more credentials. Turn it on for email and banking first.",
+      "show": "CISA: MFA requires a combination of two or more credentials to verify identity at login.",
+      "card": "Turn on MFA: email first",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who reuses one password.",
+      "show": "Send this to the friend who reuses one password.",
+      "card": "↗ Send this to your password reuser"
+     }
+    ]
+   },
+   "x_text": "Cybersecurity from Zero, part 2: a strong password isn't enough. CISA says MFA, two or more credentials at login, makes you 99% less likely to be hacked. Turn it on for email and banking first.\n\n#MFA #CyberSecurity",
+   "ig_caption": "99% less likely to be hacked. One setting. 🔑\n\nCybersecurity from Zero · Part 2: why your password isn't enough.\n\n→ Myth: a strong password keeps you safe\n→ Reality: a password is one credential. If it leaks, gets guessed or gets phished, whoever has it is you\n→ MFA (multi-factor authentication) asks for two or more credentials at login, per CISA\n→ CISA says using MFA makes you 99% less likely to be hacked\n\nDo it today: turn on MFA for your email first (it resets everything else), then banking and social accounts.\n\nSend this to the friend who reuses one password 👇\n\nWhich account would hurt most if someone got in tomorrow?\n\nSource: CISA, Multifactor Authentication\n\n#MFA #CyberSecurityForBeginners #LearnCyberSecurity #PasswordSecurity #CyberSecurity #InfoSec"
+  },
+  {
+   "id": "2026-10-31-basics-04",
+   "kind": "reel",
+   "category": "DEFENCE",
+   "slot": "2026-11-06T18:15:00",
+   "story_key": "basics-03-spot-phishing",
+   "send_to": "your parents",
+   "sources": [
+    {
+     "name": "CISA Secure Our World",
+     "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "Perfect grammar. Still phishing.",
+    "segments": [
+     {
+      "say": "Perfect grammar. Still phishing.",
+      "show": "Cybersecurity from Zero · Part 3: spot a phishing message.",
+      "card": "No typos ≠ safe",
+      "card_style": "alert"
+     },
+     {
+      "say": "CISA says bad spelling is no longer a reliable sign. A I writes clean scams.",
+      "show": "Look instead for: urgency, requests for personal or financial info, shortened links, lookalike addresses like amazan.com.",
+      "card": "Urgency · info requests · odd links",
+      "card_style": "fact"
+     },
+     {
+      "say": "Don't click. Report it, delete it, and contact the company through its official site.",
+      "show": "Never use the link or phone number in the message to check it.",
+      "card": "Report · delete · verify another way",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to your parents.",
+      "show": "Send this to your parents.",
+      "card": "↗ Send this to your parents"
+     }
+    ]
+   },
+   "x_text": "Cybersecurity from Zero, part 3: CISA says bad grammar is no longer a reliable phishing sign, because AI writes clean scams. Watch for urgency, requests for personal info, shortened links and lookalike addresses.\n\n#Phishing #CyberSecurity",
+   "ig_caption": "Perfect grammar. Still phishing. 🎣\n\nCybersecurity from Zero · Part 3: spot a phishing message.\n\n→ CISA says poor grammar and spelling are no longer reliable signs, because AI writes polished messages\n→ Watch for urgent or emotional pressure, especially threats of bad things if you don't act now\n→ Watch for requests for personal or financial information\n→ Watch for shortened links and lookalike addresses, like amazan.com\n\nWhat to do: don't click or reply. Report it, delete it, and check with the company through its official website, never the link or number in the message.\n\nSend this to your parents 👇\n\nWhat's the most convincing scam message you've ever received?\n\nSource: CISA Secure Our World, Recognize and Report Phishing\n\n#Phishing #CyberSecurityForBeginners #LearnCyberSecurity #ScamAwareness #CyberSecurity #InfoSec"
+  }
+ ]
+}
