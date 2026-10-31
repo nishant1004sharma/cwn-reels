@@ -873,11 +873,12 @@
    "slot": "2026-10-31T12:00:00",
    "kind": "reel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "$6.3 billion. It started with one laptop.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11595345
   },
   {
    "story_key": "cve-2026-97229",
