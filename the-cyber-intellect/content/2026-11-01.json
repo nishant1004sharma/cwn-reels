@@ -1,0 +1,23 @@
+{
+  "editorialDate": "2026-11-01",
+  "notes": "One original bright Instagram evergreen image for manual posting only; no Metricool, no auto-publish. No reels. Source-backed by UK NCSC ransomware-resistant backup and data-security guidance. Distinct from Claude-owned news.",
+  "posts": [
+    {
+      "category": "SECURITY OPERATIONS • RANSOMWARE RECOVERY",
+      "title": "A Backup Is Not a Recovery Plan",
+      "bullets": [
+        "Isolate backups: keep offline or immutable copies and separate backup admin credentials.",
+        "Test restores: recover real files and systems in a clean test environment.",
+        "Measure recovery: track elapsed time, data loss and accountable service owners."
+      ],
+      "takeaway": "Backups protect data. Restore drills protect operations.",
+      "caption": "Backups are only useful when you can restore them. Keep isolated or immutable copies, separate backup credentials, and rehearse recovery on clean systems. Measure restoration time and data loss against business needs.\n\n#CyberResilience #Ransomware #SecurityOperations #DisasterRecovery\n\nSave this for later.",
+      "sources": [
+        "https://www.ncsc.gov.uk/collection/ransomware-resistant-backups/principles-for-ransomware-resistant-on-premises-backups",
+        "https://www.ncsc.gov.uk/collection/10-steps/data-security",
+        "https://www.ncsc.gov.uk/sites/default/files/2026-03/Mitigating-malware-and-ransomware-attacks.pdf"
+      ]
+    }
+  ],
+  "reels": []
+}
