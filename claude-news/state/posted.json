@@ -938,11 +938,12 @@
    "slot": "2026-10-31T18:15:00",
    "kind": "carousel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": null,
    "title": "Want to get into cybersecurity? Start here.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11605687
   },
   {
    "story_key": "basics-01-cia-triad",
@@ -951,11 +952,12 @@
    "slot": "2026-11-02T18:15:00",
    "kind": "carousel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": null,
    "title": "Every cyberattack breaks one of these 3 things.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11605689
   },
   {
    "story_key": "basics-02-mfa-password-not-enough",
@@ -964,11 +966,12 @@
    "slot": "2026-11-04T18:15:00",
    "kind": "reel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "99% less likely to be hacked. One setting.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11605691
   },
   {
    "story_key": "basics-03-spot-phishing",
@@ -977,11 +980,12 @@
    "slot": "2026-11-06T18:15:00",
    "kind": "reel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Perfect grammar. Still phishing.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11605692
   },
   {
    "story_key": "chainalysis-agentic-breach-2026-10",
