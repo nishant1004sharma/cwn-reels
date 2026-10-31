@@ -982,6 +982,71 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Perfect grammar. Still phishing.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "chainalysis-agentic-breach-2026-10",
+   "id": "2026-10-31-pm-01",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T21:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "The breach investigators got breached.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "synology-c3rb3r-ransomware-2026-10",
+   "id": "2026-10-31-pm-02",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T16:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "Files renamed .L0CK3D. Synology NAS boxes hit by ransomware.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "n0n-ransomware-ai-7k-exposed-server-2026-10",
+   "id": "2026-10-31-pm-03",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T17:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "$7,216 on AI. Then left the server open.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "embrace-ai-assistant-browsers-2026-10",
+   "id": "2026-10-31-pm-04",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T22:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "Your AI coding assistant has a browser. Researchers broke 5 of them.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "apple-threat-notifications-99-countries-2026-10",
+   "id": "2026-10-31-pm-05",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T20:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "99 countries. One Apple spyware warning.",
+   "typefully_draft_id": null
   }
  ]
 }
