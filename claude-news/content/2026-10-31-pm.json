@@ -1,0 +1,284 @@
+{
+ "date": "2026-10-31",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-10-31-pm-01",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-10-31T21:00:00",
+   "story_key": "chainalysis-agentic-breach-2026-10",
+   "send_to": "whoever runs your phishing training",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
+     "date": "2026-10-31"
+    },
+    {
+     "name": "Blockchain.News",
+     "url": "https://blockchain.news/news/chainalysis-cybersecurity-incident-customer-data-october-2026",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "The breach investigators got breached.",
+    "segments": [
+     {
+      "say": "The firm that tracks crypto hackers just got breached.",
+      "show": "Chainalysis, the blockchain analytics firm, confirmed on 30 Oct that an external attacker got into its systems.",
+      "card": "BREACHED|Chainalysis confirms an intrusion",
+      "card_style": "alert"
+     },
+     {
+      "say": "It says the attacker used offensive agentic techniques.",
+      "show": "Chainalysis: the actor used \"offensive agentic techniques\" to reach systems and internal tools. It hasn't named a model or said how much a human steered.",
+      "card": "\"Offensive agentic techniques\"",
+      "card_style": "fact"
+     },
+     {
+      "say": "Names, emails, user I Ds, role labels exposed. No passwords or M F A secrets accessed, it says.",
+      "show": "Exposed: user IDs, full names, emails, organisation role labels. No evidence so far of access to case data, clear-text passwords, MFA secrets or session tokens.",
+      "card": "Names · emails · roles exposed",
+      "card_style": "fact"
+     },
+     {
+      "say": "That's a phishing list. Warn users about fake reset emails.",
+      "show": "Chainalysis advises watching for unexpected password resets and login prompts, and turning on 2FA.",
+      "card": "Expect targeted phishing. Verify resets.",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your phishing training.",
+      "show": "Send this to whoever runs your phishing training.",
+      "card": "↗ Send this to your awareness lead"
+     }
+    ]
+   },
+   "x_text": "Chainalysis breach: the analytics firm says an external actor used \"offensive agentic techniques\" to reach internal tools. User IDs, names, emails and role labels exposed; no evidence passwords, MFA secrets or session tokens were accessed.\n\n#DataBreach #AISecurity",
+   "ig_caption": "The breach investigators got breached. 🕵️\n\nWhat Chainalysis disclosed (30 Oct):\n→ An external actor got into its systems and internal tools using what it calls \"offensive agentic techniques\"\n→ Accessed: user IDs, full names, email addresses and organisation role labels, which it calls \"non-sensitive\"\n→ No evidence so far of access to investigation data (graphs, notes, cases), clear-text passwords, MFA secrets or session tokens\n→ It hasn't said how many customers are affected, named an AI model, or said how much a human directed the attack\n→ Chainalysis says it is unrelated to the Binance theft\n\nWhy it matters: names + work emails + job roles of crypto investigators is exactly what a targeted phishing campaign needs. Warn users about unexpected password resets and login prompts, and make sure 2FA is on.\n\nSend this to whoever runs your phishing training 👇\n\nWould your users spot a fake password reset that uses their real name and job title?\n\nSource: Cyber Security News (31 Oct 2026), Blockchain.News (30 Oct 2026)\n\n#Chainalysis #DataBreach #AgenticAI #AISecurity #Phishing #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-pm-02",
+   "kind": "carousel",
+   "category": "RANSOMWARE",
+   "slot": "2026-10-31T16:00:00",
+   "story_key": "synology-c3rb3r-ransomware-2026-10",
+   "send_to": "whoever looks after your NAS",
+   "sources": [
+    {
+     "name": "IT-Connect",
+     "url": "https://www.it-connect.fr/nas-synology-ransomware-c3rb3r-l0ck3d/",
+     "date": "2026-10-29"
+    },
+    {
+     "name": "Synology Security Advisory SA-26:13",
+     "url": "https://www.synology.com/en-global/security/advisory/Synology_SA_26_13",
+     "date": "2026-09-18"
+    },
+    {
+     "name": "pwn.watch",
+     "url": "https://pwn.watch/i/synology-dsm-cerber-c3rb3r-ransomware-cve-2026-13639-13684",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "Files renamed .L0CK3D. Synology NAS boxes hit by ransomware.",
+    "sub": "Security firm 360 warns C3RB3R ransomware is encrypting Synology NAS devices through DSM flaws. Synology's fix: update DSM."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What's happening",
+     "body": "360 says C3RB3R, a Cerber variant, has been hitting Synology NAS devices since early October. Encrypted files get a .L0CK3D extension and a read-me3.txt ransom note pointing to a Tor site."
+    },
+    {
+     "type": "point",
+     "title": "Which flaws",
+     "body": "Synology says attackers are exploiting a flaw it fixed in December 2024 on devices running outdated DSM. Reports citing 360 also link CVE-2026-13639 and CVE-2026-13684, fixed on 18 Sep."
+    },
+    {
+     "type": "stat",
+     "big": "9.8",
+     "label": "CVSS · CVE-2026-13639 & CVE-2026-13684: unauthenticated remote file read/write",
+     "note": "Synology-SA-26:13 lists no workaround: upgrade only"
+    },
+    {
+     "type": "point",
+     "title": "Fixed DSM versions",
+     "body": "DSM 7.4-90075, 7.3.2-86009-4, 7.2.2-72806-9 or 7.2.1-69057-12, or later. Older, unsupported DSM releases are the ones Synology says are being targeted."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Update DSM to a fixed release today",
+      "Remove port forwarding; use a VPN for remote access",
+      "Disable the default admin account, turn on 2FA",
+      "Keep locked snapshots plus an offline backup"
+     ]
+    }
+   ],
+   "question": "Is your NAS reachable straight from the internet right now?",
+   "x_text": "Synology NAS / C3RB3R: 360 warns the Cerber-variant ransomware is encrypting Synology devices (.L0CK3D files) via DSM flaws. Synology says outdated DSM is being targeted. Fixes: DSM 7.4-90075, 7.3.2-86009-4, 7.2.2-72806-9.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "Files renamed .L0CK3D. A ransom note in every folder. On a NAS. 🔒\n\nWhat we know (IT-Connect, 29 Oct; Synology advisory):\n→ Chinese security firm 360 says C3RB3R, a Cerber variant, has been encrypting Synology NAS devices since early October\n→ Synology warns attackers are exploiting a flaw it fixed in December 2024 on devices running outdated DSM\n→ Reports citing 360 also link CVE-2026-13639 and CVE-2026-13684: both CVSS 9.8, unauthenticated remote file read/write, fixed on 18 Sep (Synology-SA-26:13)\n→ Synology lists no workaround: updating is the fix\n\nWhat to do this week: update DSM (7.4-90075, 7.3.2-86009-4, 7.2.2-72806-9 or 7.2.1-69057-12 or later), remove direct port forwarding and use a VPN, disable the default admin account, turn on 2FA, and keep locked snapshots plus an offline backup. RAID is not a backup.\n\nSend this to whoever looks after your NAS 👇\n\nIs your NAS reachable straight from the internet right now?\n\nSource: IT-Connect (29 Oct 2026), Synology Security Advisory SA-26:13\n\n#Synology #Ransomware #NAS #PatchNow #Backup #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-pm-03",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-10-31T17:00:00",
+   "story_key": "n0n-ransomware-ai-7k-exposed-server-2026-10",
+   "send_to": "whoever manages your VPN",
+   "sources": [
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "$7,216 on AI. Then left the server open.",
+    "segments": [
+     {
+      "say": "Seven thousand dollars on A I. Then the ransomware crew left its server wide open.",
+      "show": "SOCRadar found a public file server used by the n0n ransomware operator: 1,719 files, including scripts and ransomware source code.",
+      "card": "$7,216|spent on AI services by the n0n operator",
+      "card_style": "stat"
+     },
+     {
+      "say": "SOCRadar found the files: one coding agent wired to a hundred and fifty-four models.",
+      "show": "An OpenCode setup with 154 model entries across 7 providers, used to write and debug hundreds of scripts. No sign of a fully autonomous attack.",
+      "card": "154 model entries · 7 providers",
+      "card_style": "fact"
+     },
+     {
+      "say": "But every documented break-in started with weak or stolen credentials. Lock down V P N logins.",
+      "show": "SOCRadar: every documented compromise relied on weak or stolen credentials: RDP scanning, FortiGate SSL-VPN credential stuffing, exposed cloud keys.",
+      "card": "MFA on every VPN and RDP login",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever manages your V P N.",
+      "show": "Send this to whoever manages your VPN.",
+      "card": "↗ Send this to your VPN admin"
+     }
+    ]
+   },
+   "x_text": "n0n ransomware: SOCRadar found the operator's exposed server. AI spend topped $7,216, with an OpenCode agent wired to 154 model entries. Yet every documented break-in used weak or stolen credentials (RDP, FortiGate SSL-VPN stuffing).\n\n#Ransomware #AISecurity",
+   "ig_caption": "$7,216 spent on AI. Then the server was left open for anyone to see. 🤖\n\nWhat SOCRadar found (via The Register, 30 Oct):\n→ The n0n ransomware operator, a newcomer since September with 108 claimed victims, left a public file server holding 1,719 files: scripts, ransomware source code and an AI coding agent setup\n→ AI costs passed $7,216 by 22 Oct, using OpenCode with 154 model entries across seven providers, some marketed as \"uncensored\"\n→ The AI wrote and debugged hundreds of scripts; SOCRadar found no evidence of a fully autonomous attack\n→ The way in was boring: every documented compromise relied on weak or stolen credentials, via RDP scanning, FortiGate SSL-VPN credential stuffing and exposed cloud keys\n→ The operator deleted backups in some cases\n\nWhy it matters: AI made this crew faster, not smarter. Phishing-resistant MFA on VPN and RDP, rotated cloud keys and backups that can't be deleted would have blocked most of it.\n\nSend this to whoever manages your VPN 👇\n\nIs every remote access login in your company behind MFA, or just most of them?\n\nSource: The Register (30 Oct 2026), citing SOCRadar\n\n#Ransomware #AIThreat #CredentialStuffing #VPN #MFA #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-pm-04",
+   "kind": "carousel",
+   "category": "AI SECURITY",
+   "slot": "2026-10-31T22:30:00",
+   "story_key": "embrace-ai-assistant-browsers-2026-10",
+   "send_to": "whoever approves dev tools at work",
+   "sources": [
+    {
+     "name": "Forever Security",
+     "url": "https://forever.security/blog/embrace-hacking-5-ai-assistants-embedded-browsers",
+     "date": "2026-10-29"
+    },
+    {
+     "name": "Hackread",
+     "url": "https://hackread.com/embrace-flaws-ai-coding-tools-code-execution-theft/",
+     "date": "2026-10-29"
+    }
+   ],
+   "cover": {
+    "hook": "Your AI coding assistant has a browser. Researchers broke 5 of them.",
+    "sub": "Forever Security's EMBRACE research: Cursor, Copilot, Codex, VS Code and Claude Desktop. Codex and VS Code unpatched at publication."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What they found",
+     "body": "Flaws in the embedded browsers of five desktop AI assistants: code execution on the host in Cursor, a spoofed address bar in GitHub Copilot, and local files reading outside the project in Claude Desktop, Codex and VS Code."
+    },
+    {
+     "type": "point",
+     "title": "What was reachable",
+     "body": "Per the researchers, the file-read issue could reach SSH keys, .env files, package manager tokens, cloud credentials, browser session data and private source code."
+    },
+    {
+     "type": "point",
+     "title": "The user step",
+     "body": "Cursor needed one approval of an agent's command. The file-read issue needed the user to open a malicious local file, but the link came from the assistant itself, so the click felt routine."
+    },
+    {
+     "type": "point",
+     "title": "Patch status (29 Oct)",
+     "body": "Cursor patched 1 Oct. Copilot fixed in 1.1.29 on 13 Oct. Anthropic accepted the Claude Desktop report. OpenAI hadn't responded and Microsoft declined it: Codex and VS Code unpatched at publication."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Inventory AI assistants on developer laptops",
+      "Update Cursor and Copilot to fixed builds",
+      "Don't open untrusted links or files in built-in browsers",
+      "Keep SSH keys and cloud creds out of plain files"
+     ]
+    }
+   ],
+   "question": "Do you know which AI assistants are installed on your developers' laptops?",
+   "x_text": "EMBRACE: Forever Security broke the embedded browsers in Cursor, GitHub Copilot, Codex, VS Code and Claude Desktop: host code execution, address-bar spoofing, local file reads. Codex and VS Code were unpatched at publication.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "Your AI coding assistant ships with a browser. Researchers broke five of them. 🧑‍💻\n\nWhat Forever Security found (EMBRACE research, 29 Oct):\n→ Cursor: a web page could get code to run on the host after one approval of an agent's command\n→ GitHub Copilot: a page could spoof the address bar, showing a different site than the one loaded\n→ Claude Desktop, Codex and VS Code: a malicious local file could read files outside the project, including SSH keys, .env files, cloud credentials and source code\n→ Cursor patched on 1 Oct; Copilot fixed in 1.1.29 on 13 Oct; Anthropic accepted the report\n→ OpenAI hadn't responded and Microsoft declined the report: Codex and VS Code were unpatched at publication\n\nWhy it matters: the built-in browser loads untrusted pages, is driven by an agent, and sits next to your developers' keys. Inventory the AI assistants on dev machines, update Cursor and Copilot, and treat links and files the assistant opens as untrusted.\n\nSend this to whoever approves dev tools at work 👇\n\nDo you know which AI assistants are installed on your developers' laptops?\n\nSource: Forever Security (29 Oct 2026), Hackread (29 Oct 2026)\n\n#AISecurity #Cursor #GitHubCopilot #VSCode #DevSecOps #CyberSecurity"
+  },
+  {
+   "id": "2026-10-31-pm-05",
+   "kind": "reel",
+   "category": "THREAT INTEL",
+   "slot": "2026-10-31T20:00:00",
+   "story_key": "apple-threat-notifications-99-countries-2026-10",
+   "send_to": "the journalist or activist you know",
+   "sources": [
+    {
+     "name": "CyberScoop",
+     "url": "https://cyberscoop.com/apple-spyware-notifications-pall-mall-process/",
+     "date": "2026-10-30"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/apple/apple-sends-new-threat-notification-alerts-over-mercenary-spyware-attacks/",
+     "date": "2026-08-13"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "99 countries. One Apple spyware warning.",
+    "segments": [
+     {
+      "say": "Ninety-nine countries. Apple just sent a new wave of spyware threat alerts.",
+      "show": "Apple sent new mercenary spyware threat notifications to targeted users in 99 countries (30 Oct). Over 150 countries notified to date.",
+      "card": "99|countries in Apple's new spyware alert wave",
+      "card_style": "stat"
+     },
+     {
+      "say": "Myth: no alert means you're safe. A Citizen Lab researcher says that doesn't rule out infection.",
+      "show": "Citizen Lab's John Scott-Railton: a lack of notification does not rule out an infection. Apple doesn't attribute the attacks.",
+      "card": "MYTH: No alert = no spyware",
+      "card_style": "alert"
+     },
+     {
+      "say": "Real alerts never ask you to click. If you're at risk, turn on Lockdown Mode.",
+      "show": "Apple never asks you to click links or install anything from an alert; verify at account.apple.com. Apple recommends Lockdown Mode and Access Now's helpline.",
+      "card": "At risk? Turn on Lockdown Mode",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the journalist or activist you know.",
+      "show": "Send this to the journalist or activist you know.",
+      "card": "↗ Send this to someone at risk"
+     }
+    ]
+   },
+   "x_text": "Apple threat notifications: a new wave of mercenary spyware alerts went to targeted iPhone users in 99 countries, per CyberScoop. Over 150 countries notified to date. Apple advises Lockdown Mode. No alert doesn't rule out infection.\n\n#Spyware #CyberSecurity",
+   "ig_caption": "99 countries. One new wave of Apple spyware warnings. 📱\n\nWhat happened (via CyberScoop, 30 Oct):\n→ Apple sent new threat notifications about mercenary spyware to targeted users in 99 countries\n→ Apple says it has now notified users in over 150 countries in total; the previous big batch went out in August\n→ Recipients include journalists and documentary filmmakers. Apple doesn't attribute the attacks to anyone\n→ Myth: no alert means no spyware. Citizen Lab's John Scott-Railton says a lack of notification does not rule out an infection\n\nWhat to do: a real Apple alert never asks you to click links, open files or install anything; check it by signing in at account.apple.com. If you're at risk, turn on Lockdown Mode, keep devices updated, and contact Access Now's Digital Security Helpline. Be wary of paid \"spyware removal\" services.\n\nSend this to the journalist or activist you know 👇\n\nWould you know where to check if one of these alerts landed on your phone?\n\nSource: CyberScoop (30 Oct 2026), BleepingComputer (13 Aug 2026)\n\n#Apple #Spyware #iPhone #LockdownMode #ThreatIntel #CyberSecurity"
+  }
+ ]
+}
