@@ -930,6 +930,58 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "62,969 attacks in 24 hours. WordPress core.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "basics-launch-cybersecurity-from-zero",
+   "id": "2026-10-31-basics-01",
+   "date": "2026-10-31",
+   "slot": "2026-10-31T18:15:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "Want to get into cybersecurity? Start here.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "basics-01-cia-triad",
+   "id": "2026-10-31-basics-02",
+   "date": "2026-11-02",
+   "slot": "2026-11-02T18:15:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": null,
+   "title": "Every cyberattack breaks one of these 3 things.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "basics-02-mfa-password-not-enough",
+   "id": "2026-10-31-basics-03",
+   "date": "2026-11-04",
+   "slot": "2026-11-04T18:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "99% less likely to be hacked. One setting.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "basics-03-spot-phishing",
+   "id": "2026-10-31-basics-04",
+   "date": "2026-11-06",
+   "slot": "2026-11-06T18:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Perfect grammar. Still phishing.",
+   "typefully_draft_id": null
   }
  ]
 }
