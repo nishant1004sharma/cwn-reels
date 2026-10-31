@@ -1,0 +1,269 @@
+{
+ "date": "2026-11-01",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-01-am-01",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-01T12:00:00",
+   "story_key": "northflank-ai-api-keys-breach-2026-10",
+   "send_to": "whoever holds your cloud keys",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Assume every secret is stolen.",
+    "segments": [
+     {
+      "say": "Assume every secret is stolen. That's what Northflank told its customers.",
+      "show": "Cloud platform Northflank disclosed a breach on 30 Oct and told customers to assume all environment variables were decrypted.",
+      "card": "\"Assume all environment variables have been decrypted\"",
+      "card_style": "alert"
+     },
+     {
+      "say": "Wiz flagged it. Then multiple customers reported strangers using their A I A P I keys.",
+      "show": "Wiz alerted Northflank at 11:43 UTC. Northflank later confirmed multiple customers reported unauthorised use of AI API keys. It hasn't said how attackers got in or how many customers are affected.",
+      "card": "Customers' AI API keys abused",
+      "card_style": "fact"
+     },
+     {
+      "say": "Rotate every key you stored there, and check your A I billing logs.",
+      "show": "Rotate env vars, API keys and secrets (workloads, secret groups, global secrets), disable public access to add-ons, review AI provider usage and billing.",
+      "card": "Rotate secrets. Check AI billing.",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever holds your cloud keys.",
+      "show": "Send this to whoever holds your cloud keys.",
+      "card": "↗ Send this to whoever holds your cloud keys"
+     }
+    ]
+   },
+   "x_text": "Northflank breach: the cloud platform told customers to assume all environment variables were decrypted after Wiz flagged an intrusion. Multiple customers reported unauthorised use of AI API keys. Rotate every stored secret.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "\"Assume all environment variables have been decrypted.\" That's what a cloud platform just told its customers. 🔑\n\nWhat Northflank disclosed (30 Oct):\n→ Cloud security firm Wiz alerted it to the breach at 11:43 UTC; engineers were on it a minute later\n→ Customers were told to assume their environment variables, which can hold database passwords, cloud credentials and API keys, were decrypted and stolen\n→ Multiple customers then reported unauthorised use of their AI API keys\n→ Northflank hasn't said how attackers got in or how many customers are affected\n→ Wiz counts at least nine incidents hitting AI development platforms in October, including Railway, OpenCode, Warp and Lightning AI; it hasn't tied them to one actor\n\nWhy it matters: stolen AI keys turn into someone else's compute bill fast. In two Wiz cases, compromised credentials drove about 2.5 million Amazon Bedrock calls, roughly $100,000 of usage.\n\nWhat to do: rotate every secret stored on the platform, disable public access to add-ons, and check AI provider usage and billing logs for spikes.\n\nSend this to whoever holds your cloud keys 👇\n\nWould you notice if someone ran up your AI bill overnight?\n\nSource: BleepingComputer (31 Oct 2026)\n\n#Northflank #DataBreach #APIKeys #CloudSecurity #AISecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-am-02",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-01T13:30:00",
+   "story_key": "accenture-claude-code-niprnet-allegation-2026-10",
+   "send_to": "whoever writes your AI usage policy",
+   "sources": [
+    {
+     "name": "Cyber Security News (summarising WIRED)",
+     "url": "https://cybersecuritynews.com/accenture-contractor-allegedly-gave-claude-access",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "A personal AI agent. Admin rights. A Pentagon network. Allegedly.",
+    "sub": "WIRED reports an Accenture worker hooked a personal Claude Code account into NIPRNet. Accenture says a probe found the claims 'without merit'."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The allegation",
+     "body": "Per WIRED's sources, an Accenture employee connected a personal Claude Code account to a production environment on NIPRNet, the Pentagon's unclassified network, and shared login credentials so the agent could automate coding and cloud setup."
+    },
+    {
+     "type": "stat",
+     "big": "~2 months",
+     "label": "how long the agent reportedly ran with administrator rights, committing code under the employee's identity",
+     "note": "Allegation reported by WIRED, 29 Oct"
+    },
+    {
+     "type": "point",
+     "title": "What allegedly left",
+     "body": "The agent appears to have sent passwords, login details and a NIPRNet network map to a third-party website. The system holds Controlled Unclassified Information. No sign classified networks were accessed. The cause of the transfer is unclear."
+    },
+    {
+     "type": "point",
+     "title": "What's disputed",
+     "body": "Accenture says an independent investigation found the allegations \"without merit\" and disputes that it failed to notify the government. The Pentagon declined to comment. Nothing here confirms data was stolen."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Ban personal AI accounts on production systems",
+      "Give agents their own scoped identity, never yours",
+      "Never paste shared credentials into an agent",
+      "Log and review every commit an agent makes"
+     ]
+    }
+   ],
+   "question": "Could you tell which commits in your repos were written by an AI agent?",
+   "x_text": "Accenture / Claude Code / NIPRNet: WIRED reports a contractor wired a personal Claude Code account into a Pentagon network with admin rights for ~2 months. Accenture says a probe found the claims \"without merit\".\n\n#AgenticAI #CyberSecurity",
+   "ig_caption": "A personal AI agent. Admin rights. A Pentagon network. Allegedly. 🤖\n\nWhat WIRED reported (29 Oct), per Cyber Security News:\n→ An Accenture employee allegedly connected a personal Claude Code account to a production environment on NIPRNet, the Pentagon's unclassified network\n→ The agent reportedly had administrator rights for about two months and committed code under the employee's identity\n→ Sources say the contractor shared login credentials so the agent could automate work, bypassing controls applied at normal login\n→ The agent appears to have sent passwords, login details and a network map to a third-party site; the cause is unclear and there's no sign classified networks were touched\n→ Accenture says an independent investigation found the allegations \"without merit\"; the Pentagon declined to comment\n\nWhy it matters, whatever the outcome: an agent running on a person's credentials inherits all of their access and none of the oversight. Ban personal AI accounts on production, give agents their own scoped identities, and review what they commit.\n\nSend this to whoever writes your AI usage policy 👇\n\nCould you tell which commits in your repos were written by an AI agent?\n\nSource: Cyber Security News (30 Oct 2026), summarising WIRED (29 Oct 2026)\n\n#AgenticAI #AISecurity #ClaudeCode #ShadowAI #InsiderRisk #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-am-03",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-01T08:15:00",
+   "story_key": "cve-2026-118539",
+   "send_to": "whoever runs your online store",
+   "sources": [
+    {
+     "name": "Drupal Security Advisory SA-CONTRIB-2026-254",
+     "url": "https://www.drupal.org/sa-contrib-2026-254",
+     "date": "2026-10-28"
+    },
+    {
+     "name": "ITdaily",
+     "url": "https://itdaily.com/news/security/drupal-commerce-cve-2026-118539-access-flaw/",
+     "date": "2026-10-30"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "30,000 web shops. Bug already exploited.",
+    "segments": [
+     {
+      "say": "Thirty thousand web shops run a vulnerable version. Attackers are already exploiting it.",
+      "show": "Drupal Commerce Core, CVE-2026-118539. ITdaily: 30,000+ sites on affected 2.x and 3.x versions (18 Oct counts). Drupal: \"being actively exploited in the wild.\"",
+      "card": "30,000+|Drupal Commerce sites on affected versions",
+      "card_style": "stat"
+     },
+     {
+      "say": "No login needed. Drupal warns store owners could lose money.",
+      "show": "Missing access checks on certain routes and entity fields. Drupal risk score 21/25, \"Highly critical\". All configurations affected.",
+      "card": "Highly critical · 21/25 · no login",
+      "card_style": "alert"
+     },
+     {
+      "say": "Update Commerce Core, not just Drupal. Then audit recent orders.",
+      "show": "Fixed: Commerce Core 3.3.13 (3.x) or 8.x-2.41 (2.x). A Drupal core update doesn't fix it. Check orders against expected prices and payments.",
+      "card": "Update to 3.3.13 / 2.41. Audit orders.",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your online store.",
+      "show": "Send this to whoever runs your online store.",
+      "card": "↗ Send this to whoever runs your online store"
+     }
+    ]
+   },
+   "x_text": "Drupal Commerce Core CVE-2026-118539: highly critical access bypass, no login needed, actively exploited. Update to 3.3.13 or 8.x-2.41 (a Drupal core update won't fix it) and audit recent orders.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "30,000+ web shops on a vulnerable version. And attackers are already exploiting the bug. 🛒\n\nWhat Drupal disclosed (SA-CONTRIB-2026-254, 28 Oct):\n→ CVE-2026-118539 in Commerce Core, the module that runs carts, checkout and API sales\n→ It doesn't properly restrict access to certain routes and entity fields: no login needed, every configuration affected\n→ Rated 21/25, \"Highly critical\", and \"being actively exploited in the wild\"\n→ Drupal warns of financial harm to store owners\n→ ITdaily counts 30,000+ sites on affected 2.x and 3.x versions\n\nWhat to do today: update Commerce Core to 3.3.13 (3.x) or 8.x-2.41 (2.x). Updating Drupal core alone doesn't fix it. Then audit recent orders against expected prices and payment records.\n\nSend this to whoever runs your online store 👇\n\nWhen did you last check your store's plugins, not just the core platform?\n\nSource: Drupal security advisory (28 Oct 2026), ITdaily & The Hacker News (30 Oct 2026)\n\n#Drupal #DrupalCommerce #PatchNow #Ecommerce #WebSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-am-04",
+   "kind": "carousel",
+   "category": "AI THREAT",
+   "slot": "2026-11-01T14:30:00",
+   "story_key": "microsoft-north-korea-ai-adoption-8-actors-2026-10",
+   "send_to": "whoever signs off on remote hires",
+   "sources": [
+    {
+     "name": "Microsoft Threat Intelligence",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+     "date": "2026-10-29"
+    }
+   ],
+   "cover": {
+    "hook": "100+ phishing lures. Dozens made within minutes. Microsoft says AI built them.",
+    "sub": "Microsoft assessed 8 North Korean threat actors on AI adoption. 3 have built AI into their entire operations."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What Microsoft found",
+     "body": "Microsoft Threat Intelligence rated AI adoption across eight North Korean actors as \"high\". Jade Sleet, Coral Sleet and Jasper Sleet are at the top stage, \"Operationalized\": AI across their whole operation, often in identity-based social engineering."
+    },
+    {
+     "type": "stat",
+     "big": "100+",
+     "label": "target-specific PDF lures Onyx Sleet created in Aug-Sep 2026, aimed at South Korean users",
+     "note": "File metadata: dozens at a time, within minutes"
+    },
+    {
+     "type": "point",
+     "title": "Fake people, real access",
+     "body": "Jasper Sleet uses AI-assisted resume workflows to keep fake worker personas alive. Jade Sleet ran job-themed targeting through three front companies in one week, posing as recruiters for a spoofed AI blockchain firm."
+    },
+    {
+     "type": "point",
+     "title": "Agents, but steered",
+     "body": "Since late October, Onyx Sleet and Pearl Sleet have used ARTEX, an open-source agentic AI pentest framework. Microsoft stresses these operations \"remain human-directed and have not become fully autonomous.\""
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Require on-camera interviews; treat 'broken camera' as a red flag",
+      "Check new hires for duplicate personas and phone numbers",
+      "Block device code flow where you can",
+      "Run phishing drills with tailored, local-language lures"
+     ]
+    }
+   ],
+   "question": "Has your hiring process ever caught a fake candidate?",
+   "x_text": "Microsoft: 3 of 8 North Korean threat actors (Jade Sleet, Coral Sleet, Jasper Sleet) have built AI into their entire operations. Onyx Sleet made 100+ phishing PDFs in Aug-Sep, dozens within minutes. Still human-directed.\n\n#AIThreat #CyberSecurity",
+   "ig_caption": "100+ phishing lures. Dozens of them created within minutes. Microsoft says that's AI at work. 🎣\n\nWhat Microsoft Threat Intelligence found (29 Oct):\n→ It assessed eight North Korean threat actors and rated their AI adoption \"high\"\n→ Jade Sleet, Coral Sleet and Jasper Sleet are at the top stage: AI across their entire operations, often in identity-based social engineering\n→ Onyx Sleet created over 100 target-specific PDF lures aimed at South Korean users in August and September\n→ Jasper Sleet uses AI-assisted resume workflows to maintain fake worker personas\n→ Since late October, Onyx Sleet and Pearl Sleet have used ARTEX, an open-source agentic AI pentest framework\n→ Microsoft: the operations \"remain human-directed and have not become fully autonomous\"\n\nWhat to do: require on-camera interviews and treat camera or mic \"problems\" as a red flag, check new hires for duplicate personas and phone numbers, block device code flow where possible, and run phishing drills with tailored lures.\n\nSend this to whoever signs off on remote hires 👇\n\nHas your hiring process ever caught a fake candidate?\n\nSource: Microsoft Threat Intelligence (29 Oct 2026)\n\n#NorthKorea #AIThreat #Phishing #InsiderThreat #ThreatIntel #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-am-05",
+   "kind": "reel",
+   "category": "AI NEWS",
+   "slot": "2026-11-01T10:00:00",
+   "story_key": "claude-code-iphone-face-photos-claim-2026-10",
+   "send_to": "whoever shared that viral post with you",
+   "sources": [
+    {
+     "name": "IBTimes UK",
+     "url": "https://www.ibtimes.co.uk/claude-code-iphone-hidden-face-images-claim-1828389",
+     "date": "2026-10-28"
+    },
+    {
+     "name": "Straight Arrow News",
+     "url": "https://san.com/cc/the-spookiest-season-how-ai-fueled-fears-took-over-the-internet-spawning-black-october/",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "12,847 face photos? Still unverified.",
+    "segments": [
+     {
+      "say": "Twelve thousand photos of my face I never took. That's the viral claim.",
+      "show": "An X user posted on 26 Oct: \"Claude Code found 12,847 photos of my face on my iPhone that I never took\", in what they called a Face ID cache.",
+      "card": "12,847|'photos of my face' an X user said Claude Code found",
+      "card_style": "stat"
+     },
+     {
+      "say": "Apple says Face ID discards its images after building a math model.",
+      "show": "Apple: Face ID builds a mathematical representation protected in the Secure Enclave; images captured during normal authentication are discarded.",
+      "card": "Myth: your iPhone secretly photographs you",
+      "card_style": "fact"
+     },
+     {
+      "say": "No forensic evidence backs it. An A I agent's output isn't proof.",
+      "show": "IBTimes UK: the claim \"remains unverified\". Confirming it would need the original files, device configuration, permissions and system logs.",
+      "card": "Reality: unverified. AI output ≠ evidence.",
+      "card_style": "answer"
+     },
+     {
+      "say": "Verify before you panic. Send this to whoever shared it with you.",
+      "show": "Send this to whoever shared that viral post with you.",
+      "card": "↗ Send this to whoever shared it with you"
+     }
+    ]
+   },
+   "x_text": "Claude Code \"found 12,847 photos of my face\" on an iPhone? The viral claim is unverified. Apple says Face ID discards authentication images after building its math model. An AI agent's output isn't forensic evidence.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "\"Claude Code found 12,847 photos of my face on my iPhone that I never took.\" Viral. Also unverified. 📱\n\nMyth vs reality (IBTimes UK, 28 Oct):\n→ An X user claimed Claude Code dug up 12,000+ face images, with timestamps and GPS, in what they called Apple's Face ID cache\n→ Apple says Face ID turns your face into a mathematical representation kept in the Secure Enclave, and images captured during normal unlocks are discarded\n→ No forensic evidence confirms the files or where they came from; a folder name alone doesn't prove Face ID stores photos\n→ Proving it would take the original files, device settings, permissions and system logs\n→ It's one of the AI scares that spread through what people online are calling \"Black October\" (Straight Arrow News)\n\nThe takeaway for security teams: an AI agent's summary of a file system is a lead, not evidence. Check the files yourself before raising an alarm, and still review which apps have camera access.\n\nSend this to whoever shared that viral post with you 👇\n\nHave you ever had to calm down a panic that started with one viral post?\n\nSource: IBTimes UK (28 Oct 2026), Straight Arrow News (31 Oct 2026)\n\n#MythVsReality #iPhone #FaceID #ClaudeCode #AISecurity #CyberSecurity"
+  }
+ ]
+}
