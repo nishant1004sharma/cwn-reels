@@ -17,13 +17,19 @@ KL = datetime.timezone(datetime.timedelta(hours=8))
 
 
 def call(method, path, body=None):
-    req = urllib.request.Request(API + path, method=method,
-                                 data=json.dumps(body).encode() if body is not None else None,
-                                 headers={"Authorization": "Bearer " + os.environ["TYPEFULLY_API_KEY"],
-                                          "Content-Type": "application/json", "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        raw = r.read()
-        return json.loads(raw) if raw else {}
+    for attempt in range(6):
+        req = urllib.request.Request(API + path, method=method,
+                                     data=json.dumps(body).encode() if body is not None else None,
+                                     headers={"Authorization": "Bearer " + os.environ["TYPEFULLY_API_KEY"],
+                                              "Content-Type": "application/json", "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                raw = r.read()
+                return json.loads(raw) if raw else {}
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 5:   # threads upload many images: back off on Typefully's rate limit
+                raise
+            time.sleep(int(e.headers.get("Retry-After") or 0) or 15 * (attempt + 1))
 
 
 def upload(ss, path, alt):
@@ -45,8 +51,8 @@ def upload(ss, path, alt):
             return up["media_id"]
         if st == "failed":
             raise RuntimeError("media processing failed")
-        time.sleep(5)
-    raise RuntimeError("media not ready after 5 minutes")
+        time.sleep(8)
+    raise RuntimeError("media not ready after 8 minutes")
 
 
 def clip(t, n=270):
