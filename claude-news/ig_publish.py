@@ -113,8 +113,20 @@ def publish(ig, token, item, urls):
     return req("POST", f"{G}/{ig}/media_publish", token, {"creation_id": c}).get("id")
 
 
+def publish_now(content_dir, now):
+    """Ids Nishant asked to publish immediately (claude-news/state/ig_now.json), valid until its 'until' time."""
+    try:
+        d = json.load(open(os.path.join(os.path.dirname(os.path.abspath(content_dir)), "state", "ig_now.json")))
+        if now <= datetime.datetime.fromisoformat(d["until"]):
+            return set(d.get("ids", []))
+    except Exception:
+        pass
+    return set()
+
+
 def due_items(media_dir, content_dir, now):
     out = []
+    force = publish_now(content_dir, now)
     for man_path in sorted(glob.glob(os.path.join(media_dir, "*", "manifest.json"))):
         run = os.path.basename(os.path.dirname(man_path))
         cpath = os.path.join(content_dir, run + ".json")
@@ -126,8 +138,8 @@ def due_items(media_dir, content_dir, now):
             if not m or not it.get("ig_caption"):
                 continue
             slot = datetime.datetime.fromisoformat(it["slot"]).replace(tzinfo=KL)
-            if slot <= now <= slot + WINDOW:
-                out.append((slot, it, m["media"]))
+            if slot <= now <= slot + WINDOW or it["id"] in force:
+                out.append((slot if it["id"] not in force else now - WINDOW * 2, it, m["media"]))
     # the Cybersecurity from Zero series goes first, then oldest slot first
     return sorted(out, key=lambda x: (not x[1].get("story_key", "").startswith("basics-"), x[0]))
 
@@ -140,10 +152,13 @@ def main():
     ap.add_argument("--now", help="override current time (ISO, for tests)")
     a = ap.parse_args()
     now = datetime.datetime.fromisoformat(a.now) if a.now else datetime.datetime.now(KL)
-    if now < PAUSE_UNTIL:
+    if now < PAUSE_UNTIL and not publish_now(a.content, now):
         print(f"paused until {PAUSE_UNTIL.isoformat()} (Instagram action-block cool-down)")
         return
     due = due_items(a.media, a.content, now)
+    if now < PAUSE_UNTIL:  # during the cool-down only the explicitly requested items go out
+        force = publish_now(a.content, now)
+        due = [d for d in due if d[1]["id"] in force]
     print(f"{len(due)} item(s) due at {now.isoformat(timespec='minutes')}")
     if not due:
         return
