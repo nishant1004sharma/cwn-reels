@@ -10,7 +10,7 @@ Env: IG_ACCESS_TOKEN (Instagram User token, Instagram API with Instagram Login,
      permissions instagram_business_basic + instagram_business_content_publish).
      TOKEN_DIR (optional): where a refreshed token is kept between runs (the workflow encrypts and caches it).
 
-An item is due when its slot (Asia/Kuala_Lumpur) has passed and is less than 3 hours old. Before publishing,
+An item is due when its slot (Asia/Kuala_Lumpur) has passed and is less than 8 hours old (GitHub runs the 10-minute cron only every 3-6 hours). Before publishing,
 the account's recent posts are checked: if one already starts with the same caption line, the item is skipped,
 so re-runs and overlapping runs never double-post. At most 3 posts per run. Never fails the workflow.
 """
@@ -19,7 +19,7 @@ import argparse, datetime, glob, json, os, re, sys, time, urllib.error, urllib.p
 G = "https://graph.instagram.com/v26.0"
 KL = datetime.timezone(datetime.timedelta(hours=8))
 MAX_PER_RUN = 3
-WINDOW = datetime.timedelta(hours=3)
+WINDOW = datetime.timedelta(hours=8)   # scheduled runs arrive 3-6 h apart; a late post beats a missed one
 
 
 def req(method, url, token, params=None):
