@@ -66,7 +66,8 @@
    "question": "What's your background: student, IT, or switching careers?",
    "x_text": "Starting a free series: Cybersecurity from Zero. One basic at a time, three times a week: the CIA triad, why MFA matters (CISA: 99% less likely to be hacked), how to spot phishing. Follow along.\n\n#CyberSecurity #InfoSec",
    "ig_caption": "Want to get into cybersecurity but don't know where to start? Start here. 👇\n\nCybersecurity from Zero is a free series: one basic at a time, three times a week, no jargon.\n\n→ What it is: NIST calls it protecting information and systems from unauthorized access, use, disclosure, disruption, modification or destruction\n→ The 3 goals: confidentiality, integrity, availability\n→ The habit that matters most: CISA says MFA makes you 99% less likely to be hacked\n→ Old advice is out: CISA says bad grammar is no longer a reliable phishing sign, because AI writes clean messages\n\nComing up: Mon, the CIA triad. Wed, why your password isn't enough. Fri, spotting phishing in 10 seconds. Follow so you don't miss part 1.\n\nSend this to a friend who wants to get into cyber 👇\n\nComment BASICS and tell me your background: student, IT, or switching careers? I'll shape the series around your answers.\n\nSource: NIST glossary, CISA (Oct 2026)\n\n#CyberSecurityForBeginners #LearnCyberSecurity #CyberSecurity #InfoSec #CyberSecurityCareer #ITCareer",
-   "x": true
+   "x": true,
+   "x_reply_to": "https://x.com/CISMNishant/status/2116565364855427341"
   },
   {
    "id": "2026-10-31-basics-02",
@@ -122,7 +123,8 @@
    "question": "Ransomware that encrypts files AND leaks them: which letters does it break?",
    "x_text": "Cybersecurity from Zero, part 1: the CIA triad. Confidentiality (only the right people see it), integrity (nobody changes it without permission), availability (it works when you need it). Every attack breaks at least one.\n\n#CyberSecurity #InfoSec",
    "ig_caption": "Every cyberattack breaks at least one of these 3 things. 🔐\n\nCybersecurity from Zero · Part 1: the CIA triad (not the agency).\n\n→ Confidentiality: NIST says preserving authorized restrictions on access and disclosure. Only the right people see it\n→ Integrity: guarding against improper modification or destruction. Nobody changes it without permission\n→ Availability: timely and reliable access to and use of information. It works when you need it\n→ Read any breach headline and ask which letter broke. That's how security teams describe impact\n\nTry it: pick one cyber news story this week and name the letter(s) it broke.\n\nSend this to someone starting out in cyber 👇\n\nRansomware that encrypts files AND leaks them: which letters does it break? Answer below.\n\nSource: NIST CSRC glossary (definitions from NIST SP 800-66r2)\n\n#CIATriad #CyberSecurityForBeginners #LearnCyberSecurity #CyberSecurity #InfoSec #CISSP",
-   "x": true
+   "x": true,
+   "x_rethread": true
   },
   {
    "id": "2026-10-31-basics-03",

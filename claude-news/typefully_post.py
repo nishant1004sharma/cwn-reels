@@ -76,6 +76,9 @@ def x_carousel_thread(ss, it, m, base):
     posts = []
     for k, (t, f) in enumerate(zip(texts, files)):
         alt = it["cover"]["hook"] if k == 0 else t[:900]
+        if k == 0 and it.get("x_reply_to"):
+            posts.append({"text": t})       # dropped by the caller; the cover is already live
+            continue
         posts.append({"text": t, "media_ids": [upload(ss, os.path.join(base, it["id"], f), alt)]})
     return posts
 
@@ -109,10 +112,12 @@ def main():
         if "x" not in nets:
             result["errors"]["_"] = "X is not connected to this Typefully social set"
             return result
-        existing = set()
+        existing, upcoming = set(), {}
         for status in ("scheduled", "published", "publishing", "draft"):
             for d in call("GET", f"/social-sets/{ss}/drafts?limit=50&status={status}").get("results", []):
                 existing.add(d.get("draft_title"))
+                if status == "scheduled":
+                    upcoming[d.get("draft_title")] = d.get("id")
         remaining = quota.get("remaining")
         for n, it in enumerate(content["items"]):
             iid = it["id"]
@@ -123,10 +128,15 @@ def main():
             if it.get("x") is not True:          # Typefully free plan: ~10 posts/month, so only items marked "x": true go to X
                 result["skipped"][iid] = "not marked for X"
                 continue
-            if iid in existing:
+            # x_reply_to: the item is already live on X (e.g. a carousel cover posted alone); post its slides
+            # as a reply thread under that post instead, under its own draft title.
+            title = f"{iid}-thread" if it.get("x_reply_to") else iid
+            # x_rethread: a carousel already scheduled on X as a single SWIPE cover is rebuilt as a thread in place.
+            rethread = it.get("x_rethread") and it["kind"] == "carousel" and title in upcoming and m.get("x_files")
+            if title in existing and not rethread:
                 result["skipped"][iid] = "already scheduled"
                 continue
-            if remaining is not None and remaining <= 0:
+            if remaining is not None and remaining <= 0 and not rethread:
                 result["skipped"][iid] = "Typefully publishing quota used up"
                 continue
             try:
@@ -140,14 +150,23 @@ def main():
                 if as_thread:
                     # X has no swipeable carousel: post it as a thread, one clean slide (no counter / SWIPE) per post.
                     posts = x_carousel_thread(ss, it, m, base)
+                    if it.get("x_reply_to"):
+                        posts = posts[1:]           # the cover is already live: replies start at slide 2
                 else:
                     posts[0]["media_ids"] = [media_id]
                 platforms = {"x": {"enabled": True, "posts": [dict(q, made_with_ai=False) for q in posts]}}   # Nishant: no "Made with AI" label on X
                 for p in nets:
                     if p != "x":
                         platforms[p] = {"enabled": True, "posts": posts}
+                if it.get("x_reply_to"):
+                    platforms = {"x": dict(platforms["x"], settings={"reply_to_url": it["x_reply_to"]})}
+                if rethread:
+                    d = call("PATCH", f"/social-sets/{ss}/drafts/{upcoming[title]}", {"platforms": platforms})
+                    result["scheduled"][iid] = {"draft_id": d.get("id"), "at": d.get("scheduled_date"), "networks": nets, "rethreaded": True}
+                    print(f"rethreaded {iid} (draft {d.get('id')}) at {d.get('scheduled_date')}")
+                    continue
                 d = call("POST", f"/social-sets/{ss}/drafts",
-                         {"draft_title": iid, "platforms": platforms, "publish_at": when(it["slot"], n)})
+                         {"draft_title": title, "platforms": platforms, "publish_at": when(it["slot"], n)})
                 result["scheduled"][iid] = {"draft_id": d.get("id"), "at": d.get("scheduled_date"), "networks": nets}
                 if remaining is not None:
                     remaining -= 1
