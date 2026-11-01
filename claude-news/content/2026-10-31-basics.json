@@ -6,7 +6,7 @@
    "id": "2026-10-31-basics-01",
    "kind": "carousel",
    "category": "DEFENCE",
-   "slot": "2026-11-01T22:00:00",
+   "slot": "2026-11-02T08:45:00",
    "story_key": "basics-launch-cybersecurity-from-zero",
    "send_to": "a friend who wants to get into cyber",
    "sources": [
@@ -67,7 +67,7 @@
    "x_text": "Starting a free series: Cybersecurity from Zero. One basic at a time, three times a week: the CIA triad, why MFA matters (CISA: 99% less likely to be hacked), how to spot phishing. Follow along.\n\n#CyberSecurity #InfoSec",
    "ig_caption": "Want to get into cybersecurity but don't know where to start? Start here. 👇\n\nCybersecurity from Zero is a free series: one basic at a time, three times a week, no jargon.\n\n→ What it is: NIST calls it protecting information and systems from unauthorized access, use, disclosure, disruption, modification or destruction\n→ The 3 goals: confidentiality, integrity, availability\n→ The habit that matters most: CISA says MFA makes you 99% less likely to be hacked\n→ Old advice is out: CISA says bad grammar is no longer a reliable phishing sign, because AI writes clean messages\n\nComing up: Mon, the CIA triad. Wed, why your password isn't enough. Fri, spotting phishing in 10 seconds. Follow so you don't miss part 1.\n\nSend this to a friend who wants to get into cyber 👇\n\nComment BASICS and tell me your background: student, IT, or switching careers? I'll shape the series around your answers.\n\nSource: NIST glossary, CISA (Oct 2026)\n\n#CyberSecurityForBeginners #LearnCyberSecurity #CyberSecurity #InfoSec #CyberSecurityCareer #ITCareer",
    "x": true,
-   "x_relaunch_text": "Cybersecurity from Zero: the full intro, slide by slide 🧵\n\nA free series, one basic at a time, three times a week: what security is, the 3 goals, the habit that matters most, and the old advice that's out. Part 1, the CIA triad, lands Monday.\n\n#CyberSecurity #InfoSec"
+   "x_relaunch_text": "Cybersecurity from Zero: the full intro, slide by slide 🧵\n\nA free series, one basic at a time, three times a week: what security is, the 3 goals, the habit that matters most, and the old advice that's out. Part 1, the CIA triad, lands tonight.\n\n#CyberSecurity #InfoSec"
   },
   {
    "id": "2026-10-31-basics-02",
