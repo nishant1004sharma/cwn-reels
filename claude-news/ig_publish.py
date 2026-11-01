@@ -12,14 +12,16 @@ Env: IG_ACCESS_TOKEN (Instagram User token, Instagram API with Instagram Login,
 
 An item is due when its slot (Asia/Kuala_Lumpur) has passed and is less than 8 hours old (GitHub runs the 10-minute cron only every 3-6 hours). Before publishing,
 the account's recent posts are checked: if one already starts with the same caption line, the item is skipped,
-so re-runs and overlapping runs never double-post. At most 3 posts per run. Never fails the workflow.
+so re-runs and overlapping runs never double-post. At most 2 posts per run; Cybersecurity from Zero (basics-*) items go first. Never fails the workflow.
 """
 import argparse, datetime, glob, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 G = "https://graph.instagram.com/v26.0"
 KL = datetime.timezone(datetime.timedelta(hours=8))
-MAX_PER_RUN = 3
+MAX_PER_RUN = 2  # was 3: a 3-post burst tripped an Instagram action block on 1 Nov
 WINDOW = datetime.timedelta(hours=8)   # scheduled runs arrive 3-6 h apart; a late post beats a missed one
+# Cool-down after Instagram blocked publishing ("action is blocked", subcode 2207051) on 1 Nov 22:00 KL.
+PAUSE_UNTIL = datetime.datetime(2026, 11, 2, 7, 0, tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
 
 
 def req(method, url, token, params=None):
@@ -126,7 +128,8 @@ def due_items(media_dir, content_dir, now):
             slot = datetime.datetime.fromisoformat(it["slot"]).replace(tzinfo=KL)
             if slot <= now <= slot + WINDOW:
                 out.append((slot, it, m["media"]))
-    return sorted(out, key=lambda x: x[0])
+    # the Cybersecurity from Zero series goes first, then oldest slot first
+    return sorted(out, key=lambda x: (not x[1].get("story_key", "").startswith("basics-"), x[0]))
 
 
 def main():
@@ -137,6 +140,9 @@ def main():
     ap.add_argument("--now", help="override current time (ISO, for tests)")
     a = ap.parse_args()
     now = datetime.datetime.fromisoformat(a.now) if a.now else datetime.datetime.now(KL)
+    if now < PAUSE_UNTIL:
+        print(f"paused until {PAUSE_UNTIL.isoformat()} (Instagram action-block cool-down)")
+        return
     due = due_items(a.media, a.content, now)
     print(f"{len(due)} item(s) due at {now.isoformat(timespec='minutes')}")
     if not due:
@@ -169,6 +175,9 @@ def main():
             print(f"published {it['id']} ({it['kind']}) as {mid}")
         except Exception as e:
             print(f"FAIL {it['id']}: {e}")
+            if "2207051" in str(e) or "action is blocked" in str(e):
+                print("Instagram is blocking publishing: stopping this run")
+                break
 
 
 if __name__ == "__main__":
