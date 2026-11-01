@@ -1,0 +1,280 @@
+{
+ "date": "2026-11-01",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-01-pm-01",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-01T17:00:00",
+   "story_key": "chatgpt-shared-link-session-hijack-2026-10",
+   "send_to": "whoever pastes work into ChatGPT",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "One shared ChatGPT link. Your private chats.",
+    "segments": [
+     {
+      "say": "One shared Chat G P T link. Open it, and attacker code runs in your session.",
+      "show": "Researchers at Parameter showed a malicious shared ChatGPT link could run attacker code in a signed-in viewer's session.",
+      "card": "1 link → attacker code in your session",
+      "card_style": "alert"
+     },
+     {
+      "say": "Their proof read a private chat and sent it out.",
+      "show": "The proof listed recent conversations, opened a private chat and sent part of it to an external server. Test accounts only; no real-world exploitation reported.",
+      "card": "Private chats read · test accounts only",
+      "card_style": "fact"
+     },
+     {
+      "say": "Open A I rated it P one and fixed it in eight days. No action needed.",
+      "show": "Reported 18 Oct, fixed 26 Oct, rated P1 (OpenAI's most serious), $5,000 bounty. Fix is server-side.",
+      "card": "Fixed 26 Oct · P1 · nothing to install",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever pastes work into Chat G P T.",
+      "show": "Send this to whoever pastes work into ChatGPT.",
+      "card": "↗ Send this to whoever pastes work into ChatGPT"
+     }
+    ]
+   },
+   "x_text": "ChatGPT shared-link flaw: Parameter showed a malicious shared link could run attacker code in a viewer's signed-in session and read private chats. OpenAI rated it P1 and fixed it in 8 days. No real-world use reported.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "One shared ChatGPT link. Your private chats. 🔗\n\nWhat researchers at Parameter found (published 28 Oct):\n→ A malicious shared ChatGPT link could run attacker code in a signed-in viewer's session\n→ In one version, just opening the link was enough\n→ Their proof listed recent chats, opened a private chat never shared with them and sent part of it to an outside server\n→ They used test accounts; no real-world exploitation was reported\n→ Reported 18 Oct, fixed 26 Oct, rated P1 (OpenAI's most serious category), $5,000 bounty\n\nWhat to do: nothing to install, the fix is server-side. The lesson: an AI chat history is a data store. Treat unexpected shared links like any other link, and keep secrets out of chats.\n\nSend this to whoever pastes work into ChatGPT 👇\n\nWhat's the most sensitive thing your team has pasted into an AI chat?\n\nSource: The Hacker News (31 Oct 2026)\n\n#ChatGPT #OpenAI #AISecurity #XSS #BugBounty #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-pm-02",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-01T16:00:00",
+   "story_key": "florida-student-financial-aid-breach-2026-10",
+   "send_to": "anyone who applied for Florida aid",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "4.9 million financial aid applicants. Social Security numbers exposed.",
+    "sub": "Florida's Department of Education says an unauthorised party got into its Student Financial Aid site. The site is down."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "The Florida Department of Education says an unauthorised party gained access to a system or database behind its Student Financial Aid website. It learned of it on 19 Oct and announced it on 29 Oct. The site has been taken down."
+    },
+    {
+     "type": "stat",
+     "big": "4.9M",
+     "label": "people who applied for financial aid in Florida",
+     "note": "Per the Florida Department of Education, via The Record"
+    },
+    {
+     "type": "point",
+     "title": "What was exposed",
+     "body": "Names, addresses, phone numbers, genders, email addresses, Social Security numbers and dates of birth. The department hasn't said how the attackers got in or who they are. It says aid, tuition and loan payments won't be delayed."
+    },
+    {
+     "type": "point",
+     "title": "Why it matters",
+     "body": "SSN plus date of birth is the kit for opening credit in someone's name. Many applicants are students who have never checked a credit report. The state is urging people to watch their credit and accounts. No credit monitoring offer was mentioned."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Freeze your credit with all three US bureaus",
+      "Check your credit reports for unknown accounts",
+      "Expect phishing that mentions financial aid",
+      "Help a student in your family do the same"
+     ]
+    }
+   ],
+   "question": "Have you ever frozen your credit, or only thought about it?",
+   "x_text": "Florida Department of Education: 4.9M people who applied for state financial aid had names, SSNs and dates of birth exposed after an unauthorised party got into the Student Financial Aid site. Site is down.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "4.9 million financial aid applicants. Social Security numbers exposed. 🎓\n\nWhat Florida's Department of Education disclosed (29 Oct):\n→ An unauthorised party gained access to a system or database behind its Student Financial Aid website\n→ Exposed: names, addresses, phone numbers, genders, emails, Social Security numbers and dates of birth\n→ It learned of the breach on 19 Oct; the site has been taken down and the incident is described as contained\n→ It hasn't said how attackers got in or who they are\n→ Aid, tuition and loan payments are not affected, it says\n\nWhy it matters: SSN plus date of birth is enough to open credit in someone's name, and many of these people are students.\n\nWhat to do: freeze your credit with all three bureaus, check your reports, and expect phishing that mentions financial aid.\n\nSend this to anyone who applied for Florida aid 👇\n\nHave you ever frozen your credit, or only thought about it?\n\nSource: The Record (30 Oct 2026)\n\n#DataBreach #Florida #IdentityTheft #StudentAid #CreditFreeze #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-pm-03",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-01T20:00:00",
+   "story_key": "ivanti-connect-secure-uta0576-chain-2026-10",
+   "send_to": "the person who patches your VPN",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+     "date": "2026-10-31"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "3 Ivanti flaws. Chained to root.",
+    "segments": [
+     {
+      "say": "Three Ivanti flaws. Chained together, attackers got root. No login needed.",
+      "show": "Ivanti Connect Secure: CVE-2026-104935 (auth bypass), CVE-2026-111357, CVE-2026-118527 chained for unauthenticated root access.",
+      "card": "3 flaws → unauthenticated root",
+      "card_style": "alert"
+     },
+     {
+      "say": "No malware. They went after admin passwords and BitLocker recovery keys.",
+      "show": "Volexity attributes the activity to a previously undocumented actor it calls UTA0576: credential extraction, AD metadata, host recon, hunting admin passwords and BitLocker keys.",
+      "card": "Target: admin passwords + BitLocker keys",
+      "card_style": "fact"
+     },
+     {
+      "say": "C I S A says it's exploited. Federal deadline: November second.",
+      "show": "CISA added two of the flaws to KEV on 30 Oct. FCEB deadline for CVE-2026-111357: 2 Nov 2026.",
+      "card": "On CISA KEV · deadline 2 Nov",
+      "card_style": "stat"
+     },
+     {
+      "say": "Update now, then rotate every credential that touched it.",
+      "show": "Fixed in 25.1.1.3 and 22.8R2.6. Then rotate credentials and check for BitLocker key access.",
+      "card": "25.1.1.3 / 22.8R2.6 · rotate creds",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the person who patches your V P N.",
+      "show": "Send this to the person who patches your VPN.",
+      "card": "↗ Send this to the person who patches your VPN"
+     }
+    ]
+   },
+   "x_text": "Ivanti Connect Secure: CVE-2026-104935, CVE-2026-111357 and CVE-2026-118527 chained for unauthenticated root. Volexity attributes it to UTA0576. Two added to CISA KEV. Fixed in 25.1.1.3 / 22.8R2.6.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "3 Ivanti flaws. Chained to root. No login needed. 🚨\n\nWhat's happening with Ivanti Connect Secure:\n→ Attackers chained CVE-2026-104935 (auth bypass), CVE-2026-111357 and CVE-2026-118527 to get unauthenticated root\n→ Volexity documented the chain and attributes it to a previously undocumented actor it calls UTA0576\n→ No web shells or malware: the actor pulled credentials and Active Directory metadata, and searched for admin passwords and BitLocker recovery keys\n→ CISA added two of the flaws to its exploited list on 30 Oct; the federal deadline for CVE-2026-111357 is 2 Nov\n\nWhat to do: update to 25.1.1.3 or 22.8R2.6 (or later), rotate credentials that passed through the appliance, and check for BitLocker key access.\n\nSend this to the person who patches your VPN 👇\n\nHow fast can your team patch the VPN without a change freeze getting in the way?\n\nSource: The Hacker News (31 Oct 2026)\n\n#Ivanti #ZeroDay #VPN #CISAKEV #PatchNow #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-pm-04",
+   "kind": "carousel",
+   "category": "THREAT INTEL",
+   "slot": "2026-11-01T21:00:00",
+   "story_key": "binance-fbi-tradertraitor-attribution-2026-10",
+   "x": true,
+   "send_to": "whoever approves your hot wallet access",
+   "sources": [
+    {
+     "name": "CoinDesk",
+     "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+     "date": "2026-10-31"
+    },
+    {
+     "name": "ABC News (Australia)",
+     "url": "https://www.abc.net.au/news/2026-11-01/fbi-blames-north-korea-binance-cryptocurrency-exchange-hack/107333446",
+     "date": "2026-11-01"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "cover": {
+    "hook": "$6.3 billion. The FBI says North Korea took it.",
+    "sub": "The FBI attributes the Binance hack to TraderTraitor and asks crypto firms to block 600+ laundering addresses."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The attribution",
+     "body": "On 31 Oct the FBI, with the Secret Service and IRS-CI, said North Korea's TraderTraitor actors were behind the Binance theft. ABC News notes the same group is linked to the $1.5 billion Bybit hack in 2025."
+    },
+    {
+     "type": "stat",
+     "big": "600+",
+     "label": "Ethereum addresses the FBI asked exchanges, DeFi services and node operators to block",
+     "note": "Plus just under 20 Bitcoin and 1 Solana address, per CoinDesk"
+    },
+    {
+     "type": "point",
+     "title": "How it started",
+     "body": "Binance's early findings pointed to a compromised DevOps engineer's laptop, used to reach a service container and submit withdrawals. It later found more points of breach: \"not a single 'one-click' action\". No sign private keys leaked."
+    },
+    {
+     "type": "point",
+     "title": "Where the money is",
+     "body": "The FBI says the stolen funds are being converted mainly into ether and expects DeFi and swap services next. Stablecoin issuers froze over $2.4B, per CoinDesk. Binance says it has replaced about 90% with its own funds."
+    },
+    {
+     "type": "actions",
+     "title": "Lessons for any team",
+     "items": [
+      "Treat engineer laptops as tier-0 if they reach prod",
+      "Require a second approver for high-value moves",
+      "Block FBI-listed addresses if you run a crypto service",
+      "Rehearse a full withdrawal freeze"
+     ]
+    }
+   ],
+   "question": "If one engineer's laptop were stolen tonight, what could it reach in production?",
+   "x_text": "Binance hack: the FBI says North Korea's TraderTraitor stole about $6.3B, and asked exchanges and DeFi services to block 600+ laundering addresses. Same group linked to the $1.5B Bybit hack.\n\nThe week's lessons 🧵 #CryptoHack #CyberSecurity",
+   "x_thread": [
+    "Binance hack: the FBI says North Korea's TraderTraitor stole about $6.3B, and asked exchanges and DeFi services to block 600+ laundering addresses. Same group linked to the $1.5B Bybit hack.\n\nThe week's lessons 🧵 #CryptoHack #CyberSecurity",
+    "1/ Timeline: Binance was hit on Thursday 30 Oct. On Saturday the FBI, with the Secret Service and IRS-CI, named \"TraderTraitor actors\" and listed 600+ Ethereum, ~20 Bitcoin and 1 Solana laundering address (CoinDesk).",
+    "2/ The way in, per Binance's early findings: a compromised DevOps engineer's laptop, used to reach a service container and submit withdrawals. It later found more points of breach: \"not a single 'one-click' action\". No evidence private keys leaked.",
+    "3/ The money: converted mainly into ether, with DeFi and swap services expected next (FBI). Stablecoin issuers froze $2.4B+ (CoinDesk). Binance says it replaced ~90% with its own funds and will cover all losses.",
+    "4/ Same week, same pattern: attackers went after the people and tools with access, not the vault. A Pentagon-network AI agent allegation, a trojanized Claude Code extension, and Northflank telling customers to assume every secret was decrypted.",
+    "5/ Do this week: treat engineer laptops that reach prod as tier-0; require a second approver for high-value transfers; if you run a crypto service, block the FBI-listed addresses; rehearse a full freeze before you need one.",
+    "6/ Question: if one engineer's laptop were stolen tonight, what could it reach in production?\n\nSources: CoinDesk (31 Oct), ABC News (1 Nov), The Hacker News (30 Oct)."
+   ],
+   "ig_caption": "$6.3 billion. The FBI says North Korea took it. 💸\n\nThe Binance hack, now attributed:\n→ On 31 Oct the FBI, with the Secret Service and IRS-CI, said North Korea's TraderTraitor actors were behind the theft\n→ It asked exchanges, DeFi services and node operators to block 600+ Ethereum addresses plus Bitcoin and Solana ones\n→ Binance's early findings pointed to a compromised DevOps engineer's laptop; it later found more points of breach\n→ Stablecoin issuers froze over $2.4B; Binance says it replaced about 90% with its own funds\n→ The same group is linked to the $1.5B Bybit hack in 2025, ABC News notes\n\nThe lesson for any company: the laptop that can reach production is part of the vault. Swipe for 4 steps.\n\nSend this to whoever approves your hot wallet access 👇\n\nIf one engineer's laptop were stolen tonight, what could it reach in production?\n\nSource: CoinDesk (31 Oct 2026), ABC News (1 Nov 2026), The Hacker News (30 Oct 2026)\n\n#Binance #NorthKorea #Lazarus #CryptoHack #ThreatIntel #CyberSecurity"
+  },
+  {
+   "id": "2026-11-01-pm-05",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-01T22:30:00",
+   "story_key": "trezor-cryptobilis-hardware-implant-2026-10",
+   "send_to": "the friend who keeps crypto on a wallet",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+     "date": "2026-10-30"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "A hidden board. With its own antenna.",
+    "segments": [
+     {
+      "say": "A hidden circuit board. With its own antenna. Inside a hardware wallet.",
+      "show": "A customer reported a Trezor Safe 5 bought from reseller CryptoBilis with an extra board between the main board and the screen.",
+      "card": "Extra board + cellular module",
+      "card_style": "alert"
+     },
+     {
+      "say": "Myth: hardware wallets are safe out of the box. Reality: this one could read your recovery phrase.",
+      "show": "Per the report, the board reads the screen, including the recovery phrase, and transmits it when plugged in. Trezor hasn't examined it yet.",
+      "card": "Myth: safe out of the box",
+      "card_style": "fact"
+     },
+     {
+      "say": "Trezor's advice: new wallet, new recovery phrase.",
+      "show": "Trezor: CryptoBilis buyers since March 2026 should move funds to a new wallet with a new recovery phrase. Our advice: buy only from official stores.",
+      "card": "New wallet · new phrase · official store",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who keeps crypto on a wallet.",
+      "show": "Send this to the friend who keeps crypto on a wallet.",
+      "card": "↗ Send this to the friend who keeps crypto on a wallet"
+     }
+    ]
+   },
+   "x_text": "Trezor / CryptoBilis: a customer reported a Trezor Safe 5 from the reseller with an extra board and cellular antenna that may send the recovery phrase. Trezor tells CryptoBilis buyers to move funds to a new wallet.\n\n#SupplyChain #CyberSecurity",
+   "ig_caption": "A hidden circuit board. With its own antenna. Inside a hardware wallet. 🔍\n\nWhat Trezor warned (30 Oct):\n→ A customer reported a Trezor Safe 5, bought from reseller CryptoBilis, with an extra board between the main board and the screen\n→ Per the report it has a cellular module and antenna, reads the screen (including the recovery phrase) and transmits it when plugged in\n→ Trezor hasn't examined the device yet but warned buyers now: \"Waiting for lab confirmation would leave CryptoBilis buyers exposed\"\n→ Trezor dropped CryptoBilis as a reseller on 9 Oct; Ledger is investigating losses among its own CryptoBilis buyers\n→ No CryptoBilis buyer has reported lost funds to Trezor\n\nWhat to do: if your wallet came from CryptoBilis, move funds to a new wallet with a new recovery phrase. Don't set up an unused one. Buy hardware only from official stores.\n\nSend this to the friend who keeps crypto on a wallet 👇\n\nWhere did your hardware wallet actually come from?\n\nSource: The Hacker News (30 Oct 2026)\n\n#Trezor #HardwareWallet #SupplyChainAttack #Crypto #CyberSecurity"
+  }
+ ]
+}
