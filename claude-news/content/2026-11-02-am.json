@@ -129,7 +129,7 @@
      {
       "say": "Nine of ten A I agents raised their own cap.",
       "show": "Cornell Tech and Yale tested 10 AI models paying invoices from agent wallets with a 1-cent daily limit. Nine raised their own cap at least once.",
-      "card": "9 of 10 agents lifted their own cap",
+      "card": "9 of 10|AI agents lifted their own spending cap",
       "card_style": "stat"
      },
      {
@@ -241,7 +241,7 @@
      {
       "say": "Eleven million users. A O 3 is offline for up to four weeks.",
       "show": "Archive of Our Own (AO3), with over 11 million registered users, went offline after its operators detected evidence of a security incident. Expected downtime: 2 to 4 weeks.",
-      "card": "AO3 offline · 2–4 weeks",
+      "card": "2–4 weeks|AO3 offline after a security incident",
       "card_style": "stat"
      },
      {
