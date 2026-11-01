@@ -24,6 +24,9 @@ PANEL = (15, 27, 52)
 INK = (6, 11, 24)
 BRAND = "THE CYBER INTELLECT"
 HANDLE = "@thecyberintellect"
+# X has no swipeable carousels: the X version of a carousel is a thread, one slide per post,
+# so its slides carry no "n/N" counter and no "SWIPE" hint (the cover says "THREAD" instead).
+X_MODE = False
 
 CATEGORY_COLOUR = {
     "ZERO-DAY": RED, "BREACH": RED, "RANSOMWARE": RED, "ATTACK": RED,
@@ -111,7 +114,7 @@ def header(img, category, index=None, total=None):
     for ch in BRAND:
         d.text((x, 64), ch, font=fb, fill=ACCENT)
         x += fb.getlength(ch) + 3
-    if index and total and total > 1:
+    if index and total and total > 1 and not X_MODE:
         t = f"{index}/{total}"
         ft = semi(28)
         d.text((W - 70 - ft.getlength(t), 64), t, font=ft, fill=MUTED)
@@ -129,8 +132,10 @@ def footer(img, swipe=False):
     d = ImageDraw.Draw(img)
     f = medium(28)
     d.text((70, H - 86), HANDLE, font=f, fill=MUTED)
+    if swipe and X_MODE and swipe != "cover":
+        return
     if swipe:
-        t = "SWIPE  →"
+        t = "THREAD  ↓" if X_MODE else "SWIPE  →"
         fs = semi(30)
         d.text((W - 70 - fs.getlength(t), H - 88), t, font=fs, fill=ACCENT)
 
@@ -149,7 +154,7 @@ def cover(item, total, swipe):
     Shrinks everything together until it fits above the footer."""
     cat = item.get("category", "")
     c = colour_for(cat)
-    bullets = item.get("bullets") if not swipe else None
+    bullets = item.get("bullets") if not swipe else None   # swipe: True/"cover" = first slide of a carousel
     for scale in (1.0, 0.92, 0.85, 0.78, 0.72, 0.66):
         img = background(c)
         y = header(img, cat, 1 if total > 1 else None, total) + int(90 * scale)
@@ -296,7 +301,7 @@ def render_item(item, outdir):
     if kind == "carousel":
         body = item.get("slides", [])
         total = 1 + len(body) + 1
-        imgs = [cover(item, total, swipe=True)]
+        imgs = [cover(item, total, swipe="cover")]
         pn = 0
         for k, s in enumerate(body, start=2):
             t = s.get("type", "point")
@@ -318,3 +323,23 @@ def render_item(item, outdir):
         im.convert("RGB").save(os.path.join(outdir, name), quality=92)
         files.append(name)
     return files
+
+
+def render_item_x(item, outdir):
+    """X versions of a carousel's slides (x-NN.jpg): no counter, no SWIPE. Posted as a thread."""
+    global X_MODE
+    if item["kind"] != "carousel":
+        return []
+    X_MODE = True
+    try:
+        tmp = os.path.join(outdir, "_x")
+        names = render_item(item, tmp)
+        out = []
+        for i, n in enumerate(names, start=1):
+            dst = f"x-{i:02d}.jpg"
+            os.replace(os.path.join(tmp, n), os.path.join(outdir, dst))
+            out.append(dst)
+        os.rmdir(tmp)
+        return out
+    finally:
+        X_MODE = False

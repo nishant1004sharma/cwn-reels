@@ -49,6 +49,37 @@ def upload(ss, path, alt):
     raise RuntimeError("media not ready after 5 minutes")
 
 
+def clip(t, n=270):
+    t = "\n".join(" ".join(ln.split()) for ln in t.strip().split("\n"))
+    return t if len(t) <= n else t[: n - 1].rsplit(" ", 1)[0] + "…"
+
+
+def slide_texts(it):
+    """Short text for each slide after the cover, in slide order (matches cards.render_item)."""
+    out = []
+    for s in it.get("slides", []):
+        t = s.get("type", "point")
+        if t == "stat":
+            out.append(clip(f"{s['big']}: {s.get('label', '')}" + (f" ({s['note']})" if s.get("note") else "")))
+        elif t == "actions":
+            out.append(clip(s.get("title", "What to do now") + "\n\n" + "\n".join("• " + x for x in s["items"][:4]), 270))
+        else:
+            out.append(clip(f"{s['title']}\n\n{s.get('body', '')}"))
+    q = it.get("question")
+    out.append(clip((q + " " if q else "") + (f"Send this to {it['send_to']}." if it.get("send_to") else "")) or "Follow for more.")
+    return out
+
+
+def x_carousel_thread(ss, it, m, base):
+    files = m["x_files"]
+    texts = [it["x_text"]] + slide_texts(it)
+    posts = []
+    for k, (t, f) in enumerate(zip(texts, files)):
+        alt = it["cover"]["hook"] if k == 0 else t[:900]
+        posts.append({"text": t, "media_ids": [upload(ss, os.path.join(base, it["id"], f), alt)]})
+    return posts
+
+
 def when(slot, n):
     """The item's slot, or, if that has passed, 10 min from now plus 5 min per item so posts don't bunch up."""
     t = datetime.datetime.fromisoformat(slot).replace(tzinfo=KL)
@@ -101,11 +132,16 @@ def main():
             try:
                 f = {"reel": "reel.mp4", "diagram": "diagram.mp4"}.get(it["kind"], m["files"][0])
                 alt = (it.get("cover") or {}).get("hook") or (it.get("reel") or {}).get("hook", "") or (it.get("diagram") or {}).get("title", "")
-                media_id = upload(ss, os.path.join(base, iid, f), alt)
+                as_thread = it["kind"] == "carousel" and not it.get("x_thread") and m.get("x_files")
+                media_id = None if as_thread else upload(ss, os.path.join(base, iid, f), alt)
                 # Weekly thread: x_thread holds 5-8 posts; the first carries the media. Otherwise a single post.
                 texts = it.get("x_thread") or [it["x_text"]]
                 posts = [{"text": t} for t in texts]
-                posts[0]["media_ids"] = [media_id]
+                if as_thread:
+                    # X has no swipeable carousel: post it as a thread, one clean slide (no counter / SWIPE) per post.
+                    posts = x_carousel_thread(ss, it, m, base)
+                else:
+                    posts[0]["media_ids"] = [media_id]
                 platforms = {"x": {"enabled": True, "posts": [dict(q, made_with_ai=False) for q in posts]}}   # Nishant: no "Made with AI" label on X
                 for p in nets:
                     if p != "x":

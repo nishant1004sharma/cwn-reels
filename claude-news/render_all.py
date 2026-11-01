@@ -94,6 +94,9 @@ def main():
                 entry.update(seconds=dur)
             else:
                 files = cards.render_item(item, d)
+                xf = cards.render_item_x(item, d)   # X has no carousels: thread images, see typefully_post.py
+                if xf:
+                    entry["x_files"] = xf
             entry["files"] = files
             entry["media"] = [f"{RAW}/{run}/{iid}/{f}" for f in files]
             manifest["items"][iid] = entry
