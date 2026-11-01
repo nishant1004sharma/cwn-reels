@@ -1,0 +1,22 @@
+{
+  "editorialDate": "2026-11-02",
+  "notes": "One original bright Instagram evergreen image for manual posting only; no Metricool, no Instagram auto-publish. Docker official BuildKit secret-mount guidance. Reels empty. Distinct from Claude-owned daily news and X GraphQL practitioner post.",
+  "posts": [
+    {
+      "category": "DEVSECOPS • CONTAINER BUILD SECURITY",
+      "title": "Don't Bake Secrets Into Docker Images",
+      "bullets": [
+        "Find credentials in Dockerfile ARG, ENV and build scripts; these can persist in images or metadata.",
+        "Use Docker BuildKit --secret with RUN --mount=type=secret for temporary build-time access.",
+        "Inspect image history, layers and CI logs; rotate credentials if they leaked."
+      ],
+      "takeaway": "Secrets belong in temporary mounts, not images.",
+      "caption": "Docker build ARG and ENV are not safe places for credentials. Use BuildKit secret mounts for private tokens, inspect image history and layers, and keep secrets out of CI logs. Treat any exposed token as compromised.\n\n#DevSecOps #Docker #CloudSecurity #AppSec\n\nSave this for later.",
+      "sources": [
+        "https://docs.docker.com/build/building/secrets/",
+        "https://docs.docker.com/reference/dockerfile"
+      ]
+    }
+  ],
+  "reels": []
+}
