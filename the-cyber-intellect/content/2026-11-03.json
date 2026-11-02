@@ -1,0 +1,21 @@
+{
+  "editorialDate": "2026-11-03",
+  "notes": "One original bright Instagram evergreen image for MANUAL posting only. OWASP Session Management Cheat Sheet. No Metricool or Instagram auto-publish. Distinct from Claude news and X S3 practitioner post.",
+  "posts": [
+    {
+      "category": "APPSEC • SESSION SECURITY",
+      "title": "Logout Must Kill the Session",
+      "bullets": [
+        "Invalidate the active session server-side when users log out.",
+        "Expire the session cookie and remove the browser's session identifier.",
+        "Replay the old session after logout; authenticated access must be denied."
+      ],
+      "takeaway": "A hidden button is not a revoked session.",
+      "caption": "Logging out should end access, not just hide the session in a browser. Invalidate server-side sessions, expire cookies, and replay the old session identifier in testing. If it still works, logout is broken.\n\n#AppSec #SessionSecurity #Authentication #SecureCoding\n\nSave this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html"
+      ]
+    }
+  ],
+  "reels": []
+}
