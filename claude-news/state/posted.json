@@ -1346,11 +1346,12 @@
    "slot": "2026-11-03T12:00:00",
    "kind": "reel",
    "networks": [
-    "instagram"
+    "instagram",
+    "x"
    ],
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Supermarket freezers set to 50°C. Remotely.",
-   "typefully_draft_id": null
+   "typefully_draft_id": 11660585
   },
   {
    "story_key": "revolve-payment-card-breach-2026-10",
