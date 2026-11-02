@@ -1,0 +1,246 @@
+{
+ "date": "2026-11-02",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-02-pm-01",
+   "kind": "reel",
+   "category": "AI NEWS",
+   "slot": "2026-11-02T17:00:00",
+   "story_key": "ai-chatbots-midterm-election-errors-2026-11",
+   "send_to": "whoever asks a chatbot how to vote",
+   "sources": [
+    {
+     "name": "AFP via The Star",
+     "url": "https://www.thestar.com.my/tech/tech-news/2026/11/02/spewing-us-election-falsehoods-ai-chatbots-face-scrutiny",
+     "date": "2026-11-02"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "~40% of AI election answers had an error.",
+    "segments": [
+     {
+      "say": "Almost forty percent of A I election answers had an error.",
+      "show": "Forum AI tested 8 AI models on US election questions. Almost 40% of answers had at least one factual error (via AFP, 2 Nov).",
+      "card": "~40%|of chatbot election answers had a factual error",
+      "card_style": "stat"
+     },
+     {
+      "say": "One gave a mail ballot deadline a week too late.",
+      "show": "Gemini 3.6 Flash said 3 November was Pennsylvania's deadline to request a mail-in ballot. The real deadline was a week earlier (Forum AI study).",
+      "card": "Wrong deadline · a week too late",
+      "card_style": "alert"
+     },
+     {
+      "say": "Voting logistics went wrong more often than candidate questions. Check your official election office.",
+      "show": "Forum AI: logistics questions were answered wrongly more often than candidate questions. 2 in 5 Americans have used AI tools for election info (National Conference on Citizenship).",
+      "card": "Myth: the chatbot knows · Reality: check the official source",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever asks a chatbot how to vote.",
+      "show": "Send this to whoever asks a chatbot how to vote.",
+      "card": "↗ Send this to whoever asks a chatbot how to vote"
+     }
+    ]
+   },
+   "x_text": "AI chatbots and the US midterms: a Forum AI study of 8 models found almost 40% of election answers had at least one factual error. Gemini gave a Pennsylvania mail-ballot deadline a week too late (via AFP). Check your official election office.\n\n#AI #Misinformation",
+   "ig_caption": "~40% of AI election answers had an error. 🗳️\n\nWhat AFP reported (2 Nov), a day before the US midterms:\n→ Forum AI tested 8 AI models: almost 40% of answers to election questions had at least one factual error\n→ Voting logistics (deadlines, how to vote) went wrong more often than questions about candidates\n→ Gemini 3.6 Flash gave 3 November as Pennsylvania's deadline to request a mail-in ballot. The real deadline was a week earlier\n→ Claude credited Rep. Don Davis as a \"former school superintendent\", mixing him up with someone else\n→ 2 in 5 Americans have used AI tools for election information (National Conference on Citizenship)\n→ The upside: a Brennan Center study found leading chatbots rejected common voting-machine conspiracy theories\n\nThe takeaway: use AI to explain, not to decide where, when or how. Dates, deadlines and polling places come from your official election office.\n\nSend this to whoever asks a chatbot how to vote 👇\n\nHave you caught an AI tool confidently getting a date or deadline wrong?\n\nSource: AFP via The Star (2 Nov 2026)\n\n#AI #Midterms2026 #Misinformation #ChatGPT #Gemini #AISafety"
+  },
+  {
+   "id": "2026-11-02-pm-02",
+   "kind": "carousel",
+   "category": "ATTACK",
+   "slot": "2026-11-02T16:00:00",
+   "story_key": "frontier-airlines-phishing-campaign-2026-11",
+   "send_to": "whoever books your team's travel",
+   "sources": [
+    {
+     "name": "Frontier Airlines (Phishing Awareness)",
+     "url": "https://www.flyfrontier.com/phishing-awareness/",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "RuntimeWire",
+     "url": "https://runtimewire.com/article/frontier-airlines-phishing-real-trip-details",
+     "date": "2026-11-01"
+    }
+   ],
+   "cover": {
+    "hook": "Frontier Airlines says scammers are emailing its customers right now.",
+    "sub": "Its notice: \"We are aware of an active email phishing campaign targeting our customers.\" No breach confirmed."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What Frontier says",
+     "body": "Frontier does not email customers asking for flight, reservation, payment or contact details. Its advice: don't click the links, don't enter payment or login details, don't reply."
+    },
+    {
+     "type": "point",
+     "title": "Why people noticed",
+     "body": "Passengers posting on Reddit say the scam emails quoted real names, itineraries and confirmation numbers (per RuntimeWire, 1 Nov). The thread trended on Hacker News. Frontier has not confirmed a data breach."
+    },
+    {
+     "type": "stat",
+     "big": "0",
+     "label": "emails from Frontier asking for your flight, payment or contact details",
+     "note": "Per Frontier's phishing-awareness notice"
+    },
+    {
+     "type": "point",
+     "title": "Why it matters",
+     "body": "A real booking reference makes a fake email feel safe. Scammers who know your trip are more convincing. Treat any 'fix your reservation' email as a lure, however much it knows about you."
+    },
+    {
+     "type": "actions",
+     "title": "Do this today",
+     "items": [
+      "Open the airline app or type its URL yourself",
+      "Never pay or log in from an emailed link",
+      "Shared card details? Call your card issuer",
+      "Report suspect travel emails to your security team"
+     ]
+    }
+   ],
+   "question": "Would your team trust an email that quoted their real booking number?",
+   "x_text": "Frontier Airlines confirms an active email phishing campaign targeting its customers. Passengers say the emails quote real trip details; Frontier hasn't confirmed a breach. It never emails asking for payment or reservation details.\n\n#Phishing #CyberSecurity",
+   "ig_caption": "Frontier Airlines says scammers are emailing its customers right now. ✈️\n\nWhat we know:\n→ Frontier's notice: \"We are aware of an active email phishing campaign targeting our customers.\"\n→ Frontier says it does not email customers asking for flight, reservation, payment or contact details\n→ Passengers posting on Reddit say the scam emails quoted real names, itineraries and confirmation numbers (per RuntimeWire, 1 Nov). It trended on Hacker News\n→ Frontier has not confirmed a data breach\n\nWhat to do: open the airline's app or type its URL yourself, never pay or log in from an emailed link, and if you already shared card details, call your card issuer. Real trip details in an email prove nothing.\n\nSend this to whoever books your team's travel 👇\n\nWould your team trust an email that quoted their real booking number?\n\nSource: Frontier Airlines phishing notice, RuntimeWire (1 Nov 2026)\n\n#Phishing #FrontierAirlines #TravelScam #EmailSecurity #SecurityAwareness #CyberSecurity"
+  },
+  {
+   "id": "2026-11-02-pm-03",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-11-02T21:00:00",
+   "story_key": "android-sms-of-death-wap-push-2026-10",
+   "send_to": "whoever manages your company phones",
+   "sources": [
+    {
+     "name": "SMS of Death (researcher disclosure)",
+     "url": "https://smsofdeath.com/",
+     "date": "2026-10-29"
+    },
+    {
+     "name": "Daily CyberSecurity",
+     "url": "https://securityonline.info/android-sms-of-death-vulnerability/",
+     "date": "2026-11-01"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "One SMS. Zero clicks. Phone service down.",
+    "segments": [
+     {
+      "say": "One text message. Your Android phone drops off the network.",
+      "show": "'SMS of Death': one malformed WAP Push SMS crashes Android's telephony process (com.android.phone). No tap needed, per the researcher.",
+      "card": "1 SMS|crashes Android's phone service · zero clicks",
+      "card_style": "stat"
+     },
+     {
+      "say": "Calls drop, even emergency calls. Carrier resends can repeat it for days.",
+      "show": "The researcher says active calls drop, including emergency calls; carrier redelivery caused outages for up to a week in testing. About 20 messages can make a phone unusable. No attacks reported.",
+      "card": "Calls drop · outages up to a week (tests)",
+      "card_style": "alert"
+     },
+     {
+      "say": "Google fixed it in the October update for Android fourteen to seventeen. Check your patch level.",
+      "show": "Per the researcher: fixed in the October 2026 Android security update for Android 14–17. Android 12 and 13 get no fix. Reported to Google on 5 May 2026.",
+      "card": "Security update: October 2026 or later",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever manages your company phones.",
+      "show": "Send this to whoever manages your company phones.",
+      "card": "↗ Send this to whoever manages your company phones"
+     }
+    ]
+   },
+   "x_text": "Android \"SMS of Death\": one malformed WAP Push SMS crashes the phone service on Android 12–17, zero clicks, dropping calls (researcher disclosure). Fixed in the October 2026 update for Android 14–17; 12 and 13 get no fix.\n\n#Android #CyberSecurity",
+   "ig_caption": "One SMS. Zero clicks. Phone service down. 📵\n\nWhat the researcher disclosed (29 Oct):\n→ A malformed WAP Push SMS crashes Android's telephony process (com.android.phone). No tap needed\n→ Active calls drop, including emergency calls\n→ Carrier redelivery repeated the crash: outages for up to a week in testing; about 20 messages can make a phone unusable\n→ Listed as affecting Android 12–17, tested on a Pixel 9 and Samsung Galaxy phones\n→ Reported to Google on 5 May 2026; fixed in the October 2026 security update for Android 14–17. Android 12 and 13 get no fix\n→ No attacks in the wild reported\n\nWhat to do: check Settings → Security update and make sure company phones are on the October 2026 patch level or later. Plan to replace devices stuck on Android 12 or 13.\n\nSend this to whoever manages your company phones 👇\n\nHow many phones in your fleet are still on Android 13 or older?\n\nSource: SMS of Death researcher disclosure (29 Oct 2026), Daily CyberSecurity (1 Nov 2026)\n\n#Android #MobileSecurity #PatchNow #Vulnerability #MDM #CyberSecurity"
+  },
+  {
+   "id": "2026-11-02-pm-04",
+   "kind": "diagram",
+   "category": "DEFENCE",
+   "slot": "2026-11-02T20:00:00",
+   "story_key": "explainer-file-upload-webshell",
+   "send_to": "whoever runs your website",
+   "sources": [
+    {
+     "name": "OWASP File Upload Cheat Sheet",
+     "url": "https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/cheatsheets/File_Upload_Cheat_Sheet.md",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "db8 (YOOtheme Pro incident)",
+     "url": "https://db8.nl/en/blog/joomla-website-hacked-yootheme-pro-security-vulnerability",
+     "date": "2026-10-23"
+    }
+   ],
+   "diagram": {
+    "title": "Upload an Image. Get a Webshell.",
+    "html": "claude-news/diagrams/2026-11-02-pm-04.html",
+    "seconds": 8
+   },
+   "x_text": "How an image upload turns into a webshell: the server saves attacker content as .php in a web folder and runs it. OWASP's fix: allow-list types, rename files, store outside the webroot, re-encode images.\n\n#AppSec #CyberSecurity",
+   "ig_caption": "Upload an image. Get a webshell. 🖼️\n\nHow it works, step by step:\n→ An attacker sends a file that looks like an image but carries hidden PHP code\n→ The site trusts it and saves it as a .php file inside a public folder like /images/\n→ The web server runs it. Now the attacker has a webshell: every file, and the database via the config file\n→ This is what hit Joomla sites through YOOtheme Pro in October: db8 found at least 3 groups and ~15 webshells on one site\n→ The safe path (OWASP): allow-list extensions and check the real file type, rename files with an app-generated name, store uploads outside the webroot or block PHP there, re-encode images\n→ Already patched? Updates don't remove backdoors. Look for PHP files in upload folders\n\nSend this to whoever runs your website 👇\n\nCan your web server execute a file someone uploaded to your images folder?\n\nSource: OWASP File Upload Cheat Sheet, db8 (23 Oct 2026)\n\n#AppSec #WebSecurity #Joomla #WordPress #OWASP #CyberSecurity"
+  },
+  {
+   "id": "2026-11-02-pm-05",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-02T22:30:00",
+   "story_key": "cve-2026-102785",
+   "send_to": "whoever runs your Joomla or WordPress",
+   "sources": [
+    {
+     "name": "db8",
+     "url": "https://db8.nl/en/blog/joomla-website-hacked-yootheme-pro-security-vulnerability",
+     "date": "2026-10-23"
+    },
+    {
+     "name": "Mallory (CVE-2026-102785)",
+     "url": "https://mallory.ai/vulnerabilities/CVE-2026-102785",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "Daily CyberSecurity",
+     "url": "https://securityonline.info/weekly-cve-report-oct-26-nov-1-2026/",
+     "date": "2026-11-02"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Hacked 6 hours before the patch existed.",
+    "segments": [
+     {
+      "say": "Hacked six hours before the patch even existed.",
+      "show": "CVE-2026-102785 in YOOtheme Pro (CVSS 10). A Joomla site was hit at 08:44 on 21 Oct; the fix (5.0.53) came out around 15:00 that day, per db8.",
+      "card": "6+ hours|exploited before the fix shipped",
+      "card_style": "stat"
+     },
+     {
+      "say": "Three separate groups dropped about fifteen web shells on one site.",
+      "show": "db8 found at least 3 groups fighting over one site: ~15 webshells and backdoors, ~5,600 .htaccess files, spam pages shown only to Google and Bing.",
+      "card": "3 groups · ~15 webshells · 1 site",
+      "card_style": "alert"
+     },
+     {
+      "say": "The update doesn't remove backdoors. Update YOOtheme Pro, then hunt for P H P files in image folders.",
+      "show": "Fix: YOOtheme Pro 5.0.53 or later (Joomla and WordPress). Then check images/, media/, cache/ and tmp/ for PHP files. Public exploits exist; not in CISA KEV as of 2 Nov.",
+      "card": "Update → then hunt for PHP in /images/",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your Joomla or WordPress sites.",
+      "show": "Send this to whoever runs your Joomla or WordPress.",
+      "card": "↗ Send this to whoever runs your Joomla or WordPress"
+     }
+    ]
+   },
+   "x_text": "YOOtheme Pro CVE-2026-102785 (CVSS 10): a Joomla site was hit 6+ hours before the fix shipped; 3 groups left ~15 webshells, per db8. Update to 5.0.53+, then hunt for PHP files in upload folders. Updating doesn't remove backdoors.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "Hacked 6 hours before the patch existed. ⏱️\n\nWhat we know about CVE-2026-102785 in YOOtheme Pro (CVSS 10):\n→ Unauthenticated: attackers write a webshell through the image handler. Affects the Joomla and WordPress builder, fixed in 5.0.53\n→ db8 traced one fully updated Joomla site hit at 08:44 on 21 Oct. The fix shipped around 15:00 the same day\n→ At least 3 groups fought over that one site: ~15 webshells and backdoors, ~5,600 .htaccess files, a replaced index.php\n→ The goal was SEO spam: Google and Bing saw spam pages, visitors saw the normal site\n→ Public exploits exist, and as of 2 Nov it was not in CISA's KEV catalog\n\nWhat to do: update YOOtheme Pro to 5.0.53 or later. Then hunt, because the update doesn't remove backdoors: look for PHP files in images/, media/, cache/ and tmp/, check access logs for FROMFILE= and SAVE=, and run site:yourdomain.com to spot spam pages. Compromised? Restore a clean backup into an empty webroot and rotate passwords and secrets.\n\nSend this to whoever runs your Joomla or WordPress 👇\n\nWhen you patch a web plugin, do you also check whether you were hit before the patch?\n\nSource: db8 (23 Oct 2026), Mallory CVE record, Daily CyberSecurity (2 Nov 2026)\n\n#ZeroDay #Joomla #WordPress #YOOtheme #Webshell #CyberSecurity"
+  }
+ ]
+}
