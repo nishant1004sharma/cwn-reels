@@ -1,0 +1,264 @@
+{
+  "date": "2026-11-03",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-11-03-am-01",
+      "kind": "reel",
+      "category": "THREAT INTEL",
+      "slot": "2026-11-03T08:15:00",
+      "story_key": "xcpe-botnet-videostrong-google-ban-2026-11",
+      "send_to": "whoever buys your office TV boxes",
+      "sources": [
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+          "date": "2026-11-02"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "1.3 million TV boxes. Backdoored firmware.",
+        "segments": [
+          {
+            "say": "One point three million TV boxes. The backdoor was in the firmware.",
+            "show": "XCPE botnet: 1.3M+ Android TV set-top boxes enrolled, backdoor built into device firmware with system privileges.",
+            "card": "1.3M+ Android TV boxes · XCPE",
+            "card_style": "stat"
+          },
+          {
+            "say": "Google attributes it, with high confidence, to the maker, Videostrong. Access was sold for ad fraud and home proxies.",
+            "show": "Google Threat Intelligence attributes XCPE with \"high confidence\" to Videostrong Technology. Affiliates used it for hidden ad views, residential proxies, account theft and more malware.",
+            "card": "Google: \"high confidence\" → Videostrong",
+            "card_style": "fact"
+          },
+          {
+            "say": "Uninstalling doesn't help. It reinstalls after reboot. Buy only certified Android T V devices.",
+            "show": "The main component reinstalls itself from a protected partition after reboot. Google banned Videostrong from certified Android and took down XCPE servers.",
+            "card": "Buy certified devices only · uninstall won't fix it",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever buys your office T V boxes.",
+            "show": "Send this to whoever buys your office TV boxes.",
+            "card": "↗ Send this to whoever buys your office TV boxes"
+          }
+        ]
+      },
+      "x_text": "XCPE botnet: Google says 1.3M+ Android TV boxes shipped with a firmware backdoor and attributes it with \"high confidence\" to maker Videostrong. Access was sold for ad fraud and proxies. Videostrong is now banned from certified Android.\n\n#Botnet #CyberSecurity",
+      "ig_caption": "1.3 million TV boxes. The backdoor was in the firmware. 📺\n\nWhat Google disrupted (via Help Net Security, 2 Nov):\n→ The XCPE botnet enrolled more than 1.3 million Android TV set-top boxes\n→ Google's Threat Intelligence Group attributes it with \"high confidence\" to Videostrong Technology, which made many of the boxes\n→ Access was sold to criminal affiliates: hidden ad views, residential proxies through victims' home connections, account theft, more malware\n→ It reinstalls from a protected partition after a reboot and disables Play Protect checks\n→ Google took down the servers, banned Videostrong from certified Android, and says cutting the affiliates' domains cuts access to at least 10 million more infected devices\n\nWhat to do: buy only certified Android TV devices, keep cheap streaming boxes, signage and IoT off your main network, and replace a box you suspect rather than trying to clean it.\n\nSend this to whoever buys your office TV boxes 👇\n\nDoes anyone in your org check where the cheap TV boxes and signage players come from?\n\nSource: Help Net Security (2 Nov 2026)\n\n#Botnet #AndroidTV #IoTSecurity #ThreatIntel #Malware #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-am-02",
+      "kind": "carousel",
+      "category": "ATTACK",
+      "slot": "2026-11-03T10:00:00",
+      "story_key": "abrigo-sageworks-offline-irregular-activity-2026-10",
+      "send_to": "your bank's vendor risk manager",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+          "date": "2026-11-02"
+        }
+      ],
+      "cover": {
+        "hook": "2,400+ banks and credit unions. Their lending app went dark.",
+        "sub": "Abrigo switched off Sageworks after \"irregular activity\". Breach not confirmed."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "On Friday 30 Oct, Abrigo detected suspicious activity and disabled its Sageworks app at about 11:25 a.m. ET. The outage ran through the weekend. Its words: \"We identified irregular activity in our environment.\""
+        },
+        {
+          "type": "stat",
+          "big": "2,400+",
+          "label": "entities Abrigo says it serves",
+          "note": "Mostly US community banks and credit unions (BleepingComputer)"
+        },
+        {
+          "type": "point",
+          "title": "Where it stands",
+          "body": "By 2 Nov most of Sageworks was back. Borrower-facing features (Online Portal Now, Sageworks Analyst, Sageworks API) were still down. Abrigo hasn't said if it was a breach or a technical issue."
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "Sageworks holds loan applications and borrower financials. When a shared vendor goes dark, thousands of lenders lose a tool at once. Some researchers advise Sageworks customers to rotate their API keys."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Rotate API keys and tokens shared with the vendor",
+            "Ask the vendor for a written incident update",
+            "Check your manual fallback for loan processing",
+            "Watch logs for odd API calls from vendor IPs"
+          ]
+        }
+      ],
+      "question": "If your lending platform vanished on a Friday, how long could you keep processing loans?",
+      "x_text": "Abrigo Sageworks: the lending platform used by 2,400+ US banks and credit unions was switched off on 30 Oct after \"irregular activity\". Borrower-facing features still down. Breach not confirmed. Rotate shared API keys.\n\n#ThirdPartyRisk #CyberSecurity",
+      "ig_caption": "2,400+ banks and credit unions. Their lending app went dark. 🏦\n\nWhat we know (BleepingComputer, 2 Nov):\n→ Abrigo detected suspicious activity on Friday 30 Oct and disabled its Sageworks app at about 11:25 a.m. ET\n→ Abrigo: \"We identified irregular activity in our environment, and, out of abundance of caution, we disabled the Sageworks application.\"\n→ Sageworks handles loan applications and borrower financials for community banks and credit unions\n→ By 2 Nov most features were restored; Online Portal Now, Sageworks Analyst and Sageworks API were still down\n→ Abrigo hasn't said whether it was a breach or a technical issue\n\nWhat to do: if you use Sageworks, rotate API keys, ask Abrigo for a written incident update, and test your manual fallback for loan processing.\n\nSend this to your bank's vendor risk manager 👇\n\nIf your lending platform vanished on a Friday, how long could you keep processing loans?\n\nSource: BleepingComputer (2 Nov 2026)\n\n#ThirdPartyRisk #Fintech #BankSecurity #VendorRisk #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-am-03",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-11-03T12:00:00",
+      "story_key": "europe-supermarket-freezer-attacks-2026-11",
+      "send_to": "whoever manages your building systems",
+      "sources": [
+        {
+          "name": "AP via ABC News",
+          "url": "https://abcnews.com/International/wireStory/freezers-supermarkets-european-countries-hit-apparent-cyberattacks-137765494",
+          "date": "2026-11-02"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/2/freezers-in-sweden-belgium-overheat-following-possible-cyberattacks",
+          "date": "2026-11-02"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Supermarket freezers set to 50°C. Remotely.",
+        "segments": [
+          {
+            "say": "Supermarket freezers. Set to fifty degrees Celsius. Remotely.",
+            "show": "Overnight, fridges and freezers in European supermarkets were changed to 50°C (122°F) in apparent cyberattacks.",
+            "card": "Freezers → 50°C · overnight",
+            "card_style": "alert"
+          },
+          {
+            "say": "Sweden, Belgium, Luxembourg, Estonia, Ireland. Stores threw out spoiled food. Nobody has claimed it.",
+            "show": "Reported in Belgium, Estonia, Ireland, Luxembourg and Sweden: ICA, Coop, Delhaize, Carrefour, SuperValu (13 of 223 stores). France was hit last month. No claim of responsibility.",
+            "card": "5 countries · no claim yet",
+            "card_style": "fact"
+          },
+          {
+            "say": "Take cooling and building controllers off the internet. Alert on any setpoint change.",
+            "show": "Sweden's cyber centre says many exposed operational technology devices need updates or patches.",
+            "card": "OT controllers off the internet · alert on changes",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever manages your building systems.",
+            "show": "Send this to whoever manages your building systems.",
+            "card": "↗ Send this to whoever manages your building systems"
+          }
+        ]
+      },
+      "x_text": "Supermarket fridges and freezers in Sweden, Belgium, Luxembourg, Estonia and Ireland were set to 50°C overnight in apparent cyberattacks. ICA, Coop, Delhaize, Carrefour and SuperValu stores hit. France was hit last month. No claim yet.\n\n#OTSecurity #CyberSecurity",
+      "ig_caption": "Supermarket freezers. Set to 50°C. Remotely. 🧊🔥\n\nWhat happened (AP and Al Jazeera, 2 Nov):\n→ Overnight, fridges and freezers in supermarkets were changed to 50°C (122°F) in apparent cyberattacks\n→ Reported in Belgium, Estonia, Ireland, Luxembourg and Sweden: ICA, Coop, Delhaize, Carrefour, Spar and SuperValu stores among them\n→ Carrefour Belgium: 15 of 700+ stores. SuperValu: a \"cyber incident\" at 13 of 223 stores\n→ Estonian supplier Kitman Coldtech says attackers reached a computer controlling refrigeration at one client\n→ Last month hundreds of French supermarkets were hit the same way. No group has claimed either wave\n\nWhat to do this week: find every refrigeration, HVAC and building controller reachable from the internet, put remote access behind a VPN with MFA, change default passwords, and alert on any setpoint change. Sweden's cyber centre says many exposed OT devices need updates or patches.\n\nSend this to whoever manages your building systems 👇\n\nDo you know who can change the temperature settings in your buildings remotely?\n\nSource: AP via ABC News, Al Jazeera (2 Nov 2026)\n\n#OTSecurity #ICS #CriticalInfrastructure #Cyberattack #IoTSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-am-04",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-03T13:30:00",
+      "story_key": "revolve-payment-card-breach-2026-10",
+      "send_to": "whoever owns your saved-card checkout",
+      "sources": [
+        {
+          "name": "The Record",
+          "url": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+          "date": "2026-10-30"
+        },
+        {
+          "name": "Revolve Group 8-K (via StockTitan)",
+          "url": "https://www.stocktitan.net/sec-filings/RVLV/8-k-revolve-group-inc-reports-material-event-885f28699ae4.html",
+          "date": "2026-10-29"
+        }
+      ],
+      "cover": {
+        "hook": "Saved your card at checkout? At Revolve, that's what was taken.",
+        "sub": "Names, contact details, card numbers and expiry dates, per the retailer's SEC filing."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What Revolve disclosed",
+          "body": "In an 8-K filed 29 Oct, the online fashion retailer said an unauthorized actor may have obtained the name, contact information, card number and expiry date of customers who saved payment info in their accounts."
+        },
+        {
+          "type": "stat",
+          "big": "127,200",
+          "label": "Texas residents affected",
+          "note": "Per Texas regulators (The Record). Vermont: 1,328. Revolve hasn't given a total."
+        },
+        {
+          "type": "point",
+          "title": "How",
+          "body": "Revolve says the data may have been obtained \"through automated means\". It hasn't said when the attack happened or how attackers got in. It notified federal law enforcement and hired outside experts."
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "Saved cards are convenience for customers and a target for attackers. Revolve says there was no operational disruption, so the first sign for customers may be fraud on their statements."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Revolve customer? Watch card statements, ask for a new card",
+            "Tokenise saved cards; never store raw PANs",
+            "Rate-limit and alert on bulk account data reads",
+            "Re-check bot defences on account pages"
+          ]
+        }
+      ],
+      "question": "Do you save your card on shopping sites, or type it in every time?",
+      "x_text": "Revolve payment card breach: the fashion retailer's 8-K says names, contact details, card numbers and expiry dates of customers with saved cards may have been taken \"through automated means\". Texas alone: 127,200 residents.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "Saved your card at checkout? At Revolve, that's what was taken. 💳\n\nWhat we know:\n→ Online fashion retailer Revolve told the SEC (8-K, 29 Oct) that an unauthorized actor accessed some of its systems\n→ Data at risk: name, contact information, payment card number and expiry date of customers who saved cards in their accounts\n→ Revolve says the data may have been obtained \"through automated means\"\n→ Texas regulators were told 127,200 residents are affected; Vermont 1,328. No total yet\n→ Revolve notified federal law enforcement and says it expects no material impact\n\nWhat to do: if you shop at Revolve, watch your card statements and ask your bank for a new card. If you run a store: tokenise saved cards, rate-limit bulk reads of account data, and alert on them.\n\nSend this to whoever owns your saved-card checkout 👇\n\nDo you save your card on shopping sites, or type it in every time?\n\nSource: The Record (30 Oct 2026), Revolve 8-K (29 Oct 2026)\n\n#DataBreach #PaymentCard #Ecommerce #Retail #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-am-05",
+      "kind": "reel",
+      "category": "AI SECURITY",
+      "slot": "2026-11-03T14:30:00",
+      "story_key": "langflow-critical-flaws-1-13-0-2026-11",
+      "send_to": "whoever runs your Langflow server",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+          "date": "2026-11-02"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "CVSS 9.8. No account. Your AI agent builder.",
+        "segments": [
+          {
+            "say": "Nine point eight. No account needed. In your A I agent builder.",
+            "show": "Langflow: CVE-2026-93680 (auth bypass) and CVE-2026-110186 (code execution), both CVSS 9.8 per IBM, no account needed.",
+            "card": "Langflow · 2× CVSS 9.8 · no login",
+            "card_style": "alert"
+          },
+          {
+            "say": "Every release before one point thirteen is affected. A public Metasploit module exists. No attacks reported yet.",
+            "show": "Affected: 1.0.0 through 1.12.8 (IBM). Public Metasploit module for CVE-2026-93680. Not in CISA KEV as of 30 Oct.",
+            "card": "1.0.0–1.12.8 affected · no attacks reported",
+            "card_style": "fact"
+          },
+          {
+            "say": "Back up, then upgrade to one point thirteen. Turn off auto login.",
+            "show": "1.13.0 is the only fix. Back up the database, secret key and uploads first. 1.13 turns auto-login off by default.",
+            "card": "Upgrade to 1.13.0 · back up first",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Langflow server.",
+            "show": "Send this to whoever runs your Langflow server.",
+            "card": "↗ Send this to whoever runs your Langflow server"
+          }
+        ]
+      },
+      "x_text": "Langflow CVE-2026-93680 and CVE-2026-110186: CVSS 9.8, no account needed, per IBM. Every release up to 1.12.8 affected; 1.13.0 is the only fix. A public Metasploit module exists; no attacks reported yet. Back up, then upgrade.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "CVSS 9.8. No account. Your AI agent builder. 🤖\n\nWhat IBM's Langflow bulletin says (via The Hacker News, 2 Nov):\n→ CVE-2026-93680: authentication bypass, CVSS 9.8, no account needed\n→ CVE-2026-110186: arbitrary code execution via the MCP tool path, CVSS 9.8, no account needed\n→ CVE-2026-110193 (8.8): a low-privileged user can get the Agentic Assistant to produce code that runs OS commands\n→ Every release from 1.0.0 through 1.12.8 is affected; 1.13.0 is the only fix, with no workaround\n→ A public Metasploit module exists for CVE-2026-93680. No in-the-wild attacks reported so far\n\nWhat to do this week: back up the database, secret key and uploaded files, then upgrade to Langflow 1.13.0. If you rely on auto-login, set up password sign-in first (1.13 turns it off by default). Keep Langflow off the public internet.\n\nSend this to whoever runs your Langflow server 👇\n\nWho in your org can spin up an AI agent builder without security knowing?\n\nSource: The Hacker News (2 Nov 2026)\n\n#Langflow #AISecurity #AgenticAI #MCP #PatchNow #CyberSecurity"
+    }
+  ]
+}
