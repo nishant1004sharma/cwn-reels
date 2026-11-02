@@ -1,0 +1,129 @@
+{
+ "date": "2026-11-02",
+ "run": "promo",
+ "items": [
+  {
+   "id": "2026-11-02-promo-01",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-02T19:30:00",
+   "story_key": "promo-agentic-ai-security-course-carousel-2026-11",
+   "send_to": "whoever is shipping your first agent",
+   "sources": [
+    {
+     "name": "OWASP GenAI Security Project",
+     "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+     "date": "2025-12-09"
+    },
+    {
+     "name": "Speakeasy (OWASP Agentic Top 10 explained)",
+     "url": "https://www.speakeasy.com/blog/owasp-agentic-top-10-explained",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/agentic-ai-security"
+    }
+   ],
+   "cover": {
+    "hook": "3 ways your AI agent gets turned against you.",
+    "sub": "From the OWASP Top 10 for Agentic Applications, with the fix for each."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "1. Goal hijack (ASI01)",
+     "body": "Instructions hidden in a web page, email or file the agent reads redirect what it's trying to do. Fix: keep instructions separate from content, scan inputs, and check the goal before the agent acts."
+    },
+    {
+     "type": "point",
+     "title": "2. Tool misuse (ASI02)",
+     "body": "The agent calls a connected tool in a way nobody intended, by mistake or because an attacker steered it. Fix: authorise every tool call, validate parameters against a schema, scope each tool."
+    },
+    {
+     "type": "point",
+     "title": "3. Privilege abuse (ASI03)",
+     "body": "Overbroad tokens, or sub-agents that inherit all of the parent's permissions. Fix: scoped tokens, on-behalf-of flows, and just-in-time credentials you can revoke."
+    },
+    {
+     "type": "stat",
+     "big": "10",
+     "label": "risks in the OWASP Top 10 for Agentic Applications",
+     "note": "Published Dec 2025 by OWASP's Agentic Security Initiative"
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "List every tool each agent can call",
+      "Swap shared tokens for scoped ones",
+      "Treat pages, emails and files as untrusted input"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "Learn all 10, plus MCP",
+     "body": "My Udemy course, Agentic AI Security: OWASP Top 10 for AI Agents & MCP, walks through each risk with diagrams and the controls to ask for before an agent goes live. Link in bio."
+    }
+   ],
+   "question": "Which of these would your current agent setup fail first?",
+   "x_text": "3 OWASP agentic risks: goal hijack (ASI01), tool misuse (ASI02), privilege abuse (ASI03). My Udemy course covers all 10, plus MCP.\n\n#AgenticAI #AISecurity",
+   "ig_caption": "3 ways your AI agent gets turned against you. 🤖\n\nFrom the OWASP Top 10 for Agentic Applications (Dec 2025):\n→ Goal hijack (ASI01): instructions hidden in content the agent reads redirect its goals. Fix: separate instructions from content and check the goal before acting\n→ Tool misuse (ASI02): the agent uses a connected tool in a way nobody intended. Fix: authorise each tool call and validate its parameters\n→ Privilege abuse (ASI03): overbroad tokens, sub-agents inheriting full permissions. Fix: scoped, just-in-time credentials you can revoke\n\nDo this week: list every tool each agent can call, swap shared tokens for scoped ones, and treat web pages, emails and files as untrusted input.\n\n🎓 I built a course on all 10 risks, plus MCP: \"Agentic AI Security: OWASP Top 10 for AI Agents & MCP\" on Udemy. Link in bio, or udemy.com/course/agentic-ai-security\n\nSend this to whoever is shipping your first agent 👇\n\nWhich of these would your current agent setup fail first?\n\nSource: OWASP GenAI Security Project\n\n#AgenticAI #AISecurity #OWASP #MCP #AIAgents #CyberSecurity"
+  },
+  {
+   "id": "2026-11-02-promo-02",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-02T23:30:00",
+   "story_key": "promo-agentic-ai-security-course-reel-2026-11",
+   "send_to": "whoever is shipping your first agent",
+   "sources": [
+    {
+     "name": "OWASP GenAI Security Project",
+     "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+     "date": "2025-12-09"
+    },
+    {
+     "name": "Speakeasy (OWASP Agentic Top 10 explained)",
+     "url": "https://www.speakeasy.com/blog/owasp-agentic-top-10-explained",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/agentic-ai-security"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Your AI agent read one page. Now it's theirs.",
+    "segments": [
+     {
+      "say": "Your A I agent read one web page. Now it works for someone else.",
+      "show": "OWASP's Top 10 for Agentic Applications puts agent goal hijack first: instructions hidden in content the agent reads redirect its goals.",
+      "card": "ASI01|Agent goal hijack · #1 OWASP agentic risk",
+      "card_style": "stat"
+     },
+     {
+      "say": "Then it uses your tools and your credentials, with more access than the task needs.",
+      "show": "ASI02 tool misuse and ASI03 identity and privilege abuse: overbroad tokens, sub-agents inheriting the parent's full permissions.",
+      "card": "ASI02 tool misuse · ASI03 privilege abuse",
+      "card_style": "alert"
+     },
+     {
+      "say": "I made a course on all ten, plus M C P. Link in bio.",
+      "show": "My Udemy course: Agentic AI Security: OWASP Top 10 for AI Agents & MCP. udemy.com/course/agentic-ai-security",
+      "card": "Agentic AI Security · on Udemy · link in bio",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever is shipping your first agent.",
+      "show": "Send this to whoever is shipping your first agent.",
+      "card": "↗ Send this to whoever is shipping your first agent"
+     }
+    ]
+   },
+   "x_text": "Your AI agent reads one poisoned page and starts working for someone else: OWASP's top agentic risk, goal hijack (ASI01). My Udemy course covers all 10, plus MCP.\n\n#AgenticAI #AISecurity",
+   "ig_caption": "Your AI agent read one page. Now it's theirs. 🎯\n\nThe OWASP Top 10 for Agentic Applications, in three lines:\n→ ASI01 goal hijack: hidden instructions in content the agent reads change what it's trying to do\n→ ASI02 tool misuse: it then calls your connected tools in ways nobody intended\n→ ASI03 privilege abuse: with tokens and permissions far wider than the task needs\n\nThe controls: separate instructions from content, authorise every tool call, use scoped credentials you can revoke.\n\n🎓 My course covers all 10 risks, plus MCP: \"Agentic AI Security: OWASP Top 10 for AI Agents & MCP\" on Udemy. Link in bio, or udemy.com/course/agentic-ai-security\n\nSend this to whoever is shipping your first agent 👇\n\nIs anyone reviewing what your agents are allowed to touch?\n\nSource: OWASP GenAI Security Project\n\n#AgenticAI #AISecurity #OWASP #MCP #AIAgents #CyberSecurity"
+  }
+ ]
+}
