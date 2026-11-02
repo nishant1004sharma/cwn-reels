@@ -227,7 +227,7 @@
       "card_style": "alert"
      },
      {
-      "say": "The update doesn't remove backdoors. Update YOOtheme Pro, then hunt for P H P files in image folders.",
+      "say": "The update doesn't remove backdoors. Update the YOOtheme Pro plugin, then hunt for P H P files in image folders.",
       "show": "Fix: YOOtheme Pro 5.0.53 or later (Joomla and WordPress). Then check images/, media/, cache/ and tmp/ for PHP files. Public exploits exist; not in CISA KEV as of 2 Nov.",
       "card": "Update → then hunt for PHP in /images/",
       "card_style": "answer"
