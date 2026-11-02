@@ -32,17 +32,17 @@
    "slides": [
     {
      "type": "point",
-     "title": "1. Goal hijack (ASI01)",
+     "title": "Goal hijack (ASI01)",
      "body": "Instructions hidden in a web page, email or file the agent reads redirect what it's trying to do. Fix: keep instructions separate from content, scan inputs, and check the goal before the agent acts."
     },
     {
      "type": "point",
-     "title": "2. Tool misuse (ASI02)",
+     "title": "Tool misuse (ASI02)",
      "body": "The agent calls a connected tool in a way nobody intended, by mistake or because an attacker steered it. Fix: authorise every tool call, validate parameters against a schema, scope each tool."
     },
     {
      "type": "point",
-     "title": "3. Privilege abuse (ASI03)",
+     "title": "Privilege abuse (ASI03)",
      "body": "Overbroad tokens, or sub-agents that inherit all of the parent's permissions. Fix: scoped tokens, on-behalf-of flows, and just-in-time credentials you can revoke."
     },
     {
