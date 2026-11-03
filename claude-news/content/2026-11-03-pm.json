@@ -1,0 +1,259 @@
+{
+  "date": "2026-11-03",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-11-03-pm-01",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-11-03T17:00:00",
+      "story_key": "ukraine-air-alert-russia-emercom-fake-alerts-2026-11",
+      "send_to": "whoever runs your emergency alerts",
+      "sources": [
+        {
+          "name": "The Record",
+          "url": "https://therecord.media/ukraine-hackers-russia-alert-system",
+          "date": "2026-11-02"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/202248/security/hackers-send-fake-nuclear-threat-alerts-to-ukrainian-and-russian-citizens.html",
+          "date": "2026-11-02"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Fake radiation alert. 6.6 million app users.",
+        "segments": [
+          {
+            "say": "A radiation alert for Kyiv. It was fake. The app was real.",
+            "show": "Late Sunday, Ukraine's Air Alert app pushed fake radiation, chemical and street-fighting warnings. It had 6.6 million active users as of January.",
+            "card": "Fake radiation alert · 6.6M app users",
+            "card_style": "alert"
+          },
+          {
+            "say": "Ukraine's Air Force said the app was likely compromised by the enemy. Hours later, Russia's emergency app sent fake nuclear launch warnings.",
+            "show": "Ukraine's Air Force: the app had \"likely been compromised by the enemy\". Russia's emergency ministry then confirmed its own app was hacked and used for fake nuclear warnings.",
+            "card": "Both sides' alert apps hijacked",
+            "card_style": "fact"
+          },
+          {
+            "say": "Sirens and official channels kept working. Lock down who can push alerts.",
+            "show": "Both governments said the core warning systems (sirens, loudspeakers, texts, TV, radio) were not affected. The apps were supplementary.",
+            "card": "Lock down who can push alerts",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your emergency alerts.",
+            "show": "Send this to whoever runs your emergency alerts.",
+            "card": "↗ Send this to whoever runs your emergency alerts"
+          }
+        ]
+      },
+      "x_text": "Air Alert app hijacked: fake radiation and chemical warnings hit Kyiv residents late Sunday. Ukraine's Air Force says the app was \"likely compromised by the enemy\". Hours later Russia's EMERCOM app pushed fake nuclear warnings.\n\n#CyberAttack #CyberSecurity",
+      "ig_caption": "A radiation alert for Kyiv. It was fake. The app was real. ☢️\n\nWhat happened (The Record and Security Affairs, 2 Nov):\n→ Late Sunday, Ukraine's government-backed Air Alert app sent fake radiation, chemical and street-fighting warnings, including in Kyiv\n→ The app had 6.6 million active users as of January 2026\n→ Ukraine's Air Force said it had \"likely been compromised by the enemy\" and told people to ignore the messages; a previously unknown group claimed it\n→ Hours later, Russia's Ministry of Emergency Situations confirmed its own app was hacked and used to send fake nuclear launch warnings\n→ Both sides said sirens, loudspeakers, texts, TV and radio kept working; the apps are supplementary\n\nWhat to do: if you run any mass-notification system, limit who and what can push alerts, require two-person approval for high-severity messages, and keep an all-clear process ready.\n\nSend this to whoever runs your emergency alerts 👇\n\nCould your organisation send a fake alert by accident, or by attacker, today?\n\nSource: The Record (2 Nov 2026), Security Affairs (2 Nov 2026)\n\n#CyberAttack #Ukraine #EmergencyAlerts #Hacktivism #InfoSec #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-pm-02",
+      "kind": "carousel",
+      "category": "IDENTITY",
+      "slot": "2026-11-03T16:00:00",
+      "story_key": "microsoft-teams-helpdesk-adcs-esc1-esc8-2026-10",
+      "send_to": "whoever owns your AD certificates",
+      "sources": [
+        {
+          "name": "The Hacker News (on Microsoft research, 30 Oct)",
+          "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+          "date": "2026-11-02"
+        }
+      ],
+      "cover": {
+        "hook": "No Teams bug. Just \"IT support\" and a certificate template.",
+        "sub": "Microsoft traced two intrusions from a fake help desk chat to domain controller access."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "The way in",
+          "body": "Attackers messaged staff on Microsoft Teams from outside tenants with support-themed names. They got users to open Quick Assist and read back the code. No Teams flaw was used."
+        },
+        {
+          "type": "stat",
+          "big": "11",
+          "label": "privileged accounts got certificates",
+          "note": "Case 1: two waves using an ESC1 template weakness in AD CS (Microsoft)"
+        },
+        {
+          "type": "point",
+          "title": "One gap was enough",
+          "body": "Defender's automatic disruption cut off most identities. One privileged account was excluded from automatic response. It reached a file server and data was copied out to an external SFTP server."
+        },
+        {
+          "type": "point",
+          "title": "Case 2: ESC8",
+          "body": "A coerced domain controller login was relayed to the AD CS web enrollment page. The attacker got a certificate for the domain controller. Alerts fired and the workstation was isolated."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Restrict which outside Teams tenants can message staff",
+            "Audit templates where the requester picks the account",
+            "Turn on EPA and HTTPS for AD CS web enrollment",
+            "Give every containment exclusion a manual owner"
+          ]
+        }
+      ],
+      "question": "Would your users read a Quick Assist code to \"IT\" on Teams?",
+      "x_text": "Microsoft Teams help desk scam + AD CS: Microsoft traced two intrusions where fake \"IT support\" got Quick Assist access, then abused ESC1 and ESC8 certificate weaknesses. One account excluded from auto-containment was enough to copy data out.\n\n#ActiveDirectory #InfoSec",
+      "ig_caption": "No Teams bug. Just \"IT support\" and a certificate template. 🎫\n\nWhat Microsoft found (via The Hacker News, 2 Nov):\n→ Attackers messaged staff on Teams from outside tenants with support-themed names and got them to open Quick Assist\n→ Case 1: an ESC1 weakness in an Active Directory Certificate Services template let low-privileged users get certificates for 11 privileged accounts across two waves\n→ Defender's automatic disruption cut most of them off, but one privileged account was excluded from automatic response and was used to copy data to an external SFTP server\n→ Case 2: a coerced domain controller login was relayed to AD CS web enrollment (ESC8) to get a domain controller certificate\n→ Microsoft didn't tie it to any known group. The techniques date back to 2021\n\nWhat to do: restrict which outside Teams tenants can contact staff, verify support requests on a known channel, audit certificate templates, enable EPA and HTTPS on AD CS web enrollment, and assign a manual action to every account excluded from auto-containment.\n\nSend this to whoever owns your AD certificates 👇\n\nWould your users read a Quick Assist code to \"IT\" on Teams?\n\nSource: The Hacker News (2 Nov 2026), on Microsoft research (30 Oct 2026)\n\n#ActiveDirectory #MicrosoftTeams #SocialEngineering #ADCS #IdentitySecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-pm-03",
+      "kind": "reel",
+      "category": "AGENTIC AI",
+      "slot": "2026-11-03T21:00:00",
+      "story_key": "mcphantom-deprecated-mcp-servers-2026-11",
+      "send_to": "whoever approves your AI coding tools",
+      "sources": [
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/",
+          "date": "2026-11-03"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "17.3M downloads. No more security fixes.",
+        "segments": [
+          {
+            "say": "Seventeen million downloads. These servers will never get a security fix.",
+            "show": "Deprecated MCP reference servers: downloaded from npm 17.3 million+ times since July 2025. Archived, so no patches are coming.",
+            "card": "17.3M+ downloads · no patches coming",
+            "card_style": "stat"
+          },
+          {
+            "say": "Myth: your A I agent picks the official tool. Reality: researchers say it often picks an old, archived one from memory.",
+            "show": "Glow Labs (\"MCPhantom\"): in 98% of sessions where a deprecated server was installed or suggested, the agent supplied the name from training data. Seen across Claude Code, Cursor and Codex CLI.",
+            "card": "98% came from the model's memory",
+            "card_style": "fact"
+          },
+          {
+            "say": "Audit your M C P configs. Approve one official server per service.",
+            "show": "Glow found four high-severity flaws in these servers; no exploitation seen yet. Check configs for deprecated @modelcontextprotocol servers.",
+            "card": "Audit MCP configs · one approved server per service",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever approves your A I coding tools.",
+            "show": "Send this to whoever approves your AI coding tools.",
+            "card": "↗ Send this to whoever approves your AI coding tools"
+          }
+        ]
+      },
+      "x_text": "MCPhantom: AI coding agents (Claude Code, Cursor, Codex CLI) keep installing deprecated MCP servers that will never be patched, says Glow Labs. 98% of the time the name came from the model's memory. 17.3M+ npm downloads since July 2025.\n\n#AgenticAI #AISecurity",
+      "ig_caption": "17 million downloads. These servers will never get a security fix. 🤖\n\nWhat researchers found (Help Net Security, 3 Nov):\n→ Glow Labs reviewed real AI coding sessions and named the pattern \"MCPhantom\"\n→ In 98% of sessions where a deprecated MCP server was installed or suggested, the agent supplied the package name from its training data\n→ Seen across Claude Code, Cursor, Codex CLI and others, with models from Anthropic, OpenAI and xAI\n→ The deprecated packages have 17.3 million+ npm downloads since July 2025; they're archived, so no patches are coming\n→ Glow found four high-severity flaws in them, the worst a remote code execution in the Puppeteer server. No exploitation seen yet\n→ They don't show up in dependency files, so SCA tools miss them\n\nWhat to do: search MCP configs for deprecated @modelcontextprotocol servers, switch to the service owner's official server, approve one server per service, and treat the agent's package choices as untrusted.\n\nSend this to whoever approves your AI coding tools 👇\n\nDo you know which MCP servers your developers' agents installed this month?\n\nSource: Help Net Security (3 Nov 2026)\n\n#AgenticAI #MCP #AISecurity #SupplyChainSecurity #AICoding #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-pm-04",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-03T20:00:00",
+      "story_key": "mercado-bitcoin-46m-outflow-2026-11",
+      "send_to": "your friend with crypto on an exchange",
+      "sources": [
+        {
+          "name": "The Record",
+          "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+          "date": "2026-11-02"
+        }
+      ],
+      "cover": {
+        "hook": "$46M+ left Latin America's biggest crypto platform overnight.",
+        "sub": "Mercado Bitcoin froze deposits and withdrawals. Experts dispute its \"no customer harm\" line."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "Brazil's Mercado Bitcoin suspended all deposits and withdrawals after a cybersecurity incident on Monday morning. Blockchain security firms say the money started moving late Sunday night."
+        },
+        {
+          "type": "stat",
+          "big": "$46M+",
+          "label": "left the platform, per blockchain security firms",
+          "note": "Mercado Bitcoin has not confirmed the figure (The Record)"
+        },
+        {
+          "type": "point",
+          "title": "The dispute",
+          "body": "Mercado says customers weren't harmed and there was no data breach. Several blockchain security experts disagree, pointing to on-chain evidence that funds were taken from some customer wallets."
+        },
+        {
+          "type": "point",
+          "title": "Clawing it back",
+          "body": "Tether's CEO says about $4.5M was frozen; other platforms froze about $2M more. Mercado shared the destination addresses and says it will restore service \"in the coming days\". It has about 4.5 million customers."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Exchange user? Don't send funds until it's officially back",
+            "Ignore \"refund\" DMs: scammers follow every heist",
+            "Keep long-term holdings in a wallet you control",
+            "Exchanges: alert on hot-wallet outflow spikes"
+          ]
+        }
+      ],
+      "question": "Do you keep crypto on an exchange, or in your own wallet?",
+      "x_text": "Mercado Bitcoin hack: Brazil's largest crypto platform froze deposits and withdrawals after blockchain firms saw $46M+ flow out late Sunday. Mercado says no customer harm; experts dispute it. About $6.5M frozen so far.\n\n#CryptoHack #CyberSecurity",
+      "ig_caption": "$46M+ left Latin America's biggest crypto platform overnight. 🪙\n\nWhat we know (The Record, 2 Nov):\n→ Brazil's Mercado Bitcoin suspended all deposits and withdrawals after a cybersecurity incident on Monday morning\n→ Blockchain security firms say more than $46 million left the platform late Sunday night; Mercado hasn't confirmed the figure\n→ Mercado says customers weren't harmed and there was no data breach. Several blockchain experts dispute that, citing on-chain evidence from customer wallets\n→ Tether's CEO says about $4.5M was frozen; other platforms froze about $2M more\n→ Mercado says it has about 4.5 million customers and will restore service \"in the coming days\"\n→ It comes days after the $6.3B Binance theft\n\nWhat to do: if you use Mercado Bitcoin, wait for official word before moving funds and ignore \"refund\" messages. Keep long-term holdings in a wallet you control.\n\nSend this to your friend with crypto on an exchange 👇\n\nDo you keep crypto on an exchange, or in your own wallet?\n\nSource: The Record (2 Nov 2026)\n\n#CryptoHack #MercadoBitcoin #Crypto #DataBreach #Brazil #CyberSecurity"
+    },
+    {
+      "id": "2026-11-03-pm-05",
+      "kind": "reel",
+      "category": "VULNERABILITY",
+      "slot": "2026-11-03T22:30:00",
+      "story_key": "cve-2026-58115",
+      "send_to": "whoever runs your Node-RED boxes",
+      "sources": [
+        {
+          "name": "VulnCheck",
+          "url": "https://www.vulncheck.com/blog/exploitation-targeting-node-red",
+          "date": "2026-11-02"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "One request. A new flow. A bot installed.",
+        "segments": [
+          {
+            "say": "One web request. No login. A bot downloaded and running.",
+            "show": "30 Oct: a VulnCheck canary saw one POST /flows request deploy a Node-RED flow that downloaded and ran a Linux binary.",
+            "card": "No login · 1 request · bot running",
+            "card_style": "alert"
+          },
+          {
+            "say": "It's a Node-RED admin flaw, listed for a Siemens industrial gateway. Attackers are already using it.",
+            "show": "CVE-2026-58115: unauthenticated Node-RED admin API access (Siemens SIMATIC IoT2050 Advance). 16 events from one IP, 30 Oct to 1 Nov. Not yet in CISA KEV.",
+            "card": "CVE-2026-58115 · exploited · not in CISA KEV yet",
+            "card_style": "fact"
+          },
+          {
+            "say": "Turn on admin auth. Take the editor off the internet. Check for flows you didn't build.",
+            "show": "VulnCheck: \"Node-RED instances without adminAuth are being found and exploited automatically.\" Review flows for unexpected exec nodes or HTTP endpoints.",
+            "card": "adminAuth on · off the internet · audit flows",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Node RED boxes.",
+            "show": "Send this to whoever runs your Node-RED boxes.",
+            "card": "↗ Send this to whoever runs your Node-RED boxes"
+          }
+        ]
+      },
+      "x_text": "Node-RED CVE-2026-58115 exploited: VulnCheck saw one unauthenticated request deploy a flow that downloaded and ran a Linux bot. Flaw named in Siemens SIMATIC IoT2050 Advance. Not in CISA KEV yet. Turn on adminAuth.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "One web request. No login. A bot downloaded and running. ⚙️\n\nWhat VulnCheck saw (2 Nov):\n→ On 30 Oct, one request to the Node-RED admin API deployed a flow that downloaded and ran a Linux binary on a VulnCheck canary\n→ The flaw, CVE-2026-58115, gives unauthenticated access to nodes that can run system commands; the CVE names Siemens' SIMATIC IoT2050 Advance industrial gateway\n→ 16 events against it from one IP between 30 Oct and 1 Nov, later with webshells\n→ VulnCheck: \"Node-RED instances without adminAuth are being found and exploited automatically\"\n→ Not in CISA's KEV yet; VulnCheck added it to its own\n\nWhat to do: enable adminAuth, take the Node-RED editor off the internet, check Siemens' advisory for fixes, and review flows for exec nodes or HTTP endpoints you didn't build.\n\nSend this to whoever runs your Node-RED boxes 👇\n\nIs there a Node-RED editor somewhere in your network that nobody owns?\n\nSource: VulnCheck (2 Nov 2026)\n\n#NodeRED #ICS #OTSecurity #PatchNow #Vulnerability #CyberSecurity"
+    }
+  ]
+}
