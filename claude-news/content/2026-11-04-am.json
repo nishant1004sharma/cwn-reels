@@ -1,0 +1,269 @@
+{
+  "date": "2026-11-04",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-11-04-am-01",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-11-04T08:15:00",
+      "story_key": "btcpay-server-hot-wallet-drains-2026-11",
+      "send_to": "whoever runs your crypto payments",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+          "date": "2026-11-03"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Old BTCPay server? Hot wallet drained.",
+        "segments": [
+          {
+            "say": "Your payment server was outdated. Your hot wallet is now empty.",
+            "show": "Attackers are draining Bitcoin and Litecoin from hot wallets on outdated BTCPay Server instances.",
+            "card": "Hot wallets drained · BTCPay Server",
+            "card_style": "alert"
+          },
+          {
+            "say": "BTCPay says hit servers ran version two point four point one or older. Reports began November first.",
+            "show": "Targeted servers ran BTCPay Server 2.4.1 or earlier. Reports surfaced around 1 Nov 2026. Latest release: 2.4.7.",
+            "card": "2.4.1 or older → at risk",
+            "card_style": "fact"
+          },
+          {
+            "say": "On an old version? Move to a fresh server with a new wallet. Even if nothing looks stolen.",
+            "show": "BTCPay: upgrade to 2.4.7. On 2.4.1 or older, move to a fresh server with a new wallet and treat all stored secrets as compromised.",
+            "card": "Fresh server · new wallet · rotate secrets",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your crypto payments.",
+            "show": "Send this to whoever runs your crypto payments.",
+            "card": "↗ Send this to whoever runs your crypto payments"
+          }
+        ]
+      },
+      "x_text": "BTCPay Server: attackers are draining Bitcoin and Litecoin from hot wallets on outdated instances (2.4.1 or older). BTCPay says upgrade to 2.4.7, and if you were on an old version, move to a fresh server with a new wallet.\n\n#CryptoSecurity #CyberSecurity",
+      "ig_caption": "Your payment server was outdated. Your hot wallet is now empty. 💸\n\nWhat BTCPay Server warned (via The Hacker News, 3 Nov):\n→ Attackers drained Bitcoin and Litecoin from hot wallets on outdated BTCPay Server instances\n→ The targeted servers ran 2.4.1 (July 2026) or earlier\n→ Reports began surfacing around 1 Nov; BTCPay shared two wallet addresses linked to the thefts\n→ The method differs from the August flaw that exposed Lightning node credentials\n→ Latest release 2.4.7 also fixes one critical and several medium bugs found by Anthropic's OSS scanner\n\nWhat to do: upgrade to 2.4.7. If you ran 2.4.1 or older, move to a fresh server with a new wallet even if nothing looks stolen, treat every stored secret as compromised, and keep only daily operating funds in the hot wallet.\n\nSend this to whoever runs your crypto payments 👇\n\nHow much of your crypto sits in a hot wallet right now, and does anyone know the exact number?\n\nSource: The Hacker News (3 Nov 2026)\n\n#BTCPay #Bitcoin #CryptoSecurity #HotWallet #PatchNow #CyberSecurity"
+    },
+    {
+      "id": "2026-11-04-am-02",
+      "kind": "carousel",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-11-04T10:00:00",
+      "story_key": "cpguard-autoupdate-hijack-2026-11",
+      "send_to": "whoever patches your Linux web servers",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+          "date": "2026-11-03"
+        }
+      ],
+      "cover": {
+        "hook": "Your security tool updated itself. The update was the attack.",
+        "sub": "cPGuard's update channel was hijacked. 2,946 servers affected, says the developer."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "cPGuard is a Linux web-server security suite used with cPanel, DirectAdmin and Plesk. On 2 Nov at 02:06 UTC an attacker used stolen credentials to reach the update CDN and pushed a malicious script to versions 5.88.12 to 5.88.19."
+        },
+        {
+          "type": "stat",
+          "big": "2,946",
+          "label": "servers affected",
+          "note": "Per an OpsShield spokesperson to BleepingComputer; its billing database was also copied"
+        },
+        {
+          "type": "point",
+          "title": "What it took",
+          "body": "The script went after Linux password hashes, root MySQL/MariaDB config, root shell history and root SSH files. OpsShield says 32 files were pulled from each customer, sent out via its own licensing server. Distribution stopped within 12 hours."
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "Security agents run as root and auto-update. Whoever controls the update channel controls every server. Your most trusted tool is also your biggest blast radius."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Update every cPGuard server to 5.88.25 or later",
+            "Reset passwords, rotate DB creds, cloud secrets and SSH keys",
+            "Check root SSH authorized_keys on hosted servers",
+            "List which agents on your servers auto-update as root"
+          ]
+        }
+      ],
+      "question": "Which tool on your servers can push code as root without anyone approving it?",
+      "x_text": "cPGuard (OpsShield): an attacker hijacked the Linux security suite's update channel and pushed a data-stealing script to 5.88.12–5.88.19. OpsShield: 2,946 servers affected. Update to 5.88.25+ and rotate SSH keys and DB credentials.\n\n#SupplyChainAttack #CyberSecurity",
+      "ig_caption": "Your security tool updated itself. The update was the attack. 🔁\n\nWhat happened (BleepingComputer, 3 Nov):\n→ cPGuard is a Linux web-server security suite used alongside cPanel, DirectAdmin and Plesk\n→ On 2 Nov at 02:06 UTC, an attacker used compromised credentials to reach OpsShield's update CDN and pushed a malicious script to versions 5.88.12 to 5.88.19\n→ It targeted password hashes, root database config, root shell history and root SSH files\n→ OpsShield says 2,946 servers were affected, 32 files were retrieved per customer, and its billing database was copied\n→ Distribution was stopped within 12 hours\n\nWhat to do: update to 5.88.25 or later, reset passwords, rotate database credentials, cloud secrets and SSH keys, and review root SSH access.\n\nSend this to whoever patches your Linux web servers 👇\n\nWhich tool on your servers can push code as root without anyone approving it?\n\nSource: BleepingComputer (3 Nov 2026)\n\n#SupplyChainAttack #cPanel #LinuxSecurity #WebHosting #SSH #CyberSecurity"
+    },
+    {
+      "id": "2026-11-04-am-03",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-11-04T12:00:00",
+      "story_key": "workos-artex-ai-sales-app-breach-2026-10",
+      "send_to": "whoever owns your sales and CRM tools",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+          "date": "2026-11-03"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+          "date": "2026-10-31"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "An AI hacking tool. A sales app. Call notes.",
+        "segments": [
+          {
+            "say": "An A I hacking framework. One internal sales app. Customer call notes taken.",
+            "show": "WorkOS says an attacker used \"an AI offensive security framework\" to automate recon and exploitation against an internal sales app.",
+            "card": "AI attack framework → sales app",
+            "card_style": "alert"
+          },
+          {
+            "say": "WorkOS says contact details, call summaries and Slack excerpts were accessed. Not its production services.",
+            "show": "Accessed: CRM contacts, account histories, summaries and excerpts of sales calls, support and customer Slack chats. WorkOS: no app data or production services affected.",
+            "card": "CRM + call notes · not production",
+            "card_style": "fact"
+          },
+          {
+            "say": "Its founder says the tool was ARTEX. Expect phishing that quotes your real conversations.",
+            "show": "Founder Michael Grinich says on X the attacker used the ARTEX AI pentest suite. WorkOS warns customers to expect phishing using the exposed data.",
+            "card": "Next: phishing that knows your deals",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns your sales and C R M tools.",
+            "show": "Send this to whoever owns your sales and CRM tools.",
+            "card": "↗ Send this to whoever owns your sales and CRM tools"
+          }
+        ]
+      },
+      "x_text": "WorkOS says an attacker used an AI offensive security framework to breach an internal sales app (30 Oct): CRM contacts, call summaries and customer Slack excerpts. Founder says it was ARTEX. No production services hit. Expect phishing.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "An AI hacking framework. One internal sales app. Customer call notes taken. 🤖\n\nWhat WorkOS disclosed (BleepingComputer, 3 Nov):\n→ On 30 Oct it found unauthorized access to an internal app used by its sales team\n→ WorkOS says the attacker used \"an AI offensive security framework\" to automate reconnaissance and exploitation\n→ Accessed: CRM contact details, account histories, and summaries and excerpts of sales calls, support chats and customer Slack conversations\n→ WorkOS says no app data or production services were accessed\n→ Founder Michael Grinich says the tool was the ARTEX AI pentest suite; Chainalysis also disclosed an intrusion using \"offensive agentic techniques\" last week\n\nWhat to do: treat sales and CRM tools as sensitive systems, put internal apps behind SSO and MFA, review what call notes and chat excerpts they store, and warn customers about phishing that quotes real conversations.\n\nSend this to whoever owns your sales and CRM tools 👇\n\nWho in your company reviews the security of the internal apps your sales team built?\n\nSource: BleepingComputer (3 Nov 2026), The Hacker News (31 Oct 2026)\n\n#AISecurity #AgenticAI #DataBreach #CRM #Phishing #CyberSecurity"
+    },
+    {
+      "id": "2026-11-04-am-04",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-04T13:30:00",
+      "story_key": "frontline-education-breach-1-3m-2026-11",
+      "send_to": "your school district's IT director",
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
+          "date": "2026-11-03"
+        },
+        {
+          "name": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/frontline-education-breach-k12/",
+          "date": "2026-10-05"
+        },
+        {
+          "name": "GovTech",
+          "url": "https://www.govtech.com/education/k-12/frontline-education-data-breach-impacts-school-employees",
+          "date": "2026-10-16"
+        }
+      ],
+      "cover": {
+        "hook": "1.3 million school staff and students. One flaw in someone else's software.",
+        "sub": "The Frontline Education breach is now counted at over 1.3 million people (SecurityWeek)."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "Frontline Education makes admin software for K-12 school districts. It says a vulnerability in a third-party product it uses allowed access to part of its environment holding Frontline Central and School Health Management data."
+        },
+        {
+          "type": "stat",
+          "big": "1.3M+",
+          "label": "people impacted",
+          "note": "School district staff and students, per SecurityWeek (3 Nov 2026)"
+        },
+        {
+          "type": "point",
+          "title": "What was exposed",
+          "body": "Reports from districts name Social Security numbers, home addresses and email addresses. Frontline identified the flaw on 14 Aug; districts were still telling staff in October."
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "One vendor holds data for many districts. SSNs plus home addresses fuel tax scams, new account fraud and convincing phishing aimed at teachers."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Tell staff to freeze credit at all three bureaus",
+            "Warn staff about tax and payroll phishing",
+            "Ask every ed-tech vendor which of your records they hold",
+            "Check if similar third-party access paths exist"
+          ]
+        }
+      ],
+      "question": "Does your district know which vendors hold staff Social Security numbers?",
+      "x_text": "Frontline Education breach now impacts over 1.3 million school district staff and students, per SecurityWeek. A flaw in third-party software exposed data incl. SSNs and home addresses. Districts are advising credit freezes.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "1.3 million school staff and students. One flaw in someone else's software. 🏫\n\nWhat we know:\n→ SecurityWeek reports the Frontline Education breach impacts over 1.3 million people, school district staff and students\n→ Frontline makes admin software for K-12 districts; it says a vulnerability in a third-party product allowed access to part of its environment\n→ Data reported by districts: Social Security numbers, home addresses, email addresses\n→ Frontline identified the flaw on 14 Aug; districts were still notifying staff in October\n→ Frontline says it fixed the flaw, brought in an outside firm and notified law enforcement\n\nWhat to do: freeze credit at all three bureaus if you were notified, expect tax and payroll phishing, and ask your ed-tech vendors exactly which records they hold.\n\nSend this to your school district's IT director 👇\n\nDoes your district know which vendors hold staff Social Security numbers?\n\nSource: SecurityWeek (3 Nov 2026), Infosecurity Magazine (5 Oct 2026), GovTech (16 Oct 2026)\n\n#DataBreach #K12 #EdTech #ThirdPartyRisk #IdentityTheft #CyberSecurity"
+    },
+    {
+      "id": "2026-11-04-am-05",
+      "kind": "reel",
+      "category": "RANSOMWARE",
+      "slot": "2026-11-04T14:30:00",
+      "story_key": "synology-dsm-c3rb3r-ransomware-2026-11",
+      "send_to": "whoever owns the NAS in your office",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+          "date": "2026-11-03"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "A 2024 Synology bug. 2026 ransomware.",
+        "segments": [
+          {
+            "say": "The patch is from twenty twenty four. The ransomware is from this week.",
+            "show": "Synology warns attackers are exploiting a DSM vulnerability patched back in 2024 to hit NAS devices running outdated versions.",
+            "card": "Patched in 2024 · exploited now",
+            "card_style": "alert"
+          },
+          {
+            "say": "Synology N A S boxes on old D S M versions are being encrypted for extortion.",
+            "show": "Customers report C3RB3R ransomware, which locks files with a .L0CK3D extension.",
+            "card": "C3RB3R ransomware · .L0CK3D files",
+            "card_style": "stat"
+          },
+          {
+            "say": "Update D S M today and turn on automatic updates.",
+            "show": "Synology: update DSM immediately on all vulnerable versions and enable automatic updates.",
+            "card": "Update DSM · auto-updates on",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns the N A S in your office.",
+            "show": "Send this to whoever owns the NAS in your office.",
+            "card": "↗ Send this to whoever owns the NAS in your office"
+          }
+        ]
+      },
+      "x_text": "Synology DSM: attackers are exploiting a flaw patched in 2024 to hit outdated NAS devices with C3RB3R ransomware (.L0CK3D files). Synology says update DSM now and turn on automatic updates.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "The patch is from 2024. The ransomware is from this week. 🗄️\n\nWhat Synology warned (via The Hacker News, 3 Nov):\n→ Attackers are exploiting a DSM vulnerability patched back in 2024 to target NAS devices on outdated versions\n→ The goal: encrypt data and extort victims\n→ Customers report C3RB3R ransomware, which renames files with a \".L0CK3D\" extension\n→ Synology didn't name the exact flaw; The Hacker News links it to advisory Synology_SA_24_20\n\nWhat to do: update DSM on every Synology box today, enable automatic updates, keep the admin interface off the internet, and make sure backups live somewhere the NAS can't overwrite.\n\nSend this to whoever owns the NAS in your office 👇\n\nIs there a NAS in your office that nobody has logged into for a year?\n\nSource: The Hacker News (3 Nov 2026)\n\n#Synology #Ransomware #NAS #PatchNow #Backup #CyberSecurity"
+    }
+  ]
+}
