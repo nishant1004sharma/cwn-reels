@@ -1,0 +1,21 @@
+{
+  "editorialDate": "2026-11-04",
+  "notes": "One original Instagram evergreen image for manual posting only. OWASP File Upload Cheat Sheet. No Metricool or auto-publishing. Separate from Claude Wednesday X news.",
+  "posts": [
+    {
+      "category": "APPSEC • FILE UPLOAD SECURITY",
+      "title": "A .JPG Extension Proves Nothing",
+      "bullets": [
+        "Allowlist only file formats the application needs.",
+        "Verify actual file content; don't trust client Content-Type.",
+        "Rename uploads, limit size and store outside the webroot."
+      ],
+      "takeaway": "Validate. Rename. Isolate.",
+      "caption": "A .jpg extension doesn't prove a file is safe. Allowlist required formats, verify actual file content, rename uploads, limit size, and store files outside the webroot. Treat every upload as untrusted.\n\n#AppSec #FileUploadSecurity #SecureCoding #OWASP\n\nSave this for later.",
+      "sources": [
+        "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+      ]
+    }
+  ],
+  "reels": []
+}
