@@ -124,7 +124,7 @@
    ],
    "reel": {
     "series": "AI Attack Explained",
-    "hook": "Failed commands retried every 40 seconds.",
+    "hook": "Failed commands retried every 40-101 s.",
     "segments": [
      {
       "say": "Failed commands, retried every forty to a hundred and one seconds.",
@@ -152,7 +152,7 @@
     ]
    },
    "x_text": "3AM ransomware and a suspected AI loop: Bitdefender says an affiliate hit a UK school estate, retrying failed commands every 40-101 s, likely via a language model. About 37 systems encrypted. Watch new domain trusts, protect backups.\n\n#Ransomware #CyberSecurity",
-   "ig_caption": "Failed commands retried every 40 seconds. ⏱️\n\nWhat Bitdefender found (via Hackread, 3 Nov):\n→ A 3AM (ThreeAM) ransomware affiliate attacked one UK school estate in September: 47 systems across separate Active Directory domains\n→ Failed commands were retried every 40 to 101 seconds. Bitdefender suspects command results were fed to a language model that suggested alternatives\n→ It calls it a hybrid: a human at the keyboard plus a suspected agentic loop. It could not confirm the loop was automated\n→ The attacker stole backup credentials, created backdoor admin accounts and new domain trusts, then tried to remove endpoint protection (blocked)\n→ About 37 systems were encrypted and system-state backups deleted\n\nWhat to do (Bitdefender): separate privileged accounts across domains, alert on new domain trusts, protect backup infrastructure, and make sure every machine has endpoint protection.\n\nSend this to whoever guards your backups 👇\n\nWould you get an alert today if someone created a new domain trust?\n\nSource: Hackread, Bitdefender research (3 Nov 2026)\n\n#Ransomware #3AM #AIThreats #ActiveDirectory #Backups #CyberSecurity"
+   "ig_caption": "Failed commands, retried every 40 to 101 seconds. ⏱️\n\nWhat Bitdefender found (via Hackread, 3 Nov):\n→ A 3AM (ThreeAM) ransomware affiliate attacked one UK school estate in September: 47 systems across separate Active Directory domains\n→ Failed commands were retried every 40 to 101 seconds. Bitdefender suspects command results were fed to a language model that suggested alternatives\n→ It calls it a hybrid: a human at the keyboard plus a suspected agentic loop. It could not confirm the loop was automated\n→ The attacker stole backup credentials, created backdoor admin accounts and new domain trusts, then tried to remove endpoint protection (blocked)\n→ About 37 systems were encrypted and system-state backups deleted\n\nWhat to do (Bitdefender): separate privileged accounts across domains, alert on new domain trusts, protect backup infrastructure, and make sure every machine has endpoint protection.\n\nSend this to whoever guards your backups 👇\n\nWould you get an alert today if someone created a new domain trust?\n\nSource: Hackread, Bitdefender research (3 Nov 2026)\n\n#Ransomware #3AM #AIThreats #ActiveDirectory #Backups #CyberSecurity"
   },
   {
    "id": "2026-11-04-pm-04",
