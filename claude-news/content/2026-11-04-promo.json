@@ -1,0 +1,61 @@
+{
+ "date": "2026-11-04",
+ "run": "promo",
+ "items": [
+  {
+   "id": "2026-11-04-promo-01",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-04T23:15:00",
+   "story_key": "promo-agentic-ai-security-top10-reel-2026-11-04",
+   "send_to": "whoever approves your AI agents",
+   "sources": [
+    {
+     "name": "OWASP GenAI Security Project",
+     "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+     "date": "2025-12-09"
+    },
+    {
+     "name": "Speakeasy (OWASP Agentic Top 10 explained)",
+     "url": "https://www.speakeasy.com/blog/owasp-agentic-top-10-explained",
+     "date": "2026-11-04"
+    },
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/agentic-ai-security"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "10 ways your AI agent gets turned on you.",
+    "segments": [
+     {
+      "say": "There are ten ways your A I agent gets turned against you. OWASP listed them.",
+      "show": "The OWASP Top 10 for Agentic Applications (Dec 2025): the ten biggest security risks for AI agents, ASI01 to ASI10.",
+      "card": "10|OWASP Top 10 risks for AI agents",
+      "card_style": "stat"
+     },
+     {
+      "say": "A poisoned M C P server feeds it bad instructions. Poisoned memory makes it act on lies.",
+      "show": "ASI04 agentic supply chain: tools, plugins or MCP servers feed in malicious instructions. ASI06 memory and context poisoning: the agent acts on corrupted context.",
+      "card": "ASI04 supply chain · ASI06 memory poisoning",
+      "card_style": "alert"
+     },
+     {
+      "say": "My course covers all ten, plus M C P. Link in bio.",
+      "show": "My Udemy course: Agentic AI Security: OWASP Top 10 for AI Agents & MCP. udemy.com/course/agentic-ai-security",
+      "card": "Agentic AI Security · on Udemy · link in bio",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever approves your A I agents.",
+      "show": "Send this to whoever approves your AI agents.",
+      "card": "↗ Send this to whoever approves your AI agents"
+     }
+    ]
+   },
+   "x_text": "OWASP lists 10 ways an AI agent gets turned against you, from goal hijack (ASI01) and poisoned MCP servers (ASI04) to rogue agents (ASI10). My Udemy course covers all 10, plus MCP.\n\n#AgenticAI #AISecurity",
+   "ig_caption": "10 ways your AI agent gets turned on you. 🤖\n\nThe OWASP Top 10 for Agentic Applications, one line each:\n→ ASI01 Goal hijack: hidden instructions change what the agent is trying to do\n→ ASI02 Tool misuse: connected tools used in ways nobody intended\n→ ASI03 Privilege abuse: credentials and permissions wider than the task\n→ ASI04 Supply chain: a malicious tool, plugin or MCP server feeds it bad instructions\n→ ASI05 Unexpected code execution: generated code runs where it shouldn't\n→ ASI06 Memory poisoning: corrupted context makes it act on false premises\n→ ASI07 Insecure agent-to-agent messages: no authentication or integrity checks\n→ ASI08 Cascading failures: one bad agent spreads the damage downstream\n→ ASI09 Human trust exploitation: convincing output gets people to approve the wrong thing\n→ ASI10 Rogue agents: an agent keeps acting, and keeps its access, after it should stop\n\nStart here: an inventory of every agent and what it can touch, an allowlist of MCP servers, and human review for high-impact actions.\n\n🎓 My course covers all 10 risks, plus MCP: \"Agentic AI Security: OWASP Top 10 for AI Agents & MCP\" on Udemy. Link in bio, or udemy.com/course/agentic-ai-security\n\nSend this to whoever approves your AI agents 👇\n\nWhich of the 10 would your current agents fail first?\n\nSource: OWASP GenAI Security Project (Dec 2025)\n\n#AgenticAI #AISecurity #OWASP #MCP #AIAgents #CyberSecurity"
+  }
+ ]
+}
