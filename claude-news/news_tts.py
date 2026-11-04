@@ -8,7 +8,7 @@ Order:
 
 Returns (mp3_path, align_path_or_None, voice_label). Raises RuntimeError if both fail.
 """
-import base64, json, os, subprocess, urllib.error, urllib.request
+import time, base64, json, os, subprocess, urllib.error, urllib.request
 
 EL_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice}{suffix}?output_format=mp3_44100_128"
 
@@ -43,9 +43,18 @@ def elevenlabs(text, mp3, align_path):
 def edge(text, mp3):
     voice = os.environ.get("EDGE_VOICE") or "en-US-AndrewMultilingualNeural"
     rate = os.environ.get("EDGE_RATE") or "+12%"
-    subprocess.run(["edge-tts", "--voice", voice, f"--rate={rate}", "--text", text, "--write-media", mp3],
-                   check=True, capture_output=True, timeout=180)
-    return voice
+    last = None
+    for attempt in range(4):  # the free Edge endpoint fails intermittently: retry with a short backoff
+        try:
+            subprocess.run(["edge-tts", "--voice", voice, f"--rate={rate}", "--text", text, "--write-media", mp3],
+                           check=True, capture_output=True, timeout=180)
+            return voice
+        except subprocess.CalledProcessError as e:
+            last = RuntimeError(f"exit {e.returncode}: {(e.stderr or b'')[-300:]!r}")
+        except subprocess.TimeoutExpired as e:
+            last = e
+        time.sleep(5 * (attempt + 1))
+    raise last
 
 
 def speak(text, mp3, align_path):
