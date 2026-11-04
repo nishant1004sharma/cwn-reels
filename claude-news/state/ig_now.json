@@ -1,5 +1,7 @@
 {
- "note": "Publish these Instagram items now, regardless of slot or cool-down (Nishant asked for the series intro tonight). Ignored after 'until'.",
- "ids": ["2026-10-31-basics-01"],
- "until": "2026-11-02T01:00:00+08:00"
+ "note": "Publish these Instagram items now, regardless of slot or cool-down (Nishant asked to post the course promo diagram now). Ignored after 'until'.",
+ "ids": [
+  "2026-11-04-promo-01"
+ ],
+ "until": "2026-11-05T02:00:00+08:00"
 }
