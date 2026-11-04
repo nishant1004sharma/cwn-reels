@@ -23,7 +23,7 @@
           {
             "say": "Nine hundred ninety-six network switches. Hacked through a flaw nobody knew about.",
             "show": "GreyNoise: 996 Zyxel GS1900 switches compromised across 48 countries.",
-            "card": "996 switches · 48 countries",
+            "card": "996 switches hacked",
             "card_style": "stat"
           },
           {
@@ -225,7 +225,7 @@
           {
             "say": "One leaked A P I key. Ten days later, four G P U servers.",
             "show": "Kernel: a compromised API key on 24 Oct led to access to 4 GPU-enabled servers on 3 Nov.",
-            "card": "1 API key → 4 GPU servers",
+            "card": "1 key → 4 servers",
             "card_style": "stat"
           },
           {
