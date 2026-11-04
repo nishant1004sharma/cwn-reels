@@ -66,10 +66,11 @@ The voice that makes these engaging (this is the point of the whole pipeline):
 
 ## 5. Instagram goes out by itself
 - Do not create any Metricool post. The "Claude news Instagram" workflow publishes each item at its slot through Instagram's API, using the media and `ig_caption`, and skips anything whose caption is already on the account.
+- **YouTube Shorts:** the "Claude news YouTube" workflow (`claude-news/yt_publish.py`, every 10 minutes) uploads every item at the same slot as a Short on the CISSP channel: reels and diagrams as they are, carousels as a slideshow video built from the slides. Title = the reel hook / cover hook / diagram title + " #Shorts", description = `ig_caption` plus a link to the Instagram account. It needs the repo secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`; without them it publishes nothing. Set `"youtube": false` on an item to keep it off YouTube. Nothing to do in the run except record `"youtube"` in `networks`.
 - After the slot of item 1 has passed (if the run is still going), you may check it with `gh run list -R nishant1004sharma/cwn-reels --workflow claude-news-ig.yml -L 3`; otherwise just report the slots.
 
 ## 6. Record
-- Append one entry per scheduled story to `claude-news/state/posted.json` `posted` list: `{"story_key", "id", "date", "slot", "kind", "networks": [...], "voice": manifest voice or null, "title": cover hook or reel hook, "typefully_draft_id": from typefully.json}` with networks `["instagram", "x"]`. Keep only the last 30 days of entries. Commit "Record news run $DATE $RUN", pull --rebase, push.
+- Append one entry per scheduled story to `claude-news/state/posted.json` `posted` list: `{"story_key", "id", "date", "slot", "kind", "networks": [...], "voice": manifest voice or null, "title": cover hook or reel hook, "typefully_draft_id": from typefully.json}` with networks `["instagram", "youtube"]` plus `"x"` for the item marked `"x": true`. Keep only the last 30 days of entries. Commit "Record news run $DATE $RUN", pull --rebase, push.
 
 ## Final message
 Short bullets: the 5 stories (time, format, hook), networks posted per story, voice used for reels, anything skipped or failed in one line each.

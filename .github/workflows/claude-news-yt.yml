@@ -1,0 +1,31 @@
+name: Claude news YouTube
+# Publishes due news posts as YouTube Shorts on the CISSP channel (see claude-news/yt_publish.py).
+on:
+  schedule:
+    - cron: '5,15,25,35,45,55 * * * *'
+  workflow_dispatch:
+concurrency:
+  group: claude-news-yt
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: claude-news
+      - uses: actions/checkout@v4
+        with:
+          ref: claude-news-media
+          path: media
+      - name: ffmpeg
+        run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Publish due Shorts
+        run: python3 claude-news/yt_publish.py --media media --content claude-news/content
