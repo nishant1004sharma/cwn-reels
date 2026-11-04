@@ -1576,16 +1576,16 @@
       "typefully_draft_id": null
     },
     {
-      "story_key": "promo-agentic-ai-security-top10-reel-2026-11-04",
+      "story_key": "promo-agentic-ai-security-hijack-diagram-2026-11-04",
       "id": "2026-11-04-promo-01",
       "date": "2026-11-04",
       "slot": "2026-11-04T23:30:00",
-      "kind": "reel",
+      "kind": "diagram",
       "networks": [
         "instagram"
       ],
-      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-      "title": "10 ways your AI agent gets turned on you.",
+      "voice": null,
+      "title": "How AI Agents Get Hijacked",
       "typefully_draft_id": null
     }
   ]
