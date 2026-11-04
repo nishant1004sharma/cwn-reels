@@ -38,7 +38,7 @@
       "card_style": "fact"
      },
      {
-      "say": "PancakeSwap pulled its docs as a precaution. GitBook says replace every token and reconnect M C P.",
+      "say": "PancakeSwap pulled its docs to be safe. GitBook says replace every token and reconnect M C P.",
       "show": "GitBook: rotate GitBook API tokens, replace third-party tokens and integration secrets, re-authenticate the GitBook MCP server.",
       "card": "Rotate tokens · replace secrets · re-auth MCP",
       "card_style": "answer"
