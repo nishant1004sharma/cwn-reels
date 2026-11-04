@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+  Animated explainer template (kind "diagram"). Copy to claude-news/diagrams/<item id>.html and edit.
+  Canvas 1080x1350 (4:5). Clean white background, dark text, coloured outlines only.
+  Animated pieces (all loop every 2 s so the video loops seamlessly):
+    path.flow   blue dashed arrow      path.flowG  green dashed arrow
+    path.flowR  red dashed arrow, faster (the attack / bad path)
+    .pulse      gentle scale pulse     .blink      fading text
+  Keep text >= 20px, max ~12 boxes, one idea per panel.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:Inter;font-weight:400 500;src:url('../../render/fonts/Inter-Medium.otf')}
+  @font-face{font-family:Inter;font-weight:600 900;src:url('../../render/fonts/Inter-SemiBold.otf')}
+  @font-face{font-family:'Inter Display';font-weight:700 900;src:url('../../render/fonts/InterDisplay-Bold.otf')}
+  :root{--ink:#111827;--muted:#4b5563;--blue:#2563eb;--green:#059669;--red:#dc2626;--line:#d1d5db}
+  html,body{margin:0;padding:0;background:#fff}
+  body{width:1080px;height:1350px;overflow:hidden}
+  svg{position:absolute;inset:0}
+  text{font-family:Inter,sans-serif;fill:var(--ink)}
+  .brand{font-size:22px;font-weight:800;letter-spacing:3px;fill:var(--blue)}
+  .title{font-family:'Inter Display',Inter,sans-serif;font-size:64px;font-weight:800}
+  .sub{font-size:28px;fill:var(--muted)}
+  .panelT{font-size:32px;font-weight:800}
+  .lbl{font-size:26px;font-weight:700;text-anchor:middle}
+  .small{font-size:21px;fill:var(--muted);text-anchor:middle}
+  .box{fill:#fff;stroke:#9ca3af;stroke-width:2.5}
+  .boxB{fill:#eff6ff;stroke:var(--blue);stroke-width:3}
+  .boxG{fill:#ecfdf5;stroke:var(--green);stroke-width:3}
+  .boxR{fill:#fef2f2;stroke:var(--red);stroke-width:3}
+  .flow,.flowG,.flowR{fill:none;stroke-width:4;stroke-dasharray:14 12;animation:dash 1s linear infinite}
+  .flow{stroke:var(--blue)} .flowG{stroke:var(--green)}
+  .flowR{stroke:var(--red);stroke-width:5;animation-duration:.5s}
+  @keyframes dash{from{stroke-dashoffset:26}to{stroke-dashoffset:0}}
+  .blink{animation:blink 1s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+  .pulse{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+</style></head>
+<body>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <marker id="aB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2563eb"/></marker>
+    <marker id="aG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#059669"/></marker>
+    <marker id="aR" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#dc2626"/></marker>
+  </defs>
+
+  <text class="brand" x="60" y="70">THE CYBER INTELLECT</text>
+  <text class="title" x="60" y="148">Stolen Keys. Your AI Bill.</text>
+  <text class="sub" x="60" y="194">How LLMjacking turns one leaked key into your cloud charges</text>
+
+  <!-- Panel 1: attack path -->
+  <rect x="40" y="225" width="1000" height="440" rx="26" fill="#f9fafb" stroke="#dc2626" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="277" style="fill:#dc2626">✗ How LLMjacking works</text>
+
+  <rect class="boxR" x="70" y="320" width="270" height="120" rx="18"/>
+  <text class="lbl" x="205" y="372" style="fill:#dc2626">Leaked key</text>
+  <text class="small" x="205" y="405">repo · phish · app code</text>
+
+  <rect class="box" x="405" y="320" width="270" height="120" rx="18"/>
+  <text class="lbl" x="540" y="372">Attacker moves in</text>
+  <text class="small" x="540" y="405">new keys + accounts</text>
+
+  <rect class="box" x="740" y="320" width="270" height="120" rx="18"/>
+  <text class="lbl" x="875" y="372">Runs your models</text>
+  <text class="small" x="875" y="405">proxying · streaming</text>
+
+  <rect class="box" x="640" y="500" width="370" height="130" rx="20"/>
+  <text class="lbl" x="825" y="553">"LLM mixer"</text>
+  <text class="small" x="825" y="590">resells your access</text>
+
+  <g class="pulse">
+    <rect class="boxR" x="70" y="500" width="490" height="130" rx="20"/>
+    <text class="lbl" x="315" y="553" style="fill:#dc2626;font-size:30px">YOU PAY: $100K+ IN A DAY</text>
+    <text class="small" x="315" y="590">up to $1M before access was cut</text>
+  </g>
+
+  <path class="flowR" d="M340,380 L395,380" marker-end="url(#aR)"/>
+  <path class="flowR" d="M675,380 L730,380" marker-end="url(#aR)"/>
+  <path class="flowR" d="M875,440 L875,490" marker-end="url(#aR)"/>
+  <path class="flowR" d="M640,565 L570,565" marker-end="url(#aR)"/>
+
+  <!-- Panel 2: defences -->
+  <rect x="40" y="690" width="1000" height="420" rx="26" fill="#f9fafb" stroke="#059669" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="742" style="fill:#059669">✓ Google's defences</text>
+
+  <rect class="boxG" x="70" y="780" width="440" height="100" rx="18"/>
+  <text class="lbl" x="290" y="823">① Secret scanning</text>
+  <text class="small" x="290" y="855">find keys in code, rotate</text>
+
+  <rect class="boxG" x="570" y="780" width="440" height="100" rx="18"/>
+  <text class="lbl" x="790" y="823">② Least privilege</text>
+  <text class="small" x="790" y="855">deny LLM access not needed</text>
+
+  <rect class="boxG" x="570" y="910" width="440" height="100" rx="18"/>
+  <text class="lbl" x="790" y="953">③ Quotas + spend caps</text>
+  <text class="small" x="790" y="985">per model, per key</text>
+
+  <rect class="boxG" x="70" y="910" width="440" height="100" rx="18"/>
+  <text class="lbl" x="290" y="953">④ Phishing-resistant MFA</text>
+  <text class="small" x="290" y="985">stolen tokens get less far</text>
+
+  <rect class="box" x="300" y="1035" width="480" height="60" rx="18"/>
+  <text class="lbl" x="540" y="1074" style="fill:#059669">A leaked key hits a wall</text>
+
+  <path class="flowG" d="M510,830 L560,830" marker-end="url(#aG)"/>
+  <path class="flowG" d="M790,880 L790,900" marker-end="url(#aG)"/>
+  <path class="flowG" d="M570,960 L520,960" marker-end="url(#aG)"/>
+  <path class="flowG" d="M290,1010 L290,1065 L295,1065" marker-end="url(#aG)"/>
+
+  <!-- Takeaway -->
+  <rect x="40" y="1130" width="1000" height="150" rx="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text class="panelT blink" x="70" y="1180" style="fill:#2563eb;font-size:30px">The tell: tiny test calls</text>
+  <text x="70" y="1222" style="font-size:24px">Attackers check stolen keys with micro-requests</text>
+  <text x="70" y="1258" style="font-size:24px">like max_tokens=1. Alert on them. (Google GTIG, 2 Nov)</text>
+
+  <text x="540" y="1325" style="font-size:24px;font-weight:800;text-anchor:middle">↗ Send this to whoever owns your cloud AI budget</text>
+</svg>
+</body></html>

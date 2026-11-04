@@ -1,0 +1,237 @@
+{
+ "date": "2026-11-04",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-04-pm-01",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-04T17:00:00",
+   "story_key": "gitbook-ai-agent-attack-credentials-2026-11",
+   "send_to": "whoever owns your docs site",
+   "sources": [
+    {
+     "name": "Decrypt",
+     "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
+     "date": "2026-11-03"
+    },
+    {
+     "name": "crypto.news",
+     "url": "https://crypto.news/gitbook-ai-cyberattack-api-tokens-secrets/",
+     "date": "2026-11-03"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "GitBook says AI agents attacked it.",
+    "segments": [
+     {
+      "say": "A docs platform says A I agents broke in. Rotate your tokens.",
+      "show": "GitBook, a docs platform used by many crypto projects, calls it \"a sophisticated, highly targeted attack using AI agents\".",
+      "card": "\"Highly targeted attack using AI agents\" · GitBook",
+      "card_style": "alert"
+     },
+     {
+      "say": "Access began November second. A P I tokens, Git Sync secrets and assistant questions may be exposed.",
+      "show": "Unauthorized access: 2 Nov, 7 p.m. CET. Possibly exposed: API tokens, integration tokens and secrets, Git Sync secrets, questions sent to GitBook Assistant. No sign content was modified.",
+      "card": "API tokens · Git Sync secrets · Assistant questions",
+      "card_style": "fact"
+     },
+     {
+      "say": "PancakeSwap pulled its docs as a precaution. GitBook says replace every token and reconnect M C P.",
+      "show": "GitBook: rotate GitBook API tokens, replace third-party tokens and integration secrets, re-authenticate the GitBook MCP server.",
+      "card": "Rotate tokens · replace secrets · re-auth MCP",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your docs site.",
+      "show": "Send this to whoever owns your docs site.",
+      "card": "↗ Send this to whoever owns your docs site"
+     }
+    ]
+   },
+   "x_text": "GitBook says a \"highly targeted attack using AI agents\" reached its infrastructure credentials on 2 Nov. API tokens, Git Sync secrets and AI assistant questions may be exposed. Rotate GitBook tokens, replace integration secrets, re-auth MCP.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "GitBook says AI agents attacked it. 🤖\n\nWhat we know (Decrypt, crypto.news, 3 Nov):\n→ GitBook, a docs platform used by many crypto projects, says an attacker reached some infrastructure credentials on 2 Nov at 7 p.m. CET\n→ It calls it \"a sophisticated, highly targeted attack using AI agents\". It hasn't said how the agents were used\n→ Possibly exposed: API tokens, integration tokens and secrets, Git Sync secrets, and questions visitors sent to GitBook Assistant\n→ GitBook says it found no evidence that any content was modified. It revoked personal API tokens and replaced its own credentials\n→ PancakeSwap took its docs offline as a precaution and later moved them to its own infrastructure\n\nWhat to do: rotate GitBook API tokens, replace any third-party tokens or secrets connected to GitBook (including published integrations), and re-authenticate the GitBook MCP server. Then check your repos for unexpected changes from Git Sync.\n\nSend this to whoever owns your docs site 👇\n\nDo you know every token your docs platform holds for your code repos?\n\nSource: Decrypt, crypto.news (3 Nov 2026)\n\n#GitBook #AISecurity #AIAgents #DataBreach #APISecurity #CryptoSecurity"
+  },
+  {
+   "id": "2026-11-04-pm-02",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-04T16:00:00",
+   "story_key": "msecure-suspicious-activity-warning-2026-11",
+   "send_to": "anyone on your team using mSecure",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+     "date": "2026-11-03"
+    }
+   ],
+   "cover": {
+    "hook": "Your password manager emails you: change passwords, reset 2FA, remove passkeys.",
+    "sub": "mSecure's developer says it \"recently learned of suspicious activity linked to the app\". It hasn't said what happened."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What the email says",
+     "body": "On 3 Nov, mSeven Software emailed current and former mSecure customers about suspicious activity linked to the app. It says it started an investigation, took steps to limit the problem and brought in outside security experts."
+    },
+    {
+     "type": "point",
+     "title": "What it doesn't say",
+     "body": "What happened, when, which systems, whether it has stopped, or whether vault data or the keys protecting it were reached. As of 18:00 UTC on 3 Nov there was no post on mSecure's X or Facebook (per The Hacker News)."
+    },
+    {
+     "type": "stat",
+     "big": "3",
+     "label": "steps suggested: change passwords, reset 2FA, remove passkeys",
+     "note": "Offered as possibilities, with no order or detail (per The Hacker News)"
+    },
+    {
+     "type": "point",
+     "title": "Why it matters",
+     "body": "mSecure 7 can store passkeys and 2FA codes in the vault (Essentials plan and above). If one app holds your passwords and your second factor, one incident touches both. mSecure says vault data is encrypted on the device before syncing."
+    },
+    {
+     "type": "actions",
+     "title": "Do this today",
+     "items": [
+      "Change email, bank and work passwords first",
+      "Move 2FA codes to a separate authenticator",
+      "Remove and re-create passkeys kept in mSecure",
+      "Expect phishing that mentions this incident"
+     ]
+    }
+   ],
+   "question": "Does your password manager also hold your 2FA codes, or do you keep them apart?",
+   "x_text": "mSecure password manager: developer mSeven emailed customers about \"suspicious activity linked to the app\" and suggested changing passwords, resetting 2FA and removing passkeys. It hasn't said what happened or if vault data was reached.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "Your password manager emails you: change passwords, reset 2FA, remove passkeys. 🔑\n\nWhat we know (The Hacker News, 3 Nov):\n→ mSeven Software emailed current and former mSecure customers: it \"recently learned of suspicious activity linked to the app\"\n→ It started an investigation, took steps to limit the problem and brought in outside security experts\n→ It hasn't said what happened, when, whether it has stopped, or whether vault data or its keys were reached\n→ It suggests changing passwords, resetting 2FA and removing passkeys, without saying which accounts come first\n→ mSecure says vault data is encrypted on the device before syncing. mSecure 7 can also store passkeys and 2FA codes\n\nWhat to do if you use it: change email, bank and work passwords first, move 2FA codes to a separate authenticator app, re-create passkeys, and treat any email about this incident with suspicion until mSecure publishes details.\n\nSend this to anyone on your team using mSecure 👇\n\nDoes your password manager also hold your 2FA codes, or do you keep them apart?\n\nSource: The Hacker News (3 Nov 2026)\n\n#mSecure #PasswordManager #DataBreach #2FA #Passkeys #CyberSecurity"
+  },
+  {
+   "id": "2026-11-04-pm-03",
+   "kind": "reel",
+   "category": "RANSOMWARE",
+   "slot": "2026-11-04T21:00:00",
+   "story_key": "3am-ransomware-ai-loop-uk-school-2026-11",
+   "send_to": "whoever guards your backups",
+   "sources": [
+    {
+     "name": "Hackread (Bitdefender research)",
+     "url": "https://hackread.com/3am-ransomware-uk-school-systems-ai-attack",
+     "date": "2026-11-03"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Failed commands retried every 40 seconds.",
+    "segments": [
+     {
+      "say": "Failed commands, retried every forty to a hundred and one seconds.",
+      "show": "Bitdefender: in a 3AM ransomware attack on a UK school estate, failed commands were retried every 40 to 101 seconds.",
+      "card": "40–101 s|between retries of failed commands",
+      "card_style": "stat"
+     },
+     {
+      "say": "Bitdefender suspects command results were fed to an A I model that suggested the next try. Not confirmed autonomous.",
+      "show": "Bitdefender calls it a hybrid: a human operator plus a suspected agentic loop. It could not confirm whether a model ran the loop or a person copied commands into an AI tool.",
+      "card": "Human operator + suspected AI loop",
+      "card_style": "fact"
+     },
+     {
+      "say": "About thirty-seven machines encrypted, backups deleted. Watch new domain trusts and protect backup systems.",
+      "show": "About 37 systems encrypted and system-state backups deleted. Bitdefender advice: separate privileged accounts across domains, monitor new domain trusts, protect backups, endpoint protection on every machine.",
+      "card": "Watch new domain trusts · protect backups",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever guards your backups.",
+      "show": "Send this to whoever guards your backups.",
+      "card": "↗ Send this to whoever guards your backups"
+     }
+    ]
+   },
+   "x_text": "3AM ransomware and a suspected AI loop: Bitdefender says an affiliate hit a UK school estate, retrying failed commands every 40-101 s, likely via a language model. About 37 systems encrypted. Watch new domain trusts, protect backups.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "Failed commands retried every 40 seconds. ⏱️\n\nWhat Bitdefender found (via Hackread, 3 Nov):\n→ A 3AM (ThreeAM) ransomware affiliate attacked one UK school estate in September: 47 systems across separate Active Directory domains\n→ Failed commands were retried every 40 to 101 seconds. Bitdefender suspects command results were fed to a language model that suggested alternatives\n→ It calls it a hybrid: a human at the keyboard plus a suspected agentic loop. It could not confirm the loop was automated\n→ The attacker stole backup credentials, created backdoor admin accounts and new domain trusts, then tried to remove endpoint protection (blocked)\n→ About 37 systems were encrypted and system-state backups deleted\n\nWhat to do (Bitdefender): separate privileged accounts across domains, alert on new domain trusts, protect backup infrastructure, and make sure every machine has endpoint protection.\n\nSend this to whoever guards your backups 👇\n\nWould you get an alert today if someone created a new domain trust?\n\nSource: Hackread, Bitdefender research (3 Nov 2026)\n\n#Ransomware #3AM #AIThreats #ActiveDirectory #Backups #CyberSecurity"
+  },
+  {
+   "id": "2026-11-04-pm-04",
+   "kind": "diagram",
+   "category": "AI THREAT",
+   "slot": "2026-11-04T20:00:00",
+   "story_key": "explainer-llmjacking",
+   "send_to": "whoever owns your cloud AI budget",
+   "x": true,
+   "sources": [
+    {
+     "name": "Google Threat Intelligence Group & Mandiant",
+     "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+     "date": "2026-11-02"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+     "date": "2026-11-03"
+    }
+   ],
+   "diagram": {
+    "title": "Stolen Keys. Your AI Bill.",
+    "html": "claude-news/diagrams/2026-11-04-pm-04.html",
+    "seconds": 8
+   },
+   "x_text": "LLMjacking explained: Google GTIG and Mandiant say stolen cloud keys are used to run and resell LLMs. Bills topped $100K in a day, up to $1M before access was cut. Fix: secret scanning, least privilege, spend caps, phishing-resistant MFA.\n\n#AISecurity #CloudSecurity",
+   "ig_caption": "Stolen keys. Your AI bill. 💸\n\nHow LLMjacking works (Google Threat Intelligence Group and Mandiant, 2 Nov):\n→ Attackers get a key or token: leaked in a public repo, exposed in client-side code, phished, or from a misconfigured service account\n→ They move in and stay: new access keys, new service accounts, more privileges\n→ They use your models: token proxying, automated streaming, their own API keys\n→ \"LLM mixers\" resell the access to underground subscribers. You pay the bill\n→ The damage: over $100,000 in a single day in some incidents, up to $1 million before access was revoked\n→ The tell: tiny test calls (like max_tokens=1) as attackers check stolen keys\n\nGoogle's defences: secret scanning and rotation, least privilege (deny LLM access that isn't needed), API quotas and spending caps, phishing-resistant MFA.\n\nSend this to whoever owns your cloud AI budget 👇\n\nWould you notice a $100K AI bill before the end of the month?\n\nSource: Google Threat Intelligence Group / Mandiant (2 Nov 2026), The Hacker News (3 Nov 2026)\n\n#LLMjacking #AISecurity #CloudSecurity #Mandiant #APIKeys #CyberSecurity"
+  },
+  {
+   "id": "2026-11-04-pm-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-04T22:30:00",
+   "story_key": "cve-2025-8088",
+   "send_to": "whoever patches your Windows desktops",
+   "sources": [
+    {
+     "name": "The Hacker News (ESET research)",
+     "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+     "date": "2026-11-03"
+    },
+    {
+     "name": "Neowin",
+     "url": "https://www.neowin.net/amp/update-your-winrar-because-hackers-are-using-this-flaw-to-sneak-malware-onto-your-pc/",
+     "date": "2025-08-11"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "Old WinRAR bug. New spy campaign.",
+    "segments": [
+     {
+      "say": "One archive. Files land wherever the attacker wants.",
+      "show": "ESET: Russia-aligned group Gorbag exploits CVE-2025-8088, a patched WinRAR path-traversal flaw, against Ukrainian organizations.",
+      "card": "WinRAR · CVE-2025-8088 · exploited",
+      "card_style": "alert"
+     },
+     {
+      "say": "ESET says Gorbag targets Ukrainian police, courts and front-line local offices, with lures about fines and taxes.",
+      "show": "Targets: law enforcement and justice bodies, local administrations near the front line, defence. Lures: official-looking fines and taxes. Malware: GIFTEDCROOK, BeautyStealer.",
+      "card": "Lures: official fines and taxes",
+      "card_style": "fact"
+     },
+     {
+      "say": "WinRAR doesn't update itself. Check every copy is on the fixed version.",
+      "show": "The flaw is fixed in WinRAR 7.13. WinRAR has no built-in auto-updater, so update it by hand.",
+      "card": "WinRAR 7.13 or later · update by hand",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever patches your Windows desktops.",
+      "show": "Send this to whoever patches your Windows desktops.",
+      "card": "↗ Send this to whoever patches your Windows desktops"
+     }
+    ]
+   },
+   "x_text": "WinRAR CVE-2025-8088 is still being exploited: ESET says Russia-aligned Gorbag uses it against Ukrainian police, justice and front-line local offices to drop stealers. Fixed in WinRAR 7.13, which doesn't auto-update.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "Old WinRAR bug. New spy campaign. 🗜️\n\nWhat ESET reported (via The Hacker News, 3 Nov):\n→ A Russia-aligned group ESET tracks as Gorbag exploits CVE-2025-8088, a patched WinRAR path-traversal flaw: a crafted archive writes files where the attacker chooses\n→ Targets: Ukrainian law enforcement and justice bodies, local administrations near the front line, and defence\n→ Lures: official-looking notices about fines and taxes\n→ Malware: GIFTEDCROOK (steals browser data) and BeautyStealer\n→ One script carried a comment telling AI and security tools it wasn't malicious. Two AI assistants still flagged it as a reverse shell\n\nWhat to do: WinRAR has no built-in auto-updater, so find every copy and make sure it's on 7.13 or later. Treat archives from \"official\" senders with care.\n\nSend this to whoever patches your Windows desktops 👇\n\nHow many old WinRAR copies would an inventory scan find on your network today?\n\nSource: The Hacker News / ESET (3 Nov 2026), Neowin\n\n#WinRAR #PatchNow #ThreatIntel #Ukraine #ESET #CyberSecurity"
+  }
+ ]
+}
