@@ -1,0 +1,254 @@
+{
+  "date": "2026-11-05",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-11-05-am-01",
+      "kind": "reel",
+      "category": "ZERO-DAY",
+      "slot": "2026-11-05T08:15:00",
+      "story_key": "cve-2026-107441",
+      "send_to": "whoever manages your Zyxel switches",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+          "date": "2026-11-04"
+        }
+      ],
+      "reel": {
+        "series": "Zero-Day Alert",
+        "hook": "996 switches hacked. Through an unknown flaw.",
+        "segments": [
+          {
+            "say": "Nine hundred ninety-six network switches. Hacked through a flaw nobody knew about.",
+            "show": "GreyNoise: 996 Zyxel GS1900 switches compromised across 48 countries.",
+            "card": "996 switches · 48 countries",
+            "card_style": "stat"
+          },
+          {
+            "say": "Zyxel G S nineteen hundred switches. No login needed. Attackers ran commands from the web interface.",
+            "show": "CVE-2026-107441: unauthenticated out-of-bounds write in the GS1900 web management interface. Affects ten models.",
+            "card": "CVE-2026-107441 · no login",
+            "card_style": "alert"
+          },
+          {
+            "say": "Zyxel shipped firmware on October twenty-second. Install it now.",
+            "show": "Fix: firmware released 22 Oct 2026, advisory published 3 Nov.",
+            "card": "Update GS1900 firmware",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever manages your Zyxel switches.",
+            "show": "Send this to whoever manages your Zyxel switches.",
+            "card": "↗ Send this to whoever manages your Zyxel switches"
+          }
+        ]
+      },
+      "x_text": "Zyxel GS1900 switches: CVE-2026-107441, an unauthenticated flaw in the web management interface, was exploited as a zero-day. GreyNoise counted 996 compromised devices in 48 countries. Zyxel's fix shipped 22 Oct.\n\n#ZeroDay #CyberSecurity",
+      "ig_caption": "996 network switches hacked. Through a flaw nobody knew about. 🚨\n\nWhat BleepingComputer reported (4 Nov):\n→ CVE-2026-107441 is an out-of-bounds write in the web management interface of Zyxel GS1900 switches; no login needed\n→ It affects ten GS1900 models\n→ GreyNoise saw a suspected Chinese-speaking actor it calls \"Kapibala\" from about 17 Aug, with 996 devices compromised in 48 countries\n→ Binarly found the exploit hit a separate, unpatched bug, not the one fixed in June; Zyxel confirmed it on 11 Oct\n→ Firmware fixes shipped 22 Oct; Zyxel's advisory came out 3 Nov\n\nWhat to do: install the latest GS1900 firmware, keep the switch web interface off the internet and user networks, and check hardened devices that were \"already patched\" in June.\n\nSend this to whoever manages your Zyxel switches 👇\n\nCan you reach your switches' admin page from your normal office network?\n\nSource: BleepingComputer (4 Nov 2026)\n\n#Zyxel #ZeroDay #CVE #NetworkSecurity #PatchNow #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-am-02",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-05T10:00:00",
+      "story_key": "chainstack-production-breach-2026-11",
+      "send_to": "whoever owns your Chainstack account",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+          "date": "2026-11-03"
+        }
+      ],
+      "cover": {
+        "hook": "In through a dev environment. Out with password hashes.",
+        "sub": "Chainstack says an attacker reached production via a third-party component. Customers are told to rotate node credentials."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "Blockchain infrastructure provider Chainstack disclosed an attack on 3 Nov. It says the attacker got into a development environment on 26 Oct, moved to production, and was detected and cut off on 31 Oct."
+        },
+        {
+          "type": "stat",
+          "big": "5 days",
+          "label": "from first access to detection",
+          "note": "26 Oct to 31 Oct 2026, per Chainstack via The Hacker News"
+        },
+        {
+          "type": "point",
+          "title": "What was reached",
+          "body": "A database with organization names, account holder names, member emails and password hashes. Node credentials sat on reached systems too: \"We have no evidence they were read, but we are treating them as exposed.\""
+        },
+        {
+          "type": "point",
+          "title": "The bigger pattern",
+          "body": "The Hacker News reports the incident is assessed to be part of a large AI-powered attack campaign and overlaps with a China-linked ARTEX campaign. Chainstack did not share specifics."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Rotate Chainstack node credentials",
+            "Regenerate platform API keys",
+            "Change the password, and anywhere it was reused",
+            "Expect phishing that mentions this incident"
+          ]
+        }
+      ],
+      "question": "How long would a quiet attacker last in your dev environment before anyone noticed?",
+      "x_text": "Chainstack: an attacker got into a dev environment on 26 Oct, reached production and accessed names, emails and password hashes before being cut off on 31 Oct. Customers should rotate node credentials and API keys.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "In through a dev environment. Out with password hashes. 🔓\n\nWhat Chainstack disclosed (via The Hacker News, 3 Nov):\n→ An attacker reached a development environment on 26 Oct through a third-party component, then moved into production\n→ The intrusion was detected and access cut on 31 Oct\n→ A database with organization names, account holder names, member emails and password hashes was accessed\n→ Node credentials were on reached systems: Chainstack is treating them as exposed\n→ It is assessed to be part of a large AI-powered campaign that overlaps with China-linked ARTEX activity (Chainstack gave no specifics)\n\nWhat to do: rotate node credentials, regenerate platform API keys, change your password (and anywhere you reused it), and watch for phishing.\n\nSend this to whoever owns your Chainstack account 👇\n\nHow long would a quiet attacker last in your dev environment before anyone noticed?\n\nSource: The Hacker News (3 Nov 2026)\n\n#Chainstack #DataBreach #Web3Security #SupplyChainSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-am-03",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-11-05T12:00:00",
+      "story_key": "wardenstealer-aoki-ai-session-tokens-2026-11",
+      "send_to": "any dev using Claude Code or Codex",
+      "sources": [
+        {
+          "name": "Cybersecurity News (SpyCloud research)",
+          "url": "https://cybersecuritynews.com/hackers-use-new-infostealer-malware/",
+          "date": "2026-11-04"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "New password. Same stolen AI session.",
+        "segments": [
+          {
+            "say": "You reset your password. The attacker is still logged into your A I tools.",
+            "show": "Infostealers WardenStealer and Aoki grab AI session tokens that a password change may not stop.",
+            "card": "Password reset ≠ logged out",
+            "card_style": "alert"
+          },
+          {
+            "say": "SpyCloud counted over a hundred thirty thousand WardenStealer infections since August.",
+            "show": "SpyCloud: more than 130,000 unique WardenStealer infections since 3 Aug 2026.",
+            "card": "130,000+ infections",
+            "card_style": "stat"
+          },
+          {
+            "say": "They take tokens for Claude Code, Codex, ChatGPT and Cursor. Revoke sessions and rotate keys.",
+            "show": "Stolen: OAuth and refresh tokens, MCP server auth, API keys. Fix: revoke active sessions, rotate API keys and tokens.",
+            "card": "Revoke sessions · rotate keys",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to any dev using Claude Code or Codex.",
+            "show": "Send this to any dev using Claude Code or Codex.",
+            "card": "↗ Send this to any dev using Claude Code or Codex"
+          }
+        ]
+      },
+      "x_text": "WardenStealer and Aoki infostealers grab ChatGPT, Claude Code, Codex and Cursor tokens from Windows PCs. SpyCloud counted 130,000+ WardenStealer infections. A password reset may not end a stolen session: revoke sessions, rotate keys.\n\n#AISecurity #InfoSec",
+      "ig_caption": "You reset your password. The attacker is still logged into your AI tools. 🔑\n\nWhat SpyCloud found (via Cybersecurity News, 4 Nov):\n→ Two Windows infostealers, WardenStealer and Aoki, collect AI session data\n→ SpyCloud reported 130,000+ unique WardenStealer infections since first seeing it on 3 Aug 2026\n→ Claude Code credentials in the logs held OAuth access and refresh tokens plus auth for connected MCP servers; Codex data held an OpenAI API key\n→ Aoki logs held data tied to ChatGPT, Claude Code, Claude Desktop, Codex, GitHub Copilot and Cursor\n→ This is theft from infected endpoints, not a breach of ChatGPT, Claude or Codex themselves\n\nWhat to do: revoke active sessions, rotate exposed API keys and tokens, review unusual API use, and add AI credentials to every developer-laptop infostealer investigation.\n\nSend this to any dev using Claude Code or Codex 👇\n\nIf a dev laptop got an infostealer today, would your playbook include their AI tool tokens?\n\nSource: Cybersecurity News, citing SpyCloud research (4 Nov 2026)\n\n#Infostealer #AISecurity #ClaudeCode #ChatGPT #SessionHijacking #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-am-04",
+      "kind": "carousel",
+      "category": "AI NEWS",
+      "slot": "2026-11-05T13:30:00",
+      "story_key": "openai-internal-security-lapses-reuters-2026-11",
+      "send_to": "whoever runs security for your AI team",
+      "sources": [
+        {
+          "name": "Reuters (via Claims Journal)",
+          "url": "https://www.claimsjournal.com/news/national/2026/11/04/341107.htm",
+          "date": "2026-11-04"
+        }
+      ],
+      "cover": {
+        "hook": "A quarter of OpenAI's production engineers, moved to security.",
+        "sub": "Reuters: staff warned leaders about security lapses for years, starting before ChatGPT launched. Based on people familiar with the matter."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What Reuters reports",
+          "body": "Five people familiar with the matter say employees raised concerns about OpenAI's security practices with leaders and the board before ChatGPT launched in late 2022."
+        },
+        {
+          "type": "stat",
+          "big": "1 in 4",
+          "label": "production engineers reassigned to security infrastructure in August",
+          "note": "Per one person familiar, describing a move by executive Thibault Sottiaux"
+        },
+        {
+          "type": "point",
+          "title": "The gaps described",
+          "body": "One monorepo was reachable by anyone at OpenAI with code access; OpenAI says it doesn't hold all code or model weights. Some tooling, like research sandboxes, had no regular security reviews; OpenAI says it now does them."
+        },
+        {
+          "type": "point",
+          "title": "What OpenAI says",
+          "body": "A spokesperson said protecting its technology, data and people is \"a matter of national importance\". After Reuters asked for comment, OpenAI posted that it is planning its \"next internal security sprint\"."
+        },
+        {
+          "type": "actions",
+          "title": "Check your own AI team",
+          "items": [
+            "Who can read your whole code repo?",
+            "Do research sandboxes get security reviews?",
+            "Are model weights in a separate, logged store?",
+            "Is security staffed before the next launch?"
+          ]
+        }
+      ],
+      "question": "In your team, does shipping fast ever win over a security review?",
+      "x_text": "OpenAI: Reuters reports staff warned leaders about security lapses for years, starting before ChatGPT. Per one source, a quarter of production engineers moved to security in August. OpenAI plans its next internal security sprint.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "A quarter of OpenAI's production engineers, moved to security. 🧠\n\nWhat Reuters reported (4 Nov), citing people familiar with the matter:\n→ Employees raised security concerns with leaders and the board before ChatGPT launched in late 2022 (five people)\n→ In August, executive Thibault Sottiaux reassigned a quarter of production engineers to security infrastructure (one person)\n→ A single monorepo was reachable by anyone at OpenAI with code access; OpenAI says it doesn't contain all code or model weights\n→ Some internal tooling such as research sandboxes had no regular security reviews; OpenAI says it now runs them\n→ OpenAI says it is planning its \"next internal security sprint\"\n\nWhat to do: check who can read your whole repo, put sandboxes and internal tools on a review schedule, keep model weights in a separate logged store, and staff security before the next launch.\n\nSend this to whoever runs security for your AI team 👇\n\nIn your team, does shipping fast ever win over a security review?\n\nSource: Reuters via Claims Journal (4 Nov 2026)\n\n#OpenAI #AISecurity #InsiderRisk #AppSec #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-am-05",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-11-05T14:30:00",
+      "story_key": "kernel-api-key-gpu-cryptomining-breach-2026-11",
+      "send_to": "whoever owns your API keys",
+      "sources": [
+        {
+          "name": "Kernel (company notice)",
+          "url": "https://www.kernel.sh/blog/public-notice-of-security-incident-nov-4-2026",
+          "date": "2026-11-04"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "One leaked API key. Four GPU servers.",
+        "segments": [
+          {
+            "say": "One leaked A P I key. Ten days later, four G P U servers.",
+            "show": "Kernel: a compromised API key on 24 Oct led to access to 4 GPU-enabled servers on 3 Nov.",
+            "card": "1 API key → 4 GPU servers",
+            "card_style": "stat"
+          },
+          {
+            "say": "The key opened a staff login to the logging provider. The logs held more keys.",
+            "show": "27 Oct: the key gave access to a staff login at the logging provider, whose data held some API keys and customer apps' third-party secrets.",
+            "card": "Logs held more keys",
+            "card_style": "alert"
+          },
+          {
+            "say": "A cryptominer started. Kernel says zero point two eight percent of customers were hit.",
+            "show": "Kernel: 0.28% of customers impacted; evidence suggests a financially motivated cryptomining campaign. It is pushing scoped API keys.",
+            "card": "Use scoped keys · keep secrets out of logs",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever owns your A P I keys.",
+            "show": "Send this to whoever owns your API keys.",
+            "card": "↗ Send this to whoever owns your API keys"
+          }
+        ]
+      },
+      "x_text": "Kernel breach: a compromised API key (24 Oct) led to a staff login at its logging provider, more keys and secrets in logs, then 4 GPU servers on 3 Nov and a cryptominer. Kernel: 0.28% of customers impacted.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "One leaked API key. Ten days later, four GPU servers. 🖥️\n\nWhat Kernel disclosed (4 Nov):\n→ 24 Oct: an unauthorized party used a compromised Kernel API key to probe for access\n→ 27 Oct: the same key got them a staff login to Kernel's logging provider, whose data held a small number of API keys and customer apps' third-party secrets\n→ 3 Nov: a compromised hosting-provider credential gave access to 4 GPU servers; a cryptominer started on a dev server\n→ Detected 2 Nov, contained 3 Nov; Kernel says 0.28% of customers were impacted\n→ Kernel believes the attackers are financially motivated and use the AI-assisted platform ARTEX as a command center\n\nWhat to do: if you use Kernel, ask whether your keys or secrets were exposed and rotate them. Everywhere: use scoped API keys, keep secrets out of logs, and lock down logging and hosting accounts with strong MFA.\n\nSend this to whoever owns your API keys 👇\n\nIf one of your API keys leaked today, what else could it open?\n\nSource: Kernel security notice (4 Nov 2026)\n\n#APIKeys #DataBreach #SecretsManagement #Cryptomining #CloudSecurity #CyberSecurity"
+    }
+  ]
+}
