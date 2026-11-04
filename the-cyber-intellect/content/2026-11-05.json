@@ -1,0 +1,22 @@
+{
+  "editorialDate": "2026-11-05",
+  "notes": "One evergreen Instagram infographic for manual posting only. No Metricool or automatic publication. Official pip documentation.",
+  "posts": [
+    {
+      "category": "DEVSECOPS • PYTHON SUPPLY CHAIN",
+      "title": "Python Dependencies Need Integrity Checks",
+      "bullets": [
+        "Pin exact versions for reproducible installs.",
+        "Use pip --require-hashes for every direct and transitive dependency.",
+        "Prefer --only-binary :all: where compatible; isolate install jobs from secrets."
+      ],
+      "takeaway": "Pin. Verify. Isolate.",
+      "caption": "A pinned Python dependency is not necessarily integrity-verified. Use pip --require-hashes with hashes for every direct and transitive package, prefer wheels where practical, and isolate CI installs from production secrets.\n\n#DevSecOps #PythonSecurity #SupplyChainSecurity #AppSec\n\nSave this for later.",
+      "sources": [
+        "https://pip.pypa.io/en/stable/topics/secure-installs/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    }
+  ],
+  "reels": []
+}
