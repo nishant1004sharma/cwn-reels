@@ -63,7 +63,7 @@
         }
       ],
       "cover": {
-        "hook": "A certificate authority's VPN-only system ended up on the internet. For over a year.",
+        "hook": "A certificate authority's VPN-only system ended up on the internet.",
         "sub": "DigiCert says an unauthorized account read archived customer data, including some ID documents."
       },
       "slides": [
