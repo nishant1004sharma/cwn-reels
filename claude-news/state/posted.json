@@ -1657,6 +1657,76 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "One leaked API key. Four GPU servers.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "apt29-watering-hole-mobile-nday-2026-11",
+      "id": "2026-11-05-pm-01",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "No click. Just a website visit.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "credit-mutuel-arkea-supplier-attack-2026-11",
+      "id": "2026-11-05-pm-02",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A French bank says attackers came in through a supplier. Reports say €118M moved.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-948-linux-lpe-pipeline-2026-11",
+      "id": "2026-11-05-pm-03",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "948 Linux root exploits. Found by AI.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "muji-card-breach-1-09m-2026-11",
+      "id": "2026-11-05-pm-04",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "1.09 million MUJI Card numbers may be exposed. With dates of birth.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "dmi-northavimet-pilots-breach-2026-11",
+      "id": "2026-11-05-pm-05",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "5,000 pilots. One weather portal.",
+      "typefully_draft_id": null
     }
   ]
 }
