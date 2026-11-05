@@ -1220,6 +1220,473 @@
           "#Shorts"
         ]
       }
+    },
+    {
+      "id": "D1-R11",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Which framework gives you a certificate?",
+      "format": "quiz",
+      "source": "D1_L05_Security_Control_Frameworks_script.md",
+      "hook": "Which framework can an auditor certify?",
+      "quiz": {
+        "question": "Which framework lets an independent auditor certify your security management system?",
+        "options": [
+          "NIST 800-53",
+          "ISO 27001",
+          "COBIT",
+          "PCI DSS"
+        ],
+        "answer": 1,
+        "reveal": 2
+      },
+      "segments": [
+        {
+          "say": "Exam question. Which framework lets an independent auditor certify your security management system?",
+          "show": "Exam question: which framework lets an independent auditor certify your security management system?"
+        },
+        {
+          "say": "A, N I S T eight hundred fifty-three. B, I S O twenty-seven oh oh one. C, Cobit. Or D, P C I D S S. Lock in your answer.",
+          "show": "A) NIST 800-53  B) ISO 27001  C) COBIT  D) PCI DSS. Lock in your answer."
+        },
+        {
+          "say": "It's B... I S O twenty-seven oh oh one defines an information security management system, and you can be certified against it.",
+          "show": "It's B: ISO 27001 defines an information security management system, and you can be certified against it.",
+          "card": "ISO 27001"
+        },
+        {
+          "say": "N I S T eight hundred fifty-three is a control catalog. Cobit governs enterprise I T.",
+          "show": "NIST 800-53 is a control catalog. COBIT governs enterprise IT.",
+          "card": "Catalog vs governance"
+        },
+        {
+          "say": "And P C I D S S is a contractual industry standard... not a law.",
+          "show": "And PCI DSS is a contractual industry standard, not a law.",
+          "card": "PCI DSS ≠ law",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Which security framework can be certified? #Shorts",
+        "caption": "ISO 27001 defines an information security management system that an independent auditor can certify. NIST 800-53 is a control catalog, COBIT governs enterprise IT, and PCI DSS is a contractual standard, not a law.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#ISO27001",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R11",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Arup 2024: the deepfake video call",
+      "format": "breach-story",
+      "source": "Reports on the Arup case (Hong Kong police via RTHK; Arup confirmed to CNN) as aggregated by Business Insider, Mumbrella, Investing.com, Allwork.space (retrieved 5 Nov 2026)",
+      "hook": "Everyone on the call was fake",
+      "segments": [
+        {
+          "say": "Picture a video call with your boss and your colleagues. Now imagine every face is fake.",
+          "show": "Picture a video call with your boss and your colleagues. Now imagine every face is fake.",
+          "card": "Every face was fake"
+        },
+        {
+          "say": "Early twenty twenty-four. A finance employee at Arup's Hong Kong office got a message about a secret payment.",
+          "show": "Early 2024. A finance employee at Arup's Hong Kong office got a message about a secret payment.",
+          "card": "Secret payment request"
+        },
+        {
+          "say": "They suspected phishing... so the scammers invited them to a video call.",
+          "show": "They suspected phishing, so the scammers invited them to a video call.",
+          "card": "Phishing? Join the call."
+        },
+        {
+          "say": "On the call, the C F O and other staff looked and sounded real. Police say they were deepfakes.",
+          "show": "On the call, the CFO and other staff looked and sounded real. Police say they were deepfakes.",
+          "card": "Deepfake CFO",
+          "card_style": "alert"
+        },
+        {
+          "say": "The employee sent about two hundred million Hong Kong dollars... fifteen transfers, five accounts.",
+          "show": "The employee sent about HK$200 million across 15 transfers to 5 accounts.",
+          "card": "$25M|lost in 15 transfers",
+          "card_style": "stat"
+        },
+        {
+          "say": "The lesson? A familiar face on video is no longer proof. Verify big payments with a second channel you trust.",
+          "show": "The lesson: a familiar face on video is no longer proof. Verify big payments through a second, trusted channel.",
+          "card": "Verify out of band",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Every face on the call was fake #Shorts",
+        "caption": "Hong Kong, early 2024: a finance employee at Arup joined a video call with what looked like the CFO and colleagues. Police say they were deepfakes. About HK$200 million (roughly US$25 million) was sent in 15 transfers. Verify big payments through a second trusted channel.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#Deepfake",
+          "#SocialEngineering",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D1-R12",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Governance: who owns security?",
+      "format": "myth-fact",
+      "source": "D1_L03_Security_Governance_Business_Alignment_script.md",
+      "hook": "Security is an I T problem. Right?",
+      "segments": [
+        {
+          "say": "Myth. Security is an I T problem that I T should fix on its own.",
+          "show": "Myth: security is an IT problem that IT should fix on its own.",
+          "card": "MYTH: it's IT's job",
+          "card_style": "myth"
+        },
+        {
+          "say": "Fact. Security governance starts at the top. It's a business issue.",
+          "show": "Fact: security governance starts at the top. It's a business issue.",
+          "card": "FACT: it starts at the top",
+          "card_style": "fact"
+        },
+        {
+          "say": "Senior management sets direction and approves policy. Middle management builds standards. Staff carry them out.",
+          "show": "Senior management sets direction and approves policy. Middle management builds standards. Staff carry them out.",
+          "card": "Top-down"
+        },
+        {
+          "say": "Plans come in three levels... strategic, about five years. Tactical, about one year. Operational, day to day.",
+          "show": "Plans come in three levels: strategic (about 5 years), tactical (about 1 year), operational (day to day).",
+          "card": "Strategic · Tactical · Operational"
+        },
+        {
+          "say": "The biggest factor for success? Senior management support.",
+          "show": "The biggest factor for success: senior management support.",
+          "card": "Management support",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Is security really just an IT problem? #Shorts",
+        "caption": "Security governance is top-down and aligned to the business. Senior management sets direction and approves policy; plans run strategic, tactical, then operational. Senior management support is the biggest success factor on the exam.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#SecurityGovernance",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R12",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "xz Utils 2024: the patient backdoor",
+      "format": "breach-story",
+      "source": "Wikipedia, XZ Utils backdoor (disclosed 29 Mar 2024; CVE-2024-3094; versions 5.6.0 and 5.6.1; CVSS 10.0; found by Andres Freund while investigating SSH CPU use); search results retrieved 5 Nov 2026",
+      "hook": "He spent two years earning trust",
+      "segments": [
+        {
+          "say": "What if the attacker is the helpful new contributor? Someone fixing bugs for two years?",
+          "show": "What if the attacker is the helpful new contributor, fixing bugs for two years?",
+          "card": "Helpful contributor?"
+        },
+        {
+          "say": "That's the xz Utils story. A tiny compression library, used all over Linux.",
+          "show": "That's the xz Utils story: a tiny compression library used all over Linux.",
+          "card": "xz Utils"
+        },
+        {
+          "say": "An account called Jia Tan built trust in the project, then shipped versions five point six point zero and five point six point one with a backdoor.",
+          "show": "An account called Jia Tan built trust in the project, then shipped versions 5.6.0 and 5.6.1 with a backdoor.",
+          "card": "Versions 5.6.0 / 5.6.1",
+          "card_style": "alert"
+        },
+        {
+          "say": "It could alter how the O p e n S S H server behaves. Severity score... ten out of ten.",
+          "show": "It could alter how the OpenSSH server behaves. Severity score: 10 out of 10.",
+          "card": "10.0|CVSS severity",
+          "card_style": "stat"
+        },
+        {
+          "say": "A Microsoft developer, Andres Freund, noticed odd C P U use during S S H logins and disclosed it on March twenty-ninth, twenty twenty-four.",
+          "show": "Microsoft developer Andres Freund noticed odd CPU use during SSH logins and disclosed it on 29 March 2024.",
+          "card": "Caught by curiosity"
+        },
+        {
+          "say": "The lesson? Your supply chain includes people. Track your dependencies, and verify what you ship.",
+          "show": "The lesson: your supply chain includes people. Track your dependencies and verify what you ship.",
+          "card": "Know your dependencies",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "He spent two years earning trust, then planted a backdoor #Shorts",
+        "caption": "In 2024 a backdoor (CVE-2024-3094, CVSS 10.0) was found in xz Utils versions 5.6.0 and 5.6.1 after a contributor built trust over a long period. It was caught by Andres Freund and disclosed on 29 March 2024. Know and verify your dependencies.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#SupplyChain",
+          "#OpenSource",
+          "#InfoSec",
+          "#DataBreach",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D1-R13",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Supply chain risk: SBOM and assessment",
+      "format": "memory-trick",
+      "source": "D1_L08_Supply_Chain_Risk_Management_script.md",
+      "hook": "Every supplier is a doorway",
+      "segments": [
+        {
+          "say": "Every supplier is a doorway into your organization.",
+          "show": "Every supplier is a doorway into your organization.",
+          "card": "Every supplier = a doorway"
+        },
+        {
+          "say": "Remember T C I S. Tampering, counterfeits, implants, and service providers.",
+          "show": "Remember TCIS: tampering, counterfeits, implants, service providers.",
+          "card": "T · C · I · S"
+        },
+        {
+          "say": "Tampering changes a product before it reaches you. Counterfeits are fakes. Implants are hidden hardware or software.",
+          "show": "Tampering changes a product before it reaches you. Counterfeits are fakes. Implants are hidden hardware or software.",
+          "card": "Three product risks"
+        },
+        {
+          "say": "A software bill of materials, an S bom, lists every component inside your software.",
+          "show": "A software bill of materials (SBOM) lists every component inside your software.",
+          "card": "SBOM = ingredient list"
+        },
+        {
+          "say": "Exam tip. Supplier assessment isn't one time. The best answer includes continuous monitoring.",
+          "show": "Exam tip: supplier assessment isn't one-time. The best answer includes continuous monitoring.",
+          "card": "Monitor continuously",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Supply chain risk: the CISSP memory trick #Shorts",
+        "caption": "Remember TCIS for supply chain risks: tampering, counterfeits, implants, service providers. An SBOM lists every software component, and supplier assessment must continue throughout the relationship.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#SupplyChain",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R13",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Change Healthcare 2024: no MFA on one portal",
+      "format": "breach-story",
+      "source": "TechTarget and SC Media coverage of UnitedHealth CEO Andrew Witty's Senate testimony, 1 May 2024 (retrieved 5 Nov 2026)",
+      "hook": "One portal without MFA",
+      "segments": [
+        {
+          "say": "One login page. No multi-factor authentication. And one of the biggest healthcare breaches in US history.",
+          "show": "One login page. No multi-factor authentication. And one of the biggest healthcare breaches in US history.",
+          "card": "One portal. No MFA.",
+          "card_style": "alert"
+        },
+        {
+          "say": "February twelfth, twenty twenty-four. Criminals used stolen credentials on a Change Healthcare Citrix remote access portal.",
+          "show": "12 Feb 2024. Criminals used stolen credentials on a Change Healthcare Citrix remote-access portal.",
+          "card": "Stolen credentials"
+        },
+        {
+          "say": "That portal didn't have M F A turned on, even though company policy said external systems should.",
+          "show": "That portal didn't have MFA turned on, even though company policy said external systems should.",
+          "card": "Policy ≠ practice",
+          "card_style": "alert"
+        },
+        {
+          "say": "Nine days later, the BlackCat ransomware group deployed ransomware.",
+          "show": "Nine days later, the BlackCat ransomware group deployed ransomware.",
+          "card": "9|days to ransomware",
+          "card_style": "stat"
+        },
+        {
+          "say": "The CEO told the Senate on May first. Senator Wyden said it could have been stopped with cybersecurity one oh one.",
+          "show": "The CEO told the Senate on 1 May. Senator Wyden said it could have been stopped with 'cybersecurity 101'.",
+          "card": "Cybersecurity 101"
+        },
+        {
+          "say": "The lesson? Audit every external login. One missing M F A switch can undo everything else.",
+          "show": "The lesson: audit every external login. One missing MFA switch can undo everything else.",
+          "card": "Audit external logins",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "One portal without MFA brought down US healthcare #Shorts",
+        "caption": "Change Healthcare, 2024: attackers used stolen credentials on a Citrix portal that had no MFA, then deployed BlackCat ransomware nine days later, per the UnitedHealth CEO's Senate testimony. Audit every external login for MFA.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#MFA",
+          "#Ransomware",
+          "#DataBreach",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D1-R14",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "GDPR essentials",
+      "format": "scenario",
+      "source": "D1_L14_Privacy_Transborder_Data_Compliance_script.md",
+      "hook": "You breached EU data. The clock starts now.",
+      "segments": [
+        {
+          "say": "Your company just had a breach of E U citizens' personal data. What now?",
+          "show": "Your company just had a breach of EU citizens' personal data. What now?",
+          "card": "Breach of EU data"
+        },
+        {
+          "say": "The G D P R applies to anyone processing personal data of people in the E U... wherever the company is based.",
+          "show": "The GDPR applies to anyone processing personal data of people in the EU, wherever the company is based.",
+          "card": "GDPR is global"
+        },
+        {
+          "say": "You must usually report the breach to the regulator within seventy-two hours.",
+          "show": "You must usually report the breach to the regulator within 72 hours.",
+          "card": "72|hours to report",
+          "card_style": "stat"
+        },
+        {
+          "say": "Fines can reach four percent of global annual turnover, or twenty million euros, whichever is higher.",
+          "show": "Fines can reach 4% of global annual turnover or €20 million, whichever is higher.",
+          "card": "4% or €20M",
+          "card_style": "alert"
+        },
+        {
+          "say": "And sending that data abroad? Standard contractual clauses are a common correct answer.",
+          "show": "And sending that data abroad? Standard contractual clauses are a common correct answer.",
+          "card": "Use SCCs",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "GDPR breach: you have 72 hours #Shorts",
+        "caption": "Under the GDPR, personal data breaches must usually be reported to the regulator within 72 hours. Fines reach 4% of global annual turnover or €20 million, whichever is higher. Standard contractual clauses are a common mechanism for cross-border transfers.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#GDPR",
+          "#Privacy",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D1-R15",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Investigation types and evidence standards",
+      "format": "worked-example",
+      "source": "D1_L15_Investigations_Awareness_Domain_1_Wrap_Up_script.md",
+      "hook": "Which investigation needs proof beyond reasonable doubt?",
+      "segments": [
+        {
+          "say": "Five investigation types show up on the exam. Each has its own standard of evidence.",
+          "show": "Five investigation types show up on the exam, each with its own standard of evidence.",
+          "card": "5 investigation types"
+        },
+        {
+          "say": "Administrative is internal, with the lowest standard.",
+          "show": "Administrative: internal, lowest standard of evidence.",
+          "card": "Administrative = lowest"
+        },
+        {
+          "say": "Civil uses the preponderance of the evidence.",
+          "show": "Civil: preponderance of the evidence.",
+          "card": "Civil = preponderance"
+        },
+        {
+          "say": "Criminal needs proof beyond a reasonable doubt... run by law enforcement.",
+          "show": "Criminal: proof beyond a reasonable doubt, run by law enforcement.",
+          "card": "Criminal = beyond reasonable doubt",
+          "card_style": "answer"
+        },
+        {
+          "say": "Regulatory and industry standards investigations complete the five. And if an internal case might turn criminal, handle evidence to the criminal standard from day one.",
+          "show": "Regulatory and industry-standards investigations complete the five. If an internal case might turn criminal, handle evidence to the criminal standard from day one.",
+          "card": "Criminal standard from day one"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Which investigation needs proof beyond reasonable doubt? #Shorts",
+        "caption": "CISSP investigation types: administrative (lowest standard), civil (preponderance of the evidence), criminal (beyond a reasonable doubt), regulatory and industry standards. If a case might go criminal, handle evidence to that standard from day one.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#DigitalForensics",
+          "#CyberSecurity",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
     }
   ]
 }
