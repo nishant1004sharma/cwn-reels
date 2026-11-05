@@ -1,0 +1,69 @@
+{
+ "date": "2026-11-05",
+ "run": "promo",
+ "items": [
+  {
+   "id": "2026-11-05-promo-01",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-05T23:55:00",
+   "story_key": "promo-agentic-ai-security-owasp-top10-list-2026-11-05",
+   "send_to": "whoever is building AI agents",
+   "sources": [
+    {
+     "name": "OWASP GenAI Security Project",
+     "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+     "date": "2025-12-09"
+    },
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/agentic-ai-security"
+    }
+   ],
+   "cover": {
+    "hook": "10 ways an AI agent gets turned against you. Save this list.",
+    "sub": "The OWASP Top 10 for Agentic Applications, ASI01 to ASI10."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "ASI01 to ASI03",
+     "body": "01 Agent Goal Hijack: hidden instructions redirect the agent.\n02 Tool Misuse: connected tools used in ways nobody intended.\n03 Identity & Privilege Abuse: overbroad tokens and permissions."
+    },
+    {
+     "type": "point",
+     "title": "ASI04 to ASI06",
+     "body": "04 Agentic Supply Chain Vulnerabilities: poisoned tools, plugins, MCP servers.\n05 Unexpected Code Execution.\n06 Memory & Context Poisoning: bad data that keeps steering the agent later."
+    },
+    {
+     "type": "point",
+     "title": "ASI07 to ASI10",
+     "body": "07 Insecure Inter-Agent Communication.\n08 Cascading Failures.\n09 Human-Agent Trust Exploitation.\n10 Rogue Agents."
+    },
+    {
+     "type": "stat",
+     "big": "10",
+     "label": "risks in the OWASP Top 10 for Agentic Applications",
+     "note": "Published Dec 2025 by the OWASP GenAI Security Project"
+    },
+    {
+     "type": "actions",
+     "title": "Start this week",
+     "items": [
+      "List every tool and token each agent has",
+      "Treat pages, emails and files as untrusted input",
+      "Vet MCP servers like any other dependency"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "Learn all 10, plus MCP",
+     "body": "My Udemy course, Agentic AI Security: OWASP Top 10 for AI Agents & MCP, walks through every risk with diagrams and the controls to put in place before an agent goes live. Link in bio."
+    }
+   ],
+   "question": "Which of the 10 would your agents fail first?",
+   "x_text": "The OWASP Top 10 for Agentic Applications: goal hijack, tool misuse, privilege abuse, supply chain, code execution, memory poisoning and 4 more. My Udemy course covers all 10, plus MCP.\n\n#AgenticAI #AISecurity",
+   "ig_caption": "10 ways an AI agent gets turned against you. Save this list. 🤖\n\nThe OWASP Top 10 for Agentic Applications (Dec 2025):\n→ ASI01 Agent Goal Hijack · ASI02 Tool Misuse · ASI03 Identity & Privilege Abuse\n→ ASI04 Agentic Supply Chain Vulnerabilities · ASI05 Unexpected Code Execution\n→ ASI06 Memory & Context Poisoning · ASI07 Insecure Inter-Agent Communication\n→ ASI08 Cascading Failures · ASI09 Human-Agent Trust Exploitation · ASI10 Rogue Agents\n\nStart this week: list every tool and token each agent has, treat pages, emails and files as untrusted input, and vet MCP servers like any other dependency.\n\n🎓 I built a course on all 10, plus MCP: \"Agentic AI Security: OWASP Top 10 for AI Agents & MCP\" on Udemy. Link in bio, or udemy.com/course/agentic-ai-security\n\nSend this to whoever is building AI agents 👇\n\nWhich of the 10 would your agents fail first?\n\nSource: OWASP GenAI Security Project\n\n#AgenticAI #AISecurity #OWASP #MCP #AIAgents #CyberSecurity"
+  }
+ ]
+}
