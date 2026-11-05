@@ -1727,6 +1727,20 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "5,000 pilots. One weather portal.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "promo-agentic-ai-security-owasp-top10-list-2026-11-05",
+      "id": "2026-11-05-promo-01",
+      "date": "2026-11-05",
+      "slot": "2026-11-06T00:01:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "10 ways an AI agent gets turned against you. Save this list.",
+      "typefully_draft_id": null
     }
   ]
 }
