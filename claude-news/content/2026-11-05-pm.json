@@ -1,0 +1,264 @@
+{
+  "date": "2026-11-05",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-11-05-pm-01",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-11-05T16:00:00",
+      "story_key": "apt29-watering-hole-mobile-nday-2026-11",
+      "send_to": "whoever still skips phone updates",
+      "sources": [
+        {
+          "name": "BleepingComputer (Sekoia research)",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+          "date": "2026-11-04"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "No click. Just a website visit.",
+        "segments": [
+          {
+            "say": "No click. No download. Just opening a website.",
+            "show": "Sekoia: watering-hole sites pushed exploit chains to iPhones and Android phones, no user interaction needed.",
+            "card": "0 clicks needed",
+            "card_style": "alert"
+          },
+          {
+            "say": "Sekoia links it to A P T twenty-nine, with moderate to high confidence. Sites in the U S, Ukraine, the Czech Republic and Bulgaria.",
+            "show": "Sekoia attributes it to APT29 (Midnight Blizzard), moderate-to-high confidence. Compromised and lookalike sites in the U.S., Ukraine, Czech Republic, Bulgaria.",
+            "card": "APT29, per Sekoia",
+            "card_style": "stat"
+          },
+          {
+            "say": "Every flaw was already patched. Old iPhones and old Chrome got hit. Update today.",
+            "show": "Targets: iOS 16.7, iOS 18.5, Chrome for Android 139-145 (not 143). Apple and Google have patched every flaw used.",
+            "card": "Update iOS + Chrome",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever still skips phone updates.",
+            "show": "Send this to whoever still skips phone updates.",
+            "card": "↗ Send this to whoever still skips phone updates"
+          }
+        ]
+      },
+      "x_text": "APT29 watering holes: Sekoia links (moderate-to-high confidence) attacks on iOS 16.7, iOS 18.5 and Chrome for Android 139-145 to Midnight Blizzard. Visiting a compromised site was enough. Every flaw used was already patched: update.\n\n#APT29 #CyberSecurity",
+      "ig_caption": "No click. No download. Just opening a website. 📱\n\nWhat BleepingComputer reported from Sekoia's research (4 Nov):\n→ Compromised and lookalike sites in the U.S., Ukraine, the Czech Republic and Bulgaria profiled visitors' phones, then served a matching exploit chain with no user interaction\n→ Targets: iOS 16.7, iOS 18.5 and Chrome for Android 139 to 145 (not 143)\n→ On iOS 18.5 the payload harvested WhatsApp and Telegram data, Keychain credentials, location and photos\n→ Sekoia attributes it to APT29 (Midnight Blizzard) with moderate-to-high confidence\n→ Apple and Google had already patched every flaw used; nothing persisted after a reboot\n\nWhat to do: update iOS and Chrome on every phone, push minimum OS versions through MDM, and treat old unsupported phones as untrusted for work data.\n\nSend this to whoever still skips phone updates 👇\n\nHow many phones in your company are still a few versions behind?\n\nSource: BleepingComputer, citing Sekoia (4 Nov 2026)\n\n#APT29 #MobileSecurity #iOS #Android #WateringHole #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-pm-02",
+      "kind": "carousel",
+      "category": "ATTACK",
+      "slot": "2026-11-05T17:00:00",
+      "story_key": "credit-mutuel-arkea-supplier-attack-2026-11",
+      "send_to": "whoever approves your payment systems",
+      "sources": [
+        {
+          "name": "FinanceFeeds",
+          "url": "https://financefeeds.com/french-bank-credit-mutuel-arkea-confirms-cyberattack-amid-reports-of-133-million-theft-and-crypto-transfers/",
+          "date": "2026-11-05"
+        }
+      ],
+      "cover": {
+        "hook": "A French bank says attackers came in through a supplier. Reports say €118M moved.",
+        "sub": "Crédit Mutuel Arkéa confirmed the attack on 4 Nov. It won't confirm the figure, and says customers won't lose money."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What the bank says",
+          "body": "Crédit Mutuel Arkéa said on 4 Nov that attackers got in through \"the platform of an external service provider\", then made transfers to other financial institutions. Customer accounts were not used."
+        },
+        {
+          "type": "stat",
+          "big": "€118M",
+          "label": "reported loss ($133M), not confirmed by the bank",
+          "note": "Per FinanceFeeds, 5 Nov 2026"
+        },
+        {
+          "type": "point",
+          "title": "Following the money",
+          "body": "Investigator ZachXBT raised his estimate of suspicious transactions above $133M. Bitquery traced about $108.8M in USDC withdrawals from Kraken, Crypto.com and OKX on 1-2 Nov, but says it can't definitively link them to Arkéa."
+        },
+        {
+          "type": "point",
+          "title": "Where it stands",
+          "body": "The bank says it's contained, some funds are blocked and most suspended transfers resumed on 4 Nov. The Paris prosecutor has opened an investigation. The supplier and the attackers are not named."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "List every supplier platform that can start a payment",
+            "Require out-of-band approval for large outbound transfers",
+            "Alert on unusual transfer volumes and new beneficiaries",
+            "Review vendor access to payment systems"
+          ]
+        }
+      ],
+      "question": "Could a supplier's platform start a payment from your organisation without a second human check?",
+      "x_text": "Crédit Mutuel Arkéa: attackers got in via an external service provider's platform and made transfers to other institutions. Reports put it at €118M ($133M); the bank won't confirm the figure and says customers won't lose money.\n\n#CyberAttack #CyberSecurity",
+      "ig_caption": "A French bank says attackers came in through a supplier. Reports say €118M moved. 🏦\n\nWhat FinanceFeeds reported (5 Nov):\n→ Crédit Mutuel Arkéa said on 4 Nov that attackers got in through \"the platform of an external service provider\" and made transfers to other financial institutions\n→ Reports put the loss at €118M ($133M); the bank declined to confirm the figure\n→ Customer accounts were not used and the bank says clients won't lose money\n→ ZachXBT raised his estimate of suspicious transactions above $133M; Bitquery traced ~$108.8M in USDC withdrawals but can't definitively link them to Arkéa\n→ The Paris prosecutor has opened an investigation\n\nWhat to do: map which supplier platforms can start payments, require out-of-band approval for large transfers, and alert on new beneficiaries.\n\nSend this to whoever approves your payment systems 👇\n\nCould a supplier's platform start a payment from your organisation without a second human check?\n\nSource: FinanceFeeds (5 Nov 2026)\n\n#CreditMutuelArkea #BankingSecurity #ThirdPartyRisk #CyberAttack #FinTech #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-pm-03",
+      "kind": "reel",
+      "category": "AI SECURITY",
+      "slot": "2026-11-05T20:00:00",
+      "story_key": "openai-948-linux-lpe-pipeline-2026-11",
+      "send_to": "whoever patches your Linux servers",
+      "sources": [
+        {
+          "name": "Interesting Engineering",
+          "url": "https://interestingengineering.com/ai-robotics/openai-agents-linux-kernel-vulnerabilities-exploits",
+          "date": "2026-11-04"
+        },
+        {
+          "name": "Unite.AI",
+          "url": "https://unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws",
+          "date": "2026-11-04"
+        },
+        {
+          "name": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/openai-mints-948-linux-root-exploits-in-12m-pipeline-run",
+          "date": "2026-11-05"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "948 Linux root exploits. Found by AI.",
+        "segments": [
+          {
+            "say": "Nine hundred forty-eight Linux root exploits. Found by A I in one run.",
+            "show": "OpenAI: a prototype pipeline using an upcoming cyber model found and exploited 948 unique Linux local privilege escalation flaws.",
+            "card": "948 root exploits",
+            "card_style": "stat"
+          },
+          {
+            "say": "Myth: A I bug hunting is hype. Reality: about twelve hundred eighty dollars per exploit.",
+            "show": "Run cost about $1.21M in API credits: 2,308 candidates, 1,724 reproduced, tested in isolated VMs.",
+            "card": "≈$1,279 per exploit",
+            "card_style": "stat"
+          },
+          {
+            "say": "Each needs an attacker already on the box. Sixty-one are patched upstream. Keep updating kernels.",
+            "show": "Local privilege escalation: needs existing access. Ten days after the scan: 61 patched upstream, 43 patches staging.",
+            "card": "Patch kernels fast",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever patches your Linux servers.",
+            "show": "Send this to whoever patches your Linux servers.",
+            "card": "↗ Send this to whoever patches your Linux servers"
+          }
+        ]
+      },
+      "x_text": "OpenAI says an AI pipeline with an upcoming cyber model found and exploited 948 unique Linux local privilege escalation flaws for about $1.21M in API credits. All need local access first; 61 were patched upstream within 10 days.\n\n#AISecurity #Linux",
+      "ig_caption": "948 Linux root exploits. Found by AI in one run. 🐧\n\nWhat OpenAI's research shows (via Interesting Engineering, Unite.AI and AI Weekly, 4-5 Nov):\n→ A prototype pipeline using an upcoming, unnamed OpenAI cyber model produced 948 unique working local privilege escalation exploits\n→ It started from 2,308 candidate bugs; 1,724 were reproduced in isolated test VMs\n→ Total cost: about $1.21M in API credits, roughly $1,279 per exploit\n→ These need an attacker already on the machine: they turn a foothold into root\n→ Ten days after the scan, 61 were patched upstream and 43 patches were staging; OpenAI says the goal is to help defenders fix bugs first\n\nWhat to do: shorten your kernel patch cycle, plan for more kernel updates, and limit who gets a shell on your servers.\n\nSend this to whoever patches your Linux servers 👇\n\nHow long does a kernel update take to reach your production servers?\n\nSource: Interesting Engineering, Unite.AI, AI Weekly (4-5 Nov 2026)\n\n#OpenAI #AISecurity #Linux #PrivilegeEscalation #VulnerabilityResearch #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-pm-04",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-05T21:00:00",
+      "story_key": "muji-card-breach-1-09m-2026-11",
+      "send_to": "anyone you know with a MUJI Card",
+      "sources": [
+        {
+          "name": "Tokyo Reporter (citing Fuji News Network)",
+          "url": "https://www.tokyoreporter.com/japan-news/muji-reveals-massive-data-breach-over-1-million-credit-card-numbers-potentially-compromised/",
+          "date": "2026-11-05"
+        }
+      ],
+      "cover": {
+        "hook": "1.09 million MUJI Card numbers may be exposed. With dates of birth.",
+        "sub": "MUJI operator Ryohin Keikaku confirmed it on 4 Nov. Names and CVV codes were not included, it says."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "Who's affected",
+          "body": "MUJI Card members who joined before July 2021. Exposed: credit card numbers and dates of birth. Ryohin Keikaku says cardholder names and CVV codes were not included."
+        },
+        {
+          "type": "stat",
+          "big": "1.09M",
+          "label": "customers whose card data may be compromised",
+          "note": "Per Fuji News Network via Tokyo Reporter, 4-5 Nov 2026"
+        },
+        {
+          "type": "point",
+          "title": "A second, smaller set",
+          "body": "Separately, 120 records with partial card numbers and names were exposed, from customers who registered payment details in the MUJI app or online store."
+        },
+        {
+          "type": "point",
+          "title": "Not the first this autumn",
+          "body": "In late October the company said a separate incident may have exposed up to 27.26 million email addresses and other profile data, with no financial data. It hasn't said how either breach happened."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Check card statements for small test charges",
+            "Ask your card issuer about a replacement card",
+            "Expect phishing that mentions MUJI",
+            "Retailers: watch checkout for card-testing bursts"
+          ]
+        }
+      ],
+      "question": "Would you replace the card now, or just watch your statements?",
+      "x_text": "MUJI operator Ryohin Keikaku: card numbers and dates of birth of about 1.09M MUJI Card members (joined before July 2021) may be compromised. It says names and CVV codes were not included. Check statements.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "1.09 million MUJI Card numbers may be exposed. With dates of birth. 💳\n\nWhat Tokyo Reporter reported, citing Fuji News Network (4-5 Nov):\n→ Ryohin Keikaku, MUJI's operator, says card data of about 1.09 million customers may be compromised\n→ It affects MUJI Card members who joined before July 2021: card numbers and dates of birth\n→ The company says names and CVV codes were not included\n→ Separately, 120 records with partial card numbers and names from the app and online store were exposed\n→ In late October it reported a separate incident that may have exposed up to 27.26 million email addresses\n\nWhat to do: check statements for small test charges, ask your issuer about a new card, and ignore \"MUJI security\" emails asking you to log in.\n\nSend this to anyone you know with a MUJI Card 👇\n\nWould you replace the card now, or just watch your statements?\n\nSource: Tokyo Reporter, citing Fuji News Network (5 Nov 2026)\n\n#MUJI #DataBreach #CreditCardFraud #Japan #Privacy #CyberSecurity"
+    },
+    {
+      "id": "2026-11-05-pm-05",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-11-05T22:30:00",
+      "story_key": "dmi-northavimet-pilots-breach-2026-11",
+      "send_to": "a pilot you know",
+      "sources": [
+        {
+          "name": "The Copenhagen Post (Ritzau)",
+          "url": "https://cphpost.dk/2026-11-05/news/round-up/personal-data-of-5000-pilots-exposed-in-cyberattack-on-danish-meteorological-institute/",
+          "date": "2026-11-05"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "5,000 pilots. One weather portal.",
+        "segments": [
+          {
+            "say": "Five thousand pilots. Their details downloaded from a weather portal.",
+            "show": "Danish Meteorological Institute: data on about 5,000 pilots with Northavimet logins was downloaded.",
+            "card": "≈5,000 pilots exposed",
+            "card_style": "stat"
+          },
+          {
+            "say": "Names, emails, nationalities and pilot certificate numbers. Intruders were in by October twenty-second.",
+            "show": "Northavimet: joint Nordic flight-planning weather portal. Unauthorized access to its user admin system found from 22 Oct.",
+            "card": "Names · emails · cert numbers",
+            "card_style": "alert"
+          },
+          {
+            "say": "D M I told pilots to change passwords. Expect phishing that knows your licence number.",
+            "show": "DMI is notifying pilots and has reported it to police and Datatilsynet. Fix: change your password, distrust emails quoting your certificate.",
+            "card": "Change password · watch for phishing",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to a pilot you know.",
+            "show": "Send this to a pilot you know.",
+            "card": "↗ Send this to a pilot you know"
+          }
+        ]
+      },
+      "x_text": "Danish Meteorological Institute: names, emails, nationalities and pilot certificate numbers of about 5,000 pilots with Northavimet logins were downloaded. Access to the portal's user admin system began by 22 Oct. Pilots: change passwords.\n\n#DataBreach #InfoSec",
+      "ig_caption": "5,000 pilots. Their details downloaded from a weather portal. ✈️\n\nWhat The Copenhagen Post reported (Ritzau, 5 Nov):\n→ The Danish Meteorological Institute (DMI) says unauthorized people downloaded a list of about 5,000 pilots with Northavimet logins\n→ Northavimet is a joint Nordic portal with weather for flight planning\n→ Exposed: names, email addresses, nationalities and pilot certificate numbers\n→ Intruders had access to a connected user admin system by 22 Oct; the portal was shut, updated and reopened\n→ DMI reported it to police and the Danish data protection agency; how they got in hasn't been said\n\nWhat to do: pilots should change their Northavimet password (and anywhere it's reused) and distrust emails that quote their certificate number.\n\nSend this to a pilot you know 👇\n\nWould you trust an email that quoted your licence number?\n\nSource: The Copenhagen Post / Ritzau (5 Nov 2026)\n\n#Aviation #DataBreach #Pilots #Denmark #Phishing #CyberSecurity"
+    }
+  ]
+}
