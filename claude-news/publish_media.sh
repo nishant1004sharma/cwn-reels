@@ -6,6 +6,7 @@
 # Usage: claude-news/publish_media.sh <out dir containing run folders> <remote url>
 set -euo pipefail
 OUT="$(cd "$1" && pwd)"; REMOTE="$2"; BR=claude-news-media
+REPO="$(pwd)"
 WORK="$(mktemp -d)"
 if git ls-remote --exit-code --heads "$REMOTE" "$BR" >/dev/null 2>&1; then
   git clone --quiet --depth 1 --branch "$BR" "$REMOTE" "$WORK/pub"
@@ -18,6 +19,13 @@ shopt -s nullglob
 for d in */; do
   d="${d%/}"
   if [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2} ]] && [[ "${d:0:10}" < "$CUTOFF" ]]; then
+    # A run file can schedule items days after its folder date (e.g. a weekly series batch):
+    # keep the folder while any of its item slots is later than the cutoff.
+    LAST=$(python3 -c 'import json,sys; print(max(i.get("slot","")[:10] for i in json.load(open(sys.argv[1]))["items"]))' \
+      "$REPO/claude-news/content/$d.json" 2>/dev/null || true)
+    if [[ -n "$LAST" ]] && ! [[ "$LAST" < "$CUTOFF" ]]; then
+      echo "kept $d (slots until $LAST)"; continue
+    fi
     rm -rf "$d"; echo "pruned $d"
   fi
 done
