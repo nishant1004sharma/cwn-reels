@@ -1811,6 +1811,77 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "Exploit attempts 9 minutes after the fix.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "nikke-pc-launcher-cdn-scripts-rat-2026-11",
+      "id": "2026-11-06-pm-01",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Official game launcher. Malware inside.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chatgpt-lockdown-mode-bypass-checkpoint-2026-11",
+      "id": "2026-11-06-pm-02",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "ChatGPT's Lockdown Mode had a side door.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "alpine-openssh-password-auth-bypass-2026-11",
+      "id": "2026-11-06-pm-03",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Alpine SSH: no-password accounts exposed",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-tampered-launcher-scripts",
+      "id": "2026-11-06-pm-04",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube",
+        "x"
+      ],
+      "voice": null,
+      "title": "Trusted Launcher, Hijacked",
+      "typefully_draft_id": 11737728
+    },
+    {
+      "story_key": "queens-public-library-ransomware-2026-11",
+      "id": "2026-11-06-pm-05",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "66 branches open. Systems dark.",
+      "typefully_draft_id": null
     }
   ]
 }
