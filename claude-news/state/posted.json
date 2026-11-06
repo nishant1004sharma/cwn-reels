@@ -1882,6 +1882,76 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "66 branches open. Systems dark.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "ai-ceo-attorney-impersonation-129m-charges-2026-11",
+      "id": "2026-11-07-am-01",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$129 million. A fake CEO on a video call.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-dispatch-browser-extension-takeover-2026-11",
+      "id": "2026-11-07-am-02",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A browser extension could tell your AI desktop agent what to do.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chainalysis-all-users-credentials-exposed-2026-11",
+      "id": "2026-11-07-am-03",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Crypto sleuths breached. All users exposed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-116606",
+      "id": "2026-11-07-am-04",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Your email security gateway. Root. No login.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-123158",
+      "id": "2026-11-07-am-05",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Under 9 hours. Then root on a honeypot.",
+      "typefully_draft_id": null
     }
   ]
 }
