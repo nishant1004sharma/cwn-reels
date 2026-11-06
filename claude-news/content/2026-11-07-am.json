@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-07",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-11-07-am-01",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-11-07T08:15:00",
+      "story_key": "ai-ceo-attorney-impersonation-129m-charges-2026-11",
+      "send_to": "whoever approves wire transfers",
+      "sources": [
+        {
+          "name": "SecurityWeek (Associated Press)",
+          "url": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+          "date": "2026-11-05"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "$129 million. A fake CEO on a video call.",
+        "segments": [
+          {
+            "say": "A hundred twenty-nine million dollars. Stolen with a fake C E O.",
+            "show": "US prosecutors: about $129M stolen from companies worldwide (AP via SecurityWeek, 5 Nov).",
+            "card": "$129 million",
+            "card_style": "stat"
+          },
+          {
+            "say": "A boss email. Then a call where A I copied the C E O's voice.",
+            "show": "Email from the 'CEO' → phone or video call with an AI-mimicked voice and sometimes image.",
+            "card": "AI voice + face of the CEO",
+            "card_style": "alert"
+          },
+          {
+            "say": "Then a fake lawyer gave the wire details. Three people charged.",
+            "show": "A fake attorney at a major law firm gave the wire instructions. 3 charged in SDNY: wire fraud, identity theft.",
+            "card": "Fake CEO → fake lawyer → wire",
+            "card_style": "fact"
+          },
+          {
+            "say": "Verify urgent payments on a number you already have.",
+            "show": "Call back on a known number before any 'confidential' transfer.",
+            "card": "Call back on a known number",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever approves wire transfers.",
+            "show": "Send this to whoever approves wire transfers.",
+            "card": "↗ Send this to whoever approves wire transfers"
+          }
+        ]
+      },
+      "x_text": "AI deepfake CEO fraud: US prosecutors charged 3 people over a scheme that used AI to mimic CEOs' voices and faces on calls, then fake law-firm attorneys to direct wires. About $129M stolen, per AP.\n\n#Deepfake #CyberSecurity",
+      "ig_caption": "$129 million. A fake CEO on a video call. 🎭\n\nWhat AP reported via SecurityWeek (5 Nov):\n→ Three people were charged in federal court in New York with wire fraud and aggravated identity theft; the indictment also charges money laundering\n→ Accounting staff got an email \"from the CEO\" asking for help with a confidential financial deal\n→ A phone or video call followed, where AI mimicked the CEO's voice and sometimes image\n→ Victims were then sent to a fake attorney at a major law firm, who told them to wire payments to accounts around the world\n→ About $129 million was taken over more than a year and a half; victims included hospital systems, a bank and a fintech\n\nWhat to do: any \"confidential\" payment request gets a call back on a number you already have, two people sign off on large wires, and \"don't tell anyone\" is the red flag.\n\nSend this to whoever approves wire transfers 👇\n\nWould your finance team say no to the CEO on a video call?\n\nSource: SecurityWeek / Associated Press (5 Nov 2026)\n\n#Deepfake #CEOFraud #BEC #AIFraud #FraudPrevention #CyberSecurity"
+    },
+    {
+      "id": "2026-11-07-am-02",
+      "kind": "carousel",
+      "category": "AI SECURITY",
+      "slot": "2026-11-07T10:00:00",
+      "story_key": "claude-dispatch-browser-extension-takeover-2026-11",
+      "send_to": "whoever approves browser extensions",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+          "date": "2026-11-06"
+        }
+      ],
+      "cover": {
+        "hook": "A browser extension could tell your AI desktop agent what to do.",
+        "sub": "Researchers say Claude Dispatch trusted a normal claude.ai browser session. No browser exploit needed."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What Dispatch does",
+          "body": "Dispatch is a Claude feature that lets you send tasks from your phone to Claude Desktop. Forever Security found it also accepted an ordinary signed-in claude.ai session, even though the site showed no link to it."
+        },
+        {
+          "type": "point",
+          "title": "Why that matters",
+          "body": "An extension that can run scripts on claude.ai could send Claude Desktop instructions as if you had sent them. The researchers say no browser exploit was needed and they saw no real attacks."
+        },
+        {
+          "type": "stat",
+          "big": "5 months",
+          "label": "from report (14 May) to Anthropic saying Dispatch would be retired (13 Oct)",
+          "note": "Per the researchers; Anthropic called it a duplicate of an issue it had found internally"
+        },
+        {
+          "type": "point",
+          "title": "Not just one feature",
+          "body": "The researchers say the design is the issue: they believe Remote Control and Cowork sessions could be driven the same way, but say they did not test those. Dispatch is closed to new users."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Turn off cross-device Dispatch if you don't use it",
+            "Review how devices are paired, approved and removed",
+            "Treat extensions like software: check permissions, control installs",
+            "Monitor agent activity: installs, setting changes, credential access"
+          ]
+        }
+      ],
+      "question": "Do you know which browser extensions can read the AI tools your team signs into?",
+      "x_text": "Claude Dispatch: Forever Security says a malicious browser extension running on claude.ai could send Claude Desktop instructions as if the user had, with no browser exploit. Anthropic is retiring Dispatch, per the researchers.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "A browser extension could tell your AI desktop agent what to do. 🧩\n\nWhat The Hacker News reported (6 Nov):\n→ Dispatch lets Claude users send tasks from their phone to Claude Desktop\n→ Forever Security says it also accepted an ordinary signed-in claude.ai browser session, even though the site showed no link to it\n→ So an extension that can run scripts on claude.ai could send Claude Desktop instructions as if the user had, with no browser exploit needed\n→ Reported 14 May; per the researchers, Anthropic closed it as a duplicate of an internal finding and on 13 Oct said Dispatch would be retired\n→ No real attacks seen; the researchers say similar sessions may be exposed but didn't test them\n\nWhat to do: turn off cross-device Dispatch if you don't need it, review paired devices, treat extensions like any other software, and watch what your AI agents install or change.\n\nSend this to whoever approves browser extensions 👇\n\nDo you know which browser extensions can read the AI tools your team signs into?\n\nSource: The Hacker News (6 Nov 2026)\n\n#AISecurity #AgenticAI #Claude #BrowserExtensions #AIAgents #CyberSecurity"
+    },
+    {
+      "id": "2026-11-07-am-03",
+      "kind": "reel",
+      "category": "BREACH",
+      "slot": "2026-11-07T12:00:00",
+      "story_key": "chainalysis-all-users-credentials-exposed-2026-11",
+      "send_to": "whoever holds your Chainalysis login",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+          "date": "2026-11-06"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Crypto sleuths breached. All users exposed.",
+        "segments": [
+          {
+            "say": "Every user. Password hashes and live tokens.",
+            "show": "Chainalysis: names, usernames, password hashes and live tokens exposed for all users (The Hacker News, 6 Nov).",
+            "card": "ALL users exposed",
+            "card_style": "alert"
+          },
+          {
+            "say": "Chainalysis, the blockchain investigation firm, says this came from an agentic cyber attack.",
+            "show": "Chainalysis calls it an \"agentic cyber attack\". Who is behind it is unclear.",
+            "card": "\"Agentic cyber attack\"",
+            "card_style": "fact"
+          },
+          {
+            "say": "Reactor, Data Solutions and K Y T went offline. Users must reset passwords and rotate A P I keys.",
+            "show": "Reactor and Data Solutions access removed; KYT UI and API offline. All users will reset passwords and rotate API keys.",
+            "card": "Rotate keys. Change reused passwords.",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever holds your Chainalysis login.",
+            "show": "Send this to whoever holds your Chainalysis login.",
+            "card": "↗ Send this to whoever holds your Chainalysis login"
+          }
+        ]
+      },
+      "x_text": "Chainalysis breach update: its probe of an \"agentic cyber attack\" found names, usernames, password hashes and live tokens exposed for all users, per The Hacker News. Reactor and KYT offline; users must reset passwords and rotate API keys.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "The firm that investigates crypto crime got breached. Every user's login data. 🔍\n\nWhat The Hacker News reported (6 Nov):\n→ Chainalysis says its investigation into an \"agentic cyber attack\" found names, usernames, password hashes and live tokens exposed for all users\n→ It removed access to Reactor and Data Solutions; the KYT interface and API, address screening and the login page went offline\n→ Every user will have to reset passwords and rotate API keys; customers are asked to send trusted IP addresses to be allowlisted first\n→ Chainalysis says it has no evidence investigations data was accessed or attribution data manipulated\n→ Who is behind it is unclear; Chainalysis says the attack vector has been addressed\n\nWhat to do: if you use Chainalysis, change any reused passwords now, plan the API key rotation, and watch for phishing that uses the reset emails.\n\nSend this to whoever holds your Chainalysis login 👇\n\nWhen a vendor says \"all users\", how fast can you rotate every key you gave them?\n\nSource: The Hacker News (6 Nov 2026)\n\n#Chainalysis #DataBreach #Crypto #AgenticAI #APIKeys #CyberSecurity"
+    },
+    {
+      "id": "2026-11-07-am-04",
+      "kind": "carousel",
+      "category": "VULNERABILITY",
+      "slot": "2026-11-07T13:30:00",
+      "story_key": "cve-2026-116606",
+      "send_to": "whoever runs your email gateway",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+          "date": "2026-11-06"
+        }
+      ],
+      "cover": {
+        "hook": "Your email security gateway. Root. No login.",
+        "sub": "watchTowr chained two Barracuda ESG flaws. Patches are out; no attacks reported yet."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "Two flaws, one chain",
+          "body": "CVE-2026-116606 (CVSS 9.3) is an authorization bypass in the Barracuda Email Security Gateway. CVE-2026-111560 (CVSS 8.6) is command injection that runs as root but normally needs an admin account."
+        },
+        {
+          "type": "stat",
+          "big": "9.3",
+          "label": "CVSS for the ESG authorization bypass, per Mandiant",
+          "note": "Chained with the 8.6 command injection, it gives root with no login"
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "On the ESG, the bypass supplies the admin access the second flaw needs. The command injection also reaches five other Barracuda products, where admin credentials are still required."
+        },
+        {
+          "type": "point",
+          "title": "Where things stand",
+          "body": "Barracuda patched on Monday; watchTowr published its analysis Thursday with a detection tool, not an exploit. Neither CVE is in CISA's KEV and no attacks are reported. ESG attackers in 2023 used a zero-day."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Update ESG to 9.4.0.030 or later",
+            "Patch the other affected Barracuda products",
+            "Limit the admin interface to trusted internal networks",
+            "Turn automatic patching back on if it's off"
+          ]
+        }
+      ],
+      "question": "Is your email gateway's admin page reachable from the internet right now?",
+      "x_text": "Barracuda Email Security Gateway: watchTowr chained CVE-2026-116606 (CVSS 9.3) and CVE-2026-111560 (8.6) for root with no login. Patched; no attacks reported yet. Update ESG to 9.4.0.030+ and lock down admin access.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "Your email security gateway. Root. No login. 📧\n\nWhat The Hacker News reported (6 Nov):\n→ CVE-2026-116606 (CVSS 9.3): an authorization bypass in Barracuda's Email Security Gateway lets unauthenticated users restore a crafted configuration backup\n→ CVE-2026-111560 (CVSS 8.6): command injection that runs as root, normally only for admins\n→ Chained on the ESG, they give root with no login; the injection also reaches five other Barracuda products where admin credentials are still needed\n→ Barracuda patched on Monday; watchTowr published its analysis and a detection tool, not an exploit\n→ Neither CVE is in CISA's KEV and no attacks have been reported\n\nWhat to do: update ESG to 9.4.0.030 or later, patch the other affected products from Barracuda's advisory, keep the admin interface on trusted internal networks, and re-enable automatic patching.\n\nSend this to whoever runs your email gateway 👇\n\nIs your email gateway's admin page reachable from the internet right now?\n\nSource: The Hacker News (6 Nov 2026)\n\n#Barracuda #PatchNow #EmailSecurity #Vulnerability #CVE #CyberSecurity"
+    },
+    {
+      "id": "2026-11-07-am-05",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-11-07T14:30:00",
+      "story_key": "cve-2026-123158",
+      "send_to": "whoever runs your Alpine servers",
+      "sources": [
+        {
+          "name": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
+          "date": "2026-11-06"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "Under 9 hours. Then root on a honeypot.",
+        "segments": [
+          {
+            "say": "Under nine hours after the C V E. Then attackers got root.",
+            "show": "Previdian: first attempt less than 9 hours after CVE-2026-123158 was published; root confirmed on its honeypot.",
+            "card": "< 9 hours to root",
+            "card_style": "stat"
+          },
+          {
+            "say": "The Open S S H password bypass on Alpine and other musl Linux builds without PAM is now exploited.",
+            "show": "\"sshole\": musl-based builds (Alpine, OpenWrt, Buildroot, Yocto, some Docker images) without PAM.",
+            "card": "Exploited in the wild",
+            "card_style": "alert"
+          },
+          {
+            "say": "Update to the fixed version and restart S S H. Or turn password login off now.",
+            "show": "Fixed in OpenSSH 10.6p2 (5 Nov). Restart sshd. Or set PasswordAuthentication no.",
+            "card": "Patch + restart sshd",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Alpine servers.",
+            "show": "Send this to whoever runs your Alpine servers.",
+            "card": "↗ Send this to whoever runs your Alpine servers"
+          }
+        ]
+      },
+      "x_text": "OpenSSH CVE-2026-123158 \"sshole\" on Alpine/musl builds without PAM is now exploited: Previdian saw a first attempt under 9 hours after the CVE and root on its honeypot. Update to OpenSSH 10.6p2 and restart sshd.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "Under 9 hours after the CVE. Then root on a honeypot. ⏱️\n\nWhat Help Net Security reported (6 Nov):\n→ CVE-2026-123158 (\"sshole\") is an OpenSSH password-auth bypass on musl-based Linux without PAM: Alpine, OpenWrt, Buildroot, Yocto and some Docker images\n→ Previdian says its first observed attempt came less than nine hours after the CVE was published, and it confirmed root access on its honeypot\n→ It logged eight attempts from one IP; CISA hasn't added it to KEV yet\n→ Fixed in OpenSSH 10.6p2 on 5 Nov; Alpine shipped patched packages the same day\n→ glibc, PAM, Dropbear and OpenBSD setups are reported safe. Public \"PoCs\" on GitHub are unverified and may carry malware\n\nWhat to do: upgrade, then restart sshd (the running daemon keeps the old binary). Can't yet? Set PasswordAuthentication no or turn SSH off on those systems.\n\nSend this to whoever runs your Alpine servers 👇\n\nHow fast can you restart SSH on every container and router you own?\n\nSource: Help Net Security (6 Nov 2026)\n\n#OpenSSH #AlpineLinux #PatchNow #Linux #SSH #CyberSecurity"
+    }
+  ]
+}
