@@ -1,0 +1,118 @@
+<!doctype html>
+<!--
+  Animated explainer template (kind "diagram"). Copy to claude-news/diagrams/<item id>.html and edit.
+  Canvas 1080x1350 (4:5). Clean white background, dark text, coloured outlines only.
+  Animated pieces (all loop every 2 s so the video loops seamlessly):
+    path.flow   blue dashed arrow      path.flowG  green dashed arrow
+    path.flowR  red dashed arrow, faster (the attack / bad path)
+    .pulse      gentle scale pulse     .blink      fading text
+  Keep text >= 20px, max ~12 boxes, one idea per panel.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:Inter;font-weight:400 500;src:url('../../render/fonts/Inter-Medium.otf')}
+  @font-face{font-family:Inter;font-weight:600 900;src:url('../../render/fonts/Inter-SemiBold.otf')}
+  @font-face{font-family:'Inter Display';font-weight:700 900;src:url('../../render/fonts/InterDisplay-Bold.otf')}
+  :root{--ink:#111827;--muted:#4b5563;--blue:#2563eb;--green:#059669;--red:#dc2626;--line:#d1d5db}
+  html,body{margin:0;padding:0;background:#fff}
+  body{width:1080px;height:1350px;overflow:hidden}
+  svg{position:absolute;inset:0}
+  text{font-family:Inter,sans-serif;fill:var(--ink)}
+  .brand{font-size:22px;font-weight:800;letter-spacing:3px;fill:var(--blue)}
+  .title{font-family:'Inter Display',Inter,sans-serif;font-size:64px;font-weight:800}
+  .sub{font-size:28px;fill:var(--muted)}
+  .panelT{font-size:32px;font-weight:800}
+  .lbl{font-size:26px;font-weight:700;text-anchor:middle}
+  .small{font-size:21px;fill:var(--muted);text-anchor:middle}
+  .box{fill:#fff;stroke:#9ca3af;stroke-width:2.5}
+  .boxB{fill:#eff6ff;stroke:var(--blue);stroke-width:3}
+  .boxG{fill:#ecfdf5;stroke:var(--green);stroke-width:3}
+  .boxR{fill:#fef2f2;stroke:var(--red);stroke-width:3}
+  .flow,.flowG,.flowR{fill:none;stroke-width:4;stroke-dasharray:14 12;animation:dash 1s linear infinite}
+  .flow{stroke:var(--blue)} .flowG{stroke:var(--green)}
+  .flowR{stroke:var(--red);stroke-width:5;animation-duration:.5s}
+  @keyframes dash{from{stroke-dashoffset:26}to{stroke-dashoffset:0}}
+  .blink{animation:blink 1s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+  .pulse{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+</style></head>
+<body>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <marker id="aB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2563eb"/></marker>
+    <marker id="aG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#059669"/></marker>
+    <marker id="aR" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#dc2626"/></marker>
+  </defs>
+
+  <text class="brand" x="60" y="70">THE CYBER INTELLECT</text>
+  <text class="title" x="60" y="148">Trusted Launcher, Hijacked</text>
+  <text class="sub" x="60" y="194">How tampered launcher scripts can deliver a remote-access tool</text>
+
+  <!-- Panel 1: normal -->
+  <rect x="40" y="230" width="1000" height="330" rx="26" fill="#f9fafb" stroke="#059669" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="282" style="fill:#059669">✓ Normal launch</text>
+
+  <rect class="box" x="70" y="330" width="230" height="110" rx="18"/>
+  <text class="lbl" x="185" y="380">Game launcher</text>
+  <text class="small" x="185" y="412">opens on your PC</text>
+
+  <rect class="boxB" x="420" y="330" width="240" height="110" rx="20"/>
+  <text class="lbl" x="540" y="380">Official CDN</text>
+  <text class="small" x="540" y="412">publisher's scripts</text>
+
+  <rect class="boxG" x="780" y="330" width="230" height="110" rx="20"/>
+  <text class="lbl" x="895" y="380" style="fill:#059669">News feed</text>
+  <text class="small" x="895" y="412">events, banners</text>
+
+  <path class="flow" d="M300,385 L410,385" marker-end="url(#aB)"/>
+  <path class="flowG" d="M660,385 L770,385" marker-end="url(#aG)"/>
+  <text x="540" y="510" style="font-size:25px;font-weight:700;text-anchor:middle;fill:#059669">The launcher loads the publisher's own scripts.</text>
+
+  <!-- Panel 2: tampered -->
+  <rect x="40" y="590" width="1000" height="520" rx="26" fill="#f9fafb" stroke="#dc2626" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="642" style="fill:#dc2626">✗ Tampered scripts</text>
+
+  <rect class="box" x="70" y="690" width="230" height="110" rx="18"/>
+  <text class="lbl" x="185" y="740">Game launcher</text>
+  <text class="small" x="185" y="772">same trusted app</text>
+
+  <g class="pulse">
+    <rect class="boxR" x="400" y="680" width="280" height="130" rx="20"/>
+    <text class="lbl" x="540" y="728">Official CDN</text>
+    <text class="small blink" x="540" y="762" style="fill:#dc2626;font-weight:800">4 scripts altered</text>
+    <text class="small" x="540" y="790">by a third party</text>
+  </g>
+
+  <rect class="boxR" x="770" y="690" width="240" height="110" rx="18"/>
+  <text class="lbl" x="890" y="738">2nd script</text>
+  <text class="small" x="890" y="770">from outside domain</text>
+
+  <rect class="boxR" x="400" y="880" width="280" height="110" rx="18"/>
+  <text class="lbl" x="540" y="928">Remote-access tool</text>
+  <text class="small" x="540" y="960">via launcher download</text>
+
+  <rect class="boxR" x="760" y="870" width="250" height="210" rx="18"/>
+  <text class="lbl" x="885" y="915" style="fill:#dc2626">Can grab</text>
+  <text class="small" x="885" y="952">browser passwords</text>
+  <text class="small" x="885" y="982">session cookies</text>
+  <text class="small" x="885" y="1012">SSH keys, API tokens</text>
+  <text class="small" x="885" y="1042">screenshots</text>
+
+  <path class="flow" d="M300,745 L390,745" marker-end="url(#aB)"/>
+  <path class="flowR" d="M680,745 L760,745" marker-end="url(#aR)"/>
+  <path class="flowR" d="M890,800 L890,830 L540,830 L540,870" marker-end="url(#aR)"/>
+  <path class="flowR" d="M680,935 L750,945" marker-end="url(#aR)"/>
+  <text x="80" y="935" style="font-size:24px;font-weight:700;fill:#dc2626">The app is genuine.</text>
+  <text x="80" y="968" style="font-size:24px;font-weight:700;fill:#dc2626">The scripts it loads</text>
+  <text x="80" y="1001" style="font-size:24px;font-weight:700;fill:#dc2626">were swapped.</text>
+
+  <!-- Takeaway -->
+  <rect x="40" y="1130" width="1000" height="150" rx="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="1180" style="fill:#2563eb;font-size:30px">If it ran on your PC</text>
+  <text x="70" y="1225" style="font-size:25px">① From a clean device: change passwords, revoke sessions</text>
+  <text x="70" y="1261" style="font-size:25px">② Rotate API tokens + SSH keys  ③ Reinstall the OS</text>
+
+  <text x="540" y="1322" style="font-size:24px;font-weight:800;text-anchor:middle">↗ Send this to the gamer who uses their PC for work</text>
+</svg>
+</body></html>

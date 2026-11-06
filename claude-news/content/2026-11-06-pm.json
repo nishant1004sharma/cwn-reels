@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-06",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-11-06-pm-01",
+      "kind": "reel",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-11-06T16:00:00",
+      "story_key": "nikke-pc-launcher-cdn-scripts-rat-2026-11",
+      "send_to": "the gamer who uses their PC for work",
+      "sources": [
+        {
+          "name": "CyberInsider",
+          "url": "https://cyberinsider.com/nikke-pc-launcher-malware-remote-access-tool/",
+          "date": "2026-11-04"
+        },
+        {
+          "name": "Game8",
+          "url": "https://game8.co/articles/latest/nikke-pc-launcher-files-were-reportedly-compromised-for-over-a-month-to-spread-malware",
+          "date": "2026-11-04"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Official game launcher. Malware inside.",
+        "segments": [
+          {
+            "say": "Four official files. One game launcher. A remote access tool.",
+            "show": "4 JavaScript files on Level Infinite's official CDN were altered, per CyberInsider.",
+            "card": "4 tampered launcher files",
+            "card_style": "stat"
+          },
+          {
+            "say": "The NIKKE P C launcher pulled a second script that could grab passwords, cookies and S S H keys.",
+            "show": "Lua-based remote-access tool: browser passwords, session cookies, SSH keys, API tokens, wallet data, screenshots.",
+            "card": "Passwords · cookies · SSH keys",
+            "card_style": "alert"
+          },
+          {
+            "say": "Opened it since October twenty third? From a clean device, change passwords, rotate keys.",
+            "show": "Game8: players who opened the launcher on or after 23 Oct may have been exposed. Files replaced 4 Nov.",
+            "card": "Reset from a clean device",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to the gamer who uses their P C for work.",
+            "show": "Send this to the gamer who uses their PC for work.",
+            "card": "↗ Send this to the gamer who uses their PC for work"
+          }
+        ]
+      },
+      "x_text": "NIKKE PC launcher: 4 official scripts on Level Infinite's CDN were altered to load a remote-access tool that could grab passwords, cookies and SSH keys. Opened it since 23 Oct? Reset passwords and keys from a clean device.\n\n#SupplyChainAttack #CyberSecurity",
+      "ig_caption": "The official game launcher was the malware delivery. 🎮\n\nWhat CyberInsider and Game8 reported (4 Nov):\n→ Four JavaScript files for the Goddess of Victory: NIKKE PC launcher, hosted on publisher Level Infinite's official CDN, were altered; timestamps date to 27 Sept\n→ The altered scripts pulled a second script from an outside domain, which used the launcher's download function to fetch and run a Lua-based remote-access tool\n→ It could run commands, take screenshots and grab browser passwords, session cookies, SSH keys, API tokens and crypto-wallet data\n→ Earliest reported infection: 23 Oct. Level Infinite says the script files \"may have been tampered with by a third party\" and shipped fixes on 4 Nov\n→ Found by independent researcher MotherSphere. Mobile versions show no sign of being affected; how many players were hit is unclear\n\nWhat to do if it ran: disconnect the PC, then from a clean device change passwords, revoke sessions and rotate API tokens and SSH keys. Replacing the files doesn't remove malware already installed, so reinstall the OS.\n\nSend this to the gamer who uses their PC for work 👇\n\nDo you let game launchers run on the same PC you use for work?\n\nSource: CyberInsider, Game8 (4 Nov 2026)\n\n#SupplyChainAttack #NIKKE #Malware #GamingSecurity #InfoStealer #CyberSecurity"
+    },
+    {
+      "id": "2026-11-06-pm-02",
+      "kind": "carousel",
+      "category": "AI SECURITY",
+      "slot": "2026-11-06T17:00:00",
+      "story_key": "chatgpt-lockdown-mode-bypass-checkpoint-2026-11",
+      "send_to": "whoever owns ChatGPT at your company",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+          "date": "2026-11-05"
+        }
+      ],
+      "cover": {
+        "hook": "ChatGPT's Lockdown Mode had a side door.",
+        "sub": "Check Point escaped it through HTML previews. OpenAI fixed it on 18 September."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What Lockdown Mode is for",
+          "body": "OpenAI added it in June 2026 as an optional setting to cut data-exfiltration risk from prompt injection. It limits outbound network requests that could carry your data to an attacker."
+        },
+        {
+          "type": "point",
+          "title": "The side door",
+          "body": "HTML previews in ChatGPT code blocks run in nested sandboxed frames. Check Point says the sandbox still allowed popups, and content opened that way was no longer bound by the sandbox's restrictions."
+        },
+        {
+          "type": "stat",
+          "big": "Zero-click",
+          "label": "chat data theft possible in the ChatGPT desktop app, per Check Point",
+          "note": "Triggered by a crafted prompt, a malicious GPT or a shared chat"
+        },
+        {
+          "type": "point",
+          "title": "Also: fake updates",
+          "body": "The attacker controls the popup, so it could show a convincing lure such as a fake ChatGPT update to get you to download malware. OpenAI addressed the flaw on 18 Sept 2026 after responsible disclosure."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Keep the ChatGPT desktop app and browsers updated",
+            "Treat shared chats and unknown GPTs as untrusted input",
+            "Never install a 'ChatGPT update' from a popup",
+            "Don't treat one AI setting as your only data-loss control"
+          ]
+        }
+      ],
+      "question": "Does your team treat a shared ChatGPT link like an email attachment?",
+      "x_text": "ChatGPT Lockdown Mode bypass: Check Point escaped the HTML preview sandbox via popups, enabling zero-click chat exfiltration in the desktop app plus fake-update lures. OpenAI fixed it on 18 Sept.\n\n#PromptInjection #AISecurity",
+      "ig_caption": "ChatGPT's Lockdown Mode had a side door. 🔐\n\nWhat The Hacker News reported (5 Nov):\n→ OpenAI launched Lockdown Mode in June 2026 to limit outbound requests that prompt injection could use to steal data\n→ Check Point found that HTML previews in code blocks, run in nested sandboxed frames, still allowed popups that escaped the sandbox\n→ Check Point says that enabled silent chat data theft, phishing and malware delivery, including zero-click exfiltration in the ChatGPT desktop app\n→ Triggers: a crafted prompt, a malicious GPT or a shared chat\n→ OpenAI addressed it on 18 Sept 2026 after responsible disclosure\n\nWhat to do: keep the desktop app updated, treat shared chats and unknown GPTs as untrusted, and never install a \"ChatGPT update\" from a popup. Check Point's point: AI security controls are only as strong as the app around them.\n\nSend this to whoever owns ChatGPT at your company 👇\n\nDoes your team treat a shared ChatGPT link like an email attachment?\n\nSource: The Hacker News (5 Nov 2026)\n\n#ChatGPT #PromptInjection #AISecurity #OpenAI #DataExfiltration #CyberSecurity"
+    },
+    {
+      "id": "2026-11-06-pm-03",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-11-06T20:00:00",
+      "story_key": "alpine-openssh-password-auth-bypass-2026-11",
+      "send_to": "whoever runs your Alpine servers",
+      "sources": [
+        {
+          "name": "Alpine Linux security advisory",
+          "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+          "date": "2026-11-05"
+        },
+        {
+          "name": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/openssh-flaw-bypass-password-authentication",
+          "date": "2026-11-05"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "Alpine SSH: no-password accounts exposed",
+        "segments": [
+          {
+            "say": "One connection. Into an account that has no password.",
+            "show": "Alpine: sshd without PAM could accept a login to accounts with '*' in the password field when conditions are met.",
+            "card": "No password set → login",
+            "card_style": "alert"
+          },
+          {
+            "say": "Alpine Linux servers running S S H without PAM, with password login on. Every release Alpine checked.",
+            "show": "Affected: openssh-server without PAM (or UsePAM no), PasswordAuthentication yes, and another account with a $5$/$6$ hash.",
+            "card": "Alpine 3.16 → 3.24 + edge",
+            "card_style": "stat"
+          },
+          {
+            "say": "Update open S S H, then restart the daemon. Or turn password login off.",
+            "show": "Fixed in 3.21.10, 3.22.8, 3.23.8, 3.24.4. Interim fix: PasswordAuthentication no, then restart sshd.",
+            "card": "Update + restart sshd",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Alpine servers.",
+            "show": "Send this to whoever runs your Alpine servers.",
+            "card": "↗ Send this to whoever runs your Alpine servers"
+          }
+        ]
+      },
+      "x_text": "OpenSSH on Alpine Linux: sshd built without PAM can let someone log into accounts with no password set, under certain conditions. Alpine 3.16-3.24 and edge. Update openssh AND restart sshd, or set PasswordAuthentication no.\n\n#Linux #CyberSecurity",
+      "ig_caption": "Accounts with no password. SSH could still let someone in. 🐧\n\nWhat Alpine Linux's advisory says (5 Nov):\n→ Alpine's openssh-server built without PAM (or openssh-server-pam with UsePAM no) has a password authentication bypass\n→ It needs password login on (the OpenSSH default), an account with \"*\" as its password field (like key-only users or root), and another local account with a $5$ or $6$ hash\n→ Every release Alpine checked is affected: 3.21 to 3.24 and edge, plus older 3.16 to 3.20\n→ Official tiny-cloud images from 3.18.11 through 3.24.3 ship an \"alpine\" user with a \"*\" password and passwordless doas\n→ Root cause sits in musl's crypt(); OpenSSH 10.6p2 adds a workaround. No CVE yet, and no in-the-wild use reported\n\nWhat to do: apk upgrade, then restart sshd (upgrading alone leaves the old daemon running). Can't patch yet? Set PasswordAuthentication no. Then check logs for \"Accepted password for\" on passwordless accounts.\n\nSend this to whoever runs your Alpine servers 👇\n\nDo you know which of your servers still allow SSH password login?\n\nSource: Alpine Linux advisory, Cyber Security News (5 Nov 2026)\n\n#OpenSSH #AlpineLinux #Linux #PatchNow #SSH #CyberSecurity"
+    },
+    {
+      "id": "2026-11-06-pm-04",
+      "kind": "diagram",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-11-06T21:00:00",
+      "story_key": "explainer-tampered-launcher-scripts",
+      "send_to": "the gamer who uses their PC for work",
+      "x": true,
+      "sources": [
+        {
+          "name": "CyberInsider",
+          "url": "https://cyberinsider.com/nikke-pc-launcher-malware-remote-access-tool/",
+          "date": "2026-11-04"
+        },
+        {
+          "name": "Game8",
+          "url": "https://game8.co/articles/latest/nikke-pc-launcher-files-were-reportedly-compromised-for-over-a-month-to-spread-malware",
+          "date": "2026-11-04"
+        }
+      ],
+      "diagram": {
+        "title": "Trusted Launcher, Hijacked",
+        "html": "claude-news/diagrams/2026-11-06-pm-04.html",
+        "seconds": 8
+      },
+      "x_text": "How the NIKKE PC launcher was hijacked: 4 scripts on Level Infinite's own CDN were altered to load a second script that dropped a remote-access tool. Genuine app, swapped content. If it ran, reset passwords and keys from a clean device.\n\n#SupplyChainAttack #InfoSec",
+      "ig_caption": "Same genuine launcher. Swapped scripts. A remote-access tool. 🎯\n\nHow it worked, per CyberInsider and Game8 (4 Nov):\n→ Normally the NIKKE PC launcher loads the publisher's own scripts from Level Infinite's CDN\n→ Four of those JavaScript files were altered by a third party\n→ The altered scripts pulled a second script from an outside domain\n→ That script used the launcher's own download function to fetch and run a Lua-based remote-access tool\n→ The tool could grab browser passwords, session cookies, SSH keys, API tokens and screenshots\n\nIf it ran on your PC: disconnect it, then from a clean device change passwords, revoke sessions and rotate API tokens and SSH keys. Reinstall the OS, since new files don't remove what's already installed.\n\nSend this to the gamer who uses their PC for work 👇\n\nWould your endpoint tools flag a trusted app downloading something new?\n\nSource: CyberInsider, Game8 (4 Nov 2026)\n\n#SupplyChainAttack #Malware #GamingSecurity #NIKKE #InfoSec #CyberSecurity"
+    },
+    {
+      "id": "2026-11-06-pm-05",
+      "kind": "reel",
+      "category": "RANSOMWARE",
+      "slot": "2026-11-06T22:30:00",
+      "story_key": "queens-public-library-ransomware-2026-11",
+      "send_to": "whoever runs your library or school IT",
+      "sources": [
+        {
+          "name": "The Register",
+          "url": "https://www.theregister.com/cyber-crime/2026/11/05/new-yorks-queens-public-library-battles-ransomware-crims-wi-fi-checkouts-and-website-go-dark/5307796",
+          "date": "2026-11-05"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "66 branches open. Systems dark.",
+        "segments": [
+          {
+            "say": "Sixty-six branches open. No Wi-Fi, no checkouts, no website.",
+            "show": "Queens Public Library: website, public Wi-Fi, checkout/return machines, app and digital media down. All 66 locations open.",
+            "card": "66 branches, systems down",
+            "card_style": "stat"
+          },
+          {
+            "say": "Queens Public Library in New York confirmed a ransomware attack. No group has claimed it yet.",
+            "show": "QPL confirmed it on social media and to patrons; no gang has claimed it (The Register, 5 Nov).",
+            "card": "Ransomware confirmed",
+            "card_style": "alert"
+          },
+          {
+            "say": "Recovery will take time. Plan how you'd keep serving people offline.",
+            "show": "QPL: restoring the network \"will take some time\". Late fines paused.",
+            "card": "Plan offline operations",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your library or school I T.",
+            "show": "Send this to whoever runs your library or school IT.",
+            "card": "↗ Send this to whoever runs your library or school IT"
+          }
+        ]
+      },
+      "x_text": "Queens Public Library ransomware: NYC's library confirmed an attack that took down its website, public Wi-Fi, checkout machines and app. All 66 branches stay open; no gang has claimed it yet.\n\n#Ransomware #CyberSecurity",
+      "ig_caption": "66 branches open. The systems behind them, dark. 📚\n\nWhat The Register reported (5 Nov):\n→ New York's Queens Public Library confirmed a ransomware attack on Wednesday evening, via social media and directly to patrons\n→ Down: the website, on-site computers, checkout and return machines, public Wi-Fi, the mobile app and digital media services\n→ All 66 locations remain open; renewals are unavailable and late fines aren't being charged\n→ The library says restoring its network \"will take some time\"\n→ No ransomware group has claimed it yet, and it's not known whether data was taken\n\nWhat to do: write down how each public service runs if the network is gone for weeks, keep offline backups, and practise it before you need it.\n\nSend this to whoever runs your library or school IT 👇\n\nIf your network went dark tomorrow, which service would you lose first?\n\nSource: The Register (5 Nov 2026)\n\n#Ransomware #PublicSector #Libraries #IncidentResponse #CyberAttack #CyberSecurity"
+    }
+  ]
+}
