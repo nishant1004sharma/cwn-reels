@@ -1,0 +1,28 @@
+{
+  "run": "2026-11-06-basics",
+  "items": {
+    "2026-10-31-basics-03": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 20.2,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-06-basics/2026-10-31-basics-03/reel.mp4"
+      ]
+    },
+    "2026-10-31-basics-04": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 15.1,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-06-basics/2026-10-31-basics-04/reel.mp4"
+      ]
+    }
+  },
+  "errors": {}
+}

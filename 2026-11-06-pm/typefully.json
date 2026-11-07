@@ -1,0 +1,28 @@
+{
+  "run": "2026-11-06-pm",
+  "scheduled": {
+    "2026-11-06-pm-04": {
+      "draft_id": 11737728,
+      "at": "2026-11-06T21:00:00+08:00",
+      "networks": [
+        "x"
+      ]
+    }
+  },
+  "skipped": {
+    "2026-11-06-pm-01": "not marked for X",
+    "2026-11-06-pm-02": "not marked for X",
+    "2026-11-06-pm-03": "not marked for X",
+    "2026-11-06-pm-05": "not marked for X"
+  },
+  "errors": {},
+  "social_set": 351179,
+  "networks": [
+    "x"
+  ],
+  "quota_before": {
+    "used": 7,
+    "remaining": 3,
+    "resets_at": "2026-12-01T00:00:00+08:00"
+  }
+}
