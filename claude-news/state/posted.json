@@ -1952,6 +1952,76 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "Under 9 hours. Then root on a honeypot.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-model-raw-packets-sandbox-network-2026-11",
+      "id": "2026-11-07-pm-01",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Proxy down. So the AI built its own packets.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "github-fake-security-tools-drweb-2000-2026-11",
+      "id": "2026-11-07-pm-02",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Fake security tools on GitHub. Over 2,000 Windows PCs infected.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-19868",
+      "id": "2026-11-07-pm-03",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "SonicWall MFA bypass. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "japan-emergency-cyber-package-10bn-yen-2026-11",
+      "id": "2026-11-07-pm-04",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "After a wave of breaches, Japan launches a ¥10 billion cyber emergency package.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "dlink-dgs-3130-zero-days-2026-11",
+      "id": "2026-11-07-pm-05",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "D-Link switch zero-days. No patch yet.",
+      "typefully_draft_id": null
     }
   ]
 }
