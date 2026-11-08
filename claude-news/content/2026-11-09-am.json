@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-09",
+  "run": "am",
+  "items": [
+    {
+      "id": "2026-11-09-am-01",
+      "kind": "reel",
+      "category": "VULNERABILITY",
+      "slot": "2026-11-09T08:15:00",
+      "story_key": "cve-2024-58351",
+      "send_to": "whoever runs your AI chatbots",
+      "sources": [
+        {
+          "name": "Expert Insights (citing Era research)",
+          "url": "https://expertinsights.com/news/flowise-greeter-attack",
+          "date": "2026-11-05"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+          "date": "2026-11-06"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "4,972 chatbot messages. All said \"hello\".",
+        "segments": [
+          {
+            "say": "Four thousand nine hundred seventy-two messages. All of them: hello.",
+            "show": "Era's Flowise honeypots: all 4,972 stored user messages were \"hello\" (Expert Insights, 5 Nov).",
+            "card": "4,972 × \"hello\"",
+            "card_style": "stat"
+          },
+          {
+            "say": "Hidden behind them, an old Flowise flaw running commands.",
+            "show": "A framework Era calls Greeter exploited CVE-2024-58351 to run commands; the bot's replies held the command output.",
+            "card": "CVE-2024-58351",
+            "card_style": "alert"
+          },
+          {
+            "say": "Seven hundred three Flowise servers sit online with no login.",
+            "show": "Shodan: 4,372 Flowise instances exposed; Era says 703 had no authentication.",
+            "card": "703 with no auth",
+            "card_style": "fact"
+          },
+          {
+            "say": "Update Flowise. Require a login.",
+            "show": "Update Flowise, require authentication on its APIs, give it a narrowly scoped cloud identity.",
+            "card": "Update + require auth",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your A I chatbots.",
+            "show": "Send this to whoever runs your AI chatbots.",
+            "card": "↗ Send this to whoever runs your AI chatbots"
+          }
+        ]
+      },
+      "x_text": "Flowise CVE-2024-58351: Era says a framework it calls Greeter hid commands behind \"hello\" chatbot messages, then probed cloud metadata and SSH keys. Era counts 703 Flowise servers online with no authentication.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "4,972 chatbot messages. All of them said \"hello\". 👋\n\nWhat Expert Insights reported (5 Nov), citing Era's research:\n→ Era ran seven Flowise honeypots from July to October; every stored user message was \"hello\" and the bot replies held command output\n→ A Chinese-language framework Era calls \"Greeter\" exploited CVE-2024-58351, an old critical Flowise flaw, to run commands without changing the saved chatflow\n→ It probed AWS, Azure and Google Cloud metadata services and searched for SSH keys and Flowise's encryption key (the honeypot credentials were fake)\n→ Commands came 3.5 seconds apart; Era says that suggests automation, possibly an AI agent, but timing alone can't prove it\n→ Shodan shows 4,372 Flowise instances exposed; Era says 703 had no authentication\n\nWhat to do: update Flowise, require authentication on its APIs, run it as non-root, and give it a narrowly scoped cloud identity with no long-lived keys in files.\n\nSend this to whoever runs your AI chatbots 👇\n\nDoes your AI app builder sit behind a login, or straight on the internet?\n\nSource: Expert Insights / Era (5 Nov 2026), SecurityWeek (6 Nov 2026)\n\n#Flowise #AISecurity #LLMSecurity #CloudSecurity #VulnerabilityManagement #CyberSecurity"
+    },
+    {
+      "id": "2026-11-09-am-02",
+      "kind": "carousel",
+      "category": "AI THREAT",
+      "slot": "2026-11-09T10:00:00",
+      "story_key": "botpress-auth-proxy-breach-ai-credits-2026-11",
+      "send_to": "whoever owns your AI API keys",
+      "sources": [
+        {
+          "name": "Botpress (security incident disclosure)",
+          "url": "https://botpress.com/blog/security-incident-disclosure-november-2026",
+          "date": "2026-11-06"
+        },
+        {
+          "name": "Unite.AI",
+          "url": "https://www.unite.ai/botpress-discloses-internal-breach-and-customer-credential-risk/",
+          "date": "2026-11-06"
+        }
+      ],
+      "cover": {
+        "hook": "Someone broke into a chatbot platform. Botpress says they wanted the AI credits.",
+        "sub": "An intruder read bot configs in 16 customer workspaces with a staff API credential."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "How they got in",
+          "body": "Botpress says probing of an internal authentication proxy began on 12 Oct. A flaw in its sign-in validation gave access from 13 to 21 Oct. It found no sign that an employee's identity-provider account was compromised."
+        },
+        {
+          "type": "stat",
+          "big": "39 min",
+          "label": "on 21 Oct (07:44–08:23 UTC): a staff API credential read bot configs in 16 customer workspaces",
+          "note": "Integration settings were also changed in two other workspaces"
+        },
+        {
+          "type": "point",
+          "title": "Why bot configs matter",
+          "body": "Bot configurations can hold third-party credentials: AI provider API keys, messaging-channel tokens and CRM logins. Botpress says the goal was AI usage to resell on AI black markets."
+        },
+        {
+          "type": "point",
+          "title": "What Botpress says wasn't hit",
+          "body": "No ransom demand, no sign data was published or sold, no changes to source code, build pipelines or packages, no access to end-user conversations. Fixed 21 Oct; attempts through 3 Nov were rejected."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "If notified: treat every credential in the affected bots as exposed and rotate it",
+            "List every platform that stores a copy of your AI API keys",
+            "Set spend alerts on AI provider keys so resold usage shows up fast",
+            "Vendors: review staff admin access into customer workspaces"
+          ]
+        }
+      ],
+      "question": "How many platforms hold a copy of your AI API keys right now?",
+      "x_text": "Botpress breach: the chatbot platform says an intruder abused a flaw in an internal auth proxy, then used a staff API credential to read bot configs in 16 customer workspaces. Botpress says the goal was AI usage to resell.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "Someone broke into a chatbot platform. Botpress says they wanted the AI credits. 🤖\n\nWhat Botpress disclosed (6 Nov):\n→ Probing of an internal authentication proxy began 12 Oct; a flaw in its sign-in validation gave access from 13 to 21 Oct\n→ On 21 Oct, 07:44–08:23 UTC, a staff API credential was used to read bot configurations in 16 customer workspaces; integration settings changed in two more\n→ Bot configs can hold AI provider API keys, messaging tokens and CRM credentials\n→ Botpress attributes it to an effort to get AI usage for resale on AI black markets; no ransom demand, no sign data was sold\n→ Fixed and the credential revoked on 21 Oct; attempts through 3 Nov were rejected\n\nWhat to do: if you were notified, rotate every credential stored in the affected bots. Everyone else: list where your AI keys live and put spend alerts on them.\n\nSend this to whoever owns your AI API keys 👇\n\nHow many platforms hold a copy of your AI API keys right now?\n\nSource: Botpress security incident disclosure (6 Nov 2026)\n\n#Botpress #AISecurity #APIKeys #LLMjacking #DataBreach #CyberSecurity"
+    },
+    {
+      "id": "2026-11-09-am-03",
+      "kind": "reel",
+      "category": "AI SECURITY",
+      "slot": "2026-11-09T12:00:00",
+      "story_key": "claude-code-dont-ask-again-secrets-apiiro-2026-11",
+      "send_to": "your devs using Claude Code",
+      "sources": [
+        {
+          "name": "iTWire",
+          "url": "https://itwire.com/business-it-news/security/claude-code-approval-files-found-exposing-company-secrets-on-github-says-apirro-researchers",
+          "date": "2026-11-07"
+        },
+        {
+          "name": "SecurityOnline",
+          "url": "https://securityonline.info/claude-code-leaking-secrets-github/",
+          "date": "2026-11-08"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "2,539 secrets. Saved by \"don't ask again\".",
+        "segments": [
+          {
+            "say": "Over twenty-five hundred secrets. Saved by don't ask again.",
+            "show": "Apiiro counted 2,539 distinct secrets across 1,994 public repositories (iTWire, 7 Nov).",
+            "card": "2,539 secrets",
+            "card_style": "stat"
+          },
+          {
+            "say": "Claude Code can save the full approved command, passwords included, in a local settings file.",
+            "show": "\"Yes, and don't ask again\" can store the whole approved shell command, credentials included, in .claude/settings.local.json.",
+            "card": ".claude/settings.local.json",
+            "card_style": "alert"
+          },
+          {
+            "say": "Developers committed it. Over eleven hundred public files held secrets.",
+            "show": "1,122 of 104,185 public copies held secrets. Apiiro didn't test them; one company confirmed its key was live.",
+            "card": "1,122 files with secrets",
+            "card_style": "fact"
+          },
+          {
+            "say": "Rotate first. Then git ignore the file.",
+            "show": "Rotate exposed keys first, then untrack the file and add it to .gitignore. Deleting it doesn't clean old commits or forks.",
+            "card": "Rotate → .gitignore",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to your devs using Claude Code.",
+            "show": "Send this to your devs using Claude Code.",
+            "card": "↗ Send this to your devs using Claude Code"
+          }
+        ]
+      },
+      "x_text": "Claude Code \"don't ask again\": Apiiro found 1,122 public .claude/settings.local.json files holding secrets, and 2,539 distinct secrets across 1,994 repos when history and transcripts are included. Rotate first, then .gitignore.\n\n#AISecurity #InfoSec",
+      "ig_caption": "2,539 secrets. Saved by \"don't ask again\". 🔑\n\nWhat iTWire (7 Nov) and SecurityOnline (8 Nov) reported from Apiiro's research:\n→ Choosing \"Yes, and don't ask again\" can make Claude Code save the full approved shell command, credentials included, in .claude/settings.local.json\n→ Of 104,185 public copies of that file, 1,122 held secrets (1,379 distinct values)\n→ Counting Git history, shared settings and agent transcripts: 2,539 distinct secrets across 1,994 repositories\n→ Among them, per SecurityOnline: 379 database passwords, 149 AI model API keys and 43 SSH server logins; gitleaks and TruffleHog together missed 215 of the files\n→ Apiiro didn't test the keys, but notified 63 organisations on 2–3 Nov; one confirmed its exposed key was live\n\nWhat to do: search your repos for .claude/settings.local.json, rotate anything in it first, then untrack it and add it to .gitignore. Deleting the file doesn't remove old commits, forks or clones. Use environment variables instead of typing raw passwords into commands.\n\nSend this to your devs using Claude Code 👇\n\nHas your team ever found a secret in a file nobody thought to check?\n\nSource: iTWire (7 Nov 2026), SecurityOnline (8 Nov 2026), research by Apiiro\n\n#ClaudeCode #AISecurity #SecretsManagement #GitHub #DevSecOps #AppSec"
+    },
+    {
+      "id": "2026-11-09-am-04",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-09T13:30:00",
+      "story_key": "gnosis-pay-legacy-card-system-breach-2026-11",
+      "send_to": "the friend who pays with a crypto card",
+      "sources": [
+        {
+          "name": "Bitcoin.com News (Gnosis Pay statement)",
+          "url": "https://news.bitcoin.com/security/gnosis-pay-data-breach-exposes-sensitive-customer-records/",
+          "date": "2026-11-07"
+        }
+      ],
+      "cover": {
+        "hook": "Name. Home address. Card number. Linked crypto wallets.",
+        "sub": "Gnosis Pay confirmed a breach of its legacy card system. One affected user listed what was exposed."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What happened",
+          "body": "Gnosis Pay says an unauthorized party accessed the legacy system behind its Gnosis Pay-branded cards. It detected the access on 3 Nov, began containment within two hours and confirmed the breach on 6 Nov."
+        },
+        {
+          "type": "point",
+          "title": "What leaked",
+          "body": "Gnosis Pay hasn't said how many customers were affected or published a full list of exposed data. Rotki founder Lefteris Karapetsas said his full name, home address, card number and linked wallet addresses were exposed."
+        },
+        {
+          "type": "stat",
+          "big": "2 hours",
+          "label": "from detection (3 Nov) to the start of containment, per Gnosis Pay",
+          "note": "The breached system was already due to retire on 20 Dec 2026"
+        },
+        {
+          "type": "point",
+          "title": "Why it matters",
+          "body": "A home address tied to wallet addresses makes targeted phishing easier. Gnosis Pay says customer funds were not affected and its white-label enterprise platform was not hit. It made 3D Secure mandatory for online payments."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "Expect phishing about Gnosis Pay, partner apps or your card",
+            "Never share a seed phrase, private key, PIN or full card number",
+            "Watch card and wallet activity closely",
+            "Retiring a system? Keep it monitored until it's switched off"
+          ]
+        }
+      ],
+      "question": "Have you ever been targeted by phishing right after a breach notice?",
+      "x_text": "Gnosis Pay breach: the crypto card firm says an unauthorized party accessed its legacy card system, detected 3 Nov. One user says his name, home address, card number and wallet addresses were exposed. Funds not affected, it says.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "Name. Home address. Card number. Linked crypto wallets. 💳\n\nWhat Bitcoin.com News reported (7 Nov):\n→ Gnosis Pay confirmed unauthorized access to the legacy system powering its Gnosis Pay-branded cards\n→ Detected 3 Nov; containment began within two hours; the system was already due to retire on 20 Dec 2026\n→ It hasn't said how many customers were affected; affected cardholders got individual notices\n→ Rotki founder Lefteris Karapetsas said his full name, home address, card number and linked wallet addresses were exposed\n→ Gnosis Pay says funds were not affected; it made 3D Secure mandatory for online payments and stepped up monitoring\n\nWhat to do: treat any unexpected email, text, call or letter about Gnosis Pay or your card as suspect, and never share a seed phrase, private key, PIN or full card number.\n\nSend this to the friend who pays with a crypto card 👇\n\nHave you ever been targeted by phishing right after a breach notice?\n\nSource: Bitcoin.com News, quoting Gnosis Pay (7 Nov 2026)\n\n#GnosisPay #DataBreach #CryptoSecurity #Phishing #CyberSecurity"
+    },
+    {
+      "id": "2026-11-09-am-05",
+      "kind": "reel",
+      "category": "ATTACK",
+      "slot": "2026-11-09T14:30:00",
+      "story_key": "ahold-delhaize-cyberattack-q4-toll-2026-11",
+      "send_to": "whoever signs off your cyber budget",
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
+          "date": "2026-11-06"
+        }
+      ],
+      "reel": {
+        "series": "Breach of the Day",
+        "hook": "Up to €250M in lost sales. One cyberattack.",
+        "segments": [
+          {
+            "say": "Up to two hundred fifty million euros in lost sales. From one cyberattack.",
+            "show": "Ahold Delhaize expects Q4 net sales down €200–250M after its October cyberattack (SecurityWeek, 6 Nov).",
+            "card": "€200–250M",
+            "card_style": "stat"
+          },
+          {
+            "say": "The grocery giant behind Food Lion and Albert Heijn disconnected systems in October.",
+            "show": "Brands include Albert Heijn, Delhaize, Food Lion, Hannaford. Systems were disconnected in mid-October.",
+            "card": "Systems disconnected",
+            "card_style": "alert"
+          },
+          {
+            "say": "It also expects up to a hundred million euros off operating profit.",
+            "show": "Q4 operating income hit of €75–100M; 2026 EPS growth guidance cut to \"low single digits\".",
+            "card": "€75–100M profit hit",
+            "card_style": "fact"
+          },
+          {
+            "say": "Rehearse running the business with systems offline.",
+            "show": "Test your offline playbook: which stores, tills and orders still work when systems go dark?",
+            "card": "Rehearse offline ops",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever signs off your cyber budget.",
+            "show": "Send this to whoever signs off your cyber budget.",
+            "card": "↗ Send this to whoever signs off your cyber budget"
+          }
+        ]
+      },
+      "x_text": "Ahold Delhaize cyberattack: the Food Lion and Albert Heijn owner expects Q4 net sales down €200-250M and a €75-100M operating income hit, and cut its 2026 EPS growth guidance, per SecurityWeek.\n\n#CyberAttack #CyberSecurity",
+      "ig_caption": "Up to €250 million in lost sales. One cyberattack. 🛒\n\nWhat SecurityWeek reported (6 Nov):\n→ Ahold Delhaize expects Q4 net sales to fall €200–250 million because of its October cyberattack\n→ It expects a €75–100 million hit to Q4 operating income\n→ It cut 2026 diluted underlying EPS growth guidance to \"low single digits\", citing the attack and new Serbian supplier-payment rules\n→ It disconnected systems in mid-October; brands include Albert Heijn, Delhaize, Food Lion and Hannaford\n→ CEO Frans Muller: most disruption was contained within two weeks, but work continues to fully restore operations\n\nWhat to do: put a revenue number on a week of downtime, rehearse running with key systems offline, and make sure isolation decisions can be made fast.\n\nSend this to whoever signs off your cyber budget 👇\n\nDoes your board know what one week offline would cost you?\n\nSource: SecurityWeek (6 Nov 2026)\n\n#AholdDelhaize #CyberAttack #Retail #IncidentResponse #BusinessContinuity #CyberSecurity"
+    }
+  ]
+}
