@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+  Animated explainer template (kind "diagram"). Copy to claude-news/diagrams/<item id>.html and edit.
+  Canvas 1080x1350 (4:5). Clean white background, dark text, coloured outlines only.
+  Animated pieces (all loop every 2 s so the video loops seamlessly):
+    path.flow   blue dashed arrow      path.flowG  green dashed arrow
+    path.flowR  red dashed arrow, faster (the attack / bad path)
+    .pulse      gentle scale pulse     .blink      fading text
+  Keep text >= 20px, max ~12 boxes, one idea per panel.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:Inter;font-weight:400 500;src:url('../../render/fonts/Inter-Medium.otf')}
+  @font-face{font-family:Inter;font-weight:600 900;src:url('../../render/fonts/Inter-SemiBold.otf')}
+  @font-face{font-family:'Inter Display';font-weight:700 900;src:url('../../render/fonts/InterDisplay-Bold.otf')}
+  :root{--ink:#111827;--muted:#4b5563;--blue:#2563eb;--green:#059669;--red:#dc2626;--line:#d1d5db}
+  html,body{margin:0;padding:0;background:#fff}
+  body{width:1080px;height:1350px;overflow:hidden}
+  svg{position:absolute;inset:0}
+  text{font-family:Inter,sans-serif;fill:var(--ink)}
+  .brand{font-size:22px;font-weight:800;letter-spacing:3px;fill:var(--blue)}
+  .title{font-family:'Inter Display',Inter,sans-serif;font-size:64px;font-weight:800}
+  .sub{font-size:28px;fill:var(--muted)}
+  .panelT{font-size:32px;font-weight:800}
+  .lbl{font-size:26px;font-weight:700;text-anchor:middle}
+  .small{font-size:21px;fill:var(--muted);text-anchor:middle}
+  .box{fill:#fff;stroke:#9ca3af;stroke-width:2.5}
+  .boxB{fill:#eff6ff;stroke:var(--blue);stroke-width:3}
+  .boxG{fill:#ecfdf5;stroke:var(--green);stroke-width:3}
+  .boxR{fill:#fef2f2;stroke:var(--red);stroke-width:3}
+  .flow,.flowG,.flowR{fill:none;stroke-width:4;stroke-dasharray:14 12;animation:dash 1s linear infinite}
+  .flow{stroke:var(--blue)} .flowG{stroke:var(--green)}
+  .flowR{stroke:var(--red);stroke-width:5;animation-duration:.5s}
+  @keyframes dash{from{stroke-dashoffset:26}to{stroke-dashoffset:0}}
+  .blink{animation:blink 1s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+  .pulse{animation:pulse 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+</style></head>
+<body>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <marker id="aB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#2563eb"/></marker>
+    <marker id="aG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#059669"/></marker>
+    <marker id="aR" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0,0L10,5L0,10z" fill="#dc2626"/></marker>
+  </defs>
+
+  <text class="brand" x="60" y="70">THE CYBER INTELLECT</text>
+  <text class="title" x="60" y="148">Self-Hosted AI, Safely</text>
+  <text class="sub" x="60" y="194">Open-weight models: what Australia's ASD says to check</text>
+
+  <!-- Panel 1: risky -->
+  <rect x="40" y="225" width="1000" height="345" rx="26" fill="#f9fafb" stroke="#dc2626" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="277" style="fill:#dc2626">✗ Download it and run it</text>
+
+  <rect class="box" x="70" y="315" width="270" height="120" rx="18"/>
+  <text class="lbl" x="205" y="366">Model file</text>
+  <text class="small" x="205" y="398">unclear origin</text>
+
+  <g class="pulse">
+    <rect class="boxR" x="405" y="305" width="270" height="140" rx="20"/>
+    <text class="lbl" x="540" y="356">Loaded as-is</text>
+    <text class="small blink" x="540" y="390" style="fill:#dc2626;font-weight:800">some formats run code</text>
+    <text class="small" x="540" y="420">hidden backdoors?</text>
+  </g>
+
+  <rect class="boxR" x="740" y="315" width="270" height="120" rx="18"/>
+  <text class="lbl" x="875" y="366">Agent + tools</text>
+  <text class="small" x="875" y="398">direct to your systems</text>
+
+  <path class="flowR" d="M340,375 L395,375" marker-end="url(#aR)"/>
+  <path class="flowR" d="M675,375 L730,375" marker-end="url(#aR)"/>
+  <text x="540" y="500" style="font-size:24px;font-weight:700;text-anchor:middle;fill:#dc2626">Risks: tampered files, leaked fine-tune data,</text>
+  <text x="540" y="535" style="font-size:24px;font-weight:700;text-anchor:middle;fill:#dc2626">safeguards stripped, prompt injection, tool misuse</text>
+
+  <!-- Panel 2: safe path -->
+  <rect x="40" y="595" width="1000" height="520" rx="26" fill="#f9fafb" stroke="#059669" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="647" style="fill:#059669">✓ The ASD way</text>
+
+  <rect class="boxG" x="70" y="685" width="290" height="130" rx="18"/>
+  <text class="lbl" x="215" y="735" style="fill:#059669">① Approved source</text>
+  <text class="small" x="215" y="769">verify hash + signature</text>
+
+  <rect class="boxG" x="395" y="685" width="290" height="130" rx="18"/>
+  <text class="lbl" x="540" y="735" style="fill:#059669">② Sandbox first</text>
+  <text class="small" x="540" y="769">no-code file formats</text>
+
+  <rect class="boxG" x="720" y="685" width="290" height="130" rx="18"/>
+  <text class="lbl" x="865" y="735" style="fill:#059669">③ Test it</text>
+  <text class="small" x="865" y="769">hidden behaviour, injection</text>
+
+  <rect class="boxG" x="720" y="900" width="290" height="130" rx="18"/>
+  <text class="lbl" x="865" y="950" style="fill:#059669">④ External controls</text>
+  <text class="small" x="865" y="984">between model + systems</text>
+
+  <rect class="boxB" x="395" y="900" width="290" height="130" rx="18"/>
+  <text class="lbl" x="540" y="950">⑤ Human approval</text>
+  <text class="small" x="540" y="984">for high-risk actions</text>
+
+  <rect class="box" x="70" y="900" width="290" height="130" rx="18"/>
+  <text class="lbl" x="215" y="950">Your systems</text>
+  <text class="small" x="215" y="984">data, tools, cloud</text>
+
+  <path class="flowG" d="M360,750 L385,750" marker-end="url(#aG)"/>
+  <path class="flowG" d="M685,750 L710,750" marker-end="url(#aG)"/>
+  <path class="flowG" d="M865,815 L865,890" marker-end="url(#aG)"/>
+  <path class="flow" d="M720,965 L695,965" marker-end="url(#aB)"/>
+  <path class="flow" d="M395,965 L370,965" marker-end="url(#aB)"/>
+  <text x="540" y="1078" style="font-size:24px;font-weight:700;text-anchor:middle;fill:#059669">Can't establish where it came from? Don't adopt it.</text>
+
+  <!-- Takeaway -->
+  <rect x="40" y="1135" width="1000" height="150" rx="26" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text class="panelT" x="70" y="1185" style="fill:#2563eb;font-size:30px">Self-hosting moves the job to you</text>
+  <text x="70" y="1230" style="font-size:25px">Security, monitoring and incident response</text>
+  <text x="70" y="1266" style="font-size:25px">+ encrypt and restrict your fine-tuned files</text>
+
+  <text x="540" y="1325" style="font-size:24px;font-weight:800;text-anchor:middle">↗ Send this to whoever wants to self-host an LLM</text>
+</svg>
+</body></html>

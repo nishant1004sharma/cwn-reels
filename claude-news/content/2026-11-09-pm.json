@@ -1,0 +1,221 @@
+{
+ "date": "2026-11-09",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-09-pm-01",
+   "kind": "reel",
+   "category": "ATTACK",
+   "slot": "2026-11-09T16:00:00",
+   "story_key": "beget-cloud-wipe-2026-11",
+   "send_to": "whoever owns your backups",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/russia-cyberattack-beget-cloud",
+     "date": "2026-11-04"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Wiper scripts. Backups gone. 1,000+ servers.",
+    "segments": [
+     {
+      "say": "One night. Scripts built to erase data. A major hosting provider's cloud, wiped.",
+      "show": "Beget: attackers reached the systems that manage its infrastructure and ran scripts designed to erase data.",
+      "card": "VPS · storage · Kubernetes: wiped",
+      "card_style": "alert"
+     },
+     {
+      "say": "Russian host Beget says it lost every binary backup of its virtual servers. Over a thousand servers need manual checks.",
+      "show": "Beget lost all binary backups of its virtual servers; file-level backups survived. 1,000+ servers to inspect by hand.",
+      "card": "1,000+ servers to inspect",
+      "card_style": "stat"
+     },
+     {
+      "say": "Keep one backup copy the admin plane can't delete. Offline or immutable.",
+      "show": "Lesson: if one admin system can wipe both servers and backups, keep a copy outside its reach.",
+      "card": "Offline / immutable backups",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your backups.",
+      "show": "Send this to whoever owns your backups.",
+      "card": "↗ Send this to whoever owns your backups"
+     }
+    ]
+   },
+   "x_text": "Beget, a major Russian hosting provider, says attackers reached its infrastructure management systems and ran scripts to erase data: VPS, cloud storage and Kubernetes wiped, all binary VM backups lost. Keep a backup your admin plane can't delete.\n\n#Wiper #CyberSecurity",
+   "ig_caption": "Scripts built to erase data. Every binary backup of its virtual servers, gone. 🗑️\n\nWhat The Record reported (4 Nov):\n→ Russian hosting provider Beget says attackers got into the systems it uses to manage its infrastructure overnight on Sunday 1 Nov\n→ They ran scripts designed to erase data. VPS, cloud storage and Kubernetes data was wiped\n→ Beget says it lost all binary backups of its virtual servers; file-level backups are intact and may help recover some data\n→ More than 1,000 servers must be inspected by hand, so full recovery will take a long time\n→ Beget found no evidence attackers downloaded or changed customer data, and hasn't said how they got in. No group has claimed it\n\nThe defender's lesson: if one admin system can delete both your servers and your backups, you have one copy. Keep an offline or immutable backup outside its reach, and test restores. Beget also told customers to change passwords and access keys stored on affected systems.\n\nSend this to whoever owns your backups 👇\n\nCould your cloud admin account delete your backups too?\n\nSource: The Record (4 Nov 2026)\n\n#Wiper #Backups #CloudSecurity #DisasterRecovery #Kubernetes #CyberSecurity"
+  },
+  {
+   "id": "2026-11-09-pm-02",
+   "kind": "carousel",
+   "category": "THREAT INTEL",
+   "slot": "2026-11-09T17:00:00",
+   "story_key": "nvidia-board-huang-foreign-intelligence-probe-2026-11",
+   "send_to": "whoever protects your executives",
+   "sources": [
+    {
+     "name": "CBS News",
+     "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-investigation-china-intelligence/",
+     "date": "2026-11-08"
+    }
+   ],
+   "cover": {
+    "hook": "Nvidia's board opens an inquiry: was its CEO a foreign intelligence target?",
+    "sub": "The board says it has no reason to believe company secrets or national security were compromised."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What the board said",
+     "body": "In a Sunday statement, Nvidia's board said it is starting an independent investigation after reporting that CEO Jensen Huang was the target of a foreign intelligence effort. Independent directors, with outside counsel, will oversee it."
+    },
+    {
+     "type": "point",
+     "title": "The reporting behind it",
+     "body": "Per CBS, The New York Times reported last month that US authorities were investigating Alice Huang, a former Megaspeed executive whom US intelligence officials believe was a spy for China's Ministry of State Security."
+    },
+    {
+     "type": "stat",
+     "big": "$4.8B",
+     "label": "of Nvidia chips bought by Singapore-based Megaspeed in two years, per the NYT (via CBS)",
+     "note": "One of Nvidia's biggest customers in Southeast Asia"
+    },
+    {
+     "type": "point",
+     "title": "What's not proven",
+     "body": "Nvidia says Huang fully supports the review. China rejected the allegations last month as \"groundless speculation\", per the BBC as cited by CBS. No one has shown that any Nvidia data was taken."
+    },
+    {
+     "type": "actions",
+     "title": "For your exec protection",
+     "items": [
+      "Brief executives that spies target people, not just networks",
+      "Make it easy to report unusual approaches from business contacts",
+      "Keep sensitive talks off personal devices and channels",
+      "Put relationship-based insider risk in your threat model"
+     ]
+    }
+   ],
+   "question": "Does your security team ever brief executives on being targeted personally?",
+   "x_text": "Nvidia board opens independent probe after reports CEO Jensen Huang was the target of a foreign intelligence effort. The board says it has no reason to believe company secrets or national security were compromised.\n\n#ThreatIntel #CyberSecurity",
+   "ig_caption": "Nvidia's board is investigating whether its CEO was a foreign intelligence target. 🕵️\n\nWhat CBS News reported (8 Nov):\n→ Nvidia's board said on Sunday it is starting an independent investigation after reporting that Jensen Huang was the target of a foreign intelligence effort\n→ A committee of independent directors, with outside counsel, will oversee it\n→ The board says it has no reason to believe company secrets or national security were compromised\n→ The NYT reported last month that US authorities were investigating Alice Huang, a former Megaspeed executive US intelligence officials believe spied for China's Ministry of State Security (claims as cited by CBS)\n→ China rejected the allegations as \"groundless speculation\", per the BBC\n\nThe defender's lesson: intelligence services target people, not just networks. Brief executives, make unusual approaches easy to report, and keep sensitive talks off personal channels.\n\nSend this to whoever protects your executives 👇\n\nDoes your security team ever brief executives on being targeted personally?\n\nSource: CBS News (8 Nov 2026)\n\n#Nvidia #InsiderThreat #Espionage #ThreatIntel #ExecutiveProtection #CyberSecurity"
+  },
+  {
+   "id": "2026-11-09-pm-03",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-09T20:00:00",
+   "story_key": "brenner-base-tunnel-breach-everest-2026-11",
+   "send_to": "whoever approves supplier payments",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/202691/cyber-crime/dont-hand-propaganda-a-gift-reading-the-brenner-base-tunnel-se-breach-calmly.html",
+     "date": "2026-11-08"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "An €11.7B rail tunnel. A data breach.",
+    "segments": [
+     {
+      "say": "Europe's eleven billion euro rail tunnel. Its builder confirms a data breach.",
+      "show": "Brenner Base Tunnel SE confirms unauthorized people accessed some of its data. Projected cost about €11.7B.",
+      "card": "€11.7B project · breach confirmed",
+      "card_style": "alert"
+     },
+     {
+      "say": "The Everest gang claims eight hundred and twelve gigabytes. Nobody has verified that.",
+      "show": "Everest claims 812 GB (claim dated 17 Oct). ZeroFox: the group tends to exaggerate data volumes.",
+      "card": "812 GB claimed · unverified",
+      "card_style": "stat"
+     },
+     {
+      "say": "The company says operations are unaffected and the systems are isolated. Revoke exposed credentials and warn suppliers about fake requests.",
+      "show": "BBT SE to ANSA (7 Nov): operations unaffected, systems isolated, forensics + authorities investigating. No evidence of access to tunnel control systems.",
+      "card": "Revoke creds · warn suppliers",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever approves your supplier payments.",
+      "show": "Send this to whoever approves supplier payments.",
+      "card": "↗ Send this to whoever approves supplier payments"
+     }
+    ]
+   },
+   "x_text": "Brenner Base Tunnel SE confirms unauthorized access to some data. Everest claims 812 GB, unverified. The company says operations are unaffected and systems isolated. Lesson: revoke exposed credentials, warn suppliers about fake requests.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "A €11.7 billion rail tunnel project. A confirmed data breach. 🚆\n\nWhat Security Affairs reported (8 Nov):\n→ Brenner Base Tunnel (BBT) SE, building the rail tunnel under the Alps, confirms unauthorized people accessed some of its data\n→ The Everest extortion group claims 812 GB of files. Nobody has verified that, and ZeroFox notes the group tends to exaggerate\n→ The intrusion reportedly dates to mid-October; Austrian press broke the story on 6 Nov\n→ BBT SE told ANSA operations are unaffected, the systems involved are isolated, and forensics experts and authorities are investigating\n→ No evidence attackers reached industrial systems or tunnel control functions\n\nWhat to do after a breach like this: find out which information was exposed, revoke credentials that may be compromised, keep document systems apart from industrial networks, and warn suppliers about fraudulent requests.\n\nSend this to whoever approves supplier payments 👇\n\nWould your suppliers know a fake payment request from a real one after a breach?\n\nSource: Security Affairs (8 Nov 2026)\n\n#DataBreach #Everest #CriticalInfrastructure #SupplyChainSecurity #Extortion #CyberSecurity"
+  },
+  {
+   "id": "2026-11-09-pm-04",
+   "kind": "diagram",
+   "category": "AI SECURITY",
+   "slot": "2026-11-09T21:00:00",
+   "story_key": "explainer-open-weight-ai-safe-deployment",
+   "send_to": "whoever wants to self-host an LLM",
+   "sources": [
+    {
+     "name": "The Cyber Express",
+     "url": "https://thecyberexpress.com/open-weight-ai-models-carry-hidden-risks",
+     "date": "2026-11-09"
+    }
+   ],
+   "diagram": {
+    "title": "Self-Hosted AI, Safely",
+    "html": "claude-news/diagrams/2026-11-09-pm-04.html",
+    "seconds": 8
+   },
+   "x_text": "Self-hosting an open-weight AI model? Australia's ASD: use approved sources and verify hashes, sandbox first, test for hidden behaviour and prompt injection, put controls between model and systems, and keep a human on risky actions.\n\n#AISecurity #InfoSec",
+   "ig_caption": "Self-hosting an open-weight AI model? Here's the safe path, step by step. 🧩\n\nBased on new guidance from Australia's ASD (via The Cyber Express, 9 Nov):\n→ Risky path: a model file of unclear origin, loaded as-is. Some formats can run code, and backdoors may only show up for certain identities, organisations or topics\n→ Then it gets tools and direct access to your systems, with safeguards possibly stripped, raising prompt injection and tool misuse risk\n→ ① Get models only from approved, assessed sources and verify hashes and signatures\n→ ② Load new models in a sandbox first, and prefer formats that can't contain code\n→ ③ Test for hidden behaviours, prompt injection and data leaks before deployment\n→ ④ Put external controls between the model and sensitive systems\n→ ⑤ Require human approval for high-risk or irreversible actions\n\nASD's bottom line: if you can't establish where a model came from, don't adopt it. Self-hosting moves security, monitoring and incident response to you, so encrypt and restrict your fine-tuned files too.\n\nSend this to whoever wants to self-host an LLM 👇\n\nWho checks a model file before it lands on your GPU servers?\n\nSource: The Cyber Express on ASD guidance (9 Nov 2026)\n\n#AISecurity #OpenWeight #LLMSecurity #PromptInjection #ASD #CyberSecurity"
+  },
+  {
+   "id": "2026-11-09-pm-05",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-09T22:30:00",
+   "story_key": "asd-open-weight-ai-guidance-2026-11",
+   "send_to": "whoever wants to self-host an LLM",
+   "sources": [
+    {
+     "name": "The Cyber Express",
+     "url": "https://thecyberexpress.com/open-weight-ai-models-carry-hidden-risks",
+     "date": "2026-11-09"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "Myth: self-hosted AI is the safe option.",
+    "segments": [
+     {
+      "say": "Myth: running the A I model yourself makes it safe.",
+      "show": "Australia's ASD published two guides on open-weight AI models (e.g. Kimi K3, GLM5.3, Nemotron 3).",
+      "card": "Myth: self-hosted = safe",
+      "card_style": "alert"
+     },
+     {
+      "say": "Australia's A S D says some model files can run code, and backdoors may only trigger for certain organisations or topics.",
+      "show": "ASD risks: unclear origins, tampered files, leaking fine-tuned data, safeguards that disappear.",
+      "card": "Tampered files · hidden backdoors",
+      "card_style": "stat"
+     },
+     {
+      "say": "Verify hashes, sandbox it first, and keep a human approving risky actions.",
+      "show": "ASD: approved sources + hash/signature checks, sandbox first, test for injection, human approval for high-risk actions.",
+      "card": "Verify · sandbox · human approval",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever wants to self-host an L L M.",
+      "show": "Send this to whoever wants to self-host an LLM.",
+      "card": "↗ Send this to whoever wants to self-host an LLM"
+     }
+    ]
+   },
+   "x_text": "Australia's ASD on open-weight AI models: some model files can execute code, backdoors may trigger only for certain organisations or topics, and safeguards can disappear. Verify hashes, sandbox first, keep humans on risky actions.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "Myth: running the AI model yourself makes it safe. Reality: the security job just moved to you. 🤖\n\nWhat The Cyber Express reported on Australia's ASD guidance (9 Nov):\n→ ASD's ACSC published two guides on open-weight AI models, naming examples such as Kimi K3, GLM5.3 and the Nemotron 3 family\n→ Unclear origins: you may not know who trained it or on what\n→ Tampered files: some formats can execute code, and backdoors may only appear for certain identities, organisations, jurisdictions or topics\n→ Fine-tuned files can leak the data you trained them on\n→ Safeguards can disappear, raising prompt injection and tool misuse risk in agents\n\nWhat to do: use approved sources and verify hashes and signatures, sandbox new models first, test for hidden behaviours and prompt injection, and require human approval for high-risk actions. If you can't establish provenance, don't adopt it.\n\nSend this to whoever wants to self-host an LLM 👇\n\nIs anyone at your company running a downloaded model you haven't vetted?\n\nSource: The Cyber Express on ASD guidance (9 Nov 2026)\n\n#AISecurity #OpenWeight #LLMSecurity #ShadowAI #AgenticAI #CyberSecurity"
+  }
+ ]
+}
