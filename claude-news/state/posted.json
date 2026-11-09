@@ -2092,6 +2092,76 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "Up to €250M in lost sales. One cyberattack.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "beget-cloud-wipe-2026-11",
+      "id": "2026-11-09-pm-01",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Wiper scripts. Backups gone. 1,000+ servers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "nvidia-board-huang-foreign-intelligence-probe-2026-11",
+      "id": "2026-11-09-pm-02",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Nvidia's board opens an inquiry: was its CEO a foreign intelligence target?",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "brenner-base-tunnel-breach-everest-2026-11",
+      "id": "2026-11-09-pm-03",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "An €11.7B rail tunnel. A data breach.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-open-weight-ai-safe-deployment",
+      "id": "2026-11-09-pm-04",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Self-Hosted AI, Safely",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "asd-open-weight-ai-guidance-2026-11",
+      "id": "2026-11-09-pm-05",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Myth: self-hosted AI is the safe option.",
+      "typefully_draft_id": null
     }
   ]
 }
