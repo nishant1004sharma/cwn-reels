@@ -1,0 +1,279 @@
+{
+ "date": "2026-11-10",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-10-pm-01",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-10T16:00:00",
+   "story_key": "cve-2026-125350",
+   "send_to": "the friend who never restarts Chrome",
+   "sources": [
+    {
+     "name": "Google Chrome Releases",
+     "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "SecurityOnline",
+     "url": "https://securityonline.info/chrome-zero-day-cve-2026-125350/",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "GBHackers",
+     "url": "https://gbhackers.com/google-chrome-zero-day-vulnerability-2/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Chrome zero-day. Exploit already out.",
+    "segments": [
+     {
+      "say": "Your browser has a zero-day. Google says an exploit is already out there.",
+      "show": "CVE-2026-125350: a use-after-free in Chrome's XML component. Google says it is aware an exploit exists in the wild.",
+      "card": "Chrome zero-day · exploited",
+      "card_style": "alert"
+     },
+     {
+      "say": "Reported anonymously on November sixth. Fixed in a Chrome update on Monday.",
+      "show": "Reported 6 Nov by an anonymous researcher. Fixed 9 Nov: Chrome 157.0.8103.50/.51 (Windows, Mac), 157.0.8103.50 (Linux).",
+      "card": "Fixed in Chrome 157.0.8103.50",
+      "card_style": "fact"
+     },
+     {
+      "say": "The rollout takes days. Don't wait. Update, then hit relaunch.",
+      "show": "Settings → About Chrome → let it update → Relaunch. Edge, Brave and Opera users: watch for your browser's fix.",
+      "card": "Update · then Relaunch",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who never restarts Chrome.",
+      "show": "Send this to the friend who never restarts Chrome.",
+      "card": "↗ Send this to the friend who never restarts Chrome"
+     }
+    ]
+   },
+   "x_text": "Chrome zero-day CVE-2026-125350: a use-after-free in Chrome's XML component, and Google says an exploit exists in the wild. Fixed in Chrome 157.0.8103.50/.51 (Win/Mac) and .50 (Linux). Update, then relaunch.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "Your browser has a zero-day, and an exploit is already out there. 🌐\n\nWhat's reported:\n→ CVE-2026-125350 is a use-after-free bug in Chrome's XML component\n→ Google says it is aware that an exploit for it exists in the wild\n→ An anonymous researcher reported it on 6 Nov; Google shipped the fix on 9 Nov\n→ Fixed in Chrome 157.0.8103.50/.51 for Windows and Mac, 157.0.8103.50 for Linux. The same update fixes nine security bugs in total\n→ Google hasn't said who is exploiting it or who is targeted\n\nPatch now: Settings → About Chrome, let it update, then click Relaunch. The rollout takes days or weeks, so don't wait for it. On Edge, Brave or Opera, watch for your browser's own fix. Admins: check your fleet's Chrome version, not just the policy.\n\nSend this to the friend who never restarts Chrome 👇\n\nHow long does a browser update take to reach every laptop in your org?\n\nSource: Google Chrome Releases (9 Nov 2026); SecurityOnline (9 Nov 2026)\n\n#ZeroDay #Chrome #PatchNow #BrowserSecurity #CVE #CyberSecurity"
+  },
+  {
+   "id": "2026-11-10-pm-02",
+   "kind": "carousel",
+   "category": "THREAT INTEL",
+   "slot": "2026-11-10T17:00:00",
+   "story_key": "france-iran-irgc-fridge-attacks-attribution-2026-11",
+   "send_to": "whoever manages your building systems",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/09/france-blames-iran-for-mass-hacks-targeting-freezers-in-grocery-stores-and-blood-banks",
+     "date": "2026-11-09"
+    }
+   ],
+   "cover": {
+    "hook": "France says Iran's Revolutionary Guard heated its supermarket freezers.",
+    "sub": "Around 700 grocery stores. At least 15 fires. France has now named who it blames."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Who France blames",
+     "body": "French authorities accused Iran's IRGC on Monday. A report from France's Cyber Crisis Coordination Centre names Shahid Kaveh, an IRGC cyber unit that US agencies have linked to CyberAv3ngers."
+    },
+    {
+     "type": "stat",
+     "big": "~700",
+     "label": "French grocery stores whose refrigeration was sabotaged last month, per the French report",
+     "note": "At least 15 fires, The Record reports"
+    },
+    {
+     "type": "point",
+     "title": "How it worked",
+     "body": "Per TechCrunch, the hackers broke into web-based controllers that manage fleets of industrial cold units, then raised temperatures to spoil food. Researchers said some affected Danfoss models no longer get security fixes."
+    },
+    {
+     "type": "point",
+     "title": "Not just food",
+     "body": "A second wave in early November hit businesses in at least 11 European countries, including three sites of France's national blood service. The French Blood Establishment says it was stopped before any blood was spoiled."
+    },
+    {
+     "type": "point",
+     "title": "France's response",
+     "body": "Iran's ambassador was summoned and France says it will pursue European sanctions. Paris prosecutors opened a case against the unit's head and two deputies and requested international arrest warrants."
+    },
+    {
+     "type": "actions",
+     "title": "For anyone running controllers",
+     "items": [
+      "Take refrigeration and building controllers off the public internet",
+      "Put remote access behind VPN and MFA, never a bare web login",
+      "Replace controllers that no longer get security fixes",
+      "Alert on setpoint and defrost changes"
+     ]
+    }
+   ],
+   "question": "Who in your company owns the fridge, HVAC and building controllers?",
+   "x_text": "France blames Iran's IRGC for sabotaging refrigeration at ~700 grocery stores. Its report names Shahid Kaveh, an IRGC cyber unit; The Record says at least 15 fires. Hackers got into web-based cold-unit controllers. Get them off the internet.\n\n#OTSecurity #CyberSecurity",
+   "ig_caption": "Hackers turned supermarket freezers into heaters. France now says it knows who. 🧊🔥\n\nWhat's reported (The Record, TechCrunch, 9 Nov):\n→ French authorities accused Iran's Islamic Revolutionary Guard Corps of sabotaging refrigeration at around 700 French grocery stores last month\n→ The report, from France's Cyber Crisis Coordination Centre, names Shahid Kaveh, an IRGC cyber unit US agencies have linked to CyberAv3ngers\n→ France says the attacks caused extensive food losses and at least 15 fires\n→ The hackers broke into web-based controllers that manage fleets of industrial cold units; some affected Danfoss models no longer get security fixes, researchers said\n→ A second wave in early November hit at least 11 European countries, including three French blood service sites, stopped before any blood spoiled\n→ France summoned Iran's ambassador and says it will pursue EU sanctions\n\nThe defender's lesson: building and refrigeration controllers are OT. Keep them off the public internet, put remote access behind VPN and MFA, replace unsupported models and alert on setpoint changes.\n\nSend this to whoever manages your building systems 👇\n\nWho in your company owns the fridge, HVAC and building controllers?\n\nSource: The Record (9 Nov 2026); TechCrunch (9 Nov 2026)\n\n#OTSecurity #ICS #Iran #IRGC #CriticalInfrastructure #CyberSecurity"
+  },
+  {
+   "id": "2026-11-10-pm-03",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-10T20:00:00",
+   "story_key": "bossai-ai-agents-taipei-119-records-2026-11",
+   "send_to": "whoever owns your public APIs",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+     "date": "2026-11-09"
+    },
+    {
+     "name": "Help Net Security (Acronis TRU)",
+     "url": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "One hacker. 12 AI agents. 11 countries.",
+    "segments": [
+     {
+      "say": "One hacker. Twelve A I agents. Targets in at least eleven countries.",
+      "show": "Acronis researchers: a setup called BOSSAI ran 12 AI agents (9 in use) against hundreds of organisations in at least 11 countries.",
+      "card": "1 hacker · 12 AI agents",
+      "card_style": "alert"
+     },
+     {
+      "say": "He pulled emergency dispatch records for seven Taipei districts, through a public A P I.",
+      "show": "Case records from Taipei's 119 fire and ambulance system, seven districts, pulled through its API. Data taken or systems accessed at about 10 organisations.",
+      "card": "Taipei emergency records · 7 districts",
+      "card_style": "stat"
+     },
+     {
+      "say": "The agents failed wherever logins were enforced. Lock down every A P I.",
+      "show": "Per Acronis: the agents failed where logins were enforced, sessions required and endpoints filtered. Default credentials and unpatched databases let them in.",
+      "card": "Enforce logins on every API",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your public A P Is.",
+      "show": "Send this to whoever owns your public APIs.",
+      "card": "↗ Send this to whoever owns your public APIs"
+     }
+    ]
+   },
+   "x_text": "BOSSAI: Acronis says one hacker ran 12 AI agents against hundreds of orgs in 11+ countries, pulling Taipei's 119 fire/ambulance dispatch records for seven districts via an API. The agents failed wherever logins were enforced.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "One person. Twelve AI agents. Emergency dispatch records for seven Taipei districts. 🤖\n\nWhat The Hacker News reported (9 Nov), from Acronis research:\n→ A setup called BOSSAI had 12 AI agents, 9 in use, aimed at hundreds of organisations in at least 11 countries\n→ It pulled case records from Taipei's 119 fire and ambulance system, covering seven districts, through the system's API. Data was taken or systems accessed at about 10 organisations in Taiwan, Mexico and Thailand\n→ Grok and MiniMax refused direct attack requests; the attacker routed other tools through abliterated DeepSeek, GLM and Qwen models\n→ The agents made things up too: one scanner invented CVEs\n→ Acronis says it is highly confident the attacker is one person in Hualien City, Taiwan\n\nThe defender's lesson: the agents failed where logins were enforced, sessions were required and endpoints were filtered. They won on default credentials, open APIs and unpatched databases. AI makes it cheap to try every one of those at once.\n\nSend this to whoever owns your public APIs 👇\n\nWhich of your APIs still answers without a login?\n\nSource: The Hacker News (9 Nov 2026); Help Net Security on Acronis TRU (10 Nov 2026)\n\n#AISecurity #AgenticAI #APISecurity #ThreatIntel #Taiwan #CyberSecurity"
+  },
+  {
+   "id": "2026-11-10-pm-04",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-10T21:00:00",
+   "story_key": "iris-plaza-7-7m-breach-2026-11",
+   "send_to": "whoever manages your e-commerce vendors",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
+     "date": "2026-11-09"
+    }
+   ],
+   "cover": {
+    "hook": "7.7 million shoppers' data may be exposed. Through a cloud service the store used.",
+    "sub": "Japan's Iris Plaza, run by Iris Ohyama, is still offline while it investigates."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "Iris Ohyama found the intrusion on 28 Oct. Hackers compromised an external cloud service used by its Iris Plaza shopping platform. It suspended the site, disconnected related systems and says it has blocked the attackers' access."
+    },
+    {
+     "type": "stat",
+     "big": "7.7M",
+     "label": "people potentially affected: 5.8 million current and former members plus 1.9 million non-members",
+     "note": "Company figures, via SecurityWeek (9 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "What data",
+     "body": "Members: names, addresses, phone numbers, emails, dates of birth, gender and encrypted passwords. Non-members, including guest buyers: names, addresses, phone numbers and emails. The company says the cloud service held no card data."
+    },
+    {
+     "type": "point",
+     "title": "Still offline",
+     "body": "Iris Plaza, Simple Style and some Iris Group services remain suspended. The company says it has no evidence those other sites were hit, and no reports of unauthorized use or financial damage so far."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Expect phishing that uses your real name and address",
+      "Change the Iris Plaza password and anywhere you reused it",
+      "List every third-party cloud service holding customer data",
+      "Review those services' access logs and keys"
+     ]
+    }
+   ],
+   "question": "Which of your vendors' cloud services hold your customer list?",
+   "x_text": "Iris Plaza / Iris Ohyama: hackers compromised an external cloud service used by the Japanese shopping platform. 7.7 million people potentially affected: names, addresses, phones, emails; members also DOB and encrypted passwords.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "7.7 million people. One cloud service the store relied on. 🛒\n\nWhat SecurityWeek reported (9 Nov), from Iris Ohyama's statement:\n→ Iris Ohyama found the intrusion into its Iris Plaza shopping platform on 28 Oct\n→ Hackers compromised an external cloud service the platform used; the company says it has blocked their access and told law enforcement\n→ 5.8 million current and former members: names, addresses, phone numbers, emails, dates of birth, gender, encrypted passwords\n→ 1.9 million non-members, including guest buyers: names, addresses, phone numbers, emails\n→ No card data was stored in that service, and no misuse has been reported so far. Iris Plaza is still offline\n\nThe defender's lesson: your customer list lives wherever your vendors put it. Keep an inventory of third-party cloud services holding customer data, and check their access logs and keys. Customers: expect phishing that uses your real details.\n\nSend this to whoever manages your e-commerce vendors 👇\n\nWhich of your vendors' cloud services hold your customer list?\n\nSource: SecurityWeek (9 Nov 2026)\n\n#DataBreach #Japan #ThirdPartyRisk #CloudSecurity #Ecommerce #CyberSecurity"
+  },
+  {
+   "id": "2026-11-10-pm-05",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-10T22:30:00",
+   "story_key": "openclaw-575-malicious-skills-acronis-2026-11",
+   "send_to": "whoever installs your team's AI skills",
+   "sources": [
+    {
+     "name": "Help Net Security (Acronis TRU Cyber Pulse 2026)",
+     "url": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "575+ fake AI agent skills. Real malware.",
+    "segments": [
+     {
+      "say": "Five hundred seventy-five fake A I agent skills. Real malware inside.",
+      "show": "Acronis TRU Cyber Pulse 2026: more than 575 malicious OpenClaw skills posed as utilities.",
+      "card": "575+ malicious skills",
+      "card_style": "alert"
+     },
+     {
+      "say": "Myth: a skill is just instructions. Reality: it can ship code that runs with your agent's permissions.",
+      "show": "Acronis: agent skills can combine instructions with executable code that uses permissions already granted to the agent.",
+      "card": "Myth: skills are just text",
+      "card_style": "fact"
+     },
+     {
+      "say": "They dropped trojans, miners and info stealers. Vet every skill before installing.",
+      "show": "Payloads: trojans, crypto miners and information stealers on Windows and macOS.",
+      "card": "Vet skills like software",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever installs your team's A I skills.",
+      "show": "Send this to whoever installs your team's AI skills.",
+      "card": "↗ Send this to whoever installs your team's AI skills"
+     }
+    ]
+   },
+   "x_text": "OpenClaw: Acronis counted 575+ malicious agent skills posing as utilities, delivering trojans, crypto miners and infostealers to Windows and macOS. Skills can bundle code that runs with the agent's permissions. Vet them like software.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "A skill for your AI agent looks like a few lines of instructions. 575 of them carried malware. 🧩\n\nWhat Help Net Security reported (10 Nov), from the Acronis TRU Cyber Pulse 2026 report:\n→ More than 575 malicious OpenClaw skills posed as utilities\n→ They delivered trojans, cryptocurrency miners and information stealers to Windows and macOS\n→ Skills can combine instructions with executable code that uses permissions the agent already has\n→ Researchers also documented malicious payloads disguised as models, datasets and AI apps on Hugging Face\n\nMyth: a skill is just text. Reality: it's software that runs with your agent's access. Install skills only from sources you trust, read what they execute, keep agents on least privilege and keep approval prompts on.\n\nSend this to whoever installs your team's AI skills 👇\n\nWho reviews the skills and plugins your AI agents are allowed to load?\n\nSource: Help Net Security on Acronis TRU Cyber Pulse 2026 (10 Nov 2026)\n\n#AISecurity #AIAgents #SupplyChainSecurity #Malware #AgenticAI #CyberSecurity"
+  }
+ ]
+}
