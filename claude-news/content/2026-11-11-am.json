@@ -1,0 +1,254 @@
+{
+ "date": "2026-11-11",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-11-am-01",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-11T08:15:00",
+   "story_key": "mittwald-mcp-server-breach-56-projects-2026-11",
+   "send_to": "whoever runs your MCP servers",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/cyberattack-germany-ai-mittwald",
+     "date": "2026-11-09"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "56 projects. 8 days. Via an MCP server.",
+    "segments": [
+     {
+      "say": "Fifty-six projects. Eight days unnoticed. Way in: an A I connector.",
+      "show": "German web host Mittwald says an attacker got in through a flaw in its MCP server and compromised 56 customer projects.",
+      "card": "56 projects · 8 days unnoticed",
+      "card_style": "alert"
+     },
+     {
+      "say": "The M C P server let customers plug A I assistants into its hosting platform.",
+      "show": "Mittwald's Model Context Protocol server connects AI assistants to mStudio, its hosting management platform.",
+      "card": "Entry point: the MCP server",
+      "card_style": "fact"
+     },
+     {
+      "say": "Mittwald says the attacker appeared to use A I. Patch, log and limit your M C P servers.",
+      "show": "Mittwald's MD: logs show the attacker moved 'extremely quickly'. AI use is alleged; no other evidence was given.",
+      "card": "Patch, log and limit your MCP servers",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your M C P servers.",
+      "show": "Send this to whoever runs your MCP servers.",
+      "card": "↗ Send this to whoever runs your MCP servers"
+     }
+    ]
+   },
+   "x_text": "Mittwald MCP server breach: the German web host says an attacker came in through a flaw in its Model Context Protocol server, compromised 56 customer projects and went unnoticed for 8 days. It says the attacker appeared to use AI tools.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "An AI connector became the way in. 56 customer projects later, someone noticed. 🔌\n\nWhat The Record reported (9 Nov), from Mittwald's own disclosure:\n→ Mittwald CM Service, a German hosting provider for web agencies, was breached through a flaw in its MCP (Model Context Protocol) server\n→ That server lets customers connect AI assistants to mStudio, its hosting management platform\n→ 56 customer projects were compromised and the attacker went undetected for eight days\n→ Managing director Robert Meyer says the attacker \"appeared to have used AI tools\": in some cases only seconds passed between steps. Mittwald gave no other evidence of AI use\n→ Authorities were informed and outside forensic experts are helping; no further attacker activity seen since\n\nThe defender's lesson: an MCP server is an internet-facing app with the keys to whatever it connects to. Patch it, log every call, scope its permissions tightly and alert on fast, unusual sequences of actions.\n\nSend this to whoever runs your MCP servers 👇\n\nWho owns the MCP servers in your company, security or the AI team?\n\nSource: The Record (9 Nov 2026)\n\n#MCP #AISecurity #AgenticAI #WebHosting #DataBreach #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-am-02",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-11T10:00:00",
+   "story_key": "nitori-37-62m-records-breach-2026-11",
+   "send_to": "anyone who shops at Nitori",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
+     "date": "2026-11-10"
+    }
+   ],
+   "cover": {
+    "hook": "Up to 37.62 million customer records. One furniture retailer.",
+    "sub": "Japan's Nitori says a third party accessed one of its systems, likely since mid-October."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "Nitori confirmed unauthorized access to a system it manages on 6 Nov and blocked it. Its investigation says the attacker likely had access since mid-October. It has told Japan's privacy regulator and the police."
+    },
+    {
+     "type": "stat",
+     "big": "37.62M",
+     "label": "records of personal information potentially exposed, per Nitori's notice",
+     "note": "Via BleepingComputer (10 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "What data",
+     "body": "Members and buyers: membership numbers, names, emails, addresses, phone numbers, dates of birth, gender. Corporate members' contact details. Online order information from Nitori Net and its marketplace shops."
+    },
+    {
+     "type": "point",
+     "title": "What wasn't",
+     "body": "Nitori says account passwords and credit card information were not exposed. It hasn't said how the attacker got in, only that it has addressed vulnerabilities in its systems."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Expect phishing that quotes your real name, address and orders",
+      "Nitori says it never asks for passwords, card numbers or PINs",
+      "Verify 'order problem' messages through the official app or site",
+      "Companies: alert on long-running access, not just break-ins"
+     ]
+    }
+   ],
+   "question": "How long could an attacker sit in your customer database before anyone noticed?",
+   "x_text": "Nitori breach: the Japanese furniture retailer says a third party accessed one of its systems, likely since mid-October, exposing up to 37.62M records: names, emails, addresses, phones, birth dates, orders. No passwords or cards, it says.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "Up to 37.62 million records. Access likely going back to mid-October. 🛋️\n\nWhat BleepingComputer reported (10 Nov), from Nitori's notice:\n→ Japanese furniture giant Nitori confirmed unauthorized access to one of its systems on 6 Nov and blocked it\n→ The investigation indicates the attacker likely had access since mid-October\n→ Exposed: membership numbers, names, emails, postal addresses, phone numbers, dates of birth, gender, plus corporate members' contacts and online order information\n→ Not exposed, per Nitori: account passwords and credit card information\n→ Japan's privacy regulator and the police have been told; affected customers will be contacted by email or post\n\nThe defender's lesson: weeks of quiet access is the real failure. Alert on unusual long-running sessions and bulk reads of customer data. Customers: expect phishing that uses your real details; Nitori says it never asks for passwords, card numbers or PINs.\n\nSend this to anyone who shops at Nitori 👇\n\nHow long could an attacker sit in your customer database before anyone noticed?\n\nSource: BleepingComputer (10 Nov 2026)\n\n#DataBreach #Nitori #Japan #Phishing #PrivacyBreach #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-am-03",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-11T12:00:00",
+   "story_key": "cve-2026-124194",
+   "send_to": "the person who patches your Office",
+   "sources": [
+    {
+     "name": "Tenable",
+     "url": "https://www.tenable.com/blog/microsoft-november-2026-patch-tuesday-addresses-1093-cves-cve-2026-124194",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Open one Office file. Lose your NTLM hash.",
+    "segments": [
+     {
+      "say": "Open one Office file. Hand over your password hash.",
+      "show": "CVE-2026-124194: Outlook spoofing flaw exploited in the wild as a zero-day.",
+      "card": "Outlook zero-day · exploited",
+      "card_style": "alert"
+     },
+     {
+      "say": "Attackers get your N T L M hash, then impersonate you in follow-on attacks.",
+      "show": "Tenable: a crafted Office file can leak the target's NTLMv2 hash. CVSS 6.5.",
+      "card": "Leaks NTLMv2 hashes",
+      "card_style": "fact"
+     },
+     {
+      "say": "It's one of over a thousand fixes this Patch Tuesday. Patch Outlook first.",
+      "show": "Tenable counts 1,093 CVEs, 63 rated critical. Microsoft credits a researcher who used Claude.",
+      "card": "1,093 CVEs · patch Outlook first",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the person who patches your Office.",
+      "show": "Send this to the person who patches your Office.",
+      "card": "↗ Send this to the person who patches your Office"
+     }
+    ]
+   },
+   "x_text": "Microsoft Outlook zero-day CVE-2026-124194 exploited in the wild: a crafted Office file can leak a user's NTLMv2 hash for impersonation. Fixed in November Patch Tuesday (1,093 CVEs per Tenable, 63 critical).\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "Open one Office file. Hand over your password hash. 📧\n\nWhat Tenable reported on November Patch Tuesday (10 Nov):\n→ CVE-2026-124194, a Microsoft Outlook spoofing flaw (CVSS 6.5), was exploited in the wild as a zero-day\n→ An attacker gets a target to open a crafted Office file and obtains their NTLMv2 hash, which can be used to impersonate them in follow-on attacks\n→ Microsoft's advisory credits a researcher who used Anthropic's Claude to find it\n→ Tenable counts 1,093 CVEs this month: 63 critical, 1,029 important\n→ Other critical bugs include remote code execution in Active Directory, Exchange and Schannel\n\nThe defender's lesson: patch Outlook and Office first, then the critical server bugs. Limit NTLM where you can and watch for NTLM authentication to unknown external hosts.\n\nSend this to the person who patches your Office 👇\n\nHow far along is your org in turning off NTLM?\n\nSource: Tenable (10 Nov 2026)\n\n#ZeroDay #PatchTuesday #Outlook #NTLM #Microsoft #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-am-04",
+   "kind": "carousel",
+   "category": "THREAT INTEL",
+   "slot": "2026-11-11T13:30:00",
+   "story_key": "turla-cereal-exchange-malware-eset-2026-11",
+   "send_to": "whoever runs your Exchange servers",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/",
+     "date": "2026-11-10"
+    }
+   ],
+   "cover": {
+    "hook": "Spy malware hiding inside Exchange. No outside server to catch.",
+    "sub": "ESET found Turla's new 'Cereal' toolset reading government email in Kazakhstan and Romania."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Where it was found",
+     "body": "ESET first documented Cereal in late 2025 at a government body in Kazakhstan. A month later it found the same toolset at a Romanian government agency, selectively collecting email with NATO and EU representatives."
+    },
+    {
+     "type": "point",
+     "title": "How it hides",
+     "body": "CerealBox runs inside Exchange's mail transport process and hijacks existing transport agent handlers, so no new agent shows up. It picks out emails with .DOC, .DOCX and .PDF attachments."
+    },
+    {
+     "type": "stat",
+     "big": "0",
+     "label": "external command servers seen by ESET: the compromised Exchange server itself is the control point",
+     "note": "Via BleepingComputer (10 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "Who's behind it",
+     "body": "BleepingComputer describes Turla (also Snake, Secret Blizzard) as a group linked to Russia's FSB, active for over two decades. ESET calls Cereal a mature, well-engineered platform for long-term espionage."
+    },
+    {
+     "type": "actions",
+     "title": "For Exchange admins",
+     "items": [
+      "Check ESET's published IoCs against your Exchange servers",
+      "Baseline EdgeTransport.exe and alert on unexpected modules",
+      "Watch for odd web requests on Exchange-looking paths",
+      "Prefer moving sensitive mailboxes off self-hosted Exchange"
+     ]
+    }
+   ],
+   "question": "Would your monitoring spot malware living inside your mail server's own process?",
+   "x_text": "Turla's new 'Cereal' malware lives inside Microsoft Exchange transport, ESET says: it reads government email with .DOC/.DOCX/.PDF attachments and uses the hacked server itself for control. Found in Kazakhstan and a Romanian agency.\n\n#ThreatIntel #CyberSecurity",
+   "ig_caption": "Spy malware inside the mail server. No outside command server to spot. 🕵️\n\nWhat BleepingComputer reported (10 Nov), from ESET research:\n→ Turla is using a new modular .NET toolset, Cereal, to intercept email on government Microsoft Exchange servers\n→ ESET found it at a Kazakh government body in late 2025, then at a Romanian agency collecting email with NATO and EU representatives\n→ CerealBox runs inside Exchange's EdgeTransport process and hijacks existing transport handlers, filtering for .DOC, .DOCX and .PDF attachments\n→ CerealNeuron waits for encrypted web requests on paths that look like Exchange services and runs commands\n→ ESET saw no external C2: the compromised Exchange server is the only control point\n\nThe defender's lesson: network monitoring alone misses this. Check ESET's IoCs, baseline what loads into EdgeTransport.exe, and log web requests to Exchange paths.\n\nSend this to whoever runs your Exchange servers 👇\n\nWould your monitoring spot malware living inside your mail server's own process?\n\nSource: BleepingComputer (10 Nov 2026), ESET\n\n#Turla #Exchange #ThreatIntel #APT #Espionage #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-am-05",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-11T14:30:00",
+   "story_key": "deepmind-ai-agents-rsa-1024-cheaper-2026-11",
+   "send_to": "whoever owns your crypto inventory",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
+     "date": "2026-11-09"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "AI agents cut an RSA attack 3.5x.",
+    "segments": [
+     {
+      "say": "A I agents made an attack on R S A keys three and a half times cheaper.",
+      "show": "Google DeepMind: in a sandbox, agents re-ran an academic forgery attack on a 1024-bit RSA key using 391 CPU core-years, not 1,380.",
+      "card": "391 vs 1,380 core-years",
+      "card_style": "stat"
+     },
+     {
+      "say": "Under four days. About twenty human messages, mostly approvals.",
+      "show": "The agents designed, ran and debugged the computation with humans supervising. Work with UC San Diego and Inria.",
+      "card": "<4 days · ~20 human messages",
+      "card_style": "fact"
+     },
+     {
+      "say": "Myth: old keys are safe enough. Reality: ten twenty-four bit keys keep getting cheaper to attack. Retire them.",
+      "show": "DeepMind's Pushmeet Kohli: results only affect obsolete 1024-bit RSA; 2048-bit and larger remain secure.",
+      "card": "Retire 1024-bit RSA",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your crypto inventory.",
+      "show": "Send this to whoever owns your crypto inventory.",
+      "card": "↗ Send this to whoever owns your crypto inventory"
+     }
+    ]
+   },
+   "x_text": "Google DeepMind AI agents cut the cost of a known forgery attack on 1024-bit RSA 3.5x in a sandbox (391 vs 1,380 CPU core-years), in under four days. DeepMind says 2048-bit and larger keys remain secure. Retire 1024-bit RSA.\n\n#AISecurity #Cryptography",
+   "ig_caption": "AI agents made an attack on old RSA keys 3.5x cheaper. In under four days. 🔐\n\nWhat SecurityWeek reported (9 Nov), from Google DeepMind's papers:\n→ DeepMind AI agents, supervised by humans and working with UC San Diego and Inria cryptographers, found two ways to cut the cost of attacking legacy 1024-bit RSA\n→ In a sandbox they re-ran an earlier academic signature-forgery attack using 391 CPU core-years, versus 1,380 in the original study\n→ They designed, ran and debugged it in under four days with about 20 human messages, mostly approvals\n→ A second, not yet implemented method could make factoring each additional same-size key about 30x cheaper, per DeepMind's estimate\n→ The forgery doesn't recover private keys and needs about 4 billion signing queries. DeepMind's Pushmeet Kohli says 2048-bit and larger keys remain secure\n\nThe defender's lesson: AI speeds up cryptanalysis too. Inventory where 1024-bit RSA still lives (HSMs, legacy signing, old certificates) and plan its retirement.\n\nSend this to whoever owns your crypto inventory 👇\n\nDo you know where 1024-bit RSA is still running in your environment?\n\nSource: SecurityWeek (9 Nov 2026)\n\n#AISecurity #Cryptography #RSA #DeepMind #PQC #CyberSecurity"
+  }
+ ]
+}
