@@ -2232,6 +2232,76 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Look local. Become admin. Exploited.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-125350",
+   "id": "2026-11-10-pm-01",
+   "date": "2026-11-10",
+   "slot": "2026-11-10T16:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Chrome zero-day. Exploit already out.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "france-iran-irgc-fridge-attacks-attribution-2026-11",
+   "id": "2026-11-10-pm-02",
+   "date": "2026-11-10",
+   "slot": "2026-11-10T17:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "France says Iran's Revolutionary Guard heated its supermarket freezers.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "bossai-ai-agents-taipei-119-records-2026-11",
+   "id": "2026-11-10-pm-03",
+   "date": "2026-11-10",
+   "slot": "2026-11-10T20:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "One hacker. 12 AI agents. 11 countries.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "iris-plaza-7-7m-breach-2026-11",
+   "id": "2026-11-10-pm-04",
+   "date": "2026-11-10",
+   "slot": "2026-11-10T21:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "7.7 million shoppers' data may be exposed. Through a cloud service the store used.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "openclaw-575-malicious-skills-acronis-2026-11",
+   "id": "2026-11-10-pm-05",
+   "date": "2026-11-10",
+   "slot": "2026-11-10T22:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "575+ fake AI agent skills. Real malware.",
+   "typefully_draft_id": null
   }
  ]
 }
