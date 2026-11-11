@@ -1,0 +1,233 @@
+{
+ "date": "2026-11-11",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-11-pm-01",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-11T16:00:00",
+   "story_key": "sap-proxygate-icm2shell-2026-11",
+   "send_to": "whoever patches your SAP kernel",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "Two CVSS 10s. Inside SAP.",
+    "segments": [
+     {
+      "say": "Two max-severity bugs. In the heart of SAP.",
+      "show": "PROXYGATE and ICM2SHELL: SAP kernel flaws found by Onapsis, both with maximum CVSS scores of 10.0. Fixed on SAP's 10 Nov Security Patch Day.",
+      "card": "CVSS 10.0 · SAP kernel",
+      "card_style": "alert"
+     },
+     {
+      "say": "One hits S A P Gateway. The other hits WebSocket traffic, which is on by default.",
+      "show": "PROXYGATE (CVE-2026-89103): SAP Gateway. ICM2SHELL (CVE-2026-76964, CVE-2026-89126): WebSocket handling in ICM and Web Dispatcher, enabled by default.",
+      "card": "Gateway · ICM · Web Dispatcher",
+      "card_style": "fact"
+     },
+     {
+      "say": "Onapsis saw no attacks yet. Patch every app server, and set the gateway proxy rule too.",
+      "show": "No exploitation observed at publication, per Onapsis. PROXYGATE: most kernels need the update plus gw/acl_mode_proxy = 1. ICM2SHELL: SAP Notes 3778530 and 3778556.",
+      "card": "Patch + gw/acl_mode_proxy = 1",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever patches your S A P kernel.",
+      "show": "Send this to whoever patches your SAP kernel.",
+      "card": "↗ Send this to whoever patches your SAP kernel"
+     }
+    ]
+   },
+   "x_text": "SAP PROXYGATE (CVE-2026-89103) and ICM2SHELL (CVE-2026-76964, CVE-2026-89126): kernel flaws in SAP Gateway, ICM and Web Dispatcher, max CVSS 10.0, fixed 10 Nov. Onapsis saw no exploitation yet. PROXYGATE also needs gw/acl_mode_proxy = 1.\n\n#SAP #CyberSecurity",
+   "ig_caption": "Two maximum-severity bugs, in the core of SAP. 🧩\n\nWhat's reported (Cyber Security News, 10 Nov):\n→ Onapsis Research Labs found and reported PROXYGATE (CVE-2026-89103) in SAP Gateway and ICM2SHELL (CVE-2026-76964, CVE-2026-89126) in ICM and Web Dispatcher\n→ Both carry maximum CVSS scores of 10.0 and were fixed on SAP's 10 Nov Security Patch Day\n→ Attackers with network access could run OS commands as the <sid>adm account that owns the SAP install\n→ ICM2SHELL lives in WebSocket handling, which is enabled by default, and some S/4HANA services accept WebSocket connections without authentication\n→ Onapsis had seen no exploitation at publication\n\nPatch now: apply the kernel updates on every application server. For PROXYGATE, most kernels also need gw/acl_mode_proxy = 1 and tighter prxyinfo rules; patching alone may not close it. ICM2SHELL: SAP Notes 3778530 and 3778556. Put exposed Web Dispatcher and ICM first.\n\nSend this to whoever patches your SAP kernel 👇\n\nHow long does a kernel update take to reach every SAP app server in your landscape?\n\nSource: Cyber Security News (10 Nov 2026), citing Onapsis\n\n#SAP #SAPSecurity #PatchNow #ERP #Vulnerability #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-pm-02",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-11T17:00:00",
+   "story_key": "railway-ai-agents-740k-breach-2026-11",
+   "send_to": "whoever owns your AI API keys",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/railway-details-data-breach/",
+     "date": "2026-11-10"
+    },
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/railway-security-incident/",
+     "date": "2026-10-22"
+    }
+   ],
+   "cover": {
+    "hook": "Stolen secrets. AI agents. About $740,000 in charges.",
+    "sub": "Cloud platform Railway has detailed how an attacker used AI agents to break in and reach customer secrets."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Agents as the attacker",
+     "body": "Railway says the attacker used models with safety limits removed, run through an agent framework. A copy of Railway's code from cached repo snapshots gave the agents a map to search for weaknesses and test several routes at once."
+    },
+    {
+     "type": "point",
+     "title": "The chain",
+     "body": "First exploit: 20 Oct. An unknown flaw let the attacker partially escape the build system's isolation. A build-server credential exposed histories of 353 builds, secrets included. A cloud trust (OIDC) misconfiguration exposed a short-lived cloud credential."
+    },
+    {
+     "type": "stat",
+     "big": "~$740K",
+     "label": "Railway's estimate of unauthorized spending, linked to LLMjacking",
+     "note": "Railway says it will cover breach charges providers won't refund"
+    },
+    {
+     "type": "point",
+     "title": "Who may be exposed",
+     "body": "Up to 1.85% of workspaces, roughly 100,000, could have had environment variables decrypted: an upper limit, not a confirmed count. Tokens for 1,852 users were reset. No evidence of customer database access, per the report."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Rotate every secret kept in environment variables",
+      "Check AI provider usage and billing for spikes",
+      "Set spend limits and alerts on AI API keys",
+      "Audit cloud OIDC trust rules for your CI/CD"
+     ]
+    }
+   ],
+   "question": "Would you spot a stolen AI key from your alerts, or from your bill?",
+   "x_text": "Railway breach: the cloud platform says an attacker used AI agents with safety limits removed to break in and reach customer secrets: about $740,000 in unauthorized spending. Up to ~100,000 workspaces could have had env vars decrypted.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "An attacker brought AI agents. The bill came to about $740,000. 🤖\n\nWhat Railway has disclosed (via Cyber Security News, 10 Nov):\n→ The attacker used models with safety limits removed, run through an agent framework, with a copy of Railway's code as a map\n→ First exploit on 20 Oct: a previously unknown flaw let them partially escape the build system's isolation\n→ A build-server credential exposed stored histories from 353 builds, including secrets; an OIDC trust misconfiguration exposed a short-lived cloud credential\n→ Up to 1.85% of workspaces, roughly 100,000, could have had environment variables decrypted (an upper limit, not a confirmed count)\n→ Railway estimates unauthorized spending of about $740,000 and says it will cover breach charges providers won't refund\n\nThe defender's lesson: AI agents make attackers faster at chaining small mistakes. Rotate secrets kept in env vars, watch AI provider usage, put spend limits on API keys and review the OIDC trust rules behind your CI/CD.\n\nSend this to whoever owns your AI API keys 👇\n\nWould you spot a stolen AI key from your alerts, or from your bill?\n\nSource: Cyber Security News (10 Nov 2026, 22 Oct 2026), on Railway's incident report\n\n#AIAgents #AISecurity #LLMjacking #CloudSecurity #DataBreach #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-pm-03",
+   "kind": "reel",
+   "category": "ATTACK",
+   "slot": "2026-11-11T20:00:00",
+   "story_key": "italy-tajani-data-dark-web-2026-11",
+   "send_to": "whoever protects your executives",
+   "sources": [
+    {
+     "name": "SecurityWeek (AP)",
+     "url": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
+     "date": "2026-11-09"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "A minister's data. On the dark web.",
+    "segments": [
+     {
+      "say": "A foreign minister's personal data. Spread on the dark web.",
+      "show": "Italy's Foreign Minister Antonio Tajani says cybercriminals have been spreading his personal data on the dark web for days.",
+      "card": "Italy's foreign minister · data leaked",
+      "card_style": "alert"
+     },
+     {
+      "say": "He says criminals are ready to pay for more details on him and his family.",
+      "show": "Tajani: they \"are prepared to pay for other details on me and my loved ones.\" What data leaked hasn't been disclosed.",
+      "card": "Paying for more",
+      "card_style": "fact"
+     },
+     {
+      "say": "Premier Meloni blamed pro-Russian hackers. Leaders are targets too: scrub what's public and watch for impersonation.",
+      "show": "Premier Giorgia Meloni blamed pro-Russian hackers. Tajani did not say who was responsible. Source: AP via SecurityWeek, 9 Nov.",
+      "card": "Scrub public data · watch for impersonation",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever protects your executives.",
+      "show": "Send this to whoever protects your executives.",
+      "card": "↗ Send this to whoever protects your executives"
+     }
+    ]
+   },
+   "x_text": "Italy: Foreign Minister Antonio Tajani says his personal data has been spread on the dark web for days and criminals want more on his family. Premier Meloni blamed pro-Russian hackers. Executives' personal data is an attack surface.\n\n#DataLeak #CyberSecurity",
+   "ig_caption": "A foreign minister's personal data, spread on the dark web. 🇮🇹\n\nWhat the AP reported (via SecurityWeek, 9 Nov):\n→ Italy's Foreign Minister Antonio Tajani said on social media that cybercriminals had been spreading his personal data on the dark web for days\n→ He said they \"are prepared to pay for other details on me and my loved ones\" and that he faced threats and intimidation\n→ Premier Giorgia Meloni blamed pro-Russian hackers; Tajani himself did not say who was responsible\n→ The type of data leaked hasn't been disclosed\n\nThe defender's lesson: executives' personal data is part of your attack surface. Reduce what's public about leaders and their families, monitor for leaks and impersonation, and give them a fast way to report threats.\n\nSend this to whoever protects your executives 👇\n\nDoes your security team cover leaders' personal accounts, or only work ones?\n\nSource: SecurityWeek / Associated Press (9 Nov 2026)\n\n#DataLeak #DarkWeb #ExecutiveProtection #Italy #Doxxing #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-pm-04",
+   "kind": "diagram",
+   "category": "PATCH NOW",
+   "slot": "2026-11-11T21:00:00",
+   "x": true,
+   "story_key": "explainer-plex2shell-port-forward-vs-vpn",
+   "send_to": "anyone running Plex on a NAS",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
+     "date": "2026-11-09"
+    }
+   ],
+   "diagram": {
+    "title": "Plex2Shell: Open Port vs VPN",
+    "html": "claude-news/diagrams/2026-11-11-pm-04.html",
+    "seconds": 8
+   },
+   "x_text": "Plex2Shell on QNAP NAS: a 4-flaw chain in Plex Media Server, no valid login needed, exploited since mid-October. Update to Plex 1.43.3+, close port 32400, use a VPN. Exposed? Reinstall Plex and rotate Plex and NAS passwords.\n\n#Plex2Shell #CyberSecurity",
+   "ig_caption": "Open port vs VPN: why Plex2Shell hits some home servers and not others. 🖥️\n\nWhat SecurityWeek reported (9 Nov), from QNAP's warning:\n→ Plex2Shell is a chain of four Plex Media Server flaws (CVE-2026-96652, -96654, -96655, -96656), patched this summer\n→ Widespread exploitation started in mid-October, after technical details and proof-of-concept code went public\n→ It needs no valid credentials and runs code with the Plex service's privileges\n→ QNAP says some users' Plex on their NAS appears compromised; QTS and QuTS hero themselves are not affected\n→ Red path: port 32400 forwarded to the internet. Green path: reach Plex over a VPN, or turn Remote Access off\n\nDo this now: update to Plex Media Server 1.43.3 or later. If your Plex was reachable from the internet, treat it as potentially compromised: reinstall Plex and rotate both the Plex and NAS passwords. Keep QTS / QuTS hero and every app updated.\n\nSend this to anyone running Plex on a NAS 👇\n\nIs anything at home still port-forwarded that you forgot about?\n\nSource: SecurityWeek (9 Nov 2026), citing QNAP\n\n#Plex2Shell #Plex #QNAP #NAS #HomeLab #PatchNow #CyberSecurity"
+  },
+  {
+   "id": "2026-11-11-pm-05",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-11T22:30:00",
+   "story_key": "eset-dprk-drones-dev-supply-chain-2026-11",
+   "send_to": "the dev who maintains a tiny package",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/north-korean-hackers-3/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "Myth: hackers only hit big projects.",
+    "segments": [
+     {
+      "say": "Myth: hackers only go after big open-source projects.",
+      "show": "ESET's new APT Activity Report covers North Korea-aligned DeceptiveDevelopment compromising developers and the packages they maintain.",
+      "card": "Myth: only big projects get hit",
+      "card_style": "alert"
+     },
+     {
+      "say": "Reality: ESET says most were small utilities maintained by individuals.",
+      "show": "Artifacts reached npm, PyPI, Packagist, the Go module mirror and browser extension stores, per ESET (via Cyber Security News, 10 Nov).",
+      "card": "Reality: small, solo-maintained tools",
+      "card_style": "fact"
+     },
+     {
+      "say": "Stolen Git tokens and S S H keys let them push code into the projects.",
+      "show": "ESET: the group stole Git credentials, SSH keys and tokens, injected code into repositories and often rewrote commit history. Lazarus separately targeted European drone makers with fake job offers.",
+      "card": "Stolen Git creds → poisoned repos",
+      "card_style": "fact"
+     },
+     {
+      "say": "Protect maintainer accounts with hardware keys. Pin your dependencies.",
+      "show": "Hardware security keys on Git accounts, short-lived tokens, signed commits, and pinned, reviewed dependency updates.",
+      "card": "Hardware keys · pinned deps",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the developer who maintains a tiny package.",
+      "show": "Send this to the dev who maintains a tiny package.",
+      "card": "↗ Send this to the dev who maintains a tiny package"
+     }
+    ]
+   },
+   "x_text": "ESET APT report: North Korea-aligned DeceptiveDevelopment stole Git credentials and SSH keys, then pushed code into packages on npm, PyPI, Packagist and the Go mirror. Most victims: small utilities maintained by individuals.\n\n#SupplyChain #InfoSec",
+   "ig_caption": "Myth: attackers only go after big open-source projects. 📦\n\nWhat ESET's latest APT Activity Report says (via Cyber Security News, 10 Nov):\n→ North Korea-aligned DeceptiveDevelopment compromised developers and the open-source packages they maintain\n→ Most compromised projects were small utilities maintained by individuals\n→ The group stole Git credentials, SSH keys and tokens, injected code into repositories and often rewrote commit history\n→ Artifacts reached npm, PyPI, Packagist, the Go module mirror and browser extension marketplaces\n→ Separately, ESET says Lazarus resumed Operation DreamJob job-offer lures against European defence firms, including drone (UAS) suppliers\n\nDo this week: put hardware security keys on maintainer Git accounts, use short-lived tokens, sign commits, and pin and review dependency updates instead of pulling latest.\n\nSend this to the dev who maintains a tiny package 👇\n\nWho maintains the smallest dependency in your build, and would you know if their account changed hands?\n\nSource: Cyber Security News (10 Nov 2026), citing ESET\n\n#SupplyChainAttack #OpenSource #npm #PyPI #NorthKorea #CyberSecurity"
+  }
+ ]
+}
