@@ -2443,6 +2443,76 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Myth: hackers only hit big projects.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "microsoft-lazarus-neuron-backdoor-ai-agents-2026-11",
+   "id": "2026-11-12-am-01",
+   "date": "2026-11-12",
+   "slot": "2026-11-12T08:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "10 neurons. One backdoored AI agent.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "proofpoint-bluephishing-entra-agent-id-2026-11",
+   "id": "2026-11-12-am-02",
+   "date": "2026-11-12",
+   "slot": "2026-11-12T10:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "One click approves a fake AI agent. No password stolen.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "maersk-legacy-system-breach-whitearmor-2026-11",
+   "id": "2026-11-12-am-03",
+   "date": "2026-11-12",
+   "slot": "2026-11-12T12:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "$5 million ransom demand. On Maersk.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "sega-arara-newsletter-2-19m-emails-2026-11",
+   "id": "2026-11-12-am-04",
+   "date": "2026-11-12",
+   "slot": "2026-11-12T13:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "2,196,044 email addresses. Leaked through SEGA's newsletter vendor.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-116779",
+   "id": "2026-11-12-am-05",
+   "date": "2026-11-12",
+   "slot": "2026-11-12T14:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "CVSS 9.8 in phone-switch software. Exploited.",
+   "typefully_draft_id": null
   }
  ]
 }
