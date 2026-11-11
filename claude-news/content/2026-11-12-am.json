@@ -1,0 +1,259 @@
+{
+ "date": "2026-11-12",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-12-am-01",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-12T08:15:00",
+   "story_key": "microsoft-lazarus-neuron-backdoor-ai-agents-2026-11",
+   "send_to": "whoever picks your open AI models",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+     "date": "2026-11-11"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "10 neurons. One backdoored AI agent.",
+    "segments": [
+     {
+      "say": "Ten neurons. That's all it took to backdoor an A I agent.",
+      "show": "Microsoft researchers planted a hidden backdoor in an open-weight model by editing a handful of rarely used neurons. Their demo used 10. No retraining.",
+      "card": "10 neurons · hidden backdoor",
+      "card_style": "alert"
+     },
+     {
+      "say": "On a trigger, the model types the attacker's command. The agent runs it.",
+      "show": "The method, Lazarus: when a chosen trigger appears in a request or a tool's output, the model outputs an attacker's command. In tests on Nemotron-Terminal-8B it appeared in at least 98.8% of triggered sessions.",
+      "card": "98.8%+ of triggered sessions",
+      "card_style": "stat"
+     },
+     {
+      "say": "It needs weight access. Use models from the original publisher, check hashes, sandbox agents.",
+      "show": "The attacker must be able to change the model's weights. Microsoft says it hasn't seen threat actors use it. Source: The Hacker News, 11 Nov.",
+      "card": "Trusted source · hash check · sandbox",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever picks your open A I models.",
+      "show": "Send this to whoever picks your open AI models.",
+      "card": "↗ Send this to whoever picks your open AI models"
+     }
+    ]
+   },
+   "x_text": "Microsoft researchers show \"Lazarus\": editing fewer than 10 dormant neurons can backdoor an open-weight model so an AI agent runs an attacker's command on a trigger. Needs write access to the weights; not seen in the wild.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "Ten neurons. That's how few it took to backdoor an AI agent. 🧠\n\nWhat The Hacker News reported (11 Nov):\n→ Microsoft researchers' method, Lazarus, edits a few rarely used neurons in a model: no retraining\n→ When a chosen trigger shows up in a request or a tool's output, the model outputs an attacker's command, and the agent runs it with its own permissions\n→ On Nemotron-Terminal-8B, the command appeared in at least 98.8% of triggered test sessions and none of the trigger-free ones checked\n→ Qwen3.6-27B and Gemma-4-31B-IT were also tested, with 51% to 99.5% success depending on setup\n→ The attacker must be able to change the model's weights; Microsoft says it hasn't seen threat actors use it\n\nWhat to do: download checkpoints only from the original publisher and check hashes, treat third-party fine-tunes and merges as untrusted until audited, keep approved models in a private registry, and run agent-generated code in a sandbox with minimal access.\n\nSend this to whoever picks your open AI models 👇\n\nWhere do the open-weight models your team runs actually come from?\n\nSource: The Hacker News (11 Nov 2026), on Microsoft research\n\n#AISecurity #AIAgents #LLMSecurity #SupplyChainSecurity #OpenWeights #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-am-02",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-12T10:00:00",
+   "story_key": "proofpoint-bluephishing-entra-agent-id-2026-11",
+   "send_to": "whoever runs your Entra tenant",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+     "date": "2026-11-11"
+    }
+   ],
+   "cover": {
+    "hook": "One click approves a fake AI agent. No password stolen.",
+    "sub": "Proofpoint shows how consent phishing could target Microsoft Entra Agent ID. Not seen in real attacks yet."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The trick",
+     "body": "Proofpoint calls it BluePhishing. A victim approves a consent link for a malicious third-party AI agent blueprint. No password is stolen and no login page is faked. It's a research proof of concept, not yet seen in real attacks."
+    },
+    {
+     "type": "point",
+     "title": "Why it sticks",
+     "body": "The blueprint gets a permission, AgentIdentity.CreateAsManager, that Proofpoint says cannot be revoked, so the attacker can create agent identities in the tenant. Inherited permissions show only in runtime tokens, not in the Entra portal or Graph."
+    },
+    {
+     "type": "stat",
+     "big": "250",
+     "label": "agent identities one blueprint can create, vs one service principal per app registration",
+     "note": "Per Proofpoint, via Cyber Security News (11 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "About to get wider",
+     "body": "Microsoft notice MC1506733: from November 2026, regular Entra users can create agent blueprints by default. Proofpoint says consent controls for agents are less mature than those for apps."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Apply your user consent limits to agent blueprints and identities",
+      "Use permission classifications and Conditional Access for agents",
+      "Alert on 'Add application' and 'Add service principal' audit events",
+      "Warn staff about third-party agents asking for permissions"
+     ]
+    }
+   ],
+   "question": "Who in your tenant can approve an AI agent's permissions today?",
+   "x_text": "BluePhishing: Proofpoint shows consent phishing against Microsoft Entra Agent ID. One approved link for a fake AI agent blueprint, no password stolen, and a permission it says can't be revoked. Proof of concept, not seen in attacks yet.\n\n#AgenticAI #CyberSecurity",
+   "ig_caption": "One click approves a fake AI agent. No password stolen. 🤖\n\nWhat Cyber Security News reported (11 Nov), from Proofpoint's 9 Nov research:\n→ BluePhishing is consent phishing aimed at Microsoft Entra Agent ID, the system that gives AI agents their own identities\n→ A victim approves a consent link for a malicious third-party agent blueprint; no login page is faked\n→ The blueprint gets AgentIdentity.CreateAsManager, which Proofpoint says cannot be revoked, and one blueprint can create up to 250 agent identities\n→ Inherited permissions show only in runtime tokens, not in the Entra portal or Microsoft Graph\n→ From November 2026, regular users can create agent blueprints by default (MC1506733). It's a proof of concept: not seen in real attacks yet\n\nDo this week: apply your user consent limits to agent blueprints and identities, use permission classifications and Conditional Access for agents, and alert on 'Add application' and 'Add service principal' audit events.\n\nSend this to whoever runs your Entra tenant 👇\n\nWho in your tenant can approve an AI agent's permissions today?\n\nSource: Cyber Security News (11 Nov 2026), citing Proofpoint\n\n#AIAgents #MicrosoftEntra #ConsentPhishing #IdentitySecurity #AgenticAI #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-am-03",
+   "kind": "reel",
+   "category": "ATTACK",
+   "slot": "2026-11-12T12:00:00",
+   "story_key": "maersk-legacy-system-breach-whitearmor-2026-11",
+   "send_to": "whoever owns your acquired IT",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/202869/data-breach/whitearmor-demands-5-million-from-maersk-claims-theft-of-100gb-of-data.html",
+     "date": "2026-11-11"
+    },
+    {
+     "name": "Cybernews",
+     "url": "https://cybernews.com/security/maersk-confirms-cyberattack-ransomware/",
+     "date": "2026-11-11"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "$5 million ransom demand. On Maersk.",
+    "segments": [
+     {
+      "say": "Five million dollars. That's the ransom demand on Maersk.",
+      "show": "Ransomware group WhiteArmor demands $5M in Bitcoin from shipping giant Maersk and claims about 100 GB of data. These are the group's claims, not verified.",
+      "card": "$5M ransom demand · Maersk",
+      "card_style": "alert"
+     },
+     {
+      "say": "Maersk confirms data was taken from an old system it inherited through an acquisition.",
+      "show": "Maersk (11 Nov): unauthorised access and data extraction from one local legacy system, inherited from a previous acquisition. It says the incident is isolated.",
+      "card": "Legacy system · from an acquisition",
+      "card_style": "fact"
+     },
+     {
+      "say": "It says no sensitive data so far, and shipping runs as usual. The lesson: find the systems you acquired and never checked.",
+      "show": "Maersk: findings so far \"strongly suggest no sensitive data has been disclosed\"; no disruption expected for customers. Source: Security Affairs, Cybernews, 11 Nov.",
+      "card": "Inventory every acquired system",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your acquired I T.",
+      "show": "Send this to whoever owns your acquired IT.",
+      "card": "↗ Send this to whoever owns your acquired IT"
+     }
+    ]
+   },
+   "x_text": "Maersk confirms unauthorised access and data extraction from a legacy system inherited through an acquisition. WhiteArmor ransomware claims ~100 GB and demands $5M; Maersk says no sensitive data disclosed so far and no disruption expected.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "A $5 million ransom demand. Aimed at one of the world's biggest shipping companies. 🚢\n\nWhat's reported (Security Affairs and Cybernews, 11 Nov):\n→ Maersk confirmed unauthorised access and data extraction from one of its local legacy systems, inherited from a previous acquisition\n→ Maersk says its findings so far strongly suggest no sensitive data has been disclosed, and it found no impact on other Maersk or customer systems\n→ It does not expect disruption to customer operations; shipments can be booked as usual\n→ The WhiteArmor ransomware group claims about 100 GB of data and demands $5M in Bitcoin. Those are the group's claims, not confirmed by Maersk\n\nThe defender's lesson: acquisitions bring old systems nobody owns. List every inherited system, give each an owner, and retire or isolate what you can't patch.\n\nSend this to whoever owns your acquired IT 👇\n\nAfter your last acquisition, how long did it take to find every system that came with it?\n\nSource: Security Affairs and Cybernews (11 Nov 2026), on Maersk's statement\n\n#Maersk #Ransomware #DataBreach #MergersAndAcquisitions #LegacySystems #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-am-04",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-12T13:30:00",
+   "story_key": "sega-arara-newsletter-2-19m-emails-2026-11",
+   "send_to": "whoever manages your email vendors",
+   "sources": [
+    {
+     "name": "GBHackers",
+     "url": "https://gbhackers.com/sega-confirms-data-breach/",
+     "date": "2026-11-10"
+    }
+   ],
+   "cover": {
+    "hook": "2,196,044 email addresses. Leaked through SEGA's newsletter vendor.",
+    "sub": "SEGA confirmed the breach on 9 Nov. Attackers hit Arara, the outside firm that sent its marketing emails."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "Arara, an outsourced email distribution provider, says attackers exploited a web server vulnerability. Data was taken from 28 Oct until Arara shut the service down on 31 Oct."
+    },
+    {
+     "type": "stat",
+     "big": "2.19M",
+     "label": "SEGA customer email addresses stolen (2,196,044)",
+     "note": "92,273 of them included newsletter delivery information"
+    },
+    {
+     "type": "point",
+     "title": "What wasn't taken",
+     "body": "Per the report: no names, birth dates, gender, home addresses, phone numbers, credit card details or login passwords. SEGA had not confirmed any misuse when it announced."
+    },
+    {
+     "type": "point",
+     "title": "The vendor timeline",
+     "body": "SEGA asked Arara on 29 Oct during a security review and was told no leak was confirmed. Arara announced on 1 Nov and confirmed SEGA's exposure on 3 Nov. SEGA has paused Arara-based newsletters."
+    },
+    {
+     "type": "actions",
+     "title": "What to do",
+     "items": [
+      "Expect phishing posing as SEGA, SEGA Fave or Arara",
+      "SEGA never asks for passwords or card details by email",
+      "Companies: list every vendor holding your customer emails",
+      "Ask each vendor how fast they'd tell you about a breach"
+     ]
+    }
+   ],
+   "question": "How many vendors hold a copy of your customer email list?",
+   "x_text": "SEGA breach: 2,196,044 customer email addresses stolen via Arara, its outsourced newsletter provider, after attackers exploited a web server flaw (28-31 Oct). No passwords or card details taken, per the report.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "2.19 million email addresses. Taken from the firm that sent SEGA's newsletters. 🎮\n\nWhat GBHackers reported (10 Nov):\n→ SEGA confirmed on 9 Nov that 2,196,044 customer email addresses were stolen; 92,273 included newsletter delivery information\n→ The attack hit Arara, an outsourced email distribution provider; Arara says attackers exploited a web server vulnerability\n→ Data was taken from 28 Oct until Arara shut its service down on 31 Oct\n→ Not taken, per the report: names, birth dates, addresses, phone numbers, card details or login passwords\n→ SEGA had seen no misuse at announcement and has paused Arara-based newsletters\n\nIf you're a SEGA customer: expect phishing that looks like SEGA, SEGA Fave or Arara. SEGA never asks for passwords or card details by email. If you run marketing: know every vendor that holds your customer list.\n\nSend this to whoever manages your email vendors 👇\n\nHow many vendors hold a copy of your customer email list?\n\nSource: GBHackers (10 Nov 2026), on SEGA's notice\n\n#SEGA #DataBreach #ThirdPartyRisk #Phishing #VendorRisk #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-am-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-12T14:30:00",
+   "story_key": "cve-2026-116779",
+   "send_to": "whoever runs your VoIP servers",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "CVSS 9.8 in phone-switch software. Exploited.",
+    "segments": [
+     {
+      "say": "Nine point eight severity. In phone switch software. Now exploited.",
+      "show": "CVE-2026-116779: code injection in SignalWire FreeSWITCH, CVSS 9.8. CISA added it to its Known Exploited Vulnerabilities catalog on 9 Nov.",
+      "card": "CVSS 9.8 · FreeSWITCH · exploited",
+      "card_style": "alert"
+     },
+     {
+      "say": "It could expose credentials, hand over call control, or run commands.",
+      "show": "Per The Hacker News: it could lead to configuration and credential disclosure, call control and command execution. US federal agencies had until 12 Nov to fix it.",
+      "card": "Credentials · calls · commands",
+      "card_style": "fact"
+     },
+     {
+      "say": "Who's behind the attacks isn't public. Update to the October fix and check what's exposed online.",
+      "show": "Fixed in October 2026 (advisory GHSA-mg63-h38w-8p9p). No public reports yet on who is exploiting it or at what scale. Source: The Hacker News, 10 Nov.",
+      "card": "Apply the Oct 2026 fix",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your V O I P servers.",
+      "show": "Send this to whoever runs your VoIP servers.",
+      "card": "↗ Send this to whoever runs your VoIP servers"
+     }
+    ]
+   },
+   "x_text": "FreeSWITCH CVE-2026-116779 (CVSS 9.8, code injection) is in CISA's KEV catalog as exploited. Could lead to credential disclosure, call control and command execution. Fixed in October 2026; federal deadline was 12 Nov.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "A 9.8-severity bug in phone-switch software. Now on CISA's exploited list. ☎️\n\nWhat The Hacker News reported (10 Nov):\n→ CVE-2026-116779 is a code injection flaw in SignalWire FreeSWITCH, rated CVSS 9.8\n→ CISA added it to its Known Exploited Vulnerabilities catalog on 9 Nov, with a 12 Nov fix deadline for US federal agencies\n→ It could lead to configuration and credential disclosure, call control and command execution\n→ It was fixed in October 2026; there are no public reports yet on who is exploiting it or at what scale\n\nPatch now: update FreeSWITCH to the October 2026 fix (advisory GHSA-mg63-h38w-8p9p), check which instances face the internet, and rotate credentials stored in their configs.\n\nSend this to whoever runs your VoIP servers 👇\n\nWho owns the phone system in your organisation: IT, security, or a vendor nobody has called in years?\n\nSource: The Hacker News (10 Nov 2026), on CISA's KEV update\n\n#FreeSWITCH #VoIP #PatchNow #CISA #KEV #CyberSecurity"
+  }
+ ]
+}
