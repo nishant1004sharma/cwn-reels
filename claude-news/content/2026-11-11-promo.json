@@ -1,0 +1,69 @@
+{
+ "date": "2026-11-11",
+ "run": "promo",
+ "items": [
+  {
+   "id": "2026-11-11-promo-01",
+   "kind": "carousel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-11T19:30:00",
+   "story_key": "promo-intro-nishant-courses-2026-11-11",
+   "send_to": "a friend studying for CISSP",
+   "sources": [
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/cissp-exam-prep-domain-by-domain-2024-exam-outline/?couponCode=CISSPLAUNCH"
+    },
+    {
+     "name": "Udemy",
+     "url": "https://www.udemy.com/course/agentic-ai-security"
+    }
+   ],
+   "cover": {
+    "hook": "Hi, I'm Nishant. 15+ years in security. Here's what I post.",
+    "sub": "Daily AI and cyber news, explained for defenders. Plus two courses if you want to go deeper."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Who I am",
+     "body": "15+ years in security, from Linux admin to security engineering to leading enterprise security architecture and operations. CISSP, CISM, CEH. I sign off on security before digital products go live."
+    },
+    {
+     "type": "point",
+     "title": "What you get here",
+     "body": "Twice a day: the breaches, exploited flaws and AI attacks that matter, verified from the source. What happened, why it matters, and what to do this week. No hype."
+    },
+    {
+     "type": "stat",
+     "big": "60,000+",
+     "label": "vulnerabilities I led the fix for in one role",
+     "note": "I teach from the job, not just the textbook"
+    },
+    {
+     "type": "point",
+     "title": "Want CISSP?",
+     "body": "My Udemy course, CISSP Exam Prep: Domain by Domain, walks through every domain of the current exam outline, with the manager mindset the exam rewards. Link in bio."
+    },
+    {
+     "type": "point",
+     "title": "Want the AI Top 10?",
+     "body": "Agentic AI Security: OWASP Top 10 for AI Agents & MCP covers all 10 agent risks, from goal hijack to rogue agents, with the controls to put in place before an agent goes live. Link in bio."
+    },
+    {
+     "type": "actions",
+     "title": "Start here",
+     "items": [
+      "Follow for daily AI and cyber news",
+      "CISSP course: link in bio",
+      "AI Top 10 course: link in bio",
+      "Send this to someone starting in security"
+     ]
+    }
+   ],
+   "question": "Which one are you working on: CISSP or AI security?",
+   "x_text": "I'm Nishant: 15+ years in security, CISSP, CISM, CEH. I post daily AI and cyber news for defenders. Learning CISSP or the OWASP Top 10 for AI agents? Both courses are on Udemy.\n\n#CISSP #AISecurity",
+   "ig_caption": "Hi, I'm Nishant 👋 15+ years in security, and this is what I post here.\n\n→ Who I am: CISSP, CISM, CEH. I lead enterprise security architecture and operations, and sign off on security before digital products go live\n→ What you get: daily breaches, exploited flaws and AI attacks, verified from the source, with what to do this week\n→ No hype, just what defenders need\n\nWant to go deeper? I teach two courses on Udemy:\n🎓 CISSP Exam Prep: Domain by Domain. Every domain of the current exam outline, with the manager mindset the exam rewards: udemy.com/course/cissp-exam-prep-domain-by-domain-2024-exam-outline (code CISSPLAUNCH)\n🤖 Agentic AI Security: OWASP Top 10 for AI Agents & MCP. All 10 agent risks and the controls to use before an agent goes live: udemy.com/course/agentic-ai-security\n\nBoth links are in my bio.\n\nSend this to a friend studying for CISSP 👇\n\nWhich one are you working on: CISSP or AI security?\n\nSource: my Udemy courses\n\n#CISSP #CISSPExam #AISecurity #AgenticAI #OWASP #CyberSecurity #InfoSec"
+  }
+ ]
+}
