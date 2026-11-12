@@ -1,0 +1,254 @@
+{
+ "date": "2026-11-13",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-13-am-01",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-13T08:15:00",
+   "story_key": "signdrop-windows-clfs-zero-day-poc-2026-11",
+   "send_to": "whoever patches your Windows fleet",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+     "date": "2026-11-12"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "No CVE. No patch. Public SYSTEM exploit.",
+    "segments": [
+     {
+      "say": "No patch. No C V E. And the exploit code is already public.",
+      "show": "A researcher calling themselves MSNightmare posted SignDrop on GitHub on Patch Tuesday: proof-of-concept code that abuses the Windows CLFS driver to get local SYSTEM privileges.",
+      "card": "Public PoC · no CVE · no fix",
+      "card_style": "alert"
+     },
+     {
+      "say": "It abuses a Windows log-file protection and Microsoft Defender to turn a normal user into SYSTEM.",
+      "show": "Per The Hacker News, it targets the CLFS log authentication Microsoft added in October 2025 and uses the Defender antimalware service. Tested on Windows 11 26H2 and Windows Server 2025 builds.",
+      "card": "Standard user → SYSTEM",
+      "card_style": "stat"
+     },
+     {
+      "say": "No attacks reported yet. Keep the protection on, and patch the day Microsoft ships a fix.",
+      "show": "Not in CISA KEV; no attacks reported. 78researchlab confirmed it works but judged it unreliable for real operations. Don't disable CLFS authentication (modes 2 or 3). Source: The Hacker News, 12 Nov.",
+      "card": "Keep CLFS auth on · watch MSRC",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever patches your Windows fleet.",
+      "show": "Send this to whoever patches your Windows fleet.",
+      "card": "↗ Send this to whoever patches your Windows fleet"
+     }
+    ]
+   },
+   "x_text": "SignDrop: public PoC abuses the Windows CLFS driver and Defender to turn a standard user into SYSTEM. No CVE, no fix yet, no attacks reported. Don't disable CLFS log authentication; watch MSRC for a patch.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "No CVE. No patch. And the exploit code is already public. 🪟\n\nWhat The Hacker News reported (12 Nov):\n→ A researcher known as MSNightmare posted SignDrop on GitHub on Patch Tuesday, proof-of-concept code that abuses the Windows CLFS driver (clfs.sys) to get local SYSTEM privileges\n→ It targets the CLFS log authentication Microsoft added in October 2025 and uses the Defender antimalware service; Defender must be enabled for the chain to work\n→ Tested on Windows 11 26H2 and Windows Server 2025 builds, per the repository\n→ Microsoft has not confirmed the flaw, assigned a CVE or released a fix; it is not in CISA KEV and no attacks have been reported\n→ 78researchlab confirmed the exploit works but judged it not reliable enough for real operations\n\nWhat to do: check the CLFS Authentication mode on your Windows builds, don't switch the mitigation off (modes 2 or 3 let CLFS parse tampered logs), watch the MSRC update guide, and alert on odd behaviour from low-privilege accounts. Three of this researcher's earlier Defender flaws have been exploited in attacks, per The Hacker News.\n\nSend this to whoever patches your Windows fleet 👇\n\nHow fast does your team move on a public PoC with no patch yet?\n\nSource: The Hacker News (12 Nov 2026)\n\n#ZeroDay #Windows #PrivilegeEscalation #MicrosoftDefender #PatchManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-11-13-am-02",
+   "kind": "carousel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-13T10:00:00",
+   "story_key": "grok-built-apps-35k-exposed-claroc-2026-11",
+   "send_to": "whoever tracks your company's shadow IT",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+     "date": "2026-11-11"
+    }
+   ],
+   "cover": {
+    "hook": "35,578 Grok-built apps open to anyone. Some leaking passwords.",
+    "sub": "Researchers say \"Anyone with the link\" was preselected when they built an app."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What researchers found",
+     "body": "Claroc found 37,571 apps built with Grok. 35,578 could be opened without signing in. About 1 in 10 open apps held internal business or personal data, and roughly 2% were rated high or critical."
+    },
+    {
+     "type": "point",
+     "title": "Whose data",
+     "body": "Internal data from 30 other organizations turned up, per the researchers: 26 with more than 1,000 employees and 6 in the Fortune 500. 24 apps were built by staff at X and SpaceXSI."
+    },
+    {
+     "type": "stat",
+     "big": "35,578",
+     "label": "Grok-built apps reachable without sign-in",
+     "note": "Out of 37,571 found. Claroc research, via The Hacker News (11 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "The response",
+     "body": "SpaceXSI (formerly xAI) took down the 24 staff apps and says apps stay private until shared. Claroc says the setting was preselected on the paid account it used, and asks for \"Only you\" as the default."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Find apps your staff built with AI app builders",
+      "Set internal apps to Invited users or Only you",
+      "Check app scripts for hard-coded passwords and keys",
+      "Unpublish apps nobody owns"
+     ]
+    }
+   ],
+   "question": "Do you know how many AI-built apps your staff have shared by link?",
+   "x_text": "Grok-built apps: Claroc found 37,571, and 35,578 opened without sign-in. About 1 in 10 open apps held internal business or personal data, including from 6 Fortune 500 firms. Check what your staff have shared by link.\n\n#AISecurity #DataExposure",
+   "ig_caption": "35,578 apps built with Grok. Open to anyone with the link. 🔓\n\nWhat The Hacker News reported (11 Nov), from Claroc's research:\n→ Claroc found 37,571 Grok-built apps; 35,578 could be opened without signing in\n→ About 1 in 10 open apps contained internal business or personal data, roughly 2% rated high or critical, some with passwords\n→ Data from 30 other organizations turned up: 26 with more than 1,000 employees, 6 in the Fortune 500\n→ 24 apps were built by staff at X and SpaceXSI; SpaceXSI (formerly xAI) took those down\n→ SpaceXSI says apps stay private until shared; Claroc says \"Anyone with the link\" was preselected on the paid account it used\n\nDo this week: find the apps your people built with AI app builders, set internal ones to \"Invited users\" or \"Only you\", check their scripts for hard-coded credentials, and unpublish anything nobody owns.\n\nSend this to whoever tracks your company's shadow IT 👇\n\nDo you know how many AI-built apps your staff have shared by link?\n\nSource: The Hacker News (11 Nov 2026)\n\n#AISecurity #Grok #VibeCoding #ShadowIT #DataExposure #CyberSecurity"
+  },
+  {
+   "id": "2026-11-13-am-03",
+   "kind": "reel",
+   "category": "ATTACK",
+   "slot": "2026-11-13T12:00:00",
+   "story_key": "screenconnect-rogue-clients-288-endpoints-2026-11",
+   "send_to": "whoever runs your remote support tools",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+     "date": "2026-11-12"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "288 endpoints. 48 orgs. One remote tool.",
+    "segments": [
+     {
+      "say": "Two hundred eighty-eight endpoints. Forty-eight organizations. Hit through their own remote support tool.",
+      "show": "Huntress says attackers used ScreenConnect's Run Command feature to push rogue ScreenConnect clients to at least 288 managed endpoints across 48 organizations. First detected 11 Nov.",
+      "card": "288 endpoints · 48 orgs",
+      "card_style": "alert"
+     },
+     {
+      "say": "Huntress sees no new bug. Likely stolen logins or hijacked sessions. ConnectWise switched off five add-ons.",
+      "show": "Huntress: likely compromised credentials or hijacked operator sessions. ConnectWise disabled five third-party extensions (RMM Plus family); about 400 partner environments had one installed. It says there's no evidence of a ScreenConnect vulnerability.",
+      "card": "5 extensions disabled · ~400 partners",
+      "card_style": "stat"
+     },
+     {
+      "say": "Check your Run Command history today, even if nothing alerted.",
+      "show": "Hunt for unusual sign-ins, new admin accounts, unexpected extensions or commands, and unapproved remote tools. Developing story. Source: The Hacker News, 12 Nov.",
+      "card": "Audit Run Command history",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your remote support tools.",
+      "show": "Send this to whoever runs your remote support tools.",
+      "card": "↗ Send this to whoever runs your remote support tools"
+     }
+    ]
+   },
+   "x_text": "ScreenConnect: Huntress says attackers used Run Command to push rogue clients to 288+ endpoints across 48 orgs. ConnectWise disabled five third-party extensions and says no ScreenConnect vulnerability is involved. Check your Run Command history.\n\n#MSP #CyberSecurity",
+   "ig_caption": "288 endpoints. 48 organizations. Reached through their own remote support tool. 🖥️\n\nWhat The Hacker News reported (12 Nov), a developing story:\n→ Huntress says attackers used ScreenConnect's Run Command feature to push rogue ScreenConnect clients to at least 288 managed endpoints across 48 organizations, first detected on 11 Nov\n→ Huntress has seen no evidence of a new vulnerability; it says initial access was likely compromised credentials or hijacked operator sessions\n→ Huntress says the MSPs were tagged with sequential numbers, so others may have been hit earlier\n→ ConnectWise disabled five third-party extensions (Labtech Plus, RMM Plus and related) in partner environments; about 400 had at least one installed\n→ ConnectWise says there's no evidence its infrastructure or ScreenConnect itself was compromised\n\nDo today: review Run Command history even if nothing alerted, hunt for unusual sign-ins, new admin accounts, unexpected extensions and unapproved remote-access software, and preserve logs of anything suspicious.\n\nSend this to whoever runs your remote support tools 👇\n\nWho in your team can see every command your RMM tools ran this week?\n\nSource: The Hacker News (12 Nov 2026), citing Huntress, Sophos and ConnectWise\n\n#ScreenConnect #MSP #RMM #ThreatHunting #IncidentResponse #CyberSecurity"
+  },
+  {
+   "id": "2026-11-13-am-04",
+   "kind": "carousel",
+   "category": "AI THREAT",
+   "slot": "2026-11-13T13:30:00",
+   "story_key": "antifox-ai-pentest-platform-aws-secrets-2026-11",
+   "send_to": "whoever owns your cloud secrets",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+     "date": "2026-11-11"
+    }
+   ],
+   "cover": {
+    "hook": "An AI pentest platform. Linked to attacks that read AWS production secrets.",
+    "sub": "Arctic Wolf says systems hosting AntiFox were tied to confirmed malicious actions."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What it is",
+     "body": "AntiFox is described as an AI-driven autonomous penetration testing platform, downloadable from GitHub and built on ARTEX, another AI pentest tool. Its multi-agent system runs recon, discovery, exploitation and reporting."
+    },
+    {
+     "type": "point",
+     "title": "What Arctic Wolf saw",
+     "body": "Arctic Wolf Labs says Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions: web exploitation, a web shell, then cloud enumeration. In some cases a GetSecretValue call succeeded against a production secret."
+    },
+    {
+     "type": "stat",
+     "big": "1,465",
+     "label": "hosts running an exposed ARTEX console (Censys, 4 Nov)",
+     "note": "Check Point counted 2,557 systems that hosted ARTEX. Via The Hacker News (11 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "What's still unknown",
+     "body": "The exact vulnerability used to run code on the IIS server isn't known, and no intrusion dates are given. Not every exposed ARTEX instance is necessarily malicious, the article notes."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Alert on unusual GetSecretValue calls",
+      "Limit which roles can read production secrets",
+      "Keep secrets out of web server configs",
+      "Patch and monitor internet-facing IIS servers"
+     ]
+    }
+   ],
+   "question": "Would you notice if a web server's role started reading your production secrets?",
+   "x_text": "AntiFox, an AI pentesting platform built on ARTEX: Arctic Wolf says systems hosting it were tied to intrusions where a GetSecretValue call read AWS production secrets. Censys counted 1,465 exposed ARTEX consoles.\n\n#AISecurity #CloudSecurity",
+   "ig_caption": "An AI pentest platform. Linked to attacks that read AWS production secrets. 🤖\n\nWhat The Hacker News reported (11 Nov):\n→ AntiFox is described as an AI-driven autonomous penetration testing platform on GitHub, built on ARTEX, another AI pentest tool\n→ Arctic Wolf Labs says Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions\n→ The chain: web exploitation, a web shell on an IIS server, then cloud enumeration; in some cases a GetSecretValue call succeeded against a production secret\n→ The exact vulnerability used isn't known\n→ Censys counted 1,465 hosts running an exposed ARTEX console (4 Nov); Check Point found 2,557 systems that hosted ARTEX, 10 exposing full databases\n\nWhat it means for defenders: AI agents shorten the path from a web bug to your cloud secrets. Alert on unusual GetSecretValue calls, limit which roles can read production secrets, and keep credentials out of web server configs.\n\nSend this to whoever owns your cloud secrets 👇\n\nWould you notice if a web server's role started reading your production secrets?\n\nSource: The Hacker News (11 Nov 2026), citing Arctic Wolf, Censys and Check Point\n\n#AISecurity #AgenticAI #AWS #CloudSecurity #SecretsManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-11-13-am-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-13T14:30:00",
+   "story_key": "cve-2026-108186",
+   "send_to": "whoever manages your Windows laptops",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+     "date": "2026-11-11"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "CVSS 9.6. In Zoom. No login needed.",
+    "segments": [
+     {
+      "say": "Nine point six out of ten. In the Zoom app on your Windows laptops.",
+      "show": "Zoom fixed CVE-2026-108186 (CVSS 9.6), an improper input validation flaw in Zoom Workplace for Windows that can allow unauthenticated privilege escalation over the network.",
+      "card": "CVE-2026-108186 · CVSS 9.6",
+      "card_style": "alert"
+     },
+     {
+      "say": "No login needed, over the network. A second flaw scores eight point one.",
+      "show": "Affected: 7.1.0 up to, not including, 7.1.8 (ZSB-26023). CVE-2026-108187 (CVSS 8.1) affects versions before 7.1.5 (ZSB-26024). Zoom makes no mention of exploitation.",
+      "card": "Fixed in 7.1.8 · 2nd flaw CVSS 8.1",
+      "card_style": "stat"
+     },
+     {
+      "say": "Push the latest Zoom Workplace update to every Windows device. Don't wait for users to click update.",
+      "show": "Source: The Hacker News, 11 Nov; Zoom bulletins ZSB-26023 and ZSB-26024.",
+      "card": "Update Zoom Workplace to 7.1.8+",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever manages your Windows laptops.",
+      "show": "Send this to whoever manages your Windows laptops.",
+      "card": "↗ Send this to whoever manages your Windows laptops"
+     }
+    ]
+   },
+   "x_text": "Zoom Workplace for Windows: CVE-2026-108186 (CVSS 9.6) allows unauthenticated privilege escalation over the network in 7.1.0 to before 7.1.8. CVE-2026-108187 (CVSS 8.1) also fixed. No exploitation mentioned. Push the update.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "CVSS 9.6. In the Zoom app on your Windows laptops. No login needed. 🩹\n\nWhat The Hacker News reported (11 Nov):\n→ CVE-2026-108186 (CVSS 9.6): improper input validation in Zoom Workplace for Windows, versions 7.1.0 up to before 7.1.8 (bulletin ZSB-26023)\n→ CVE-2026-108187 (CVSS 8.1): an origin validation flaw in versions before 7.1.5 (ZSB-26024)\n→ Both can allow an unauthenticated attacker to escalate privileges over the network\n→ Zoom makes no mention of exploitation in the wild\n\nDo this week: push Zoom Workplace 7.1.8 or later to every Windows device through your management tool instead of waiting for users to update, and check for old versions on shared and meeting-room PCs.\n\nSend this to whoever manages your Windows laptops 👇\n\nHow long does a desktop app update take to reach every laptop in your company?\n\nSource: The Hacker News (11 Nov 2026), citing Zoom security bulletins\n\n#Zoom #PatchNow #CVE #VulnerabilityManagement #EndpointSecurity #CyberSecurity"
+  }
+ ]
+}
