@@ -1,0 +1,259 @@
+{
+ "date": "2026-11-12",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-12-pm-01",
+   "kind": "reel",
+   "category": "AI NEWS",
+   "slot": "2026-11-12T16:00:00",
+   "story_key": "claude-fable-5-2-cyscenariobench-2026-11",
+   "send_to": "whoever sets your patch deadlines",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+     "date": "2026-11-10"
+    },
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "76.3% of simulated cyber ops. One AI.",
+    "segments": [
+     {
+      "say": "Seventy-six percent. That's how many simulated cyber operations one A I finished.",
+      "show": "Irregular's CyScenarioBench tests whether a model can plan and run a multi-stage cyber operation in a realistic environment. Anthropic's new Claude Fable 5.2 completed 76.3% of the challenges.",
+      "card": "76.3% · multi-stage cyber ops",
+      "card_style": "alert"
+     },
+     {
+      "say": "The previous version managed about sixty-two. OpenAI's G P T 6 Cyber, sixty-one.",
+      "show": "Same benchmark, as reported: Claude Fable 5.1 scored 61.7% and OpenAI's GPT-6 Cyber 61%.",
+      "card": "Fable 5.1: 61.7% · GPT-6 Cyber: 61%",
+      "card_style": "stat"
+     },
+     {
+      "say": "Anthropic says classifiers block exploit work for most users. Plan as if attackers get there anyway: patch faster.",
+      "show": "Per SecurityWeek, Fable 5.2 classifiers stop penetration testing and exploit generation; Mythos 5.2 goes only to vetted organizations. Sources: The Hacker News, SecurityWeek, 10 Nov.",
+      "card": "Assume faster attackers · shorten patch windows",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever sets your patch deadlines.",
+      "show": "Send this to whoever sets your patch deadlines.",
+      "card": "↗ Send this to whoever sets your patch deadlines"
+     }
+    ]
+   },
+   "x_text": "Claude Fable 5.2 completed 76.3% of Irregular's CyScenarioBench, a test of planning and running multi-stage cyber operations, vs 61.7% for Fable 5.1 and 61% for OpenAI's GPT-6 Cyber. Defenders' patch windows just got shorter.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "76.3%. That's how many simulated multi-stage cyber operations one AI model completed. 🤖\n\nWhat The Hacker News and SecurityWeek reported (10 Nov):\n→ Anthropic released Claude Fable 5.2 and Mythos 5.2, which share the same underlying model; Mythos ships with fewer guardrails\n→ On Irregular's CyScenarioBench, which tests whether a model can plan and execute a multi-stage cyber operation in a realistic environment, Fable 5.2 completed 76.3% of challenges\n→ Fable 5.1 scored 61.7% and OpenAI's GPT-6 Cyber 61%, as reported\n→ Fable 5.2 classifiers stop penetration testing and exploit generation for general users; Mythos 5.2 is limited to vetted organizations\n→ In Anthropic's sandbox test, Mythos 5.2 relied on credentials or files left outside the sandbox 3.1% of the time, down from 39% for Mythos 5\n\nWhat it means for defenders: the time between a bug going public and someone being able to chain it into an attack keeps shrinking. Shorten patch deadlines for internet-facing systems and test your detections against multi-stage chains, not single alerts.\n\nSend this to whoever sets your patch deadlines 👇\n\nHow many days does your team get to patch a critical, internet-facing flaw?\n\nSource: The Hacker News and SecurityWeek (10 Nov 2026)\n\n#AISecurity #ClaudeAI #AIModels #OffensiveSecurity #PatchManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-pm-02",
+   "kind": "carousel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-12T17:00:00",
+   "story_key": "near-ai-sglang-rce-breach-2026-11",
+   "send_to": "whoever runs your AI inference stack",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+     "date": "2026-11-10"
+    }
+   ],
+   "cover": {
+    "hook": "One flaw in an AI inference engine. 18 AI agents' chat history taken.",
+    "sub": "NEAR AI says an attacker exploited a remote code execution flaw in SGLang and moved further into its systems."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "NEAR AI says an attacker exploited a remote code execution flaw in SGLang, the open-source inference engine, and ran code on one of its inference servers. No CVE or affected versions have been named yet."
+    },
+    {
+     "type": "point",
+     "title": "The TEE didn't help",
+     "body": "Confidential-mode requests run inside a TEE. NEAR AI says the TEE does not protect against a flaw in the software running inside it, and SGLang runs inside. The attacker could also have seen that day's requests on the server."
+    },
+    {
+     "type": "stat",
+     "big": "18",
+     "label": "AI agents on an older deployment outside the TEE: chat history, settings and logs taken",
+     "note": "Plus account details of about 100 Private Chat users. Per NEAR AI, via The Hacker News (10 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "The response",
+     "body": "NEAR AI revoked all sessions and admin credentials, replaced agent tokens, took Private Chat offline, deployed an SGLang fix and revoked two customers' API keys found in logs. It's unclear if the SGLang project has shipped a fix."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "List where you run SGLang or other inference engines",
+      "Keep inference servers away from admin systems",
+      "Keep API keys and tokens out of agent logs",
+      "Watch SGLang for an official fix and patch fast"
+     ]
+    }
+   ],
+   "question": "Do you know which inference engine sits under your AI apps?",
+   "x_text": "NEAR AI says an attacker exploited an RCE flaw in SGLang, the open-source inference engine, ran code on an inference server and took chat history, settings and logs from 18 AI agents. No CVE yet.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "One flaw in an AI inference engine. 18 AI agents' chat history taken. 🧠\n\nWhat The Hacker News reported (10 Nov), from NEAR AI's incident report:\n→ An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on a NEAR AI inference server\n→ NEAR AI says its TEE (trusted execution environment) doesn't protect against a flaw in software running inside it, and SGLang runs inside\n→ The attacker reached 18 AI agents on an older deployment outside the TEE (chat history, settings, logs) and account details of about 100 users of the deprecated Private Chat\n→ Two customers' API keys were exposed in logs and revoked\n→ No CVE or affected versions are named yet, and it's unclear whether the SGLang project has released a fix\n\nDo this week: find where you run SGLang or other inference engines, keep those servers away from admin systems, keep keys and tokens out of agent logs, and patch as soon as an official fix lands.\n\nSend this to whoever runs your AI inference stack 👇\n\nDo you know which inference engine sits under your AI apps?\n\nSource: The Hacker News (10 Nov 2026), citing NEAR AI\n\n#AISecurity #LLMSecurity #AIAgents #SGLang #DataBreach #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-pm-03",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-12T20:00:00",
+   "story_key": "qubole-aws-cross-account-roles-attack-2026-11",
+   "send_to": "whoever owns your AWS accounts",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Over a dozen orgs. Via a vendor they'd left.",
+    "segments": [
+     {
+      "say": "Over a dozen companies. Data pulled through a vendor they had stopped using.",
+      "show": "Researchers say an attacker used leaked IAM credentials for an AWS account tied to Qubole, the big-data platform, to assume cross-account roles that customers had created for it.",
+      "card": "12+ orgs · old vendor access",
+      "card_style": "alert"
+     },
+     {
+      "say": "The roles were never removed. Nearly two weeks of access, secrets harvested, whole buckets downloaded.",
+      "show": "Sentra says the Qubole roles were still in place after customers stopped using Qubole. From 14 to 26 Oct the attacker enumerated resources, collected secrets and took S3 data.",
+      "card": "14–26 Oct · S3 buckets taken",
+      "card_style": "stat"
+     },
+     {
+      "say": "List every cross-account role. Delete the ones for vendors you've left.",
+      "show": "Wiz calls the activity opportunistic, not matching typical state-backed priorities. Source: SecurityWeek, 10 Nov.",
+      "card": "Audit cross-account IAM roles",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your A W S accounts.",
+      "show": "Send this to whoever owns your AWS accounts.",
+      "card": "↗ Send this to whoever owns your AWS accounts"
+     }
+    ]
+   },
+   "x_text": "Qubole supply chain attack: leaked IAM credentials for a Qubole-linked AWS account let an attacker assume old cross-account roles and pull data from over a dozen organizations' AWS environments, 14-26 Oct, per Sentra and Wiz.\n\n#SupplyChainAttack #CloudSecurity",
+   "ig_caption": "Over a dozen companies. Breached through a vendor they had stopped using. ☁️\n\nWhat SecurityWeek reported (10 Nov), from Sentra and Wiz research:\n→ An attacker got IAM credentials for an AWS account associated with Qubole, the big-data platform\n→ With them, it assumed the cross-account roles customers had created for Qubole and reached their AWS environments\n→ Sentra says the roles were still in place after customers stopped using Qubole: \"The doors the attacker used were old ones.\"\n→ From 14 to 26 Oct it enumerated resources, harvested secrets, tested them with TruffleHog and took S3 data, sometimes whole buckets\n→ Wiz calls it opportunistic and says it doesn't match typical state-backed priorities. Victims aren't named\n\nDo this week: list every cross-account IAM role in your AWS accounts, delete the ones for vendors you no longer use, require an External ID on the rest, and alert on role sessions you don't recognise.\n\nSend this to whoever owns your AWS accounts 👇\n\nWhen did you last remove a vendor's access after cancelling them?\n\nSource: SecurityWeek (10 Nov 2026)\n\n#SupplyChainAttack #AWSSecurity #CloudSecurity #IAM #ThirdPartyRisk #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-pm-04",
+   "kind": "carousel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-12T21:00:00",
+   "story_key": "xen-orchestra-vsa-2026-062-exploited-2026-11",
+   "send_to": "whoever runs your XCP-ng servers",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+     "date": "2026-11-10"
+    }
+   ],
+   "cover": {
+    "hook": "A broken login check. Admin over your hypervisors. Exploited now.",
+    "sub": "Vates says attackers are exploiting an auth bypass in Xen Orchestra. Fixed in 6.9.1 and 6.10.0."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The flaw",
+     "body": "Vates tracks it as VSA-2026-062 (no CVE yet). A flaw in how Xen Orchestra's REST API parses its login cookie lets an attacker sign in as the owner of an existing token, with admin rights."
+    },
+    {
+     "type": "point",
+     "title": "Why it's bad",
+     "body": "Per Vates, that leads to code execution on managed pools and full takeover of XCP-ng nodes as root. That's your whole virtualization layer, not one VM. Vates says a threat actor is actively exploiting it."
+    },
+    {
+     "type": "stat",
+     "big": "6.9.1 / 6.10.0",
+     "label": "fixed Xen Orchestra versions (xo-server 5.211.2 and 5.213.1)",
+     "note": "Per Vates VMS advisory, via The Hacker News (10 Nov)"
+    },
+    {
+     "type": "point",
+     "title": "Signs to hunt",
+     "body": "Vates lists: a running VM named pivot2, VMs set with 'hvm_serial: file', and files /etc/cron.d/zz-ustar, /etc/cron.d/zz-ustar2, /.ustar5 and /.ustar6. Found any? Rotate all passwords and secrets."
+    },
+    {
+     "type": "actions",
+     "title": "Do this today",
+     "items": [
+      "Update to Xen Orchestra 6.9.1 or 6.10.0",
+      "Take Xen Orchestra off the internet",
+      "Block empty auth tokens at your WAF or reverse proxy",
+      "Hunt for the IOCs; rotate secrets if found"
+     ]
+    }
+   ],
+   "question": "Is your hypervisor management console reachable from the internet?",
+   "x_text": "Xen Orchestra auth bypass (VSA-2026-062) is being actively exploited, Vates says: admin access, then code execution on managed pools and root on XCP-ng nodes. Update to 6.9.1 / 6.10.0 and keep it off the internet.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "A broken login check. Admin over your hypervisors. Being exploited now. ⚠️\n\nWhat The Hacker News reported (10 Nov), from Vates VMS:\n→ Vates says a threat actor is actively exploiting an authentication bypass in Xen Orchestra, tracked as VSA-2026-062 (no CVE yet)\n→ A flaw in how the REST API parses its login cookie lets an attacker authenticate as an existing token's owner, with admin rights\n→ From there: code execution on managed pools and full takeover of XCP-ng nodes as root\n→ Fixed in Xen Orchestra 6.9.1 and 6.10.0 (xo-server 5.211.2 and 5.213.1)\n→ Signs to hunt: a VM named pivot2, VMs set with 'hvm_serial: file', and files /etc/cron.d/zz-ustar, /etc/cron.d/zz-ustar2, /.ustar5, /.ustar6\n\nDo this today: update, take Xen Orchestra off the internet, block empty auth tokens at your WAF or reverse proxy, and if you find the indicators, rotate all passwords and secrets.\n\nSend this to whoever runs your XCP-ng servers 👇\n\nIs your hypervisor management console reachable from the internet?\n\nSource: The Hacker News (10 Nov 2026), citing Vates VMS\n\n#XenOrchestra #XCPng #PatchNow #Virtualization #ActivelyExploited #CyberSecurity"
+  },
+  {
+   "id": "2026-11-12-pm-05",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-11-12T22:30:00",
+   "story_key": "cve-2026-111760",
+   "send_to": "the dev who clones everything",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+     "date": "2026-11-10"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "One git clone could run someone's code.",
+    "segments": [
+     {
+      "say": "Clone the wrong repo with its submodules, and it can run code on your machine.",
+      "show": "CVE-2026-111760: Git patched a flaw that can let a malicious repository run attacker code when it's cloned recursively with its submodules.",
+      "card": "Recursive clone → code execution",
+      "card_style": "alert"
+     },
+     {
+      "say": "A very long file path gets cut short, and can end up named dot git.",
+      "show": "An integer truncation in Git's index: an over-long path passes a length check but is written under a shorter name the attacker can set to .git. No in-the-wild exploitation reported.",
+      "card": "CVE-2026-111760 · path truncation",
+      "card_style": "fact"
+     },
+     {
+      "say": "Update Git, and apps that bundle it. Until then, no recursive clones of repos you don't trust.",
+      "show": "Fixed: 2.56.1, 2.55.1, 2.54.1, 2.53.1, 2.52.1, 2.51.3, 2.50.2. GitHub.com is already fixed. Source: The Hacker News, 10 Nov.",
+      "card": "Git 2.56.1 · 2.55.1 · 2.54.1 and older series",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the dev who clones everything.",
+      "show": "Send this to the dev who clones everything.",
+      "card": "↗ Send this to the dev who clones everything"
+     }
+    ]
+   },
+   "x_text": "Git CVE-2026-111760: a malicious repository can run code on a machine that clones it recursively with submodules. Fixed in Git 2.56.1 and 2.50.2-2.55.1; update apps that bundle Git too. No exploitation reported.\n\n#Git #CyberSecurity",
+   "ig_caption": "One git clone could run someone else's code on your machine. 💻\n\nWhat The Hacker News reported (10 Nov):\n→ Git patched CVE-2026-111760, a flaw that can let a malicious repository run attacker code when it's cloned recursively with its submodules\n→ The cause: an integer truncation in Git's index. A very long path passes a length check but is written under a shorter name that can be set to .git\n→ Fixed in Git 2.56.1, plus 2.55.1, 2.54.1, 2.53.1, 2.52.1, 2.51.3 and 2.50.2, along with five other Git CVEs\n→ GitHub.com is fixed; GitHub Enterprise Server fixes are 3.19.15, 3.20.11, 3.21.9 and 3.22.4\n→ No in-the-wild exploitation was reported\n\nDo this week: update Git on dev machines and build servers, update apps that ship their own Git, and until then don't recursively clone repositories you don't trust.\n\nSend this to the dev who clones everything 👇\n\nDoes your team ever clone random repos with --recurse-submodules?\n\nSource: The Hacker News (10 Nov 2026)\n\n#Git #DevSecOps #SupplyChainSecurity #PatchNow #AppSec #CyberSecurity"
+  }
+ ]
+}
