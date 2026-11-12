@@ -2583,6 +2583,76 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "One git clone could run someone's code.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "signdrop-windows-clfs-zero-day-poc-2026-11",
+   "id": "2026-11-13-am-01",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T08:15:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "No CVE. No patch. Public SYSTEM exploit.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "grok-built-apps-35k-exposed-claroc-2026-11",
+   "id": "2026-11-13-am-02",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T10:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "35,578 Grok-built apps open to anyone. Some leaking passwords.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "screenconnect-rogue-clients-288-endpoints-2026-11",
+   "id": "2026-11-13-am-03",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T12:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "288 endpoints. 48 orgs. One remote tool.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "antifox-ai-pentest-platform-aws-secrets-2026-11",
+   "id": "2026-11-13-am-04",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T13:30:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "An AI pentest platform. Linked to attacks that read AWS production secrets.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-108186",
+   "id": "2026-11-13-am-05",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T14:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "CVSS 9.6. In Zoom. No login needed.",
+   "typefully_draft_id": null
   }
  ]
 }
