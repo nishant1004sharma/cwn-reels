@@ -2653,6 +2653,20 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "CVSS 9.6. In Zoom. No login needed.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "m365-exchange-online-outage-ex1550543-2026-11",
+   "id": "2026-11-13-extra-01",
+   "date": "2026-11-13",
+   "slot": "2026-11-13T10:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "130,000+ Outlook outage reports at the peak.",
+   "typefully_draft_id": null
   }
  ]
 }
