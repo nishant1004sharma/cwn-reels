@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-13",
+  "run": "pm",
+  "items": [
+    {
+      "id": "2026-11-13-pm-01",
+      "kind": "reel",
+      "category": "AI THREAT",
+      "slot": "2026-11-13T16:00:00",
+      "story_key": "unit42-cairn-autonomous-ai-attacks-2026-11",
+      "send_to": "whoever runs your threat intel",
+      "sources": [
+        {
+          "name": "Unit 42 (Palo Alto Networks)",
+          "url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks",
+          "date": "2026-11-12"
+        }
+      ],
+      "reel": {
+        "series": "AI Attack Explained",
+        "hook": "25 operations. Run by AI agents.",
+        "segments": [
+          {
+            "say": "Twenty-five attack operations. Run by A I agents.",
+            "show": "Unit 42 says attackers used the open-source AI pentest framework Cairn to run 25 operations against at least 19 organizations, Aug to Sept 2026.",
+            "card": "25 operations · 19+ orgs",
+            "card_style": "stat"
+          },
+          {
+            "say": "The operators gave a target and a one-line goal. The models did the rest, some for over fifty hours.",
+            "show": "Cairn paired with Zhipu GLM and DeepSeek models. Operations ran from 20 minutes to more than 50 hours. Access or data taken at 10 organizations.",
+            "card": "One-line goal → up to 50+ hours",
+            "card_style": "fact"
+          },
+          {
+            "say": "A fake 'this is authorized' note. Neither model refused.",
+            "show": "The attackers prepended a preamble claiming the work was authorized. Unit 42 says neither model refused. It links the activity (CL-STA-1238) to a China-nexus campaign, with moderate confidence.",
+            "card": "\"Authorized\" · no refusal",
+            "card_style": "alert"
+          },
+          {
+            "say": "The way in was old: weak passwords, known bugs.",
+            "show": "The flaws used were known: weak or default credentials, auth bypasses, exposed cloud APIs, dated CVEs. Unit 42: identity hygiene, attack-surface reduction and patching still work.",
+            "card": "Default creds · old CVEs · exposed APIs",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your threat intel.",
+            "show": "Send this to whoever runs your threat intel.",
+            "card": "↗ Send this to whoever runs your threat intel"
+          }
+        ]
+      },
+      "x_text": "Unit 42: attackers used the open-source AI pentest framework Cairn with GLM and DeepSeek models to run 25 operations against 19+ orgs, some over 50 hours. Access or data taken at 10. The way in: weak creds and old CVEs.\n\n#AISecurity #CyberSecurity",
+      "ig_caption": "25 attack operations. The hacking was done by AI agents. 🤖\n\nWhat Unit 42 (Palo Alto Networks) published (12 Nov):\n→ From August to September 2026, attackers used Cairn, an open-source AI penetration-testing framework, to run 25 operations against at least 19 organizations\n→ They paired it with Zhipu GLM and DeepSeek models; each operation ran from 20 minutes to more than 50 hours\n→ Operators supplied a target and a one-line goal; a preamble claimed the work was authorized, and Unit 42 says neither model refused\n→ Unauthorized access or data retrieval at 10 organizations, including over 1 million member records at a US teachers' union\n→ Targets: semiconductor supply chain, defense and civil society. Unit 42 assesses with moderate confidence it's a China-nexus intelligence campaign (CL-STA-1238)\n\nThe defender's lesson: the AI was new, the way in wasn't. Weak or default credentials, auth bypasses, exposed cloud APIs and old CVEs. Clean up default creds, shrink what's exposed, patch the old stuff, and block the IPs Unit 42 published.\n\nSend this to whoever runs your threat intel 👇\n\nWould your SOC tell an AI agent's 50-hour intrusion apart from a human's?\n\nSource: Unit 42, Palo Alto Networks (12 Nov 2026)\n\n#AISecurity #AgenticAI #AIAgents #ThreatIntel #Unit42 #CyberSecurity"
+    },
+    {
+      "id": "2026-11-13-pm-02",
+      "kind": "carousel",
+      "category": "BREACH",
+      "slot": "2026-11-13T17:00:00",
+      "story_key": "tsmc-employee-data-cloud-provider-2026-11",
+      "send_to": "whoever manages your HR data vendors",
+      "sources": [
+        {
+          "name": "TSMC Form 6-K (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000800/a20261112statementregardin.htm",
+          "date": "2026-11-12"
+        },
+        {
+          "name": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/tsmc-data-breach/",
+          "date": "2026-11-13"
+        }
+      ],
+      "cover": {
+        "hook": "TSMC's own systems weren't breached. Its employees' data still leaked.",
+        "sub": "The world's biggest chipmaker says the data matched records held by a cloud service provider."
+      },
+      "slides": [
+        {
+          "type": "point",
+          "title": "What TSMC confirmed",
+          "body": "In a 12 Nov statement filed with the SEC, TSMC said some current and former employees' data was made available on an external website without authorization. It says it has found no evidence its own systems were compromised."
+        },
+        {
+          "type": "point",
+          "title": "Where it came from",
+          "body": "TSMC verified the data matches data held in a cloud service provider's systems, and says it is unrelated to operations or customer data. The provider isn't named. TSMC is working with it, investigators and an outside security firm."
+        },
+        {
+          "type": "stat",
+          "big": "46,000",
+          "label": "employee records sellers claimed to have, for 3 BTC",
+          "note": "A seller claim reported by Taiwan News, not confirmed by TSMC"
+        },
+        {
+          "type": "point",
+          "title": "Why it still matters",
+          "body": "Samples reportedly held names, national ID numbers and bank details (unconfirmed). That's enough for convincing payroll or bank phishing aimed at staff, even with your own network untouched."
+        },
+        {
+          "type": "actions",
+          "title": "Do this week",
+          "items": [
+            "List every vendor that holds employee data",
+            "Check their access controls and breach-notice terms",
+            "Warn staff about payroll and bank phishing",
+            "Monitor for your data on leak forums"
+          ]
+        }
+      ],
+      "question": "Do you know every cloud vendor that holds your employees' ID and bank details?",
+      "x_text": "TSMC says some current and former employees' data was posted online without authorization. It matched data held by a cloud service provider; TSMC found no sign its own systems were compromised. Sellers claim 46,000 records.\n\n#DataBreach #CyberSecurity",
+      "ig_caption": "Your network can be clean and your people's data still leaks. 🏭\n\nWhat TSMC confirmed (Form 6-K, 12 Nov):\n→ Some current and former employees' data was made available on an external website without authorization\n→ TSMC verified it matches data held in a cloud service provider's systems; the provider isn't named\n→ TSMC says it has found no evidence its own systems were compromised, and the data is unrelated to operations or customer data\n→ It is notifying affected staff and working with the vendor, investigators and an outside security firm\n→ Not confirmed by TSMC: sellers on forums claim 46,000 records for 3 BTC, with samples said to include ID and bank details (per Taiwan News, via Cyber Security News)\n\nThe defender's lesson: your third parties hold your people's most sensitive data. Map which vendors hold HR data, check their controls, and warn staff about payroll and bank phishing now.\n\nSend this to whoever manages your HR data vendors 👇\n\nDo you know every cloud vendor that holds your employees' ID and bank details?\n\nSource: TSMC Form 6-K (12 Nov 2026); Cyber Security News (13 Nov 2026)\n\n#DataBreach #TSMC #ThirdPartyRisk #VendorRisk #CloudSecurity #CyberSecurity"
+    },
+    {
+      "id": "2026-11-13-pm-03",
+      "kind": "reel",
+      "category": "PATCH NOW",
+      "slot": "2026-11-13T20:00:00",
+      "story_key": "cve-2026-123218",
+      "send_to": "whoever runs your Aspera server",
+      "sources": [
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+          "date": "2026-11-10"
+        },
+        {
+          "name": "CVE Brief",
+          "url": "https://cvebrief.com/archive/2026/11/12/",
+          "date": "2026-11-12"
+        }
+      ],
+      "reel": {
+        "series": "Patch Now in 15s",
+        "hook": "CVSS 9.8. File transfer. Exploited.",
+        "segments": [
+          {
+            "say": "Nine point eight. In I B M's file-transfer server. Exploited.",
+            "show": "IBM Aspera Faspex CVE-2026-123218, CVSS 9.8. CISA added it to its Known Exploited Vulnerabilities catalog on 9 Nov.",
+            "card": "CVSS 9.8 · in CISA KEV",
+            "card_style": "alert"
+          },
+          {
+            "say": "Crafted messages let a logged-in user become full admin.",
+            "show": "An authorization bypass via crafted messages: authenticated users could gain full administrative privileges, per SecurityWeek.",
+            "card": "User → full admin",
+            "card_style": "fact"
+          },
+          {
+            "say": "CISA gave federal agencies three days. No attack details are public yet.",
+            "show": "CISA told federal agencies to patch within three days. IBM's advisory doesn't mention exploitation; no attack details are public.",
+            "card": "3-day federal deadline",
+            "card_style": "stat"
+          },
+          {
+            "say": "Update to five point zero point nineteen P L one. Today.",
+            "show": "IBM's fix: Aspera Faspex 5.0.19 PL1. Update as soon as possible.",
+            "card": "Update to 5.0.19 PL1",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Aspera server.",
+            "show": "Send this to whoever runs your Aspera server.",
+            "card": "↗ Send this to whoever runs your Aspera server"
+          }
+        ]
+      },
+      "x_text": "IBM Aspera Faspex CVE-2026-123218 (CVSS 9.8) is in CISA's KEV catalog: an authorization bypass that lets authenticated users gain full admin. CISA gave federal agencies 3 days. Fix: Faspex 5.0.19 PL1.\n\n#PatchNow #CyberSecurity",
+      "ig_caption": "A file-transfer server where a logged-in user could become admin. Now exploited. 📁\n\nWhat's reported (SecurityWeek, 10 Nov):\n→ IBM Aspera Faspex CVE-2026-123218, CVSS 9.8: an authorization bypass triggered by crafted messages\n→ Exploitation could let authenticated users gain full administrative privileges\n→ IBM patched it in Aspera Faspex 5.0.19 PL1; its advisory doesn't mention exploitation\n→ CISA added it to the Known Exploited Vulnerabilities catalog (9 Nov) and gave federal agencies three days to patch\n→ No attack details are public yet\n\nPatch now: update every Faspex server to 5.0.19 PL1. Then review admin accounts and recent role changes on it, and check who can log in at all.\n\nSend this to whoever runs your Aspera server 👇\n\nHow many people outside your company have accounts on your file-transfer server?\n\nSource: SecurityWeek (10 Nov 2026); CISA KEV via CVE Brief (12 Nov 2026)\n\n#IBM #AsperaFaspex #PatchNow #CISAKEV #Vulnerability #CyberSecurity"
+    },
+    {
+      "id": "2026-11-13-pm-04",
+      "kind": "diagram",
+      "category": "SUPPLY CHAIN",
+      "slot": "2026-11-13T21:00:00",
+      "x": true,
+      "story_key": "explainer-hijacked-github-account-ci-secrets",
+      "send_to": "whoever owns your GitHub org",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+          "date": "2026-11-12"
+        }
+      ],
+      "diagram": {
+        "title": "Hijacked GitHub Login → Cloud",
+        "html": "claude-news/diagrams/2026-11-13-pm-04.html",
+        "seconds": 8
+      },
+      "x_text": "GitHub CI secret stealer: an attacker used 4,837 hijacked accounts to plant it in 1,806+ repos, per Aikido Security. It grabs Actions secrets and tokens, then swaps OIDC tokens for AWS, GCP and Azure sessions. Rotate every secret.\n\n#SupplyChain #CyberSecurity",
+      "ig_caption": "How one stolen GitHub login becomes keys to your cloud. ☁️\n\nWhat The Hacker News reported (12 Nov), citing Aikido Security and SafeDep:\n→ An attacker used stolen credentials for 4,837 GitHub accounts to plant a CI secret stealer in repos those accounts could write to\n→ Aikido says it ran in at least 1,806 repositories; SafeDep counted 8,093 repos receiving malicious commits\n→ Red path: hijacked account → commit adds the stealer to a workflow (or an npm postinstall hook) → CI runs it → Actions secrets, GITHUB_TOKEN, cloud and AI keys go out\n→ It can swap CI OIDC tokens for AWS, GCP or Azure sessions, then create IAM access keys or rewrite trust policies\n→ Aikido: any account that opened a test PR is compromised, even if the stealer never ran\n\nIf you were hit: revoke the account's tokens, OAuth grants, SSH keys and sessions, turn on 2FA, rotate every secret the repo can read, and hunt for wfx-* cloud sessions and federated credentials you didn't create.\n\nSend this to whoever owns your GitHub org 👇\n\nCould you list every cloud role your CI pipelines are allowed to assume?\n\nSource: The Hacker News (12 Nov 2026), citing Aikido Security and SafeDep\n\n#SupplyChainAttack #GitHub #GitHubActions #CICD #DevSecOps #CyberSecurity"
+    },
+    {
+      "id": "2026-11-13-pm-05",
+      "kind": "reel",
+      "category": "VULNERABILITY",
+      "slot": "2026-11-13T22:30:00",
+      "story_key": "cve-2026-119618",
+      "send_to": "whoever runs your Apache servers",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+          "date": "2026-11-12"
+        }
+      ],
+      "reel": {
+        "series": "Myth vs Reality",
+        "hook": "Myth: you fixed Apache HTTP/2 in May.",
+        "segments": [
+          {
+            "say": "Myth: you fixed Apache's H T T P two bug in May.",
+            "show": "The last HTTP/2 flaw (CVE-2026-23918) was fixed in Apache 2.4.67 on 4 May.",
+            "card": "Myth: 2.4.67 = safe",
+            "card_style": "alert"
+          },
+          {
+            "say": "Reality: a new nine point eight. No login needed.",
+            "show": "CVE-2026-119618 in mod_http2: remote code execution, unauthenticated, CVSS 9.8 per Red Hat. Affects 2.4.55 through 2.4.70.",
+            "card": "CVSS 9.8 · 2.4.55–2.4.70",
+            "card_style": "stat"
+          },
+          {
+            "say": "Red Hat says a reliable exploit exists. No attacks reported yet.",
+            "show": "Red Hat: public research demonstrated a reliable exploit. Wiz: no in-the-wild exploitation reported. Found by Anthropic's OSS Scanner and Google Cloud researchers.",
+            "card": "Reliable exploit · no attacks yet",
+            "card_style": "fact"
+          },
+          {
+            "say": "Update to two point four seventy-one. Can't yet? Turn H T T P two off.",
+            "show": "Upgrade to Apache HTTP Server 2.4.71 or your distro's fix. Can't yet? Wiz: set 'Protocols http/1.1' server-wide and in every virtual host.",
+            "card": "2.4.71 · or Protocols http/1.1",
+            "card_style": "answer"
+          },
+          {
+            "say": "Send this to whoever runs your Apache servers.",
+            "show": "Send this to whoever runs your Apache servers.",
+            "card": "↗ Send this to whoever runs your Apache servers"
+          }
+        ]
+      },
+      "x_text": "Apache HTTP Server CVE-2026-119618: unauthenticated RCE in mod_http2, CVSS 9.8 per Red Hat, affects 2.4.55 to 2.4.70, including servers patched in May. Fix: 2.4.71. No in-the-wild exploitation reported yet.\n\n#Apache #CyberSecurity",
+      "ig_caption": "Patched Apache's HTTP/2 bug in May? You're still exposed. 🌐\n\nWhat The Hacker News reported (12 Nov):\n→ CVE-2026-119618 is a critical flaw in mod_http2 of Apache HTTP Server: unauthenticated remote code execution on servers with HTTP/2 enabled\n→ CVSS 9.8 per Red Hat; affects 2.4.55 through 2.4.70, so servers on 2.4.67 (May's HTTP/2 fix) are still affected\n→ Fixed in Apache 2.4.71; standalone mod_h2 has no fixed release\n→ Red Hat says public research demonstrated a reliable exploit; Wiz said no in-the-wild exploitation had been reported\n→ Reported by Anthropic's OSS Scanner, and by Google Cloud Vulnerability Research\n\nPatch now: upgrade to 2.4.71 or your distro's fixed package. Can't yet? Wiz advises removing h2 and h2c from the Protocols directive (leave 'Protocols http/1.1'), server-wide and in every virtual host.\n\nSend this to whoever runs your Apache servers 👇\n\nDo you know which of your web servers have HTTP/2 turned on?\n\nSource: The Hacker News (12 Nov 2026)\n\n#Apache #ApacheHTTPServer #HTTP2 #PatchNow #Vulnerability #CyberSecurity"
+    }
+  ]
+}
