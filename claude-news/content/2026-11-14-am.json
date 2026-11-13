@@ -1,0 +1,282 @@
+{
+ "date": "2026-11-14",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-14-am-01",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-14T08:15:00",
+   "story_key": "fbi-facestealer-dprk-deepfake-calls-400m-2026-11",
+   "send_to": "the exec who joins every video call",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "$400M+ stolen. Through fake video calls.",
+    "segments": [
+     {
+      "say": "Over four hundred million dollars. Stolen through fake video calls.",
+      "show": "The FBI says North Korean actors' FaceStealer scheme led to the theft of more than $400 million in crypto in the last 18 months.",
+      "card": "$400M+ · 18 months",
+      "card_style": "stat"
+     },
+     {
+      "say": "The invite comes from a friend's hijacked account. The faces are fake.",
+      "show": "Invites come from hijacked Telegram, LinkedIn, Slack or Discord accounts of earlier victims. Prerecorded and deepfake video plays the other people on the call while your webcam is recorded.",
+      "card": "Hijacked contact · fake faces",
+      "card_style": "alert"
+     },
+     {
+      "say": "Then a fake audio error asks you to run a fix. That's the malware.",
+      "show": "A mock audio error pushes a 'fix' link or terminal command (ClickFix-style) that installs malware. The new victim's accounts are then used to reach their contacts.",
+      "card": "The 'fix' is the malware",
+      "card_style": "alert"
+     },
+     {
+      "say": "Never run a fix. Verify the person another way.",
+      "show": "Typosquatted Zoom and Teams links were used. The FBI seized 900+ victim webcam recordings. Source: The Hacker News, 13 Nov.",
+      "card": "Never run a 'fix' · verify out of band",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the exec who joins every video call.",
+      "show": "Send this to the exec who joins every video call.",
+      "card": "↗ Send this to the exec who joins every video call"
+     }
+    ]
+   },
+   "x_text": "FBI: North Korea's FaceStealer scheme stole $400M+ in crypto in 18 months. Invites from hijacked contacts, deepfaked faces on Zoom/Teams calls, then a fake audio error with a 'fix' that installs malware. Never run a fix from a call.\n\n#Deepfake #CyberSecurity",
+   "ig_caption": "Over $400 million stolen. Through fake video calls. 🎥\n\nWhat The Hacker News reported (13 Nov):\n→ The FBI says North Korean actors' FaceStealer scheme led to the theft of more than $400 million in crypto in the last 18 months\n→ Meeting invites come from hijacked Telegram, LinkedIn, Slack or Discord accounts of earlier victims\n→ On the call, prerecorded and deepfake video plays the other participants while your own webcam is recorded\n→ A fake audio error then offers a 'fix' link or terminal command that installs malware, and the new victim's accounts are used to reach their contacts\n→ The FBI seized more than 900 victim webcam recordings; Arctic Wolf says most targets were founders and C-suite\n\nWhat to do: never run a command or install anything to 'fix' a call, check meeting links are the real Zoom or Teams domain, and verify an unexpected invite by calling the person on a number you already have.\n\nSend this to the exec who joins every video call 👇\n\nWould your team spot a deepfaked colleague on a call?\n\nSource: The Hacker News (13 Nov 2026), citing the FBI\n\n#Deepfake #NorthKorea #ClickFix #SocialEngineering #CryptoSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-am-02",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-14T10:00:00",
+   "story_key": "uber-drivers-fireworks-ai-vendor-breach-2026-11",
+   "send_to": "whoever approves your AI vendors",
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "Gizmodo",
+     "url": "https://gizmodo.com/hackers-stole-thousands-of-uber-drivers-data-through-an-ai-startup-2000839947",
+     "date": "2026-11-13"
+    }
+   ],
+   "cover": {
+    "hook": "Uber drivers' license data stolen. Through an AI vendor's breach.",
+    "sub": "Uber says the incident hit Fireworks.ai, a third-party vendor that had access to some Uber data."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "Fireworks AI told Uber on Oct 9 that hackers had stolen its internal credentials and used them to reach Uber's data held with the provider. Uber is notifying drivers that personal and driver's license information was taken."
+    },
+    {
+     "type": "point",
+     "title": "How many",
+     "body": "Uber hasn't given a total. Notices reviewed by TechCrunch: 2,567 people in Massachusetts, 3,430 in South Carolina and 1,873 in Rhode Island. Illinois is pending; California has no count yet."
+    },
+    {
+     "type": "stat",
+     "big": "7,870+",
+     "label": "people in just three state notices",
+     "note": "Gizmodo's tally of the MA, SC and RI figures. TechCrunch expects the number to rise."
+    },
+    {
+     "type": "point",
+     "title": "Who's behind it",
+     "body": "Fireworks blames a financially motivated group that sells stolen access to AI models (LLMjacking). No group has claimed it, per TechCrunch. Notion says its data was also stolen. Uber says it has seen no misuse so far."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "List every AI vendor that holds a copy of your data",
+      "Ask how they protect and rotate their own credentials",
+      "Give vendors only the data they need",
+      "Know how to cut a vendor's access fast"
+     ]
+    }
+   ],
+   "question": "Do you know which AI vendors hold copies of your customer data?",
+   "x_text": "Uber confirms drivers' personal and driver's license data was stolen via its AI vendor Fireworks.ai, after hackers took the vendor's internal credentials. 7,870+ people in just three state notices. Audit what your AI vendors hold.\n\n#DataBreach #ThirdPartyRisk",
+   "ig_caption": "Uber drivers' license data. Stolen through an AI vendor. 🚗\n\nWhat TechCrunch and Gizmodo reported (13 Nov):\n→ Uber says the incident hit Fireworks.ai, a third-party AI vendor that had access to some Uber data\n→ Fireworks told Uber on Oct 9 that hackers stole its internal credentials and used them to reach Uber's data held with it\n→ Drivers' personal and driver's license information was taken; Uber hasn't given a total\n→ State notices: 2,567 people in Massachusetts, 3,430 in South Carolina, 1,873 in Rhode Island, more pending\n→ Fireworks blames a financially motivated LLMjacking group; Notion says its data was also stolen\n\nDo this week: list every AI vendor that holds a copy of your data, ask how they protect their own credentials, cut their access down to what they need, and rehearse switching a vendor off fast.\n\nSend this to whoever approves your AI vendors 👇\n\nDo you know which AI vendors hold copies of your customer data?\n\nSource: TechCrunch and Gizmodo (13 Nov 2026)\n\n#DataBreach #Uber #ThirdPartyRisk #AISecurity #VendorRisk #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-am-03",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-14T12:00:00",
+   "story_key": "cve-2026-123039",
+   "send_to": "whoever runs your Check Point gateways",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Firewall zero-day. Root access. Exploited.",
+    "segments": [
+     {
+      "say": "Root access on the firewall. Exploited against a couple of dozen customers.",
+      "show": "Check Point says CVE-2026-123039, a privilege escalation in Gaia OS, was exploited against a couple of dozen customers (BleepingComputer, 13 Nov).",
+      "card": "Exploited · ~2 dozen customers",
+      "card_style": "alert"
+     },
+     {
+      "say": "They got in through the remote access portal, then took root.",
+      "show": "Since late October: PHP2Shell flaws in the Mobile Access portal, then CVE-2026-123039 (CVSS 7.8, per The Hacker News) for root, then webshells and the TSGA backdoor.",
+      "card": "CVE-2026-123039 · CVSS 7.8",
+      "card_style": "stat"
+     },
+     {
+      "say": "Some victims then saw VMware hosts wiped.",
+      "show": "Some first-wave victims (from 30 Oct, Israeli organizations) saw a wiper on ESXi hosts. Check Point says the actor is unknown.",
+      "card": "ESXi wiper in some cases",
+      "card_style": "alert"
+     },
+     {
+      "say": "Install the emergency hotfix now, then hunt for webshells.",
+      "show": "Affects R81 to R82.20. Hotfix: advisory sk1000362. Can't patch yet? Check Point's interim step: stop dynamic_server and keep it from restarting. Check the published IOCs.",
+      "card": "Hotfix sk1000362 · hunt IOCs",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your Check Point gateways.",
+      "show": "Send this to whoever runs your Check Point gateways.",
+      "card": "↗ Send this to whoever runs your Check Point gateways"
+     }
+    ]
+   },
+   "x_text": "Check Point CVE-2026-123039: Gaia OS zero-day exploited for root against a couple of dozen customers, chained with PHP2Shell portal flaws; some victims saw ESXi hosts wiped. Apply hotfix sk1000362 and hunt for webshells.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "Root on the firewall. Exploited in the wild. 🔥\n\nWhat BleepingComputer and The Hacker News reported (13 Nov):\n→ Check Point says CVE-2026-123039, a privilege escalation in Gaia OS, was exploited against a couple of dozen customers\n→ Attackers got in through PHP2Shell flaws in the Mobile Access portal, then used it for root (CVSS 7.8, per The Hacker News)\n→ They dropped webshells and the TSGA backdoor; attacks have run since late October\n→ Some first-wave victims saw a wiper on VMware ESXi hosts\n→ Check Point says the actor is unknown; affected versions R81 to R82.20\n\nWhat to do: install the emergency hotfix (advisory sk1000362) now. If you can't yet, Check Point's interim step is to stop the dynamic_server process and keep it from restarting. Then check the published IOCs and look for webshells.\n\nSend this to whoever runs your Check Point gateways 👇\n\nHow fast can your team hotfix a firewall on a Saturday?\n\nSource: BleepingComputer and The Hacker News (13 Nov 2026)\n\n#ZeroDay #CheckPoint #Firewall #PatchNow #Wiper #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-am-04",
+   "kind": "carousel",
+   "category": "AI NEWS",
+   "slot": "2026-11-14T13:30:00",
+   "story_key": "openai-daybreak-red-team-defense-factory-2026-11",
+   "send_to": "your AppSec lead",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+     "date": "2026-11-13"
+    }
+   ],
+   "cover": {
+    "hook": "OpenAI's new AI agents pentest your web apps. Then draft the fix.",
+    "sub": "Daybreak Red Team and Defense Factory, announced 12 Nov. OpenAI says engineers still review the patches."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "Daybreak Red Team",
+     "body": "AI agents run penetration tests and validate vulnerabilities in web apps, starting from scanner, bug bounty and disclosure findings. OpenAI says they work in isolated environments, with 'Guardian review' limiting which apps and endpoints they reach."
+    },
+    {
+     "type": "point",
+     "title": "Daybreak Defense Factory",
+     "body": "Investigates findings, imports them from Wiz, Snyk and Endor Labs, scans connected GitHub repos and new commits, uses Codex to write patches and opens draft pull requests."
+    },
+    {
+     "type": "stat",
+     "big": "Draft PRs",
+     "label": "not auto-deployed fixes",
+     "note": "OpenAI says engineers review and test proposed patches before merge. SecurityWeek, 13 Nov."
+    },
+    {
+     "type": "point",
+     "title": "Who can use it",
+     "body": "Red Team is early access by request. Defense Factory is a preview plugin in ChatGPT for workspaces with Daybreak access. Both were announced at OpenAI's Cyber at the Frontier event on 12 Nov."
+    },
+    {
+     "type": "actions",
+     "title": "Before you try it",
+     "items": [
+      "Write down which apps an AI tester may touch",
+      "Keep AI-written patches behind code review",
+      "Log every action the agents take",
+      "Compare its findings with your current scanners"
+     ]
+    }
+   ],
+   "question": "Would you let an AI agent pentest your production apps?",
+   "x_text": "OpenAI Daybreak: Red Team agents pentest web apps in isolated environments; Defense Factory pulls findings from Wiz, Snyk and Endor Labs, writes patches with Codex and opens draft PRs. Engineers still review before merge.\n\n#AISecurity #AppSec",
+   "ig_caption": "AI agents that pentest your web apps. Then draft the fix. 🤖\n\nWhat SecurityWeek reported (13 Nov):\n→ OpenAI announced Daybreak Red Team and Daybreak Defense Factory at its Cyber at the Frontier event on 12 Nov\n→ Red Team: AI agents run penetration tests and validate vulnerabilities in web apps, in isolated environments with 'Guardian review' limiting what they reach\n→ Defense Factory: imports findings from Wiz, Snyk and Endor Labs, scans connected GitHub repos, writes patches with Codex and opens draft pull requests\n→ OpenAI says engineers review and test proposed patches before merge; nothing deploys automatically\n→ Red Team is early access by request; Defense Factory is a ChatGPT preview plugin\n\nBefore you try it: write down which apps an AI tester may touch, keep AI-written patches behind code review, log every agent action, and compare its findings with your current scanners.\n\nSend this to your AppSec lead 👇\n\nWould you let an AI agent pentest your production apps?\n\nSource: SecurityWeek (13 Nov 2026)\n\n#AISecurity #OpenAI #AppSec #PenetrationTesting #AgenticAI #DevSecOps"
+  },
+  {
+   "id": "2026-11-14-am-05",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-14T14:30:00",
+   "story_key": "cve-2026-20320",
+   "send_to": "whoever runs your internet-facing apps",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+     "date": "2026-11-11"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "18 known flaws. One AI agent did the work.",
+    "segments": [
+     {
+      "say": "Eighteen known flaws. Thirteen products. Exploited by an A I agent.",
+      "show": "Malbear Labs says an autonomous framework built on a jailbroken DeepSeek Flash model exploited 18 CVEs across 13 products in 'Operation Snowball' (via The Hacker News, 11 Nov).",
+      "card": "18 CVEs · 13 products",
+      "card_style": "stat"
+     },
+     {
+      "say": "The target, a European telecom. The human only checked in on progress.",
+      "show": "Target: a European telecom provider and 13 companies hosted on it. Malbear says the actor 'delegated the intrusion to an AI and checked in asynchronously'. It attributes it to an unknown Chinese-speaking actor.",
+      "card": "AI did the intrusion",
+      "card_style": "alert"
+     },
+     {
+      "say": "One way in, a Cisco BroadWorks flaw patched in August.",
+      "show": "CVE-2026-20320 (CVSS 7.5), an XXE in the BroadWorks OCI XML parser, fixed in August 2026. CISA added it to KEV on 10 Nov. Other CVEs used date back to 2013.",
+      "card": "CVE-2026-20320 · in CISA KEV",
+      "card_style": "stat"
+     },
+     {
+      "say": "Patch your backlog. An A I agent will try all of it.",
+      "show": "Patch BroadWorks now, then work through old internet-facing flaws: an agent tries the whole list, not just this month's. Source: The Hacker News, 11 Nov.",
+      "card": "Patch the backlog, not just this month",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your internet-facing apps.",
+      "show": "Send this to whoever runs your internet-facing apps.",
+      "card": "↗ Send this to whoever runs your internet-facing apps"
+     }
+    ]
+   },
+   "x_text": "Operation Snowball: Malbear Labs says an AI agent on a jailbroken DeepSeek model exploited 18 CVEs across 13 products at a European telecom, incl. Cisco BroadWorks CVE-2026-20320, now in CISA KEV. Patch the old backlog too.\n\n#AgenticAI #CyberSecurity",
+   "ig_caption": "18 known flaws. 13 products. One AI agent did the work. 🤖\n\nWhat The Hacker News reported (11 Nov), from Malbear Labs:\n→ An autonomous framework built on a jailbroken DeepSeek Flash model exploited 18 CVEs across 13 products, some dating back to 2013\n→ Target: a European telecom provider and 13 companies hosted on its infrastructure\n→ Malbear says the actor 'delegated the intrusion to an AI and checked in asynchronously', and attributes it to an unknown Chinese-speaking actor\n→ Over two weeks: dozens of credential sets and thousands of rows of subscriber billing and device records taken\n→ One entry point: Cisco BroadWorks CVE-2026-20320 (CVSS 7.5), fixed in August, added to CISA KEV on 10 Nov\n\nWhat to do: patch BroadWorks, then work through your old internet-facing flaws. An agent tries the whole list, not just this month's.\n\nSend this to whoever runs your internet-facing apps 👇\n\nHow old is the oldest unpatched flaw on your perimeter?\n\nSource: The Hacker News (11 Nov 2026)\n\n#AgenticAI #AIThreat #Cisco #CISAKEV #PatchManagement #CyberSecurity"
+  }
+ ]
+}
