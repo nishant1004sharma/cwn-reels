@@ -74,8 +74,8 @@
         }
       ],
       "cover": {
-        "hook": "TSMC's own systems weren't breached. Its employees' data still leaked.",
-        "sub": "The world's biggest chipmaker says the data matched records held by a cloud service provider."
+        "hook": "TSMC says it found no sign its systems were hacked. Employee data leaked anyway.",
+        "sub": "The chipmaker says the leaked data matched records held by a cloud service provider."
       },
       "slides": [
         {
