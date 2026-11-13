@@ -1,0 +1,63 @@
+{
+ "date": "2026-11-13",
+ "run": "extra",
+ "items": [
+  {
+   "id": "2026-11-13-extra-01",
+   "kind": "reel",
+   "category": "CLOUD",
+   "slot": "2026-11-13T10:30:00",
+   "story_key": "m365-exchange-online-outage-ex1550543-2026-11",
+   "send_to": "whoever runs your incident comms",
+   "x": true,
+   "sources": [
+    {
+     "name": "Newsweek",
+     "url": "https://www.newsweek.com/microsoft-outlook-down-not-working-incident-server-12707459",
+     "date": "2026-11-12"
+    },
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+     "date": "2026-11-12"
+    },
+    {
+     "name": "The Korea Times (Reuters)",
+     "url": "https://www.koreatimes.co.kr/world/20261113/microsoft-outage-drags-on-for-hours-disrupting-outlook-teams-for-thousands",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "130,000+ Outlook outage reports at the peak.",
+    "segments": [
+     {
+      "say": "Over a hundred and thirty thousand Outlook outage reports. At the peak.",
+      "show": "Microsoft 365 went down on Thursday 12 Nov. Downdetector reports for Outlook peaked at over 130,000 around 1:15 p.m. ET, per Newsweek. Microsoft said users in any region could be affected.",
+      "card": "130,000+ Outlook reports",
+      "card_style": "alert"
+     },
+     {
+      "say": "Myth: it must be a hack. Reality: Microsoft has disclosed no evidence of a cyberattack.",
+      "show": "Per SecurityWeek, a large number of servers became unavailable and were failing automated health checks. Exchange Online, Outlook, Teams, SharePoint, Copilot and Defender XDR were affected. Incidents EX1550543 / MO1550821.",
+      "card": "No evidence of an attack disclosed",
+      "card_style": "fact"
+     },
+     {
+      "say": "Recovery was still partial after five hours. Keep a backup channel, and warn staff about fake fix your mailbox emails.",
+      "show": "Reuters, via The Korea Times, reported limited recovery after more than five hours. Sources: Newsweek, SecurityWeek, The Korea Times (12–13 Nov).",
+      "card": "Backup comms · watch for outage phishing",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your incident comms.",
+      "show": "Send this to whoever runs your incident comms.",
+      "card": "↗ Send this to whoever runs your incident comms"
+     }
+    ]
+   },
+   "x_text": "Microsoft 365 outage (EX1550543): Outlook reports peaked at 130,000+ on Downdetector. Exchange Online, Teams, SharePoint and Copilot hit. Microsoft says servers failed health checks and has disclosed no evidence of a cyberattack.\n\n#Microsoft365 #CyberSecurity",
+   "ig_caption": "Over 130,000 Outlook outage reports at the peak. And no, Microsoft hasn't said it was a hack. 📉\n\nWhat was reported (12–13 Nov):\n→ Microsoft 365 went down on Thursday 12 Nov; reports began around 12:30 p.m. ET and Outlook peaked at over 130,000 Downdetector reports around 1:15 p.m. ET (Newsweek)\n→ Exchange Online, Outlook, Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR were affected, and Microsoft said users in any region could be hit (SecurityWeek, Newsweek)\n→ Microsoft said a large number of servers became unavailable and were failing automated health checks; it has yet to explain why (SecurityWeek)\n→ Microsoft has disclosed no evidence of a cyberattack (SecurityWeek)\n→ After more than five hours, Microsoft reported only limited recovery (Reuters, via The Korea Times)\n\nWhat to do: track incidents EX1550543 and MO1550821 in the Microsoft 365 admin center, keep a non-Microsoft channel for incident comms, and warn staff that outages bring fake \"re-verify your mailbox\" emails.\n\nSend this to whoever runs your incident comms 👇\n\nWhen email and Teams both go down, how does your team talk?\n\nSource: Newsweek, SecurityWeek (12 Nov 2026) and Reuters via The Korea Times (13 Nov 2026)\n\n#Microsoft365 #Outlook #ExchangeOnline #Outage #BusinessContinuity #CyberSecurity"
+  }
+ ]
+}
