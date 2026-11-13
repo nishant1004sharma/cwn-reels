@@ -23,7 +23,7 @@
      {
       "say": "Over four hundred million dollars. Stolen through fake video calls.",
       "show": "The FBI says North Korean actors' FaceStealer scheme led to the theft of more than $400 million in crypto in the last 18 months.",
-      "card": "$400M+ · 18 months",
+      "card": "$400M+|stolen in 18 months",
       "card_style": "stat"
      },
      {
@@ -146,7 +146,7 @@
      {
       "say": "They got in through the remote access portal, then took root.",
       "show": "Since late October: PHP2Shell flaws in the Mobile Access portal, then CVE-2026-123039 (CVSS 7.8, per The Hacker News) for root, then webshells and the TSGA backdoor.",
-      "card": "CVE-2026-123039 · CVSS 7.8",
+      "card": "CVSS 7.8|CVE-2026-123039 · Gaia OS",
       "card_style": "stat"
      },
      {
@@ -247,7 +247,7 @@
      {
       "say": "Eighteen known flaws. Thirteen products. Exploited by an A I agent.",
       "show": "Malbear Labs says an autonomous framework built on a jailbroken DeepSeek Flash model exploited 18 CVEs across 13 products in 'Operation Snowball' (via The Hacker News, 11 Nov).",
-      "card": "18 CVEs · 13 products",
+      "card": "18 CVEs|exploited across 13 products",
       "card_style": "stat"
      },
      {
@@ -259,7 +259,7 @@
      {
       "say": "One way in, a Cisco BroadWorks flaw patched in August.",
       "show": "CVE-2026-20320 (CVSS 7.5), an XXE in the BroadWorks OCI XML parser, fixed in August 2026. CISA added it to KEV on 10 Nov. Other CVEs used date back to 2013.",
-      "card": "CVE-2026-20320 · in CISA KEV",
+      "card": "KEV|CVE-2026-20320 · Cisco BroadWorks",
       "card_style": "stat"
      },
      {
