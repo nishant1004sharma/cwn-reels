@@ -1,0 +1,36 @@
+{
+  "run": "2026-11-11-promo",
+  "items": {
+    "2026-11-11-promo-01": {
+      "kind": "carousel",
+      "x_files": [
+        "x-01.jpg",
+        "x-02.jpg",
+        "x-03.jpg",
+        "x-04.jpg",
+        "x-05.jpg",
+        "x-06.jpg",
+        "x-07.jpg"
+      ],
+      "files": [
+        "slide-01.jpg",
+        "slide-02.jpg",
+        "slide-03.jpg",
+        "slide-04.jpg",
+        "slide-05.jpg",
+        "slide-06.jpg",
+        "slide-07.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-01.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-02.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-03.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-04.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-05.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-06.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-promo/2026-11-11-promo-01/slide-07.jpg"
+      ]
+    }
+  },
+  "errors": {}
+}

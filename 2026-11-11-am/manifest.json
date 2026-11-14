@@ -1,0 +1,99 @@
+{
+  "run": "2026-11-11-am",
+  "items": {
+    "2026-11-11-am-01": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 21.1,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-01/reel.mp4"
+      ]
+    },
+    "2026-11-11-am-02": {
+      "kind": "carousel",
+      "x_files": [
+        "x-01.jpg",
+        "x-02.jpg",
+        "x-03.jpg",
+        "x-04.jpg",
+        "x-05.jpg",
+        "x-06.jpg",
+        "x-07.jpg"
+      ],
+      "files": [
+        "slide-01.jpg",
+        "slide-02.jpg",
+        "slide-03.jpg",
+        "slide-04.jpg",
+        "slide-05.jpg",
+        "slide-06.jpg",
+        "slide-07.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-01.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-02.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-03.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-04.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-05.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-06.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-02/slide-07.jpg"
+      ]
+    },
+    "2026-11-11-am-03": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 16.5,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-03/reel.mp4"
+      ]
+    },
+    "2026-11-11-am-04": {
+      "kind": "carousel",
+      "x_files": [
+        "x-01.jpg",
+        "x-02.jpg",
+        "x-03.jpg",
+        "x-04.jpg",
+        "x-05.jpg",
+        "x-06.jpg",
+        "x-07.jpg"
+      ],
+      "files": [
+        "slide-01.jpg",
+        "slide-02.jpg",
+        "slide-03.jpg",
+        "slide-04.jpg",
+        "slide-05.jpg",
+        "slide-06.jpg",
+        "slide-07.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-01.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-02.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-03.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-04.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-05.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-06.jpg",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-04/slide-07.jpg"
+      ]
+    },
+    "2026-11-11-am-05": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 20.4,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-11-am/2026-11-11-am-05/reel.mp4"
+      ]
+    }
+  },
+  "errors": {}
+}

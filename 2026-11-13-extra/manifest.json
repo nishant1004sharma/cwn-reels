@@ -1,0 +1,17 @@
+{
+  "run": "2026-11-13-extra",
+  "items": {
+    "2026-11-13-extra-01": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 21.6,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-13-extra/2026-11-13-extra-01/reel.mp4"
+      ]
+    }
+  },
+  "errors": {}
+}
