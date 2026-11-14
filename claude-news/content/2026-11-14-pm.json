@@ -84,8 +84,8 @@
     },
     {
      "type": "stat",
-     "big": "1 login",
-     "label": "shared with an agent = full account access",
+     "big": "Your login",
+     "label": "is what United says not to give AI assistants",
      "note": "Bank of America also cautioned users last week never to share user IDs and passwords with agents, per The Record."
     },
     {
