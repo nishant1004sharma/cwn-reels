@@ -1,0 +1,277 @@
+{
+ "date": "2026-11-15",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-15-am-01",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-15T08:15:00",
+   "story_key": "trezor-cryptobilis-safe5-implants-2026-11",
+   "send_to": "whoever holds your crypto keys",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "A hidden board inside 3 crypto wallets.",
+    "segments": [
+     {
+      "say": "A hidden circuit board. Inside three crypto wallets.",
+      "show": "Trezor confirmed three Safe 5 wallets sold by reseller CryptoBilis contained a malicious hardware implant (BleepingComputer, 13 Nov).",
+      "card": "3 wallets|with a hidden implant",
+      "card_style": "stat"
+     },
+     {
+      "say": "Trezor says it copies your recovery words and sends them out over a mobile network.",
+      "show": "An extra board between the main board and the display captures the recovery phrase shown on screen, encrypts it and sends it to an attacker server over a cellular network.",
+      "card": "Recovery phrase → attacker",
+      "card_style": "alert"
+     },
+     {
+      "say": "The update blocks it. It can't save a phrase already taken.",
+      "show": "Firmware 2.13.1 (11 Nov) stops the implants found so far from capturing anything. It can't protect a backup captured before it.",
+      "card": "Firmware 2.13.1|blocks these implants",
+      "card_style": "fact"
+     },
+     {
+      "say": "Move funds to a new wallet with a new phrase.",
+      "show": "Bought from CryptoBilis? Move funds to a new wallet with a new recovery phrase and contact Trezor Support. Restoring the old phrase elsewhere doesn't fix it.",
+      "card": "New wallet · new phrase",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever holds your crypto keys.",
+      "show": "Send this to whoever holds your crypto keys.",
+      "card": "↗ Send this to whoever holds your crypto keys"
+     }
+    ]
+   },
+   "x_text": "Trezor confirms 3 Safe 5 hardware wallets sold by reseller CryptoBilis had a hidden implant that copies the recovery phrase and sends it out over a mobile network. Firmware 2.13.1 blocks it, but not a phrase already taken.\n\n#SupplyChain #CyberSecurity",
+   "ig_caption": "A hidden circuit board. Inside three crypto wallets. 🔌\n\nWhat BleepingComputer and The Hacker News reported (13 Nov):\n→ Trezor confirmed three Safe 5 wallets sold by Southeast Asian reseller CryptoBilis contained a malicious hardware implant\n→ The extra board sits between the main board and the display and captures the recovery words shown on screen\n→ It encrypts them and sends them to an attacker server over a mobile network, retrying until it gets through\n→ All three were bought between Aug 20 and Sep 23; 48 CryptoBilis customers have contacted Trezor so far\n→ Firmware 2.13.1 (11 Nov) stops these implants capturing anything, but can't protect a phrase captured before it\n\nWhat to do: if you bought from that reseller, move funds to a new wallet with a new recovery phrase and contact Trezor Support. Buy hardware wallets only from the maker or a channel you can verify.\n\nSend this to whoever holds your crypto keys 👇\n\nWhere did your team's hardware wallets actually come from?\n\nSource: BleepingComputer and The Hacker News (13 Nov 2026)\n\n#Trezor #HardwareWallet #SupplyChainAttack #CryptoSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-am-02",
+   "kind": "carousel",
+   "category": "VULNERABILITY",
+   "slot": "2026-11-15T10:00:00",
+   "story_key": "cve-2026-6460",
+   "send_to": "whoever patches your Postgres databases",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "cover": {
+    "hook": "A 22-year-old bug. Code execution on your Postgres server.",
+    "sub": "PostgreSQL fixed 52 security flaws in one release. No attacks reported yet."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What's fixed",
+     "body": "PostgreSQL's latest updates fix 52 security flaws. Only one needs no login or user action: CVE-2026-116322, which lets an unauthenticated client restart PostgreSQL 18 servers."
+    },
+    {
+     "type": "point",
+     "title": "The 22-year-old bug",
+     "body": "CVE-2026-6460 (CVSS 8.8), a type confusion flaw, lets a database user who can create objects run code on the server with the rights of the PostgreSQL OS user. Its root traces back to May 2004."
+    },
+    {
+     "type": "stat",
+     "big": "32 of 52",
+     "label": "flaws rated CVSS 8.8",
+     "note": "Researcher Mehmet Ince published a writeup this week. The project hasn't reported any attacks."
+    },
+    {
+     "type": "point",
+     "title": "Clients and cloud too",
+     "body": "A crafted archive can make pg_restore run code as the user running it. Ince shared proofs of concept with managed services (AWS, Azure, AlloyDB, Supabase, Databricks, Ubicloud) in August."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Update to 18.7, 17.12, 16.16, 15.20 or 14.25",
+      "Rebuild C extensions with the server",
+      "Update pg_dump and pg_restore on every machine",
+      "Plan off PostgreSQL 14: 14.25 is its last release"
+     ]
+    }
+   ],
+   "question": "Who in your org can create objects in production Postgres?",
+   "x_text": "PostgreSQL patches 52 flaws, incl. CVE-2026-6460 (CVSS 8.8): a 22-year-old type confusion bug that lets a user who can create objects run code on the server. 32 flaws rated 8.8. Update to 18.7/17.12/16.16/15.20/14.25.\n\n#PostgreSQL #InfoSec",
+   "ig_caption": "A 22-year-old bug. Code execution on your Postgres server. 🐘\n\nWhat The Hacker News reported (13 Nov):\n→ PostgreSQL's latest updates fix 52 security flaws; 32 are rated CVSS 8.8\n→ CVE-2026-6460, a type confusion flaw, lets a database user who can create objects run code on the server\n→ Its root traces back to May 2004; researcher Mehmet Ince published a writeup this week\n→ Client tools too: a crafted archive can make pg_restore run code as the user running it\n→ The project hasn't reported any attacks using the flaw\n\nDo this week: update to 18.7, 17.12, 16.16, 15.20 or 14.25, rebuild C extensions at the same time, update client tools everywhere, and check who can create objects in production.\n\nSend this to whoever patches your Postgres databases 👇\n\nWho in your org can create objects in production Postgres?\n\nSource: The Hacker News (13 Nov 2026)\n\n#PostgreSQL #PatchNow #DatabaseSecurity #Vulnerability #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-am-03",
+   "kind": "reel",
+   "category": "AI SECURITY",
+   "slot": "2026-11-15T12:00:00",
+   "story_key": "cursor-malicious-claude-code-extension-2026-11",
+   "send_to": "every dev using an AI coding tool",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+     "date": "2026-11-14"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "5,000 devs. One fake Claude Code extension.",
+    "segments": [
+     {
+      "say": "Up to five thousand developers. One fake Claude Code extension.",
+      "show": "Cursor estimates up to 5,000 users who requested the affected versions may have received malicious builds (BleepingComputer, 14 Nov).",
+      "card": "Up to 5,000|devs may have got it",
+      "card_style": "stat"
+     },
+     {
+      "say": "Cursor says it started with a key stolen from an A I vendor.",
+      "show": "An access key stored at Fireworks AI let attackers copy old AI agent traces. Some held unredacted API credentials, which opened more Cursor systems.",
+      "card": "Stolen vendor key → agent logs → creds",
+      "card_style": "alert"
+     },
+     {
+      "say": "Backdoored copies sat on Cursor's marketplace for about eleven hours.",
+      "show": "Malicious copies of Anthropic's Claude Code extension, versions 2.1.312 and 2.1.313, tried to install an SSH backdoor. Anthropic's real extension and Open VSX weren't compromised.",
+      "card": "v2.1.312 · v2.1.313|~11 hours live",
+      "card_style": "alert"
+     },
+     {
+      "say": "Updated on October twenty-ninth? Follow Cursor's guide.",
+      "show": "Installed or updated the Claude Code extension in Cursor on Oct 29? Follow Cursor's remediation guidance and check for unknown SSH keys.",
+      "card": "Check for unknown SSH keys",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to every dev using an A I coding tool.",
+      "show": "Send this to every dev using an AI coding tool.",
+      "card": "↗ Send this to every dev using an AI coding tool"
+     }
+    ]
+   },
+   "x_text": "Cursor confirms a breach let attackers serve malicious copies of the Claude Code extension (2.1.312, 2.1.313) from its marketplace for ~11 hours on Oct 29. Up to 5,000 devs may have got them. It began with a key stolen from Fireworks AI.\n\n#AISecurity #SupplyChain",
+   "ig_caption": "Up to 5,000 developers. One fake Claude Code extension. 🧑‍💻\n\nWhat BleepingComputer reported (14 Nov):\n→ Cursor confirmed a breach let attackers place malicious copies of Anthropic's Claude Code extension on the cache serving its extension marketplace\n→ Cursor says it started with an access key stored at AI vendor Fireworks AI, then credentials found in old AI agent traces\n→ Versions 2.1.312 and 2.1.313 were live for about 11 hours on Oct 29 and tried to install an SSH backdoor\n→ Cursor estimates up to 5,000 users may have received the malicious builds\n→ Anthropic's real extension and Open VSX were not compromised\n\nWhat to do: if you installed or updated it in Cursor on Oct 29, follow Cursor's remediation guide and check for unknown SSH keys. Keep secrets out of AI agent logs and prompts.\n\nSend this to every dev using an AI coding tool 👇\n\nWould you notice if an extension update added an SSH key?\n\nSource: BleepingComputer (14 Nov 2026), citing Cursor's incident report\n\n#Cursor #ClaudeCode #AISecurity #SupplyChainAttack #DevSecOps #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-am-04",
+   "kind": "carousel",
+   "category": "THREAT INTEL",
+   "slot": "2026-11-15T13:30:00",
+   "story_key": "silentair-telecom-sms-2fa-enea-2026-11",
+   "send_to": "anyone still using SMS for 2FA codes",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "cover": {
+    "hook": "Calls and texts diverted. 2FA codes intercepted.",
+    "sub": "Enea says a state-level group it calls SilentAir used hacked gear inside Asian mobile operators, mostly to spy on people in Taiwan."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "Stockholm-based Enea found SilentAir's attack sources in at least six Asian countries. Using hacked telecom equipment, it told a target's home network it was now serving their phone, so calls and texts were diverted."
+    },
+    {
+     "type": "point",
+     "title": "Why it matters",
+     "body": "Enea observed 2FA codes being intercepted right after a diversion took effect, which points to attempts to break into other accounts. Targets were mostly in Taiwan, some political and government VIPs."
+    },
+    {
+     "type": "stat",
+     "big": "18.3%",
+     "label": "of SilentAir attacks were interception",
+     "note": "Versus 2.1% for a typical surveillance company in Enea's earlier research."
+    },
+    {
+     "type": "point",
+     "title": "Who's behind it",
+     "body": "Enea assesses with high confidence SilentAir is a state-level actor, and links it to China only with low confidence. It says the group has been disrupted for now but could return."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Move VIP accounts off SMS 2FA to app or passkeys",
+      "Flag logins right after SIM or number changes",
+      "Telecoms: treat the whole IPX as untrusted",
+      "Telecoms: link GTP firewalls to SS7/Diameter ones"
+     ]
+    }
+   ],
+   "question": "Which of your critical accounts still fall back to SMS codes?",
+   "x_text": "SilentAir: Enea says a state-level group used hacked equipment in Asian mobile operators to divert calls and texts, mostly of people in Taiwan, and saw SMS 2FA codes intercepted right after. 18.3% of its attacks were interception.\n\n#ThreatIntel #CyberSecurity",
+   "ig_caption": "Calls and texts diverted. 2FA codes intercepted. 📡\n\nWhat The Hacker News reported (13 Nov):\n→ Telecom security firm Enea named a new spying group SilentAir, with attack sources in at least six Asian countries\n→ Using hacked equipment inside mobile operators, it told targets' home networks it now served their phones, diverting calls and texts\n→ Enea saw 2FA codes intercepted right after a diversion took effect\n→ Targets were mostly in Taiwan, some political and government VIPs; 18.3% of its attacks were interception\n→ Enea calls it state-level (high confidence) and links it to China only with low confidence; it says the group is disrupted for now but could return\n\nDo this week: move VIP and admin accounts off SMS codes to an authenticator app or passkeys, and flag logins that follow a number or SIM change.\n\nSend this to anyone still using SMS for 2FA codes 👇\n\nWhich of your critical accounts still fall back to SMS codes?\n\nSource: The Hacker News (13 Nov 2026), citing Enea\n\n#SilentAir #SS7 #TelecomSecurity #MFA #ThreatIntel #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-am-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-15T14:30:00",
+   "story_key": "cve-2026-114713",
+   "send_to": "whoever runs your IRC servers",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+     "date": "2026-11-14"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "Exploited a day after the hotfix.",
+    "segments": [
+     {
+      "say": "Exploited one day after the fix shipped.",
+      "show": "Exploitation attempts reportedly began a day after the UnrealIRCd hotfix on Nov 7. CISA added it to KEV on Nov 13 (The Hacker News, 14 Nov).",
+      "card": "Exploited|1 day after the hotfix",
+      "card_style": "alert"
+     },
+     {
+      "say": "Its maintainer calls it the most critical Unreal I R C D bug in fifteen years.",
+      "show": "CVE-2026-114713 (CVSS 8.6) affects UnrealIRCd 6.0.0 before 6.2.7.1.",
+      "card": "CVSS 8.6|CVE-2026-114713",
+      "card_style": "stat"
+     },
+     {
+      "say": "A user on a linked network can run commands with server powers.",
+      "show": "On networks with two or more linked servers, a user can inject server-to-server commands that run with server or IRCOp authority.",
+      "card": "User → server-level commands",
+      "card_style": "fact"
+     },
+     {
+      "say": "Update to the fixed release now, or hot-patch today.",
+      "show": "Upgrade to 6.2.7.1 or later, or apply the hot-patch or spamfilter workaround now. US federal deadline: Nov 16.",
+      "card": "Update to 6.2.7.1+",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your I R C servers.",
+      "show": "Send this to whoever runs your IRC servers.",
+      "card": "↗ Send this to whoever runs your IRC servers"
+     }
+    ]
+   },
+   "x_text": "UnrealIRCd CVE-2026-114713 (CVSS 8.6) is exploited: a user on a linked network can run server-level commands. Attacks began a day after the Nov 7 hotfix; CISA added it to KEV. Update to 6.2.7.1+ or hot-patch now.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "Exploited one day after the fix shipped. ⏱️\n\nWhat The Hacker News reported (14 Nov):\n→ CVE-2026-114713 (CVSS 8.6) affects UnrealIRCd 6.0.0 before 6.2.7.1\n→ On networks with two or more linked servers, a user can inject commands that run with server-level authority\n→ Exploitation attempts reportedly began a day after the hotfix on Nov 7; the maintainer says attackers are exploiting it right now\n→ He calls it the most critical UnrealIRCd issue in 15 years\n→ CISA added it to its Known Exploited Vulnerabilities catalog on Nov 13\n\nWhat to do: update to 6.2.7.1 or later today, or apply the hot-patch or spamfilter workaround until you can.\n\nSend this to whoever runs your IRC servers 👇\n\nDoes anyone on your team still run an IRC server nobody owns?\n\nSource: The Hacker News (14 Nov 2026)\n\n#UnrealIRCd #PatchNow #CISAKEV #Vulnerability #CyberSecurity"
+  }
+ ]
+}
