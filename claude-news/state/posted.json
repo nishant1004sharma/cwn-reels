@@ -2877,6 +2877,76 @@
       "voice": "edge-tts:en-US-AndrewMultilingualNeural",
       "title": "CVSS 9.8. Every private image in Quay.",
       "typefully_draft_id": null
+    },
+    {
+      "story_key": "trezor-cryptobilis-safe5-implants-2026-11",
+      "id": "2026-11-15-am-01",
+      "date": "2026-11-15",
+      "slot": "2026-11-15T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A hidden board inside 3 crypto wallets.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-6460",
+      "id": "2026-11-15-am-02",
+      "date": "2026-11-15",
+      "slot": "2026-11-15T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A 22-year-old bug. Code execution on your Postgres server.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cursor-malicious-claude-code-extension-2026-11",
+      "id": "2026-11-15-am-03",
+      "date": "2026-11-15",
+      "slot": "2026-11-15T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "5,000 devs. One fake Claude Code extension.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "silentair-telecom-sms-2fa-enea-2026-11",
+      "id": "2026-11-15-am-04",
+      "date": "2026-11-15",
+      "slot": "2026-11-15T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Calls and texts diverted. 2FA codes intercepted.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-114713",
+      "id": "2026-11-15-am-05",
+      "date": "2026-11-15",
+      "slot": "2026-11-15T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Exploited a day after the hotfix.",
+      "typefully_draft_id": null
     }
   ]
 }
