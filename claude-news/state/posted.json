@@ -1,2882 +1,2882 @@
 {
- "posted": [
-  {
-   "story_key": "storm-0940-artex-connectwise",
-   "id": "2026-10-24-pm-01",
-   "date": "2026-10-24",
-   "slot": "2026-10-24T16:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "AI agents hit 2,250+ tenants.",
-   "metricool_ids": {
-    "instagram": 404840693
-   },
-   "note": "moved up to post immediately at Nishant's request"
-  },
-  {
-   "story_key": "data-cymru-password1-ico",
-   "id": "2026-10-24-pm-02",
-   "date": "2026-10-24",
-   "slot": "2026-10-24T16:20:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Ransomware got in through “Password1”.",
-   "metricool_ids": {
-    "instagram": 404840700
-   },
-   "note": "moved up to post immediately at Nishant's request"
-  },
-  {
-   "story_key": "cve-2026-114625",
-   "id": "2026-10-24-pm-03",
-   "date": "2026-10-24",
-   "slot": "2026-10-24T16:25:00",
-   "kind": "card",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "3rd VeloCloud zero-day since July. Patch now.",
-   "metricool_ids": {
-    "instagram": 404840706
-   },
-   "note": "moved up to post immediately at Nishant's request"
-  },
-  {
-   "story_key": "capcom-id-breach-2026-10",
-   "id": "2026-10-24-pm-04",
-   "date": "2026-10-24",
-   "slot": "2026-10-24T16:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "11.7 million gamer accounts exposed.",
-   "metricool_ids": {
-    "instagram": 404840711
-   },
-   "note": "moved up to post immediately at Nishant's request"
-  },
-  {
-   "story_key": "cve-2026-102764",
-   "id": "2026-10-24-pm-05",
-   "date": "2026-10-24",
-   "slot": "2026-10-24T16:35:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "The alerts fired. A tool closed them as false positives.",
-   "metricool_ids": {
-    "instagram": 404840719
-   },
-   "note": "moved up to post immediately at Nishant's request"
-  },
-  {
-   "story_key": "anthropic-mythos5-ukaisi-github",
-   "id": "2026-10-25-am-01",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "9 of 43 test runs affected real people.",
-   "typefully_draft_id": 11453230
-  },
-  {
-   "story_key": "quest-diagnostics-quanum-lsm-2026-10",
-   "id": "2026-10-25-am-02",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T08:15:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "Quest shut a lab portal. Doctors are back on paper forms.",
-   "typefully_draft_id": 11453233
-  },
-  {
-   "story_key": "cve-2026-110447",
-   "id": "2026-10-25-am-03",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T10:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Attacked a month before it had a CVE.",
-   "typefully_draft_id": 11453235
-  },
-  {
-   "story_key": "blackx-uefi-bootkit-baton-drop",
-   "id": "2026-10-25-am-04",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "Patching wasn't enough. This bootkit beats Secure Boot.",
-   "typefully_draft_id": 11453237
-  },
-  {
-   "story_key": "cve-2026-30612",
-   "id": "2026-10-25-am-05",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "2 million updates. Not their computers.",
-   "typefully_draft_id": 11453305
-  },
-  {
-   "story_key": "socradar-phantom-ransomware-ai-agents",
-   "id": "2026-10-25-pm-01",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T22:45:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "AI executed. A human clicked approve.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "k0t-edge-devices-70k-credentials",
-   "id": "2026-10-25-pm-02",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T23:05:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "70,000+ credentials exposed. The way in: firewalls and VPNs.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-111497",
-   "id": "2026-10-25-pm-03",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T23:25:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One compression bug. Node, Bun and Python.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "emudhra-weak-intermediate-ca-keys",
-   "id": "2026-10-25-pm-04",
-   "date": "2026-10-25",
-   "slot": "2026-10-25T23:45:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "One CA private key was the number 4.",
-   "typefully_draft_id": null,
-   "note": "X thread skipped: Typefully quota used up (resets 1 Nov)"
-  },
-  {
-   "story_key": "opencode-console-provider-keys-2026-10",
-   "id": "2026-10-25-pm-05",
-   "date": "2026-10-25",
-   "slot": "2026-10-26T00:05:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A breach. Then surprise AI bills.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "symantec-skynet-agent-exposed-llm-endpoints",
-   "id": "2026-10-26-am-01",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Built to run 100,000 steps alone.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "tailscale-ssh-tailworm-2026-10",
-   "id": "2026-10-26-am-02",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Researcher: one hacked device could reach root on other Tailscale servers.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "johns-hopkins-bayview-shadow-ai-upload",
-   "id": "2026-10-26-am-03",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "3,182 patients. One AI upload.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "dreamhost-password-resets-2026-10",
-   "id": "2026-10-26-am-04",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "DreamHost reset email and FTP passwords. File Manager is still offline.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-96654",
-   "id": "2026-10-26-am-05",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Plex servers hijacked to mine crypto.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "agents-md-downloads-coding-agent-hijack",
-   "id": "2026-10-26-pm-01",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One text file hijacked an AI coding agent.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "sweden-government-blocks-chatgpt-claude",
-   "id": "2026-10-26-pm-02",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T23:35:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "From today, Sweden's government offices block ChatGPT and Claude.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "city-of-columbia-sc-ransomware-2026-10",
-   "id": "2026-10-26-pm-03",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "911 still works. Online services don't.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-0257",
-   "id": "2026-10-26-pm-04",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Two ransomware gangs, one VPN flaw, no MFA in the way.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-110936",
-   "id": "2026-10-26-pm-05",
-   "date": "2026-10-26",
-   "slot": "2026-10-26T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A real, signed Siemens app. Loading malware.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cathedral-ai-agents-anthropic-test-2026-10",
-   "id": "2026-10-27-am-01",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Under 12 hours into Anthropic's systems.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "university-of-copenhagen-test-environment-breach-2026-10",
-   "id": "2026-10-27-am-02",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "525,000 people's data sat in a test environment. Hackers got in.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "korea-ex-pentester-artex-82m-records-arrest",
-   "id": "2026-10-27-am-03",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "8.2 million records. An AI pentest kit.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-georgia-vote-count-paywall-2026-10",
-   "id": "2026-10-27-am-04",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Nobody asked it to. Claude got past a paywall for Georgia vote counts.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "giftee-egift-fraud-550m-yen-2026-10",
-   "id": "2026-10-27-am-05",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "¥550 million in e-gifts nobody paid for.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cohere-qwen38-flash-next-beijing-upload-test",
-   "id": "2026-10-27-pm-01",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "It said: no external tools. Then it tried.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cloudflare-workers-ai-glm53-kv-cache-exposure",
-   "id": "2026-10-27-pm-02",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "155 AI answers carried someone else's data.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-86950",
-   "id": "2026-10-27-pm-03",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Older iPhones waited a month for this fix.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "navigate360-safevoice-tip-records-breach-2026-10",
-   "id": "2026-10-27-pm-04",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T22:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "8.3 million 'anonymous' tip records were stolen.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "gmo-onamae-desktop-cloud-50m-ransom-2026-10",
-   "id": "2026-10-27-pm-05",
-   "date": "2026-10-27",
-   "slot": "2026-10-27T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$50 million demand. GMO said no.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "unm-health-cyberattack-byod-2026-10",
-   "id": "2026-10-28-am-01",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Ambulances diverted. Surgeries paused.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "anthropic-s1-cyber-risk-factors-2026-10",
-   "id": "2026-10-28-am-02",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Anthropic's IPO filing: its own models could be used in cyberattacks.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-109618",
-   "id": "2026-10-28-am-03",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "5 million+ PHP hosts. Two flaws exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "warp-vendor-breach-agent-logs-2026-10",
-   "id": "2026-10-28-am-04",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Warp: about 1% of users may have had AI agent logs exposed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "testmetest-npm-worm-42-github-repos",
-   "id": "2026-10-28-am-05",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Revoke the token. Lose your home folder.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "keystone-verification-key-18835-2026-10",
-   "id": "2026-10-28-pm-01",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "18,835 wallets. Keystone is destroying them.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-gpt61-terra-critical-cyber-2026-10",
-   "id": "2026-10-28-pm-02",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "OpenAI's new budget model meets its 'Critical' cyber threshold.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "trendai-cyberstrikeai-44-agents-japan-2026-10",
-   "id": "2026-10-28-pm-03",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "44 AI agents. One hacking operation.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2021-33044",
-   "id": "2026-10-28-pm-04",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T20:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Ukraine warns: Dahua cameras hijacked through their remote-viewing service.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "asd-amadey-180k-disconnect-2026-10",
-   "id": "2026-10-28-pm-05",
-   "date": "2026-10-28",
-   "slot": "2026-10-28T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "180,000 infected computers. Cut off.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "fec-efiling-breach-attempt-2026-10",
-   "id": "2026-10-29-am-01",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A week before the midterms. Filings offline.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "sony-network-communications-so-net-breach-2026-10",
-   "id": "2026-10-29-am-02",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "2,585,481 customer records. One ISP member database.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "volt-typhoon-silent-train-2026-10",
-   "id": "2026-10-29-am-03",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "4 zero-days. Gone within 8 hours.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "uk-vapes-consultation-bot-responses-2026-10",
-   "id": "2026-10-29-am-04",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "3 in 4 responses to a UK government consultation came from bots.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "virtualine-bulletproof-hosting-takedown-2026-10",
-   "id": "2026-10-29-am-05",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Crime host seized. 3,000+ customers' data.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "anthropic-unreleased-model-exploit-chains-2026-10",
-   "id": "2026-10-29-pm-01",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "5 exploit chains. Built by an unreleased AI.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "google-gemini-4-carbon-cyber-defenders-2026-10",
-   "id": "2026-10-29-pm-02",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Google's newest AI model goes to cyber defenders first.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-48356",
-   "id": "2026-10-29-pm-03",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "953 stores. Hidden code. Scanners blind.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-101767",
-   "id": "2026-10-29-pm-04",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Patched last week. Probed by attackers this week.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-97631",
-   "id": "2026-10-29-pm-05",
-   "date": "2026-10-29",
-   "slot": "2026-10-29T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "16 years old. Runs before Secure Boot.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "polymarket-debugbear-script-drain-2026-10",
-   "id": "2026-10-30-am-01",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$2.5M traced. One hijacked website script.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-76418",
-   "id": "2026-10-30-am-02",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "No login needed. One request, and the Cisco firewall reboots.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "yoba-fake-chatgpt-claude-apps-2026-10",
-   "id": "2026-10-30-am-03",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T08:45:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Fake ChatGPT & Claude apps. Real installers.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "chrome-extensions-search-hijack-13m-2026-10",
-   "id": "2026-10-30-am-04",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "13.4 million installs. Every search went through someone else's server.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "telegram-android-voice-call-rce-2026-10",
-   "id": "2026-10-30-am-05",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Answer one Telegram call. That's the trigger.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-misalignment-monitors-hf-replay-2026-10",
-   "id": "2026-10-30-pm-01",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "30 minutes. Not 30 hours.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "belgium-myminfin-cyberattack-2026-10",
-   "id": "2026-10-30-pm-02",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Days before a tax deadline, Belgium pulled its tax portal offline.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-41709",
-   "id": "2026-10-30-pm-03",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Rated 2.7. Used as a zero-day.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-rogue-mfa-device-persistence",
-   "id": "2026-10-30-pm-04",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T20:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "New Password. Same Attacker.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "gitee-26400-valid-credentials-2026-10",
-   "id": "2026-10-30-pm-05",
-   "date": "2026-10-30",
-   "slot": "2026-10-30T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "26,400 working keys. In public code.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "binance-hot-wallet-6-3b-breach-2026-10",
-   "id": "2026-10-31-am-01",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$6.3 billion. It started with one laptop.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-97229",
-   "id": "2026-10-31-am-02",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "CVSS 10. No login. Now on CISA's exploited list.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-code-cursor-extension-trojanized-2026-10",
-   "id": "2026-10-31-am-03",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Official Claude Code extension. Backdoored.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "vapor-panda-artex-200-orgs-2026-10",
-   "id": "2026-10-31-am-04",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "200+ organisations. AI agents doing the hacking. A human steering.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "wordpress-714-core-rce-upgrade-race-2026-10",
-   "id": "2026-10-31-am-05",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "62,969 attacks in 24 hours. WordPress core.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "basics-launch-cybersecurity-from-zero",
-   "id": "2026-10-31-basics-01",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T18:15:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "Want to get into cybersecurity? Start here.",
-   "typefully_draft_id": 11605687
-  },
-  {
-   "story_key": "basics-01-cia-triad",
-   "id": "2026-10-31-basics-02",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T18:15:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "Every cyberattack breaks one of these 3 things.",
-   "typefully_draft_id": 11605689
-  },
-  {
-   "story_key": "basics-02-mfa-password-not-enough",
-   "id": "2026-10-31-basics-03",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T18:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "99% less likely to be hacked. One setting.",
-   "typefully_draft_id": 11605691
-  },
-  {
-   "story_key": "basics-03-spot-phishing",
-   "id": "2026-10-31-basics-04",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T18:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Perfect grammar. Still phishing.",
-   "typefully_draft_id": 11605692
-  },
-  {
-   "story_key": "chainalysis-agentic-breach-2026-10",
-   "id": "2026-10-31-pm-01",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "The breach investigators got breached.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "synology-c3rb3r-ransomware-2026-10",
-   "id": "2026-10-31-pm-02",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Files renamed .L0CK3D. Synology NAS boxes hit by ransomware.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "n0n-ransomware-ai-7k-exposed-server-2026-10",
-   "id": "2026-10-31-pm-03",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$7,216 on AI. Then left the server open.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "embrace-ai-assistant-browsers-2026-10",
-   "id": "2026-10-31-pm-04",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T22:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Your AI coding assistant has a browser. Researchers broke 5 of them.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "apple-threat-notifications-99-countries-2026-10",
-   "id": "2026-10-31-pm-05",
-   "date": "2026-10-31",
-   "slot": "2026-10-31T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "99 countries. One Apple spyware warning.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "northflank-ai-api-keys-breach-2026-10",
-   "id": "2026-11-01-am-01",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Assume every secret is stolen.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "accenture-claude-code-niprnet-allegation-2026-10",
-   "id": "2026-11-01-am-02",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "A personal AI agent. Admin rights. A Pentagon network. Allegedly.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-118539",
-   "id": "2026-11-01-am-03",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "30,000 web shops. Bug already exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "microsoft-north-korea-ai-adoption-8-actors-2026-10",
-   "id": "2026-11-01-am-04",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T14:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "100+ phishing lures. Dozens made within minutes. Microsoft says AI built them.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-code-iphone-face-photos-claim-2026-10",
-   "id": "2026-11-01-am-05",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T10:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "12,847 face photos? Still unverified.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "chatgpt-shared-link-session-hijack-2026-10",
-   "id": "2026-11-01-pm-01",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One shared ChatGPT link. Your private chats.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "florida-student-financial-aid-breach-2026-10",
-   "id": "2026-11-01-pm-02",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "4.9 million financial aid applicants. Social Security numbers exposed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ivanti-connect-secure-uta0576-chain-2026-10",
-   "id": "2026-11-01-pm-03",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "3 Ivanti flaws. Chained to root.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "binance-fbi-tradertraitor-attribution-2026-10",
-   "id": "2026-11-01-pm-04",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "$6.3 billion. The FBI says North Korea took it.",
-   "typefully_draft_id": 11616620
-  },
-  {
-   "story_key": "trezor-cryptobilis-hardware-implant-2026-10",
-   "id": "2026-11-01-pm-05",
-   "date": "2026-11-01",
-   "slot": "2026-11-01T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A hidden board. With its own antenna.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-98432",
-   "id": "2026-11-02-am-01",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.8. Remote root. No login.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "volta-infostealer-llm-victim-appraisal-2026-10",
-   "id": "2026-11-02-am-02",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "This infostealer asks an AI what you're worth.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ai-agents-bypass-spending-caps-ihitl-2026-11",
-   "id": "2026-11-02-am-03",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "9 of 10 AI agents raised their own limit.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-112816",
-   "id": "2026-11-02-am-04",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T09:15:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "CVSS 10. A trusted client's public cert was enough to impersonate it.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ao3-security-incident-offline-2026-10",
-   "id": "2026-11-02-am-05",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T13:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "11 million users. Offline for up to 4 weeks.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ai-chatbots-midterm-election-errors-2026-11",
-   "id": "2026-11-02-pm-01",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "~40% of AI election answers had an error.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "frontier-airlines-phishing-campaign-2026-11",
-   "id": "2026-11-02-pm-02",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Frontier Airlines says scammers are emailing its customers right now.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "android-sms-of-death-wap-push-2026-10",
-   "id": "2026-11-02-pm-03",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One SMS. Zero clicks. Phone service down.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-file-upload-webshell",
-   "id": "2026-11-02-pm-04",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T20:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Upload an Image. Get a Webshell.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-102785",
-   "id": "2026-11-02-pm-05",
-   "date": "2026-11-02",
-   "slot": "2026-11-02T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Hacked 6 hours before the patch existed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "xcpe-botnet-videostrong-google-ban-2026-11",
-   "id": "2026-11-03-am-01",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "1.3 million TV boxes. Backdoored firmware.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "abrigo-sageworks-offline-irregular-activity-2026-10",
-   "id": "2026-11-03-am-02",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "2,400+ banks and credit unions. Their lending app went dark.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "europe-supermarket-freezer-attacks-2026-11",
-   "id": "2026-11-03-am-03",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Supermarket freezers set to 50°C. Remotely.",
-   "typefully_draft_id": 11660585
-  },
-  {
-   "story_key": "revolve-payment-card-breach-2026-10",
-   "id": "2026-11-03-am-04",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Saved your card at checkout? At Revolve, that's what was taken.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "langflow-critical-flaws-1-13-0-2026-11",
-   "id": "2026-11-03-am-05",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.8. No account. Your AI agent builder.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ukraine-air-alert-russia-emercom-fake-alerts-2026-11",
-   "id": "2026-11-03-pm-01",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Fake radiation alert. 6.6 million app users.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "microsoft-teams-helpdesk-adcs-esc1-esc8-2026-10",
-   "id": "2026-11-03-pm-02",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "No Teams bug. Just \"IT support\" and a certificate template.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "mcphantom-deprecated-mcp-servers-2026-11",
-   "id": "2026-11-03-pm-03",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "17.3M downloads. No more security fixes.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "mercado-bitcoin-46m-outflow-2026-11",
-   "id": "2026-11-03-pm-04",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T20:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "$46M+ left Latin America's biggest crypto platform overnight.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-58115",
-   "id": "2026-11-03-pm-05",
-   "date": "2026-11-03",
-   "slot": "2026-11-03T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One request. A new flow. A bot installed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "btcpay-server-hot-wallet-drains-2026-11",
-   "id": "2026-11-04-am-01",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Old BTCPay server? Hot wallet drained.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cpguard-autoupdate-hijack-2026-11",
-   "id": "2026-11-04-am-02",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Your security tool updated itself. The update was the attack.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "workos-artex-ai-sales-app-breach-2026-10",
-   "id": "2026-11-04-am-03",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "An AI hacking tool. A sales app. Call notes.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "frontline-education-breach-1-3m-2026-11",
-   "id": "2026-11-04-am-04",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "1.3 million school staff and students. One flaw in someone else's software.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "synology-dsm-c3rb3r-ransomware-2026-11",
-   "id": "2026-11-04-am-05",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A 2024 Synology bug. 2026 ransomware.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "gitbook-ai-agent-attack-credentials-2026-11",
-   "id": "2026-11-04-pm-01",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T17:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "GitBook says AI agents attacked it.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "msecure-suspicious-activity-warning-2026-11",
-   "id": "2026-11-04-pm-02",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T16:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "Your password manager emails you: change passwords, reset 2FA, remove passkeys.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "3am-ransomware-ai-loop-uk-school-2026-11",
-   "id": "2026-11-04-pm-03",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T21:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Failed commands retried every 40-101 s.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-llmjacking",
-   "id": "2026-11-04-pm-04",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T20:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram",
-    "x"
-   ],
-   "voice": null,
-   "title": "Stolen Keys. Your AI Bill.",
-   "typefully_draft_id": 11690393
-  },
-  {
-   "story_key": "cve-2025-8088",
-   "id": "2026-11-04-pm-05",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Old WinRAR bug. New spy campaign.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "promo-agentic-ai-security-hijack-diagram-2026-11-04",
-   "id": "2026-11-04-promo-01",
-   "date": "2026-11-04",
-   "slot": "2026-11-04T23:30:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram"
-   ],
-   "voice": null,
-   "title": "How AI Agents Get Hijacked",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-107441",
-   "id": "2026-11-05-am-01",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "996 switches hacked. Through an unknown flaw.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "chainstack-production-breach-2026-11",
-   "id": "2026-11-05-am-02",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "In through a dev environment. Out with password hashes.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "wardenstealer-aoki-ai-session-tokens-2026-11",
-   "id": "2026-11-05-am-03",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "New password. Same stolen AI session.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-internal-security-lapses-reuters-2026-11",
-   "id": "2026-11-05-am-04",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A quarter of OpenAI's production engineers, moved to security.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "kernel-api-key-gpu-cryptomining-breach-2026-11",
-   "id": "2026-11-05-am-05",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One leaked API key. Four GPU servers.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "apt29-watering-hole-mobile-nday-2026-11",
-   "id": "2026-11-05-pm-01",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "No click. Just a website visit.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "credit-mutuel-arkea-supplier-attack-2026-11",
-   "id": "2026-11-05-pm-02",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A French bank says attackers came in through a supplier. Reports say €118M moved.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-948-linux-lpe-pipeline-2026-11",
-   "id": "2026-11-05-pm-03",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "948 Linux root exploits. Found by AI.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "muji-card-breach-1-09m-2026-11",
-   "id": "2026-11-05-pm-04",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "1.09 million MUJI Card numbers may be exposed. With dates of birth.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "dmi-northavimet-pilots-breach-2026-11",
-   "id": "2026-11-05-pm-05",
-   "date": "2026-11-05",
-   "slot": "2026-11-05T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "5,000 pilots. One weather portal.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "promo-agentic-ai-security-owasp-top10-list-2026-11-05",
-   "id": "2026-11-05-promo-01",
-   "date": "2026-11-05",
-   "slot": "2026-11-06T00:01:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "10 ways an AI agent gets turned against you. Save this list.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "efs-blood-bank-plasma-freezer-attack-2026-11",
-   "id": "2026-11-06-am-01",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Plasma freezers. Set to 110°C. Remotely.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "digicert-archived-customer-data-breach-2026-11",
-   "id": "2026-11-06-am-02",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A certificate authority's VPN-only system ended up on the internet.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-gpt-6-astra-covert-underperformance-2026-11",
-   "id": "2026-11-06-am-03",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "OpenAI's model quietly did less work.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "fake-openai-spacex-anthropic-events-phishing-2026-11",
-   "id": "2026-11-06-am-04",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Free ChatGPT Pro. Just sign in with your work account.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-119977",
-   "id": "2026-11-06-am-05",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Exploit attempts 9 minutes after the fix.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "nikke-pc-launcher-cdn-scripts-rat-2026-11",
-   "id": "2026-11-06-pm-01",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Official game launcher. Malware inside.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "chatgpt-lockdown-mode-bypass-checkpoint-2026-11",
-   "id": "2026-11-06-pm-02",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "ChatGPT's Lockdown Mode had a side door.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "alpine-openssh-password-auth-bypass-2026-11",
-   "id": "2026-11-06-pm-03",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Alpine SSH: no-password accounts exposed",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-tampered-launcher-scripts",
-   "id": "2026-11-06-pm-04",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T21:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram",
-    "youtube",
-    "x"
-   ],
-   "voice": null,
-   "title": "Trusted Launcher, Hijacked",
-   "typefully_draft_id": 11737728
-  },
-  {
-   "story_key": "queens-public-library-ransomware-2026-11",
-   "id": "2026-11-06-pm-05",
-   "date": "2026-11-06",
-   "slot": "2026-11-06T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "66 branches open. Systems dark.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ai-ceo-attorney-impersonation-129m-charges-2026-11",
-   "id": "2026-11-07-am-01",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$129 million. A fake CEO on a video call.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-dispatch-browser-extension-takeover-2026-11",
-   "id": "2026-11-07-am-02",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A browser extension could tell your AI desktop agent what to do.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "chainalysis-all-users-credentials-exposed-2026-11",
-   "id": "2026-11-07-am-03",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Crypto sleuths breached. All users exposed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-116606",
-   "id": "2026-11-07-am-04",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Your email security gateway. Root. No login.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-123158",
-   "id": "2026-11-07-am-05",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Under 9 hours. Then root on a honeypot.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-model-raw-packets-sandbox-network-2026-11",
-   "id": "2026-11-07-pm-01",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Proxy down. So the AI built its own packets.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "github-fake-security-tools-drweb-2000-2026-11",
-   "id": "2026-11-07-pm-02",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Fake security tools on GitHub. Over 2,000 Windows PCs infected.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-19868",
-   "id": "2026-11-07-pm-03",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "SonicWall MFA bypass. Exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "japan-emergency-cyber-package-10bn-yen-2026-11",
-   "id": "2026-11-07-pm-04",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "After a wave of breaches, Japan launches a ¥10 billion cyber emergency package.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "dlink-dgs-3130-zero-days-2026-11",
-   "id": "2026-11-07-pm-05",
-   "date": "2026-11-07",
-   "slot": "2026-11-07T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "D-Link switch zero-days. No patch yet.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2024-58351",
-   "id": "2026-11-09-am-01",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "4,972 chatbot messages. All said \"hello\".",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "botpress-auth-proxy-breach-ai-credits-2026-11",
-   "id": "2026-11-09-am-02",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Someone broke into a chatbot platform. Botpress says they wanted the AI credits.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-code-dont-ask-again-secrets-apiiro-2026-11",
-   "id": "2026-11-09-am-03",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "2,539 secrets. Saved by \"don't ask again\".",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "gnosis-pay-legacy-card-system-breach-2026-11",
-   "id": "2026-11-09-am-04",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Name. Home address. Card number. Linked crypto wallets.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "ahold-delhaize-cyberattack-q4-toll-2026-11",
-   "id": "2026-11-09-am-05",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Up to €250M in lost sales. One cyberattack.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "beget-cloud-wipe-2026-11",
-   "id": "2026-11-09-pm-01",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Wiper scripts. Backups gone. 1,000+ servers.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "nvidia-board-huang-foreign-intelligence-probe-2026-11",
-   "id": "2026-11-09-pm-02",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Nvidia's board opens an inquiry: was its CEO a foreign intelligence target?",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "brenner-base-tunnel-breach-everest-2026-11",
-   "id": "2026-11-09-pm-03",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "An €11.7B rail tunnel. A data breach.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-open-weight-ai-safe-deployment",
-   "id": "2026-11-09-pm-04",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T21:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Self-Hosted AI, Safely",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "asd-open-weight-ai-guidance-2026-11",
-   "id": "2026-11-09-pm-05",
-   "date": "2026-11-09",
-   "slot": "2026-11-09T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Myth: self-hosted AI is the safe option.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "operation-snowball-jailbroken-ai-telecom-2026-11",
-   "id": "2026-11-10-am-01",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "78,000-char jailbreak. 2 weeks of hacking.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "fireworks-ai-breach-model-weights-datasets-2026-11",
-   "id": "2026-11-10-am-02",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "An AI platform says attackers reached customer datasets and model weights.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "n-able-ncentral-30-zero-days-offline-2026-11",
-   "id": "2026-11-10-am-03",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "30+ zero-days. Cloud platform offline.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "philippines-sec-digital-platforms-breach-2026-11",
-   "id": "2026-11-10-am-04",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A securities regulator confirms its users' data leaked. Tax ID numbers included.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-102895",
-   "id": "2026-11-10-am-05",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Look local. Become admin. Exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-125350",
-   "id": "2026-11-10-pm-01",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Chrome zero-day. Exploit already out.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "france-iran-irgc-fridge-attacks-attribution-2026-11",
-   "id": "2026-11-10-pm-02",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "France says Iran's Revolutionary Guard heated its supermarket freezers.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "bossai-ai-agents-taipei-119-records-2026-11",
-   "id": "2026-11-10-pm-03",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One hacker. 12 AI agents. 11 countries.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "iris-plaza-7-7m-breach-2026-11",
-   "id": "2026-11-10-pm-04",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "7.7 million shoppers' data may be exposed. Through a cloud service the store used.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openclaw-575-malicious-skills-acronis-2026-11",
-   "id": "2026-11-10-pm-05",
-   "date": "2026-11-10",
-   "slot": "2026-11-10T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "575+ fake AI agent skills. Real malware.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "mittwald-mcp-server-breach-56-projects-2026-11",
-   "id": "2026-11-11-am-01",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "56 projects. 8 days. Via an MCP server.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "nitori-37-62m-records-breach-2026-11",
-   "id": "2026-11-11-am-02",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Up to 37.62 million customer records. One furniture retailer.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-124194",
-   "id": "2026-11-11-am-03",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Open one Office file. Lose your NTLM hash.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "turla-cereal-exchange-malware-eset-2026-11",
-   "id": "2026-11-11-am-04",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Spy malware hiding inside Exchange. No outside server to catch.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "deepmind-ai-agents-rsa-1024-cheaper-2026-11",
-   "id": "2026-11-11-am-05",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "AI agents cut an RSA attack 3.5x.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "sap-proxygate-icm2shell-2026-11",
-   "id": "2026-11-11-pm-01",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Two CVSS 10s. Inside SAP.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "railway-ai-agents-740k-breach-2026-11",
-   "id": "2026-11-11-pm-02",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Stolen secrets. AI agents. About $740,000 in charges.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "italy-tajani-data-dark-web-2026-11",
-   "id": "2026-11-11-pm-03",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "A minister's data. On the dark web.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-plex2shell-port-forward-vs-vpn",
-   "id": "2026-11-11-pm-04",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T21:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram",
-    "youtube",
-    "x"
-   ],
-   "voice": null,
-   "title": "Plex2Shell: Open Port vs VPN",
-   "typefully_draft_id": 11849753
-  },
-  {
-   "story_key": "eset-dprk-drones-dev-supply-chain-2026-11",
-   "id": "2026-11-11-pm-05",
-   "date": "2026-11-11",
-   "slot": "2026-11-11T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Myth: hackers only hit big projects.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "microsoft-lazarus-neuron-backdoor-ai-agents-2026-11",
-   "id": "2026-11-12-am-01",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "10 neurons. One backdoored AI agent.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "proofpoint-bluephishing-entra-agent-id-2026-11",
-   "id": "2026-11-12-am-02",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "One click approves a fake AI agent. No password stolen.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "maersk-legacy-system-breach-whitearmor-2026-11",
-   "id": "2026-11-12-am-03",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$5 million ransom demand. On Maersk.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "sega-arara-newsletter-2-19m-emails-2026-11",
-   "id": "2026-11-12-am-04",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "2,196,044 email addresses. Leaked through SEGA's newsletter vendor.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-116779",
-   "id": "2026-11-12-am-05",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.8 in phone-switch software. Exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "claude-fable-5-2-cyscenariobench-2026-11",
-   "id": "2026-11-12-pm-01",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "76.3% of simulated cyber ops. One AI.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "near-ai-sglang-rce-breach-2026-11",
-   "id": "2026-11-12-pm-02",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "One flaw in an AI inference engine. 18 AI agents' chat history taken.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "qubole-aws-cross-account-roles-attack-2026-11",
-   "id": "2026-11-12-pm-03",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Over a dozen orgs. Via a vendor they'd left.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "xen-orchestra-vsa-2026-062-exploited-2026-11",
-   "id": "2026-11-12-pm-04",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "A broken login check. Admin over your hypervisors. Exploited now.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-111760",
-   "id": "2026-11-12-pm-05",
-   "date": "2026-11-12",
-   "slot": "2026-11-12T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "One git clone could run someone's code.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "signdrop-windows-clfs-zero-day-poc-2026-11",
-   "id": "2026-11-13-am-01",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "No CVE. No patch. Public SYSTEM exploit.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "grok-built-apps-35k-exposed-claroc-2026-11",
-   "id": "2026-11-13-am-02",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "35,578 Grok-built apps open to anyone. Some leaking passwords.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "screenconnect-rogue-clients-288-endpoints-2026-11",
-   "id": "2026-11-13-am-03",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "288 endpoints. 48 orgs. One remote tool.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "antifox-ai-pentest-platform-aws-secrets-2026-11",
-   "id": "2026-11-13-am-04",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "An AI pentest platform. Linked to attacks that read AWS production secrets.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-108186",
-   "id": "2026-11-13-am-05",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.6. In Zoom. No login needed.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "m365-exchange-online-outage-ex1550543-2026-11",
-   "id": "2026-11-13-extra-01",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T10:10:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "130,000+ Outlook outage reports at the peak.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "unit42-cairn-autonomous-ai-attacks-2026-11",
-   "id": "2026-11-13-pm-01",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "25 operations. Run by AI agents.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "tsmc-employee-data-cloud-provider-2026-11",
-   "id": "2026-11-13-pm-02",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "TSMC says it found no sign its systems were hacked. Employee data leaked anyway.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-123218",
-   "id": "2026-11-13-pm-03",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.8. File transfer. Exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "explainer-hijacked-github-account-ci-secrets",
-   "id": "2026-11-13-pm-04",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T21:00:00",
-   "kind": "diagram",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Hijacked GitHub Login → Cloud",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-119618",
-   "id": "2026-11-13-pm-05",
-   "date": "2026-11-13",
-   "slot": "2026-11-13T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Myth: you fixed Apache HTTP/2 in May.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "fbi-facestealer-dprk-deepfake-calls-400m-2026-11",
-   "id": "2026-11-14-am-01",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T08:15:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "$400M+ stolen. Through fake video calls.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "uber-drivers-fireworks-ai-vendor-breach-2026-11",
-   "id": "2026-11-14-am-02",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T10:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "Uber drivers' license data stolen. Through an AI vendor's breach.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-123039",
-   "id": "2026-11-14-am-03",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T12:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "Firewall zero-day. Root access. Exploited.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "openai-daybreak-red-team-defense-factory-2026-11",
-   "id": "2026-11-14-am-04",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T13:30:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "OpenAI's new AI agents pentest your web apps. Then draft the fix.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-20320",
-   "id": "2026-11-14-am-05",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T14:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "18 known flaws. One AI agent did the work.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "n-central-4everable2shell-hf2-exploited-2026-11",
-   "id": "2026-11-14-pm-01",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T16:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "21 servers hit. 19 were already patched.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "united-airlines-blocks-ai-agents-2026-11",
-   "id": "2026-11-14-pm-02",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T17:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "United Airlines will block AI agents from booking your flights.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "island-typoprompting-186-fake-ai-domains-2026-11",
-   "id": "2026-11-14-pm-03",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T20:00:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "186 fake AI sites. One typo away.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "gootloader-doj-takedown-44-ransomware-victims-2026-11",
-   "id": "2026-11-14-pm-04",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T21:00:00",
-   "kind": "carousel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": null,
-   "title": "One accidental download. $28.8 million in ransomware losses.",
-   "typefully_draft_id": null
-  },
-  {
-   "story_key": "cve-2026-123710",
-   "id": "2026-11-14-pm-05",
-   "date": "2026-11-14",
-   "slot": "2026-11-14T22:30:00",
-   "kind": "reel",
-   "networks": [
-    "instagram",
-    "youtube"
-   ],
-   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
-   "title": "CVSS 9.8. Every private image in Quay.",
-   "typefully_draft_id": null
-  }
- ]
+  "posted": [
+    {
+      "story_key": "storm-0940-artex-connectwise",
+      "id": "2026-10-24-pm-01",
+      "date": "2026-10-24",
+      "slot": "2026-10-24T16:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "AI agents hit 2,250+ tenants.",
+      "metricool_ids": {
+        "instagram": 404840693
+      },
+      "note": "moved up to post immediately at Nishant's request"
+    },
+    {
+      "story_key": "data-cymru-password1-ico",
+      "id": "2026-10-24-pm-02",
+      "date": "2026-10-24",
+      "slot": "2026-10-24T16:20:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Ransomware got in through “Password1”.",
+      "metricool_ids": {
+        "instagram": 404840700
+      },
+      "note": "moved up to post immediately at Nishant's request"
+    },
+    {
+      "story_key": "cve-2026-114625",
+      "id": "2026-10-24-pm-03",
+      "date": "2026-10-24",
+      "slot": "2026-10-24T16:25:00",
+      "kind": "card",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "3rd VeloCloud zero-day since July. Patch now.",
+      "metricool_ids": {
+        "instagram": 404840706
+      },
+      "note": "moved up to post immediately at Nishant's request"
+    },
+    {
+      "story_key": "capcom-id-breach-2026-10",
+      "id": "2026-10-24-pm-04",
+      "date": "2026-10-24",
+      "slot": "2026-10-24T16:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "11.7 million gamer accounts exposed.",
+      "metricool_ids": {
+        "instagram": 404840711
+      },
+      "note": "moved up to post immediately at Nishant's request"
+    },
+    {
+      "story_key": "cve-2026-102764",
+      "id": "2026-10-24-pm-05",
+      "date": "2026-10-24",
+      "slot": "2026-10-24T16:35:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "The alerts fired. A tool closed them as false positives.",
+      "metricool_ids": {
+        "instagram": 404840719
+      },
+      "note": "moved up to post immediately at Nishant's request"
+    },
+    {
+      "story_key": "anthropic-mythos5-ukaisi-github",
+      "id": "2026-10-25-am-01",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "9 of 43 test runs affected real people.",
+      "typefully_draft_id": 11453230
+    },
+    {
+      "story_key": "quest-diagnostics-quanum-lsm-2026-10",
+      "id": "2026-10-25-am-02",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T08:15:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "Quest shut a lab portal. Doctors are back on paper forms.",
+      "typefully_draft_id": 11453233
+    },
+    {
+      "story_key": "cve-2026-110447",
+      "id": "2026-10-25-am-03",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T10:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Attacked a month before it had a CVE.",
+      "typefully_draft_id": 11453235
+    },
+    {
+      "story_key": "blackx-uefi-bootkit-baton-drop",
+      "id": "2026-10-25-am-04",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "Patching wasn't enough. This bootkit beats Secure Boot.",
+      "typefully_draft_id": 11453237
+    },
+    {
+      "story_key": "cve-2026-30612",
+      "id": "2026-10-25-am-05",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "2 million updates. Not their computers.",
+      "typefully_draft_id": 11453305
+    },
+    {
+      "story_key": "socradar-phantom-ransomware-ai-agents",
+      "id": "2026-10-25-pm-01",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T22:45:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "AI executed. A human clicked approve.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "k0t-edge-devices-70k-credentials",
+      "id": "2026-10-25-pm-02",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:05:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "70,000+ credentials exposed. The way in: firewalls and VPNs.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-111497",
+      "id": "2026-10-25-pm-03",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:25:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One compression bug. Node, Bun and Python.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "emudhra-weak-intermediate-ca-keys",
+      "id": "2026-10-25-pm-04",
+      "date": "2026-10-25",
+      "slot": "2026-10-25T23:45:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "One CA private key was the number 4.",
+      "typefully_draft_id": null,
+      "note": "X thread skipped: Typefully quota used up (resets 1 Nov)"
+    },
+    {
+      "story_key": "opencode-console-provider-keys-2026-10",
+      "id": "2026-10-25-pm-05",
+      "date": "2026-10-25",
+      "slot": "2026-10-26T00:05:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A breach. Then surprise AI bills.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "symantec-skynet-agent-exposed-llm-endpoints",
+      "id": "2026-10-26-am-01",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Built to run 100,000 steps alone.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "tailscale-ssh-tailworm-2026-10",
+      "id": "2026-10-26-am-02",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Researcher: one hacked device could reach root on other Tailscale servers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "johns-hopkins-bayview-shadow-ai-upload",
+      "id": "2026-10-26-am-03",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "3,182 patients. One AI upload.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "dreamhost-password-resets-2026-10",
+      "id": "2026-10-26-am-04",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "DreamHost reset email and FTP passwords. File Manager is still offline.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-96654",
+      "id": "2026-10-26-am-05",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Plex servers hijacked to mine crypto.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "agents-md-downloads-coding-agent-hijack",
+      "id": "2026-10-26-pm-01",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One text file hijacked an AI coding agent.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "sweden-government-blocks-chatgpt-claude",
+      "id": "2026-10-26-pm-02",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T23:35:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "From today, Sweden's government offices block ChatGPT and Claude.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "city-of-columbia-sc-ransomware-2026-10",
+      "id": "2026-10-26-pm-03",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "911 still works. Online services don't.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-0257",
+      "id": "2026-10-26-pm-04",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Two ransomware gangs, one VPN flaw, no MFA in the way.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-110936",
+      "id": "2026-10-26-pm-05",
+      "date": "2026-10-26",
+      "slot": "2026-10-26T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A real, signed Siemens app. Loading malware.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cathedral-ai-agents-anthropic-test-2026-10",
+      "id": "2026-10-27-am-01",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Under 12 hours into Anthropic's systems.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "university-of-copenhagen-test-environment-breach-2026-10",
+      "id": "2026-10-27-am-02",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "525,000 people's data sat in a test environment. Hackers got in.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "korea-ex-pentester-artex-82m-records-arrest",
+      "id": "2026-10-27-am-03",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "8.2 million records. An AI pentest kit.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-georgia-vote-count-paywall-2026-10",
+      "id": "2026-10-27-am-04",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Nobody asked it to. Claude got past a paywall for Georgia vote counts.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "giftee-egift-fraud-550m-yen-2026-10",
+      "id": "2026-10-27-am-05",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "¥550 million in e-gifts nobody paid for.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cohere-qwen38-flash-next-beijing-upload-test",
+      "id": "2026-10-27-pm-01",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "It said: no external tools. Then it tried.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cloudflare-workers-ai-glm53-kv-cache-exposure",
+      "id": "2026-10-27-pm-02",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "155 AI answers carried someone else's data.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-86950",
+      "id": "2026-10-27-pm-03",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Older iPhones waited a month for this fix.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "navigate360-safevoice-tip-records-breach-2026-10",
+      "id": "2026-10-27-pm-04",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T22:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "8.3 million 'anonymous' tip records were stolen.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "gmo-onamae-desktop-cloud-50m-ransom-2026-10",
+      "id": "2026-10-27-pm-05",
+      "date": "2026-10-27",
+      "slot": "2026-10-27T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$50 million demand. GMO said no.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "unm-health-cyberattack-byod-2026-10",
+      "id": "2026-10-28-am-01",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Ambulances diverted. Surgeries paused.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "anthropic-s1-cyber-risk-factors-2026-10",
+      "id": "2026-10-28-am-02",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Anthropic's IPO filing: its own models could be used in cyberattacks.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-109618",
+      "id": "2026-10-28-am-03",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "5 million+ PHP hosts. Two flaws exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "warp-vendor-breach-agent-logs-2026-10",
+      "id": "2026-10-28-am-04",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Warp: about 1% of users may have had AI agent logs exposed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "testmetest-npm-worm-42-github-repos",
+      "id": "2026-10-28-am-05",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Revoke the token. Lose your home folder.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "keystone-verification-key-18835-2026-10",
+      "id": "2026-10-28-pm-01",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "18,835 wallets. Keystone is destroying them.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-gpt61-terra-critical-cyber-2026-10",
+      "id": "2026-10-28-pm-02",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "OpenAI's new budget model meets its 'Critical' cyber threshold.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "trendai-cyberstrikeai-44-agents-japan-2026-10",
+      "id": "2026-10-28-pm-03",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "44 AI agents. One hacking operation.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2021-33044",
+      "id": "2026-10-28-pm-04",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T20:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Ukraine warns: Dahua cameras hijacked through their remote-viewing service.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "asd-amadey-180k-disconnect-2026-10",
+      "id": "2026-10-28-pm-05",
+      "date": "2026-10-28",
+      "slot": "2026-10-28T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "180,000 infected computers. Cut off.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "fec-efiling-breach-attempt-2026-10",
+      "id": "2026-10-29-am-01",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A week before the midterms. Filings offline.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "sony-network-communications-so-net-breach-2026-10",
+      "id": "2026-10-29-am-02",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "2,585,481 customer records. One ISP member database.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "volt-typhoon-silent-train-2026-10",
+      "id": "2026-10-29-am-03",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "4 zero-days. Gone within 8 hours.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "uk-vapes-consultation-bot-responses-2026-10",
+      "id": "2026-10-29-am-04",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "3 in 4 responses to a UK government consultation came from bots.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "virtualine-bulletproof-hosting-takedown-2026-10",
+      "id": "2026-10-29-am-05",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Crime host seized. 3,000+ customers' data.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "anthropic-unreleased-model-exploit-chains-2026-10",
+      "id": "2026-10-29-pm-01",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "5 exploit chains. Built by an unreleased AI.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "google-gemini-4-carbon-cyber-defenders-2026-10",
+      "id": "2026-10-29-pm-02",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Google's newest AI model goes to cyber defenders first.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-48356",
+      "id": "2026-10-29-pm-03",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "953 stores. Hidden code. Scanners blind.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-101767",
+      "id": "2026-10-29-pm-04",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Patched last week. Probed by attackers this week.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-97631",
+      "id": "2026-10-29-pm-05",
+      "date": "2026-10-29",
+      "slot": "2026-10-29T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "16 years old. Runs before Secure Boot.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "polymarket-debugbear-script-drain-2026-10",
+      "id": "2026-10-30-am-01",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$2.5M traced. One hijacked website script.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-76418",
+      "id": "2026-10-30-am-02",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "No login needed. One request, and the Cisco firewall reboots.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "yoba-fake-chatgpt-claude-apps-2026-10",
+      "id": "2026-10-30-am-03",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T08:45:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Fake ChatGPT & Claude apps. Real installers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chrome-extensions-search-hijack-13m-2026-10",
+      "id": "2026-10-30-am-04",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "13.4 million installs. Every search went through someone else's server.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "telegram-android-voice-call-rce-2026-10",
+      "id": "2026-10-30-am-05",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Answer one Telegram call. That's the trigger.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-misalignment-monitors-hf-replay-2026-10",
+      "id": "2026-10-30-pm-01",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "30 minutes. Not 30 hours.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "belgium-myminfin-cyberattack-2026-10",
+      "id": "2026-10-30-pm-02",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Days before a tax deadline, Belgium pulled its tax portal offline.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-41709",
+      "id": "2026-10-30-pm-03",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Rated 2.7. Used as a zero-day.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-rogue-mfa-device-persistence",
+      "id": "2026-10-30-pm-04",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T20:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "New Password. Same Attacker.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "gitee-26400-valid-credentials-2026-10",
+      "id": "2026-10-30-pm-05",
+      "date": "2026-10-30",
+      "slot": "2026-10-30T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "26,400 working keys. In public code.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "binance-hot-wallet-6-3b-breach-2026-10",
+      "id": "2026-10-31-am-01",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$6.3 billion. It started with one laptop.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-97229",
+      "id": "2026-10-31-am-02",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "CVSS 10. No login. Now on CISA's exploited list.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-code-cursor-extension-trojanized-2026-10",
+      "id": "2026-10-31-am-03",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Official Claude Code extension. Backdoored.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "vapor-panda-artex-200-orgs-2026-10",
+      "id": "2026-10-31-am-04",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "200+ organisations. AI agents doing the hacking. A human steering.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "wordpress-714-core-rce-upgrade-race-2026-10",
+      "id": "2026-10-31-am-05",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "62,969 attacks in 24 hours. WordPress core.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "basics-launch-cybersecurity-from-zero",
+      "id": "2026-10-31-basics-01",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T18:15:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "Want to get into cybersecurity? Start here.",
+      "typefully_draft_id": 11605687
+    },
+    {
+      "story_key": "basics-01-cia-triad",
+      "id": "2026-10-31-basics-02",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T18:15:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "Every cyberattack breaks one of these 3 things.",
+      "typefully_draft_id": 11605689
+    },
+    {
+      "story_key": "basics-02-mfa-password-not-enough",
+      "id": "2026-10-31-basics-03",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T18:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "99% less likely to be hacked. One setting.",
+      "typefully_draft_id": 11605691
+    },
+    {
+      "story_key": "basics-03-spot-phishing",
+      "id": "2026-10-31-basics-04",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T18:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Perfect grammar. Still phishing.",
+      "typefully_draft_id": 11605692
+    },
+    {
+      "story_key": "chainalysis-agentic-breach-2026-10",
+      "id": "2026-10-31-pm-01",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "The breach investigators got breached.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "synology-c3rb3r-ransomware-2026-10",
+      "id": "2026-10-31-pm-02",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Files renamed .L0CK3D. Synology NAS boxes hit by ransomware.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "n0n-ransomware-ai-7k-exposed-server-2026-10",
+      "id": "2026-10-31-pm-03",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$7,216 on AI. Then left the server open.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "embrace-ai-assistant-browsers-2026-10",
+      "id": "2026-10-31-pm-04",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T22:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Your AI coding assistant has a browser. Researchers broke 5 of them.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "apple-threat-notifications-99-countries-2026-10",
+      "id": "2026-10-31-pm-05",
+      "date": "2026-10-31",
+      "slot": "2026-10-31T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "99 countries. One Apple spyware warning.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "northflank-ai-api-keys-breach-2026-10",
+      "id": "2026-11-01-am-01",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Assume every secret is stolen.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "accenture-claude-code-niprnet-allegation-2026-10",
+      "id": "2026-11-01-am-02",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "A personal AI agent. Admin rights. A Pentagon network. Allegedly.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-118539",
+      "id": "2026-11-01-am-03",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "30,000 web shops. Bug already exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "microsoft-north-korea-ai-adoption-8-actors-2026-10",
+      "id": "2026-11-01-am-04",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T14:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "100+ phishing lures. Dozens made within minutes. Microsoft says AI built them.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-code-iphone-face-photos-claim-2026-10",
+      "id": "2026-11-01-am-05",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T10:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "12,847 face photos? Still unverified.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chatgpt-shared-link-session-hijack-2026-10",
+      "id": "2026-11-01-pm-01",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One shared ChatGPT link. Your private chats.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "florida-student-financial-aid-breach-2026-10",
+      "id": "2026-11-01-pm-02",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "4.9 million financial aid applicants. Social Security numbers exposed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ivanti-connect-secure-uta0576-chain-2026-10",
+      "id": "2026-11-01-pm-03",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "3 Ivanti flaws. Chained to root.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "binance-fbi-tradertraitor-attribution-2026-10",
+      "id": "2026-11-01-pm-04",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "$6.3 billion. The FBI says North Korea took it.",
+      "typefully_draft_id": 11616620
+    },
+    {
+      "story_key": "trezor-cryptobilis-hardware-implant-2026-10",
+      "id": "2026-11-01-pm-05",
+      "date": "2026-11-01",
+      "slot": "2026-11-01T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A hidden board. With its own antenna.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-98432",
+      "id": "2026-11-02-am-01",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.8. Remote root. No login.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "volta-infostealer-llm-victim-appraisal-2026-10",
+      "id": "2026-11-02-am-02",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "This infostealer asks an AI what you're worth.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ai-agents-bypass-spending-caps-ihitl-2026-11",
+      "id": "2026-11-02-am-03",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "9 of 10 AI agents raised their own limit.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-112816",
+      "id": "2026-11-02-am-04",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T09:15:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "CVSS 10. A trusted client's public cert was enough to impersonate it.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ao3-security-incident-offline-2026-10",
+      "id": "2026-11-02-am-05",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T13:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "11 million users. Offline for up to 4 weeks.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ai-chatbots-midterm-election-errors-2026-11",
+      "id": "2026-11-02-pm-01",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "~40% of AI election answers had an error.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "frontier-airlines-phishing-campaign-2026-11",
+      "id": "2026-11-02-pm-02",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Frontier Airlines says scammers are emailing its customers right now.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "android-sms-of-death-wap-push-2026-10",
+      "id": "2026-11-02-pm-03",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One SMS. Zero clicks. Phone service down.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-file-upload-webshell",
+      "id": "2026-11-02-pm-04",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T20:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Upload an Image. Get a Webshell.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-102785",
+      "id": "2026-11-02-pm-05",
+      "date": "2026-11-02",
+      "slot": "2026-11-02T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Hacked 6 hours before the patch existed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "xcpe-botnet-videostrong-google-ban-2026-11",
+      "id": "2026-11-03-am-01",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "1.3 million TV boxes. Backdoored firmware.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "abrigo-sageworks-offline-irregular-activity-2026-10",
+      "id": "2026-11-03-am-02",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "2,400+ banks and credit unions. Their lending app went dark.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "europe-supermarket-freezer-attacks-2026-11",
+      "id": "2026-11-03-am-03",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Supermarket freezers set to 50°C. Remotely.",
+      "typefully_draft_id": 11660585
+    },
+    {
+      "story_key": "revolve-payment-card-breach-2026-10",
+      "id": "2026-11-03-am-04",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Saved your card at checkout? At Revolve, that's what was taken.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "langflow-critical-flaws-1-13-0-2026-11",
+      "id": "2026-11-03-am-05",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.8. No account. Your AI agent builder.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ukraine-air-alert-russia-emercom-fake-alerts-2026-11",
+      "id": "2026-11-03-pm-01",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Fake radiation alert. 6.6 million app users.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "microsoft-teams-helpdesk-adcs-esc1-esc8-2026-10",
+      "id": "2026-11-03-pm-02",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "No Teams bug. Just \"IT support\" and a certificate template.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "mcphantom-deprecated-mcp-servers-2026-11",
+      "id": "2026-11-03-pm-03",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "17.3M downloads. No more security fixes.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "mercado-bitcoin-46m-outflow-2026-11",
+      "id": "2026-11-03-pm-04",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T20:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "$46M+ left Latin America's biggest crypto platform overnight.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-58115",
+      "id": "2026-11-03-pm-05",
+      "date": "2026-11-03",
+      "slot": "2026-11-03T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One request. A new flow. A bot installed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "btcpay-server-hot-wallet-drains-2026-11",
+      "id": "2026-11-04-am-01",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Old BTCPay server? Hot wallet drained.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cpguard-autoupdate-hijack-2026-11",
+      "id": "2026-11-04-am-02",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Your security tool updated itself. The update was the attack.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "workos-artex-ai-sales-app-breach-2026-10",
+      "id": "2026-11-04-am-03",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "An AI hacking tool. A sales app. Call notes.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "frontline-education-breach-1-3m-2026-11",
+      "id": "2026-11-04-am-04",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "1.3 million school staff and students. One flaw in someone else's software.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "synology-dsm-c3rb3r-ransomware-2026-11",
+      "id": "2026-11-04-am-05",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A 2024 Synology bug. 2026 ransomware.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "gitbook-ai-agent-attack-credentials-2026-11",
+      "id": "2026-11-04-pm-01",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T17:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "GitBook says AI agents attacked it.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "msecure-suspicious-activity-warning-2026-11",
+      "id": "2026-11-04-pm-02",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T16:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "Your password manager emails you: change passwords, reset 2FA, remove passkeys.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "3am-ransomware-ai-loop-uk-school-2026-11",
+      "id": "2026-11-04-pm-03",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T21:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Failed commands retried every 40-101 s.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-llmjacking",
+      "id": "2026-11-04-pm-04",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T20:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "x"
+      ],
+      "voice": null,
+      "title": "Stolen Keys. Your AI Bill.",
+      "typefully_draft_id": 11690393
+    },
+    {
+      "story_key": "cve-2025-8088",
+      "id": "2026-11-04-pm-05",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Old WinRAR bug. New spy campaign.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "promo-agentic-ai-security-hijack-diagram-2026-11-04",
+      "id": "2026-11-04-promo-01",
+      "date": "2026-11-04",
+      "slot": "2026-11-04T23:30:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram"
+      ],
+      "voice": null,
+      "title": "How AI Agents Get Hijacked",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-107441",
+      "id": "2026-11-05-am-01",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "996 switches hacked. Through an unknown flaw.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chainstack-production-breach-2026-11",
+      "id": "2026-11-05-am-02",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "In through a dev environment. Out with password hashes.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "wardenstealer-aoki-ai-session-tokens-2026-11",
+      "id": "2026-11-05-am-03",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "New password. Same stolen AI session.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-internal-security-lapses-reuters-2026-11",
+      "id": "2026-11-05-am-04",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A quarter of OpenAI's production engineers, moved to security.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "kernel-api-key-gpu-cryptomining-breach-2026-11",
+      "id": "2026-11-05-am-05",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One leaked API key. Four GPU servers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "apt29-watering-hole-mobile-nday-2026-11",
+      "id": "2026-11-05-pm-01",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "No click. Just a website visit.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "credit-mutuel-arkea-supplier-attack-2026-11",
+      "id": "2026-11-05-pm-02",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A French bank says attackers came in through a supplier. Reports say €118M moved.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-948-linux-lpe-pipeline-2026-11",
+      "id": "2026-11-05-pm-03",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "948 Linux root exploits. Found by AI.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "muji-card-breach-1-09m-2026-11",
+      "id": "2026-11-05-pm-04",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "1.09 million MUJI Card numbers may be exposed. With dates of birth.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "dmi-northavimet-pilots-breach-2026-11",
+      "id": "2026-11-05-pm-05",
+      "date": "2026-11-05",
+      "slot": "2026-11-05T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "5,000 pilots. One weather portal.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "promo-agentic-ai-security-owasp-top10-list-2026-11-05",
+      "id": "2026-11-05-promo-01",
+      "date": "2026-11-05",
+      "slot": "2026-11-06T00:01:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "10 ways an AI agent gets turned against you. Save this list.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "efs-blood-bank-plasma-freezer-attack-2026-11",
+      "id": "2026-11-06-am-01",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Plasma freezers. Set to 110°C. Remotely.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "digicert-archived-customer-data-breach-2026-11",
+      "id": "2026-11-06-am-02",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A certificate authority's VPN-only system ended up on the internet.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-gpt-6-astra-covert-underperformance-2026-11",
+      "id": "2026-11-06-am-03",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "OpenAI's model quietly did less work.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "fake-openai-spacex-anthropic-events-phishing-2026-11",
+      "id": "2026-11-06-am-04",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Free ChatGPT Pro. Just sign in with your work account.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-119977",
+      "id": "2026-11-06-am-05",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Exploit attempts 9 minutes after the fix.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "nikke-pc-launcher-cdn-scripts-rat-2026-11",
+      "id": "2026-11-06-pm-01",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Official game launcher. Malware inside.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chatgpt-lockdown-mode-bypass-checkpoint-2026-11",
+      "id": "2026-11-06-pm-02",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "ChatGPT's Lockdown Mode had a side door.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "alpine-openssh-password-auth-bypass-2026-11",
+      "id": "2026-11-06-pm-03",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Alpine SSH: no-password accounts exposed",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-tampered-launcher-scripts",
+      "id": "2026-11-06-pm-04",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube",
+        "x"
+      ],
+      "voice": null,
+      "title": "Trusted Launcher, Hijacked",
+      "typefully_draft_id": 11737728
+    },
+    {
+      "story_key": "queens-public-library-ransomware-2026-11",
+      "id": "2026-11-06-pm-05",
+      "date": "2026-11-06",
+      "slot": "2026-11-06T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "66 branches open. Systems dark.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ai-ceo-attorney-impersonation-129m-charges-2026-11",
+      "id": "2026-11-07-am-01",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$129 million. A fake CEO on a video call.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-dispatch-browser-extension-takeover-2026-11",
+      "id": "2026-11-07-am-02",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A browser extension could tell your AI desktop agent what to do.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "chainalysis-all-users-credentials-exposed-2026-11",
+      "id": "2026-11-07-am-03",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Crypto sleuths breached. All users exposed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-116606",
+      "id": "2026-11-07-am-04",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Your email security gateway. Root. No login.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-123158",
+      "id": "2026-11-07-am-05",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Under 9 hours. Then root on a honeypot.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-model-raw-packets-sandbox-network-2026-11",
+      "id": "2026-11-07-pm-01",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Proxy down. So the AI built its own packets.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "github-fake-security-tools-drweb-2000-2026-11",
+      "id": "2026-11-07-pm-02",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Fake security tools on GitHub. Over 2,000 Windows PCs infected.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-19868",
+      "id": "2026-11-07-pm-03",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "SonicWall MFA bypass. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "japan-emergency-cyber-package-10bn-yen-2026-11",
+      "id": "2026-11-07-pm-04",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "After a wave of breaches, Japan launches a ¥10 billion cyber emergency package.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "dlink-dgs-3130-zero-days-2026-11",
+      "id": "2026-11-07-pm-05",
+      "date": "2026-11-07",
+      "slot": "2026-11-07T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "D-Link switch zero-days. No patch yet.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2024-58351",
+      "id": "2026-11-09-am-01",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "4,972 chatbot messages. All said \"hello\".",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "botpress-auth-proxy-breach-ai-credits-2026-11",
+      "id": "2026-11-09-am-02",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Someone broke into a chatbot platform. Botpress says they wanted the AI credits.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-code-dont-ask-again-secrets-apiiro-2026-11",
+      "id": "2026-11-09-am-03",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "2,539 secrets. Saved by \"don't ask again\".",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "gnosis-pay-legacy-card-system-breach-2026-11",
+      "id": "2026-11-09-am-04",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Name. Home address. Card number. Linked crypto wallets.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "ahold-delhaize-cyberattack-q4-toll-2026-11",
+      "id": "2026-11-09-am-05",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Up to €250M in lost sales. One cyberattack.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "beget-cloud-wipe-2026-11",
+      "id": "2026-11-09-pm-01",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Wiper scripts. Backups gone. 1,000+ servers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "nvidia-board-huang-foreign-intelligence-probe-2026-11",
+      "id": "2026-11-09-pm-02",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Nvidia's board opens an inquiry: was its CEO a foreign intelligence target?",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "brenner-base-tunnel-breach-everest-2026-11",
+      "id": "2026-11-09-pm-03",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "An €11.7B rail tunnel. A data breach.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-open-weight-ai-safe-deployment",
+      "id": "2026-11-09-pm-04",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Self-Hosted AI, Safely",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "asd-open-weight-ai-guidance-2026-11",
+      "id": "2026-11-09-pm-05",
+      "date": "2026-11-09",
+      "slot": "2026-11-09T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Myth: self-hosted AI is the safe option.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "operation-snowball-jailbroken-ai-telecom-2026-11",
+      "id": "2026-11-10-am-01",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "78,000-char jailbreak. 2 weeks of hacking.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "fireworks-ai-breach-model-weights-datasets-2026-11",
+      "id": "2026-11-10-am-02",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "An AI platform says attackers reached customer datasets and model weights.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "n-able-ncentral-30-zero-days-offline-2026-11",
+      "id": "2026-11-10-am-03",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "30+ zero-days. Cloud platform offline.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "philippines-sec-digital-platforms-breach-2026-11",
+      "id": "2026-11-10-am-04",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A securities regulator confirms its users' data leaked. Tax ID numbers included.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-102895",
+      "id": "2026-11-10-am-05",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Look local. Become admin. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-125350",
+      "id": "2026-11-10-pm-01",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Chrome zero-day. Exploit already out.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "france-iran-irgc-fridge-attacks-attribution-2026-11",
+      "id": "2026-11-10-pm-02",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "France says Iran's Revolutionary Guard heated its supermarket freezers.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "bossai-ai-agents-taipei-119-records-2026-11",
+      "id": "2026-11-10-pm-03",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One hacker. 12 AI agents. 11 countries.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "iris-plaza-7-7m-breach-2026-11",
+      "id": "2026-11-10-pm-04",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "7.7 million shoppers' data may be exposed. Through a cloud service the store used.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openclaw-575-malicious-skills-acronis-2026-11",
+      "id": "2026-11-10-pm-05",
+      "date": "2026-11-10",
+      "slot": "2026-11-10T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "575+ fake AI agent skills. Real malware.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "mittwald-mcp-server-breach-56-projects-2026-11",
+      "id": "2026-11-11-am-01",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "56 projects. 8 days. Via an MCP server.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "nitori-37-62m-records-breach-2026-11",
+      "id": "2026-11-11-am-02",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Up to 37.62 million customer records. One furniture retailer.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-124194",
+      "id": "2026-11-11-am-03",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Open one Office file. Lose your NTLM hash.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "turla-cereal-exchange-malware-eset-2026-11",
+      "id": "2026-11-11-am-04",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Spy malware hiding inside Exchange. No outside server to catch.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "deepmind-ai-agents-rsa-1024-cheaper-2026-11",
+      "id": "2026-11-11-am-05",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "AI agents cut an RSA attack 3.5x.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "sap-proxygate-icm2shell-2026-11",
+      "id": "2026-11-11-pm-01",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Two CVSS 10s. Inside SAP.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "railway-ai-agents-740k-breach-2026-11",
+      "id": "2026-11-11-pm-02",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Stolen secrets. AI agents. About $740,000 in charges.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "italy-tajani-data-dark-web-2026-11",
+      "id": "2026-11-11-pm-03",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "A minister's data. On the dark web.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-plex2shell-port-forward-vs-vpn",
+      "id": "2026-11-11-pm-04",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube",
+        "x"
+      ],
+      "voice": null,
+      "title": "Plex2Shell: Open Port vs VPN",
+      "typefully_draft_id": 11849753
+    },
+    {
+      "story_key": "eset-dprk-drones-dev-supply-chain-2026-11",
+      "id": "2026-11-11-pm-05",
+      "date": "2026-11-11",
+      "slot": "2026-11-11T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Myth: hackers only hit big projects.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "microsoft-lazarus-neuron-backdoor-ai-agents-2026-11",
+      "id": "2026-11-12-am-01",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "10 neurons. One backdoored AI agent.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "proofpoint-bluephishing-entra-agent-id-2026-11",
+      "id": "2026-11-12-am-02",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "One click approves a fake AI agent. No password stolen.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "maersk-legacy-system-breach-whitearmor-2026-11",
+      "id": "2026-11-12-am-03",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$5 million ransom demand. On Maersk.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "sega-arara-newsletter-2-19m-emails-2026-11",
+      "id": "2026-11-12-am-04",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "2,196,044 email addresses. Leaked through SEGA's newsletter vendor.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-116779",
+      "id": "2026-11-12-am-05",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.8 in phone-switch software. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "claude-fable-5-2-cyscenariobench-2026-11",
+      "id": "2026-11-12-pm-01",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "76.3% of simulated cyber ops. One AI.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "near-ai-sglang-rce-breach-2026-11",
+      "id": "2026-11-12-pm-02",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "One flaw in an AI inference engine. 18 AI agents' chat history taken.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "qubole-aws-cross-account-roles-attack-2026-11",
+      "id": "2026-11-12-pm-03",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Over a dozen orgs. Via a vendor they'd left.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "xen-orchestra-vsa-2026-062-exploited-2026-11",
+      "id": "2026-11-12-pm-04",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "A broken login check. Admin over your hypervisors. Exploited now.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-111760",
+      "id": "2026-11-12-pm-05",
+      "date": "2026-11-12",
+      "slot": "2026-11-12T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "One git clone could run someone's code.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "signdrop-windows-clfs-zero-day-poc-2026-11",
+      "id": "2026-11-13-am-01",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "No CVE. No patch. Public SYSTEM exploit.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "grok-built-apps-35k-exposed-claroc-2026-11",
+      "id": "2026-11-13-am-02",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "35,578 Grok-built apps open to anyone. Some leaking passwords.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "screenconnect-rogue-clients-288-endpoints-2026-11",
+      "id": "2026-11-13-am-03",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "288 endpoints. 48 orgs. One remote tool.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "antifox-ai-pentest-platform-aws-secrets-2026-11",
+      "id": "2026-11-13-am-04",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "An AI pentest platform. Linked to attacks that read AWS production secrets.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-108186",
+      "id": "2026-11-13-am-05",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.6. In Zoom. No login needed.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "m365-exchange-online-outage-ex1550543-2026-11",
+      "id": "2026-11-13-extra-01",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T10:10:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "130,000+ Outlook outage reports at the peak.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "unit42-cairn-autonomous-ai-attacks-2026-11",
+      "id": "2026-11-13-pm-01",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "25 operations. Run by AI agents.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "tsmc-employee-data-cloud-provider-2026-11",
+      "id": "2026-11-13-pm-02",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "TSMC says it found no sign its systems were hacked. Employee data leaked anyway.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-123218",
+      "id": "2026-11-13-pm-03",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.8. File transfer. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "explainer-hijacked-github-account-ci-secrets",
+      "id": "2026-11-13-pm-04",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T21:00:00",
+      "kind": "diagram",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Hijacked GitHub Login → Cloud",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-119618",
+      "id": "2026-11-13-pm-05",
+      "date": "2026-11-13",
+      "slot": "2026-11-13T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Myth: you fixed Apache HTTP/2 in May.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "fbi-facestealer-dprk-deepfake-calls-400m-2026-11",
+      "id": "2026-11-14-am-01",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T08:15:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "$400M+ stolen. Through fake video calls.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "uber-drivers-fireworks-ai-vendor-breach-2026-11",
+      "id": "2026-11-14-am-02",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T10:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "Uber drivers' license data stolen. Through an AI vendor's breach.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-123039",
+      "id": "2026-11-14-am-03",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T12:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "Firewall zero-day. Root access. Exploited.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "openai-daybreak-red-team-defense-factory-2026-11",
+      "id": "2026-11-14-am-04",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T13:30:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "OpenAI's new AI agents pentest your web apps. Then draft the fix.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-20320",
+      "id": "2026-11-14-am-05",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T14:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "18 known flaws. One AI agent did the work.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "n-central-4everable2shell-hf2-exploited-2026-11",
+      "id": "2026-11-14-pm-01",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T16:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "21 servers hit. 19 were already patched.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "united-airlines-blocks-ai-agents-2026-11",
+      "id": "2026-11-14-pm-02",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T17:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "United Airlines will block AI agents from booking your flights.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "island-typoprompting-186-fake-ai-domains-2026-11",
+      "id": "2026-11-14-pm-03",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T20:00:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "186 fake AI sites. One typo away.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "gootloader-doj-takedown-44-ransomware-victims-2026-11",
+      "id": "2026-11-14-pm-04",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T21:00:00",
+      "kind": "carousel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": null,
+      "title": "One accidental download. $28.8 million in ransomware losses.",
+      "typefully_draft_id": null
+    },
+    {
+      "story_key": "cve-2026-123710",
+      "id": "2026-11-14-pm-05",
+      "date": "2026-11-14",
+      "slot": "2026-11-14T22:30:00",
+      "kind": "reel",
+      "networks": [
+        "instagram",
+        "youtube"
+      ],
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "title": "CVSS 9.8. Every private image in Quay.",
+      "typefully_draft_id": null
+    }
+  ]
 }
