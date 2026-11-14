@@ -1,0 +1,265 @@
+{
+ "date": "2026-11-14",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-14-pm-01",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-14T16:00:00",
+   "story_key": "n-central-4everable2shell-hf2-exploited-2026-11",
+   "send_to": "whoever runs your N-central server",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "21 servers hit. 19 were already patched.",
+    "segments": [
+     {
+      "say": "Twenty-one servers hit. Nineteen were already patched.",
+      "show": "Huntback says an XMRig miner landed on 21 N-able N-central servers; 19 were already running Hotfix 2 (The Hacker News, 13 Nov).",
+      "card": "19 of 21|were already on Hotfix 2",
+      "card_style": "stat"
+     },
+     {
+      "say": "A new N-central zero-day was exploited about five hours after the proof of concept went public.",
+      "show": "4EverAble2Shell chains Apache Axis flaw CVE-2026-90436 (CVSS 9.8) with an N-central weakness for unauthenticated root RCE. Lupovis and Huntback saw compromises about 5 hours after the PoC (SecurityWeek).",
+      "card": "Exploited ~5 h after PoC",
+      "card_style": "alert"
+     },
+     {
+      "say": "Disable the legacy A P I. Upgrade agents and probes. Treat any hit as a full compromise.",
+      "show": "N-able restricted Legacy API and Intune integration. It says upgrade Agents and Probes and make sure Legacy API is disabled. Huntback: 'Treat a hit as a full compromise, not a cleanup job.'",
+      "card": "Legacy API off · full compromise if hit",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your N-central server.",
+      "show": "Send this to whoever runs your N-central server.",
+      "card": "↗ Send this to whoever runs your N-central server"
+     }
+    ]
+   },
+   "x_text": "N-able N-central: 4EverAble2Shell chain (CVE-2026-90436, CVSS 9.8) exploited hours after the PoC. Huntback says a miner hit 21 servers, 19 already on Hotfix 2. Disable Legacy API, upgrade Agents and Probes, treat hits as full compromise.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "21 servers hit. 19 were already patched. 🚨\n\nWhat The Hacker News and SecurityWeek reported (13 Nov):\n→ A new N-able N-central zero-day chain, 4EverAble2Shell, was published with proof-of-concept code on 12 Nov\n→ It chains an Apache Axis flaw, CVE-2026-90436 (CVSS 9.8), with an N-central weakness for unauthenticated root code execution on servers with the Legacy API enabled\n→ Lupovis and Huntback saw compromises about 5 hours after the PoC went public\n→ Huntback says an XMRig miner landed on 21 servers, and 19 of them were already running Hotfix 2\n→ N-able has restricted Legacy API and Intune integration and says it found additional indicators of compromise\n\nDo this now: make sure the Legacy API is disabled, upgrade both Agents and Probes as N-able says, and if you were hit, treat it as a full compromise of every client network the server manages.\n\nSend this to whoever runs your N-central server 👇\n\nHow fast can your team pull an RMM server offline when a PoC drops?\n\nSource: The Hacker News and SecurityWeek (13 Nov 2026)\n\n#NAble #NCentral #ZeroDay #MSP #RMM #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-pm-02",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-14T17:00:00",
+   "story_key": "united-airlines-blocks-ai-agents-2026-11",
+   "send_to": "whoever lets AI agents use your accounts",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+     "date": "2026-11-12"
+    }
+   ],
+   "cover": {
+    "hook": "United Airlines will block AI agents from booking your flights.",
+    "sub": "United cites cybersecurity, privacy and possible legal violations. Sharing your login with an AI assistant is the problem."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What United announced",
+     "body": "United will block AI agents from managing customers' reservations and buying flights, on its own platforms and through aggregators and agencies, with updates to its booking, ticketing and distribution policies (The Record, 12 Nov)."
+    },
+    {
+     "type": "point",
+     "title": "The security reason",
+     "body": "United says sharing account credentials with third-party AI assistants 'can expose sensitive information', and their actions may cause unintended purchases, account changes or use of MileagePlus miles."
+    },
+    {
+     "type": "stat",
+     "big": "1 login",
+     "label": "shared with an agent = full account access",
+     "note": "Bank of America also cautioned users last week never to share user IDs and passwords with agents, per The Record."
+    },
+    {
+     "type": "point",
+     "title": "The legal reason",
+     "body": "United says automated AI actions could break FAA and DOT rules, because check-in requires human acknowledgment that bags don't contain banned items like explosives."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Never hand your password to an AI assistant",
+      "Check which agents have saved logins or tokens",
+      "Turn on MFA on travel and bank accounts",
+      "Review recent bookings and points activity"
+     ]
+    }
+   ],
+   "question": "Have you given an AI assistant your password to anything?",
+   "x_text": "United Airlines will block AI agents from managing reservations and buying flights. It says sharing credentials with third-party AI assistants can expose data and trigger unintended purchases or use of MileagePlus miles.\n\n#AgenticAI #CyberSecurity",
+   "ig_caption": "United Airlines will block AI agents from booking your flights. ✈️\n\nWhat The Record reported (12 Nov):\n→ United will block AI agents from managing reservations and flight purchases, citing cybersecurity, privacy and possible legal violations\n→ United says sharing account credentials with third-party AI assistants can expose sensitive information\n→ It says agent actions may cause unintended purchases, account changes or use of MileagePlus miles\n→ It also says automated check-in could break FAA and DOT rules that require a human to confirm bags hold no banned items\n→ Bank of America cautioned users last week never to share user IDs and passwords with agents\n\nDo this week: don't hand your password to an AI assistant, check which agents hold saved logins, and turn on MFA for travel and bank accounts.\n\nSend this to whoever lets AI agents use your accounts 👇\n\nHave you given an AI assistant your password to anything?\n\nSource: The Record (12 Nov 2026)\n\n#AIAgents #AgenticAI #UnitedAirlines #AISecurity #Privacy #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-pm-03",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-14T20:00:00",
+   "story_key": "island-typoprompting-186-fake-ai-domains-2026-11",
+   "send_to": "the friend who googles every AI tool",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+     "date": "2026-11-12"
+    }
+   ],
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "186 fake AI sites. One typo away.",
+    "segments": [
+     {
+      "say": "One hundred eighty-six fake A I sites. One typo away.",
+      "show": "Island found 186 bogus domains copying 27 AI brands, incl. Claude, ChatGPT, Gemini, Copilot, Grok, DeepSeek and Perplexity. It calls it 'TypoPrompting' (The Hacker News, 12 Nov).",
+      "card": "186|fake AI domains · 27 brands",
+      "card_style": "stat"
+     },
+     {
+      "say": "Mistype it, and a fake check asks you to paste a command. That's the malware.",
+      "show": "Routes: a fake Cloudflare check serving a PowerShell command (ClickFix), 'Security Check' pages pushing the Net Guard browser hijacker, and search-hijack extensions.",
+      "card": "Fake check · paste = malware",
+      "card_style": "alert"
+     },
+     {
+      "say": "Hijacking extensions claimed nearly a million users.",
+      "show": "16 live Chrome Web Store listings with 972,000 declared users as of 3 Nov override your search provider.",
+      "card": "972K|declared extension users",
+      "card_style": "stat"
+     },
+     {
+      "say": "Bookmark your A I tools. Never paste commands from websites.",
+      "show": "Bookmark the real AI sites, never run a command a web page tells you to, and check your extensions for search overrides.",
+      "card": "Bookmark it · never paste commands",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the friend who googles every A I tool.",
+      "show": "Send this to the friend who googles every AI tool.",
+      "card": "↗ Send this to the friend who googles every AI tool"
+     }
+    ]
+   },
+   "x_text": "Island 'TypoPrompting': 186 fake domains copying 27 AI brands (Claude, ChatGPT, Gemini, Copilot, DeepSeek) lead to ClickFix PowerShell lures, the Net Guard hijacker and search-hijack extensions with 972K users. Bookmark your AI tools.\n\n#ClickFix #CyberSecurity",
+   "ig_caption": "186 fake AI sites. One typo away. 🤖\n\nWhat The Hacker News reported (12 Nov), from Island's research:\n→ 186 bogus domains copy 27 AI brands, including Claude, ChatGPT, Gemini, Copilot, Grok, DeepSeek, Perplexity, ElevenLabs and Cursor\n→ Some send you to a fake Cloudflare check that serves a PowerShell command (a ClickFix lure)\n→ Others push 'Security Check' pages that install the Net Guard browser hijacker\n→ A search-hijack extension family had 16 live Chrome Web Store listings with 972,000 declared users as of 3 Nov\n→ Some lookalike domains were registered as early as July 2023\n\nWhat to do: bookmark the real AI tools, never paste a command a web page asks you to run, and check your browser extensions for anything that changed your search engine.\n\nSend this to the friend who googles every AI tool 👇\n\nHow do you open your AI tools: bookmark, app or search?\n\nSource: The Hacker News (12 Nov 2026), citing Island\n\n#ClickFix #Typosquatting #AISecurity #Malware #BrowserSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-pm-04",
+   "kind": "carousel",
+   "category": "RANSOMWARE",
+   "slot": "2026-11-14T21:00:00",
+   "story_key": "gootloader-doj-takedown-44-ransomware-victims-2026-11",
+   "send_to": "whoever triages your malware alerts",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/gootloader-ransomware-doj-details",
+     "date": "2026-11-13"
+    }
+   ],
+   "cover": {
+    "hook": "One accidental download. $28.8 million in ransomware losses.",
+    "sub": "The DOJ says Gootloader was the first infection for 44+ US ransomware victims. Now it's been taken down."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What happened",
+     "body": "An international operation disrupted 235 servers and 257 domains used by Gootloader, CastleRAT and the StealC stealer. The DOJ says it removed Gootloader from more than 100 servers, including compromised websites, and seized domains (The Record, 13 Nov)."
+    },
+    {
+     "type": "point",
+     "title": "How Gootloader worked",
+     "body": "Per unsealed court documents, victims usually downloaded it by accident from compromised websites, which added their device to a botnet. The operators then sold that access to ransomware gangs."
+    },
+    {
+     "type": "stat",
+     "big": "$28.8M",
+     "label": "losses across 44+ US ransomware victims",
+     "note": "DOJ figures as reported by The Record. Officials say Gootloader has infected 25,000 devices globally since 2018."
+    },
+    {
+     "type": "point",
+     "title": "Who it hit",
+     "body": "A Defense Department official said Gootloader targeted victims globally, including the Department of War and the Defense Industrial Base. Shadowserver worked with ISPs and CSIRTs to notify infected victims. It's part of Operation Endgame."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Treat loader alerts as pre-ransomware, not just malware",
+      "Block script files from running out of downloads",
+      "Check Shadowserver reports for your IP ranges",
+      "Hunt for odd JavaScript run by users after web searches"
+     ]
+    }
+   ],
+   "question": "Does your team escalate a loader detection like a ransomware incident?",
+   "x_text": "Gootloader takedown: DOJ says the loader was the first infection for 44+ US ransomware victims, $28.8M in losses, 25,000 devices since 2018. Operation Endgame disrupted 235 servers and 257 domains. Loader alerts are pre-ransomware.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "One accidental download. $28.8 million in ransomware losses. 💸\n\nWhat The Record reported (13 Nov):\n→ An international operation disrupted 235 servers and 257 domains used by Gootloader, CastleRAT and StealC\n→ The DOJ says it removed Gootloader from more than 100 servers, including compromised websites, and seized domains\n→ DOJ officials say more than 44 US ransomware victims were first infected by Gootloader, with $28.8 million in losses\n→ Officials say it has infected 25,000 devices globally since 2018; victims usually downloaded it by accident and access was sold to ransomware gangs\n→ It's part of Operation Endgame; Shadowserver helped notify infected victims\n\nDo this week: treat loader detections as pre-ransomware, block scripts from running out of downloads, and check Shadowserver reports for your IP ranges.\n\nSend this to whoever triages your malware alerts 👇\n\nDoes your team escalate a loader detection like a ransomware incident?\n\nSource: The Record (13 Nov 2026), citing the DOJ\n\n#Gootloader #Ransomware #OperationEndgame #ThreatIntel #IncidentResponse #CyberSecurity"
+  },
+  {
+   "id": "2026-11-14-pm-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-14T22:30:00",
+   "story_key": "cve-2026-123710",
+   "send_to": "whoever runs your container registry",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+     "date": "2026-11-12"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "CVSS 9.8. Every private image in Quay.",
+    "segments": [
+     {
+      "say": "Nine point eight. Every private image in your registry.",
+      "show": "Red Hat Quay CVE-2026-123710 (CVSS 9.8) lets an attacker add their own signing key and get tokens for any repository (The Hacker News, 12 Nov).",
+      "card": "CVSS 9.8|CVE-2026-123710 · Red Hat Quay",
+      "card_style": "stat"
+     },
+     {
+      "say": "No account needed. Anonymous access is on by default. They can read and overwrite images.",
+      "show": "Read private images and secrets inside them, push or overwrite images. The planted key survives restarts. Affects every Quay 3 and Quay 5 version, per Red Hat.",
+      "card": "Read + overwrite images",
+      "card_style": "alert"
+     },
+     {
+      "say": "Block the keys endpoint, remove unknown service keys, then patch.",
+      "show": "Red Hat: block /keys at the proxy, search audit logs for service_key_rotate events with no expiry, remove unknown keys, install the fix. Second flaw CVE-2026-110697 (CVSS 9.9).",
+      "card": "Block /keys · drop unknown keys · patch",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your container registry.",
+      "show": "Send this to whoever runs your container registry.",
+      "card": "↗ Send this to whoever runs your container registry"
+     }
+    ]
+   },
+   "x_text": "Red Hat Quay CVE-2026-123710 (CVSS 9.8): attacker plants a signing key, then reads or overwrites any private image. Anonymous access is on by default. Block /keys, remove unknown service keys, install the fixed builds.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "CVSS 9.8. Every private image in your Quay registry. 🐳\n\nWhat The Hacker News reported (12 Nov):\n→ Red Hat Quay CVE-2026-123710 (CVSS 9.8) lets an attacker add their own signing key to Quay's trusted keys, with no expiry\n→ Quay then accepts their tokens for any repository: they can read private images and the secrets inside, and push or overwrite images\n→ Anonymous access is on by default, so no account is needed; the planted key survives restarts\n→ A second flaw, CVE-2026-110697 (CVSS 9.9), lets a user who can create a namespace steal other tenants' robot tokens\n→ Red Hat says every Quay 3 and Quay 5 version is affected; fixed builds are out for eight Quay 3 branches and Quay.io is fixed\n\nDo this now: block the /keys endpoint at your proxy, search audit logs for service key rotations with no expiry, remove keys you don't recognise, then install the fixed release.\n\nSend this to whoever runs your container registry 👇\n\nWhat secrets are baked into your private container images?\n\nSource: The Hacker News (12 Nov 2026), citing Red Hat\n\n#RedHat #Quay #ContainerSecurity #PatchNow #DevSecOps #CyberSecurity"
+  }
+ ]
+}
