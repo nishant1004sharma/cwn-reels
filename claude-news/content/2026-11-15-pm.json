@@ -39,7 +39,7 @@
      {
       "say": "VulnCheck says two are already being exploited.",
       "show": "CVE-2026-124014 and CVE-2026-124010 hit VulnCheck's sensors on 12 and 13 Nov, from opportunistic scanners. No threat actor named.",
-      "card": "2 exploited|CVE-2026-124014 · CVE-2026-124010",
+      "card": "2 already exploited",
       "card_style": "alert"
      },
      {
@@ -140,7 +140,7 @@
      {
       "say": "Ransomware hit a cloud provider. Its customers went down with it.",
       "show": "Belarusian cloud provider ActiveCloud, which serves Belarus and Russia, says hackers breached its systems and encrypted parts of its cloud (The Record, 13 Nov).",
-      "card": "Cloud provider|hit by ransomware",
+      "card": "Cloud provider hit by ransomware",
       "card_style": "alert"
      },
      {
@@ -267,7 +267,7 @@
      {
       "say": "Myth: a confidential V M is safe from your cloud host.",
       "show": "New research on AMD SEV-SNP, the tech behind many confidential VMs: two attacks let a malicious host read data inside them (The Hacker News, 13 Nov).",
-      "card": "Myth|the host can't see in",
+      "card": "Myth: the host can't see in",
       "card_style": "alert"
      },
      {
