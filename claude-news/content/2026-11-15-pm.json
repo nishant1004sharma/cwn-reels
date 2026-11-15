@@ -45,7 +45,7 @@
      {
       "say": "Support ended in March. VulnCheck says the current firmware won't be fixed.",
       "show": "Copeland declared XWEB EVO end of software support (no fixes after 16 Mar 2026), per VulnCheck. About 1,663 hosts show up on Shodan.",
-      "card": "End of support|no more fixes",
+      "card": "End of support: no more fixes",
       "card_style": "fact"
      },
      {
@@ -152,7 +152,7 @@
      {
       "say": "Main services are back. Some customers may still struggle to restore their V Ms.",
       "show": "ActiveCloud says it found no evidence customer data was stolen. The attackers and the way in haven't been named.",
-      "card": "VM restores|still being fixed",
+      "card": "VM restores still being fixed",
       "card_style": "fact"
      },
      {
@@ -279,7 +279,7 @@
      {
       "say": "A second attack, Skyfall, pulled a disk encryption key from a test V M.",
       "show": "Skyfall (ETH Zurich and Google, CVE-2026-40671) recovered register values and a disk-encryption key on Zen 3 and Zen 4 EPYC. Both attacks need control of the hypervisor; no attacks in the wild reported.",
-      "card": "Skyfall|disk key leaked in lab",
+      "card": "Skyfall: disk key leaked in lab",
       "card_style": "fact"
      },
      {
