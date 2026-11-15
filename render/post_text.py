@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Print the Metricool post fields for one reel as JSON.
 
-Usage: python3 render/post_text.py --id C-R02
+Usage: python3 render/post_text.py --id C-R02 [--bank bank/ceh-labs.json]
 Output: {"title": ..., "text": ..., "tags": [...]}
 Use "text" exactly as the post text (it already holds the caption, the course link and the hashtags).
 """
@@ -11,8 +11,9 @@ from common import load_config, post_text, BANK
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--id", required=True)
+ap.add_argument("--bank", default=BANK)
 a = ap.parse_args()
-reels = {r["id"]: r for r in json.load(open(BANK))["reels"]}
+reels = {r["id"]: r for r in json.load(open(a.bank))["reels"]}
 if a.id not in reels:
     sys.exit(f"unknown reel id {a.id}")
 r = reels[a.id]

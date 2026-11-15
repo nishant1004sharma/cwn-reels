@@ -1,4 +1,9 @@
-"""Shared loading for the reel scripts: bank + config, with the course CTA applied."""
+"""Shared loading for the reel scripts: bank + config, with the course CTA applied.
+
+A reel may set "cta": "<key>" to use config["cta_variants"][key] and
+config["description_variants"][key] instead of the default CISSP call to action
+(the CEH lab reels use "ceh").
+"""
 import copy, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -11,9 +16,15 @@ def load_config():
     except (OSError, ValueError):
         return {}
 
+def cta_for(reel, cfg):
+    key = reel.get("cta")
+    if key and key in cfg.get("cta_variants", {}):
+        return cfg["cta_variants"][key]
+    return cfg.get("cta")
+
 def apply_cta(reel, cfg):
     """Replace a closing 'Follow for more ...' segment with the course CTA (or append one)."""
-    cta = cfg.get("cta")
+    cta = cta_for(reel, cfg)
     if not cta or not cfg.get("course_url"):
         return reel
     reel = copy.deepcopy(reel)
@@ -33,7 +44,8 @@ def post_text(reel, cfg=None):
     """Caption/description for Metricool: caption, course line, hashtags."""
     cfg = cfg if cfg is not None else load_config()
     parts = [reel["post"]["caption"]]
-    if cfg.get("course_url") and cfg.get("description_line"):
-        parts.append(cfg["description_line"].format(course_url=cfg["course_url"]))
+    line = cfg.get("description_variants", {}).get(reel.get("cta") or "", cfg.get("description_line"))
+    if cfg.get("course_url") and line:
+        parts.append(line.format(course_url=cfg["course_url"]))
     parts.append(" ".join(reel["post"]["hashtags"]))
     return "\n\n".join(parts)

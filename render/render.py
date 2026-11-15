@@ -61,6 +61,7 @@ TAGS = {"myth": "MYTH", "fact": "FACT", "answer": "KEY POINT", "alert": "WARNING
 # series chip colours (creator-style series stand out from exam prep)
 def chip_colour(series):
     s = series.upper()
+    if "LAB" in s: return GREEN
     if "BREACH" in s: return RED
     if "AI" in s.split() or "AI SECURITY" in s: return VIOLET
     if "MYTH" in s or "PHISH" in s or "TIP" in s: return AMBER
@@ -220,6 +221,88 @@ def quiz_rows(q, state, dim=False):
         rows.append(im)
     return rows
 
+# ---------- terminal (CEH lab reels) ----------
+T_BG = (11, 11, 18)
+T_BAR = (24, 24, 36)
+T_LINE = (42, 42, 60)
+T_COL = {"cmd": (231, 233, 240), "out": (170, 176, 196), "hit": (255, 210, 63),
+         "ok": (92, 230, 122), "note": (111, 211, 255)}
+T_PROMPT = "kali@lab:~$ "
+TX, TW, TH = 40, 1000, 700          # panel x, width, height (y = zone_top)
+T_FS, T_LH, T_PAD = 30, 42, 28
+
+def tfont(bold=False):
+    return font("JetBrainsMono-Bold.ttf" if bold else "JetBrainsMono-Regular.ttf", T_FS)
+
+def parse_term_line(s):
+    for pre, kind in (("$ ", "cmd"), ("! ", "hit"), ("+ ", "ok"), ("# ", "note"), ("> ", "out")):
+        if s.startswith(pre):
+            return kind, (s if kind == "note" else s[len(pre):])
+    return "out", s
+
+def term_schedule(segs, times):
+    """Absolute (start, end) for every terminal line, in reveal order."""
+    sched = []
+    for i, s in enumerate(segs):
+        lines = s.get("term") or []
+        if not lines: continue
+        a, b = times[i]
+        parsed = [parse_term_line(l) for l in lines]
+        nominal = [(0.6 + 0.04 * len(t)) if k == "cmd" else 0.32 for k, t in parsed]
+        avail = max(0.5, (b - a) * 0.88 - 0.15)
+        scale = min(1.5, avail / sum(nominal))
+        t0 = a + 0.15
+        for (k, txt), n in zip(parsed, nominal):
+            sched.append((t0, t0 + n * scale, k, txt))
+            t0 += n * scale
+    return sched
+
+def term_rows(sched, t, max_chars):
+    """Visible rows [(kind, prefix, text, cursor)] at time t, wrapped."""
+    rows, typing = [], False
+    for st, en, kind, txt in sched:
+        if t < st: break
+        if kind == "cmd":
+            n = len(txt) if t >= en else int(len(txt) * (t - st) / max(0.01, en - st))
+            shown = txt[:n]
+            typing = t < en
+            full = T_PROMPT + shown
+            chunks = [full[i:i + max_chars] for i in range(0, max(1, len(full)), max_chars)] or [""]
+            for ci, c in enumerate(chunks):
+                last = ci == len(chunks) - 1
+                rows.append(("cmd", c if ci == 0 else c.lstrip(), typing and last))
+        else:
+            for i in range(0, max(1, len(txt)), max_chars):
+                rows.append((kind, txt[i:i + max_chars] if i == 0 else txt[i:i + max_chars].lstrip(), False))
+    if not typing:
+        rows.append(("cmd", T_PROMPT, True))
+    return rows
+
+def draw_terminal(frame, y0, rows, t, title):
+    d = ImageDraw.Draw(frame)
+    d.rounded_rectangle([TX, y0, TX + TW, y0 + TH], radius=22, fill=T_BG, outline=T_LINE, width=2)
+    d.rounded_rectangle([TX, y0, TX + TW, y0 + 56], radius=22, fill=T_BAR)
+    d.rectangle([TX, y0 + 34, TX + TW, y0 + 56], fill=T_BAR)
+    for k, c in enumerate(((255, 95, 87), (254, 188, 46), (40, 200, 64))):
+        d.ellipse([TX + 24 + k * 30, y0 + 19, TX + 42 + k * 30, y0 + 37], fill=c)
+    tf = semi(24)
+    d.text((TX + (TW - tf.getlength(title)) / 2, y0 + 15), title, font=tf, fill=(150, 156, 178))
+    reg, bold = tfont(), tfont(True)
+    max_rows = (TH - 56 - 2 * T_PAD) // T_LH
+    rows = rows[-max_rows:]
+    y = y0 + 56 + T_PAD
+    blink = int(t * 2.2) % 2 == 0
+    for kind, text, cursor in rows:
+        x = TX + T_PAD
+        if kind == "cmd" and text.startswith(T_PROMPT):
+            d.text((x, y), T_PROMPT, font=bold, fill=T_COL["ok"]); x += bold.getlength(T_PROMPT)
+            text = text[len(T_PROMPT):]
+        d.text((x, y), text, font=reg, fill=T_COL[kind])
+        if cursor and blink:
+            cx = x + reg.getlength(text) + 2
+            d.rectangle([cx, y + 4, cx + 16, y + T_LH - 6], fill=T_COL["cmd"])
+        y += T_LH
+
 # ---------- main render ----------
 def render(reel, out, audio=None, align=None):
     audio_len = None
@@ -257,8 +340,19 @@ def render(reel, out, audio=None, align=None):
     hook_bottom = 268 + y
     band = scan_band()
 
-    zone_top = max(620, hook_bottom + 70)
-    cap_top = 1250
+    term_mode = any(s.get("term") for s in segs)
+    if term_mode:
+        zone_top = max(560, hook_bottom + 56)
+        zone_h = TH
+        cap_top = zone_top + TH + 40
+        sched = term_schedule(segs, times)
+        max_chars = int((TW - 2 * T_PAD) // tfont().getlength("M"))
+        term_title = reel.get("terminal_title", "kali@lab: ~ — isolated practice lab")
+        first_term = min(i for i, s in enumerate(segs) if s.get("term"))
+    else:
+        zone_top = max(620, hook_bottom + 70)
+        zone_h = 520
+        cap_top = 1250
 
     # pre-render per-segment assets
     q = reel.get("quiz")
@@ -266,7 +360,9 @@ def render(reel, out, audio=None, align=None):
     for i, s in enumerate(segs):
         if s.get("card"):
             current = (card_image(s["card"], s.get("card_style")), i)
-        if q and i <= q["reveal"]:
+        if term_mode:
+            cards.append((card_image(s["card"], s.get("card_style")), i) if s.get("card") and not s.get("term") else None)
+        elif q and i <= q["reveal"]:
             cards.append(None)
         else:
             cards.append(current)
@@ -332,6 +428,9 @@ def render(reel, out, audio=None, align=None):
                 k = max(0.0, 1 - seg_t / max(0.1, b - a))
                 d.rounded_rectangle([70, ry + 6, 1010, ry + 18], radius=6, fill=(30, 44, 72))
                 d.rounded_rectangle([70, ry + 6, 70 + int(940 * k), ry + 18], radius=6, fill=AMBER)
+        elif term_mode and not cards[si] and si >= first_term:
+            draw_terminal(frame, zone_top, term_rows(sched, t, max_chars), t, term_title)
+            d = ImageDraw.Draw(frame)
         elif cards[si]:
             img, start_idx = cards[si]
             p = ease((t - times[start_idx][0]) / 0.28)
@@ -339,7 +438,7 @@ def render(reel, out, audio=None, align=None):
             im = img if sc >= 0.999 else img.resize((int(img.width * sc), int(img.height * sc)))
             if p < 1:
                 im = im.copy(); im.putalpha(im.getchannel("A").point(lambda v, a_=p: int(v * a_)))
-            cy = zone_top + (520 - img.height) // 2
+            cy = zone_top + (zone_h - img.height) // 2
             frame.alpha_composite(im, (int((W - im.width) / 2), int(cy + (img.height - im.height) / 2)))
         # captions with word highlight
         f, words = cap_layouts[si]

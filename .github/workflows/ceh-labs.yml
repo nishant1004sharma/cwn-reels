@@ -1,0 +1,52 @@
+name: CEH lab reels
+# Voices (ElevenLabs) and renders every ready reel in bank/ceh-labs.json that has no
+# media/labs/<id>.mp4 yet, then commits the videos to main. Posting is done separately
+# through Metricool.
+on:
+  push:
+    branches: [main]
+    paths: ['bank/ceh-labs.json', 'ceh-labs/render.request']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ceh-labs
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q pillow
+      - name: Voice and render missing lab reels
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
+        run: |
+          set -e
+          mkdir -p media/labs/tmp
+          ids=$(python3 -c "import json;print(' '.join(r['id'] for r in json.load(open('bank/ceh-labs.json'))['reels'] if r.get('status')=='ready'))")
+          for id in $ids; do
+            if [ -f "media/labs/$id.mp4" ]; then echo "skip $id (already rendered)"; continue; fi
+            python3 render/tts.py --bank bank/ceh-labs.json --id "$id" --outdir media/labs/tmp
+            align=""
+            if [ -f "media/labs/tmp/$id.align.json" ]; then align="--align media/labs/tmp/$id.align.json"; fi
+            python3 render/render.py --bank bank/ceh-labs.json --id "$id" --audio "media/labs/tmp/$id.mp3" $align --out "media/labs/$id.mp4"
+            echo "$id $(ffprobe -v error -show_entries format=duration -of csv=p=0 media/labs/$id.mp4)s"
+          done
+      - name: Commit rendered reels
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/labs/*.mp4
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Render CEH lab reels"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin main && break; sleep 5; done

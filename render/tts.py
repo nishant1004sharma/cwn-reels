@@ -40,7 +40,7 @@ def main():
     reels = load_reels(a.bank)
     reel = reels[a.id]
     text = " ".join(s["say"] for s in reel["segments"])
-    body = {"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL", "eleven_v3")}
+    body = {"text": text, "model_id": os.environ.get("ELEVENLABS_MODEL") or "eleven_v3"}
     os.makedirs(a.outdir, exist_ok=True)
     mp3 = os.path.join(a.outdir, f"{a.id}.mp3")
     try:

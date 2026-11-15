@@ -1,0 +1,171 @@
+{
+  "schema": "CEH lab reels (one-off batch, scheduled 16-21 Nov 2026). Same fields as bank/reels.json, plus: term = terminal lines typed during that segment ('$ ' command, '! ' finding in yellow, '+ ' live/ok in green, '# ' comment in cyan, '> ' or plain = output). cta 'ceh' uses the CEH coming-soon call to action from config.json. Source: Nishant's CEH v13 Lab Hub artifact (narration scripts + rendered terminal demos); every target is his isolated practice lab or a purpose-built training target.",
+  "reels": [
+    {
+      "id": "CEH-L00", "status": "ready", "series": "CEH Lab · 00", "cta": "ceh",
+      "topic": "Build your hacking lab", "source": "CEH Lab Hub · Lab 0",
+      "hook": "Build your hacking lab first",
+      "segments": [
+        {"say": "Before you hack anything... build a lab. It's the only legal place to practice.", "show": "Before you hack anything, build a lab. It's the only legal place to practice.", "card": "Your lab. Your targets."},
+        {"say": "VirtualBox, Kali Linux as the attacker, and Metasploitable two as the target... on a host-only network, so nothing escapes.", "show": "VirtualBox, Kali Linux as the attacker and Metasploitable 2 as the target, on a host-only network so nothing escapes.", "card": "Kali + target|isolated host-only network", "card_style": "stat"},
+        {"say": "First recon. A ping sweep finds the target.", "show": "First recon: a ping sweep finds the target.", "term": ["$ nmap -sn 192.168.56.0/24", "+ Nmap scan report for 192.168.56.101", "# .101 = our practice target (Metasploitable 2)"]},
+        {"say": "Then a version scan. Every open port is a door... and an old version like vsftpd two point three point four is your first lead.", "show": "Then a version scan. Every open port is a door, and an old version like vsftpd 2.3.4 is your first lead.", "term": ["$ nmap -sV 192.168.56.101", "! 21/tcp open ftp    vsftpd 2.3.4", "> 22/tcp open ssh    OpenSSH 4.7p1", "> 80/tcp open http   Apache httpd 2.2.8", "# old versions = known-vulnerable leads"]},
+        {"say": "The golden rule... only test systems you own, or are authorized to test.", "show": "The golden rule: only test systems you own, or are authorized to test.", "card": "Only test what you own", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "Build your ethical hacking lab first (CEH lab) #Shorts", "caption": "VirtualBox + Kali Linux + Metasploitable 2 on an isolated host-only network, then your first nmap ping sweep and version scan. Only test systems you own or are authorized to test.", "hashtags": ["#CEH", "#EthicalHacking", "#KaliLinux", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L02", "status": "ready", "series": "CEH Lab · 02", "cta": "ceh",
+      "topic": "Footprinting: DNS zone transfer", "source": "CEH Lab Hub · Module 2",
+      "hook": "This DNS mistake leaks the internal map",
+      "segments": [
+        {"say": "One misconfigured D N S server can hand an attacker a map of your internal network.", "show": "One misconfigured DNS server can hand an attacker a map of your internal network.", "card": "Zone transfer = free network map", "card_style": "alert"},
+        {"say": "Start passive. Dig shows the name servers and text records... and S P F often reveals which mail and cloud services a company uses.", "show": "Start passive. dig shows the name servers and TXT records, and SPF often reveals which mail and cloud services a company uses.", "term": ["$ dig example.com NS +short", "+ a.iana-servers.net.", "$ dig example.com TXT +short", "> \"v=spf1 -all\"", "# SPF reveals mail & cloud providers"]},
+        {"say": "Now a zone transfer, against zonetransfer dot me... a domain built for this kind of training. The server dumps every record, including an internal host with a private I P.", "show": "Now a zone transfer against zonetransfer.me, a domain built for this training. The server dumps every record, including an internal host with a private IP.", "term": ["$ dig axfr @nsztm1.digi.ninja zonetransfer.me", "+ www.zonetransfer.me.      A 5.196.105.14", "! internal.zonetransfer.me. A 10.1.1.27", "# whole zone dumped = misconfigured DNS"]},
+        {"say": "theHarvester then collects emails and subdomains... phishing targets and new attack surface.", "show": "theHarvester then collects emails and subdomains: phishing targets and new attack surface.", "term": ["$ theHarvester -d example.com -b bing", "+ admin@example.com", "+ dev.example.com  mail.example.com", "# emails + subdomains = more attack surface"]},
+        {"say": "The fix? Restrict zone transfers to trusted servers only.", "show": "The fix: restrict zone transfers to trusted servers only.", "card": "Restrict zone transfers", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "This DNS mistake leaks a company's internal map (CEH lab) #Shorts", "caption": "Footprinting with dig and theHarvester, then a DNS zone transfer against zonetransfer.me, a domain built for training. A successful transfer leaks internal hostnames and IPs. Fix: restrict zone transfers to trusted servers.", "hashtags": ["#CEH", "#EthicalHacking", "#OSINT", "#DNS", "#CyberSecurity", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L03", "status": "ready", "series": "CEH Lab · 03", "cta": "ceh",
+      "topic": "Scanning networks with nmap", "source": "CEH Lab Hub · Module 3",
+      "hook": "Three nmap scans, open port to known flaw",
+      "segments": [
+        {"say": "Three nmap scans in my lab... from what's open, to what's vulnerable.", "show": "Three nmap scans in my lab: from what's open, to what's vulnerable.", "card": "nmap: broad → deep"},
+        {"say": "Dash capital S is a stealth SYN scan. Dash p dash checks all sixty five thousand ports.", "show": "-sS is a stealth SYN scan. -p- checks all 65,535 ports.", "term": ["$ nmap -sS -p- 192.168.56.101", "+ 21/tcp   open  ftp", "+ 22/tcp   open  ssh", "+ 80/tcp   open  http", "+ 3306/tcp open  mysql", "# -sS = SYN scan, -p- = all 65535 ports"]},
+        {"say": "Dash s capital V gets the versions. Dash capital O fingerprints the operating system.", "show": "-sV gets the versions. -O fingerprints the operating system.", "term": ["$ nmap -sV -O 192.168.56.101", "! 21/tcp open ftp  vsftpd 2.3.4", "+ OS details: Linux 2.6.9 - 2.6.33"]},
+        {"say": "Then the vuln scripts. Nmap flags the vsftpd backdoor... and names the C V E.", "show": "Then the vuln scripts. nmap flags the vsftpd backdoor and names the CVE.", "term": ["$ nmap --script vuln -p 21,80 192.168.56.101", "! | ftp-vsftpd-backdoor: VULNERABLE", "! | vsftpd 2.3.4 backdoor (CVE-2011-2523)"]},
+        {"say": "Exam tip... a SYN scan is half-open. It never completes the handshake, which is why it's quieter.", "show": "Exam tip: a SYN scan is half-open. It never completes the handshake, which is why it's quieter.", "card": "SYN scan = half-open", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "3 nmap scans: from open port to known flaw (CEH lab) #Shorts", "caption": "A SYN scan of all ports, a version and OS scan, then NSE vuln scripts that flag the vsftpd 2.3.4 backdoor (CVE-2011-2523), all against a practice target in an isolated lab.", "hashtags": ["#CEH", "#Nmap", "#EthicalHacking", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L04", "status": "ready", "series": "CEH Lab · 04", "cta": "ceh",
+      "topic": "Enumeration: users, shares, SNMP", "source": "CEH Lab Hub · Module 4",
+      "hook": "This server lists its users to strangers",
+      "segments": [
+        {"say": "Scanning finds the doors. Enumeration asks each one... who are you?", "show": "Scanning finds the doors. Enumeration asks each one: who are you?", "card": "Enumeration"},
+        {"say": "Enum four linux pulls the user accounts... and every username feeds the password attacks that come next.", "show": "enum4linux pulls the user accounts, and every username feeds the password attacks that come next.", "term": ["$ enum4linux -a 192.168.56.101", "> [+] Users via RID cycling:", "+ user:[msfadmin] user:[postgres] user:[service]", "# usernames feed the next attack"]},
+        {"say": "Smbclient, with no password, lists the shares. That anonymous null session is a leak all by itself.", "show": "smbclient with no password lists the shares. That anonymous null session is a leak all by itself.", "term": ["$ smbclient -L //192.168.56.101/ -N", "! tmp     Disk   oh noes!", "> IPC$    IPC    IPC Service", "# anonymous share listing = info leak"]},
+        {"say": "And S N M P still answers to the default community string... public.", "show": "And SNMP still answers to the default community string: public.", "term": ["$ snmpwalk -v1 -c public 192.168.56.101 system", "+ sysDescr.0 = Linux metasploitable 2.6.24", "! # community 'public' = default config"]},
+        {"say": "The fix... disable null sessions, and change default S N M P strings.", "show": "The fix: disable null sessions, and change default SNMP strings.", "card": "Kill null sessions", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "This server lists its users to strangers (CEH lab) #Shorts", "caption": "Enumeration in an isolated lab: enum4linux finds user accounts, an SMB null session lists shares, and SNMP answers to the default 'public' string. Fix: disable null sessions and change SNMP defaults.", "hashtags": ["#CEH", "#EthicalHacking", "#Enumeration", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L05", "status": "ready", "series": "CEH Lab · 05", "cta": "ceh",
+      "topic": "Vulnerability analysis", "source": "CEH Lab Hub · Module 5",
+      "hook": "How a version number becomes a critical risk",
+      "segments": [
+        {"say": "An old version number looks harmless... until you map it to a known exploit.", "show": "An old version number looks harmless, until you map it to a known exploit.", "card": "Version → exploit → risk"},
+        {"say": "Nikto scans the web server... an outdated Apache, a phpinfo page leaking config, an exposed admin tool.", "show": "Nikto scans the web server: an outdated Apache, a phpinfo page leaking config, an exposed admin tool.", "term": ["$ nikto -h http://192.168.56.101", "! + Apache/2.2.8 appears outdated", "! + /phpinfo.php: contains server config", "! + /phpMyAdmin/: directory found"]},
+        {"say": "Searchsploit maps vsftpd two point three point four to a documented backdoor.", "show": "searchsploit maps vsftpd 2.3.4 to a documented backdoor.", "term": ["$ searchsploit vsftpd 2.3.4", "! vsftpd 2.3.4 - Backdoor Command Execution", "# a version becomes a named risk"]},
+        {"say": "Scanners like Nessus or OpenVAS score it with C V S S. The backdoor is a critical ten... so it gets fixed first.", "show": "Scanners like Nessus or OpenVAS score it with CVSS. The backdoor is a critical 10, so it gets fixed first.", "term": ["$ # Nessus / OpenVAS: CVSS-scored report", "! Critical 10.0  vsftpd 2.3.4 backdoor", "! High     7.5   Apache 2.2.8 multiple CVEs"]},
+        {"say": "Prioritize by C V S S, patch... then re-scan to prove it's fixed.", "show": "Prioritize by CVSS, patch, then re-scan to prove it's fixed.", "card": "Patch, then re-scan", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "How a version number becomes a critical risk (CEH lab) #Shorts", "caption": "Nikto flags an outdated web server, searchsploit maps vsftpd 2.3.4 to a known backdoor, and a CVSS-scored scan rates it critical 10.0. Prioritise by CVSS, patch, then re-scan.", "hashtags": ["#CEH", "#VulnerabilityManagement", "#EthicalHacking", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L06", "status": "ready", "series": "CEH Lab · 06", "cta": "ceh",
+      "topic": "System hacking: passwords and privilege escalation", "source": "CEH Lab Hub · Module 6",
+      "hook": "This password fell in seconds",
+      "segments": [
+        {"say": "In my lab, a weak password falls almost instantly. Here's how... and how to stop it.", "show": "In my lab, a weak password falls almost instantly. Here's how, and how to stop it.", "card": "Weak password = instant access", "card_style": "alert"},
+        {"say": "Hydra guesses passwords against the live S S H service. That's an online attack.", "show": "Hydra guesses passwords against the live SSH service. That's an online attack.", "term": ["$ hydra -l msfadmin -P rockyou.txt ssh://192.168.56.101", "! [22][ssh] login: msfadmin  password: msfadmin", "! 1 valid password found"]},
+        {"say": "John the Ripper cracks stolen hashes offline... where no lockout can slow it down.", "show": "John the Ripper cracks stolen hashes offline, where no lockout can slow it down.", "term": ["$ john --format=sha512crypt hashes.txt", "> Loaded 3 password hashes (sha512crypt)", "# offline: weak hashes fall fast"]},
+        {"say": "Then privilege escalation. Find the S U I D binaries... a misconfigured one can lead to root.", "show": "Then privilege escalation. Find the SUID binaries: a misconfigured one can lead to root.", "term": ["$ find / -perm -4000 -type f 2>/dev/null", "! /usr/bin/nmap", "# SUID nmap can enable privilege escalation"]},
+        {"say": "Defend it with account lockout and M F A, strong salted hashing, and least privilege.", "show": "Defend it with account lockout and MFA, strong salted hashing, and least privilege.", "card": "Lockout + MFA + salted hashes", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "This password fell in seconds (CEH lab) #Shorts", "caption": "Online guessing with Hydra, offline hash cracking with John the Ripper, and a SUID privilege-escalation check, all on a practice VM in an isolated lab. Defences: lockout + MFA, strong salted hashing, least privilege.", "hashtags": ["#CEH", "#PasswordSecurity", "#EthicalHacking", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L07", "status": "ready", "series": "CEH Lab · 07", "cta": "ceh",
+      "topic": "Malware analysis from the defender's side", "source": "CEH Lab Hub · Module 7",
+      "hook": "Check a malware file without running it",
+      "segments": [
+        {"say": "A suspicious file lands on your desk. Here's how a defender checks it... safely, in a sandbox.", "show": "A suspicious file lands on your desk. Here's how a defender checks it, safely, in a sandbox.", "card": "The defender's view"},
+        {"say": "Hash it, and check that hash against threat intel like VirusTotal.", "show": "Hash it, and check that hash against threat intel like VirusTotal.", "term": ["$ sha256sum suspicious.bin", "> 44d88612fea8a8f3...  suspicious.bin", "# check the hash against threat intel"]},
+        {"say": "Strings reveals a hard-coded U R L and a suspicious command... a trojan phoning home.", "show": "strings reveals a hard-coded URL and a suspicious command: a trojan phoning home.", "term": ["$ strings suspicious.bin | grep -Ei 'http|cmd'", "! http://185.x.x.x/gate.php", "! cmd.exe /c powershell -enc ...", "# hard-coded C2 URL = red flag"]},
+        {"say": "A signature scan confirms it's known-bad. And netstat shows an unexpected outbound connection.", "show": "A signature scan confirms it's known-bad. And netstat shows an unexpected outbound connection.", "term": ["$ clamscan suspicious.bin", "! suspicious.bin: Win.Trojan.Agent FOUND", "$ netstat -tulpn | grep ESTABLISHED", "! 10.0.0.5 -> 185.x.x.x:443  svch0st"]},
+        {"say": "Exam tip... static analysis reads a file without running it. Dynamic analysis runs it in a sandbox.", "show": "Exam tip: static analysis reads a file without running it. Dynamic analysis runs it in a sandbox.", "card": "Static vs dynamic", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "Check a malware file without running it (CEH lab) #Shorts", "caption": "Defender's view in a sandbox: hash the file, read its strings for a hard-coded C2 URL, scan it with a signature engine, and spot the unexpected outbound connection. Static vs dynamic analysis is an exam favourite.", "hashtags": ["#CEH", "#MalwareAnalysis", "#BlueTeam", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L08", "status": "ready", "series": "CEH Lab · 08", "cta": "ceh",
+      "topic": "Sniffing plaintext credentials", "source": "CEH Lab Hub · Module 8",
+      "hook": "Why FTP passwords are visible to anyone",
+      "segments": [
+        {"say": "On my own lab segment, here's what a man-in-the-middle actually sees.", "show": "On my own lab segment, here's what a man-in-the-middle actually sees.", "card": "Plaintext = readable", "card_style": "alert"},
+        {"say": "Ettercap poisons A R P... so traffic between the target and the gateway flows through us.", "show": "Ettercap poisons ARP, so traffic between the target and the gateway flows through us.", "term": ["$ ettercap -T -M arp /192.168.56.101// /192.168.56.1//", "> ARP poisoning victims:", "> GROUP 1: 192.168.56.101  GROUP 2: 192.168.56.1", "# we now sit in the middle"]},
+        {"say": "Tcpdump on port twenty one. The F T P login appears... username and password, in plain text.", "show": "tcpdump on port 21. The FTP login appears: username and password, in plain text.", "term": ["$ tcpdump -i eth0 -A port 21", "! USER admin", "! PASS S3cr3tFtpPass", "# FTP sends credentials in cleartext"]},
+        {"say": "The fix is encryption. S F T P, S S H, H T T P S... plus switch port security and dynamic A R P inspection.", "show": "The fix is encryption: SFTP, SSH, HTTPS, plus switch port security and dynamic ARP inspection.", "card": "Encrypt everything", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "Why FTP passwords are visible to anyone (CEH lab) #Shorts", "caption": "ARP poisoning with Ettercap on an isolated lab segment, then tcpdump shows an FTP login in cleartext. Fix: SFTP/SSH/HTTPS, switch port security and dynamic ARP inspection.", "hashtags": ["#CEH", "#NetworkSecurity", "#EthicalHacking", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L13", "status": "ready", "series": "CEH Lab · 13", "cta": "ceh",
+      "topic": "Web hacking and SQL injection", "source": "CEH Lab Hub · Modules 13-15",
+      "hook": "One quote mark broke the login",
+      "segments": [
+        {"say": "On a deliberately vulnerable app in my lab, one quote mark can break a login.", "show": "On a deliberately vulnerable app in my lab, one quote mark can break a login.", "card": "SQL injection", "card_style": "alert"},
+        {"say": "Gobuster finds the hidden paths first... an admin panel, a database tool.", "show": "Gobuster finds the hidden paths first: an admin panel, a database tool.", "term": ["$ gobuster dir -u http://192.168.56.101 -w common.txt", "+ /admin        (Status: 301)", "+ /phpmyadmin   (Status: 301)", "+ /dvwa         (Status: 301)"]},
+        {"say": "Then the classic test... quote, OR one equals one. The query is always true, so the login is bypassed.", "show": "Then the classic test: ' OR '1'='1. The query is always true, so the login is bypassed.", "term": ["$ # SQL injection test in DVWA", "! input:  ' OR '1'='1' -- -", "! result: authentication bypassed"]},
+        {"say": "Sqlmap confirms it, and lists the databases.", "show": "sqlmap confirms it, and lists the databases.", "term": ["$ sqlmap -u \"http://192.168.56.101/vuln?id=1\" --batch --dbs", "! Parameter 'id' is vulnerable", "! available databases [2]: dvwa, mysql"]},
+        {"say": "The real fix is parameterized queries... so input can never change the query.", "show": "The real fix is parameterized queries, so input can never change the query.", "card": "Parameterized queries", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "One quote mark broke the login (CEH lab) #Shorts", "caption": "On DVWA in an isolated lab: gobuster finds hidden paths, a ' OR '1'='1 test bypasses the login, and sqlmap confirms the injection. The definitive fix is parameterized queries.", "hashtags": ["#CEH", "#SQLInjection", "#WebSecurity", "#EthicalHacking", "#AppSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L16", "status": "ready", "series": "CEH Lab · 16", "cta": "ceh",
+      "topic": "Wireless: WPA2 handshake cracking", "source": "CEH Lab Hub · Module 16",
+      "hook": "Weak Wi-Fi password, cracked offline",
+      "segments": [
+        {"say": "Only ever test an access point you own. Mine is called LAB TEST A P.", "show": "Only ever test an access point you own. Mine is called LAB-TEST-AP.", "card": "Test only your own AP"},
+        {"say": "Airmon puts the card in monitor mode. Airodump lists nearby networks... B S S I D, channel, encryption.", "show": "airmon-ng puts the card in monitor mode. airodump-ng lists nearby networks: BSSID, channel, encryption.", "term": ["$ airmon-ng start wlan0", "> monitor mode enabled on wlan0mon", "$ airodump-ng wlan0mon", "+ AA:BB:CC:00:11:22  6  WPA2  LAB-TEST-AP"]},
+        {"say": "Capture the four-way handshake... then crack it offline. A weak passphrase falls in seconds.", "show": "Capture the four-way handshake, then crack it offline. A weak passphrase falls in seconds.", "term": ["$ aircrack-ng -w rockyou.txt lab-handshake.cap", "! KEY FOUND! [ password123 ]", "# weak WPA2 passphrase, cracked offline"]},
+        {"say": "The fix... a long random passphrase, W P A three, or enterprise eight-oh-two-dot-one-X.", "show": "The fix: a long random passphrase, WPA3, or enterprise 802.1X.", "card": "Long passphrase + WPA3", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "Weak Wi-Fi password, cracked offline (CEH lab) #Shorts", "caption": "On my own test access point: monitor mode, capture the WPA2 handshake, then crack a weak passphrase offline. Fix: a long random passphrase, WPA3 or enterprise 802.1X.", "hashtags": ["#CEH", "#WiFiSecurity", "#EthicalHacking", "#CyberSecurity", "#InfoSec", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L17", "status": "ready", "series": "CEH Lab · 17", "cta": "ceh",
+      "topic": "Mobile app secrets and exposed OT", "source": "CEH Lab Hub · Modules 17-18",
+      "hook": "API keys hiding inside an app",
+      "segments": [
+        {"say": "Developers sometimes hard-code secrets into mobile apps. Here's how to find them... in an app you own.", "show": "Developers sometimes hard-code secrets into mobile apps. Here's how to find them, in an app you own.", "card": "Hard-coded secrets", "card_style": "alert"},
+        {"say": "A D B connects to the Android emulator. Apktool unpacks the A P K.", "show": "ADB connects to the Android emulator. apktool unpacks the APK.", "term": ["$ adb devices", "+ emulator-5554  device", "$ apktool d myapp.apk -o myapp_src", "> I: Done."]},
+        {"say": "One grep... and there's an A P I key, hard-coded in the app.", "show": "One grep, and there's an API key, hard-coded in the app.", "term": ["$ grep -rniE \"api_key|password|secret\" myapp_src/", "! strings.xml: api_key = \"AIzaSyB...hardcoded...\"", "# anyone who downloads the app can extract it"]},
+        {"say": "And on the industrial side, nmap finds Modbus on port five zero two... a lab P L C with no authentication.", "show": "And on the industrial side, nmap finds Modbus on port 502: a lab PLC with no authentication.", "term": ["$ nmap -p 502 --script modbus-discover 192.168.56.50", "! 502/tcp open modbus", "! | Unit 1: PLC (lab simulator)"]},
+        {"say": "No secrets in apps... and keep O T networks segmented from everything else.", "show": "No secrets in apps, and keep OT networks segmented from everything else.", "card": "No secrets in apps", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "API keys hiding inside an app (CEH lab) #Shorts", "caption": "Unpack your own Android app with apktool and grep finds a hard-coded API key; nmap finds Modbus with no auth on a lab PLC simulator. Fix: no secrets in apps, segment OT networks.", "hashtags": ["#CEH", "#MobileSecurity", "#OTSecurity", "#EthicalHacking", "#CyberSecurity", "#Shorts"]}
+    },
+    {
+      "id": "CEH-L19", "status": "ready", "series": "CEH Lab · 19", "cta": "ceh",
+      "topic": "Cloud misconfiguration", "source": "CEH Lab Hub · Module 19",
+      "hook": "This bucket needed no password",
+      "segments": [
+        {"say": "The number one cloud risk isn't an exploit. It's misconfiguration.", "show": "The number one cloud risk isn't an exploit. It's misconfiguration.", "card": "Misconfiguration", "card_style": "alert"},
+        {"say": "My own test bucket, listed with no credentials at all... a database dump, and an employee file.", "show": "My own test bucket, listed with no credentials at all: a database dump and an employee file.", "term": ["$ aws s3 ls s3://lab-test-bucket-ceh --no-sign-request", "! 2026-11-10  backup_dump.sql", "! 2026-11-10  employees.csv", "# readable with NO credentials"]},
+        {"say": "Prowler audits the whole account... and fails the public bucket check.", "show": "Prowler audits the whole account, and fails the public bucket check.", "term": ["$ prowler aws -c s3_bucket_public_access", "! FAIL  s3-public-read  lab-test-bucket-ceh", "+ PASS  encryption-at-rest (12 buckets)"]},
+        {"say": "Trivy scans container images for vulnerable packages... before they reach production.", "show": "Trivy scans container images for vulnerable packages, before they reach production.", "term": ["$ trivy image web-app:latest", "! Total: 37 (HIGH: 9, CRITICAL: 3)"]},
+        {"say": "Block public access by default, use least privilege... and remember, your configuration is your job, not the provider's.", "show": "Block public access by default, use least privilege, and remember: your configuration is your job, not the provider's.", "card": "Block public access", "card_style": "answer"},
+        {"say": "Follow for more C E H labs.", "show": "Follow for more CEH labs.", "card": "Follow for more"}
+      ],
+      "post": {"title": "This cloud bucket needed no password (CEH lab) #Shorts", "caption": "A test S3 bucket readable with no credentials, Prowler failing the public-access check, and Trivy finding critical packages in an image. Block public access, use least-privilege IAM, scan images before deploy.", "hashtags": ["#CEH", "#CloudSecurity", "#AWS", "#EthicalHacking", "#CyberSecurity", "#Shorts"]}
+    }
+  ]
+}

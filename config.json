@@ -7,5 +7,16 @@
     "card": "Full CISSP course|by a CISSP · link on my channel",
     "card_style": "stat"
   },
-  "_note": "render/common.py swaps any closing 'Follow for more ...' segment for this CTA, and post_text.py adds description_line to every post. Don't promise a discount anywhere: the coupon can expire, and an expired coupon link still credits the sale but shows the normal price."
+  "_note": "render/common.py swaps any closing 'Follow for more ...' segment for this CTA, and post_text.py adds description_line to every post. Don't promise a discount anywhere: the coupon can expire, and an expired coupon link still credits the sale but shows the normal price.",
+  "cta_variants": {
+    "ceh": {
+      "say": "My full C E H course is coming soon on Udemy... follow so you don't miss it.",
+      "show": "My full CEH course is coming soon on Udemy. Follow so you don't miss it.",
+      "card": "CEH course|coming soon on Udemy · follow",
+      "card_style": "stat"
+    }
+  },
+  "description_variants": {
+    "ceh": "🛡️ My CEH v13 course is coming soon on Udemy. Meanwhile, my CISSP course: {course_url}"
+  }
 }
