@@ -1,0 +1,302 @@
+{
+ "date": "2026-11-15",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-15-pm-01",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-11-15T16:00:00",
+   "story_key": "copeland-xweb-evo-14-root-flaws-exploited-2026-11",
+   "send_to": "whoever runs your cold storage",
+   "sources": [
+    {
+     "name": "VulnCheck",
+     "url": "https://www.vulncheck.com/blog/copeland-xweb-evo-unauthenticated-root",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "CyberScoop",
+     "url": "https://cyberscoop.com/copeland-dixell-refrigeration-vulnerabilities/",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "14 root flaws in supermarket fridge boxes.",
+    "segments": [
+     {
+      "say": "Fourteen ways to get root. On supermarket fridge controllers.",
+      "show": "VulnCheck disclosed 14 flaws in Copeland (Dixell) XWEB EVO refrigeration supervisors, each reproduced to root in its lab (13 Nov).",
+      "card": "14 flaws|root on fridge controllers",
+      "card_style": "stat"
+     },
+     {
+      "say": "VulnCheck says two are already being exploited.",
+      "show": "CVE-2026-124014 and CVE-2026-124010 hit VulnCheck's sensors on 12 and 13 Nov, from opportunistic scanners. No threat actor named.",
+      "card": "2 exploited|CVE-2026-124014 · CVE-2026-124010",
+      "card_style": "alert"
+     },
+     {
+      "say": "Support ended in March. VulnCheck says the current firmware won't be fixed.",
+      "show": "Copeland declared XWEB EVO end of software support (no fixes after 16 Mar 2026), per VulnCheck. About 1,663 hosts show up on Shodan.",
+      "card": "End of support|no more fixes",
+      "card_style": "fact"
+     },
+     {
+      "say": "Take them off the internet. Put them behind a V P N.",
+      "show": "VulnCheck and Copeland: keep the controllers off the public internet, segment them behind a VPN, and plan a move to a supported platform.",
+      "card": "Off the internet · behind a VPN",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your cold storage.",
+      "show": "Send this to whoever runs your cold storage.",
+      "card": "↗ Send this to whoever runs your cold storage"
+     }
+    ]
+   },
+   "x_text": "Copeland / Dixell XWEB EVO refrigeration controllers: VulnCheck discloses 14 flaws that reach root, 2 already exploited (CVE-2026-124014, CVE-2026-124010). The product is end of support. Keep it off the internet.\n\n#ICS #CyberSecurity",
+   "ig_caption": "Fourteen ways to get root. On supermarket fridge controllers. 🧊\n\nWhat VulnCheck and CyberScoop reported (13 Nov):\n→ VulnCheck found 14 flaws in Copeland (Dixell) XWEB EVO refrigeration supervisors; each reached root in its lab\n→ Two are exploited: CVE-2026-124014 and CVE-2026-124010 hit VulnCheck's sensors on 12 and 13 Nov\n→ Copeland declared XWEB EVO end of software support in March; VulnCheck says the flaws in current firmware won't be fixed\n→ Copeland confirmed to CyberScoop that certain XWEB products are affected\n→ CERT-FR named XWEB among the controller families compromised in October's French supermarket attacks; VulnCheck says this week's hits aren't evidence of that campaign\n\nWhat to do: find every XWEB EVO you run, take it off the public internet, put it behind a VPN and plan the move to a supported platform.\n\nSend this to whoever runs your cold storage 👇\n\nDo you know which of your building or fridge controllers face the internet?\n\nSource: VulnCheck and CyberScoop (13 Nov 2026), The Register (13 Nov 2026)\n\n#ICS #OTSecurity #Copeland #Vulnerability #IoTSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-pm-02",
+   "kind": "carousel",
+   "category": "BREACH",
+   "slot": "2026-11-15T17:00:00",
+   "story_key": "expedia-qubole-breach-n0n-claim-2026-11",
+   "send_to": "whoever books your company travel",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/203062/cyber-crime/extortion-group-claims-theft-of-nearly-one-billion-expedia-traveler-records.html",
+     "date": "2026-11-14"
+    }
+   ],
+   "cover": {
+    "hook": "Expedia confirms a breach. Hackers claim nearly a billion records.",
+    "sub": "Expedia says attackers got in through a third-party data platform. It hasn't confirmed the group's numbers."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What Expedia confirmed",
+     "body": "Expedia told Skift attackers reached its systems through a compromised third-party data platform provider, in a supply chain attack that also hit other companies. It says the investigation is ongoing and its platforms remain safe to use."
+    },
+    {
+     "type": "point",
+     "title": "What the hackers claim",
+     "body": "n0n, an extortion group that appeared in mid-September, claims 830M+ loyalty records from 35 programs, 58M traveler profiles and 333M+ account and credential records. Expedia hasn't confirmed these figures."
+    },
+    {
+     "type": "stat",
+     "big": "~1 billion",
+     "label": "traveler records claimed by n0n (unverified)",
+     "note": "Security Affairs, 14 Nov. n0n's leak site claims 224 attacks since September."
+    },
+    {
+     "type": "point",
+     "title": "The way in",
+     "body": "Wiz and Sentra say the attackers used a stolen vendor key from Qubole, a Google Cloud partner, which gave them a trusted path into Expedia's big data platform."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Change your Expedia password from a trusted device",
+      "Don't reuse it anywhere else",
+      "Expect phishing that quotes your bookings or points",
+      "List vendors with standing keys to your data platform"
+     ]
+    }
+   ],
+   "question": "Which vendor still holds a key to your data warehouse?",
+   "x_text": "Expedia confirms attackers got in via a compromised third-party data platform (Qubole, per Wiz and Sentra). Extortion group n0n claims ~1 billion traveler records; Expedia hasn't confirmed the numbers.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "Expedia confirms a breach. Hackers claim nearly a billion records. ✈️\n\nWhat Security Affairs reported (14 Nov):\n→ Expedia told Skift attackers reached its systems through a compromised third-party data platform provider\n→ Wiz and Sentra say a stolen vendor key from Qubole gave them a trusted path into Expedia's big data platform\n→ Extortion group n0n claims 830M+ loyalty records, 58M traveler profiles and 333M+ account records\n→ Expedia has not confirmed those figures and says its platforms remain safe to use\n→ Expedia's brands include Hotels.com, Vrbo, Travelocity, Orbitz, Hotwire and Trivago\n\nWhat to do: change your Expedia password from a trusted device, don't reuse it, and treat messages quoting your bookings or points with suspicion. For security teams: list every vendor holding a standing key to your data.\n\nSend this to whoever books your company travel 👇\n\nWhich vendor still holds a key to your data warehouse?\n\nSource: Security Affairs (14 Nov 2026)\n\n#Expedia #DataBreach #SupplyChainAttack #TravelSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-pm-03",
+   "kind": "reel",
+   "category": "RANSOMWARE",
+   "slot": "2026-11-15T20:00:00",
+   "story_key": "activecloud-belarus-cloud-ransomware-2026-11",
+   "send_to": "whoever signed your cloud contract",
+   "sources": [
+    {
+     "name": "The Record",
+     "url": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Ransomware hit their cloud provider.",
+    "segments": [
+     {
+      "say": "Ransomware hit a cloud provider. Its customers went down with it.",
+      "show": "Belarusian cloud provider ActiveCloud, which serves Belarus and Russia, says hackers breached its systems and encrypted parts of its cloud (The Record, 13 Nov).",
+      "card": "Cloud provider|hit by ransomware",
+      "card_style": "alert"
+     },
+     {
+      "say": "Hosting, email and virtual machines were disrupted for days.",
+      "show": "E-Cloud, E-Cloud Protected and SmartMail were affected; the Smartpress news site was knocked offline. Key systems were back by Wednesday.",
+      "card": "E-Cloud · SmartMail|disrupted",
+      "card_style": "stat"
+     },
+     {
+      "say": "Main services are back. Some customers may still struggle to restore their V Ms.",
+      "show": "ActiveCloud says it found no evidence customer data was stolen. The attackers and the way in haven't been named.",
+      "card": "VM restores|still being fixed",
+      "card_style": "fact"
+     },
+     {
+      "say": "Keep one backup your provider can't touch.",
+      "show": "Keep an offline or second-provider backup, and test restoring it.",
+      "card": "A backup outside your provider",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever signed your cloud contract.",
+      "show": "Send this to whoever signed your cloud contract.",
+      "card": "↗ Send this to whoever signed your cloud contract"
+     }
+    ]
+   },
+   "x_text": "ActiveCloud, a Belarusian cloud provider, says ransomware encrypted parts of its cloud. E-Cloud and SmartMail customers were disrupted for days; some may still struggle to restore VMs. No sign of data theft, it says.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "Ransomware hit a cloud provider. Its customers went down with it. ☁️\n\nWhat The Record reported (13 Nov):\n→ ActiveCloud, a cloud provider serving Belarus and Russia, says hackers breached its systems and encrypted parts of its cloud infrastructure\n→ E-Cloud, E-Cloud Protected and SmartMail were affected; the Smartpress news site went offline\n→ Key systems were back by Wednesday; on Friday it said main services were restored, with some customers still having trouble restoring VMs\n→ ActiveCloud says it found no evidence customer data was stolen; the attackers and entry point aren't named\n→ Russian providers ESTT and Beget were hit days earlier; The Record says there's no confirmed link\n\nThe lesson: your provider's outage is your outage. Keep one backup outside your provider and test restoring it.\n\nSend this to whoever signed your cloud contract 👇\n\nIf your cloud provider were encrypted tonight, where would you restore from?\n\nSource: The Record (13 Nov 2026)\n\n#Ransomware #CloudSecurity #Backup #ActiveCloud #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-pm-04",
+   "kind": "carousel",
+   "category": "AI THREAT",
+   "slot": "2026-11-15T21:00:00",
+   "story_key": "fbi-flash-artex-ai-agents-2026-11",
+   "x": true,
+   "send_to": "your SOC lead",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
+     "date": "2026-11-14"
+    },
+    {
+     "name": "Security Boulevard (SafeBreach)",
+     "url": "https://securityboulevard.com/2026/11/artex-ai-attack-framework-safebreach-coverage-for-fbi-flash-alert-flash-20261113-001/",
+     "date": "2026-11-14"
+    },
+    {
+     "name": "GBHackers",
+     "url": "https://gbhackers.com/fbi-warns-artex-ai-framework/",
+     "date": "2026-11-14"
+    }
+   ],
+   "cover": {
+    "hook": "Under 3 hours to privileged access. AI agents did the hacking.",
+    "sub": "The FBI's FLASH alert on ARTEX, an open-source AI attack framework in use since at least August."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What the FBI says",
+     "body": "FLASH-20261113-001 (13 Nov) covers ARTEX, an open-source multi-agent pentest framework written in Go. Operators give it a goal in plain language; agents run the commands. Attacker setups mostly use Chinese models, led by DeepSeek Flash."
+    },
+    {
+     "type": "point",
+     "title": "No zero-days needed",
+     "body": "The alert cites no CVEs. The way in: SQL injection, missing API authentication, unsigned SAML assertions, hardcoded passwords and unrotated keys. Some intrusions reached privileged access in under three hours."
+    },
+    {
+     "type": "stat",
+     "big": "110,000+",
+     "label": "directory objects mapped by ARTEX agents",
+     "note": "They also hunted for Windows hosts without endpoint protection and added credentials to existing apps (Cyber Security News, 14 Nov)."
+    },
+    {
+     "type": "point",
+     "title": "The scale",
+     "body": "Reported campaigns: personal data on about 67,000 people in South Korea, and 2,250+ Microsoft 365 tenants targeted through ConnectWise Cloud Backup. The repo was pulled on 8 Oct; forks remain, with 1,600+ exposed consoles found in early November."
+    },
+    {
+     "type": "actions",
+     "title": "FBI's advice",
+     "items": [
+      "Inventory every internet-facing app",
+      "Take Kudu/SCM, hypervisor and backup consoles off the internet",
+      "Cut app consent permissions to the minimum",
+      "Scan repos for secrets, rotate, and watch for odd LLM API traffic"
+     ]
+    }
+   ],
+   "question": "Would your SOC notice 1,500 commands an hour from one account?",
+   "x_text": "FBI FLASH on ARTEX, an open-source AI agent attack framework: some intrusions reached privileged access in under 3 hours, using known weaknesses, not zero-days. Attacker setups mostly run DeepSeek Flash.\n\nThe week's lessons 🧵 #AISecurity #CyberSecurity",
+   "x_thread": [
+    "FBI FLASH on ARTEX, an open-source AI agent attack framework: some intrusions reached privileged access in under 3 hours, using known weaknesses, not zero-days. Attacker setups mostly run DeepSeek Flash.\n\nThe week's lessons 🧵 #AISecurity #CyberSecurity",
+    "1/ The alert: FLASH-20261113-001, 13 Nov. ARTEX is an open-source multi-agent pentest framework in Go. Operators type a goal; agents plan and run the commands. Used by a variety of actors since at least August, across ten sectors.",
+    "2/ The way in was old: SQL injection, missing API auth, unsigned SAML assertions, hardcoded passwords, unrotated keys. Inside, agents mapped 110,000+ directory objects, hunted for hosts without EDR and added credentials to existing apps.",
+    "3/ Same week, same pattern: Unit 42 says attackers ran 25 operations against 19+ orgs with the Cairn AI framework and GLM/DeepSeek models, with access or data taken at 10. Arctic Wolf tied AntiFox, built on ARTEX, to reads of AWS production secrets.",
+    "4/ The lesson: AI agents don't need new bugs. They work through the weak credentials and exposed consoles you already have, faster and around the clock.",
+    "5/ Do this week: inventory internet-facing apps; take Kudu/SCM, hypervisor and backup consoles off the internet; cut app consent rights; scan repos for secrets and rotate; alert on unexpected LLM API traffic.",
+    "6/ Question: would your SOC notice 1,500 commands an hour from one account?\n\nSources: Cyber Security News, SafeBreach via Security Boulevard, GBHackers (14 Nov); Unit 42 (12 Nov); The Hacker News (11 Nov)."
+   ],
+   "ig_caption": "Under 3 hours to privileged access. AI agents did the hacking. 🤖\n\nWhat the FBI's FLASH alert on ARTEX says, per Cyber Security News and SafeBreach (14 Nov):\n→ ARTEX is an open-source multi-agent pentest framework; operators give a goal in plain language and agents run the commands\n→ Used by a variety of actors since at least August; attacker setups mostly use Chinese models, led by DeepSeek Flash\n→ No zero-days: SQL injection, missing API auth, unsigned SAML assertions, hardcoded passwords, unrotated keys\n→ Some intrusions reached privileged access in under three hours; agents mapped 110,000+ directory objects\n→ Reported campaigns include data on about 67,000 people in South Korea and 2,250+ Microsoft 365 tenants targeted via ConnectWise Cloud Backup\n\nThe FBI's advice: inventory internet-facing apps, take admin consoles off the internet, cut app consent rights, scan repos for secrets and rotate them, and look into unexpected LLM API traffic.\n\nSend this to your SOC lead 👇\n\nWould your SOC notice 1,500 commands an hour from one account?\n\nSource: Cyber Security News, Security Boulevard (SafeBreach) and GBHackers (14 Nov 2026)\n\n#AISecurity #AgenticAI #ARTEX #FBI #ThreatIntel #CyberSecurity"
+  },
+  {
+   "id": "2026-11-15-pm-05",
+   "kind": "reel",
+   "category": "CLOUD",
+   "slot": "2026-11-15T22:30:00",
+   "story_key": "amd-sev-snp-mior-skyfall-2026-11",
+   "send_to": "whoever picked your confidential cloud",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "Myth: your cloud host can't see your VM.",
+    "segments": [
+     {
+      "say": "Myth: a confidential V M is safe from your cloud host.",
+      "show": "New research on AMD SEV-SNP, the tech behind many confidential VMs: two attacks let a malicious host read data inside them (The Hacker News, 13 Nov).",
+      "card": "Myth|the host can't see in",
+      "card_style": "alert"
+     },
+     {
+      "say": "Researchers read its memory in all one thousand lab tries.",
+      "show": "ETH Zurich's Mior attack (CVE-2026-0462) enabled debugging on a protected VM and read and wrote its memory in all 1,000 lab attempts on an EPYC 9135.",
+      "card": "1,000 / 1,000|lab attempts worked",
+      "card_style": "stat"
+     },
+     {
+      "say": "A second attack, Skyfall, pulled a disk encryption key from a test V M.",
+      "show": "Skyfall (ETH Zurich and Google, CVE-2026-40671) recovered register values and a disk-encryption key on Zen 3 and Zen 4 EPYC. Both attacks need control of the hypervisor; no attacks in the wild reported.",
+      "card": "Skyfall|disk key leaked in lab",
+      "card_style": "fact"
+     },
+     {
+      "say": "Ask your provider if A M D's firmware fixes are in.",
+      "show": "Fixes ship as AMD firmware and microcode through server makers' BIOS updates (AMD-SB-3059, AMD-SB-3061). Renting confidential VMs? Ask your provider.",
+      "card": "Ask: are AMD's fixes applied?",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever picked your confidential cloud.",
+      "show": "Send this to whoever picked your confidential cloud.",
+      "card": "↗ Send this to whoever picked your confidential cloud"
+     }
+    ]
+   },
+   "x_text": "AMD SEV-SNP: new Mior (CVE-2026-0462) and Skyfall (CVE-2026-40671) attacks let a rogue cloud host read data inside confidential VMs in lab tests. Both need hypervisor control. Fixes come via firmware and BIOS updates.\n\n#ConfidentialComputing #InfoSec",
+   "ig_caption": "Myth: a confidential VM is safe from your cloud host. 🔍\n\nWhat The Hacker News reported (13 Nov):\n→ Two new attacks on AMD SEV-SNP let a malicious cloud host read data inside confidential VMs\n→ Mior (ETH Zurich, CVE-2026-0462) enabled debugging on a protected VM and read and wrote its memory in all 1,000 lab attempts\n→ Skyfall (ETH Zurich and Google, CVE-2026-40671) recovered register values and a disk-encryption key from a test VM\n→ Reality check: both need control of the hypervisor, Mior also needs the BIOS and a PCIe device; no attacks in the wild are reported\n→ Fixes ship as AMD firmware and microcode through server makers' BIOS updates; some are targeted for November and December\n\nWhat to do: if you run EPYC servers, get the BIOS updates from your server maker. If you rent confidential VMs, ask your provider when AMD's fixes are applied.\n\nSend this to whoever picked your confidential cloud 👇\n\nHave you ever asked your cloud provider to prove a firmware fix was applied?\n\nSource: The Hacker News (13 Nov 2026)\n\n#AMD #ConfidentialComputing #CloudSecurity #Vulnerability #CyberSecurity"
+  }
+ ]
+}
