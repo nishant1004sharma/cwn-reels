@@ -75,6 +75,11 @@ def main(path):
             probs.append(f"{i}: ig_caption needs 3-8 hashtags, has {len(tags)}")
         if "source" not in cap.lower():
             probs.append(f"{i}: ig_caption needs a 'Source:' line")
+        tk = it.get("take", "")
+        if not tk or len(tk) > 220:
+            probs.append(f"{i}: 'take' (Nishant's own practitioner view, <= 220 chars) is required")
+        if "my take:" not in cap.lower():
+            probs.append(f"{i}: ig_caption needs a 'My take:' line")
         cov = it.get("cover", {})
         if it.get("kind") in ("carousel", "card"):
             if not cov.get("hook") or len(cov["hook"]) > 90:
@@ -135,9 +140,10 @@ def main(path):
                 if re.search(r"CVE-\d", s.get("say", "")):
                     probs.append(f"{i}: segment {n} 'say' reads a CVE id aloud; keep CVE ids in 'show'/'card' only")
     kinds = [it.get("kind") for it in items]
-    if len(items) == 5 and (kinds.count("reel") != 3 or kinds.count("carousel") + kinds.count("diagram") != 2
-                            or kinds.count("diagram") > 1):
-        probs.append(f"a full run is 3 reels + 2 carousels (or 1 carousel + 1 diagram), got {kinds}")
+    if len(items) > 3:
+        probs.append(f"a run is now 3 items (2 reels + 1 carousel or diagram), got {len(items)}")
+    if len(items) == 3 and (kinds.count("reel") != 2 or kinds.count("carousel") + kinds.count("diagram") != 1):
+        probs.append(f"a full run is 2 reels + 1 carousel (or 1 diagram), got {kinds}")
     li = [it for it in items if it.get("linkedin")]
     if len(li) > 1:
         probs.append("at most 1 LinkedIn item per run")
