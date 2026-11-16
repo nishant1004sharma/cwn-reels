@@ -1,0 +1,244 @@
+{
+ "date": "2026-11-16",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-16-pm-01",
+   "kind": "reel",
+   "category": "CLOUD",
+   "slot": "2026-11-16T16:00:00",
+   "story_key": "ms-outage-hotel-chlorine-alarm-email-2026-11",
+   "send_to": "whoever owns your building alarms",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/203189/security/the-microsoft-outage-left-15-hotel-guests-poisoned-by-chlorine.html",
+     "date": "2026-11-15"
+    }
+   ],
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "15 guests poisoned. The alarm ran on email.",
+    "segments": [
+     {
+      "say": "Fifteen hotel guests poisoned by chlorine. The alarm ran on email.",
+      "show": "15 guests at a hotel in Germany were poisoned by excessive chlorine after the alarm that emailed operators never went out (Security Affairs, 15 Nov).",
+      "card": "15 guests|chlorine poisoning",
+      "card_style": "stat"
+     },
+     {
+      "say": "Microsoft's outage stopped the warning emails at a German hotel pool.",
+      "show": "Per Security Affairs, citing Notebookcheck and WDR: the sauna-area system at Hotel Ling Bao, Phantasialand (Brühl) emailed operators when chlorine rose too high. During Microsoft's 12-14 Nov outage, those emails didn't go out.",
+      "card": "Cloud outage = no alarm",
+      "card_style": "alert"
+     },
+     {
+      "say": "Forty responders came. Four guests went to hospital.",
+      "show": "German emergency services sent 40 first responders; local media reported four people taken to hospital. The pool has since reopened.",
+      "card": "40 responders · 4 to hospital",
+      "card_style": "fact"
+     },
+     {
+      "say": "Myth: a cloud alert is a safety system. Give critical alarms an offline backup.",
+      "show": "Tom's Hardware, quoted by Security Affairs: architects of such systems should always have a physical or analog backup that keeps working offline.",
+      "card": "Add a physical / offline backup alarm",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your building alarms.",
+      "show": "Send this to whoever owns your building alarms.",
+      "card": "↗ Send this to whoever owns your building alarms"
+     }
+    ]
+   },
+   "x_text": "Microsoft 365 outage, real-world harm: a German hotel's chlorine alarm emailed operators. During the 12-14 Nov outage the emails didn't go out and 15 guests were poisoned, Security Affairs reports. Safety alarms need an offline backup.\n\n#Resilience #CyberSecurity",
+   "ig_caption": "15 hotel guests poisoned by chlorine. The alarm ran on email. ☁️\n\nWhat Security Affairs reported (15 Nov), citing Notebookcheck and WDR:\n→ A sauna-area system at Hotel Ling Bao in Phantasialand, Brühl, emailed operators when chlorine got too high\n→ During Microsoft's 12-14 Nov outage those emails didn't go out, and chlorine kept rising\n→ 15 guests were affected; 40 first responders were sent and four people went to hospital, per local media\n→ The pool was closed and has since reopened\n→ The lesson: an alarm that depends on email fails when email fails\n\nWhat to do: list every safety or security alert that only travels by email or one cloud service. Give the critical ones a physical or offline backup, and test it.\n\nSend this to whoever owns your building alarms 👇\n\nWhich of your alerts would go silent if your email provider went down today?\n\nSource: Security Affairs, 15 Nov 2026\n\n#Resilience #BusinessContinuity #Microsoft365 #Outage #OTSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-16-pm-02",
+   "kind": "carousel",
+   "category": "POLICY",
+   "slot": "2026-11-16T17:00:00",
+   "story_key": "meta-italy-garante-805m-gallery-2026-11",
+   "send_to": "whoever approves your app permissions",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/203174/laws-and-regulations/meta-fined-e805-million-in-italy-over-facebooks-default-photo-gallery-access.html",
+     "date": "2026-11-15"
+    }
+   ],
+   "cover": {
+    "hook": "€805 million. For one default setting in Facebook's app.",
+    "sub": "Italy's privacy regulator says the Android app read users' photo galleries without specific consent."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The feature",
+     "body": "\"Get tips from your gallery while browsing Facebook\", live since 2023, suggests photos and videos from your phone to post. Italy's Garante says the Android app accessed them and their metadata without specific consent."
+    },
+    {
+     "type": "stat",
+     "big": "€805M",
+     "label": "fine on Meta Platforms Ireland",
+     "note": "About 20 million Android users in Italy affected"
+    },
+    {
+     "type": "point",
+     "title": "3 problems",
+     "body": "One gallery permission covered several purposes. The notice (\"enable other features\") didn't say it also turned on gallery suggestions. And the feature was on by default."
+    },
+    {
+     "type": "point",
+     "title": "Meta's answer",
+     "body": "Meta told Reuters users must grant device permission first and can revoke it in settings. The Garante said Meta's changes came too late and only reached users who updated the app."
+    },
+    {
+     "type": "actions",
+     "title": "Check your own app",
+     "items": [
+      "List features that are on by default",
+      "One permission per purpose",
+      "Consent text that names the feature",
+      "Know what your app reads from the phone"
+     ]
+    }
+   ],
+   "question": "Does any feature in your app switch on by default under a broad permission?",
+   "x_text": "Meta fined €805M by Italy's Garante: the Facebook Android app's gallery-suggestions feature read photos, videos and metadata of ~20M users without specific consent, the regulator says. It was on by default. Meta has 60 days to fix it.\n\n#Privacy #InfoSec",
+   "ig_caption": "€805 million. For one default setting in Facebook's app. 📸\n\nWhat Security Affairs reported (15 Nov):\n→ Italy's data protection authority, the Garante, fined Meta Platforms Ireland €805 million\n→ It says the Facebook Android app accessed photos, videos and their metadata without specific consent or proper information\n→ The feature: \"Get tips from your gallery while browsing Facebook\", available since 2023, on by default\n→ About 20 million Android users in Italy were affected\n→ Meta told Reuters users must grant device permission first and can revoke it any time\n→ Meta has 60 days to ask for separate, specific consent and keep the feature off by default\n\nWhat to do: audit your own apps for features that are on by default, split permissions by purpose, and make consent text name the feature.\n\nSend this to whoever approves your app permissions 👇\n\nDoes any feature in your app switch on by default under a broad permission?\n\nSource: Security Affairs, 15 Nov 2026\n\n#Privacy #GDPR #Meta #DataProtection #MobileSecurity #Consent"
+  },
+  {
+   "id": "2026-11-16-pm-03",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-16T20:00:00",
+   "story_key": "apify-compromised-credential-customer-accounts-2026-11",
+   "send_to": "whoever runs your scraping jobs",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "TEISS",
+     "url": "https://www.teiss.co.uk/news/apify-confirms-hackers-used-compromised-credentials-to-reach-customer-accounts-and-internal-systems-18460",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "One credential. Then customer accounts.",
+    "segments": [
+     {
+      "say": "One compromised credential. Then more credentials. Then customer accounts.",
+      "show": "Apify says an attacker used one compromised credential to obtain more credentials and access related customer accounts (SecurityWeek, 13 Nov).",
+      "card": "1 credential → customer accounts",
+      "card_style": "alert"
+     },
+     {
+      "say": "Apify says the intrusion ran November ninth and tenth.",
+      "show": "The Czech web scraping and automation company says the intrusion took place 9-10 Nov and was detected and blocked on 11 Nov. It hasn't said how many accounts were hit.",
+      "card": "Intrusion 9-10 Nov · blocked 11 Nov",
+      "card_style": "fact"
+     },
+     {
+      "say": "A customer notice lists emails, billing details, password hashes and two F A recovery codes.",
+      "show": "Per a customer's notification shared on Reddit (via SecurityWeek): names, emails, billing details, IPs, salted password hashes, 2FA recovery codes, phone numbers and Google/GitHub sign-in tokens. Only card last four digits and expiry.",
+      "card": "2FA recovery codes in a customer notice",
+      "card_style": "fact"
+     },
+     {
+      "say": "If you were notified, reset your two F A in the Apify console.",
+      "show": "Some notified customers were told to reset 2FA in the Apify Console. Apify rotated internal secrets, reset sessions and revoked OAuth links including GitHub.",
+      "card": "Notified? Reset 2FA now",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your scraping jobs.",
+      "show": "Send this to whoever runs your scraping jobs.",
+      "card": "↗ Send this to whoever runs your scraping jobs"
+     }
+    ]
+   },
+   "x_text": "Apify breach: an attacker used one compromised credential to get more credentials and reach customer accounts on 9-10 Nov. A customer notice lists emails, billing details, password hashes and 2FA recovery codes. Notified users: reset 2FA.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "One compromised credential. Then customer accounts. 🔑\n\nWhat SecurityWeek and TEISS reported (13 Nov):\n→ Web scraping and automation platform Apify says an attacker used a compromised credential to get more credentials and access related customer accounts\n→ The intrusion ran 9-10 Nov; Apify detected and blocked it on 11 Nov\n→ A customer's notice (via SecurityWeek) lists names, emails, billing details, IPs, salted password hashes, 2FA recovery codes and sign-in tokens; only cards' last four digits\n→ Apify rotated internal secrets, reset sessions and revoked OAuth connections including GitHub\n→ It hasn't said how many accounts were affected\n\nWhat to do: if you were notified, reset 2FA in the Apify Console and rotate any API tokens your jobs use. Reconnect GitHub only when Apify says it's safe.\n\nSend this to whoever runs your scraping jobs 👇\n\nIf one of your SaaS tools leaked your 2FA recovery codes, how fast would you know?\n\nSource: SecurityWeek and TEISS, 13 Nov 2026\n\n#DataBreach #Apify #CredentialTheft #2FA #SaaSSecurity #CyberSecurity"
+  },
+  {
+   "id": "2026-11-16-pm-04",
+   "kind": "diagram",
+   "category": "AI SECURITY",
+   "slot": "2026-11-16T21:00:00",
+   "story_key": "explainer-mcp-dependency-drift",
+   "send_to": "whoever approves your AI coding tools",
+   "sources": [
+    {
+     "name": "Cloud Security Alliance",
+     "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-server-dependency-drift-20261115-csa-s/",
+     "date": "2026-11-15"
+    }
+   ],
+   "diagram": {
+    "title": "Pinned Isn't Frozen: MCP Servers",
+    "html": "claude-news/diagrams/2026-11-16-pm-04.html",
+    "seconds": 8
+   },
+   "x_text": "MCP servers in AI coding assistants: pinning the top-level package doesn't freeze its dependencies. A CSA note cites one commit-pinned server that ran 15 dependency sets in 5 weeks. Pin exact versions, use lockfiles, add release-age cooldowns.\n\n#AISecurity #SupplyChain",
+   "ig_caption": "Your AI assistant's MCP server is \"pinned\". Its dependencies aren't. 🧩\n\nWhat a Cloud Security Alliance note explained (15 Nov):\n→ Red path: config says npx -y or uvx → the launcher resolves dependencies from a public registry on every launch → a new (possibly malicious) version can run without any config change\n→ Corelight (cited by CSA) found 23 of 35 MCP servers install this way\n→ One server pinned to a single commit ran with 15 different dependency sets over five weeks\n→ Green path: exact versions + a committed lockfile or an image by digest + an internal, logged registry proxy = the same code every launch\n→ CSA notes pinning also freezes vulnerable versions, so updates need a deliberate process\n\nDefences: inventory every MCP server definition, pin exact versions, add release-age cooldowns, and review MCP config changes like code.\n\nSend this to whoever approves your AI coding tools 👇\n\nDo you know how many MCP servers your developers start each day?\n\nSource: Cloud Security Alliance research note, 15 Nov 2026\n\n#MCP #AISecurity #SupplyChainSecurity #DevSecOps #AIAgents #CyberSecurity"
+  },
+  {
+   "id": "2026-11-16-pm-05",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-16T22:30:00",
+   "story_key": "cve-2026-120869",
+   "send_to": "the person who patches your NetScaler",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+     "date": "2026-11-13"
+    }
+   ],
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "10 critical NetScaler flaws. Patch now.",
+    "segments": [
+     {
+      "say": "Ten critical NetScaler flaws. One patch release.",
+      "show": "Citrix patched 28 NetScaler ADC and Gateway flaws, nine of them critical, plus a critical bug in NetScaler Console (SecurityWeek, 13 Nov).",
+      "card": "10 critical|NetScaler ADC · Gateway · Console",
+      "card_style": "stat"
+     },
+     {
+      "say": "Nine are memory bugs in A D C and Gateway that can cause denial of service.",
+      "show": "Memory overflow bugs in packet processing, SMPP, DNS/DoH, NetScaler Push, Email OTP, EPA and ICA proxy can cause erroneous behaviour or DoS. Fixed in 14.1-73.57 and 13.1-64.39 and later.",
+      "card": "9 critical in ADC + Gateway",
+      "card_style": "alert"
+     },
+     {
+      "say": "The tenth, in NetScaler Console, scores nine point four. No login needed.",
+      "show": "CVE-2026-120869 (CVSS 9.4) lets unauthenticated attackers bypass controls and reach restricted resources. All Console 14.1 builds before 14.1-74.34.",
+      "card": "CVE-2026-120869 · CVSS 9.4",
+      "card_style": "fact"
+     },
+     {
+      "say": "Citrix reports no exploitation yet. Update to the fixed builds now.",
+      "show": "Citrix makes no mention of in-the-wild exploitation. It urges customers to update as soon as possible and lists preconditions per CVE in its advisory.",
+      "card": "Not reported exploited · update now",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to the person who patches your NetScaler.",
+      "show": "Send this to the person who patches your NetScaler.",
+      "card": "↗ Send this to the person who patches your NetScaler"
+     }
+    ]
+   },
+   "x_text": "Citrix NetScaler: 28 ADC/Gateway flaws patched, 9 critical, plus CVE-2026-120869 (CVSS 9.4) in NetScaler Console, an unauthenticated access-control bypass before 14.1-74.34. No exploitation reported. Update now.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "10 critical NetScaler flaws. One patch release. 🩹\n\nWhat SecurityWeek reported (13 Nov):\n→ Citrix patched 28 flaws in NetScaler ADC and NetScaler Gateway, nine of them critical\n→ The nine are memory overflow bugs (packet processing, DNS/DoH, Email OTP, EPA, ICA proxy and more) that can cause errors or denial of service\n→ A tenth critical bug, CVE-2026-120869 (CVSS 9.4), lets unauthenticated attackers bypass controls in NetScaler Console before 14.1-74.34\n→ Fixed ADC/Gateway builds: 14.1-73.57, 13.1-64.39 and later (FIPS/NDcPP builds listed in the advisory)\n→ Citrix mentions no exploitation in the wild\n\nWhat to do: update ADC, Gateway and Console now, check the per-CVE preconditions in Citrix's advisory, and keep Console off the internet.\n\nSend this to the person who patches your NetScaler 👇\n\nHow long does a NetScaler update take in your change process?\n\nSource: SecurityWeek, 13 Nov 2026\n\n#Citrix #NetScaler #PatchManagement #Vulnerability #CyberSecurity"
+  }
+ ]
+}
