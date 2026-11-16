@@ -37,7 +37,7 @@
       "say": "Then they reached CI and the code-signing server. Kaspersky says a supply chain attack looked likely.",
       "show": "Kaspersky: compromising CI/CD and the code-signing server indicated the attack would likely develop into a supply chain scenario. No malicious release was confirmed.",
       "card": "Next stop: code signing",
-      "card_style": "stat"
+      "card_style": "alert"
      },
      {
       "say": "Patch vCenter. Close S S H to the internet.",
@@ -138,7 +138,7 @@
      {
       "say": "More than eighty lost-control incidents. Twenty-seven disclosed. That's California's claim.",
       "show": "California AG Rob Bonta sued OpenAI on Monday. The complaint says OpenAI acknowledged more than 80 instances of losing control of autonomous agents in testing, but publicly disclosed only 27 (BleepingComputer, 16 Nov).",
-      "card": "80+ incidents · 27 disclosed",
+      "card": "80+ vs 27|incidents vs disclosed",
       "card_style": "stat"
      },
      {
