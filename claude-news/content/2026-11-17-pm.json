@@ -1,0 +1,188 @@
+{
+ "date": "2026-11-17",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-17-pm-01",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-17T17:00:00",
+   "story_key": "gtig-exploit-agent-patch-diff-autonomous-2026-11",
+   "send_to": "whoever sets your patch deadlines",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+     "date": "2026-11-16"
+    },
+    {
+     "name": "SiliconANGLE",
+     "url": "https://siliconangle.com/2026/11/16/google-says-an-ai-framework-turned-security-patches-into-exploits-with-no-human-in-the-loop",
+     "date": "2026-11-16"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+     "date": "2026-11-16"
+    }
+   ],
+   "take": "Your patch window is now your exposure window. I'd set separate SLAs: internet-facing apps patched in days, and I'd hunt for exploitation of anything patched in the last month.",
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Patch in. Exploit out. No human.",
+    "segments": [
+     {
+      "say": "Patch goes in. Exploit comes out. No human.",
+      "show": "Google Threat Intelligence Group: for the first time, threat actors used LLM frameworks to fully automate vulnerability discovery and exploitation, with no human in the loop (BleepingComputer, 16 Nov).",
+      "card": "Patch → exploit|no human in the loop",
+      "card_style": "stat"
+     },
+     {
+      "say": "Google found an attacker server where A I agents diff every new patch.",
+      "show": "GTIG found an exposed staging server running a multi-agent framework dubbed exploit_agent. It compares web app code before and after each patch announcement.",
+      "card": "exploit_agent: diffs every patch",
+      "card_style": "alert"
+     },
+     {
+      "say": "Spot the fix, write the exploit, run it.",
+      "show": "A likely flaw triggers an exploit draft that runs automatically (SiliconANGLE). Targets: French media, entertainment and education websites.",
+      "card": "Spot the fix → draft → run",
+      "card_style": "fact"
+     },
+     {
+      "say": "Patch internet-facing apps in days, not weeks.",
+      "show": "My take: your patch window is now your exposure window. Patch internet-facing apps in days and hunt for exploitation of last month's fixes.",
+      "card": "Internet-facing: days, not weeks",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever sets your patch deadlines.",
+      "show": "Send this to whoever sets your patch deadlines.",
+      "card": "↗ Send this to whoever sets your patch deadlines"
+     }
+    ]
+   },
+   "x_text": "Google GTIG: attackers used LLM agent frameworks to fully automate vulnerability discovery and exploitation, no human in the loop. Its exploit_agent diffs web app code before and after each patch, then drafts and runs exploits.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "Patch goes in. Exploit comes out. No human. 🤖\n\nWhat BleepingComputer and SiliconANGLE reported (16 Nov) from Google Threat Intelligence Group (GTIG):\n→ For the first time, GTIG saw threat actors use LLM frameworks to fully automate vulnerability discovery and exploitation, with no human in the loop\n→ It found an exposed attacker staging server running a multi-agent framework dubbed exploit_agent\n→ The agents compare web app code before and after each patch announcement, draft an exploit for a likely flaw and run it automatically\n→ Targets were French media, entertainment and education websites\n→ GTIG expects unsophisticated attacks needing \"little to no human interaction\" in the next three months\n\nMy take: your patch window is now your exposure window. I'd set separate SLAs: internet-facing apps patched in days, and I'd hunt for exploitation of anything patched in the last month.\n\nWhat to do: shorten patch SLAs for exposed web apps, track new fixes against your internet-facing inventory, and watch for exploitation right after patch releases.\n\nSend this to whoever sets your patch deadlines 👇\n\nHow many days does your team really take to patch an internet-facing app?\n\nSource: BleepingComputer and SiliconANGLE, 16 Nov 2026\n\n#AISecurity #AIAgents #PatchManagement #ThreatIntelligence #VulnerabilityManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-11-17-pm-02",
+   "kind": "carousel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-17T20:00:00",
+   "story_key": "quantum-systems-qbase-update-server-bundeswehr-2026-11",
+   "send_to": "whoever approves vendor software updates",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/203085/cyber-crime/german-military-grounds-quantum-systems-drones-following-reported-cyberattack.html",
+     "date": "2026-11-16"
+    },
+    {
+     "name": "AeroTime",
+     "url": "https://www.aerotime.aero/articles/bundeswehr-quantum-systems-drones-flying-again-cyberattack",
+     "date": "2026-11-13"
+    },
+    {
+     "name": "DroneXL",
+     "url": "https://dronexl.co/2026/11/12/quantum-systems-qbase-malware-bundeswehr-grounds-drones/",
+     "date": "2026-11-12"
+    }
+   ],
+   "take": "Your vendor's update server is part of your attack surface. I'd ask critical suppliers how updates are signed and checked, and stage their updates on a test system before production.",
+   "cover": {
+    "hook": "A malicious file on a drone maker's update server. Germany's army grounded its drones.",
+    "sub": "Quantum Systems confirmed \"an active cyberattack by hostile actors\". The Bundeswehr grounded its Vector drones as a precaution."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What was hit",
+     "body": "German drone maker Quantum Systems confirmed a cyberattack on 12 Nov, identified at the end of October. Per Der Spiegel, as relayed by several outlets, a malicious file was placed on the server that distributes QBase updates, its ground-control software."
+    },
+    {
+     "type": "stat",
+     "big": "1",
+     "label": "customer grounded its fleet: the Bundeswehr",
+     "note": "\"The Bundeswehr was the only customer to ground their systems as a precaution.\" (Quantum spokesperson, via AeroTime)"
+    },
+    {
+     "type": "point",
+     "title": "What we don't know",
+     "body": "Quantum shared no technical details and named no attacker. Security Affairs says it is not clear how many customers installed the file. Quantum says the fleet is flying normally; per AeroTime the Bundeswehr has not independently confirmed that."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Verify signatures before installing vendor updates",
+      "Stage updates on a test system first",
+      "List vendors that can push code to you",
+      "Keep a rollback path for critical software"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "My take",
+     "body": "Your vendor's update server is part of your attack surface. I'd ask critical suppliers how updates are signed and checked, and stage their updates on a test system before production."
+    }
+   ],
+   "question": "Do you test vendor updates before they reach production, or trust the vendor's server?",
+   "x_text": "Quantum Systems, the German drone maker, confirmed a cyberattack. Reports say a malicious file sat on the server that distributes its QBase drone software updates. The Bundeswehr grounded its Vector drones as a precaution.\n\n#SupplyChainAttack #CyberSecurity",
+   "ig_caption": "A malicious file on a drone maker's update server. Germany's army grounded its drones. 🛩️\n\nWhat was reported (Security Affairs 16 Nov, AeroTime 13 Nov):\n→ German drone maker Quantum Systems confirmed \"an active cyberattack by hostile actors\", identified at the end of October\n→ Per Der Spiegel, as relayed by these outlets, a malicious file was placed on the server that distributes updates for QBase, its ground-control software\n→ The Bundeswehr grounded its Vector drones as a precaution; Quantum says it was the only customer to do so\n→ Quantum shared no technical details and named no attacker; it is not clear how many customers installed the file\n→ Quantum says the fleet is flying normally again; the Bundeswehr has not independently confirmed that\n\nMy take: your vendor's update server is part of your attack surface. I'd ask critical suppliers how updates are signed and checked, and stage their updates on a test system before production.\n\nWhat to do: verify update signatures, stage vendor updates, list who can push code to you, and keep a rollback path.\n\nSend this to whoever approves vendor software updates 👇\n\nDo you test vendor updates before they reach production, or trust the vendor's server?\n\nSource: Security Affairs, 16 Nov 2026; AeroTime, 13 Nov 2026\n\n#SupplyChainAttack #SupplyChainSecurity #DefenceTech #Drones #ThirdPartyRisk #CyberSecurity"
+  },
+  {
+   "id": "2026-11-17-pm-03",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-17T21:00:00",
+   "story_key": "danfoss-ak-sm800a-six-unpatched-rce-2026-11",
+   "send_to": "whoever runs your store refrigeration",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+     "date": "2026-11-16"
+    }
+   ],
+   "take": "Building and OT gear is the forgotten edge. I'd hunt for any controller reachable from the internet, including through 4G modems, before debating which firmware fixes what.",
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Six flaws. No login. Root. No patch.",
+    "segments": [
+     {
+      "say": "Six flaws. No login needed. Root. And no patch yet.",
+      "show": "Midnight Blue found six unpatched flaws in the Danfoss AK-SM800A store refrigeration controller. Five sit in web handlers that need no login and run as root (The Hacker News, 16 Nov).",
+      "card": "6 flaws|no login · no patch",
+      "card_style": "stat"
+     },
+     {
+      "say": "A researcher found them in supermarket fridge controllers in under an hour.",
+      "show": "Researcher Carlo Meijer found them in under an hour of manual review. Root code execution shown on firmware 3.3.0; same bugs in 5.3.2. Researchers say 5.4.0 doesn't fix them. No CVEs yet.",
+      "card": "Found in under an hour",
+      "card_style": "alert"
+     },
+     {
+      "say": "No secure boot, so an implant could survive a factory reset.",
+      "show": "No secure boot: implants could survive factory resets and updates. BSI has no information on exploitation of these six flaws.",
+      "card": "Implant survives reset",
+      "card_style": "fact"
+     },
+     {
+      "say": "Take the controller off the internet. Use a V P N.",
+      "show": "Remove internet exposure, including via 4G/5G modems. Remote access only over VPN. Check setpoints, defrost schedules and accounts for changes.",
+      "card": "Off the internet · VPN only",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your store refrigeration.",
+      "show": "Send this to whoever runs your store refrigeration.",
+      "card": "↗ Send this to whoever runs your store refrigeration"
+     }
+    ]
+   },
+   "x_text": "Danfoss AK-SM800A refrigeration controllers: Midnight Blue found six unpatched flaws, five reachable without login and running as root. No CVEs or fix yet. Take management interfaces off the internet, 4G modems included.\n\n#ZeroDay #OTSecurity",
+   "ig_caption": "Six flaws. No login needed. Root. And no patch yet. 🧊\n\nWhat The Hacker News reported (16 Nov):\n→ Midnight Blue found six unpatched flaws in the Danfoss AK-SM800A store refrigeration controller\n→ Five are in web request handlers that need no login and run as root\n→ Root code execution was shown on firmware 3.3.0; the same bugs are in 5.3.2, and researchers say 5.4.0 doesn't fix them\n→ No secure boot, so implants could survive a factory reset\n→ No CVEs or fix yet; Germany's BSI has no information on exploitation of these six flaws\n\nMy take: building and OT gear is the forgotten edge. I'd hunt for any controller reachable from the internet, including through 4G modems, before debating which firmware fixes what.\n\nWhat to do: remove internet exposure, use VPN-only remote access, and check setpoints, defrost schedules and user accounts for unexplained changes.\n\nSend this to whoever runs your store refrigeration 👇\n\nDo you know every OT controller in your estate that can be reached from the internet?\n\nSource: The Hacker News, 16 Nov 2026\n\n#ZeroDay #OTSecurity #ICSSecurity #Danfoss #IoTSecurity #CyberSecurity"
+  }
+ ]
+}
