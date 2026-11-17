@@ -22,25 +22,25 @@
     "hook": "205 hosts. 41 orgs. One remote tool.",
     "segments": [
      {
-      "say": "Two hundred and five hosts. Forty one organisations. One remote access tool.",
+      "say": "Two hundred five hosts. Forty one orgs. One remote tool.",
       "show": "Huntress saw a spike in SCKit activity on 13 Nov: 205 hosts across 41 organisations (The Hacker News, 17 Nov).",
       "card": "205 hosts · 41 orgs",
       "card_style": "stat"
      },
      {
-      "say": "ConnectWise says attacks on ScreenConnect continue against unpatched systems. One client flaw is rated nine point nine.",
+      "say": "Attacks on ScreenConnect continue. One client flaw scores nine point nine.",
       "show": "CVE-2026-84869, CVSS 9.9: a ScreenConnect client flaw fixed in 26.6.5. ConnectWise disabled five third-party extensions across 400 partner environments.",
       "card": "CVE-2026-84869 · CVSS 9.9",
       "card_style": "alert"
      },
      {
-      "say": "Its warning: updating does not remove access attackers already have.",
+      "say": "Updating won't remove access attackers already have.",
       "show": "ConnectWise: \"Disabling extensions and updating software do not remove unauthorized access or persistence already established.\"",
       "card": "Patching ≠ clean",
       "card_style": "fact"
      },
      {
-      "say": "Update, disable the extensions, then hunt for rogue services.",
+      "say": "Update, disable the extensions, then hunt.",
       "show": "My take: treat every instance that ran those extensions as possibly compromised. Update to 26.6.5+, disable the five extensions, hunt.",
       "card": "26.6.5+ · disable extensions · hunt",
       "card_style": "answer"
@@ -136,25 +136,25 @@
     "hook": "Infoblox. Breached via its migration vendor.",
     "segments": [
      {
-      "say": "A D N S security company. Breached through its data migration vendor.",
+      "say": "Infoblox. Breached through its data migration vendor.",
       "show": "Infoblox confirmed unauthorized access to certain company information through \"a compromised third-party data migration vendor\" (Security Affairs, 17 Nov).",
       "card": "Breached via a migration vendor",
       "card_style": "alert"
      },
      {
-      "say": "The Register reports the vendor's accounts were used to pull data from SharePoint.",
+      "say": "The Register reports vendor accounts pulled data from SharePoint.",
       "show": "The Register, citing sources: the vendor had SharePoint migration access to Infoblox's Microsoft environment. Not confirmed by Infoblox.",
       "card": "Vendor accounts → SharePoint",
       "card_style": "fact"
      },
      {
-      "say": "Reported data: some customers' config snapshots, and staff Social Security numbers.",
+      "say": "Reported: customer config snapshots and staff Social Security numbers.",
       "show": "Reported: NIOS config snapshots (DNS/DHCP) for some customers; staff SSNs and bank details. Infoblox: no sign its products, updates or build process were involved.",
       "card": "Customer configs · staff data",
       "card_style": "alert"
      },
      {
-      "say": "Take back vendor access the day the project ends.",
+      "say": "Take back vendor access when the project ends.",
       "show": "My take: migration vendors get broad, temporary access nobody takes back. List every vendor account in Microsoft 365 today.",
       "card": "Revoke vendor access at project end",
       "card_style": "answer"
