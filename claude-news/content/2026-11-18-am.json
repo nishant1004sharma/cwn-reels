@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-18",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-18-am-01",
+   "kind": "reel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-18T08:30:00",
+   "story_key": "cve-2026-84869",
+   "send_to": "whoever runs your ScreenConnect",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Patching the server isn't the end here. I'd treat every partner instance with those extensions as possibly compromised and hunt for rogue services, because updates don't remove access already gained.",
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "205 hosts. 41 orgs. One remote tool.",
+    "segments": [
+     {
+      "say": "Two hundred and five hosts. Forty one organisations. One remote access tool.",
+      "show": "Huntress saw a spike in SCKit activity on 13 Nov: 205 hosts across 41 organisations (The Hacker News, 17 Nov).",
+      "card": "205 hosts · 41 orgs",
+      "card_style": "stat"
+     },
+     {
+      "say": "ConnectWise says attacks on ScreenConnect continue against unpatched systems. One client flaw is rated nine point nine.",
+      "show": "CVE-2026-84869, CVSS 9.9: a ScreenConnect client flaw fixed in 26.6.5. ConnectWise disabled five third-party extensions across 400 partner environments.",
+      "card": "CVE-2026-84869 · CVSS 9.9",
+      "card_style": "alert"
+     },
+     {
+      "say": "Its warning: updating does not remove access attackers already have.",
+      "show": "ConnectWise: \"Disabling extensions and updating software do not remove unauthorized access or persistence already established.\"",
+      "card": "Patching ≠ clean",
+      "card_style": "fact"
+     },
+     {
+      "say": "Update, disable the extensions, then hunt for rogue services.",
+      "show": "My take: treat every instance that ran those extensions as possibly compromised. Update to 26.6.5+, disable the five extensions, hunt.",
+      "card": "26.6.5+ · disable extensions · hunt",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your ScreenConnect.",
+      "show": "Send this to whoever runs your ScreenConnect.",
+      "card": "↗ Send this to whoever runs your ScreenConnect"
+     }
+    ]
+   },
+   "x_text": "ScreenConnect: ConnectWise says attacks go on against unpatched systems. CVE-2026-84869 (CVSS 9.9) fixed in 26.6.5; 5 extensions disabled in 400 partner environments. Huntress saw SCKit on 205 hosts at 41 orgs. Updating won't remove access.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "205 hosts. 41 organisations. One remote access tool. 🔧\n\nWhat The Hacker News reported (17 Nov):\n→ ConnectWise warns attacks on ScreenConnect continue against unpatched systems\n→ CVE-2026-84869, a critical client flaw (CVSS 9.9), is fixed in version 26.6.5\n→ ConnectWise disabled five third-party extensions (Labtech Plus, RMM Plus, RMM+ and two Password Link add-ons) across 400 partner environments; having them doesn't by itself mean compromise\n→ Huntress saw a spike in SCKit toolkit activity on 13 Nov: 205 hosts across 41 organisations\n→ ConnectWise: disabling extensions and updating \"do not remove unauthorized access or persistence already established\"\n\nMy take: patching the server isn't the end here. I'd treat every partner instance with those extensions as possibly compromised and hunt for rogue services, because updates don't remove access already gained.\n\nWhat to do: update to 26.6.5 or later, disable the listed extensions and don't re-enable them, then look for unexpected services and remote clients on endpoints.\n\nSend this to whoever runs your ScreenConnect 👇\n\nWho checks the extensions installed on your remote access tools?\n\nSource: The Hacker News, 17 Nov 2026\n\n#ScreenConnect #ConnectWise #MSP #PatchManagement #RemoteAccess #CyberSecurity"
+  },
+  {
+   "id": "2026-11-18-am-02",
+   "kind": "carousel",
+   "category": "AI THREAT",
+   "slot": "2026-11-18T10:00:00",
+   "story_key": "amazon-madpot-ai-agents-llm-apps-2026-11",
+   "send_to": "whoever deployed your LLM gateway",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+     "date": "2026-11-16"
+    }
+   ],
+   "take": "Most AI gateways I'd audit first for one thing: the default admin key. Teams treat LiteLLM or Dify as a dev toy, but they hold every provider key you own. Treat them as production.",
+   "cover": {
+    "hook": "AI agents are hunting your AI apps. For the API keys.",
+    "sub": "Amazon's decoy servers, posing as LLM services, logged AI agents probing LiteLLM, Dify, Ollama and more."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The decoys",
+     "body": "Amazon threat intelligence ran decoy servers (its MadPot network) posing as popular LLM services. They logged requests from 3 October to late last week. Amazon has moderate confidence the agents ran on ARTEX, an open-source AI pentesting tool."
+    },
+    {
+     "type": "point",
+     "title": "The targets",
+     "body": "One API, New API, LiteLLM, Dify, FastGPT, Langflow, RAGFlow, Open WebUI, LobeChat, Ollama and more. The playbook: default admin credentials, unfinished installs, known flaws such as Langflow CVE-2025-3248, secrets in env files and client-side JS."
+    },
+    {
+     "type": "stat",
+     "big": "0",
+     "label": "new techniques",
+     "note": "Amazon: \"None of the techniques in these campaigns were new.\" What changes is speed and persistence."
+    },
+    {
+     "type": "point",
+     "title": "Not just decoys",
+     "body": "Cloudflare saw an ARTEX-driven attacker use a stolen CI/CD API token with no IP limits: 400 database dump requests in an hour. Amazon says it cannot verify the outcomes the agents reported in its decoy logs."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Change default admin keys (LiteLLM master key)",
+      "Finish or remove half-done installs",
+      "Patch Langflow to 1.3.0+",
+      "Add expiry + IP limits to API tokens"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "My take",
+     "body": "The default admin key is the first thing I'd check. Teams treat LiteLLM or Dify as a dev toy, but they hold every provider key you own. Treat AI gateways as production systems."
+    }
+   ],
+   "question": "Who owns the AI gateway in your company: security, data, or nobody?",
+   "x_text": "Amazon decoy servers posing as LLM services logged AI agents (likely ARTEX, moderate confidence) hunting API keys in LiteLLM, Dify, Langflow, RAGFlow, Ollama. \"None of the techniques... were new.\" Change default admin keys.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "AI agents are hunting your AI apps. For the API keys. 🤖\n\nWhat The Hacker News reported (16 Nov), from Amazon threat intelligence:\n→ Amazon's decoy servers posed as popular LLM services and logged requests from 3 October\n→ Targets included LiteLLM, Dify, Langflow, RAGFlow, Open WebUI, Ollama and One API\n→ Amazon has moderate confidence the agents ran on ARTEX, an open-source AI pentesting tool\n→ The playbook: default admin credentials, unfinished installs, known flaws like Langflow CVE-2025-3248, and secrets in env files\n→ Amazon: \"None of the techniques in these campaigns were new.\" What AI agents change is speed and persistence\n\nMy take: the default admin key is the first thing I'd check. Teams treat LiteLLM or Dify as a dev toy, but they hold every provider key you own. Treat AI gateways as production.\n\nWhat to do: change default admin keys, finish or remove half-done installs, patch Langflow to 1.3.0+, and put expiry and IP limits on API tokens.\n\nSend this to whoever deployed your LLM gateway 👇\n\nWho owns the AI gateway in your company: security, data, or nobody?\n\nSource: The Hacker News, 16 Nov 2026\n\n#AISecurity #LLMSecurity #LiteLLM #APIKeys #ThreatIntel #CyberSecurity"
+  },
+  {
+   "id": "2026-11-18-am-03",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-18T12:00:00",
+   "story_key": "infoblox-migration-vendor-breach-2026-11",
+   "send_to": "whoever approves your IT vendors",
+   "sources": [
+    {
+     "name": "Security Affairs",
+     "url": "https://securityaffairs.com/203309/data-breach/infoblox-confirms-supply-chain-breach-after-attackers-access-sensitive-data.html",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Migration vendors get broad, temporary access that nobody remembers to take back. I'd list every vendor account in Microsoft 365 today and remove any whose project is finished.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Infoblox. Breached via its migration vendor.",
+    "segments": [
+     {
+      "say": "A D N S security company. Breached through its data migration vendor.",
+      "show": "Infoblox confirmed unauthorized access to certain company information through \"a compromised third-party data migration vendor\" (Security Affairs, 17 Nov).",
+      "card": "Breached via a migration vendor",
+      "card_style": "alert"
+     },
+     {
+      "say": "The Register reports the vendor's accounts were used to pull data from SharePoint.",
+      "show": "The Register, citing sources: the vendor had SharePoint migration access to Infoblox's Microsoft environment. Not confirmed by Infoblox.",
+      "card": "Vendor accounts → SharePoint",
+      "card_style": "fact"
+     },
+     {
+      "say": "Reported data: some customers' config snapshots, and staff Social Security numbers.",
+      "show": "Reported: NIOS config snapshots (DNS/DHCP) for some customers; staff SSNs and bank details. Infoblox: no sign its products, updates or build process were involved.",
+      "card": "Customer configs · staff data",
+      "card_style": "alert"
+     },
+     {
+      "say": "Take back vendor access the day the project ends.",
+      "show": "My take: migration vendors get broad, temporary access nobody takes back. List every vendor account in Microsoft 365 today.",
+      "card": "Revoke vendor access at project end",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever approves your I T vendors.",
+      "show": "Send this to whoever approves your IT vendors.",
+      "card": "↗ Send this to whoever approves your IT vendors"
+     }
+    ]
+   },
+   "x_text": "Infoblox confirms unauthorized access through \"a compromised third-party data migration vendor\". The Register reports SharePoint data, some customers' NIOS config snapshots and staff SSNs. Infoblox: no sign products were involved.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "A DNS security company. Breached through its data migration vendor. 📦\n\nWhat Security Affairs reported (17 Nov):\n→ Infoblox confirmed unauthorized access to certain company information through \"a compromised third-party data migration vendor\"\n→ The Register, citing sources, says the vendor had SharePoint migration access and its accounts were used to take data\n→ Reported data: NIOS configuration snapshots (DNS and DHCP configs) for some customers, plus staff Social Security numbers and bank details\n→ Infoblox says it has no indication its products, cloud services, software updates or build process were involved\n→ It hasn't named the vendor or said how many people are affected\n\nMy take: migration vendors get broad, temporary access that nobody remembers to take back. I'd list every vendor account in Microsoft 365 today and remove any whose project is finished.\n\nWhat to do: if you're an Infoblox customer, watch for their notice and review what your exported configs contain. Everyone: put end dates on vendor accounts.\n\nSend this to whoever approves your IT vendors 👇\n\nDoes vendor access in your company expire, or does someone have to remember?\n\nSource: Security Affairs, 17 Nov 2026\n\n#Infoblox #DataBreach #SupplyChainSecurity #ThirdPartyRisk #SharePoint #CyberSecurity"
+  }
+ ]
+}
