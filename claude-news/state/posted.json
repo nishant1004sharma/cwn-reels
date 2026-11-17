@@ -3199,6 +3199,48 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "80+ lost-control incidents. 27 disclosed.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "gtig-exploit-agent-patch-diff-autonomous-2026-11",
+   "id": "2026-11-17-pm-01",
+   "date": "2026-11-17",
+   "slot": "2026-11-17T17:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Patch in. Exploit out. No human.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "quantum-systems-qbase-update-server-bundeswehr-2026-11",
+   "id": "2026-11-17-pm-02",
+   "date": "2026-11-17",
+   "slot": "2026-11-17T20:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "A malicious file on a drone maker's update server. Germany's army grounded its drones.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "danfoss-ak-sm800a-six-unpatched-rce-2026-11",
+   "id": "2026-11-17-pm-03",
+   "date": "2026-11-17",
+   "slot": "2026-11-17T21:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Six flaws. No login. Root. No patch.",
+   "typefully_draft_id": null
   }
  ]
 }
