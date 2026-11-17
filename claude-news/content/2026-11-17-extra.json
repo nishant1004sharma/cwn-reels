@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-17",
+ "run": "extra",
+ "items": [
+  {
+   "id": "2026-11-17-extra-01",
+   "kind": "reel",
+   "category": "SUPPLY CHAIN",
+   "slot": "2026-11-17T22:50:00",
+   "x": true,
+   "story_key": "optimizely-web-malicious-js-178-orgs-2026-11",
+   "send_to": "whoever owns your website's scripts",
+   "sources": [
+    {
+     "name": "Help Net Security",
+     "url": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/",
+     "date": "2026-11-17"
+    },
+    {
+     "name": "Malwarebytes",
+     "url": "https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack",
+     "date": "2026-11-17"
+    },
+    {
+     "name": "Cybernews",
+     "url": "https://cybernews.com/security/178-company-websites-infected-malware/",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Allow-listing a vendor's domain isn't control if the vendor gets hit. I'd inventory every third-party script on payment pages and keep them off checkout where I can.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "178 organisations. One trusted script.",
+    "segments": [
+     {
+      "say": "One hundred seventy-eight organisations. One trusted script.",
+      "show": "On 16 Nov, malicious JavaScript was served through Optimizely Web to visitors of 178 organisations, per Scott Helme of Report URI (Help Net Security, 17 Nov).",
+      "card": "178|organisations · one script",
+      "card_style": "stat"
+     },
+     {
+      "say": "Attackers abused Optimizely and planted code that ran on customer sites.",
+      "show": "Optimizely: \"an unauthorized party exploited a vulnerability in Experimentation\" to add malicious JavaScript to some customer projects. It loaded from Optimizely's own CDN.",
+      "card": "Vendor hit → your site serves it",
+      "card_style": "alert"
+     },
+     {
+      "say": "It swapped crypto wallets and skimmed cards typed into payment forms.",
+      "show": "Per Helme: it swapped crypto wallet addresses, skimmed cards from sites' own payment forms, stole cookies and screenshots. Helme's list includes Zoom, BBC, CNN, HSBC, IKEA.",
+      "card": "Wallet swap · card skim",
+      "card_style": "fact"
+     },
+     {
+      "say": "Only twenty-four had a strict C S P. Lock down yours.",
+      "show": "Only 24 organisations had a CSP strict enough to block it; 68 had none. Allowing Optimizely's domain didn't help. My take: keep third-party scripts off checkout.",
+      "card": "Strict CSP · audit vendor scripts",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your website's scripts.",
+      "show": "Send this to whoever owns your website's scripts.",
+      "card": "↗ Send this to whoever owns your website's scripts"
+     }
+    ]
+   },
+   "x_text": "Optimizely supply-chain attack: malicious JavaScript served via Optimizely Web to 178 organisations on 16 Nov, per Report URI's Scott Helme. It swapped crypto wallets and skimmed cards. Only 24 had a CSP strict enough to block it.\n\n#SupplyChainAttack #CyberSecurity",
+   "ig_caption": "178 organisations. One trusted script. 🧩\n\nWhat Help Net Security and Malwarebytes reported (17 Nov):\n→ On 16 Nov, malicious JavaScript was served through Optimizely Web to visitors of 178 organisations, per Scott Helme of Report URI\n→ Optimizely says \"an unauthorized party exploited a vulnerability in Experimentation\" to add it to some customer projects; it has fixed the flaw and removed the code\n→ The code swapped crypto wallet addresses, skimmed cards typed into sites' own payment forms, and stole cookies and screenshots\n→ Helme's list includes Zoom, BBC, CNN, HSBC and IKEA; delivery of iOS exploit kits was seen, but no iPhone compromise has been demonstrated\n→ Only 24 organisations had a CSP strict enough to block it; 68 had none, and allow-listing Optimizely's domain didn't help\n\nMy take: allow-listing a vendor's domain isn't control if the vendor gets hit. I'd inventory every third-party script on payment pages and keep them off checkout where I can.\n\nWhat to do (site owners): tighten your CSP, review vendor script settings that enable eval, and monitor what third-party scripts actually do. Visitors: update iOS and check card and crypto activity from 16 Nov.\n\nSend this to whoever owns your website's scripts 👇\n\nHow many third-party scripts run on your checkout page right now?\n\nSource: Help Net Security and Malwarebytes, 17 Nov 2026\n\n#SupplyChainAttack #Optimizely #CardSkimming #CSP #WebSecurity #CyberSecurity"
+  }
+ ]
+}
