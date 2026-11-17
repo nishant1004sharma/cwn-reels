@@ -1687,6 +1687,651 @@
           "#Shorts"
         ]
       }
+    },
+    {
+      "id": "C-R14",
+      "status": "ready",
+      "series": "AI Security",
+      "topic": "OWASP LLM03:2026 Excessive Agency",
+      "format": "explainer",
+      "source": "OWASP GenAI LLM Top 10 2026 (published 4 Aug 2026), canonical source GenAI-Security-Project/GenAI-LLM-Top10 2026/final/LLM03_ExcessiveAgency.md (Excessive Agency = LLM03:2026; root causes excessive functionality, permissions, autonomy; email-summarizer read-only example; mitigations minimize tools/permissions, require user approval); fetched 17 Nov 2026",
+      "hook": "Why can your AI assistant delete your email?",
+      "segments": [
+        {
+          "say": "Your A I assistant only needs to read your email. So why can it send and delete them too?",
+          "show": "Your AI assistant only needs to read your email. So why can it send and delete them too?",
+          "card": "Read only?"
+        },
+        {
+          "say": "O W A S P calls this Excessive Agency. In the twenty twenty-six L L M Top Ten... it's number three.",
+          "show": "OWASP calls this Excessive Agency. In the 2026 LLM Top 10, it's number 3.",
+          "card": "LLM03|OWASP LLM Top 10 2026",
+          "card_style": "stat"
+        },
+        {
+          "say": "An A I agent can do real damage... when its output is wrong or manipulated.",
+          "show": "An AI agent can do real damage when its output is wrong or manipulated."
+        },
+        {
+          "say": "Root cause one... excessive functionality. Tools it doesn't need.",
+          "show": "Root cause 1: excessive functionality. Tools it doesn't need.",
+          "card": "Too many tools",
+          "card_style": "alert"
+        },
+        {
+          "say": "Two... excessive permissions. A read-only job, with rights to delete.",
+          "show": "2: excessive permissions. A read-only job, with rights to delete.",
+          "card": "Too many permissions",
+          "card_style": "alert"
+        },
+        {
+          "say": "Three... excessive autonomy. High-impact actions with no human check.",
+          "show": "3: excessive autonomy. High-impact actions with no human check.",
+          "card": "No human check",
+          "card_style": "alert"
+        },
+        {
+          "say": "The lesson? Least privilege for agents. Minimum tools, minimum rights... and a human approves high-impact actions.",
+          "show": "The lesson: least privilege for agents. Minimum tools, minimum rights, and a human approves high-impact actions.",
+          "card": "Least privilege for agents",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more A I security tips.",
+          "show": "Follow for more A I security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Your AI agent has too much power #Shorts",
+        "caption": "Excessive Agency is LLM03 in the OWASP GenAI LLM Top 10 2026: too many tools, too many permissions, too little human oversight. Give agents least privilege and require approval for high-impact actions.",
+        "hashtags": [
+          "#AISecurity",
+          "#OWASP",
+          "#LLM",
+          "#AIAgents",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D4-R01",
+      "status": "ready",
+      "series": "CISSP · Domain 4",
+      "topic": "IDS vs IPS",
+      "format": "quiz",
+      "source": "D4_L12_Network_Security_Components_script.md",
+      "hook": "Detect attacks without blocking business?",
+      "quiz": {
+        "question": "Detect attacks, but never risk blocking legitimate traffic. Which control?",
+        "options": [
+          "IPS",
+          "IDS",
+          "WAF",
+          "Packet filter"
+        ],
+        "answer": 1,
+        "reveal": 2
+      },
+      "segments": [
+        {
+          "say": "A company wants to detect attacks... but can't accept any risk of blocking legitimate traffic. What do you choose?",
+          "show": "A company wants to detect attacks, but can't accept any risk of blocking legitimate traffic. What do you choose?"
+        },
+        {
+          "say": "A, an I P S. B, an I D S. C, a W A F. Or D, a packet filter. Lock in your answer.",
+          "show": "A) IPS  B) IDS  C) WAF  D) Packet filter. Lock in your answer."
+        },
+        {
+          "say": "It's B... an I D S. It watches a copy of the traffic and raises alerts.",
+          "show": "It's B, an IDS. It watches a copy of the traffic and raises alerts.",
+          "card": "IDS = watch & alert",
+          "card_style": "answer"
+        },
+        {
+          "say": "An I P S sits inline. It can block attacks in real time... but if it's wrong or overloaded, it blocks real business traffic too.",
+          "show": "An IPS sits inline. It can block attacks in real time, but if it's wrong or overloaded, it blocks real business traffic too.",
+          "card": "IPS = inline, can block",
+          "card_style": "alert"
+        },
+        {
+          "say": "Exam tip. When availability can't be put at risk, detection beats prevention.",
+          "show": "Exam tip: when availability can't be put at risk, detection beats prevention.",
+          "card": "Protect availability"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "IDS or IPS? The CISSP availability trap #Shorts",
+        "caption": "Need to detect attacks without any risk of blocking legitimate traffic? Choose an IDS. An IPS sits inline and can hurt availability when it gets it wrong.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#NetworkSecurity",
+          "#IDS",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R15",
+      "status": "ready",
+      "series": "Real Breach",
+      "topic": "Snowflake customer attacks 2024: stolen logins, no MFA",
+      "format": "breach-story",
+      "source": "Google Cloud / Mandiant Threat Intelligence, 'UNC5537 Targets Snowflake Customer Instances for Data Theft and Extortion', 10 Jun 2024 (~165 potentially exposed organizations notified; credentials from infostealer malware on non-Snowflake systems incl. contractor machines used for gaming/pirated software; earliest infection Nov 2020; at least 79.7% of accounts had prior credential exposure; no MFA; no network allow lists; credentials not rotated); fetched 17 Nov 2026",
+      "hook": "No zero-day. Just old passwords.",
+      "segments": [
+        {
+          "say": "About a hundred and sixty-five organizations notified... and no zero-day needed. Just old passwords.",
+          "show": "About 165 organizations notified, and no zero-day needed. Just old passwords.",
+          "card": "165|organizations notified",
+          "card_style": "stat"
+        },
+        {
+          "say": "Twenty twenty-four. Mandiant's U N C fifty-five thirty-seven targets Snowflake customer accounts.",
+          "show": "2024. Mandiant's UNC5537 targets Snowflake customer accounts.",
+          "card": "UNC5537"
+        },
+        {
+          "say": "The logins came from infostealer malware... even on contractor laptops used for gaming and pirated software.",
+          "show": "The logins came from infostealer malware, even on contractor laptops used for gaming and pirated software.",
+          "card": "Infostealer logins",
+          "card_style": "alert"
+        },
+        {
+          "say": "Some of those credentials traced back to twenty twenty... and were never rotated.",
+          "show": "Some of those credentials traced back to 2020, and were never rotated.",
+          "card": "Never rotated",
+          "card_style": "alert"
+        },
+        {
+          "say": "And the accounts had no M F A. A username and password was enough.",
+          "show": "And the accounts had no MFA. A username and password was enough.",
+          "card": "No MFA",
+          "card_style": "alert"
+        },
+        {
+          "say": "At least seventy-nine point seven percent of the accounts used had been exposed before.",
+          "show": "At least 79.7% of the accounts used had been exposed before.",
+          "card": "79.7%|had prior credential exposure",
+          "card_style": "stat"
+        },
+        {
+          "say": "The lesson? Enforce M F A on every account... and rotate credentials, so a stolen password dies fast.",
+          "show": "The lesson: enforce MFA on every account, and rotate credentials so a stolen password dies fast.",
+          "card": "MFA + rotate",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more real breach lessons.",
+          "show": "Follow for more real breach lessons.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "The Snowflake attacks needed no zero-day #Shorts",
+        "caption": "In 2024 Mandiant tracked UNC5537 using infostealer-stolen logins, some from 2020, against Snowflake customer accounts that had no MFA. About 165 organizations were notified.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#DataBreach",
+          "#MFA",
+          "#Infostealer",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D4-R02",
+      "status": "ready",
+      "series": "CISSP · Domain 4",
+      "topic": "NAT is not a firewall",
+      "format": "myth-fact",
+      "source": "D4_L05_Local_Trust_Switching_Routing_script.md",
+      "hook": "Is NAT a firewall?",
+      "segments": [
+        {
+          "say": "Myth... nat protects your network, so it's basically a firewall.",
+          "show": "Myth: NAT protects your network, so it's basically a firewall.",
+          "card": "NAT = firewall",
+          "card_style": "myth"
+        },
+        {
+          "say": "Fact... nat is not a firewall. It has no security policy, and it doesn't inspect anything.",
+          "show": "Fact: NAT is not a firewall. It has no security policy, and it doesn't inspect anything.",
+          "card": "NAT ≠ firewall",
+          "card_style": "fact"
+        },
+        {
+          "say": "Nat rewrites private addresses into public ones at the edge. It saves I P version four addresses.",
+          "show": "NAT rewrites private addresses into public ones at the edge. It saves IPv4 addresses.",
+          "card": "Saves IPv4 addresses"
+        },
+        {
+          "say": "Hiding your internal addressing? That's only a side effect.",
+          "show": "Hiding your internal addressing? That's only a side effect.",
+          "card": "Hiding = side effect"
+        },
+        {
+          "say": "And with I P version six, you don't need nat at all. Your security comes from the firewall.",
+          "show": "And with IPv6 you don't need NAT at all. Your security comes from the firewall.",
+          "card": "Security = the firewall",
+          "card_style": "answer"
+        },
+        {
+          "say": "Exam tip. You still need a stateful firewall.",
+          "show": "Exam tip: you still need a stateful firewall."
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "NAT is not a firewall (CISSP myth vs fact) #Shorts",
+        "caption": "NAT saves IPv4 addresses and hides internal addressing as a side effect, but it has no security policy and inspects nothing. You still need a stateful firewall.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#Networking",
+          "#Firewall",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R16",
+      "status": "ready",
+      "series": "Spot the Phish",
+      "topic": "ClickFix fake CAPTCHA lure",
+      "format": "quiz",
+      "source": "Microsoft Threat Intelligence, 'Think before you Click(Fix): Analyzing the ClickFix social engineering technique', Microsoft Security Blog, 21 Aug 2025 (fake CAPTCHA/verification pages; button silently copies a command to the clipboard; user told to open Run dialog/Terminal/PowerShell and paste; user-run execution can evade automated tools; mitigations: user education on copy-paste, restrict Run dialog); fetched 17 Nov 2026",
+      "hook": "Would you pass this fake CAPTCHA?",
+      "quiz": {
+        "question": "Biggest red flag?",
+        "options": [
+          "The CAPTCHA box",
+          "Told to paste and run a command",
+          "The familiar logo",
+          "The loading spinner"
+        ],
+        "answer": 1,
+        "reveal": 2
+      },
+      "segments": [
+        {
+          "say": "A page says... verify you're human. Press Windows plus R, paste, and hit Enter.",
+          "show": "A page says: verify you're human. Press Windows + R, paste, and hit Enter."
+        },
+        {
+          "say": "What's the red flag? A, the CAPTCHA box. B, being told to paste and run a command. C, the familiar logo. Or D, the loading spinner. Lock in your answer.",
+          "show": "A) The CAPTCHA box  B) Told to paste and run a command  C) The familiar logo  D) The loading spinner. Lock in your answer."
+        },
+        {
+          "say": "It's B. A real CAPTCHA never asks you to run a command. Microsoft calls this trick ClickFix.",
+          "show": "It's B. A real CAPTCHA never asks you to run a command. Microsoft calls this trick ClickFix.",
+          "card": "Real CAPTCHAs never do this",
+          "card_style": "answer"
+        },
+        {
+          "say": "Clicking the button quietly copies a malicious command to your clipboard.",
+          "show": "Clicking the button quietly copies a malicious command to your clipboard.",
+          "card": "Clipboard hijack",
+          "card_style": "alert"
+        },
+        {
+          "say": "Then you run it yourself... so it can slip past automated security tools.",
+          "show": "Then you run it yourself, so it can slip past automated security tools.",
+          "card": "You become the installer",
+          "card_style": "alert"
+        },
+        {
+          "say": "The rule? Never paste and run a command a website gives you. Close the tab... and report it.",
+          "show": "The rule: never paste and run a command a website gives you. Close the tab and report it.",
+          "card": "Never paste and run",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more security tips.",
+          "show": "Follow for more security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Would you fall for this fake CAPTCHA? #Shorts",
+        "caption": "ClickFix pages fake a human check, copy a malicious command to your clipboard and ask you to run it. A real CAPTCHA never asks you to paste and run anything.",
+        "hashtags": [
+          "#Phishing",
+          "#ClickFix",
+          "#CyberSecurity",
+          "#SecurityAwareness",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D4-R03",
+      "status": "ready",
+      "series": "CISSP · Domain 4",
+      "topic": "Vendor remote access done right",
+      "format": "scenario",
+      "source": "D4_L15_Network_Attacks_the_CISSP_Exam_Method_script.md",
+      "hook": "Full VPN for a vendor?",
+      "segments": [
+        {
+          "say": "A vendor needs to maintain one application... for two hours a month.",
+          "show": "A vendor needs to maintain one application, for two hours a month.",
+          "card": "1 app · 2 hours a month"
+        },
+        {
+          "say": "The team suggests giving them full V P N access to the network.",
+          "show": "The team suggests giving them full VPN access to the network.",
+          "card": "Full VPN access?",
+          "card_style": "alert"
+        },
+        {
+          "say": "That's far too broad.",
+          "show": "That's far too broad.",
+          "card": "Far too broad",
+          "card_style": "alert"
+        },
+        {
+          "say": "A strong design gives the vendor an approved identity with M F A... through a bastion or broker, to that one application only.",
+          "show": "A strong design gives the vendor an approved identity with MFA, through a bastion or broker, to that one application only.",
+          "card": "One app. MFA. Bastion."
+        },
+        {
+          "say": "Only during a set maintenance window. Sessions are monitored, and access expires automatically.",
+          "show": "Only during a set maintenance window. Sessions are monitored, and access expires automatically.",
+          "card": "Time-boxed & monitored"
+        },
+        {
+          "say": "And a business owner, plus the vendor agreement, keep everyone accountable.",
+          "show": "And a business owner, plus the vendor agreement, keep everyone accountable.",
+          "card": "Least privilege wins",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Should a vendor get full VPN access? #Shorts",
+        "caption": "A vendor maintaining one app for two hours a month needs MFA, a bastion or broker to that app only, a set maintenance window, monitored sessions and access that expires automatically. Not a full VPN.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#ThirdPartyRisk",
+          "#ZeroTrust",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R17",
+      "status": "ready",
+      "series": "Myth vs Fact",
+      "topic": "Myth: a strong password is all you need",
+      "format": "myth-fact",
+      "source": "Microsoft Digital Defense Report 2023 (covers Jul 2022 to Jun 2023), microsoft.com Security Insider page: 'MFA reduces the risk of compromise by 99.2 percent', from a study of Microsoft Entra attack data; fetched 17 Nov 2026",
+      "hook": "Your strong password won't save you.",
+      "segments": [
+        {
+          "say": "Myth... a strong password is all you need.",
+          "show": "Myth: a strong password is all you need.",
+          "card": "Strong password = safe",
+          "card_style": "myth"
+        },
+        {
+          "say": "Fact... even a strong password can be phished, leaked or stolen. Once someone else has it, its strength doesn't matter.",
+          "show": "Fact: even a strong password can be phished, leaked or stolen. Once someone else has it, its strength doesn't matter.",
+          "card": "Stolen is stolen",
+          "card_style": "fact"
+        },
+        {
+          "say": "Microsoft looked at real attack data from its Entra sign-in service.",
+          "show": "Microsoft looked at real attack data from its Entra sign-in service.",
+          "card": "Real attack data"
+        },
+        {
+          "say": "The result? M F A cut the risk of compromise by ninety-nine point two percent.",
+          "show": "The result: MFA cut the risk of compromise by 99.2%.",
+          "card": "99.2%|lower risk of compromise",
+          "card_style": "stat"
+        },
+        {
+          "say": "So the real mistake isn't a weak password... it's an account with no second factor.",
+          "show": "So the real mistake isn't a weak password. It's an account with no second factor.",
+          "card": "No second factor",
+          "card_style": "alert"
+        },
+        {
+          "say": "The lesson? Turn on M F A everywhere it's offered... starting with your email and admin accounts.",
+          "show": "The lesson: turn on MFA everywhere it's offered, starting with your email and admin accounts.",
+          "card": "Turn on MFA",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more security tips.",
+          "show": "Follow for more security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Is a strong password enough? #Shorts",
+        "caption": "Microsoft's Digital Defense Report 2023 says MFA reduces the risk of compromise by 99.2 percent. Turn it on, starting with email and admin accounts.",
+        "hashtags": [
+          "#MFA",
+          "#CyberSecurity",
+          "#Passwords",
+          "#SecurityAwareness",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D4-R04",
+      "status": "ready",
+      "series": "CISSP · Domain 4",
+      "topic": "SPF, DKIM and DMARC",
+      "format": "memory-trick",
+      "source": "D4_L14_Secure_Communication_Channels_script.md",
+      "hook": "Email had no sender authentication",
+      "segments": [
+        {
+          "say": "The original mail protocol, S M T P, was built with no sender authentication at all.",
+          "show": "The original mail protocol, SMTP, was built with no sender authentication at all.",
+          "card": "SMTP: no sender auth",
+          "card_style": "alert"
+        },
+        {
+          "say": "So we bolted on three checks. Remember... who, what, and now what.",
+          "show": "So we bolted on three checks. Remember: who, what, and now what.",
+          "card": "Who · What · Now what"
+        },
+        {
+          "say": "Who. S P F lists which servers are allowed to send email for your domain.",
+          "show": "Who: SPF lists which servers are allowed to send email for your domain.",
+          "card": "SPF = who may send"
+        },
+        {
+          "say": "What. D KIM adds a digital signature, so the receiver can verify the message wasn't changed.",
+          "show": "What: DKIM adds a digital signature, so the receiver can verify the message wasn't changed.",
+          "card": "DKIM = signed message"
+        },
+        {
+          "say": "Now what. D MARC tells receivers what to do when those checks fail... monitor, quarantine, or reject.",
+          "show": "Now what: DMARC tells receivers what to do when checks fail: monitor, quarantine or reject.",
+          "card": "DMARC = the policy"
+        },
+        {
+          "say": "Exam tip. A message can pass all three and still be malicious. They prove the domain, not the intent.",
+          "show": "Exam tip: a message can pass all three and still be malicious. They prove the domain, not the intent.",
+          "card": "Domain, not intent",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "SPF, DKIM, DMARC: the CISSP memory trick #Shorts",
+        "caption": "SPF says who may send for your domain, DKIM signs the message so changes show, and DMARC tells receivers what to do when checks fail. They prove the domain, not the intent.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#EmailSecurity",
+          "#DMARC",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "C-R18",
+      "status": "ready",
+      "series": "Breach Data",
+      "topic": "M-Trends 2026: exploits before the patch",
+      "format": "data-drop",
+      "source": "Google Cloud / Mandiant, 'M-Trends 2026: Data, Insights, and Strategies From the Frontlines', 23 Mar 2026 (mean time to exploit est. -7 days; exploits 32% of intrusions, top vector 6th year; voice phishing 11%, email phishing 6% down from 14%; global median dwell time 14 days, up from 11; 52% detected internally, up from 43%); fetched 17 Nov 2026",
+      "hook": "Attackers now beat the patch by a week.",
+      "segments": [
+        {
+          "say": "Attackers now exploit flaws before the patch even exists. On average... an estimated seven days before.",
+          "show": "Attackers now exploit flaws before the patch even exists. On average, an estimated 7 days before.",
+          "card": "-7 days|mean time to exploit",
+          "card_style": "stat"
+        },
+        {
+          "say": "That's from Mandiant's M Trends twenty twenty-six report.",
+          "show": "That's from Mandiant's M-Trends 2026 report.",
+          "card": "M-Trends 2026"
+        },
+        {
+          "say": "Exploits were the top way in... thirty-two percent of intrusions. Sixth year in a row.",
+          "show": "Exploits were the top way in: 32% of intrusions. Sixth year in a row.",
+          "card": "32%|of intrusions started with an exploit",
+          "card_style": "stat"
+        },
+        {
+          "say": "Voice phishing jumped to second place, at eleven percent. Email phishing fell to six.",
+          "show": "Voice phishing jumped to second place at 11%. Email phishing fell to 6%.",
+          "card": "Vishing: 11%",
+          "card_style": "alert"
+        },
+        {
+          "say": "And median dwell time rose to fourteen days, up from eleven.",
+          "show": "And median dwell time rose to 14 days, up from 11.",
+          "card": "14 days|median dwell time",
+          "card_style": "stat"
+        },
+        {
+          "say": "Good news? In fifty-two percent of cases, organizations caught the attack themselves... up from forty-three.",
+          "show": "Good news: in 52% of cases, organizations caught the attack themselves, up from 43%.",
+          "card": "52% caught internally"
+        },
+        {
+          "say": "The lesson? Know every internet-facing system you run... and patch it fast. Attackers won't wait.",
+          "show": "The lesson: know every internet-facing system you run, and patch it fast. Attackers won't wait.",
+          "card": "Patch fast",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more security tips.",
+          "show": "Follow for more security tips.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "Attackers now beat the patch by a week #Shorts",
+        "caption": "Mandiant's M-Trends 2026 puts the mean time to exploit at an estimated -7 days, with exploits the top way in for a sixth year. Know your internet-facing systems and patch fast.",
+        "hashtags": [
+          "#CyberSecurity",
+          "#ThreatIntel",
+          "#Mandiant",
+          "#PatchManagement",
+          "#InfoSec",
+          "#Shorts"
+        ]
+      }
+    },
+    {
+      "id": "D1-R16",
+      "status": "ready",
+      "series": "CISSP · Domain 1",
+      "topic": "Domain 1 in one minute",
+      "format": "explainer",
+      "source": "D1_L16_Domain_1_Review_What_We_Covered_script.md",
+      "hook": "16% of the exam in one minute",
+      "segments": [
+        {
+          "say": "Domain one is sixteen percent of the C I S S P exam... and the foundation for every other domain.",
+          "show": "Domain 1 is 16% of the CISSP exam, and the foundation for every other domain.",
+          "card": "16%|of the CISSP exam",
+          "card_style": "stat"
+        },
+        {
+          "say": "Foundations. The code of ethics has four canons... and society always comes first.",
+          "show": "Foundations: the code of ethics has four canons, and society always comes first.",
+          "card": "Society first"
+        },
+        {
+          "say": "Roles. The owner decides, the custodian does, and senior management stays accountable.",
+          "show": "Roles: the owner decides, the custodian does, and senior management stays accountable.",
+          "card": "Owner decides"
+        },
+        {
+          "say": "Risk. S L E times A R O gives you the A L E. And never ignore a risk.",
+          "show": "Risk: SLE × ARO gives you the ALE. And never ignore a risk.",
+          "card": "SLE × ARO = ALE",
+          "card_style": "formula"
+        },
+        {
+          "say": "Continuity. Built on the B I A, where the R T O always stays below the M T D.",
+          "show": "Continuity: built on the BIA, where the RTO always stays below the MTD.",
+          "card": "RTO < MTD",
+          "card_style": "formula"
+        },
+        {
+          "say": "Remember one thing. Security serves the business. Think like a manager, and protect people first.",
+          "show": "Remember one thing: security serves the business. Think like a manager, and protect people first.",
+          "card": "Security serves the business",
+          "card_style": "answer"
+        },
+        {
+          "say": "Follow for more C I S S P prep.",
+          "show": "Follow for more CISSP prep.",
+          "card": "Follow for more"
+        }
+      ],
+      "post": {
+        "title": "CISSP Domain 1 in one minute #Shorts",
+        "caption": "Domain 1 is 16% of the CISSP exam: ethics with society first, owners decide, SLE × ARO = ALE, RTO below MTD. And the one thing to remember: security serves the business.",
+        "hashtags": [
+          "#CISSP",
+          "#CISSPExam",
+          "#RiskManagement",
+          "#GRC",
+          "#CyberSecurity",
+          "#Shorts"
+        ]
+      }
     }
   ]
 }
