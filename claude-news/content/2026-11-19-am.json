@@ -1,0 +1,168 @@
+{
+ "date": "2026-11-19",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-19-am-01",
+   "kind": "reel",
+   "category": "AI THREAT",
+   "slot": "2026-11-19T08:30:00",
+   "story_key": "bitdefender-22-repos-hijack-ai-coding-agents-2026-11",
+   "send_to": "every dev using an AI coding agent",
+   "sources": [
+    {
+     "name": "Cyber Security News",
+     "url": "https://cybersecuritynews.com/hackers-hijack-ai-coding-agents",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "I'd treat a cloned repo like an email attachment now: check CLAUDE.md, AGENTS.md and hook settings before any agent opens it, and keep long-lived tokens off dev laptops.",
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "22 GitHub repos built to hijack AI agents.",
+    "segments": [
+     {
+      "say": "Twenty two GitHub repos. Built to hijack your A I coding agent.",
+      "show": "Bitdefender Labs found 22 malicious GitHub repositories aimed at AI coding assistants such as Claude Code and Cursor (Cyber Security News, 18 Nov).",
+      "card": "22 poisoned repos",
+      "card_style": "stat"
+     },
+     {
+      "say": "Hidden orders sit in files the agent reads.",
+      "show": "Poisoned project files (instruction files, agent settings, session-start hooks) get the assistant to run hidden malware.",
+      "card": "Project files = hidden orders",
+      "card_style": "alert"
+     },
+     {
+      "say": "It steals tokens, S S H keys and cloud secrets, then spreads.",
+      "show": "Steals CI/CD, cloud and registry tokens, SSH keys and .env secrets; spreads through stolen GitHub/GitLab tokens. Targets settings for 14 agents.",
+      "card": "Tokens · SSH keys · .env",
+      "card_style": "alert"
+     },
+     {
+      "say": "Check the agent files before you open a strange repo.",
+      "show": "My take: inspect CLAUDE.md, AGENTS.md, .claude/ .cursor/ .gemini/ and hooks first. Ran one? Rotate every token it could reach.",
+      "card": "Inspect agent files first",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to every developer using an A I agent.",
+      "show": "Send this to every dev using an AI coding agent.",
+      "card": "↗ Send this to every dev using an AI coding agent"
+     }
+    ]
+   },
+   "x_text": "Claude Code, Cursor and 12 more AI coding agents targeted: Bitdefender found 22 GitHub repos with poisoned project files that make the agent run malware stealing tokens, SSH keys and .env secrets. Inspect agent files before opening.\n\n#AISecurity #CyberSecurity",
+   "ig_caption": "22 GitHub repos. Built to hijack your AI coding agent. 🤖\n\nWhat Cyber Security News reported (18 Nov), from Bitdefender Labs:\n→ Attackers planted poisoned files in GitHub repos so AI coding assistants would run hidden malware\n→ Claude Code and Cursor are named targets; the malware looks for settings of 14 agents\n→ It steals CI/CD, cloud and package-registry tokens, SSH keys, password-manager data and .env secrets\n→ It then spreads through stolen GitHub and GitLab tokens\n→ A second path uses session-start hooks that run a command without any AI prompt\n\nMy take: I'd treat a cloned repo like an email attachment now: check CLAUDE.md, AGENTS.md and hook settings before any agent opens it, and keep long-lived tokens off dev laptops.\n\nWhat to do: before opening an unfamiliar repo in an AI-enabled editor, check AGENTS.md, CLAUDE.md, the .claude/, .cursor/ and .gemini/ folders, MCP server definitions and setup scripts. If a machine ran one, rotate every token and secret it could reach.\n\nSend this to every dev using an AI coding agent 👇\n\nDo you open cloned repos with your AI agent before reading them?\n\nSource: Cyber Security News, 18 Nov 2026\n\n#AISecurity #AICodingAgents #ClaudeCode #Cursor #SupplyChainSecurity #DevSecOps"
+  },
+  {
+   "id": "2026-11-19-am-02",
+   "kind": "carousel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-19T10:00:00",
+   "story_key": "cve-2026-115731",
+   "send_to": "whoever runs your Puppet servers",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "Config management servers hold the keys to the whole fleet. I'd check CA auto-signing first, and if the Puppet Server was hit, assume the CA itself needs rotating.",
+   "cover": {
+    "hook": "One signed certificate. Code execution on your Puppet Server.",
+    "sub": "CISA says CVE-2026-115731 (CVSS 9.4) is exploited. Perforce fixes have been out since 3 Nov."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The flaw",
+     "body": "CVE-2026-115731 (CVSS 9.4) is a deserialization flaw in Puppet report processing. Per CISA, any client holding a CA-signed agent certificate can run code as the service user on the Puppet Server."
+    },
+    {
+     "type": "point",
+     "title": "Why auto-signing matters",
+     "body": "An unauthenticated attacker can get such a certificate if the CA auto-signs without strong verification. Neodyme, who found it, says RCE lets an attacker take the CA signing keys and impersonate other hosts."
+    },
+    {
+     "type": "stat",
+     "big": "1 Dec",
+     "label": "CISA deadline for US federal agencies",
+     "note": "Added to KEV on 17 Nov. A second flaw, CVE-2026-115732 (CVSS 9.0), bypasses certificate-name authorization."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Puppet Enterprise 2026.0.1 / 2025.12.1 / 2023.8.13",
+      "Puppet Core 9.1.3 or 8.22.2",
+      "OpenVox Server 9.2.0 or 8.18.0",
+      "Stop naive CA auto-signing"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "My take",
+     "body": "Config management servers hold the keys to the whole fleet. I'd check CA auto-signing first, and if the Puppet Server was hit, assume the CA itself needs rotating."
+    }
+   ],
+   "question": "Does your Puppet CA auto-sign new agents today?",
+   "x_text": "Puppet Enterprise and OpenVox: CISA says CVE-2026-115731 (CVSS 9.4) is exploited. Any client with a CA-signed agent cert can run code on Puppet Server, and auto-signing CAs hand certs out. Fixes since 3 Nov.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "One signed certificate. Code execution on your Puppet Server. ⚙️\n\nWhat The Hacker News reported (18 Nov):\n→ CISA added CVE-2026-115731 (CVSS 9.4), a Puppet deserialization flaw, to its exploited list (KEV) on 17 Nov\n→ Per CISA, any client holding a CA-signed agent certificate can run code as the service user on the Puppet Server\n→ An unauthenticated attacker can get such a certificate if the CA auto-signs without strong verification\n→ Neodyme, who found it, says an attacker can then take the CA signing keys and impersonate other hosts\n→ Perforce shipped fixes on 3 Nov; OpenVox is affected too\n\nMy take: Config management servers hold the keys to the whole fleet. I'd check CA auto-signing first, and if the Puppet Server was hit, assume the CA itself needs rotating.\n\nWhat to do: update to Puppet Enterprise 2026.0.1, 2025.12.1 or 2023.8.13 (Core 9.1.3 / 8.22.2), OpenVox Server 9.2.0 / 8.18.0, and review CA auto-signing.\n\nSend this to whoever runs your Puppet servers 👇\n\nDoes your Puppet CA auto-sign new agents today?\n\nSource: The Hacker News, 18 Nov 2026\n\n#Puppet #OpenVox #CISAKEV #PatchManagement #DevOps #CyberSecurity"
+  },
+  {
+   "id": "2026-11-19-am-03",
+   "kind": "reel",
+   "category": "RANSOMWARE",
+   "slot": "2026-11-19T12:00:00",
+   "story_key": "ukraine-fbi-ransomware-arrests-40m-2026-11",
+   "send_to": "whoever runs your help desk",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "Help-desk impersonation beats most technical controls. I'd make call-backs non-negotiable: no remote session and no MFA reset until the caller is verified on a directory number.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "$40.5M in ransoms. 4 arrests.",
+    "segments": [
+     {
+      "say": "Forty million dollars in ransoms. Four arrests.",
+      "show": "Ukraine's National Police: at least 28 companies paid more than $40.5 million in ransoms (BleepingComputer, 18 Nov).",
+      "card": "$40.5M · 28 companies",
+      "card_style": "stat"
+     },
+     {
+      "say": "Ukraine's police and the F B I searched sixty six locations.",
+      "show": "Joint operation with the FBI: 66 searches in Kyiv and 11 regions. Four suspected key members in custody.",
+      "card": "66 searches · 4 in custody",
+      "card_style": "fact"
+     },
+     {
+      "say": "Police say the way in was fake I T support calls, with A I generated voice messages.",
+      "show": "Police: they posed as IT support, using a custom platform with AI-generated voice messages, fake VPN pages and remote tools.",
+      "card": "Fake IT support + AI voice",
+      "card_style": "alert"
+     },
+     {
+      "say": "Verify every I T caller on a known number.",
+      "show": "My take: no remote session, no MFA reset until the caller is verified on a directory number.",
+      "card": "Call back on a known number",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your help desk.",
+      "show": "Send this to whoever runs your help desk.",
+      "card": "↗ Send this to whoever runs your help desk"
+     }
+    ]
+   },
+   "x_text": "Ukraine police and FBI: 4 suspected ransomware gang members in custody, 66 searches. At least 28 companies paid over $40.5M. Police say they posed as IT support using AI-generated voice messages and fake VPN pages.\n\n#Ransomware #CyberSecurity",
+   "ig_caption": "$40.5 million in ransoms. Four arrests. 🚔\n\nWhat BleepingComputer reported (18 Nov):\n→ Ukraine's National Police and the FBI ran 66 searches in Kyiv and 11 regions; four suspected key members are in custody\n→ Police say at least 28 companies paid more than $40.5 million in ransoms\n→ Ukrainian court records identify Chaos as the ransomware used; the probe is ongoing\n→ Police say the gang called staff posing as IT support, with AI-generated voice messages, fake corporate VPN pages and remote tools like AnyDesk\n→ Seized: computers, phones, bank cards, about $370,000 and €20,000 in cash\n\nMy take: Help-desk impersonation beats most technical controls. I'd make call-backs non-negotiable: no remote session and no MFA reset until the caller is verified on a directory number.\n\nWhat to do: publish one rule to all staff: IT never asks you to install a remote tool or log into a VPN link from a call. Hang up and call the help desk back.\n\nSend this to whoever runs your help desk 👇\n\nWould your staff hang up on a convincing \"IT support\" call?\n\nSource: BleepingComputer, 18 Nov 2026\n\n#Ransomware #Vishing #SocialEngineering #HelpDesk #FBI #CyberSecurity"
+  }
+ ]
+}
