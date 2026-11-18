@@ -3297,6 +3297,48 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "Infoblox. Breached via its migration vendor.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "riken-fugaku-dashboard-breach-2026-11",
+   "id": "2026-11-18-pm-01",
+   "date": "2026-11-18",
+   "slot": "2026-11-18T17:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "A status page. Then Fugaku went offline.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "explainer-indirect-prompt-injection",
+   "id": "2026-11-18-pm-02",
+   "date": "2026-11-18",
+   "slot": "2026-11-18T20:00:00",
+   "kind": "diagram",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "Indirect Prompt Injection",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-114938",
+   "id": "2026-11-18-pm-03",
+   "date": "2026-11-18",
+   "slot": "2026-11-18T21:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "One Java bug. Jenkins, Jira, Keycloak.",
+   "typefully_draft_id": null
   }
  ]
 }
