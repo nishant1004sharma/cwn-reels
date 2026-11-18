@@ -1,0 +1,136 @@
+{
+ "date": "2026-11-18",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-18-pm-01",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-18T17:00:00",
+   "story_key": "riken-fugaku-dashboard-breach-2026-11",
+   "send_to": "whoever runs your research computing",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Status dashboards get treated as harmless, so they sit on the internet half-forgotten. I'd list every public status or monitoring page this week, then patch it or put it behind login.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "A status page. Then Fugaku went offline.",
+    "segments": [
+     {
+      "say": "A status dashboard. Then Japan's top supercomputer went dark.",
+      "show": "RIKEN shut down the Fugaku supercomputer on 14 Nov after a security breach (BleepingComputer, 17 Nov).",
+      "card": "Fugaku|shut down after a breach",
+      "card_style": "stat"
+     },
+     {
+      "say": "RIKEN says an intruder got in through its public status dashboard.",
+      "show": "RIKEN: between 10 and 13 Nov, an unauthorized party exploited the public dashboard showing Fugaku's operational status to access multiple internal servers. The method isn't determined yet.",
+      "card": "Way in: the public status dashboard",
+      "card_style": "alert"
+     },
+     {
+      "say": "Malware went after user data. Over four thousand users. S S H keys taken.",
+      "show": "RIKEN: names, emails and user IDs of 4,222 Fugaku users and 375 Rikyu users, plus SSH private keys and access keys. No further access or theft of research results found so far.",
+      "card": "4,222 users · SSH keys",
+      "card_style": "fact"
+     },
+     {
+      "say": "If your team used it, revoke and replace those keys today.",
+      "show": "My take: list every public status or monitoring page you run, then patch it or put it behind login. RIKEN disabled login keys and asked users to replace stored credentials.",
+      "card": "Revoke + replace keys",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your research computing.",
+      "show": "Send this to whoever runs your research computing.",
+      "card": "↗ Send this to whoever runs your research computing"
+     }
+    ]
+   },
+   "x_text": "Fugaku supercomputer offline: RIKEN says an intruder exploited the public status dashboard (10-13 Nov) to reach internal servers and plant malware. Data of 4,222 Fugaku users plus SSH and access keys exposed. Revoke and replace keys.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "A status page. Then Japan's top supercomputer went offline. 🖥️\n\nWhat BleepingComputer reported (17 Nov), from RIKEN:\n→ Between 10 and 13 Nov, an unauthorized party exploited Fugaku's public operational-status dashboard to reach multiple internal servers\n→ RIKEN says the intruder planted malware that targeted user data; how they got in is not yet determined\n→ Exposed: names, emails and user IDs of 4,222 Fugaku users and 375 Rikyu users, plus SSH private keys and access keys\n→ Some keys were used to try other systems; RIKEN found no further access or theft of research results so far\n→ Fugaku was shut down on 14 Nov, login keys disabled; no attribution yet\n\nMy take: Status dashboards get treated as harmless, so they sit on the internet half-forgotten. I'd list every public status or monitoring page this week, then patch it or put it behind login.\n\nWhat to do: if your team uses Fugaku or Rikyu, revoke and replace those SSH and access keys today, and check where else they worked.\n\nSend this to whoever runs your research computing 👇\n\nWho owns the public status pages in your organisation?\n\nSource: BleepingComputer, 17 Nov 2026\n\n#Fugaku #RIKEN #DataBreach #SSH #HPC #CyberSecurity"
+  },
+  {
+   "id": "2026-11-18-pm-02",
+   "kind": "diagram",
+   "category": "AI SECURITY",
+   "slot": "2026-11-18T20:00:00",
+   "x": true,
+   "story_key": "explainer-indirect-prompt-injection",
+   "send_to": "whoever is rolling out your AI agents",
+   "sources": [
+    {
+     "name": "OWASP GenAI Security Project (LLM01:2025 Prompt Injection)",
+     "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+     "date": "2025-04-17"
+    }
+   ],
+   "take": "I'd judge an AI agent by what it can do, not what it's told. Assume some content it reads is hostile, then give it only the tools and tokens you could afford to lose.",
+   "diagram": {
+    "title": "Indirect Prompt Injection",
+    "html": "claude-news/diagrams/2026-11-18-pm-02.html",
+    "seconds": 8
+   },
+   "x_text": "Indirect prompt injection: your AI agent reads a web page, email or file with hidden instructions and follows them with its own tools. OWASP LLM01: label untrusted content, least privilege, human approval for risky actions.\n\n#PromptInjection #AISecurity",
+   "ig_caption": "Your AI agent doesn't need to be hacked. It just needs to read the wrong page. 🤖\n\nHow indirect prompt injection works (OWASP LLM01:2025):\n→ You ask an agent to summarise a web page, email or document\n→ That content carries hidden instructions; OWASP: indirect injection happens \"when an LLM accepts input from external sources, such as websites or files\"\n→ The model treats them as orders and uses its own tools, e.g. leaking a private conversation through a link\n→ The attacker never talks to your AI directly\n→ OWASP says it's unclear whether fool-proof prevention exists, so the goal is limiting damage\n\nMy take: I'd judge an AI agent by what it can do, not what it's told. Assume some content it reads is hostile, then give it only the tools and tokens you could afford to lose.\n\nDefences: separate and label untrusted content, give the app its own least-privilege tokens, require human approval for high-risk actions, and red-team it as an untrusted user.\n\nSend this to whoever is rolling out your AI agents 👇\n\nWhich action would you never let an AI agent take without a human click?\n\nSource: OWASP GenAI Security Project, LLM01:2025 Prompt Injection\n\n#PromptInjection #AISecurity #AIAgents #LLMSecurity #OWASP #CyberSecurity"
+  },
+  {
+   "id": "2026-11-18-pm-03",
+   "kind": "reel",
+   "category": "VULNERABILITY",
+   "slot": "2026-11-18T21:00:00",
+   "story_key": "cve-2026-114938",
+   "send_to": "whoever owns your Java servers",
+   "sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Patching Oracle Java is the easy part. The hard part is finding the JDKs bundled inside vendor apps. I'd start with internet-facing Jenkins, Jira and Keycloak.",
+   "reel": {
+    "series": "Patch Now in 15s",
+    "hook": "One Java bug. Jenkins, Jira, Keycloak.",
+    "segments": [
+     {
+      "say": "One Java bug. Lab tests ran code on Jenkins, Jira and Keycloak.",
+      "show": "Java4Shell, CVE-2026-114938: researchers at Calif say they got remote code execution in lab tests on default setups of Keycloak, Jira, Confluence, Artifactory, Jenkins and PingFederate (BleepingComputer, 17 Nov).",
+      "card": "Java4Shell|CVE-2026-114938",
+      "card_style": "stat"
+     },
+     {
+      "say": "It sits in Java's fast Base64 decoder on A V X five twelve chips.",
+      "show": "Memory corruption in Java's hardware-accelerated Base64 decoding, on certain x86-64 CPUs with AVX-512 (VBMI). Affects OpenJDK 17.0.6 and later, plus Oracle, Corretto, Temurin, Microsoft, Azul and Red Hat builds. Calif: CVSS 4.0 9.2; Oracle: 8.1. Found with help from OpenAI's Codex.",
+      "card": "CVSS 9.2 (Calif) · 8.1 (Oracle)",
+      "card_style": "alert"
+     },
+     {
+      "say": "Oracle patched it November seventeenth. No attacks reported in the wild.",
+      "show": "Fixed in Oracle's November 2026 Critical Patch Update (655 fixes). No in-the-wild exploitation reported; Calif published a memory-corruption PoC, not its full exploits.",
+      "card": "No in-the-wild attacks reported yet",
+      "card_style": "fact"
+     },
+     {
+      "say": "Update every Java runtime, not just Oracle's.",
+      "show": "My take: the hard part is finding JDKs bundled inside vendor apps. Start with internet-facing Jenkins, Jira and Keycloak.",
+      "card": "Update every JDK build",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your Java servers.",
+      "show": "Send this to whoever owns your Java servers.",
+      "card": "↗ Send this to whoever owns your Java servers"
+     }
+    ]
+   },
+   "x_text": "Java4Shell, CVE-2026-114938: memory corruption in Java's AVX-512 Base64 decoder. Calif got lab RCE on default Jenkins, Jira, Keycloak and more. OpenJDK 17.0.6+ builds affected; Oracle patched 17 Nov. No in-the-wild attacks reported.\n\n#Java4Shell #InfoSec",
+   "ig_caption": "One Java bug. Lab code execution on Jenkins, Jira and Keycloak. ☕\n\nWhat BleepingComputer reported (17 Nov):\n→ Java4Shell (CVE-2026-114938) is a memory-corruption flaw in Java's hardware-accelerated Base64 decoder, on certain x86-64 CPUs with AVX-512\n→ It affects OpenJDK 17.0.6 and later, and builds from Oracle, Amazon Corretto, Eclipse Temurin, Microsoft, Azul and Red Hat\n→ Calif rates it CVSS 4.0 9.2; Oracle rates it 8.1 (High)\n→ In lab tests Calif got remote code execution on default setups of Keycloak, Jira, Confluence, Artifactory, Jenkins and PingFederate; researcher Quang Luong found it using OpenAI's Codex\n→ Oracle fixed it on 17 Nov in its November Critical Patch Update; no in-the-wild exploitation reported\n\nMy take: Patching Oracle Java is the easy part. The hard part is finding the JDKs bundled inside vendor apps. I'd start with internet-facing Jenkins, Jira and Keycloak.\n\nWhat to do: update every Java runtime to the latest version, including vendor builds. Calif lists JVM-option workarounds, but calls them temporary.\n\nSend this to whoever owns your Java servers 👇\n\nDo you know how many different JDK builds run in your estate?\n\nSource: BleepingComputer, 17 Nov 2026\n\n#Java4Shell #Java #OpenJDK #PatchManagement #Vulnerability #CyberSecurity"
+  }
+ ]
+}
