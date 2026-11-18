@@ -22,7 +22,7 @@
     "hook": "22 GitHub repos built to hijack AI agents.",
     "segments": [
      {
-      "say": "Twenty two GitHub repos. Built to hijack your A I coding agent.",
+      "say": "Twenty two GitHub repos. Built to hijack A I agents.",
       "show": "Bitdefender Labs found 22 malicious GitHub repositories aimed at AI coding assistants such as Claude Code and Cursor (Cyber Security News, 18 Nov).",
       "card": "22 poisoned repos",
       "card_style": "stat"
@@ -34,13 +34,13 @@
       "card_style": "alert"
      },
      {
-      "say": "It steals tokens, S S H keys and cloud secrets, then spreads.",
+      "say": "It steals tokens, S S H keys and secrets, then spreads.",
       "show": "Steals CI/CD, cloud and registry tokens, SSH keys and .env secrets; spreads through stolen GitHub/GitLab tokens. Targets settings for 14 agents.",
       "card": "Tokens · SSH keys · .env",
       "card_style": "alert"
      },
      {
-      "say": "Check the agent files before you open a strange repo.",
+      "say": "Check agent files before opening a strange repo.",
       "show": "My take: inspect CLAUDE.md, AGENTS.md, .claude/ .cursor/ .gemini/ and hooks first. Ran one? Rotate every token it could reach.",
       "card": "Inspect agent files first",
       "card_style": "answer"
