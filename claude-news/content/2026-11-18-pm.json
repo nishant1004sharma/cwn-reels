@@ -28,19 +28,19 @@
       "card_style": "stat"
      },
      {
-      "say": "RIKEN says an intruder got in through its public status dashboard.",
+      "say": "RIKEN says the way in was its public status dashboard.",
       "show": "RIKEN: between 10 and 13 Nov, an unauthorized party exploited the public dashboard showing Fugaku's operational status to access multiple internal servers. The method isn't determined yet.",
       "card": "Way in: the public status dashboard",
       "card_style": "alert"
      },
      {
-      "say": "Malware went after user data. Over four thousand users. S S H keys taken.",
+      "say": "Malware hit user data. Over four thousand users. S S H keys.",
       "show": "RIKEN: names, emails and user IDs of 4,222 Fugaku users and 375 Rikyu users, plus SSH private keys and access keys. No further access or theft of research results found so far.",
       "card": "4,222 users · SSH keys",
       "card_style": "fact"
      },
      {
-      "say": "If your team used it, revoke and replace those keys today.",
+      "say": "Users: revoke and replace those keys.",
       "show": "My take: list every public status or monitoring page you run, then patch it or put it behind login. RIKEN disabled login keys and asked users to replace stored credentials.",
       "card": "Revoke + replace keys",
       "card_style": "answer"
@@ -99,19 +99,19 @@
     "hook": "One Java bug. Jenkins, Jira, Keycloak.",
     "segments": [
      {
-      "say": "One Java bug. Lab tests ran code on Jenkins, Jira and Keycloak.",
+      "say": "One Java bug. Lab code execution on Jenkins, Jira, Keycloak.",
       "show": "Java4Shell, CVE-2026-114938: researchers at Calif say they got remote code execution in lab tests on default setups of Keycloak, Jira, Confluence, Artifactory, Jenkins and PingFederate (BleepingComputer, 17 Nov).",
       "card": "Java4Shell|CVE-2026-114938",
       "card_style": "stat"
      },
      {
-      "say": "It sits in Java's fast Base64 decoder on A V X five twelve chips.",
+      "say": "It's in Java's fast Base64 decoder.",
       "show": "Memory corruption in Java's hardware-accelerated Base64 decoding, on certain x86-64 CPUs with AVX-512 (VBMI). Affects OpenJDK 17.0.6 and later, plus Oracle, Corretto, Temurin, Microsoft, Azul and Red Hat builds. Calif: CVSS 4.0 9.2; Oracle: 8.1. Found with help from OpenAI's Codex.",
       "card": "CVSS 9.2 (Calif) · 8.1 (Oracle)",
       "card_style": "alert"
      },
      {
-      "say": "Oracle patched it November seventeenth. No attacks reported in the wild.",
+      "say": "Oracle patched it. No attacks reported in the wild.",
       "show": "Fixed in Oracle's November 2026 Critical Patch Update (655 fixes). No in-the-wild exploitation reported; Calif published a memory-corruption PoC, not its full exploits.",
       "card": "No in-the-wild attacks reported yet",
       "card_style": "fact"
