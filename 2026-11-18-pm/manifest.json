@@ -1,0 +1,40 @@
+{
+  "run": "2026-11-18-pm",
+  "items": {
+    "2026-11-18-pm-01": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 19.0,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-18-pm/2026-11-18-pm-01/reel.mp4"
+      ]
+    },
+    "2026-11-18-pm-02": {
+      "kind": "diagram",
+      "seconds": 8.0,
+      "files": [
+        "diagram.mp4",
+        "diagram-cover.jpg"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-18-pm/2026-11-18-pm-02/diagram.mp4",
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-18-pm/2026-11-18-pm-02/diagram-cover.jpg"
+      ]
+    },
+    "2026-11-18-pm-03": {
+      "kind": "reel",
+      "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+      "seconds": 17.8,
+      "files": [
+        "reel.mp4"
+      ],
+      "media": [
+        "https://raw.githubusercontent.com/nishant1004sharma/cwn-reels/claude-news-media/2026-11-18-pm/2026-11-18-pm-03/reel.mp4"
+      ]
+    }
+  },
+  "errors": {}
+}
