@@ -1,0 +1,173 @@
+{
+ "date": "2026-11-20",
+ "run": "am",
+ "items": [
+  {
+   "id": "2026-11-20-am-01",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-20T08:30:00",
+   "story_key": "chase-visa-mastercard-vendor-incidents-2026-11",
+   "send_to": "whoever owns your vendor list",
+   "sources": [
+    {
+     "name": "The Next Web",
+     "url": "https://thenextweb.com/news/jpmorgan-chase-visa-mastercard-vendor-breach-n0n-leak",
+     "date": "2026-11-19"
+    },
+    {
+     "name": "BigGo Finance",
+     "url": "https://finance.biggo.com/news/77d85768-9221-44fd-adbd-2af85ed6aa06",
+     "date": "2026-11-19"
+    }
+   ],
+   "take": "Your vendor's marketing database is your breach too. I'd list every vendor holding customer emails, and warn customers now that a phish using their real name is coming.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "Chase. Visa. Mastercard. All via vendors.",
+    "segments": [
+     {
+      "say": "Chase. Visa. Mastercard. Three vendor incidents, one week.",
+      "show": "Chase, Visa and Mastercard each confirmed an incident at a third-party provider (TNW, 19 Nov).",
+      "card": "3 giants · 3 vendor incidents",
+      "card_style": "stat"
+     },
+     {
+      "say": "Chase says attackers reached marketing data held by its vendors. Names and emails.",
+      "show": "Chase: attackers accessed certain marketing data held by vendors, which may include some customer names and email addresses.",
+      "card": "Names + emails",
+      "card_style": "alert"
+     },
+     {
+      "say": "Visa and Mastercard say no card numbers, no network impact.",
+      "show": "Visa: its systems were not involved, no card numbers affected. Mastercard: limited emails in one benefit programme, contained.",
+      "card": "No card data, they say",
+      "card_style": "fact"
+     },
+     {
+      "say": "Expect phishing that knows your name. Call your bank back yourself.",
+      "show": "My take: list every vendor holding customer emails. Warn customers: verify any 'bank' contact via the official number.",
+      "card": "Verify every 'bank' contact",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your vendor list.",
+      "show": "Send this to whoever owns your vendor list.",
+      "card": "↗ Send this to whoever owns your vendor list"
+     }
+    ]
+   },
+   "x_text": "JPMorgan Chase, Visa and Mastercard all confirmed incidents at third-party providers. Chase says vendor-held marketing data may include customer names and emails; Visa and Mastercard say no card data or network impact.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "Chase. Visa. Mastercard. Three vendor incidents in one week. 🏦\n\nWhat The Next Web reported (19 Nov):\n→ JPMorgan Chase says third parties that provide services to it were the target of a cyber attack\n→ Attackers accessed certain marketing data held by those vendors, which may include some customer names and email addresses\n→ Visa confirmed an incident at a third-party provider: \"Visa's systems were not involved\" and no card numbers were affected\n→ Mastercard says an outside provider exposed a limited number of emails from one benefit programme, now contained\n→ A group calling itself n0n claims the leak; the companies have not named the vendors\n\nMy take: Your vendor's marketing database is your breach too. I'd list every vendor holding customer emails, and warn customers now that a phish using their real name is coming.\n\nWhat to do: if you're a customer, treat any call or email about this breach as suspect and contact your bank through its official number. If you run security, ask which vendors hold your customer data and how fast they'd tell you.\n\nSend this to whoever owns your vendor list 👇\n\nDoes your vendor contract say how fast they must report a breach?\n\nSource: The Next Web and BigGo Finance, 19 Nov 2026\n\n#DataBreach #ThirdPartyRisk #JPMorgan #Visa #Mastercard #Phishing"
+  },
+  {
+   "id": "2026-11-20-am-02",
+   "kind": "carousel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-20T10:00:00",
+   "story_key": "banks-ai-agent-liability-terms-citi-pnc-2026-11",
+   "send_to": "anyone using an AI agent for money",
+   "sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "An AI agent with your banking password is just a credential leak waiting to happen. I'd only use read-only tools, never share the password, and read the bank's agent terms first.",
+   "cover": {
+    "hook": "Your AI agent moves your money. Your bank says that's on you.",
+    "sub": "Citi, Citizens and PNC changed terms or warned customers this week (TechCrunch, 18 Nov)."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "What Citi changed",
+     "body": "Citi updated its Online User Agreement. A spokesperson says customers who grant account access to third-party AI agents are responsible for their activities. TechCrunch says that includes what hackers do if credentials leak."
+    },
+    {
+     "type": "point",
+     "title": "Not just Citi",
+     "body": "Citizens emailed customers that they're on the hook for anything their AI assistant does. PNC changed its terms on 18 Nov. JPMorgan and Bank of America announced similar policies in October, per TechCrunch."
+    },
+    {
+     "type": "stat",
+     "big": "5 banks",
+     "label": "named by TechCrunch with AI-agent liability rules",
+     "note": "Citi, Citizens, PNC, JPMorgan and Bank of America."
+    },
+    {
+     "type": "actions",
+     "title": "Do this before you connect an agent",
+     "items": [
+      "Never give an AI agent your bank password",
+      "Prefer read-only finance tools",
+      "Read your bank's AI-agent terms",
+      "Turn on transaction alerts"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "My take",
+     "body": "An AI agent with your banking password is just a credential leak waiting to happen. I'd only use read-only tools, never share the password, and read the bank's agent terms first."
+    }
+   ],
+   "question": "Would you let an AI agent move money from your account?",
+   "x_text": "Citi, Citizens and PNC: customers who give third-party AI agents bank account access are responsible for what those agents do, even if hacked, per TechCrunch. JPMorgan and Bank of America set similar policies in October.\n\n#AgenticAI #CyberSecurity",
+   "ig_caption": "Your AI agent moves your money. Your bank says that's on you. 🤖\n\nWhat TechCrunch reported (18 Nov):\n→ Citi updated its Online User Agreement: customers who grant account access to third-party AI agents are responsible for their activities\n→ TechCrunch says that covers what hackers do with the account if credentials leak\n→ Citizens emailed customers that they're on the hook for anything their AI assistant does\n→ PNC changed its terms on 18 Nov; JPMorgan and Bank of America announced similar policies in October\n\nMy take: An AI agent with your banking password is just a credential leak waiting to happen. I'd only use read-only tools, never share the password, and read the bank's agent terms first.\n\nWhat to do: don't share banking credentials with AI tools, prefer read-only access, read your bank's terms on AI agents and switch on transaction alerts.\n\nSend this to anyone using an AI agent for money 👇\n\nWould you let an AI agent move money from your account?\n\nSource: TechCrunch, 18 Nov 2026\n\n#AgenticAI #AIAgents #AISecurity #Banking #Citi #FinTech"
+  },
+  {
+   "id": "2026-11-20-am-03",
+   "kind": "reel",
+   "category": "ZERO-DAY",
+   "slot": "2026-11-20T12:00:00",
+   "story_key": "cve-2026-123890",
+   "send_to": "whoever runs your vCenter",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+     "date": "2026-11-19"
+    }
+   ],
+   "take": "Patching isn't enough when it was a zero-day for months. I'd patch, then hunt: new SSO admins, SAML signing changes, odd ESXi logins. 7.0 still running? That's the priority.",
+   "reel": {
+    "series": "Zero-Day Alert",
+    "hook": "Exploited for 2+ months before a patch.",
+    "segments": [
+     {
+      "say": "Over two months. Exploited before any patch existed.",
+      "show": "Google says a VMware vCenter flaw was exploited for more than two months before the patch (SecurityWeek, 19 Nov).",
+      "card": "2+ months as a zero-day",
+      "card_style": "stat"
+     },
+     {
+      "say": "Google says a China-linked spy group used it to get v Center admin. No login needed.",
+      "show": "CVE-2026-123890 (CVSS 9.8): remote, unauthenticated admin session. Mandiant links it to Armory Castle (formerly UNC5221).",
+      "card": "CVE-2026-123890 · CVSS 9.8",
+      "card_style": "alert"
+     },
+     {
+      "say": "Mandiant says they forged sign-in tokens, then reached E S X i hosts.",
+      "show": "Per Mandiant: SAML signing material stolen, an SSO admin created, SAML tokens forged, vCenter master key taken, then ESXi.",
+      "card": "Forged SAML → ESXi",
+      "card_style": "alert"
+     },
+     {
+      "say": "Patch now. Then hunt for new S S O admins.",
+      "show": "Fixed: vCenter 9.1.1.0200, 9.0.2.0200, 8.0 U3m. 7.0 is out of support: no patch. My take: patch, then hunt.",
+      "card": "Patch, then hunt",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your v Center.",
+      "show": "Send this to whoever runs your vCenter.",
+      "card": "↗ Send this to whoever runs your vCenter"
+     }
+    ]
+   },
+   "x_text": "VMware vCenter CVE-2026-123890 (CVSS 9.8) was exploited as a zero-day for 2+ months, Google says, linking it to China-linked Armory Castle (UNC5221). Fixed in 9.1.1.0200, 9.0.2.0200, 8.0 U3m. Patch, then check for compromise.\n\n#ZeroDay #CyberSecurity",
+   "ig_caption": "Exploited for more than two months before a patch existed. ⚠️\n\nWhat SecurityWeek reported (19 Nov):\n→ CVE-2026-123890 (CVSS 9.8) in VMware vCenter lets a remote, unauthenticated attacker get an admin session\n→ Google says a China-linked espionage group exploited it for more than two months before the patch\n→ Mandiant links it to Armory Castle (formerly UNC5221); initial access came via a BeyondTrust Remote Support zero-day\n→ Per Mandiant, the attackers stole SAML signing material, created an SSO admin, forged tokens and moved to ESXi\n→ Broadcom's fixes: vCenter 9.1.1.0200, 9.0.2.0200 and 8.0 U3m; no public patch for out-of-support 7.0\n\nMy take: Patching isn't enough when it was a zero-day for months. I'd patch, then hunt: new SSO admins, SAML signing changes, odd ESXi logins. 7.0 still running? That's the priority.\n\nWhat to do: patch now, then look for evidence of compromise, as Mandiant's CTO advises. Start with new SSO admin accounts and unusual ESXi access.\n\nSend this to whoever runs your vCenter 👇\n\nIs anything in your estate still on vCenter 7.0?\n\nSource: SecurityWeek, 19 Nov 2026\n\n#ZeroDay #VMware #vCenter #PatchNow #ThreatIntel #UNC5221"
+  }
+ ]
+}
