@@ -3381,6 +3381,48 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "$40.5M in ransoms. 4 arrests.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "microsoft-agent-framework-pypi-hijack-2026-11",
+   "id": "2026-11-19-pm-01",
+   "date": "2026-11-19",
+   "slot": "2026-11-19T17:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Two poisoned releases. 33 minutes apart.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-125160",
+   "id": "2026-11-19-pm-02",
+   "date": "2026-11-19",
+   "slot": "2026-11-19T20:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "Rated Medium. Already exploited. Your TYPO3 forms leak where uploads go.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "irish-credit-unions-wellington-it-breach-2026-11",
+   "id": "2026-11-19-pm-03",
+   "date": "2026-11-19",
+   "slot": "2026-11-19T21:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "43 credit unions. One banking platform.",
+   "typefully_draft_id": null
   }
  ]
 }
