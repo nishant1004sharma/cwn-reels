@@ -1,0 +1,183 @@
+{
+ "date": "2026-11-19",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-19-pm-01",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-19T17:00:00",
+   "story_key": "microsoft-agent-framework-pypi-hijack-2026-11",
+   "send_to": "whoever owns your Python CI pipelines",
+   "sources": [
+    {
+     "name": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
+     "date": "2026-11-18"
+    },
+    {
+     "name": "GitHub Advisory GHSA-764m-3ppc-5m73",
+     "url": "https://github.com/advisories/GHSA-764m-3ppc-5m73",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "An official package name is not a trust signal. I'd pin AI agent libraries to hashes and keep cloud and CI tokens out of build steps that run pip install.",
+   "reel": {
+    "series": "AI Attack Explained",
+    "hook": "Two poisoned releases. 33 minutes apart.",
+    "segments": [
+     {
+      "say": "Two poisoned releases. Thirty three minutes apart.",
+      "show": "Microsoft's agent-framework on PyPI: malicious 1.26.1 and 1.26.2 published 17 Nov, 33 minutes apart (SecurityWeek, 18 Nov).",
+      "card": "agent-framework 1.26.1 + 1.26.2",
+      "card_style": "alert"
+     },
+     {
+      "say": "It's Microsoft's A I agent framework. About a hundred ninety thousand downloads a month.",
+      "show": "Microsoft Agent Framework builds AI agents and multi-agent apps. About 190,000 downloads a month.",
+      "card": "~190K downloads / month",
+      "card_style": "stat"
+     },
+     {
+      "say": "A startup hook ran on install and grabbed Azure, cloud and C I tokens.",
+      "show": "A .pth startup hook ran at every Python start, even without importing the package, and stole Azure, AWS, GitHub Actions and CI tokens.",
+      "card": "Azure · CI · GitHub tokens",
+      "card_style": "alert"
+     },
+     {
+      "say": "Installed it? Rotate every secret it could reach.",
+      "show": "My take: pin to 1.26.0 or earlier by hash, rotate every reachable credential, rebuild affected images.",
+      "card": "Pin 1.26.0 · rotate secrets",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever owns your Python pipelines.",
+      "show": "Send this to whoever owns your Python CI pipelines.",
+      "card": "↗ Send this to whoever owns your Python CI pipelines"
+     }
+    ]
+   },
+   "x_text": "Microsoft agent-framework on PyPI: releases 1.26.1 and 1.26.2 shipped a credential stealer that ran on every Python start and grabbed Azure, AWS, GitHub Actions and CI tokens. 1.26.0 is clean. Installed either? Rotate.\n\n#SupplyChainAttack #CyberSecurity",
+   "ig_caption": "Two poisoned releases of Microsoft's AI agent framework. 33 minutes apart. 🐍\n\nWhat SecurityWeek and GitHub's advisory reported (18 Nov):\n→ Versions 1.26.1 and 1.26.2 of the agent-framework package on PyPI carried a credential stealer, published on 17 Nov\n→ The package builds AI agents and multi-agent apps and gets about 190,000 downloads a month\n→ A .pth startup hook ran at every Python start, even if your code never imported the package\n→ It hunted secrets in environment variables and credential files: Azure, AWS, GitHub, Hugging Face, OpenAI, npm and CI tokens\n→ Both versions are removed from PyPI; 1.26.0 and earlier are not affected; how the releases were published is still unknown\n\nMy take: An official package name is not a trust signal. I'd pin AI agent libraries to hashes and keep cloud and CI tokens out of build steps that run pip install.\n\nWhat to do: search dev machines, CI runners and container images for 1.26.1 / 1.26.2. If found, treat the environment as exposed: rotate every credential it could reach (including CI and GitHub Actions secrets) and rebuild.\n\nSend this to whoever owns your Python CI pipelines 👇\n\nDo your pipelines pin Python packages by hash, or just by name?\n\nSource: SecurityWeek and GitHub Advisory GHSA-764m-3ppc-5m73, 18 Nov 2026\n\n#SupplyChainSecurity #PyPI #AIAgents #Python #DevSecOps #Azure"
+  },
+  {
+   "id": "2026-11-19-pm-02",
+   "kind": "carousel",
+   "category": "PATCH NOW",
+   "slot": "2026-11-19T20:00:00",
+   "story_key": "cve-2026-125160",
+   "send_to": "whoever runs your TYPO3 sites",
+   "sources": [
+    {
+     "name": "TYPO3 Security Advisory TYPO3-CORE-SA-2026-029",
+     "url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-029",
+     "date": "2026-11-17"
+    },
+    {
+     "name": "TYPO3 News",
+     "url": "https://news.typo3.com/article/typo3-14312-13440-12452-11557-and-10463-security-releases-published",
+     "date": "2026-11-17"
+    }
+   ],
+   "take": "Medium severity plus active exploitation beats critical-but-theoretical. I'd patch this before the scarier scores, then check your upload folders really get a strict CSP.",
+   "cover": {
+    "hook": "Rated Medium. Already exploited. Your TYPO3 forms leak where uploads go.",
+    "sub": "TYPO3 says CVE-2026-125160 is actively exploited. Fixes shipped 17 Nov, alongside 9 more advisories."
+   },
+   "slides": [
+    {
+     "type": "point",
+     "title": "The flaw",
+     "body": "CVE-2026-125160 in the TYPO3 Form Framework. When a form upload failed to save, the raw error was shown to the visitor, revealing the storage path, including the 'unguessable' upload folder name."
+    },
+    {
+     "type": "point",
+     "title": "Why it matters",
+     "body": "Per TYPO3, attackers can then work out the public URL of files they upload through the form. If a form accepts HTML or other browser-run files, that can lead to cross-site scripting where the upload folder has no strict CSP."
+    },
+    {
+     "type": "stat",
+     "big": "10",
+     "label": "TYPO3 security advisories in one release (SA-2026-025 to 034)",
+     "note": "TYPO3's own wording on this one: 'known to be actively exploited'."
+    },
+    {
+     "type": "actions",
+     "title": "Do this week",
+     "items": [
+      "Update: 14.3.12 LTS or 13.4.40 LTS",
+      "ELTS: 12.4.52, 11.5.57 or 10.4.63",
+      "Strict CSP on form upload folders (nginx: set it by hand)",
+      "Limit allowed file types on every upload field"
+     ]
+    },
+    {
+     "type": "point",
+     "title": "My take",
+     "body": "Medium severity plus active exploitation beats critical-but-theoretical. I'd patch this before the scarier scores, then check your upload folders really get a strict CSP."
+    }
+   ],
+   "question": "Do you patch by CVSS score, or by what's being exploited?",
+   "x_text": "TYPO3 CVE-2026-125160: a Form Framework info leak rated Medium, but TYPO3 says it is actively exploited. Failed uploads exposed the hidden upload path. Fixed in 14.3.12, 13.4.40 and ELTS releases.\n\n#PatchNow #CyberSecurity",
+   "ig_caption": "Rated Medium. Already exploited. 🧩\n\nWhat TYPO3's advisory says (17 Nov):\n→ CVE-2026-125160 is in the Form Framework: when a form upload failed to save, the raw error showed the visitor the storage path\n→ That path includes the 'unguessable' upload folder, so attackers can work out the public URL of files they upload\n→ If a form accepts HTML or other browser-run files, that can become cross-site scripting where the upload folder lacks a strict CSP\n→ TYPO3: \"This vulnerability is known to be actively exploited\"\n→ It shipped in the same release as 9 other TYPO3 security advisories\n\nMy take: Medium severity plus active exploitation beats critical-but-theoretical. I'd patch this before the scarier scores, then check your upload folders really get a strict CSP.\n\nWhat to do: update to TYPO3 14.3.12 LTS or 13.4.40 LTS (ELTS: 12.4.52, 11.5.57, 10.4.63). On nginx, set the upload-folder CSP yourself; the shipped .htaccess only covers Apache.\n\nSend this to whoever runs your TYPO3 sites 👇\n\nDo you patch by CVSS score, or by what's being exploited?\n\nSource: TYPO3 Security Advisory TYPO3-CORE-SA-2026-029, 17 Nov 2026\n\n#TYPO3 #PatchManagement #WebSecurity #CMS #VulnerabilityManagement #CyberSecurity"
+  },
+  {
+   "id": "2026-11-19-pm-03",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-19T21:00:00",
+   "story_key": "irish-credit-unions-wellington-it-breach-2026-11",
+   "send_to": "whoever manages your third-party risk",
+   "sources": [
+    {
+     "name": "The Irish Times",
+     "url": "https://www.irishtimes.com/your-money/2026/11/17/suspected-data-breach-at-43-credit-unions-could-affect-hundreds-of-thousands-of-members/",
+     "date": "2026-11-17"
+    },
+    {
+     "name": "RTÉ News",
+     "url": "https://www.rte.ie/news/business/2026/1117/1599594-supected-data-breach-at-credit-unions/",
+     "date": "2026-11-18"
+    }
+   ],
+   "take": "When one platform serves a third of a sector, its flaw is everyone's breach. I'd ask key suppliers how fast they would tell you, and put it in the contract.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "43 credit unions. One banking platform.",
+    "segments": [
+     {
+      "say": "Forty three credit unions. One banking platform.",
+      "show": "Suspected breach at 43 Irish credit unions, per The Irish Times (17 Nov). About 40 notifications reached the Data Protection Commission, RTÉ reports.",
+      "card": "43 credit unions",
+      "card_style": "stat"
+     },
+     {
+      "say": "The Irish Times understands hackers exploited a flaw in the provider's software.",
+      "show": "The Irish Times: the provider is understood to be Wellington IT, whose platform serves more than a third of Irish credit unions.",
+      "card": "One supplier, many victims",
+      "card_style": "alert"
+     },
+     {
+      "say": "Payee details were taken. Balances, they say, were not.",
+      "show": "RTÉ: payees' names, account numbers and addresses may be exposed. ILCU: balances not compromised; the flaw is closed.",
+      "card": "Payee data, not balances",
+      "card_style": "fact"
+     },
+     {
+      "say": "Expect targeted phishing. Verify every payment request.",
+      "show": "My take: warn members about phishing that quotes real payees, and ask suppliers how fast they'd tell you.",
+      "card": "Expect targeted phishing",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever manages your supplier risk.",
+      "show": "Send this to whoever manages your third-party risk.",
+      "card": "↗ Send this to whoever manages your third-party risk"
+     }
+    ]
+   },
+   "x_text": "Irish credit unions: a suspected breach via banking-platform provider Wellington IT hit 43 credit unions, per The Irish Times. Payee names, account numbers and addresses may be exposed; balances not compromised, ILCU says.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "43 credit unions. One banking platform. 🏦\n\nWhat The Irish Times (17 Nov) and RTÉ (18 Nov) reported:\n→ A suspected data breach hit 43 Irish credit unions; about 40 breach notifications reached the Data Protection Commission, RTÉ reports\n→ The provider is understood to be Wellington IT, whose banking platform serves more than a third of Irish credit unions\n→ The Irish Times understands hackers exploited a vulnerability in the company's software\n→ RTÉ: payees' names, account numbers and addresses may have been compromised; the Irish League of Credit Unions says balances were not, and the flaw is closed\n→ The Irish Times says up to 1.8 million people could be affected; the investigation is ongoing\n\nMy take: When one platform serves a third of a sector, its flaw is everyone's breach. I'd ask key suppliers how fast they would tell you, and put it in the contract.\n\nWhat to do: if you're a member, treat any call or email quoting your real payees with suspicion and contact your credit union directly. If you run a supplier programme, map which vendors hold customer data for many firms at once.\n\nSend this to whoever manages your third-party risk 👇\n\nWould your key supplier tell you about a breach within a week?\n\nSource: The Irish Times, 17 Nov 2026; RTÉ News, 18 Nov 2026\n\n#DataBreach #ThirdPartyRisk #CreditUnion #Ireland #Phishing #CyberSecurity"
+  }
+ ]
+}
