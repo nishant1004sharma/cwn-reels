@@ -3423,6 +3423,48 @@
    "voice": "edge-tts:en-US-AndrewMultilingualNeural",
    "title": "43 credit unions. One banking platform.",
    "typefully_draft_id": null
+  },
+  {
+   "story_key": "chase-visa-mastercard-vendor-incidents-2026-11",
+   "id": "2026-11-20-am-01",
+   "date": "2026-11-20",
+   "slot": "2026-11-20T08:30:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Chase. Visa. Mastercard. All via vendors.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "banks-ai-agent-liability-terms-citi-pnc-2026-11",
+   "id": "2026-11-20-am-02",
+   "date": "2026-11-20",
+   "slot": "2026-11-20T10:00:00",
+   "kind": "carousel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": null,
+   "title": "Your AI agent moves your money. Your bank says that's on you.",
+   "typefully_draft_id": null
+  },
+  {
+   "story_key": "cve-2026-123890",
+   "id": "2026-11-20-am-03",
+   "date": "2026-11-20",
+   "slot": "2026-11-20T12:00:00",
+   "kind": "reel",
+   "networks": [
+    "instagram",
+    "youtube"
+   ],
+   "voice": "edge-tts:en-US-AndrewMultilingualNeural",
+   "title": "Exploited for 2+ months before a patch.",
+   "typefully_draft_id": null
   }
  ]
 }
