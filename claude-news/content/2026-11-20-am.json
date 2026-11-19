@@ -33,7 +33,7 @@
       "card_style": "stat"
      },
      {
-      "say": "Chase says attackers reached marketing data held by its vendors. Names and emails.",
+      "say": "Chase says attackers reached vendor marketing data. Names and emails.",
       "show": "Chase: attackers accessed certain marketing data held by vendors, which may include some customer names and email addresses.",
       "card": "Names + emails",
       "card_style": "alert"
@@ -45,7 +45,7 @@
       "card_style": "fact"
      },
      {
-      "say": "Expect phishing that knows your name. Call your bank back yourself.",
+      "say": "Expect phishing that knows your name.",
       "show": "My take: list every vendor holding customer emails. Warn customers: verify any 'bank' contact via the official number.",
       "card": "Verify every 'bank' contact",
       "card_style": "answer"
@@ -136,19 +136,19 @@
     "hook": "Exploited for 2+ months before a patch.",
     "segments": [
      {
-      "say": "Over two months. Exploited before any patch existed.",
+      "say": "Two months. Exploited before any patch.",
       "show": "Google says a VMware vCenter flaw was exploited for more than two months before the patch (SecurityWeek, 19 Nov).",
       "card": "2+ months as a zero-day",
       "card_style": "stat"
      },
      {
-      "say": "Google says a China-linked spy group used it to get v Center admin. No login needed.",
+      "say": "Google links it to a China-linked spy group. v Center admin, no login.",
       "show": "CVE-2026-123890 (CVSS 9.8): remote, unauthenticated admin session. Mandiant links it to Armory Castle (formerly UNC5221).",
       "card": "CVE-2026-123890 · CVSS 9.8",
       "card_style": "alert"
      },
      {
-      "say": "Mandiant says they forged sign-in tokens, then reached E S X i hosts.",
+      "say": "Mandiant says they forged sign-in tokens, then reached E S X i.",
       "show": "Per Mandiant: SAML signing material stolen, an SSO admin created, SAML tokens forged, vCenter master key taken, then ESXi.",
       "card": "Forged SAML → ESXi",
       "card_style": "alert"
