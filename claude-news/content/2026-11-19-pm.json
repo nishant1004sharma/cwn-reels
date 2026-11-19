@@ -33,13 +33,13 @@
       "card_style": "alert"
      },
      {
-      "say": "It's Microsoft's A I agent framework. About a hundred ninety thousand downloads a month.",
+      "say": "Microsoft's A I agent framework. A hundred ninety thousand downloads a month.",
       "show": "Microsoft Agent Framework builds AI agents and multi-agent apps. About 190,000 downloads a month.",
       "card": "~190K downloads / month",
       "card_style": "stat"
      },
      {
-      "say": "A startup hook ran on install and grabbed Azure, cloud and C I tokens.",
+      "say": "A startup hook grabbed Azure, cloud and C I tokens.",
       "show": "A .pth startup hook ran at every Python start, even without importing the package, and stole Azure, AWS, GitHub Actions and CI tokens.",
       "card": "Azure · CI · GitHub tokens",
       "card_style": "alert"
