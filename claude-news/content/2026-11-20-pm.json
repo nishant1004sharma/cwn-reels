@@ -1,0 +1,151 @@
+{
+ "date": "2026-11-20",
+ "run": "pm",
+ "items": [
+  {
+   "id": "2026-11-20-pm-01",
+   "kind": "reel",
+   "category": "AGENTIC AI",
+   "slot": "2026-11-20T17:00:00",
+   "story_key": "meta-muse-agent-signal-messages-reuters-2026-11",
+   "send_to": "anyone who installed an AI agent",
+   "sources": [
+    {
+     "name": "Reuters (Katie Paul), via Investing.com",
+     "url": "https://www.investing.com/news/stock-market-news/as-meta-bets-big-on-muse-ai-agent-early-safety-mishaps-surface-5035458",
+     "date": "2026-11-18"
+    },
+    {
+     "name": "Dataconomy",
+     "url": "https://dataconomy.com/2026/11/19/metas-muse-ai-agent-accessed-encrypted-messages-reuters/",
+     "date": "2026-11-19"
+    }
+   ],
+   "take": "An agent with notification or accessibility access can read whatever lands on your screen, connector or not. I'd audit those OS permissions on every device, not just the app's toggles.",
+   "reel": {
+    "series": "Myth vs Reality",
+    "hook": "Your AI agent sees more than you connected.",
+    "segments": [
+     {
+      "say": "Myth: your A I agent only sees what you connect.",
+      "show": "Myth: an AI agent only sees the apps you connect to it.",
+      "card": "Myth: it only sees what you connect",
+      "card_style": "alert"
+     },
+     {
+      "say": "Reality: Reuters says Meta's Muse read Signal messages, on Android and Mac.",
+      "show": "Reuters, working with Signal staff and the AI Now Institute, saw Muse read Signal messages on Android (push notifications) and macOS (accessibility + screenshot tools). Blocked on iPhone.",
+      "card": "Reality: Muse read Signal chats",
+      "card_style": "stat"
+     },
+     {
+      "say": "Staff also saw bank balances and chats meant for others.",
+      "show": "Internal posts reviewed by Reuters: misdirected chats, bank balances and made-up purchases. Meta calls them \"isolated incidents\".",
+      "card": "Meta: \"isolated incidents\"",
+      "card_style": "fact"
+     },
+     {
+      "say": "Check what notification and accessibility access your agents hold.",
+      "show": "My take: audit notification, accessibility and screen-recording permissions on every device an agent runs on.",
+      "card": "Audit agent OS permissions",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to anyone who installed an A I agent.",
+      "show": "Send this to anyone who installed an AI agent.",
+      "card": "↗ Send this to anyone who installed an AI agent"
+     }
+    ]
+   },
+   "x_text": "Meta Muse AI agent: Reuters, with Signal staff, saw it read Signal messages on Android and macOS via notification and accessibility permissions. Staff also flagged misdirected chats. Meta calls them isolated incidents.\n\n#AISecurity #Privacy",
+   "ig_caption": "Myth: your AI agent only sees what you connect. 🤖\n\nWhat Reuters reported (18 Nov):\n→ Meta's Muse agent has more than 10 million downloads since its September launch\n→ Working with Signal staff and the AI Now Institute, Reuters saw Muse read Signal messages on an Android phone (push notifications) and a Mac (accessibility and screenshot tools); the same requests were blocked on an iPhone\n→ Internal staff posts describe chats seemingly meant for other people, bank balances staff never shared, and transactions that never happened\n→ Meta's spokesperson called the examples \"isolated incidents\" and says Muse can access other apps only via permissions users explicitly grant\n→ Apple says an update this week closed the macOS pathway\n\nMy take: An agent with notification or accessibility access can read whatever lands on your screen, connector or not. I'd audit those OS permissions on every device, not just the app's toggles.\n\nWhat to do: on every device running an AI agent, review notification access, accessibility and screen recording. Don't give an agent your banking or messaging apps by default.\n\nSend this to anyone who installed an AI agent 👇\n\nWhich permission would you never give an AI agent?\n\nSource: Reuters, 18 Nov 2026 (via Investing.com); Dataconomy, 19 Nov 2026\n\n#AIAgents #AISecurity #Meta #Signal #Privacy #AgenticAI"
+  },
+  {
+   "id": "2026-11-20-pm-02",
+   "kind": "diagram",
+   "category": "PATCH NOW",
+   "slot": "2026-11-20T20:00:00",
+   "x": true,
+   "story_key": "explainer-insecure-deserialization",
+   "send_to": "the person who patches your web apps",
+   "sources": [
+    {
+     "name": "Apache Roller advisory (oss-security)",
+     "url": "https://www.openwall.com/lists/oss-security/2026/11/17/5",
+     "date": "2026-11-17"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+     "date": "2026-11-18"
+    },
+    {
+     "name": "OWASP Top 10 2017 A8: Insecure Deserialization",
+     "url": "https://wiki.owasp.org/index.php/Top_10_2017-A8",
+     "date": "2018-01-01"
+    }
+   ],
+   "take": "Most deserialization bugs are 'parse first, ask questions later'. I'd find every endpoint that accepts serialized objects without login, then patch or switch it off before the weekend.",
+   "diagram": {
+    "title": "Insecure Deserialization",
+    "html": "claude-news/diagrams/2026-11-20-pm-02.html",
+    "seconds": 8
+   },
+   "x_text": "Apache Roller CVE-2026-129448 (CVSS 9.8) is being actively exploited: its XML-RPC endpoint deserializes data before checking who sent it. Upgrade to 6.1.6+. The admin UI toggle alone doesn't close it.\n\n#PatchNow #InfoSec",
+   "ig_caption": "This server runs your code before it asks who you are. 🔓\n\nHow insecure deserialization works (OWASP A8):\n→ An app turns incoming data back into live objects (deserialization)\n→ If that data comes from an attacker, OWASP says it can lead to remote code execution\n→ Apache Roller's XML-RPC endpoint \"deserializes them before authenticating the requester\" (CVE-2026-129448, CVSS 9.8)\n→ Apache says: \"This issue is being actively exploited.\" Affected: Roller 4.0.0 through 6.1.4\n→ Safe pattern, per OWASP: don't accept serialized objects from untrusted sources, run that code with low privilege, restrict its network, log and alert on failures\n\nMy take: Most deserialization bugs are 'parse first, ask questions later'. I'd find every endpoint that accepts serialized objects without login, then patch or switch it off before the weekend.\n\nPatch: upgrade to Apache Roller 6.1.6 or later. Can't yet? Set enabledForExtensions to false in WEB-INF/web.xml or remove the /roller-services/xmlrpc mapping, then restart. Disabling XML-RPC in the admin UI is not enough.\n\nSend this to the person who patches your web apps 👇\n\nDo you know which of your apps still accept serialized objects?\n\nSource: Apache Roller advisory (oss-security), 17 Nov 2026; The Hacker News, 18 Nov 2026; OWASP Top 10 A8\n\n#Deserialization #ApacheRoller #PatchNow #AppSec #RCE #CyberSecurity"
+  },
+  {
+   "id": "2026-11-20-pm-03",
+   "kind": "reel",
+   "category": "BREACH",
+   "slot": "2026-11-20T21:00:00",
+   "story_key": "n-able-mail-assure-spamexperts-server-breach-2026-11",
+   "send_to": "whoever runs your email security",
+   "sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+     "date": "2026-11-19"
+    }
+   ],
+   "take": "When a security vendor goes dark, you lose visibility, not just a console. I'd know how we'd release quarantined mail and get logs if a SaaS security tool vanished for days.",
+   "reel": {
+    "series": "Breach of the Day",
+    "hook": "1 breached server. 3 regions' consoles down.",
+    "segments": [
+     {
+      "say": "One breached server. Three regions without their email security consoles.",
+      "show": "N-able: unknown attackers accessed one server in its Mail Assure and SpamExperts hosted cloud (The Hacker News, 19 Nov).",
+      "card": "1 server · 3 regions",
+      "card_style": "stat"
+     },
+     {
+      "say": "It looked like an outage on the sixteenth. It was an intrusion.",
+      "show": "Investigation began 16 Nov as a service disruption; later determined to be a security incident. Americas, APAC and Europe affected.",
+      "card": "Outage → security incident",
+      "card_style": "alert"
+     },
+     {
+      "say": "Mail still flows. Portal, quarantine and logs are offline.",
+      "show": "Mail flow and filtering work. UI, APIs, quarantine and logging offline. N-able: no evidence customer data was compromised.",
+      "card": "Mail flows · consoles down",
+      "card_style": "fact"
+     },
+     {
+      "say": "Plan how you'd work without your vendor's logs.",
+      "show": "My take: know how you'd release quarantined mail and get logs if a SaaS security tool vanished for days.",
+      "card": "Have a no-console plan",
+      "card_style": "answer"
+     },
+     {
+      "say": "Send this to whoever runs your email security.",
+      "show": "Send this to whoever runs your email security.",
+      "card": "↗ Send this to whoever runs your email security"
+     }
+    ]
+   },
+   "x_text": "N-able Mail Assure and SpamExperts: attackers accessed one hosted-cloud server. Mail still flows, but the portal, APIs, quarantine and logs are offline across Americas, APAC and Europe. No evidence of customer data theft, N-able says.\n\n#DataBreach #CyberSecurity",
+   "ig_caption": "One breached server. Three regions without their email security consoles. 📧\n\nWhat The Hacker News reported (19 Nov):\n→ N-able says unknown attackers gained access to one server in its Mail Assure and SpamExperts hosted cloud\n→ It began investigating a service disruption on 16 Nov; it was later determined to be a security incident\n→ Mail flow and inbound/outbound filtering still work; the portal, APIs, quarantine and logging were offline as of 19 Nov\n→ Americas, APAC and Europe are affected; N-able says it has no evidence customer data was compromised\n→ It says this is unrelated to the recent N-central flaws\n\nMy take: When a security vendor goes dark, you lose visibility, not just a console. I'd know how we'd release quarantined mail and get logs if a SaaS security tool vanished for days.\n\nWhat to do: if you use these services, follow N-able's status page, check your own mail logs for gaps, and tell users how to report mail they think was wrongly blocked.\n\nSend this to whoever runs your email security 👇\n\nIf your email filter's console vanished for a week, what would you lose first?\n\nSource: The Hacker News, 19 Nov 2026\n\n#NAble #EmailSecurity #MSP #DataBreach #ThirdPartyRisk #CyberSecurity"
+  }
+ ]
+}
